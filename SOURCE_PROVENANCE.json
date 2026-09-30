@@ -1,0 +1,1138 @@
+{
+  "version": "0.1.0-rc3",
+  "files": [
+    {
+      "file": ".env.example",
+      "sha256": "b55f384c3ee14727f522d20bc8eff52700c676976197685d565deac72fa57a08",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": ".gitignore",
+      "sha256": "d569cc15113ad256c011d712847851616af60dce1bc06accd8f8469c8ae38889",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "CHANGELOG.md",
+      "sha256": "dfd7b3c8f1e8f32388a29999c1d447dc8d87eba9e746b288a8dfed45f9a26fa7",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "LICENSE_STATUS.md",
+      "sha256": "054768af6cc3cf345e6f837992a7f3c253341cebcabca8fa1cd3adab22b5888d",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "README.md",
+      "sha256": "4af29938b8c7b2d7b96395c4af72cb3d20ef52160a86c668bbebfa26421cfaad",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "THIRD_PARTY_NOTICES.md",
+      "sha256": "2acda4ae0b2b808104fad1bfecd4fb49fe4610e388224574c4f1a8e9b9094a94",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "VERSION",
+      "sha256": "fb69b1d1704c722f4f10a15bc9bd244e8d266e974e034358211e2f91b85c2eaf",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "backend/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "current-backend:__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/docs/PUBLIC_IMPORT.md",
+      "sha256": "39bf4587425ed62e522ba0eb55d3580fc996dc4006a44136f40332ddae51e50d",
+      "origin": "current-backend:docs/PUBLIC_IMPORT.md",
+      "source_sha256": "39bf4587425ed62e522ba0eb55d3580fc996dc4006a44136f40332ddae51e50d",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/docs/create_demo_manifest.py",
+      "sha256": "36051853ef24e4116b5d66b37ccc5a84ef6d41bea8586bf4f8d3a7f3a204c52f",
+      "origin": "current-backend:docs/create_demo_manifest.py",
+      "source_sha256": "36051853ef24e4116b5d66b37ccc5a84ef6d41bea8586bf4f8d3a7f3a204c52f",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/manage.py",
+      "sha256": "db3544f810ee2dbf024012c9e8bc5d3da7387eb63ffb7c63af96cea172c473b0",
+      "origin": "current-backend:manage.py",
+      "source_sha256": "db3544f810ee2dbf024012c9e8bc5d3da7387eb63ffb7c63af96cea172c473b0",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/requirements-production.txt",
+      "sha256": "ce5ecc29696208e973a721afeff98a897d68f3134e701e4b81e17500b4fc0ec7",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "backend/requirements.txt",
+      "sha256": "27818b7f5bbe56e963b832c7a47aed20027b4f94a16fe2c8bf7dee0f63e2c629",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "backend/tisch_api/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "current-backend:tisch_api/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/admin.py",
+      "sha256": "a7ac68a753eeb831b6530bf71bf6917e577139f0734d17cc6a8666391564ab25",
+      "origin": "current-backend:tisch_api/admin.py",
+      "source_sha256": "a7ac68a753eeb831b6530bf71bf6917e577139f0734d17cc6a8666391564ab25",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/apps.py",
+      "sha256": "2aa8a4d2a2fd67d40a7f64d259c708079b7f76a85bf45ce62f00f0d8502103eb",
+      "origin": "current-backend:tisch_api/apps.py",
+      "source_sha256": "2aa8a4d2a2fd67d40a7f64d259c708079b7f76a85bf45ce62f00f0d8502103eb",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/asset_paths.py",
+      "sha256": "3a7f7c5eb01fe0d51508d236e070a0a81c5df36f601795605ed7c7fcc1d6ffda",
+      "origin": "current-backend:tisch_api/asset_paths.py",
+      "source_sha256": "b149389e53277a619eee47e998cdc38d188223c7d6fc36c7d078e033104635e1",
+      "mode": "portable-release-adaptation"
+    },
+    {
+      "file": "backend/tisch_api/catalog.py",
+      "sha256": "4ec70360d88791e06287f77d19365ee251938ce273d1ee39fc7d2c0839104cd4",
+      "origin": "current-backend:tisch_api/catalog.py",
+      "source_sha256": "4ec70360d88791e06287f77d19365ee251938ce273d1ee39fc7d2c0839104cd4",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/data/catalogue_snapshot_2026-09-30.json",
+      "sha256": "087d45e4cc390ee84aeb213616d6c77559781e54404ccd3743bbac8d021bceb5",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "backend/tisch_api/data/dataset_assets.json",
+      "sha256": "143894580a33ff1b5649e18f9284a3272986ec5694c1df05e4781f6cc9d09556",
+      "origin": "current-backend:tisch_api/data/dataset_assets.json",
+      "source_sha256": "04482259381b6ba86691ac94095be319e4e9a45e4123d3ddca1c310969c90e09",
+      "mode": "portable-release-adaptation"
+    },
+    {
+      "file": "backend/tisch_api/management/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "current-backend:tisch_api/management/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/management/commands/__init__.py",
+      "sha256": "1a0f564ddc6039457b2fb26b3d6a316c15eba20a886449847c3210c35821a693",
+      "origin": "current-backend:tisch_api/management/commands/__init__.py",
+      "source_sha256": "1a0f564ddc6039457b2fb26b3d6a316c15eba20a886449847c3210c35821a693",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/management/commands/extract_pdf_images.py",
+      "sha256": "92001a31fc64f0acc8b43e2f77923c432450e6ca5ea86a73c16df46c47162a0b",
+      "origin": "current-backend:tisch_api/management/commands/extract_pdf_images.py",
+      "source_sha256": "92001a31fc64f0acc8b43e2f77923c432450e6ca5ea86a73c16df46c47162a0b",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/management/commands/import_public_manifest.py",
+      "sha256": "6c91749b2b89a3dd81ed6beeb17ac399445bca8e57c190006b10fab2f15f8fbd",
+      "origin": "current-backend:tisch_api/management/commands/import_public_manifest.py",
+      "source_sha256": "6c91749b2b89a3dd81ed6beeb17ac399445bca8e57c190006b10fab2f15f8fbd",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/management/commands/rebuild_gene_kegg_enum.py",
+      "sha256": "19807b263fc57ded9af764c29cf9dea55975794e5b0f3d63081751a4724b5db7",
+      "origin": "current-backend:tisch_api/management/commands/rebuild_gene_kegg_enum.py",
+      "source_sha256": "19807b263fc57ded9af764c29cf9dea55975794e5b0f3d63081751a4724b5db7",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/management/commands/scan_h5_files.py",
+      "sha256": "e26118bb0c90c21842338e0063b72d79d74bf953d9877e9665d873bbf8abb97f",
+      "origin": "current-backend:tisch_api/management/commands/scan_h5_files.py",
+      "source_sha256": "e26118bb0c90c21842338e0063b72d79d74bf953d9877e9665d873bbf8abb97f",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/management/commands/test_command.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "current-backend:tisch_api/management/commands/test_command.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/migrations/0001_initial.py",
+      "sha256": "077929a45db5a20c1e2b1a7e71280e814459a3e2cfb2372906c6c524179c089d",
+      "origin": "current-backend:tisch_api/migrations/0001_initial.py",
+      "source_sha256": "077929a45db5a20c1e2b1a7e71280e814459a3e2cfb2372906c6c524179c089d",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/migrations/0002_populate_relative_path.py",
+      "sha256": "42784083a17a34d1bc988cedf5f257310a7c326244de0341148a9a37272f8f5a",
+      "origin": "current-backend:tisch_api/migrations/0002_populate_relative_path.py",
+      "source_sha256": "42784083a17a34d1bc988cedf5f257310a7c326244de0341148a9a37272f8f5a",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/migrations/0003_gene_kegg_enum.py",
+      "sha256": "3bcf65ba3f4102d27adcf2dd105ab4b634689d631df5c4f50cf31b5c1197ef68",
+      "origin": "current-backend:tisch_api/migrations/0003_gene_kegg_enum.py",
+      "source_sha256": "3bcf65ba3f4102d27adcf2dd105ab4b634689d631df5c4f50cf31b5c1197ef68",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/migrations/0004_pdf_name_index.py",
+      "sha256": "7bcb748a930a464c1409efa206f4133b5a4131c899f56f2d871003c0f13b36f2",
+      "origin": "current-backend:tisch_api/migrations/0004_pdf_name_index.py",
+      "source_sha256": "7bcb748a930a464c1409efa206f4133b5a4131c899f56f2d871003c0f13b36f2",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/migrations/0005_pdf_relative_path_index.py",
+      "sha256": "b20bd6a17bc208b913c44db707a64f8b64c07b3afb4f8ced4d2cde60255289c2",
+      "origin": "current-backend:tisch_api/migrations/0005_pdf_relative_path_index.py",
+      "source_sha256": "b20bd6a17bc208b913c44db707a64f8b64c07b3afb4f8ced4d2cde60255289c2",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/migrations/0006_complete_public_schema.py",
+      "sha256": "425729c8ee72f6138b2f538f5a2489099b06ba730242500e442d54fb0af76846",
+      "origin": "current-backend:tisch_api/migrations/0006_complete_public_schema.py",
+      "source_sha256": "425729c8ee72f6138b2f538f5a2489099b06ba730242500e442d54fb0af76846",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/migrations/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "current-backend:tisch_api/migrations/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/models.py",
+      "sha256": "1e701583992be07a85f03dce0795e1419e5780c63277850cce12b10c1dc354df",
+      "origin": "current-backend:tisch_api/models.py",
+      "source_sha256": "1e701583992be07a85f03dce0795e1419e5780c63277850cce12b10c1dc354df",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/openapi.py",
+      "sha256": "1e32b4d84157700d54f69c6b945112818a13de09b4a98b5af22cd5c003c97505",
+      "origin": "current-backend:tisch_api/openapi.py",
+      "source_sha256": "1e32b4d84157700d54f69c6b945112818a13de09b4a98b5af22cd5c003c97505",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/serializers.py",
+      "sha256": "902798262c1ea68c45b918031d96eb5dc6a35557893dbb810abe3b5e4858c1a6",
+      "origin": "current-backend:tisch_api/serializers.py",
+      "source_sha256": "902798262c1ea68c45b918031d96eb5dc6a35557893dbb810abe3b5e4858c1a6",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/test_api_fixes.py",
+      "sha256": "cfc2133f4635b81fb83555baaf65d2cb44e0d5faaa39cf887de31f91503a62ba",
+      "origin": "current-backend:tisch_api/test_api_fixes.py",
+      "source_sha256": "cfc2133f4635b81fb83555baaf65d2cb44e0d5faaa39cf887de31f91503a62ba",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/test_catalog.py",
+      "sha256": "ab780edaff4062e987ce0378b15690072716efb1b2bd178329c6ad3d1743251e",
+      "origin": "current-backend:tisch_api/test_catalog.py",
+      "source_sha256": "ab780edaff4062e987ce0378b15690072716efb1b2bd178329c6ad3d1743251e",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/test_openapi.py",
+      "sha256": "b10c541e9c134cd018f699d10fb5847619efcc950d08f440673d81222cc290ba",
+      "origin": "current-backend:tisch_api/test_openapi.py",
+      "source_sha256": "b10c541e9c134cd018f699d10fb5847619efcc950d08f440673d81222cc290ba",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/test_release_fixes.py",
+      "sha256": "f0a664096a44e8e019572d9fbe19ecc97e392ad1109fc0e17636a15f80dfb123",
+      "origin": "current-backend:tisch_api/test_release_fixes.py",
+      "source_sha256": "f0a664096a44e8e019572d9fbe19ecc97e392ad1109fc0e17636a15f80dfb123",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/test_settings.py",
+      "sha256": "9af983ab0bb1a6a4c5c9bd983a460e2031c57d190d9ae826881f1c92b58e1385",
+      "origin": "current-backend:tisch_api/test_settings.py",
+      "source_sha256": "9af983ab0bb1a6a4c5c9bd983a460e2031c57d190d9ae826881f1c92b58e1385",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/test_thumbnails.py",
+      "sha256": "25f2665562d707059863d9f8383a365103d1d567f8a3ef50ed6df4065051c785",
+      "origin": "current-backend:tisch_api/test_thumbnails.py",
+      "source_sha256": "25f2665562d707059863d9f8383a365103d1d567f8a3ef50ed6df4065051c785",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/test_tree_query_count.py",
+      "sha256": "3cfcc443f90df5265d590b548f232f7246b840f4da87ab58801b6e1dd94d34ed",
+      "origin": "current-backend:tisch_api/test_tree_query_count.py",
+      "source_sha256": "3cfcc443f90df5265d590b548f232f7246b840f4da87ab58801b6e1dd94d34ed",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/test_urls.py",
+      "sha256": "5c5afb73289364c9cddcddc9d7984387a6920e7d30cf52c4af9bb1627af4d470",
+      "origin": "current-backend:tisch_api/test_urls.py",
+      "source_sha256": "5c5afb73289364c9cddcddc9d7984387a6920e7d30cf52c4af9bb1627af4d470",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/tests.py",
+      "sha256": "dae0da7efdcdb3a7fb572d5e914b60631099122d4a4727ac6434c016161c5fe1",
+      "origin": "current-backend:tisch_api/tests.py",
+      "source_sha256": "dae0da7efdcdb3a7fb572d5e914b60631099122d4a4727ac6434c016161c5fe1",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/thumbnails.py",
+      "sha256": "0a05c971002958ea962371268aff873c600843f644bd7ace34988685fc009780",
+      "origin": "current-backend:tisch_api/thumbnails.py",
+      "source_sha256": "0a05c971002958ea962371268aff873c600843f644bd7ace34988685fc009780",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/urls.py",
+      "sha256": "8c176c32853f543b90ea7e6994941d27a6402d4999d701b630a520f2dbb394dd",
+      "origin": "current-backend:tisch_api/urls.py",
+      "source_sha256": "8c176c32853f543b90ea7e6994941d27a6402d4999d701b630a520f2dbb394dd",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_api/views.py",
+      "sha256": "d1aa5997f259adfcb807f1c12677540ccddf76acc89faff48569de146b60c607",
+      "origin": "current-backend:tisch_api/views.py",
+      "source_sha256": "d1aa5997f259adfcb807f1c12677540ccddf76acc89faff48569de146b60c607",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_backend/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "current-backend:tisch_backend/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_backend/asgi.py",
+      "sha256": "64ae77a7f4a771c2c33019c01c5f43279956b06621a35601ab187643bc883f94",
+      "origin": "current-backend:tisch_backend/asgi.py",
+      "source_sha256": "64ae77a7f4a771c2c33019c01c5f43279956b06621a35601ab187643bc883f94",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_backend/middleware.py",
+      "sha256": "2152168292c33006f6c32dfcb0f1055b55fd70f031bb670afcce2b2c13cf2048",
+      "origin": "current-backend:tisch_backend/middleware.py",
+      "source_sha256": "2152168292c33006f6c32dfcb0f1055b55fd70f031bb670afcce2b2c13cf2048",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_backend/settings.py",
+      "sha256": "8715384c5a1a5d582fac10e3e1b2e7a30819eebf112a8f2dab2138676173a201",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "backend/tisch_backend/urls.py",
+      "sha256": "640ad08fcd72e8d8bde610e435011002ecebaf355beed3b79245945411f6f5af",
+      "origin": "current-backend:tisch_backend/urls.py",
+      "source_sha256": "640ad08fcd72e8d8bde610e435011002ecebaf355beed3b79245945411f6f5af",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "backend/tisch_backend/wsgi.py",
+      "sha256": "b918c5e82a174daf83937519efb908ba753074b51cd383b8f85bcc565cb172bd",
+      "origin": "current-backend:tisch_backend/wsgi.py",
+      "source_sha256": "b918c5e82a174daf83937519efb908ba753074b51cd383b8f85bcc565cb172bd",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/.editorconfig",
+      "sha256": "ff49ebd3061b15d895fd1c038e4c4d7568ba2ff61684669799ac34265c021882",
+      "origin": "current-frontend:.editorconfig",
+      "source_sha256": "ff49ebd3061b15d895fd1c038e4c4d7568ba2ff61684669799ac34265c021882",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/.gitignore",
+      "sha256": "c74b99855c5ae26d25398cd8fd0b2352a789d7c9011e5f45f31f6a3464cbd9a1",
+      "origin": "current-frontend:.gitignore",
+      "source_sha256": "c74b99855c5ae26d25398cd8fd0b2352a789d7c9011e5f45f31f6a3464cbd9a1",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/README.md",
+      "sha256": "07116df58d76c07228089269a3b3876838ca657e410ce3ecc8bca1d3b3a3a75d",
+      "origin": "current-frontend:README.md",
+      "source_sha256": "6f122cf97ae1320c53b5a501779b849f1a794e517f8fec70196b11daff0c3a0d",
+      "mode": "portable-release-adaptation"
+    },
+    {
+      "file": "frontend/eslint.config.js",
+      "sha256": "5610aff0a9f258551201502118c6798efe6e897441cfde793dab5d34adeffa22",
+      "origin": "current-frontend:eslint.config.js",
+      "source_sha256": "5610aff0a9f258551201502118c6798efe6e897441cfde793dab5d34adeffa22",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/index.html",
+      "sha256": "0bb89c7f9e0144c59eb6cfea459a34a6d4121ca5155ef636e90eac1cfcdd2090",
+      "origin": "current-frontend:index.html",
+      "source_sha256": "0bb89c7f9e0144c59eb6cfea459a34a6d4121ca5155ef636e90eac1cfcdd2090",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/package-lock.json",
+      "sha256": "b38e1570a7153c981d452d414564aaf8546eef15c40f456d18b51f5d8670b286",
+      "origin": "current-frontend:package-lock.json",
+      "source_sha256": "b38e1570a7153c981d452d414564aaf8546eef15c40f456d18b51f5d8670b286",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/package.json",
+      "sha256": "fbb86880341843b831d364af473beec009d09a999dac6bbdb005b39a7a971a58",
+      "origin": "current-frontend:package.json",
+      "source_sha256": "fbb86880341843b831d364af473beec009d09a999dac6bbdb005b39a7a971a58",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/public/favicon.ico",
+      "sha256": "db74ab0b78338c1f778f8398c45f4103c99aea0e845a3118a7750b4eeafd3445",
+      "origin": "current-frontend:public/favicon.ico",
+      "source_sha256": "db74ab0b78338c1f778f8398c45f4103c99aea0e845a3118a7750b4eeafd3445",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/App.vue",
+      "sha256": "b9658e64defa48f5a13a6ce2e86564bf2d68afcc5671943c34e008bc416a6466",
+      "origin": "current-frontend:src/App.vue",
+      "source_sha256": "b9658e64defa48f5a13a6ce2e86564bf2d68afcc5671943c34e008bc416a6466",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/api/home.js",
+      "sha256": "b60dafe6c6f8c36ab76ef54692757b9d0081343f8e510f2168edab509db53c8b",
+      "origin": "current-frontend:src/api/home.js",
+      "source_sha256": "b60dafe6c6f8c36ab76ef54692757b9d0081343f8e510f2168edab509db53c8b",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/AID.jpg",
+      "sha256": "7be6fba99f545130a6305f05b056d6feecacc901a961913ff2a36594eb926063",
+      "origin": "current-frontend:src/assets/images/AID.jpg",
+      "source_sha256": "7be6fba99f545130a6305f05b056d6feecacc901a961913ff2a36594eb926063",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/SCAID.png",
+      "sha256": "3b61d9117f012af164e9be5bfae2f41f156f8042406a1d367f801972ef85a6e9",
+      "origin": "current-frontend:src/assets/images/SCAID.png",
+      "source_sha256": "3b61d9117f012af164e9be5bfae2f41f156f8042406a1d367f801972ef85a6e9",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/SCAID_nav.png",
+      "sha256": "fad8441fab26296c2293a0ab885ebfaafac9d53bcaa78189151b07b227a0a74f",
+      "origin": "current-frontend:src/assets/images/SCAID_nav.png",
+      "source_sha256": "fad8441fab26296c2293a0ab885ebfaafac9d53bcaa78189151b07b227a0a74f",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/TISCH.png",
+      "sha256": "96690253676d1452009e1b96f0ac3dffaefd2e11cdce5ea9bd6686d9bf6baf43",
+      "origin": "current-frontend:src/assets/images/TISCH.png",
+      "source_sha256": "96690253676d1452009e1b96f0ac3dffaefd2e11cdce5ea9bd6686d9bf6baf43",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/aid.jpg",
+      "sha256": "4e9ae651197da3e68fe56e5907d2d86259105b2a8b3729d45c11af15b7962f9d",
+      "origin": "current-frontend:src/assets/images/aid.jpg",
+      "source_sha256": "4e9ae651197da3e68fe56e5907d2d86259105b2a8b3729d45c11af15b7962f9d",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/aid.png",
+      "sha256": "6161fdf4a2583631213b56cfd4daeb0317d313a72869277391f5e6d0a7418a6f",
+      "origin": "current-frontend:src/assets/images/aid.png",
+      "source_sha256": "6161fdf4a2583631213b56cfd4daeb0317d313a72869277391f5e6d0a7418a6f",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/dataIntegration/FIG10_B_Plasma_Marker_layer2_Bgc.png",
+      "sha256": "a014ba9d56aa3b31aa63afdfc82e8102b87104c3c84c65592335cd5802bb37e3",
+      "origin": "current-frontend:src/assets/images/dataIntegration/FIG10_B_Plasma_Marker_layer2_Bgc.png",
+      "source_sha256": "a014ba9d56aa3b31aa63afdfc82e8102b87104c3c84c65592335cd5802bb37e3",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/dataIntegration/FIG11_B_Plasma_Marker_layer2_Plasma.png",
+      "sha256": "9a8b414537a40371afd706f53f066845ec2f2a1109e11a86ff44836c6e4cb053",
+      "origin": "current-frontend:src/assets/images/dataIntegration/FIG11_B_Plasma_Marker_layer2_Plasma.png",
+      "source_sha256": "9a8b414537a40371afd706f53f066845ec2f2a1109e11a86ff44836c6e4cb053",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/dataIntegration/FIG1_T_NK_celltype.png",
+      "sha256": "9d59e13b72528fcd641536e7933384d9cbe9a278c615b602a21004c2cbc282eb",
+      "origin": "current-frontend:src/assets/images/dataIntegration/FIG1_T_NK_celltype.png",
+      "source_sha256": "9d59e13b72528fcd641536e7933384d9cbe9a278c615b602a21004c2cbc282eb",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/dataIntegration/FIG2_T_NK_Marker_layer1.png",
+      "sha256": "d403e2119edfc553c707f4cfd37ca11fd28b35d1b7a2d2a5454afa06823ecfc0",
+      "origin": "current-frontend:src/assets/images/dataIntegration/FIG2_T_NK_Marker_layer1.png",
+      "source_sha256": "d403e2119edfc553c707f4cfd37ca11fd28b35d1b7a2d2a5454afa06823ecfc0",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/dataIntegration/FIG3_T_NK_Marker_layer2_CD4_T.png",
+      "sha256": "07fdb3131bdcf816edeeb8cf3f28ca0193d6b101bdaf8897037f6395e1abec0a",
+      "origin": "current-frontend:src/assets/images/dataIntegration/FIG3_T_NK_Marker_layer2_CD4_T.png",
+      "source_sha256": "07fdb3131bdcf816edeeb8cf3f28ca0193d6b101bdaf8897037f6395e1abec0a",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/dataIntegration/FIG4_T_NK_Marker_layer2_CD8_T.png",
+      "sha256": "db5ee2d45b438ea9d5c9902790697347be20715294ca3c56bc2c08d56fad00d0",
+      "origin": "current-frontend:src/assets/images/dataIntegration/FIG4_T_NK_Marker_layer2_CD8_T.png",
+      "source_sha256": "db5ee2d45b438ea9d5c9902790697347be20715294ca3c56bc2c08d56fad00d0",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/dataIntegration/FIG5_T_NK_Marker_layer2_Cycling.png",
+      "sha256": "1d57874a3aec64b327969d3be1b9a5287cb46fc0afdd518c2de431225380f677",
+      "origin": "current-frontend:src/assets/images/dataIntegration/FIG5_T_NK_Marker_layer2_Cycling.png",
+      "source_sha256": "1d57874a3aec64b327969d3be1b9a5287cb46fc0afdd518c2de431225380f677",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/dataIntegration/FIG6_T_NK_Marker_layer2_NK.png",
+      "sha256": "e4739f9b65db8b780077b85924e7f729f74e99de2068fd39e69988915ca97c8a",
+      "origin": "current-frontend:src/assets/images/dataIntegration/FIG6_T_NK_Marker_layer2_NK.png",
+      "source_sha256": "e4739f9b65db8b780077b85924e7f729f74e99de2068fd39e69988915ca97c8a",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/dataIntegration/FIG7_B_Plasma_celltype.png",
+      "sha256": "4e1664f17f09fd36561038619815da7c98b924df63c415ab31fa980b24f47705",
+      "origin": "current-frontend:src/assets/images/dataIntegration/FIG7_B_Plasma_celltype.png",
+      "source_sha256": "4e1664f17f09fd36561038619815da7c98b924df63c415ab31fa980b24f47705",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/dataIntegration/FIG8_B_Plasma_Marker_layer1.png",
+      "sha256": "267e9ea8e82602bbc46812ecdf25604d9db1878420619d61a0d0654b1273a5e1",
+      "origin": "current-frontend:src/assets/images/dataIntegration/FIG8_B_Plasma_Marker_layer1.png",
+      "source_sha256": "267e9ea8e82602bbc46812ecdf25604d9db1878420619d61a0d0654b1273a5e1",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/dataIntegration/FIG9_B_Plasma_Marker_layer2_B.png",
+      "sha256": "754566c32ff5d62b62e54a902990b189cf79954a5dd6e64e40d76e87e4650b62",
+      "origin": "current-frontend:src/assets/images/dataIntegration/FIG9_B_Plasma_Marker_layer2_B.png",
+      "source_sha256": "754566c32ff5d62b62e54a902990b189cf79954a5dd6e64e40d76e87e4650b62",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/dataIntegration_preview/FIG10_B_Plasma_Marker_layer2_Bgc.jpg",
+      "sha256": "73ec5cc3f204f4ef677768d0f9fed9fa4bc0a87fb13d75833216b2115ef79c65",
+      "origin": "current-frontend:src/assets/images/dataIntegration_preview/FIG10_B_Plasma_Marker_layer2_Bgc.jpg",
+      "source_sha256": "73ec5cc3f204f4ef677768d0f9fed9fa4bc0a87fb13d75833216b2115ef79c65",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/dataIntegration_preview/FIG11_B_Plasma_Marker_layer2_Plasma.jpg",
+      "sha256": "2c1644e766c25e140231c2202d7abb4e28bb7d6a17bf29a73fb79e3b8257b7b8",
+      "origin": "current-frontend:src/assets/images/dataIntegration_preview/FIG11_B_Plasma_Marker_layer2_Plasma.jpg",
+      "source_sha256": "2c1644e766c25e140231c2202d7abb4e28bb7d6a17bf29a73fb79e3b8257b7b8",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/dataIntegration_preview/FIG1_T_NK_celltype.jpg",
+      "sha256": "1a164116bd05cd1127ac8dfa17fb9d0d2e14603f68dab2feaf643bd697f5a0c3",
+      "origin": "current-frontend:src/assets/images/dataIntegration_preview/FIG1_T_NK_celltype.jpg",
+      "source_sha256": "1a164116bd05cd1127ac8dfa17fb9d0d2e14603f68dab2feaf643bd697f5a0c3",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/dataIntegration_preview/FIG2_T_NK_Marker_layer1.jpg",
+      "sha256": "b8aa873a48abf22bf024814d6c587d7753b146f40055908bb46761a7e22ba4c5",
+      "origin": "current-frontend:src/assets/images/dataIntegration_preview/FIG2_T_NK_Marker_layer1.jpg",
+      "source_sha256": "b8aa873a48abf22bf024814d6c587d7753b146f40055908bb46761a7e22ba4c5",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/dataIntegration_preview/FIG3_T_NK_Marker_layer2_CD4_T.jpg",
+      "sha256": "06b585c884bc7501353a613af11f899cfa7329cc5ee07fbea805106f77b631e4",
+      "origin": "current-frontend:src/assets/images/dataIntegration_preview/FIG3_T_NK_Marker_layer2_CD4_T.jpg",
+      "source_sha256": "06b585c884bc7501353a613af11f899cfa7329cc5ee07fbea805106f77b631e4",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/dataIntegration_preview/FIG4_T_NK_Marker_layer2_CD8_T.jpg",
+      "sha256": "f7e5981d7477fe7982f7885455e3930ec9756b6d997052b44e549117ebfe0994",
+      "origin": "current-frontend:src/assets/images/dataIntegration_preview/FIG4_T_NK_Marker_layer2_CD8_T.jpg",
+      "source_sha256": "f7e5981d7477fe7982f7885455e3930ec9756b6d997052b44e549117ebfe0994",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/dataIntegration_preview/FIG5_T_NK_Marker_layer2_Cycling.jpg",
+      "sha256": "a668990f5a2e2f08fba333192930c7e06eb32167fbd809e58dc4d315b3a71692",
+      "origin": "current-frontend:src/assets/images/dataIntegration_preview/FIG5_T_NK_Marker_layer2_Cycling.jpg",
+      "source_sha256": "a668990f5a2e2f08fba333192930c7e06eb32167fbd809e58dc4d315b3a71692",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/dataIntegration_preview/FIG6_T_NK_Marker_layer2_NK.jpg",
+      "sha256": "9278d471e9302e264851ccc394a4ab24af02a339bdb91c36ac4eded867b1ba4f",
+      "origin": "current-frontend:src/assets/images/dataIntegration_preview/FIG6_T_NK_Marker_layer2_NK.jpg",
+      "source_sha256": "9278d471e9302e264851ccc394a4ab24af02a339bdb91c36ac4eded867b1ba4f",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/dataIntegration_preview/FIG7_B_Plasma_celltype.jpg",
+      "sha256": "86e9db8a067e4750a4010b9a655afa7a699d2feeb50c0169d2082e3cf6c5ec26",
+      "origin": "current-frontend:src/assets/images/dataIntegration_preview/FIG7_B_Plasma_celltype.jpg",
+      "source_sha256": "86e9db8a067e4750a4010b9a655afa7a699d2feeb50c0169d2082e3cf6c5ec26",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/dataIntegration_preview/FIG8_B_Plasma_Marker_layer1.jpg",
+      "sha256": "de6b1235d75b14f7d709a5ca4d05ed9584f8363017d68f1271c64506c8cca4aa",
+      "origin": "current-frontend:src/assets/images/dataIntegration_preview/FIG8_B_Plasma_Marker_layer1.jpg",
+      "source_sha256": "de6b1235d75b14f7d709a5ca4d05ed9584f8363017d68f1271c64506c8cca4aa",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/dataIntegration_preview/FIG9_B_Plasma_Marker_layer2_B.jpg",
+      "sha256": "92dbd02605b564ac1496af19655963ff48ffae5c26062fc6580f58cf3e0f0d17",
+      "origin": "current-frontend:src/assets/images/dataIntegration_preview/FIG9_B_Plasma_Marker_layer2_B.jpg",
+      "source_sha256": "92dbd02605b564ac1496af19655963ff48ffae5c26062fc6580f58cf3e0f0d17",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/img1.jpg",
+      "sha256": "c0ca347e4145cff257889ec6b91f1179d827fa9e47aca49575b8d4264ce82b34",
+      "origin": "current-frontend:src/assets/images/img1.jpg",
+      "source_sha256": "c0ca347e4145cff257889ec6b91f1179d827fa9e47aca49575b8d4264ce82b34",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/img2.jpg",
+      "sha256": "5a709d0ad3b253e41405caef4eee3a9da21976c205807487076b087f8649deaa",
+      "origin": "current-frontend:src/assets/images/img2.jpg",
+      "source_sha256": "5a709d0ad3b253e41405caef4eee3a9da21976c205807487076b087f8649deaa",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/images/img3.jpg",
+      "sha256": "c40a71e8dd4bc208883b16127e3e275e0f12f1e11aa921aba57711cacf9c8b99",
+      "origin": "current-frontend:src/assets/images/img3.jpg",
+      "source_sha256": "c40a71e8dd4bc208883b16127e3e275e0f12f1e11aa921aba57711cacf9c8b99",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/assets/logo.svg",
+      "sha256": "277e0e97813ffd3af7f70f14474967a1f535de3033efaeb3e746e9ece04f8cc9",
+      "origin": "current-frontend:src/assets/logo.svg",
+      "source_sha256": "277e0e97813ffd3af7f70f14474967a1f535de3033efaeb3e746e9ece04f8cc9",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/components/ExplorationSearch.vue",
+      "sha256": "c8d4ce84165aa8240c7b3e276234970d4eb71dbdc7e37954386b9619d29863bd",
+      "origin": "current-frontend:src/components/ExplorationSearch.vue",
+      "source_sha256": "0881e8b48399d0770856eddae8c7eefd6ace6eef1bc141f915a5205fb2e89b80",
+      "mode": "portable-release-adaptation"
+    },
+    {
+      "file": "frontend/src/components/FigurePreview.vue",
+      "sha256": "d4932040a33b6a5479d1a9c4d66bb91f6ec137ed3a44a6fa66551743ed8dced2",
+      "origin": "current-frontend:src/components/FigurePreview.vue",
+      "source_sha256": "d4932040a33b6a5479d1a9c4d66bb91f6ec137ed3a44a6fa66551743ed8dced2",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/components/ShareQueryLink.vue",
+      "sha256": "139bd6ea2d90cedd565869f96f0741cb63307028f0308833f406758f23437255",
+      "origin": "current-frontend:src/components/ShareQueryLink.vue",
+      "source_sha256": "139bd6ea2d90cedd565869f96f0741cb63307028f0308833f406758f23437255",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/config/index.js",
+      "sha256": "4b20c0a715677a61617374e5cb15f86ff012c61c827025a37e17bc4c966693dd",
+      "origin": "current-frontend:src/config/index.js",
+      "source_sha256": "4b20c0a715677a61617374e5cb15f86ff012c61c827025a37e17bc4c966693dd",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/directives/index.js",
+      "sha256": "4fc553c3a5e95cea36babb35410c7783eae5d3d643e06bd4b4b0d9e80cbdb5ce",
+      "origin": "current-frontend:src/directives/index.js",
+      "source_sha256": "4fc553c3a5e95cea36babb35410c7783eae5d3d643e06bd4b4b0d9e80cbdb5ce",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/main.js",
+      "sha256": "988c674f45bf922f5385c21f0e7705e83465e8ff361fdb1063d9f0597b2ec8a1",
+      "origin": "current-frontend:src/main.js",
+      "source_sha256": "988c674f45bf922f5385c21f0e7705e83465e8ff361fdb1063d9f0597b2ec8a1",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/router/index.js",
+      "sha256": "e35ec6fc7839bff26f9d0de39952be7c091723e76222a20471a05675c7f99013",
+      "origin": "current-frontend:src/router/index.js",
+      "source_sha256": "e35ec6fc7839bff26f9d0de39952be7c091723e76222a20471a05675c7f99013",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/stores/counter.js",
+      "sha256": "020df900053c3934ba667626d2ce87127be2e71a77aeaf4089f0070a0d4a1af1",
+      "origin": "current-frontend:src/stores/counter.js",
+      "source_sha256": "020df900053c3934ba667626d2ce87127be2e71a77aeaf4089f0070a0d4a1af1",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/styles/bootstrap.scss",
+      "sha256": "b78427d0e0d5176c2efbf0e5e1d8ace924d6e7770348c5ac51250155b4cb9d9a",
+      "origin": "current-frontend:src/styles/bootstrap.scss",
+      "source_sha256": "b78427d0e0d5176c2efbf0e5e1d8ace924d6e7770348c5ac51250155b4cb9d9a",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/styles/common.scss",
+      "sha256": "ace2a625aef1a729c0688f81da652c45b0b372626623f678e9cc41882461ae0d",
+      "origin": "current-frontend:src/styles/common.scss",
+      "source_sha256": "ace2a625aef1a729c0688f81da652c45b0b372626623f678e9cc41882461ae0d",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/styles/element/index.scss",
+      "sha256": "072c5858b790d358eb13477930e5c2a8443eef2d53168b9a2609b7b18b838801",
+      "origin": "current-frontend:src/styles/element/index.scss",
+      "source_sha256": "072c5858b790d358eb13477930e5c2a8443eef2d53168b9a2609b7b18b838801",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/styles/scaid.scss",
+      "sha256": "6e96fda26ea736898de0c31c95a86aff5e3ed71cfc0aca1885c91411086d7bbf",
+      "origin": "current-frontend:src/styles/scaid.scss",
+      "source_sha256": "6e96fda26ea736898de0c31c95a86aff5e3ed71cfc0aca1885c91411086d7bbf",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/styles/var.scss",
+      "sha256": "e9291f4f8a72fa9942736b95d33797a912b3609a7d81a3de8823f725ccc7145c",
+      "origin": "current-frontend:src/styles/var.scss",
+      "source_sha256": "e9291f4f8a72fa9942736b95d33797a912b3609a7d81a3de8823f725ccc7145c",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/utils/explorationSearch.js",
+      "sha256": "dbbbe1002312539d4f16548b9448698001f26d9a9e3144f6081c55e55e60a1da",
+      "origin": "current-frontend:src/utils/explorationSearch.js",
+      "source_sha256": "dbbbe1002312539d4f16548b9448698001f26d9a9e3144f6081c55e55e60a1da",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/utils/http.js",
+      "sha256": "eb250ef5bd4cfbb10d0850e19bc83e08dd8b8bfb353933ab60ad371e7c83710a",
+      "origin": "current-frontend:src/utils/http.js",
+      "source_sha256": "eb250ef5bd4cfbb10d0850e19bc83e08dd8b8bfb353933ab60ad371e7c83710a",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/utils/queryState.js",
+      "sha256": "8671eebb58b40e580b6f51cdb30babbc08cb261e5e8a7274f23440bbb9cb7674",
+      "origin": "current-frontend:src/utils/queryState.js",
+      "source_sha256": "8671eebb58b40e580b6f51cdb30babbc08cb261e5e8a7274f23440bbb9cb7674",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/views/Dataset/index.vue",
+      "sha256": "ef34ebacba984955ad5d6c55368676c8b215fdb02aad920b893102eb6d21a97f",
+      "origin": "current-frontend:src/views/Dataset/index.vue",
+      "source_sha256": "ef34ebacba984955ad5d6c55368676c8b215fdb02aad920b893102eb6d21a97f",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/views/Documentation/index.vue",
+      "sha256": "4a0768931ac532d6ba0e2f613635a2ff25ee3e2a93ff6ed5ba69a1c427300d0f",
+      "origin": "current-frontend:src/views/Documentation/index.vue",
+      "source_sha256": "8f7bb75e888215a23ae4cc27369b6a344e708f0391d172a6ff70bd048ca6344b",
+      "mode": "portable-release-adaptation"
+    },
+    {
+      "file": "frontend/src/views/Gene/index.vue",
+      "sha256": "af76414cebc9d4ff8db234b3967431a0d428d47bf1de20f82a2876e31b0b2245",
+      "origin": "current-frontend:src/views/Gene/index.vue",
+      "source_sha256": "af76414cebc9d4ff8db234b3967431a0d428d47bf1de20f82a2876e31b0b2245",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/views/Home/index.vue",
+      "sha256": "0a9fae3ba4b6da6ca0b75b04c91f84c15596c1005f0a931ac86aa8535ad9fff8",
+      "origin": "current-frontend:src/views/Home/index.vue",
+      "source_sha256": "0a9fae3ba4b6da6ca0b75b04c91f84c15596c1005f0a931ac86aa8535ad9fff8",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/views/KEGG/index.vue",
+      "sha256": "18f5ea53099ecd73d58bb38b428efe96d0a71b606e22debdbead1235d154140a",
+      "origin": "current-frontend:src/views/KEGG/index.vue",
+      "source_sha256": "18f5ea53099ecd73d58bb38b428efe96d0a71b606e22debdbead1235d154140a",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/views/Layout/components/LayoutFooter.vue",
+      "sha256": "95f78e113e3cf8e8f54256696d56816126e319fc91746bc4e37e40b734eae005",
+      "origin": "current-frontend:src/views/Layout/components/LayoutFooter.vue",
+      "source_sha256": "0e1d5c9260916ab28c5073d92d01cca0037fc02f41d6b6cb4bd0c6c3e8a48c5c",
+      "mode": "portable-release-adaptation"
+    },
+    {
+      "file": "frontend/src/views/Layout/components/LayoutHeader.vue",
+      "sha256": "5242445c5b31cffa6b20d7e3c654049fdcea8d0d489eaecff1cc3be2f79bac0d",
+      "origin": "current-frontend:src/views/Layout/components/LayoutHeader.vue",
+      "source_sha256": "5242445c5b31cffa6b20d7e3c654049fdcea8d0d489eaecff1cc3be2f79bac0d",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/views/Layout/index.vue",
+      "sha256": "b7d55cb3ed2e29a4cd667e29259cdf42592da4159116ee743512444dea5fa80f",
+      "origin": "current-frontend:src/views/Layout/index.vue",
+      "source_sha256": "b7d55cb3ed2e29a4cd667e29259cdf42592da4159116ee743512444dea5fa80f",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/views/Login/index.vue",
+      "sha256": "4b688b73d60a253bfafef9b863addccb84deb734bb3b80db8eaefa3f332d78bc",
+      "origin": "current-frontend:src/views/Login/index.vue",
+      "source_sha256": "4b688b73d60a253bfafef9b863addccb84deb734bb3b80db8eaefa3f332d78bc",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/views/NotFound/index.vue",
+      "sha256": "89aadda8efae15dd8af97d344789847a54e0594c38bd14963a85c62bcf257e86",
+      "origin": "current-frontend:src/views/NotFound/index.vue",
+      "source_sha256": "89aadda8efae15dd8af97d344789847a54e0594c38bd14963a85c62bcf257e86",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/src/views/TeamInformation/index.vue",
+      "sha256": "c63710a533731a3f8091717a9a6273bcbd6709dae891996adad2bef7a92d5524",
+      "origin": "current-frontend:src/views/TeamInformation/index.vue",
+      "source_sha256": "c63710a533731a3f8091717a9a6273bcbd6709dae891996adad2bef7a92d5524",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/tests/dataset-browser-regression.mjs",
+      "sha256": "2d1866e8fa7775b297ab99ebfed7ad4364f53c20b3408d262752d5f5b1d2a027",
+      "origin": "current-frontend:tests/dataset-browser-regression.mjs",
+      "source_sha256": "2d1866e8fa7775b297ab99ebfed7ad4364f53c20b3408d262752d5f5b1d2a027",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/tests/exploration-search.test.js",
+      "sha256": "c994a1a0f15d0f4c4560d6176480dc9994ef37f5a92dd8980addd16f45f9b402",
+      "origin": "current-frontend:tests/exploration-search.test.js",
+      "source_sha256": "c994a1a0f15d0f4c4560d6176480dc9994ef37f5a92dd8980addd16f45f9b402",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/tests/frontend-fixes-regression.mjs",
+      "sha256": "cfd5b42e494493b507508c3fe41dac873f0de9b7670c51d99145f63e2cd689fb",
+      "origin": "current-frontend:tests/frontend-fixes-regression.mjs",
+      "source_sha256": "cfd5b42e494493b507508c3fe41dac873f0de9b7670c51d99145f63e2cd689fb",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/tests/query-state.test.js",
+      "sha256": "129e58e40eba87138cb8893ed36ecb3bdd6805fa727944c111143c5592965919",
+      "origin": "current-frontend:tests/query-state.test.js",
+      "source_sha256": "129e58e40eba87138cb8893ed36ecb3bdd6805fa727944c111143c5592965919",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "frontend/vite.config.js",
+      "sha256": "8b60facaf3516244cf1b0868cf736e909fd35041839b602c0be458c56a283a74",
+      "origin": "current-frontend:vite.config.js",
+      "source_sha256": "8b60facaf3516244cf1b0868cf736e909fd35041839b602c0be458c56a283a74",
+      "mode": "copied-current-source"
+    },
+    {
+      "file": "science/INPUTS.json",
+      "sha256": "5f426f244e0458d5076f7cd578dab4e997bf25d18da4d528bf4a2bb3f1b00dff",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/README.md",
+      "sha256": "b4c3dbb877da50fa59bd482b6ccd9caf7ec29e519fd9829bcb072f646091ee05",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/environment-observed.json",
+      "sha256": "aad04fbd4bc8ea5d9b7477e4208da061560f7825ef3b71529a3cb73eaa2c4788",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/figures/Annotation_source_reference.pdf",
+      "sha256": "e805ad37e97c2ad53cb69ece668eeb090c3ef17abcc760dfb503342ac42012e1",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/figures/Annotation_source_reference_T1D.pdf",
+      "sha256": "6cd314e032dc00fd4b0d63c88012db22ae1a63f5c887cde65552194b4be94272",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/figures/Figure3_recomputed.pdf",
+      "sha256": "7a6fb013733d519b4a5173801d6ac543ce3877c17a15208b0c868d347034be48",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/figures/Figure5_verified_donor.pdf",
+      "sha256": "2c66800229fd30e0caede2f07a79fe356a75f27f34929173832043a7b1c4cc0f",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/figures/FigureS12_source_reference.pdf",
+      "sha256": "96db50b5dfbcec47b2efbdc0d9e75a84b1a0fec1d1321ddba8c510fe3b2cb689",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/figures/FigureS3_recomputed.pdf",
+      "sha256": "fc5b8ed66504bac8e34affb2cb6850eeeb59565786787e0605737efbabaa261d",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/figures/FigureS8_recomputed.pdf",
+      "sha256": "24321733d0033c9ad926a456954fb7198e2562eb103ced9573ab412b6d206cd3",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/figures/FigureS9_recomputed.pdf",
+      "sha256": "ea9c343afea978399477cd208544dcbacf486593bf0c9b1a577d2ea258e17b47",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/scripts/audit_bd_full_retained_counts.py",
+      "sha256": "ab9dc393f21158c5cd8441339ab78b183d2c34a54d467c29f174d5062683fde9",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/scripts/audit_pss_full_retained_counts.py",
+      "sha256": "f9b7f2dbad4a33099f314c43982d0323a494421025b4a5740d4cbf2ffdace125",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/scripts/author_annotation_concordance.py",
+      "sha256": "2e881508b8a1e6b64cf80bb2fb75228062f94ae65398564012ae90e5c12fb3d8",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/scripts/build_science_tables.py",
+      "sha256": "217fba89021aeaab814b51373cc9bb123a88f889f8d76c192bd7f5c3ac36bb5e",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/scripts/build_verified_donor_figure5.py",
+      "sha256": "7ad5759ecef4e7946146f3d8c843d75c71e07d46388cb4050cab1deee2276804",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/scripts/combine_source_reference_checks.py",
+      "sha256": "5017d260e2bf73ee5fe9dd821ac1feb56b96d9d7f1852195c82df047e68257c7",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/scripts/compose_recomputed_figure3.py",
+      "sha256": "71edff164bf414b0b10d770c5894fd74844549b511077df6225a491210de0fb7",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/scripts/extract_integrated_metadata.R",
+      "sha256": "bba3b71bc21fb1f9dfc9e252b1be4487e8dd56b501d17a7c61898d86e5fd47f5",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/scripts/extract_release_metadata.R",
+      "sha256": "c6e1d0857b03dca93b85d674c73a3f369f143fb7222d40e448340cfab8a7f90b",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/scripts/extract_sle_pseudobulk.py",
+      "sha256": "0c0c46cac3afcef35635baa1fc761d01aacdc59892168b09fe63cbcafdcd6213",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/scripts/extract_t1d_author_metadata.R",
+      "sha256": "4a144ed7ec005d20655c227f45bf8cc63a710b6eb0f3312731c00bd14c88df2b",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/scripts/fit_sle_donor_models.py",
+      "sha256": "6a116148c4bde62a092d9b0e1884cac1acaf73a3e2fbd1c73c7ec70dd0a3c6e7",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/scripts/recalculate_valid_gene_BH.py",
+      "sha256": "f4ecd4e908de1c541cf09b3e1059f7bc45e4d49841a92acf725f992aebfc0825",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/scripts/recompute_atlas_composition.py",
+      "sha256": "c73754e0a74c887fc3f63e7a4eb135059f467385def5fcd524f74eabeb23b3bc",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/scripts/reconcile_bd_gene_names.py",
+      "sha256": "cd25631d3e4a3ad209bf413133e12b3bba2889ad62659b01edb2fc59b70d48cf",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/scripts/source_donor_composition_and_IFN.py",
+      "sha256": "5723b6458c072fa82392d34d6406ff0b215bdb52a910330f73dbc2568f12025b",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/scripts/t1d_author_annotation_concordance.py",
+      "sha256": "664c6f60677ae056bbd003f985ba9b5052bbb91e817e8d4d622d9961533b34bb",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/scripts/validate_science_delivery.py",
+      "sha256": "dc29d68fbc8df3e782a0fdb957a1ee33b17653e61190f05843a68c228423b2c3",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/tables/BD_date_corrupted_feature_symbol_reconciliation.tsv",
+      "sha256": "8c4f448535da5fa7543c07c4a191b7646828919daee4fca0fa536005ee3e344f",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/tables/BD_date_gene_ensembl_lookup.json",
+      "sha256": "4daed2ed765afac23d4b1358cc3ce76617a1b89c6e3130d20472f0e35e2e3515",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/tables/Figure3_full_label_key.tsv",
+      "sha256": "8c2c9d46a9a68176fe36c6f545091a1f92378bad8e79a694d492dcab2d58f459",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/tables/SLE_source_author_concordance_per_lineage.tsv",
+      "sha256": "47ce6c4c41183adc9e0db074457425652a94c593e066bf18217588c677dd397c",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/tables/SLE_source_author_vs_curated_coarse_confusion_counts.tsv",
+      "sha256": "882d72cf025608eb9bc437a46c2cdfdbd00b4adf11542df458f02a1ae3b46826",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/tables/T1D_source_author_concordance_per_lineage.tsv",
+      "sha256": "56b8b64b8d5c841a789013c79896f771b15aa96139300d33f5b6b236ee1d9932",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/tables/T1D_source_author_raw_and_canonical_label_pairs.tsv",
+      "sha256": "a6231d5c01b479616b819cbc2d2f305bd5474929cbd7e3cd105f8499cfc91df4",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/tables/T1D_source_author_vs_curated_coarse_confusion_counts.tsv",
+      "sha256": "4832215ecf3c184292583be5db2458783ed861d397683496f75ab53112944c3a",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/tables/all_layers_condition_descriptive_medians.tsv",
+      "sha256": "94a25a8e9a4f4c125cef78a1dce0245bc7ea35c2b6ca6cc600b8f9b601be0a62",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "science/tables/composition_object_key.tsv",
+      "sha256": "ef56a09cb1d6d01354222e1f34429fc54e1639cb0077f257ffb8ee33536d400e",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    },
+    {
+      "file": "third_party/BOOTSTRAP_LICENSE.txt",
+      "sha256": "eaf003ef9d4321de625381657eaa69e0093fa6ab00c0201e3fd4847dd9878461",
+      "origin": "release-specific documentation/aggregate evidence",
+      "mode": "generated-or-added-for-release"
+    }
+  ],
+  "private_source_paths_excluded": true
+}

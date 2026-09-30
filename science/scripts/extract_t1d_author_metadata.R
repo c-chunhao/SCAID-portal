@@ -1,0 +1,6 @@
+suppressPackageStartupMessages({library(SeuratObject);library(Matrix);library(jsonlite)})
+p <- Sys.getenv('SCAID_T1D_SOURCE_RDS')
+b <- Sys.getenv('SCAID_SCIENCE_TABLES')
+message('Read original author T1D object');x<-readRDS(p);md<-x@meta.data; print(dim(md));print(names(md));md$cell_id<-rownames(md)
+write.table(md,gzfile(file.path(b,'T1D_original_author_metadata.tsv.gz')),sep='\t',quote=FALSE,row.names=FALSE,na='')
+write_json(list(source=p,n_cells=nrow(md),columns=names(md),note='Metadata extraction from original author repository Seurat object; no classifier rerun or reannotation.'),file.path(b,'T1D_author_metadata_evidence.json'),auto_unbox=TRUE,pretty=TRUE)

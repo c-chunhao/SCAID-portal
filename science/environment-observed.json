@@ -1,0 +1,27 @@
+{
+  "runtime_scope": "Observed original execution environment, not a guarantee of portable binary install or historical upstream software versions.",
+  "python_version": "3.13.11",
+  "python_packages": {
+    "pydeseq2": "0.5.4",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "statsmodels": "0.14.6",
+    "formulaic": "1.2.1",
+    "h5py": "3.15.1",
+    "matplotlib": "3.10.8",
+    "scikit-learn": "1.8.0",
+    "openpyxl": "3.1.5",
+    "PyMuPDF": "1.28.2",
+    "Pillow": "12.1.0",
+    "threadpoolctl": "3.6.0"
+  },
+  "R_version": "4.3.3",
+  "R_packages": {
+    "Seurat": "5.5.0",
+    "SeuratObject": "5.3.0",
+    "Matrix": "1.6.5",
+    "Rcpp": "1.1.1",
+    "RcppAnnoy": "0.0.23"
+  }
+}

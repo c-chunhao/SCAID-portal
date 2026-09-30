@@ -1,0 +1,58 @@
+source_author_label	curated_raw_label	source_coarse_reference	curated_coarse_alias	cells
+B_Naive	B/Plasma cells	B/Plasma cells	B/Plasma cells	8794
+B_Naive	DCs	B/Plasma cells	DC	9
+B_Naive	NK cells	B/Plasma cells	T/NK cells	2
+B_Naive	T cells	B/Plasma cells	T/NK cells	7
+B_Naive	Unknown	B/Plasma cells	Unknown	12
+B_Plasma	B/Plasma cells	B/Plasma cells	B/Plasma cells	58
+B_SM	B/Plasma cells	B/Plasma cells	B/Plasma cells	1016
+B_SM	Unknown	B/Plasma cells	Unknown	2
+CD4_T	B/Plasma cells	T/NK cells	B/Plasma cells	7
+CD4_T	Mononuclear Phagocytes	T/NK cells	Mononuclear Phagocytes	1
+CD4_T	NK cells	T/NK cells	T/NK cells	13
+CD4_T	T cells	T/NK cells	T/NK cells	33167
+CD4_T	Unknown	T/NK cells	Unknown	99
+CD8_T	B/Plasma cells	T/NK cells	B/Plasma cells	4
+CD8_T	Mononuclear Phagocytes	T/NK cells	Mononuclear Phagocytes	1
+CD8_T	NK cells	T/NK cells	T/NK cells	918
+CD8_T	T cells	T/NK cells	T/NK cells	10055
+CD8_T	Unknown	T/NK cells	Unknown	67
+C_Monocyte	DCs	Mononuclear Phagocytes	DC	26
+C_Monocyte	Mononuclear Phagocytes	Mononuclear Phagocytes	Mononuclear Phagocytes	8386
+C_Monocyte	Unknown	Mononuclear Phagocytes	Unknown	101
+C_Monocyte	pDCs	Mononuclear Phagocytes	DC	1
+HSCs	T cells	Not comparable	T/NK cells	1
+HSCs	Unknown	Not comparable	Unknown	58
+HSCs	pDCs	Not comparable	DC	6
+I_Monocyte	DCs	Mononuclear Phagocytes	DC	3
+I_Monocyte	Mononuclear Phagocytes	Mononuclear Phagocytes	Mononuclear Phagocytes	477
+I_Monocyte	Unknown	Mononuclear Phagocytes	Unknown	3
+MAIT	NK cells	T/NK cells	T/NK cells	32
+MAIT	T cells	T/NK cells	T/NK cells	2328
+MAIT	Unknown	T/NK cells	Unknown	19
+NC_Monocyte	Mononuclear Phagocytes	Mononuclear Phagocytes	Mononuclear Phagocytes	923
+NK	NK cells	T/NK cells	T/NK cells	3632
+NK	T cells	T/NK cells	T/NK cells	1266
+NK	Unknown	T/NK cells	Unknown	30
+NK	pDCs	T/NK cells	DC	1
+Platelet	Unknown	Not comparable	Unknown	18
+T_reg	T cells	T/NK cells	T/NK cells	1358
+T_reg	Unknown	T/NK cells	Unknown	5
+Undetermined	NK cells	Not comparable	T/NK cells	3
+Undetermined	T cells	Not comparable	T/NK cells	825
+Undetermined	Unknown	Not comparable	Unknown	5
+VD2p	B/Plasma cells	T/NK cells	B/Plasma cells	1
+VD2p	NK cells	T/NK cells	T/NK cells	70
+VD2p	T cells	T/NK cells	T/NK cells	521
+VD2p	Unknown	T/NK cells	Unknown	4
+cDCs	B/Plasma cells	DC	B/Plasma cells	1
+cDCs	DCs	DC	DC	611
+cDCs	Mononuclear Phagocytes	DC	Mononuclear Phagocytes	324
+cDCs	T cells	DC	T/NK cells	1
+cDCs	Unknown	DC	Unknown	12
+cDCs	pDCs	DC	DC	9
+pDCs	B/Plasma cells	DC	B/Plasma cells	4
+pDCs	DCs	DC	DC	1
+pDCs	T cells	DC	T/NK cells	1
+pDCs	Unknown	DC	Unknown	5
+pDCs	pDCs	DC	DC	442

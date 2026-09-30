@@ -1,0 +1,6 @@
+	T/NK cells	B/Plasma cells	Mononuclear Phagocytes	DC	Other / Unknown
+T/NK cells	334777	5	0	1	996
+B/Plasma cells	5	71156	0	1	758
+Mononuclear Phagocytes	2	1	236670	893	150
+DC	1	1	1064	11786	6
+Other / Unknown	0	0	0	0	0

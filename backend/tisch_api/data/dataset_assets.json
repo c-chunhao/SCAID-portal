@@ -1,0 +1,814 @@
+{
+  "source": "AID_database/sample.info(1).xlsx",
+  "source_sha256": "bdec5d79318c7d053569b2776335ca9d6384e02d4bbf1d9b8244fdc1325ae891",
+  "datasets": [
+    {
+      "source_row": 2,
+      "disease_name": "Autoimmune Hepatitis",
+      "abbreviation": "AIH",
+      "dataset_id": "GSM6658039",
+      "tissue": "PBMC",
+      "figure_path": "Autoimmune_hepatitis/GSM6658039/PBMC",
+      "h5_paths": {
+        "RNA": "RNA/AIH_GSM6658039_PBMC.h5",
+        "AUCell": "AUCell/AIH_GSM6658039_PBMC.h5",
+        "UCell": "UCell/AIH_GSM6658039_PBMC.h5",
+        "singscore": "singscore/AIH_GSM6658039_PBMC.h5"
+      },
+      "catalog_aliases": [
+        {
+          "abbreviation": "AIH",
+          "dataset_id": "GSE216064",
+          "tissue": "外周血"
+        }
+      ],
+      "mapping_note": "NCBI GEO explicitly lists GSM6658039 as a sample of GSE216064, with PBMC tissue and Autoimmune hepatitis disease. This associates the existing series record to its documented sample asset without overwriting catalog metadata.",
+      "mapping_source": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6658039&targ=self&form=text&view=quick"
+    },
+    {
+      "source_row": 3,
+      "disease_name": "Ankylosing Spondylitis",
+      "abbreviation": "AS",
+      "dataset_id": "E-MTAB-8207",
+      "tissue": "PBMC",
+      "figure_path": "AS/E-MTAB-8207/PBMC",
+      "h5_paths": {
+        "RNA": "RNA/AS_E.MTAB.8207_PBMC.h5",
+        "AUCell": "AUCell/AS_E.MTAB.8207_PBMC.h5",
+        "UCell": "UCell/AS_E.MTAB.8207_PBMC.h5",
+        "singscore": "singscore/AS_E.MTAB.8207_PBMC.h5"
+      },
+      "catalog_aliases": [],
+      "display_name": "Psoriatic Arthritis",
+      "canonical_abbreviation": "PsA",
+      "canonical_disease_name": "Psoriatic Arthritis",
+      "classification_note": "E-MTAB-8207 was reconciled to psoriatic arthritis in the source audit. AS is retained only as a historical asset directory code."
+    },
+    {
+      "source_row": 4,
+      "disease_name": "Ankylosing Spondylitis",
+      "abbreviation": "AS",
+      "dataset_id": "E-MTAB-8207",
+      "tissue": "SFMC",
+      "figure_path": "AS/E-MTAB-8207/SFMC",
+      "h5_paths": {
+        "RNA": "RNA/AS_E.MTAB.8207_SFMC.h5",
+        "AUCell": "AUCell/AS_E.MTAB.8207_SFMC.h5",
+        "UCell": "UCell/AS_E.MTAB.8207_SFMC.h5",
+        "singscore": "singscore/AS_E.MTAB.8207_SFMC.h5"
+      },
+      "catalog_aliases": [],
+      "display_name": "Psoriatic Arthritis",
+      "canonical_abbreviation": "PsA",
+      "canonical_disease_name": "Psoriatic Arthritis",
+      "classification_note": "E-MTAB-8207 was reconciled to psoriatic arthritis in the source audit. AS is retained only as a historical asset directory code."
+    },
+    {
+      "source_row": 5,
+      "disease_name": "Ankylosing Spondylitis",
+      "abbreviation": "AS",
+      "dataset_id": "GSE216883",
+      "tissue": "PBMC/SFMC",
+      "figure_path": "AS/GSE216883/PBMC_SFMC",
+      "h5_paths": {
+        "RNA": "RNA/AS_GSE216883_PBMC_SFMC.h5",
+        "AUCell": "AUCell/AS_GSE216883_PBMC_SFMC.h5",
+        "UCell": "UCell/AS_GSE216883_PBMC_SFMC.h5",
+        "singscore": "singscore/AS_GSE216883_PBMC_SFMC.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 6,
+      "disease_name": "Atopic Dermatitis",
+      "abbreviation": "AD",
+      "dataset_id": "GSE222840",
+      "tissue": "SkinBiopsy",
+      "figure_path": "Atopic_Dermatitis/GSE222840/SkinBiopsy",
+      "h5_paths": {
+        "RNA": "RNA/Atopic_Dermatitis_GSE222840_SkinBiopsy.h5",
+        "AUCell": "AUCell/Atopic_Dermatitis_GSE222840_SkinBiopsy.h5",
+        "UCell": "UCell/Atopic_Dermatitis_GSE222840_SkinBiopsy.h5",
+        "singscore": "singscore/Atopic_Dermatitis_GSE222840_SkinBiopsy.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 7,
+      "disease_name": "Atopic Prurigo",
+      "abbreviation": "AP",
+      "dataset_id": "GSE222840",
+      "tissue": "SkinBiopsy",
+      "figure_path": "Atopic_Prurigo/GSE222840/SkinBiopsy",
+      "h5_paths": {
+        "RNA": "RNA/Atopic_Prurigo_GSE222840_SkinBiopsy.h5",
+        "AUCell": "AUCell/Atopic_Prurigo_GSE222840_SkinBiopsy.h5",
+        "UCell": "UCell/Atopic_Prurigo_GSE222840_SkinBiopsy.h5",
+        "singscore": "singscore/Atopic_Prurigo_GSE222840_SkinBiopsy.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 8,
+      "disease_name": "Behçet’s Disease(Uveitis)",
+      "abbreviation": "BD(Uveitis)",
+      "dataset_id": "https://cstr.cn/31253.11.sciencedb.02341",
+      "tissue": "Aqueous Humour",
+      "figure_path": "Behcets_disease/scidb/aqueous_humour",
+      "h5_paths": {
+        "RNA": "RNA/BD_scidb_aqueous_humour.h5",
+        "AUCell": "AUCell/BD_scidb_aqueous_humour.h5",
+        "UCell": "UCell/BD_scidb_aqueous_humour.h5",
+        "singscore": "singscore/BD_scidb_aqueous_humour.h5"
+      },
+      "catalog_aliases": [
+        {
+          "abbreviation": "AIR",
+          "disease_full_name": "Behcets_disease",
+          "dataset_id": "bAF7fe",
+          "tissue": "眼前房液（房水）"
+        }
+      ],
+      "mapping_note": "Legacy AIR records are distinguished by the explicit disease_full_name and tissue, matching separate disease paths in the supplied sample table."
+    },
+    {
+      "source_row": 9,
+      "disease_name": "Bullous Pemphigoid",
+      "abbreviation": "BP",
+      "dataset_id": "zenodo:10924853",
+      "tissue": "Blister",
+      "figure_path": "bullous_pemphigoid/zenodo/Blister",
+      "h5_paths": {
+        "RNA": "RNA/BP_zenodo_Blister.h5",
+        "AUCell": "AUCell/BP_zenodo_Blister.h5",
+        "UCell": "UCell/BP_zenodo_Blister.h5",
+        "singscore": "singscore/BP_zenodo_Blister.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 10,
+      "disease_name": "Bullous Pemphigoid",
+      "abbreviation": "BP",
+      "dataset_id": "zenodo:10924853",
+      "tissue": "PBMC",
+      "figure_path": "bullous_pemphigoid/zenodo/PBMC",
+      "h5_paths": {
+        "RNA": "RNA/BP_zenodo_PBMC.h5",
+        "AUCell": "AUCell/BP_zenodo_PBMC.h5",
+        "UCell": "UCell/BP_zenodo_PBMC.h5",
+        "singscore": "singscore/BP_zenodo_PBMC.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 11,
+      "disease_name": "Bullous Pemphigoid",
+      "abbreviation": "BP",
+      "dataset_id": "zenodo:10924853",
+      "tissue": "Skin",
+      "figure_path": "bullous_pemphigoid/zenodo/Skin",
+      "h5_paths": {
+        "RNA": "RNA/BP_zenodo_Skin.h5",
+        "AUCell": "AUCell/BP_zenodo_Skin.h5",
+        "UCell": "UCell/BP_zenodo_Skin.h5",
+        "singscore": "singscore/BP_zenodo_Skin.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 12,
+      "disease_name": "Discoid Lupus Erythematosus",
+      "abbreviation": "DLE",
+      "dataset_id": "GSE179633",
+      "tissue": "Skin_Dermal",
+      "figure_path": "DLE/GSE179633/Skin_Dermal",
+      "h5_paths": {
+        "RNA": "RNA/DLE_GSE179633_Skin_Dermal.h5",
+        "AUCell": "AUCell/DLE_GSE179633_Skin_Dermal.h5",
+        "UCell": "UCell/DLE_GSE179633_Skin_Dermal.h5",
+        "singscore": "singscore/DLE_GSE179633_Skin_Dermal.h5"
+      },
+      "catalog_aliases": [
+        {
+          "abbreviation": "DLE",
+          "dataset_id": "unlisted",
+          "tissue": "Dermal"
+        }
+      ],
+      "mapping_note": "The legacy catalog has no accession. The supplied sample table explicitly identifies the unique DLE tissue asset; no catalog metadata is overwritten."
+    },
+    {
+      "source_row": 13,
+      "disease_name": "Discoid Lupus Erythematosus",
+      "abbreviation": "DLE",
+      "dataset_id": "GSE179633",
+      "tissue": "Skin_Epidermal",
+      "figure_path": "DLE/GSE179633/Skin_Epidermal",
+      "h5_paths": {
+        "RNA": "RNA/DLE_GSE179633_Skin_Epidermal.h5",
+        "AUCell": "AUCell/DLE_GSE179633_Skin_Epidermal.h5",
+        "UCell": "UCell/DLE_GSE179633_Skin_Epidermal.h5",
+        "singscore": "singscore/DLE_GSE179633_Skin_Epidermal.h5"
+      },
+      "catalog_aliases": [
+        {
+          "abbreviation": "DLE",
+          "dataset_id": "unlisted",
+          "tissue": "Epidermal"
+        }
+      ],
+      "mapping_note": "The legacy catalog has no accession. The supplied sample table explicitly identifies the unique DLE tissue asset; no catalog metadata is overwritten."
+    },
+    {
+      "source_row": 14,
+      "disease_name": "Gout",
+      "abbreviation": "Gout",
+      "dataset_id": "GSE211783",
+      "tissue": "PBMC",
+      "figure_path": "Gout/GSE211783/PBMC",
+      "h5_paths": {
+        "RNA": "RNA/Gout_GSE211783_PBMC.h5",
+        "AUCell": "AUCell/Gout_GSE211783_PBMC.h5",
+        "UCell": "UCell/Gout_GSE211783_PBMC.h5",
+        "singscore": "singscore/Gout_GSE211783_PBMC.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 15,
+      "disease_name": "Gout",
+      "abbreviation": "Gout",
+      "dataset_id": "GSE217561",
+      "tissue": "PBMC",
+      "figure_path": "Gout/GSE217561/PBMC",
+      "h5_paths": {
+        "RNA": "RNA/Gout_GSE217561_PBMC.h5",
+        "AUCell": "AUCell/Gout_GSE217561_PBMC.h5",
+        "UCell": "UCell/Gout_GSE217561_PBMC.h5",
+        "singscore": "singscore/Gout_GSE217561_PBMC.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 16,
+      "disease_name": "Gout",
+      "abbreviation": "Gout",
+      "dataset_id": "PRJNA861849",
+      "tissue": "PBMC",
+      "figure_path": "Gout/PRJNA861849/PBMC",
+      "h5_paths": {
+        "RNA": "RNA/Gout_PRJNA861849_PBMC.h5",
+        "AUCell": "AUCell/Gout_PRJNA861849_PBMC.h5",
+        "UCell": "UCell/Gout_PRJNA861849_PBMC.h5",
+        "singscore": "singscore/Gout_PRJNA861849_PBMC.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 17,
+      "disease_name": "Gout",
+      "abbreviation": "Gout",
+      "dataset_id": "PRJNA861849",
+      "tissue": "SFMC",
+      "figure_path": "Gout/PRJNA861849/SFMC",
+      "h5_paths": {
+        "RNA": "RNA/Gout_PRJNA861849_SFMC.h5",
+        "AUCell": "AUCell/Gout_PRJNA861849_SFMC.h5",
+        "UCell": "UCell/Gout_PRJNA861849_SFMC.h5",
+        "singscore": "singscore/Gout_PRJNA861849_SFMC.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 18,
+      "disease_name": "Crohns Disease",
+      "abbreviation": "CD",
+      "dataset_id": "HRA000072",
+      "tissue": "Colon",
+      "figure_path": "IBD_Crohns_Disease/HRA000072/colon",
+      "h5_paths": {
+        "RNA": "revisions/2026-09-09/RNA/IBD_CD_HRA000072_colon.h5",
+        "AUCell": "AUCell/IBD_CD_HRA000072_colon.h5",
+        "UCell": "UCell/IBD_CD_HRA000072_colon.h5",
+        "singscore": "singscore/IBD_CD_HRA000072_colon.h5"
+      },
+      "catalog_aliases": [],
+      "rna_download_correction": {
+        "date": "2026-09-09",
+        "reason": "Previous RNA registration pointed to a 358-pathway score matrix.",
+        "source": "2025.04.25.rectify RNA archive, same basename",
+        "verified_cells": 14878,
+        "verified_genes": 16105,
+        "cell_barcode_order_matches_previous_asset": true,
+        "sha256": "ed8fe5c8ca7576632a7f2f70223ef809e7f3f09743cd26d79b0badec67d8a007"
+      }
+    },
+    {
+      "source_row": 19,
+      "disease_name": "Colitis Inflamed",
+      "abbreviation": "CI",
+      "dataset_id": "HRA000072",
+      "tissue": "Colon",
+      "figure_path": "IBD_Colitis_inflamed/HRA000072/colon",
+      "h5_paths": {
+        "RNA": "revisions/2026-09-09/RNA/IBD_CI_HRA000072_colon.h5",
+        "AUCell": "AUCell/IBD_CI_HRA000072_colon.h5",
+        "UCell": "UCell/IBD_CI_HRA000072_colon.h5",
+        "singscore": "singscore/IBD_CI_HRA000072_colon.h5"
+      },
+      "catalog_aliases": [],
+      "rna_download_correction": {
+        "date": "2026-09-09",
+        "reason": "Previous RNA registration pointed to a 358-pathway score matrix.",
+        "source": "2025.04.25.rectify RNA archive, same basename",
+        "verified_cells": 39033,
+        "verified_genes": 16105,
+        "cell_barcode_order_matches_previous_asset": true,
+        "sha256": "be1f309fd6c31c5bab41f068724f66e86d17517f177e1ca1abc1346ac6477192"
+      }
+    },
+    {
+      "source_row": 20,
+      "disease_name": "Crohns Disease",
+      "abbreviation": "CD",
+      "dataset_id": "E-MTAB-8901",
+      "tissue": "Ileum",
+      "figure_path": "IBD_Crohns_Disease/E-MTAB-8901/ileum",
+      "h5_paths": {
+        "RNA": "RNA/IBD_E-MTAB-8901_ileum.h5",
+        "AUCell": "AUCell/IBD_E-MTAB-8901_ileum.h5",
+        "UCell": "UCell/IBD_E-MTAB-8901_ileum.h5",
+        "singscore": "singscore/IBD_E-MTAB-8901_ileum.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 21,
+      "disease_name": "Colitis Inflamed",
+      "abbreviation": "CI",
+      "dataset_id": "GSE121380",
+      "tissue": "Colon",
+      "figure_path": "IBD_Colitis_inflamed/GSE121380/colon",
+      "h5_paths": {
+        "RNA": "RNA/IBD_GSE121380_colon.h5",
+        "AUCell": "AUCell/IBD_GSE121380_colon.h5",
+        "UCell": "UCell/IBD_GSE121380_colon.h5",
+        "singscore": "singscore/IBD_GSE121380_colon.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 22,
+      "disease_name": "Ulcerative Colitis",
+      "abbreviation": "UC",
+      "dataset_id": "GSE125527",
+      "tissue": "PBMC",
+      "figure_path": "IBD_Ulcerative_Colitis/GSE125527/PBMC",
+      "h5_paths": {
+        "RNA": "RNA/IBD_GSE125527_PBMC.h5",
+        "AUCell": "AUCell/IBD_GSE125527_PBMC.h5",
+        "UCell": "UCell/IBD_GSE125527_PBMC.h5",
+        "singscore": "singscore/IBD_GSE125527_PBMC.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 23,
+      "disease_name": "Ulcerative Colitis",
+      "abbreviation": "UC",
+      "dataset_id": "GSE125527",
+      "tissue": "Rectum",
+      "figure_path": "IBD_Ulcerative_Colitis/GSE125527/rectum",
+      "h5_paths": {
+        "RNA": "RNA/IBD_GSE125527_rectum.h5",
+        "AUCell": "AUCell/IBD_GSE125527_rectum.h5",
+        "UCell": "UCell/IBD_GSE125527_rectum.h5",
+        "singscore": "singscore/IBD_GSE125527_rectum.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 24,
+      "disease_name": "Crohns Disease",
+      "abbreviation": "CD",
+      "dataset_id": "GSE134809",
+      "tissue": "Ileum",
+      "figure_path": "IBD_Crohns_Disease/GSE134809/ileum",
+      "h5_paths": {
+        "RNA": "RNA/IBD_GSE134809_ileum.h5",
+        "AUCell": "AUCell/IBD_GSE134809_ileum.h5",
+        "UCell": "UCell/IBD_GSE134809_ileum.h5",
+        "singscore": "singscore/IBD_GSE134809_ileum.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 25,
+      "disease_name": "Crohns Disease",
+      "abbreviation": "CD",
+      "dataset_id": "GSE134809",
+      "tissue": "PBMC",
+      "figure_path": "IBD_Crohns_Disease/GSE134809/PBMC",
+      "h5_paths": {
+        "RNA": "RNA/IBD_GSE134809_PBMC.h5",
+        "AUCell": "AUCell/IBD_GSE134809_PBMC.h5",
+        "UCell": "UCell/IBD_GSE134809_PBMC.h5",
+        "singscore": "singscore/IBD_GSE134809_PBMC.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 26,
+      "disease_name": "Ulcerative Colitis",
+      "abbreviation": "UC",
+      "dataset_id": "SCP259",
+      "tissue": "Colon",
+      "figure_path": "IBD_Ulcerative_Colitis/SCP259/colon",
+      "h5_paths": {
+        "RNA": "RNA/IBD_SCP259_colon.h5",
+        "AUCell": "AUCell/IBD_SCP259_colon.h5",
+        "UCell": "UCell/IBD_SCP259_colon.h5",
+        "singscore": "singscore/IBD_SCP259_colon.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 27,
+      "disease_name": "Ulcerative Colitis",
+      "abbreviation": "UC",
+      "dataset_id": "HRA000072",
+      "tissue": "Colon",
+      "figure_path": "IBD_Ulcerative_Colitis/HRA000072/colon",
+      "h5_paths": {
+        "RNA": "revisions/2026-09-09/RNA/IBD_UC_HRA000072_colon.h5",
+        "AUCell": "AUCell/IBD_UC_HRA000072_colon.h5",
+        "UCell": "UCell/IBD_UC_HRA000072_colon.h5",
+        "singscore": "singscore/IBD_UC_HRA000072_colon.h5"
+      },
+      "catalog_aliases": [],
+      "rna_download_correction": {
+        "date": "2026-09-09",
+        "reason": "Previous RNA registration pointed to a 358-pathway score matrix.",
+        "source": "2025.04.25.rectify RNA archive, same basename",
+        "verified_cells": 15032,
+        "verified_genes": 16105,
+        "cell_barcode_order_matches_previous_asset": true,
+        "sha256": "3a466ea0764498bbdcfeb9649cb23f303096b7c99c42a22ae6d27fd5b28881a1"
+      }
+    },
+    {
+      "source_row": 28,
+      "disease_name": "Juvenile Idiopathic Arthritis",
+      "abbreviation": "JIA",
+      "dataset_id": "GSE205095",
+      "tissue": "PBMC",
+      "figure_path": "JIA/GSE205095/PBMC",
+      "h5_paths": {
+        "RNA": "RNA/JIA_GSE205095_PBMC.h5",
+        "AUCell": "AUCell/JIA_GSE205095_PBMC.h5",
+        "UCell": "UCell/JIA_GSE205095_PBMC.h5",
+        "singscore": "singscore/JIA_GSE205095_PBMC.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 29,
+      "disease_name": "Localized Scleroderma",
+      "abbreviation": "LS",
+      "dataset_id": "GSE160536",
+      "tissue": "Skin",
+      "figure_path": "Localized_scleroderma/GSE160536/Skin",
+      "h5_paths": {
+        "RNA": "RNA/LS_GSE160536_Skin.h5",
+        "AUCell": "AUCell/LS_GSE160536_Skin.h5",
+        "UCell": "UCell/LS_GSE160536_Skin.h5",
+        "singscore": "singscore/LS_GSE160536_Skin.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 30,
+      "disease_name": "Lyme Disease",
+      "abbreviation": "Lyme",
+      "dataset_id": "GSE166796",
+      "tissue": "Skin",
+      "figure_path": "Lyme/GSE166796/Skin",
+      "h5_paths": {
+        "RNA": "RNA/Lyme_GSE166796_Skin.h5",
+        "AUCell": "AUCell/Lyme_GSE166796_Skin.h5",
+        "UCell": "UCell/Lyme_GSE166796_Skin.h5",
+        "singscore": "singscore/Lyme_GSE166796_Skin.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 31,
+      "disease_name": "Prurigo Nodularis",
+      "abbreviation": "PN",
+      "dataset_id": "GSE233280",
+      "tissue": "Skin",
+      "figure_path": "prurigo_nodularis/GSE233280/Skin",
+      "h5_paths": {
+        "RNA": "RNA/PN_GSE233280_Skin.h5",
+        "AUCell": "AUCell/PN_GSE233280_Skin.h5",
+        "UCell": "UCell/PN_GSE233280_Skin.h5",
+        "singscore": "singscore/PN_GSE233280_Skin.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 32,
+      "disease_name": "Prurigo Nodularis",
+      "abbreviation": "PN",
+      "dataset_id": "GSE222840",
+      "tissue": "SkinBiopsy",
+      "figure_path": "Prurigo_Nodularis/GSE222840/SkinBiopsy",
+      "h5_paths": {
+        "RNA": "RNA/Prurigo_Nodularis_GSE222840_SkinBiopsy.h5",
+        "AUCell": "AUCell/Prurigo_Nodularis_GSE222840_SkinBiopsy.h5",
+        "UCell": "UCell/Prurigo_Nodularis_GSE222840_SkinBiopsy.h5",
+        "singscore": "singscore/Prurigo_Nodularis_GSE222840_SkinBiopsy.h5"
+      },
+      "catalog_aliases": [],
+      "asset_dataset_id": "GSE222840",
+      "mapping_note": "Source spreadsheet Dataset says GSE233280, but its Fig.Path and all four H5 paths consistently say GSE222840. Asset matching uses the path accession and retains the source discrepancy for review."
+    },
+    {
+      "source_row": 33,
+      "disease_name": "Psoriasis",
+      "abbreviation": "PSO",
+      "dataset_id": "GSE151177",
+      "tissue": "Skin",
+      "figure_path": "PSO/GSE151177/Skin",
+      "h5_paths": {
+        "RNA": "RNA/PSO_GSE151177_Skin.h5",
+        "AUCell": "AUCell/PSO_GSE151177_Skin.h5",
+        "UCell": "UCell/PSO_GSE151177_Skin.h5",
+        "singscore": "singscore/PSO_GSE151177_Skin.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 34,
+      "disease_name": "Psoriasis",
+      "abbreviation": "PSO",
+      "dataset_id": "GSE162183",
+      "tissue": "Skin",
+      "figure_path": "PSO/GSE162183/Skin",
+      "h5_paths": {
+        "RNA": "RNA/PSO_GSE162183_Skin.h5",
+        "AUCell": "AUCell/PSO_GSE162183_Skin.h5",
+        "UCell": "UCell/PSO_GSE162183_Skin.h5",
+        "singscore": "singscore/PSO_GSE162183_Skin.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 35,
+      "disease_name": "Psoriasis",
+      "abbreviation": "PSO",
+      "dataset_id": "GSE220116",
+      "tissue": "Skin",
+      "figure_path": "PSO/GSE220116/Skin",
+      "h5_paths": {
+        "RNA": "RNA/PSO_GSE220116_Skin.h5",
+        "AUCell": "AUCell/PSO_GSE220116_Skin.h5",
+        "UCell": "UCell/PSO_GSE220116_Skin.h5",
+        "singscore": "singscore/PSO_GSE220116_Skin.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 36,
+      "disease_name": "Rheumatoid Arthritis",
+      "abbreviation": "RA",
+      "dataset_id": "GSE159117",
+      "tissue": "PBMC",
+      "figure_path": "RA/GSE159117/PBMC",
+      "h5_paths": {
+        "RNA": "RNA/RA_GSE159117_PBMC.h5",
+        "AUCell": "AUCell/RA_GSE159117_PBMC.h5",
+        "UCell": "UCell/RA_GSE159117_PBMC.h5",
+        "singscore": "singscore/RA_GSE159117_PBMC.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 37,
+      "disease_name": "Rheumatoid Arthritis",
+      "abbreviation": "RA",
+      "dataset_id": "syn26710600",
+      "tissue": "Synovial",
+      "figure_path": "RA/syn26710600/synovial",
+      "h5_paths": {
+        "RNA": "RNA/RA_syn26710600_synovial.h5",
+        "AUCell": "AUCell/RA_syn26710600_synovial.h5",
+        "UCell": "UCell/RA_syn26710600_synovial.h5",
+        "singscore": "singscore/RA_syn26710600_synovial.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 38,
+      "disease_name": "Systemic Lupus Erythematosus",
+      "abbreviation": "SLE",
+      "dataset_id": "GSE135779",
+      "tissue": "PBMC",
+      "figure_path": "SLE/GSE135779/PBMC",
+      "h5_paths": {
+        "RNA": "RNA/SLE_GSE135779_PBMC.h5",
+        "AUCell": "AUCell/SLE_GSE135779_PBMC.h5",
+        "UCell": "UCell/SLE_GSE135779_PBMC.h5",
+        "singscore": "singscore/SLE_GSE135779_PBMC.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 39,
+      "disease_name": "Systemic Lupus Erythematosus",
+      "abbreviation": "SLE",
+      "dataset_id": "GSE174188",
+      "tissue": "PBMC",
+      "figure_path": "SLE/GSE174188/PBMC",
+      "h5_paths": {
+        "RNA": "RNA/SLE_GSE174188_PBMC.h5",
+        "AUCell": "AUCell/SLE_GSE174188_PBMC.h5",
+        "UCell": "UCell/SLE_GSE174188_PBMC.h5",
+        "singscore": "singscore/SLE_GSE174188_PBMC.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 40,
+      "disease_name": "Systemic Lupus Erythematosus",
+      "abbreviation": "SLE",
+      "dataset_id": "GSE179633",
+      "tissue": "Skin_Dermal",
+      "figure_path": "SLE/GSE179633/Skin_Dermal",
+      "h5_paths": {
+        "RNA": "RNA/SLE_GSE179633_Skin_Dermal.h5",
+        "AUCell": "AUCell/SLE_GSE179633_Skin_Dermal.h5",
+        "UCell": "UCell/SLE_GSE179633_Skin_Dermal.h5",
+        "singscore": "singscore/SLE_GSE179633_Skin_Dermal.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 41,
+      "disease_name": "Systemic Lupus Erythematosus",
+      "abbreviation": "SLE",
+      "dataset_id": "GSE179633",
+      "tissue": "Skin_Epidermal",
+      "figure_path": "SLE/GSE179633/Skin_Epidermal",
+      "h5_paths": {
+        "RNA": "RNA/SLE_GSE179633_Skin_Epidermal.h5",
+        "AUCell": "AUCell/SLE_GSE179633_Skin_Epidermal.h5",
+        "UCell": "UCell/SLE_GSE179633_Skin_Epidermal.h5",
+        "singscore": "singscore/SLE_GSE179633_Skin_Epidermal.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 42,
+      "disease_name": "Primary Sjögren's Syndrome",
+      "abbreviation": "pSS",
+      "dataset_id": "GSE157278",
+      "tissue": "PBMC",
+      "figure_path": "SS/GSE157278/PBMC",
+      "h5_paths": {
+        "RNA": "RNA/SS_GSE157278_PBMC.h5",
+        "AUCell": "AUCell/SS_GSE157278_PBMC.h5",
+        "UCell": "UCell/SS_GSE157278_PBMC.h5",
+        "singscore": "singscore/SS_GSE157278_PBMC.h5"
+      },
+      "catalog_aliases": [],
+      "figure_path_aliases": [
+        "pSS/GSE157278/PBMC"
+      ],
+      "mapping_note": "The supplied sample table and original PNGs use SS/GSE157278/PBMC. Existing rendered PDF records use pSS/GSE157278/PBMC. Both complete paths were verified against the image table; the alias preserves the same accession and tissue."
+    },
+    {
+      "source_row": 43,
+      "disease_name": "Systemic Sclerosis",
+      "abbreviation": "SSs",
+      "dataset_id": "GSE128169",
+      "tissue": "Lung",
+      "figure_path": "systemic_sclerosis/GSE128169/Lung",
+      "h5_paths": {
+        "RNA": "RNA/SSs_GSE128169_Lung.h5",
+        "AUCell": "AUCell/SSs_GSE128169_Lung.h5",
+        "UCell": "UCell/SSs_GSE128169_Lung.h5",
+        "singscore": "singscore/SSs_GSE128169_Lung.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 44,
+      "disease_name": "Systemic Sclerosis",
+      "abbreviation": "SSs",
+      "dataset_id": "GSE138669",
+      "tissue": "Skin",
+      "figure_path": "systemic_sclerosis/GSE138669/Skin",
+      "h5_paths": {
+        "RNA": "RNA/SSs_GSE138669_Skin.h5",
+        "AUCell": "AUCell/SSs_GSE138669_Skin.h5",
+        "UCell": "UCell/SSs_GSE138669_Skin.h5",
+        "singscore": "singscore/SSs_GSE138669_Skin.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 45,
+      "disease_name": "Systemic Sclerosis",
+      "abbreviation": "SSs",
+      "dataset_id": "GSE212109",
+      "tissue": "Lung",
+      "figure_path": "systemic_sclerosis/GSE212109/Lung",
+      "h5_paths": {
+        "RNA": "RNA/SSs_GSE212109_Lung.h5",
+        "AUCell": "AUCell/SSs_GSE212109_Lung.h5",
+        "UCell": "UCell/SSs_GSE212109_Lung.h5",
+        "singscore": "singscore/SSs_GSE212109_Lung.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 46,
+      "disease_name": "Vasculitis",
+      "abbreviation": "SV",
+      "dataset_id": "GSE198616",
+      "tissue": "PBMC",
+      "figure_path": "SV/GSE198616/PBMC",
+      "h5_paths": {
+        "RNA": "RNA/SV_GSE198616_PBMC_RNA.h5",
+        "AUCell": "AUCell/SV_GSE198616_PBMC_AUCell.h5",
+        "UCell": "UCell/SV_GSE198616_PBMC_UCell.h5",
+        "singscore": "singscore/SV_GSE198616_PBMC_singscore.h5"
+      },
+      "catalog_aliases": [],
+      "display_name": "Behçet's Disease",
+      "canonical_abbreviation": "BD",
+      "canonical_disease_name": "Behçet's Disease",
+      "search_abbreviations": [
+        "SV"
+      ],
+      "classification_note": "GSE198616 is the systemic Behçet disease PBMC cohort. The separate BD(Uveitis) aqueous-humour cohort is excluded from BD exact filtering; SV remains a documented legacy search alias."
+    },
+    {
+      "source_row": 47,
+      "disease_name": "Type 1 Diabetes Mellitus",
+      "abbreviation": "T1DM",
+      "dataset_id": "GSE221297",
+      "tissue": "PBMC",
+      "figure_path": "type_1_diabetes_mellitus/GSE221297/PBMC",
+      "h5_paths": {
+        "RNA": "RNA/T1DM_GSE221297_PBMC.h5",
+        "AUCell": "AUCell/T1DM_GSE221297_PBMC.h5",
+        "UCell": "UCell/T1DM_GSE221297_PBMC.h5",
+        "singscore": "singscore/T1DM_GSE221297_PBMC.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 48,
+      "disease_name": "Type 1 Diabetes Mellitus",
+      "abbreviation": "T1DM",
+      "dataset_id": "syn53641849",
+      "tissue": "PBMC",
+      "figure_path": "type_1_diabetes_mellitus/syn53641849/PBMC",
+      "h5_paths": {
+        "RNA": "RNA/T1DM_syn53641849_PBMC.h5",
+        "AUCell": "AUCell/T1DM_syn53641849_PBMC.h5",
+        "UCell": "UCell/T1DM_syn53641849_PBMC.h5",
+        "singscore": "singscore/T1DM_syn53641849_PBMC.h5"
+      },
+      "catalog_aliases": []
+    },
+    {
+      "source_row": 49,
+      "disease_name": "Vogt Koyanag Harada Disease(Uveitis)",
+      "abbreviation": "VKHD(Uveitis)",
+      "dataset_id": "https://cstr.cn/31253.11.sciencedb.02341",
+      "tissue": "Aqueous Humour",
+      "figure_path": "Vogt_Koyanag_Harada_disease/scidb/aqueous_humour",
+      "h5_paths": {
+        "RNA": "RNA/VKHD_scidb_aqueous_humour.h5",
+        "AUCell": "AUCell/VKHD_scidb_aqueous_humour.h5",
+        "UCell": "UCell/VKHD_scidb_aqueous_humour.h5",
+        "singscore": "singscore/VKHD_scidb_aqueous_humour.h5"
+      },
+      "catalog_aliases": [
+        {
+          "abbreviation": "AIR",
+          "disease_full_name": "Vogt_Koyanag_Harada_disease",
+          "dataset_id": "bAF7fe",
+          "tissue": "眼前房液（房水）"
+        }
+      ],
+      "mapping_note": "Legacy AIR records are distinguished by the explicit disease_full_name and tissue, matching separate disease paths in the supplied sample table.",
+      "display_name": "Vogt–Koyanagi–Harada Disease (Uveitis)"
+    }
+  ],
+  "path_format": "portable-relative-v1"
+}

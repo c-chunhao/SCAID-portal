@@ -1,0 +1,21 @@
+"""Isolated API test configuration: never imports production credentials."""
+SECRET_KEY = 'isolated-scaid-api-test-key'
+DEBUG = False
+ALLOWED_HOSTS = ['testserver', 'localhost']
+INSTALLED_APPS = ['django.contrib.auth', 'django.contrib.contenttypes', 'rest_framework', 'tisch_api']
+DATABASES = {'default': {'ENGINE': 'django.db.backends.sqlite3', 'NAME': ':memory:'}}
+MIGRATION_MODULES = {'tisch_api': None}
+ROOT_URLCONF = 'tisch_api.test_urls'
+MIDDLEWARE = []
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+USE_TZ = True
+TIME_ZONE = 'UTC'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = '/tmp/scaid-isolated-test-media'
+H5_DOWNLOAD_ROOTS = []
+H5_DOWNLOAD_ACCEL_PREFIX = ''
+REST_FRAMEWORK = {'DEFAULT_AUTHENTICATION_CLASSES': []}
+SCAID_FIGURE_ROOT = '/tmp/scaid-isolated-test-figures'
+THUMBNAIL_ROOT = '/tmp/scaid-isolated-test-thumbs'
+THUMBNAIL_ACCEL_PREFIX = ''
+THUMBNAIL_MAX_SIDE = 900

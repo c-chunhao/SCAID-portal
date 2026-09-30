@@ -1,0 +1,11 @@
+# Versions observed in the running SCAID environment on 2026-09-30.
+# Web runtime and synthetic fixture support; no scientific pipeline claim.
+Django==5.1.7
+djangorestframework==3.15.2
+django-csp==4.0
+asgiref==3.11.1
+sqlparse==0.5.5
+pillow==11.1.0
+PyMuPDF==1.25.4
+h5py==3.13.0
+gunicorn==23.0.0

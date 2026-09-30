@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+*secrets*.json
+*.sqlite3
+*.sql
+*.log
+*.zip
+.venv/
+venv/
+node_modules/
+dist/
+__pycache__/
+*.pyc
+.DS_Store
+backend/media/
+backend/staticfiles/

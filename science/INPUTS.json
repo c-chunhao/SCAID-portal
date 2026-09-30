@@ -1,0 +1,57 @@
+{
+  "author_annotation_concordance.py": [
+    "SCAID_SLE_RELEASE_H5",
+    "SCAID_SLE_SOURCE_METADATA"
+  ],
+  "compose_recomputed_figure3.py": [
+    "SCAID_ORIGINAL_FIGURE3_PDF",
+    "SCAID_ORIGINAL_MARKER_PANEL_DIR"
+  ],
+  "extract_t1d_author_metadata.R": [
+    "SCAID_SCIENCE_TABLES",
+    "SCAID_T1D_SOURCE_RDS"
+  ],
+  "combine_source_reference_checks.py": [
+    "SCAID_T1D_RELEASE_H5"
+  ],
+  "audit_pss_full_retained_counts.py": [
+    "SCAID_PSS_RELEASE_H5",
+    "SCAID_PSS_SOURCE_DIR"
+  ],
+  "extract_sle_pseudobulk.py": [
+    "SCAID_SLE_SOURCE_DIR"
+  ],
+  "t1d_author_annotation_concordance.py": [
+    "SCAID_T1D_RELEASE_H5",
+    "SCAID_T1D_SOURCE_RDS"
+  ],
+  "source_donor_composition_and_IFN.py": [
+    "SCAID_SLE_SOURCE_METADATA"
+  ],
+  "build_science_tables.py": [],
+  "recalculate_valid_gene_BH.py": [],
+  "validate_science_delivery.py": [],
+  "recompute_atlas_composition.py": [
+    "SCAID_SOURCE_AUDIT_DIR"
+  ],
+  "fit_sle_donor_models.py": [],
+  "extract_release_metadata.R": [
+    "SCAID_RELEASE_METADATA_RDS",
+    "SCAID_SCIENCE_TABLES"
+  ],
+  "build_verified_donor_figure5.py": [],
+  "reconcile_bd_gene_names.py": [
+    "SCAID_BD_RELEASE_H5",
+    "SCAID_BD_SOURCE_FEATURE_FILE",
+    "SCAID_HISTORICAL_QC_AUDIT_DIR"
+  ],
+  "audit_bd_full_retained_counts.py": [
+    "SCAID_BD_RELEASE_H5",
+    "SCAID_BD_SOURCE_DIR"
+  ],
+  "extract_integrated_metadata.R": [
+    "SCAID_BPLASMA_INTEGRATED_RDS",
+    "SCAID_SCIENCE_TABLES",
+    "SCAID_TNK_INTEGRATED_RDS"
+  ]
+}
