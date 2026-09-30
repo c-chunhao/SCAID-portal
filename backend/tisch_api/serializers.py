@@ -78,6 +78,18 @@ def manifest_dataset_label(obj):
     return entry['dataset_id'] if entry else obj.dataset_id
 
 
+def manifest_disease_name(obj):
+    entry = manifest_entry(obj)
+    return entry.get('canonical_disease_name') if entry and entry.get('canonical_disease_name') else obj.disease_name
+
+
+def manifest_disease_full_name(obj):
+    entry = manifest_entry(obj)
+    if entry and entry.get('canonical_disease_name'):
+        return entry['canonical_disease_name']
+    return obj.disease_full_name or (entry['disease_name'] if entry else None)
+
+
 class CellDataSerializer(serializers.ModelSerializer):
     disease_label = serializers.SerializerMethodField()
     tissue_label = serializers.SerializerMethodField()
@@ -96,14 +108,10 @@ class CellDataSerializer(serializers.ModelSerializer):
     disease_full_name = serializers.SerializerMethodField()
 
     def get_disease_name(self, obj):
-        entry = manifest_entry(obj)
-        return entry.get('canonical_disease_name') if entry and entry.get('canonical_disease_name') else obj.disease_name
+        return manifest_disease_name(obj)
 
     def get_disease_full_name(self, obj):
-        entry = manifest_entry(obj)
-        if entry and entry.get('canonical_disease_name'):
-            return entry['canonical_disease_name']
-        return obj.disease_full_name or (entry["disease_name"] if entry else None)
+        return manifest_disease_full_name(obj)
 
     abbreviation = serializers.SerializerMethodField()
     asset_status = serializers.SerializerMethodField()
@@ -146,6 +154,14 @@ from collections import defaultdict
 class CellDataTreeSerializer(serializers.ModelSerializer):
     abbreviation = serializers.SerializerMethodField()
     disease_label = serializers.SerializerMethodField()
+    disease_name = serializers.SerializerMethodField()
+    disease_full_name = serializers.SerializerMethodField()
+
+    def get_disease_name(self, obj):
+        return manifest_disease_name(obj)
+
+    def get_disease_full_name(self, obj):
+        return manifest_disease_full_name(obj)
 
     def get_abbreviation(self, obj):
         return effective_abbreviation(obj)

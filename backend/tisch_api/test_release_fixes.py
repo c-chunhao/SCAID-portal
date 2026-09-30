@@ -56,6 +56,25 @@ class CanonicalConditionTests(TestCase):
         self.assertEqual([row['id'] for row in rows], [self.uveitis.pk])
         self.assertEqual(rows[0]['abbreviation'], 'BD(Uveitis)')
 
+    def test_tree_names_match_flat_canonical_names_without_rewriting_history(self):
+        for record, legacy in [(self.psa[0], '强直性脊柱炎'), (self.bd, '血管炎')]:
+            record.disease_name = legacy
+            record.disease_full_name = legacy
+            record.save(update_fields=['disease_name', 'disease_full_name'])
+        tree = {row['abbreviation']: row for row in self.client.get('/api/cell-data/').json()['data']}
+        for record, code, expected, legacy in [
+            (self.psa[0], 'PsA', 'Psoriatic Arthritis', '强直性脊柱炎'),
+            (self.bd, 'BD', "Behçet's Disease", '血管炎'),
+        ]:
+            flat = self.client.get('/api/cell-data-all/', {'abbreviation': code}).json()[0]
+            for field in ('disease_name', 'disease_full_name', 'disease_label'):
+                self.assertEqual(tree[code][field], expected)
+                self.assertEqual(tree[code][field], flat[field])
+            record.refresh_from_db()
+            self.assertEqual(record.disease_name, legacy)
+            self.assertEqual(record.disease_full_name, legacy)
+        self.assertEqual([row['dataset_id'] for row in tree['AS']['children']], ['GSE216883'])
+
     def test_canonical_gene_scope_uses_exact_original_storage_folder(self):
         for code, dataset, tissue in [('AS', 'E-MTAB-8207', 'PBMC'), ('AS', 'GSE216883', 'PBMC_SFMC'), ('SV', 'GSE198616', 'PBMC')]:
             path = f'/missing/{code}/{dataset}/{tissue}/GeneUmap/Umap_CD3D.png'

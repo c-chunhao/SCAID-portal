@@ -1,6 +1,6 @@
 import os
 """Read-only, bounded, sparse full retained-BD count audit against four 10x sources.
-Replays archived CreateSeurat min.cells=3 gene inclusion, harmonizes date-corrupted
+Replays archived CreateSeurat min.features=200 before min.cells=3 inclusion, harmonizes date-corrupted
 feature symbols through original stable Ensembl IDs. Does not repeat QC or doublets.
 """
 from pathlib import Path

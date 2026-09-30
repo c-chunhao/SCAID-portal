@@ -245,9 +245,9 @@
     },
     {
       "file": "backend/tisch_api/serializers.py",
-      "sha256": "902798262c1ea68c45b918031d96eb5dc6a35557893dbb810abe3b5e4858c1a6",
+      "sha256": "969fb2d8f88e45cd9a72b4f9e40671d6e8cfad83c8a446df40d0266dbfb093ba",
       "origin": "current-backend:tisch_api/serializers.py",
-      "source_sha256": "902798262c1ea68c45b918031d96eb5dc6a35557893dbb810abe3b5e4858c1a6",
+      "source_sha256": "969fb2d8f88e45cd9a72b4f9e40671d6e8cfad83c8a446df40d0266dbfb093ba",
       "mode": "copied-current-source"
     },
     {
@@ -273,9 +273,9 @@
     },
     {
       "file": "backend/tisch_api/test_release_fixes.py",
-      "sha256": "f0a664096a44e8e019572d9fbe19ecc97e392ad1109fc0e17636a15f80dfb123",
+      "sha256": "5155cdfce54fdf1c02dc6976230e676e8d326791247d488252bf153ee809f38c",
       "origin": "current-backend:tisch_api/test_release_fixes.py",
-      "source_sha256": "f0a664096a44e8e019572d9fbe19ecc97e392ad1109fc0e17636a15f80dfb123",
+      "source_sha256": "5155cdfce54fdf1c02dc6976230e676e8d326791247d488252bf153ee809f38c",
       "mode": "copied-current-source"
     },
     {
@@ -937,7 +937,7 @@
     },
     {
       "file": "science/figures/FigureS12_source_reference.pdf",
-      "sha256": "96db50b5dfbcec47b2efbdc0d9e75a84b1a0fec1d1321ddba8c510fe3b2cb689",
+      "sha256": "48dcbc048a7133410b89e0fb659a709e3573a69e2d7856f034b5637bf2bb6f81",
       "origin": "release-specific documentation/aggregate evidence",
       "mode": "generated-or-added-for-release"
     },
@@ -961,7 +961,7 @@
     },
     {
       "file": "science/scripts/audit_bd_full_retained_counts.py",
-      "sha256": "ab9dc393f21158c5cd8441339ab78b183d2c34a54d467c29f174d5062683fde9",
+      "sha256": "0b321630902e1c52d75e85c802e98fa1130a1b0ba973814f51c9fb385e66b5b7",
       "origin": "release-specific documentation/aggregate evidence",
       "mode": "generated-or-added-for-release"
     },
@@ -979,7 +979,7 @@
     },
     {
       "file": "science/scripts/build_science_tables.py",
-      "sha256": "217fba89021aeaab814b51373cc9bb123a88f889f8d76c192bd7f5c3ac36bb5e",
+      "sha256": "2a191edf0a32578d0029bb1adb03a442fd1537bceccf75b7a8320773b528b1ac",
       "origin": "release-specific documentation/aggregate evidence",
       "mode": "generated-or-added-for-release"
     },
@@ -1063,7 +1063,7 @@
     },
     {
       "file": "science/scripts/validate_science_delivery.py",
-      "sha256": "dc29d68fbc8df3e782a0fdb957a1ee33b17653e61190f05843a68c228423b2c3",
+      "sha256": "1f7f51859d957d305e98c57b4977da9791d7d18a8ae51fdf08959452268fe267",
       "origin": "release-specific documentation/aggregate evidence",
       "mode": "generated-or-added-for-release"
     },
