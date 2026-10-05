@@ -1,0 +1,93 @@
+{
+  "panels": {
+    "T_core": [
+      "TRAC",
+      "CD3D"
+    ],
+    "NK_core": [
+      "NKG7",
+      "GNLY",
+      "KLRD1"
+    ],
+    "CD8_core": [
+      "CD8A",
+      "CD8B"
+    ],
+    "Naive_memory": [
+      "CCR7",
+      "IL7R"
+    ],
+    "Treg": [
+      "FOXP3",
+      "IL2RA"
+    ],
+    "Th1": [
+      "TBX21"
+    ],
+    "Th17": [
+      "RORC",
+      "KLRB1"
+    ],
+    "Tfh": [
+      "CXCR5",
+      "PDCD1"
+    ],
+    "Exhaustion": [
+      "PDCD1",
+      "LAG3"
+    ],
+    "MAIT_support": [
+      "KLRB1",
+      "ZBTB16",
+      "TRAV1-2"
+    ],
+    "Gamma_delta": [
+      "TRDC",
+      "TRDV2"
+    ],
+    "B_core": [
+      "MS4A1",
+      "CD79A"
+    ],
+    "B_naive": [
+      "TCL1A"
+    ],
+    "GC_support": [
+      "BCL6",
+      "AICDA"
+    ],
+    "Plasma_support": [
+      "JCHAIN",
+      "MZB1",
+      "SDC1"
+    ],
+    "IgA": [
+      "IGHA1"
+    ],
+    "IgG": [
+      "IGHG1"
+    ],
+    "Cycling": [
+      "MKI67"
+    ],
+    "Interferon": [
+      "ISG15"
+    ]
+  },
+  "rules": {
+    "minimum_source_or_specimen_label_cells": 20,
+    "review_only_not_accuracy_thresholds": true,
+    "rule_version": 2,
+    "method_amendment": "TRDC-only initial screen was removed after primary-method review: NK/ILC can express TRDC strongly. Final gamma-delta RNA review requires CD3D/TRDC or CD3D/TRDV2 same-cell Frechet lower bound >=0.10 and never classifies gamma-delta identity. Raw scan and the predeclared 40-gene panel did not change.",
+    "primary_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6576116/",
+    "NK_T_marker_visible": "T_core mean detection >=0.25",
+    "NKT_T_marker_weak": "T_core mean detection <0.10",
+    "ILC_T_marker_visible": "T_core mean detection >=0.25",
+    "gamma_delta_RNA_candidate": "max(0, detection(CD3D)+detection(TRDC or TRDV2)-1)>=0.10 for at least one available TRD gene; exploratory only",
+    "GC_canonical_support_low": "GC_support mean detection <0.02, provided both genes exist on full RNA axis",
+    "GC_MKI67_plus_low_cycle": "MKI67+ label but MKI67 detection <0.05",
+    "plasmablast_plasma_program_low": "Plasma_support mean detection <0.05, provided all genes exist",
+    "CD8_Tn_cytotoxic_marker": "CD8_Tn label with GZMH detection >=0.30 and CCR7 detection <0.10",
+    "interpretation": "Conservative descriptive review flags, not calibrated failure cutoffs. Dropout, activation, tissue/source composition and capture technology affect markers; absence alone cannot disprove a label. MAIT/NKT/gamma-delta identity may require TCR/protein evidence."
+  }
+}

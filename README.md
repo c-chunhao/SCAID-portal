@@ -125,6 +125,17 @@ terms. The software and dataset licences are separate.
 ## Scientific analysis scripts
 
 See [science/README.md](science/README.md) for source-reference concordance,
-complete-zero descriptive composition and verified-individual SLE analysis.
-Aggregate results and native figures are included; source cell/donor inputs
-remain subject to repository access and reuse conditions.
+coverage-aware descriptive composition and verified-individual SLE analysis.
+The [reviewed analysis modules](science/analysis_vNext/README.md) also provide
+strict released-RNA readers, integration and export guards, source checks,
+and scientific evidence gates. Their inputs must be supplied locally.
+
+The [fine-label marker audit](science/analysis_vNext/marker_coherence/README.md)
+separates marginal detection bounds from measured same-cell marker programs.
+The [frozen PSO replay](science/analysis_vNext/qc/PSO_REPLAY.md) documents the
+six preverified capture inputs, pinned doublet-calling runtime and fail-closed
+classifier checks. These modules do not establish independent donor identities,
+calibrated annotation accuracy or complete historical preprocessing records.
+Source cell/donor inputs remain subject to repository access and reuse conditions.
+The committed September 30 composition outputs are historical; reproduce the
+current coverage-aware outputs with the documented CLI.

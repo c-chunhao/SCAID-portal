@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "large_fractional_count_100000_1_rejected": true,
+    "fractional_pointer_dtype_rejected": true,
+    "nonzero_first_pointer_rejected": true,
+    "wrong_last_pointer_rejected": true,
+    "nonmonotone_pointer_rejected": true,
+    "feature_index_out_of_bounds_rejected": true,
+    "negative_feature_index_rejected": true,
+    "fractional_feature_index_dtype_rejected": true,
+    "duplicate_feature_coordinate_rejected": true,
+    "nan_count_rejected": true,
+    "negative_count_rejected": true,
+    "real_T1D_5000cell_block_passes_strict_counts_and_CSR_guards": true
+  },
+  "real_cells": 5000,
+  "real_features": 20690,
+  "real_nnz": 5931535
+}

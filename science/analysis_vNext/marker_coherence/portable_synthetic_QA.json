@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "checks": {
+    "relative_H5_root_resolution": true,
+    "Sample_only_preserved": true,
+    "multi_raw_block_fixture": true,
+    "absent_root_rejected": true,
+    "parent_traversal_rejected": true,
+    "matching_dual_sample_columns_preserved": true,
+    "disagreeing_sample_identity_rejected": true,
+    "portable_cli_stage1_exit0": true,
+    "portable_cli_stage2_exit0": true,
+    "portable_cli_stage3_exit0": true,
+    "actual_T_CD3D_TRDC_joint_detected": true,
+    "explicit_IGJ_fallback": true,
+    "actual_plasma_joint_detected": true,
+    "composite_identity_delimiter_collision_avoided": true,
+    "crosswalk_duplicate_rejected": true,
+    "crosswalk_conflicting_rejected": true,
+    "crosswalk_empty_original_rejected": true,
+    "crosswalk_empty_corrected_rejected": true,
+    "full_unmatched_integrated_cell_fail_closed": true,
+    "joint_unmatched_integrated_cell_fail_closed": true,
+    "full_unmatched_specimen_source_fail_closed": true,
+    "joint_unmatched_specimen_source_fail_closed": true
+  },
+  "check_count": 22,
+  "fixture": "Three explicitly synthetic cells; no project biological records",
+  "marker_code_dir": "analysis_vNext/marker_coherence",
+  "reader": "analysis_vNext/integration/released_rna.py",
+  "current_reviewed_code_SHA256": {
+    "audit_full_RNA_marker_coherence.py": "5bd8a59a3dacfda6420a81c59cfd77dcb61a207ab40d072bd30c928f4bc56585",
+    "audit_targeted_actual_joint_markers.py": "ced647debb0d1ea4b45c92cdec2622cafbc459f92b1183c81880868853284235",
+    "build_marker_review_evidence.py": "b661fcf44e2c5944bbb9ef545a59697d40cae9856abc690609ae5637c3328c18",
+    "marker_input_paths.py": "8e3f093c7630e4bbf52092be338d5f5ca723efb07a9c6e10d1af4362bbbf0c15",
+    "test_marker_portable_synthetic.py": "a8ef1940cf849da0bb0fe7c415d6b5a216b2df2bc4e65e60b4793808734d88e0"
+  }
+}

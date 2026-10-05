@@ -1,0 +1,22 @@
+{
+  "counts_schema_verified": false,
+  "original_counts_provenance_verified": false,
+  "capture_mapping_verified": false,
+  "clinical_group_mapping_verified": false,
+  "all_source_barcodes_preserved": false,
+  "qc_flags_and_thresholds_recorded": false,
+  "actual_doublet_training_verified": false,
+  "annotation_review_completed": false,
+  "source_duplicate_check_completed": false,
+  "verified_cell_to_individual_mapping": false,
+  "appropriate_case_control_design": false,
+  "independent_individuals": false,
+  "full_rank_contrast_design": false,
+  "covariate_overlap_reviewed": false,
+  "raw_count_pseudobulk_and_valid_BH": false,
+  "source_accession": "SYNTHETIC_EXAMPLE_ONLY",
+  "source_input_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "ambient_status": "not_assessable_without_unfiltered_background",
+  "same_donor_overlap_with_validation": false,
+  "_notice": "Fictitious field example; all evidence flags are false. No source or patient records."
+}

@@ -495,12 +495,20 @@
       "tissue": "Skin",
       "figure_path": "Lyme/GSE166796/Skin",
       "h5_paths": {
-        "RNA": "RNA/Lyme_GSE166796_Skin.h5",
+        "RNA": "revisions/2026-10-05/RNA/Lyme_GSE166796_Skin.h5",
         "AUCell": "AUCell/Lyme_GSE166796_Skin.h5",
         "UCell": "UCell/Lyme_GSE166796_Skin.h5",
         "singscore": "singscore/Lyme_GSE166796_Skin.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "h5_correction": {
+        "date": "2026-10-05",
+        "reason": "Recover missing final-cell raw-count CSR block exactly from source Seurat; all preexisting arrays unchanged.",
+        "raw_count_cells": 40001,
+        "genes": 21927,
+        "sha256": "ef422d1547c8536f411cc082dc492e258403912faf9f28edc8425af649c459a3",
+        "source_count_verification": "40001 of 40001 rows exact to source Seurat counts"
+      }
     },
     {
       "source_row": 31,

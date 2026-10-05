@@ -3,10 +3,7 @@
     "SCAID_SLE_RELEASE_H5",
     "SCAID_SLE_SOURCE_METADATA"
   ],
-  "compose_recomputed_figure3.py": [
-    "SCAID_ORIGINAL_FIGURE3_PDF",
-    "SCAID_ORIGINAL_MARKER_PANEL_DIR"
-  ],
+  "compose_recomputed_figure3.py": [],
   "extract_t1d_author_metadata.R": [
     "SCAID_SCIENCE_TABLES",
     "SCAID_T1D_SOURCE_RDS"
@@ -31,9 +28,7 @@
   "build_science_tables.py": [],
   "recalculate_valid_gene_BH.py": [],
   "validate_science_delivery.py": [],
-  "recompute_atlas_composition.py": [
-    "SCAID_SOURCE_AUDIT_DIR"
-  ],
+  "recompute_atlas_composition.py": [],
   "fit_sle_donor_models.py": [],
   "extract_release_metadata.R": [
     "SCAID_RELEASE_METADATA_RDS",
@@ -53,5 +48,17 @@
     "SCAID_BPLASMA_INTEGRATED_RDS",
     "SCAID_SCIENCE_TABLES",
     "SCAID_TNK_INTEGRATED_RDS"
-  ]
+  ],
+  "_cli_interfaces": {
+    "recompute_atlas_composition.py": [
+      "--input-tables",
+      "--output",
+      "--source-map (optional)",
+      "--regression-tables (optional)",
+      "--plot (optional)"
+    ],
+    "compose_recomputed_figure3.py": [
+      "DEPRECATED: active execution refused; source archived"
+    ]
+  }
 }

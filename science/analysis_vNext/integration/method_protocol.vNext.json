@@ -1,0 +1,15 @@
+{
+  "protocol_version": "SCAID-analysis-vNext-2026-10-05",
+  "release_safety": "Keep historical RDS/H5/labels. Write new outputs and decision logs. No automatic global reannotation or cell deletion.",
+  "primary_source_key": ["Dataset", "Sample", "OldCells"],
+  "counts_input": "Unintegrated raw RNA nonnegative integer sparse counts with explicit cell and full-feature axes",
+  "annotation_normalization": {"library_axis": "all raw RNA features", "target_sum": 10000, "transform": "log1p", "feature_subset_order": "only after full-library normalization"},
+  "annotation_reference_policy": "Frozen immune reference model checks plus canonical markers; High/Low are related references, not independent validators. Keep conservative coarse labels and fine unresolved/review flags.",
+  "integration_benchmark": {"space": "high-dimensional PCA or learned corrected embeddings, not 2D UMAP", "strata": ["catalogue condition", "tissue", "coarse lineage"], "source_permutation_guard": "Explicit unique cell IDs and numerical reorder before attaching reductions", "biology_validation": "Independent source/reference and marker/pseudobulk evidence; own method clusters are not ground truth", "batch_objective": "Balance batch removal and biology preservation; never force disease/tissue-specific states to mix"},
+  "pilot_diagnostic": {"seed": 20261005, "max_cells_per_study_per_stratum": 600, "min_cells_per_study_per_stratum": 100, "knn_k": 30, "silhouette_sample_cells": 3000, "threads": 4, "metric": "unweighted kNN study inverse-Simpson diversity, explicitly not LISI"},
+  "UMAP_display": {"seed": 20261005, "neighbor_count": 30, "min_dist": 0.3, "metric": "cosine", "return_model": true, "purpose": "display only"},
+  "study_design_gate": "Catalogue condition is not clinical case-control status. Tissue/source-confounded hypotheses need matched donor/visit/covariate design or must remain descriptive.",
+  "statistical_unit": "Verified source donor/independent biological specimen with repeated visits grouped. Cell-level labels/scores are not independent donor replicates.",
+  "cell_cycle_policy": "No unconditional regression/removal of cycling biology. Any compared nuisance regression requires a documented biological-preservation diagnostic.",
+  "reproducibility": ["input SHA256", "reference model SHA256", "software versions", "seed", "explicit batch keys", "HVG features", "dimensions", "cluster resolution", "counts and reduction cell order", "decision log"]
+}

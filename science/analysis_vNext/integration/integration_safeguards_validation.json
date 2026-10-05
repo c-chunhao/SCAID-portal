@@ -1,0 +1,10 @@
+{
+  "reduction_permutation_reordered_by_ID": true,
+  "missing_reduction_cells_rejected": true,
+  "duplicate_annotation_cells_rejected": true,
+  "annotation_metadata_reordered_by_ID": true,
+  "full_sparse_library_normalizes_to_10000": true,
+  "HVG_subset_does_not_renormalize": true,
+  "SeuratObject_layer_API_counts_retrieval": true,
+  "exported_scale_feature_axis_keeps_exact_source_row_order": true
+}

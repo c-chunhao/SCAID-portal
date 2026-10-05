@@ -1,0 +1,15 @@
+{
+  "scope": "Column names only, no individual records.",
+  "columns": {
+    "source_accession": "repository identifier",
+    "source_individual_id": "verified source-scoped pseudonym, nullable",
+    "sample_id": "source specimen label, distinct from individual",
+    "capture_id": "physical capture, distinct from individual",
+    "clinical_group": "source-verified group; no default healthy value",
+    "visit_id": "source visit identifier, nullable",
+    "age": "source value, nullable",
+    "sex": "source value, nullable",
+    "treatment": "source value, nullable"
+  },
+  "policy": "No clinical imputation; pooled/unresolved identities cannot be independent individual replicates."
+}
