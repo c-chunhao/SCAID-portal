@@ -200,7 +200,7 @@ class PublicApiTests(TestCase):
         record = CellData.objects.create(abbreviation='AS', dataset_id='GSE216883', tissue='PBMC/SFMC')
         result = self.client.get('/api/cell-data-all/', {'name': 'AS_GSE216883_PBMC_SFMC.h5'}).json()
         self.assertEqual([row['id'] for row in result], [record.pk])
-        self.assertEqual(self.client.get('/api/cell-data-all/', {'name': '/home/data/KWQ/'}).json(), [])
+        self.assertEqual(self.client.get('/api/cell-data-all/', {'name': '/unregistered/private/input/'}).json(), [])
 
     def test_ss_manifest_supports_original_and_rendered_disease_directories(self):
         record = CellData.objects.create(abbreviation='SS', dataset_id='GSE157278', tissue='PBMC')

@@ -3,7 +3,7 @@
 Vue 3 single-page application for the Single-Cell AutoImmune Disease database
 (https://scaid01.com/). The client is read-only: it renders precomputed
 figures and catalogue records served by the Django REST API under `/api/` and
-stable original figure endpoints under `/api/pdf-images/{id}/original/`. No user accounts exist; `/login` is an
+figure files under `/system/media/`. No user accounts exist; `/login` is an
 explanatory page only.
 
 ## Stack

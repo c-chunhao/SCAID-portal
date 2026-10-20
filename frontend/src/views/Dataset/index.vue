@@ -1,22 +1,22 @@
 <template>
   <div class="container_box dataset-browser">
-    <header class="dataset-intro">
+    <header v-if="!currentRow" class="dataset-intro">
       <div class="container">
         <h1>Dataset Browser</h1>
         <p class="intro-summary">Filter disease–tissue data objects by disease, accession or tissue.</p>
         <details class="analysis-description">
           <summary>About the available analyses</summary>
           <p>
-            For each object SCAID shows its metadata, cell-type annotation views, cell-type marker genes
+            SCAID shows metadata, cell-type annotation views, cell-type marker genes
             (within-object contrasts, not donor-level disease-versus-control tests), GO and KEGG
             annotations of those markers, predicted cell–cell communication, and the downloadable
-            RNA and pathway-score H5 files.
+            RNA and pathway-score H5 files where published. Available modules vary by object.
           </p>
         </details>
       </div>
     </header>
     <div class="container dataset-workspace">
-      <section class="dataset-filters" aria-labelledby="dataset-filter-title">
+      <section v-if="!currentRow" class="dataset-filters" aria-labelledby="dataset-filter-title">
         <div class="section-heading">
           <h2 id="dataset-filter-title">Find a dataset</h2>
           <p>Choose a disease to narrow the dataset and tissue options, or search directly.</p>
@@ -58,7 +58,7 @@
         </el-form>
       </section>
 
-      <section ref="resultsSection" class="dataset-results" aria-labelledby="dataset-results-title" tabindex="-1">
+      <section v-if="!currentRow" ref="resultsSection" class="dataset-results" aria-labelledby="dataset-results-title" tabindex="-1">
         <div class="results-heading">
           <h2 id="dataset-results-title" class="result-summary" aria-live="polite">{{ tableLoading ? 'Loading datasets…' : tableError ? 'Datasets unavailable' : `${tableData.length} datasets` }}</h2>
           <p v-if="tableData.length">Select a dataset to view figures and downloads.</p>
@@ -68,7 +68,7 @@
         <template v-if="tableLoading || tableData.length">
           <p id="dataset-scroll-help" class="table-scroll-hint">Scroll across the table to see all columns. With keyboard focus, use the left and right arrow keys.</p>
           <div class="table-scroll-region" role="region" aria-label="Dataset results table" aria-describedby="dataset-scroll-help" tabindex="0">
-            <el-table :data="tableData" v-loading="tableLoading" highlight-current-row :row-class-name="datasetRowClass" style="width: 100%; min-width: 940px" max-height="500" @row-click="handleClickRow">
+            <el-table :data="tableData" v-loading="tableLoading" highlight-current-row :row-class-name="datasetRowClass" style="width: 100%; min-width: 940px" max-height="500" @row-click="row => openDataset(row)">
               <el-table-column label="Dataset ID" min-width="185">
                 <template #default="scope">
                   <button type="button" class="dataset-open" :aria-label="`View ${scope.row.dataset_label || scope.row.dataset_id}, ${scope.row.tissue_label || scope.row.tissue}`" :aria-pressed="currentRow?.id === scope.row.id" @click.stop="openDataset(scope.row)">
@@ -85,7 +85,12 @@
               <el-table-column label="Disease" min-width="270">
                 <template #default="scope">{{ scope.row.disease_label || scope.row.disease_full_name || scope.row.disease_name || scope.row.abbreviation }}</template>
               </el-table-column>
-              <el-table-column prop="id" label="ID" width="70" align="right" />
+              <el-table-column label="Cell records" min-width="125" align="right">
+                <template #default="scope">{{ formatCount(scope.row.cell_count) }}</template>
+              </el-table-column>
+              <el-table-column label="Published views" min-width="175">
+                <template #default="scope"><span class="module-summary">{{ moduleSummary(scope.row) }}</span></template>
+              </el-table-column>
             </el-table>
           </div>
         </template>
@@ -97,23 +102,44 @@
       <section v-if="currentRow" class="dataset-details" aria-label="Selected dataset">
         <div class="selection-heading">
           <div>
-            <h2 ref="selectionTitle" class="selection-title" tabindex="-1">{{ currentRow.abbreviation }} · {{ currentRow.dataset_label || currentRow.dataset_id }} · {{ currentRow.tissue_label || currentRow.tissue }}</h2>
+            <h1 ref="selectionTitle" class="selection-title" tabindex="-1">{{ currentRow.abbreviation }} · {{ currentRow.dataset_label || currentRow.dataset_id }} · {{ currentRow.tissue_label || currentRow.tissue }}</h1>
             <p v-if="currentRow.disease_label || currentRow.disease_full_name || currentRow.disease_name">{{ currentRow.disease_label || currentRow.disease_full_name || currentRow.disease_name }}</p>
           </div>
-          <button type="button" class="back-to-results" @click="returnToResults">Back to datasets</button>
+          <div class="selection-utilities">
+            <button type="button" class="back-to-results" @click="returnToResults">Back to datasets</button>
+            <ShareQueryLink :href="shareHref" />
+          </div>
         </div>
+        <dl class="dataset-facts">
+          <div><dt>Source</dt><dd><a v-if="sourceHref" :href="sourceHref" target="_blank" rel="noopener noreferrer">{{ currentRow.dataset_source || 'GEO' }} · {{ currentRow.dataset_label || currentRow.dataset_id }}<span class="sr-only"> (opens in a new tab)</span></a><span v-else>{{ currentRow.dataset_source || 'Not reported' }}</span></dd></div>
+          <div><dt>Tissue</dt><dd>{{ currentRow.tissue_label || currentRow.tissue || 'Not reported' }}</dd></div>
+          <div><dt>Cell records</dt><dd>{{ formatCount(currentRow.cell_count) }}</dd></div>
+          <div><dt>Sample labels</dt><dd>{{ formatCount(currentRow.sample_size) }}</dd></div>
+        </dl>
+        <div class="detail-actions">
+          <nav v-if="hasPublishedModule(currentRow, 'gene_umap') || hasPublishedModule(currentRow, 'kegg_score')" class="exploration-links" aria-label="Explore this dataset">
+            <RouterLink v-if="hasPublishedModule(currentRow, 'gene_umap')" :to="explorationTarget('gene')">Gene expression <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M4 10h12m-5-5 5 5-5 5" /></svg></RouterLink>
+            <RouterLink v-if="hasPublishedModule(currentRow, 'kegg_score')" :to="explorationTarget('kegg')">Pathway scores <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M4 10h12m-5-5 5 5-5 5" /></svg></RouterLink>
+          </nav>
+          <p v-else class="module-summary">Main figures only. Gene and pathway views are not published for this object.</p>
+        </div>
+        <details class="publication-details">
+          <summary>Data notes &amp; limitations{{ publicationNotes(currentRow).length ? ` (${publicationNotes(currentRow).length})` : '' }}</summary>
+          <p class="sample-label-note">Sample labels count identifiers in the source data. They may represent pooled samples or repeated observations and do not establish the number of independent donors. Cell records describe this processed object and are not a deduplicated atlas total.</p>
+          <p v-for="note in publicationNotes(currentRow)" :key="note" class="publication-note">{{ note }}</p>
+        </details>
         <div class="dataset-toolbar">
           <el-menu :default-active="activeName" mode="horizontal" :ellipsis="false" @select="handleMenuSelect" class="dataset-menu">
-            <el-menu-item index="Overview">Overview</el-menu-item>
-            <el-menu-item index="Main_Marker">Marker</el-menu-item>
-            <el-menu-item index="MajorCellType_Go_Ht">GO</el-menu-item>
-            <el-menu-item index="MajorCellType_KEGG_Ht">KEGG</el-menu-item>
-            <el-sub-menu index="CellChat">
+            <el-menu-item v-if="hasPublishedAnalysis(currentRow, 'Overview')" index="Overview">Overview</el-menu-item>
+            <el-menu-item v-if="hasPublishedAnalysis(currentRow, 'Main_Marker')" index="Main_Marker">Marker</el-menu-item>
+            <el-menu-item v-if="hasPublishedAnalysis(currentRow, 'MajorCellType_Go_Ht')" index="MajorCellType_Go_Ht">GO</el-menu-item>
+            <el-menu-item v-if="hasPublishedAnalysis(currentRow, 'MajorCellType_KEGG_Ht')" index="MajorCellType_KEGG_Ht">KEGG</el-menu-item>
+            <el-sub-menu v-if="hasPublishedModule(currentRow, 'cellchat')" index="CellChat">
               <template #title>CellChat</template>
               <el-menu-item v-for="item in cellchatList" :key="item.key" :index="item.key">{{ item.label }}</el-menu-item>
             </el-sub-menu>
           </el-menu>
-          <el-dropdown trigger="click" :disabled="downloadLoading || downList.length === 0" class="download-menu">
+          <el-dropdown v-if="hasPublishedModule(currentRow, 'downloads')" trigger="click" :disabled="downloadLoading || downList.length === 0" class="download-menu">
             <el-button :loading="downloadLoading" :disabled="downloadLoading || downList.length === 0">
               {{ downloadLoading ? 'Loading downloads' : downloadError ? 'Downloads unavailable' : downList.length ? `Download (${downList.length})` : 'No downloads available' }}
               <svg v-if="downList.length && !downloadLoading" aria-hidden="true" viewBox="0 0 20 20" class="download-chevron"><path d="m5 7.5 5 5 5-5" /></svg>
@@ -127,6 +153,7 @@
             </template>
           </el-dropdown>
         </div>
+        <p v-if="analysisNotice" class="publication-note" role="status">{{ analysisNotice }}</p>
         <p v-if="selectedAnalysis" class="analysis-help"><strong>{{ selectedAnalysis.label }}.</strong> {{ selectedAnalysis.description }} These are precomputed predictions from expression data.</p>
         <el-alert v-if="downloadError" :title="downloadError" type="error" show-icon :closable="false">
           <el-button link type="primary" @click="loadDownloads(currentRow)">Retry downloads</el-button>
@@ -150,9 +177,11 @@
                 <p>Open a figure to inspect it at full resolution.</p>
               </div>
               <div v-for="group in imageGroups" :key="group.name" class="fileBox">
-                <h3 v-if="activeName === 'Overview'">{{ group.name.replace(/\.pdf$/i, '') }}</h3>
                 <div v-for="item in group.files" :key="item.id" class="file_item">
-                  <h4 class="figure-title">{{ figureTitle(item) }}</h4>
+                  <div class="figure-heading">
+                    <h2 class="figure-title">{{ figureTitle(item) }}</h2>
+                    <p class="figure-source">{{ item.name || item.pdf_name || activeName }}</p>
+                  </div>
                   <a :href="getFullImageUrl(item.image)" target="_blank" rel="noopener" title="Open the full-resolution figure in a new tab">
                     <img :src="item.thumb_url || getFullImageUrl(item.image)" :style="getImageStyle(item)" :width="item.image_width || undefined" :height="item.image_height || undefined" :alt="`${currentRow.dataset_id}: ${item.name || activeName}`" loading="lazy" decoding="async" @error="imageLoadError = true" />
                     <span class="figure-link-label">Open full-resolution figure <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M11 4h5v5M16 4l-8 8M8 4H4v12h12v-4" /></svg></span>
@@ -174,7 +203,8 @@ import { computed, nextTick, onBeforeUnmount, onMounted, reactive, ref, watch } 
 import { useRoute, useRouter } from 'vue-router';
 import { getRequest } from '@/api/home';
 import { getFullImageUrl } from '@/config';
-import { datasetQuery, querySignature, readDatasetQuery } from '@/utils/queryState';
+import { datasetQuery, explorationQuery, querySignature, readDatasetQuery } from '@/utils/queryState';
+import { hasPublishedAnalysis, hasPublishedModule, publicationNotes } from '@/utils/moduleAvailability';
 import ShareQueryLink from '@/components/ShareQueryLink.vue';
 
 const route = useRoute();
@@ -193,6 +223,7 @@ const currentRow = ref(null);
 const resultsSection = ref(null);
 const selectionTitle = ref(null);
 const activeName = ref('Overview');
+const analysisNotice = ref('');
 const fileList = ref([]);
 const loading = ref(false);
 const imageError = ref('');
@@ -215,6 +246,16 @@ const cellchatList = [
 ];
 const analyses = ['Overview', 'Main_Marker', 'MajorCellType_Go_Ht', 'MajorCellType_KEGG_Ht', ...cellchatList.map(item => item.key)];
 const selectedAnalysis = computed(() => cellchatList.find(item => item.key === activeName.value));
+const sourceHref = computed(() => /^GSE\d+$/i.test(currentRow.value?.dataset_id || '')
+  ? `https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=${encodeURIComponent(currentRow.value.dataset_id)}` : '');
+const formatCount = value => Number.isFinite(Number(value)) && value !== null && value !== '' ? Number(value).toLocaleString('en-US') : 'Not reported';
+function moduleSummary(row) {
+  if (!row.module_availability) return 'Browse analyses';
+  return row.module_availability.gene_umap && row.module_availability.kegg_score ? 'Main · Gene · Scores' : 'Main figures only';
+}
+function explorationTarget(kind) {
+  return { path: kind === 'gene' ? '/Gene' : '/KEGG', query: explorationQuery(currentRow.value, kind) };
+}
 const shareHref = computed(() => router.resolve({ path: '/Dataset', query: datasetQuery(appliedFilters.value, currentRow.value?.id || '', activeName.value, imagePage.value) }).href);
 // Downloads must stay on this origin's H5 endpoint; never render an API-supplied absolute or javascript: URL.
 const SAFE_DOWNLOAD_URL = /^\/api\/h5-file\/\d+\/download\/$/;
@@ -245,6 +286,7 @@ function clearDetails() {
   downloadRequestId += 1;
   currentRow.value = null;
   activeName.value = 'Overview';
+  analysisNotice.value = '';
   fileList.value = [];
   downList.value = [];
   imageCount.value = 0;
@@ -286,12 +328,15 @@ async function getList(syncUrl = true) {
 function handleClickRow(row, syncUrl = true, analysis = 'Overview', page = 1) {
   clearDetails();
   currentRow.value = row;
-  activeName.value = analysis;
-  imagePage.value = page;
+  const available = hasPublishedAnalysis(row, analysis);
+  activeName.value = available ? analysis : 'Overview';
+  imagePage.value = available ? page : 1;
+  if (!available) analysisNotice.value = 'The linked analysis has not been published for this object. Showing Overview.';
   // Reset the tab before starting either request for the new dataset.
   if (syncUrl !== false) syncQuery();
-  loadImages(page, false);
-  loadDownloads(row);
+  else if (!available) router.replace({ path: '/Dataset', query: datasetQuery(appliedFilters.value, row.id, activeName.value, imagePage.value) });
+  loadImages(imagePage.value, false);
+  if (hasPublishedModule(row, 'downloads')) loadDownloads(row);
 }
 
 function datasetRowClass({ row }) {
@@ -305,7 +350,10 @@ async function openDataset(row) {
   selectionTitle.value?.scrollIntoView({ block: 'start' });
 }
 
-function returnToResults() {
+async function returnToResults() {
+  clearDetails();
+  syncQuery();
+  await nextTick();
   resultsSection.value?.focus({ preventScroll: true });
   resultsSection.value?.scrollIntoView({ block: 'start' });
 }
@@ -340,7 +388,8 @@ async function loadImages(page = 1, syncUrl = true) {
 }
 
 function handleMenuSelect(index) {
-  if (!analyses.includes(index)) return;
+  if (!analyses.includes(index) || !hasPublishedAnalysis(currentRow.value, index)) return;
+  analysisNotice.value = '';
   activeName.value = index;
   loadImages(1);
 }
@@ -379,7 +428,20 @@ function getDownloadLabel(item) {
   return method ? `${method} — ${getDownloadName(item)}` : getDownloadName(item);
 }
 function getImageStyle(item) { return { width: item.image_width ? `${item.image_width}px` : '100%', maxWidth: '100%', height: 'auto' }; }
-function figureTitle(item) { return String(item.name || item.pdf_name || selectedAnalysis.value?.label || activeName.value).replace(/\.pdf$/i, ''); }
+function figureTitle(item) {
+  const source = String(item.name || item.pdf_name || activeName.value).replace(/\.(pdf|png|jpe?g)$/i, '');
+  const titles = {
+    Umap_MajorCellType: 'Major cell types',
+    Umap_Sample: 'Sample labels',
+    'Umap_RNA_snn_res.1': 'Cell clusters',
+    MajorCellType_CellPro: 'Sample composition',
+    Main_Marker: 'Cell-type markers',
+    MajorCellType_Go_Ht: 'GO enrichment',
+    MajorCellType_GO_Ht: 'GO enrichment',
+    MajorCellType_KEGG_Ht: 'KEGG enrichment',
+  };
+  return titles[source] || selectedAnalysis.value?.label || titles[activeName.value] || source;
+}
 
 watch(() => querySignature(route.query), async () => {
   const version = ++routeVersion;
@@ -403,8 +465,13 @@ watch(() => querySignature(route.query), async () => {
   if (String(currentRow.value?.id) !== restored.record) {
     handleClickRow(row, false, restored.analysis, restored.page);
   } else if (activeName.value !== restored.analysis || imagePage.value !== restored.page) {
-    activeName.value = restored.analysis;
-    loadImages(restored.page, false);
+    if (hasPublishedAnalysis(row, restored.analysis)) {
+      activeName.value = restored.analysis;
+      analysisNotice.value = '';
+      loadImages(restored.page, false);
+    } else {
+      handleClickRow(row, false, restored.analysis, restored.page);
+    }
   }
 }, { immediate: true });
 
@@ -468,8 +535,9 @@ onBeforeUnmount(() => { disposed = true; });
 .results-heading p { margin: 0; font-size: 0.85rem; color: var(--dataset-muted); }
 .table-scroll-hint { display: none; margin: 0 0 10px; font-size: 0.8rem; line-height: 1.5; color: var(--dataset-muted); }
 .sample-label-note { max-width: 75ch; margin: 12px 0; color: var(--dataset-muted); font-size: .85rem; line-height: 1.6; }
+.publication-note { max-width: 75ch; margin: 12px 0; color: var(--dataset-muted); font-size: .9rem; line-height: 1.6; }
 .analysis-help { max-width: 75ch; margin: 12px 0; color: var(--dataset-muted); font-size: .9rem; line-height: 1.6; }
-.figure-title { margin: 0 0 10px; font-size: .95rem; font-weight: 600; line-height: 1.5; overflow-wrap: anywhere; }
+.figure-title { margin: 0; font-size: .95rem; font-weight: 600; line-height: 1.5; overflow-wrap: anywhere; }
 .table-scroll-region { overflow-x: auto; border: 1px solid var(--dataset-line); border-radius: 8px; }
 .table-scroll-region :deep(.el-table) {
   --el-table-border-color: var(--dataset-line);
@@ -490,12 +558,13 @@ onBeforeUnmount(() => { disposed = true; });
 .dataset-open:hover > span:first-child { text-decoration-thickness: 2px; }
 .dataset-open-label { color: var(--dataset-muted); font-size: 0.75rem; line-height: 1.3; }
 .dataset-open[aria-pressed='true'] .dataset-open-label { color: var(--dataset-accent); font-weight: 600; }
-.dataset-details { margin-top: 38px; padding-top: 28px; border-top: 1px solid var(--dataset-line); }
+.dataset-details { min-width: 0; }
 .selection-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
 .selection-heading > div { min-width: 0; }
-.selection-title { margin: 0; font-size: 1.3rem; font-weight: 600; line-height: 1.45; overflow-wrap: anywhere; scroll-margin-top: 100px; }
+.selection-utilities { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 18px; flex-shrink: 0; }
+.selection-title { margin: 0; font-size: 1.7rem; font-weight: 600; line-height: 1.45; overflow-wrap: anywhere; scroll-margin-top: 100px; }
 .selection-heading p { margin: 7px 0 0; color: var(--dataset-muted); line-height: 1.5; }
-.back-to-results { flex-shrink: 0; padding: 8px 0; border: 0; background: none; color: var(--dataset-accent); font: inherit; font-size: 0.85rem; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.back-to-results { min-height: 44px; flex-shrink: 0; padding: 8px 0; border: 0; background: none; color: var(--dataset-accent); font: inherit; font-size: 0.85rem; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
 .dataset-toolbar { display: flex; align-items: center; gap: 16px; border-bottom: 1px solid var(--dataset-line); }
 .dataset-menu { flex: 1; min-width: 0; border-bottom: 0; --el-menu-text-color: var(--dataset-muted); --el-menu-active-color: var(--dataset-accent); --el-menu-hover-bg-color: var(--dataset-soft); --el-menu-horizontal-height: 52px; }
 .dataset-menu :deep(.el-menu-item), .dataset-menu :deep(.el-sub-menu__title) { padding: 0 18px; font-weight: 500; }
@@ -507,7 +576,23 @@ onBeforeUnmount(() => { disposed = true; });
 .figure-summary { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px 16px; }
 .figure-summary > p { margin: 0; color: var(--dataset-muted); font-size: 0.85rem; line-height: 1.5; }
 .fileBox { margin: 26px 0; }
-.fileBox h3 { margin: 0 0 12px; font-size: 1rem; font-weight: 600; overflow-wrap: anywhere; }
+.figure-heading { padding: 14px 16px 0; }
+.figure-source { margin: 3px 0 0; color: var(--dataset-muted); font-size: .8rem; line-height: 1.5; overflow-wrap: anywhere; }
+.dataset-facts { display: grid; grid-template-columns: minmax(0, 1.6fr) repeat(3, minmax(0, 1fr)); gap: 16px; margin: 0 0 18px; padding: 18px 0; border-top: 1px solid var(--dataset-line); border-bottom: 1px solid var(--dataset-line); }
+.dataset-facts > div { min-width: 0; }
+.dataset-facts dt { margin: 0 0 5px; color: var(--dataset-muted); font-size: .8rem; font-weight: 400; }
+.dataset-facts dd { margin: 0; font-size: .95rem; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.dataset-facts a { color: var(--dataset-accent); text-underline-offset: 3px; }
+.detail-actions { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 4px 20px; margin-bottom: 8px; }
+.exploration-links { display: flex; flex-wrap: wrap; gap: 0 24px; }
+.exploration-links a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: var(--dataset-accent); font-size: .9rem; text-decoration: underline; text-underline-offset: 4px; }
+.exploration-links svg { width: 16px; height: 16px; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.exploration-links a:hover { text-decoration-thickness: 2px; }
+.module-summary { color: var(--dataset-muted); font-size: .85rem; line-height: 1.5; }
+.publication-details { margin-bottom: 12px; }
+.publication-details summary { width: fit-content; min-height: 44px; padding: 10px 0; color: var(--dataset-accent); font-size: .9rem; cursor: pointer; }
+.publication-details summary:hover { text-decoration: underline; text-underline-offset: 3px; }
+.publication-details[open] { margin-bottom: 20px; }
 .file_item { margin-bottom: 16px; border: 1px solid var(--dataset-line); background: #fff; }
 .file_item > a { display: block; padding: 16px; color: var(--dataset-accent); }
 .file_item img { display: block; margin: 0 auto; }
@@ -533,10 +618,14 @@ onBeforeUnmount(() => { disposed = true; });
   .dataset-results { margin-top: 22px; }
   .results-heading { display: block; }
   .results-heading p { margin-top: 7px; line-height: 1.5; }
-  .dataset-details { margin-top: 28px; padding-top: 24px; }
-  .selection-heading { flex-direction: column; gap: 4px; }
-  .selection-title { font-size: 1.15rem; }
-  .back-to-results { min-height: 40px; }
+  .dataset-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 20px; padding: 12px 0; }
+  .selection-heading { flex-direction: column-reverse; gap: 12px; margin-bottom: 16px; }
+  .selection-title { font-size: 1.4rem; }
+  .selection-utilities { width: 100%; justify-content: space-between; }
+  .exploration-links { gap: 0 16px; }
+  .exploration-links a { gap: 6px; font-size: .875rem; }
+  .detail-actions { margin-bottom: 4px; }
+  .back-to-results { min-height: 44px; }
   .dataset-toolbar { flex-direction: column; align-items: stretch; gap: 12px; }
   .dataset-menu { display: flex; flex-wrap: wrap; width: 100%; height: auto; }
   .dataset-menu :deep(.el-menu-item), .dataset-menu :deep(.el-sub-menu) { flex: 1 0 auto; height: 46px; }
@@ -544,6 +633,7 @@ onBeforeUnmount(() => { disposed = true; });
   .download-menu { padding-bottom: 14px; }
   .download-menu :deep(.el-button) { width: 100%; min-height: 44px; }
   .menu-content { padding-top: 16px; }
+  .figure-heading { padding: 12px 12px 0; }
   .file_item > a { padding: 12px; }
   .figure-link-label { justify-content: flex-start; }
 }

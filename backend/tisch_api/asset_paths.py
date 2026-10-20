@@ -138,6 +138,16 @@ def load_manifest():
     return entries
 
 
+@lru_cache(maxsize=1)
+def case_sensitive_gene_symbols():
+    """Source feature names that differ only by case must remain distinguishable."""
+    return frozenset(
+        name.casefold()
+        for entry in load_manifest()
+        for name in entry.get('case_sensitive_gene_symbols', [])
+    )
+
+
 def label_key(value):
     return re.sub(r'[\s_\-/]+', '', value or '').casefold()
 

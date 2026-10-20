@@ -23,7 +23,8 @@
         }
       ],
       "mapping_note": "NCBI GEO explicitly lists GSM6658039 as a sample of GSE216064, with PBMC tissue and Autoimmune hepatitis disease. This associates the existing series record to its documented sample asset without overwriting catalog metadata.",
-      "mapping_source": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6658039&targ=self&form=text&view=quick"
+      "mapping_source": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6658039&targ=self&form=text&view=quick",
+      "figure_path_aliases": []
     },
     {
       "source_row": 3,
@@ -42,7 +43,8 @@
       "display_name": "Psoriatic Arthritis",
       "canonical_abbreviation": "PsA",
       "canonical_disease_name": "Psoriatic Arthritis",
-      "classification_note": "E-MTAB-8207 was reconciled to psoriatic arthritis in the source audit. AS is retained only as a historical asset directory code."
+      "classification_note": "E-MTAB-8207 was reconciled to psoriatic arthritis in the source audit. AS is retained only as a historical asset directory code.",
+      "figure_path_aliases": []
     },
     {
       "source_row": 4,
@@ -61,7 +63,8 @@
       "display_name": "Psoriatic Arthritis",
       "canonical_abbreviation": "PsA",
       "canonical_disease_name": "Psoriatic Arthritis",
-      "classification_note": "E-MTAB-8207 was reconciled to psoriatic arthritis in the source audit. AS is retained only as a historical asset directory code."
+      "classification_note": "E-MTAB-8207 was reconciled to psoriatic arthritis in the source audit. AS is retained only as a historical asset directory code.",
+      "figure_path_aliases": []
     },
     {
       "source_row": 5,
@@ -76,7 +79,8 @@
         "UCell": "UCell/AS_GSE216883_PBMC_SFMC.h5",
         "singscore": "singscore/AS_GSE216883_PBMC_SFMC.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 6,
@@ -91,7 +95,8 @@
         "UCell": "UCell/Atopic_Dermatitis_GSE222840_SkinBiopsy.h5",
         "singscore": "singscore/Atopic_Dermatitis_GSE222840_SkinBiopsy.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 7,
@@ -106,7 +111,8 @@
         "UCell": "UCell/Atopic_Prurigo_GSE222840_SkinBiopsy.h5",
         "singscore": "singscore/Atopic_Prurigo_GSE222840_SkinBiopsy.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 8,
@@ -129,7 +135,8 @@
           "tissue": "眼前房液（房水）"
         }
       ],
-      "mapping_note": "Legacy AIR records are distinguished by the explicit disease_full_name and tissue, matching separate disease paths in the supplied sample table."
+      "mapping_note": "Legacy AIR records are distinguished by the explicit disease_full_name and tissue, matching separate disease paths in the supplied sample table.",
+      "figure_path_aliases": []
     },
     {
       "source_row": 9,
@@ -144,7 +151,8 @@
         "UCell": "UCell/BP_zenodo_Blister.h5",
         "singscore": "singscore/BP_zenodo_Blister.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 10,
@@ -159,7 +167,8 @@
         "UCell": "UCell/BP_zenodo_PBMC.h5",
         "singscore": "singscore/BP_zenodo_PBMC.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 11,
@@ -174,7 +183,8 @@
         "UCell": "UCell/BP_zenodo_Skin.h5",
         "singscore": "singscore/BP_zenodo_Skin.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 12,
@@ -196,7 +206,8 @@
           "tissue": "Dermal"
         }
       ],
-      "mapping_note": "The legacy catalog has no accession. The supplied sample table explicitly identifies the unique DLE tissue asset; no catalog metadata is overwritten."
+      "mapping_note": "The legacy catalog has no accession. The supplied sample table explicitly identifies the unique DLE tissue asset; no catalog metadata is overwritten.",
+      "figure_path_aliases": []
     },
     {
       "source_row": 13,
@@ -218,7 +229,8 @@
           "tissue": "Epidermal"
         }
       ],
-      "mapping_note": "The legacy catalog has no accession. The supplied sample table explicitly identifies the unique DLE tissue asset; no catalog metadata is overwritten."
+      "mapping_note": "The legacy catalog has no accession. The supplied sample table explicitly identifies the unique DLE tissue asset; no catalog metadata is overwritten.",
+      "figure_path_aliases": []
     },
     {
       "source_row": 14,
@@ -233,7 +245,8 @@
         "UCell": "UCell/Gout_GSE211783_PBMC.h5",
         "singscore": "singscore/Gout_GSE211783_PBMC.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 15,
@@ -248,7 +261,8 @@
         "UCell": "UCell/Gout_GSE217561_PBMC.h5",
         "singscore": "singscore/Gout_GSE217561_PBMC.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 16,
@@ -263,7 +277,8 @@
         "UCell": "UCell/Gout_PRJNA861849_PBMC.h5",
         "singscore": "singscore/Gout_PRJNA861849_PBMC.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 17,
@@ -278,7 +293,8 @@
         "UCell": "UCell/Gout_PRJNA861849_SFMC.h5",
         "singscore": "singscore/Gout_PRJNA861849_SFMC.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 18,
@@ -302,7 +318,12 @@
         "verified_genes": 16105,
         "cell_barcode_order_matches_previous_asset": true,
         "sha256": "ed8fe5c8ca7576632a7f2f70223ef809e7f3f09743cd26d79b0badec67d8a007"
-      }
+      },
+      "search_abbreviations": [
+        "IBD"
+      ],
+      "display_name": "Crohn's Disease",
+      "figure_path_aliases": []
     },
     {
       "source_row": 19,
@@ -326,7 +347,11 @@
         "verified_genes": 16105,
         "cell_barcode_order_matches_previous_asset": true,
         "sha256": "be1f309fd6c31c5bab41f068724f66e86d17517f177e1ca1abc1346ac6477192"
-      }
+      },
+      "search_abbreviations": [
+        "IBD"
+      ],
+      "figure_path_aliases": []
     },
     {
       "source_row": 20,
@@ -341,7 +366,12 @@
         "UCell": "UCell/IBD_E-MTAB-8901_ileum.h5",
         "singscore": "singscore/IBD_E-MTAB-8901_ileum.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "search_abbreviations": [
+        "IBD"
+      ],
+      "display_name": "Crohn's Disease",
+      "figure_path_aliases": []
     },
     {
       "source_row": 21,
@@ -356,7 +386,11 @@
         "UCell": "UCell/IBD_GSE121380_colon.h5",
         "singscore": "singscore/IBD_GSE121380_colon.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "search_abbreviations": [
+        "IBD"
+      ],
+      "figure_path_aliases": []
     },
     {
       "source_row": 22,
@@ -371,7 +405,11 @@
         "UCell": "UCell/IBD_GSE125527_PBMC.h5",
         "singscore": "singscore/IBD_GSE125527_PBMC.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "search_abbreviations": [
+        "IBD"
+      ],
+      "figure_path_aliases": []
     },
     {
       "source_row": 23,
@@ -386,7 +424,11 @@
         "UCell": "UCell/IBD_GSE125527_rectum.h5",
         "singscore": "singscore/IBD_GSE125527_rectum.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "search_abbreviations": [
+        "IBD"
+      ],
+      "figure_path_aliases": []
     },
     {
       "source_row": 24,
@@ -401,7 +443,12 @@
         "UCell": "UCell/IBD_GSE134809_ileum.h5",
         "singscore": "singscore/IBD_GSE134809_ileum.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "search_abbreviations": [
+        "IBD"
+      ],
+      "display_name": "Crohn's Disease",
+      "figure_path_aliases": []
     },
     {
       "source_row": 25,
@@ -416,7 +463,12 @@
         "UCell": "UCell/IBD_GSE134809_PBMC.h5",
         "singscore": "singscore/IBD_GSE134809_PBMC.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "search_abbreviations": [
+        "IBD"
+      ],
+      "display_name": "Crohn's Disease",
+      "figure_path_aliases": []
     },
     {
       "source_row": 26,
@@ -431,7 +483,11 @@
         "UCell": "UCell/IBD_SCP259_colon.h5",
         "singscore": "singscore/IBD_SCP259_colon.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "search_abbreviations": [
+        "IBD"
+      ],
+      "figure_path_aliases": []
     },
     {
       "source_row": 27,
@@ -455,7 +511,11 @@
         "verified_genes": 16105,
         "cell_barcode_order_matches_previous_asset": true,
         "sha256": "3a466ea0764498bbdcfeb9649cb23f303096b7c99c42a22ae6d27fd5b28881a1"
-      }
+      },
+      "search_abbreviations": [
+        "IBD"
+      ],
+      "figure_path_aliases": []
     },
     {
       "source_row": 28,
@@ -470,7 +530,8 @@
         "UCell": "UCell/JIA_GSE205095_PBMC.h5",
         "singscore": "singscore/JIA_GSE205095_PBMC.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 29,
@@ -485,7 +546,8 @@
         "UCell": "UCell/LS_GSE160536_Skin.h5",
         "singscore": "singscore/LS_GSE160536_Skin.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 30,
@@ -508,7 +570,8 @@
         "genes": 21927,
         "sha256": "ef422d1547c8536f411cc082dc492e258403912faf9f28edc8425af649c459a3",
         "source_count_verification": "40001 of 40001 rows exact to source Seurat counts"
-      }
+      },
+      "figure_path_aliases": []
     },
     {
       "source_row": 31,
@@ -523,7 +586,8 @@
         "UCell": "UCell/PN_GSE233280_Skin.h5",
         "singscore": "singscore/PN_GSE233280_Skin.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 32,
@@ -540,7 +604,8 @@
       },
       "catalog_aliases": [],
       "asset_dataset_id": "GSE222840",
-      "mapping_note": "Source spreadsheet Dataset says GSE233280, but its Fig.Path and all four H5 paths consistently say GSE222840. Asset matching uses the path accession and retains the source discrepancy for review."
+      "mapping_note": "Source spreadsheet Dataset says GSE233280, but its Fig.Path and all four H5 paths consistently say GSE222840. Asset matching uses the path accession and retains the source discrepancy for review.",
+      "figure_path_aliases": []
     },
     {
       "source_row": 33,
@@ -555,7 +620,8 @@
         "UCell": "UCell/PSO_GSE151177_Skin.h5",
         "singscore": "singscore/PSO_GSE151177_Skin.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 34,
@@ -570,7 +636,8 @@
         "UCell": "UCell/PSO_GSE162183_Skin.h5",
         "singscore": "singscore/PSO_GSE162183_Skin.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 35,
@@ -585,7 +652,8 @@
         "UCell": "UCell/PSO_GSE220116_Skin.h5",
         "singscore": "singscore/PSO_GSE220116_Skin.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 36,
@@ -600,7 +668,8 @@
         "UCell": "UCell/RA_GSE159117_PBMC.h5",
         "singscore": "singscore/RA_GSE159117_PBMC.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 37,
@@ -615,7 +684,8 @@
         "UCell": "UCell/RA_syn26710600_synovial.h5",
         "singscore": "singscore/RA_syn26710600_synovial.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 38,
@@ -630,7 +700,8 @@
         "UCell": "UCell/SLE_GSE135779_PBMC.h5",
         "singscore": "singscore/SLE_GSE135779_PBMC.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 39,
@@ -645,7 +716,8 @@
         "UCell": "UCell/SLE_GSE174188_PBMC.h5",
         "singscore": "singscore/SLE_GSE174188_PBMC.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 40,
@@ -660,7 +732,8 @@
         "UCell": "UCell/SLE_GSE179633_Skin_Dermal.h5",
         "singscore": "singscore/SLE_GSE179633_Skin_Dermal.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 41,
@@ -675,7 +748,8 @@
         "UCell": "UCell/SLE_GSE179633_Skin_Epidermal.h5",
         "singscore": "singscore/SLE_GSE179633_Skin_Epidermal.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 42,
@@ -709,7 +783,8 @@
         "UCell": "UCell/SSs_GSE128169_Lung.h5",
         "singscore": "singscore/SSs_GSE128169_Lung.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 44,
@@ -724,7 +799,8 @@
         "UCell": "UCell/SSs_GSE138669_Skin.h5",
         "singscore": "singscore/SSs_GSE138669_Skin.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 45,
@@ -739,7 +815,8 @@
         "UCell": "UCell/SSs_GSE212109_Lung.h5",
         "singscore": "singscore/SSs_GSE212109_Lung.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 46,
@@ -761,7 +838,8 @@
       "search_abbreviations": [
         "SV"
       ],
-      "classification_note": "GSE198616 is the systemic Behçet disease PBMC cohort. The separate BD(Uveitis) aqueous-humour cohort is excluded from BD exact filtering; SV remains a documented legacy search alias."
+      "classification_note": "GSE198616 is the systemic Behçet disease PBMC cohort. The separate BD(Uveitis) aqueous-humour cohort is excluded from BD exact filtering; SV remains a documented legacy search alias.",
+      "figure_path_aliases": []
     },
     {
       "source_row": 47,
@@ -776,7 +854,8 @@
         "UCell": "UCell/T1DM_GSE221297_PBMC.h5",
         "singscore": "singscore/T1DM_GSE221297_PBMC.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 48,
@@ -791,7 +870,8 @@
         "UCell": "UCell/T1DM_syn53641849_PBMC.h5",
         "singscore": "singscore/T1DM_syn53641849_PBMC.h5"
       },
-      "catalog_aliases": []
+      "catalog_aliases": [],
+      "figure_path_aliases": []
     },
     {
       "source_row": 49,
@@ -815,8 +895,1054 @@
         }
       ],
       "mapping_note": "Legacy AIR records are distinguished by the explicit disease_full_name and tissue, matching separate disease paths in the supplied sample table.",
-      "display_name": "Vogt–Koyanagi–Harada Disease (Uveitis)"
+      "display_name": "Vogt–Koyanagi–Harada Disease (Uveitis)",
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:0",
+      "disease_name": "Active Tattoo Uveitis",
+      "abbreviation": "ATU",
+      "dataset_id": "GSE232802",
+      "tissue": "PBMC",
+      "figure_path": "Active_Tattoo_Uveitis/GSE232802/PBMC",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE232802",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
+        "The sample-composition dendrogram is not applicable: the object contains only one non-missing Sample label. Sample labels are not verified donors."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:1",
+      "disease_name": "Antiphospholipid Syndrome",
+      "abbreviation": "APS",
+      "dataset_id": "GSE262240",
+      "tissue": "PBMC",
+      "figure_path": "Antiphospholipid_Syndrome/GSE262240/PBMC",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262240",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:2",
+      "disease_name": "Atopic Dermatitis",
+      "abbreviation": "AD",
+      "dataset_id": "GSE230575",
+      "tissue": "SkinBiopsy",
+      "figure_path": "Atopic_Dermatitis/GSE230575/SkinBiopsy",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE230575",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:4",
+      "disease_name": "Autoimmune Hemolytic Anemia",
+      "abbreviation": "AIHA",
+      "dataset_id": "GSE301528",
+      "tissue": "BoneMarrow",
+      "figure_path": "Autoimmune_Hemolytic_Anemia/GSE301528/BoneMarrow",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE301528",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:5",
+      "disease_name": "Checkpoint Inhibitor Colitis",
+      "abbreviation": "CIC",
+      "dataset_id": "GSE253720",
+      "tissue": "ColonBiopsy",
+      "figure_path": "Checkpoint_Inhibitor_Colitis/GSE253720/ColonBiopsy",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE253720",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
+        "The treatment-associated condition label is preserved; this object is not an independent primary-autoimmune-disease cohort."
+      ],
+      "scope_classification": "treatment_associated_condition",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:6",
+      "disease_name": "Crohn's Disease",
+      "abbreviation": "CD",
+      "dataset_id": "GSE260842",
+      "tissue": "Ileum_Colon_Fistula",
+      "figure_path": "Crohn_Disease/GSE260842/Ileum_Colon_Fistula",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE260842",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "search_abbreviations": [
+        "IBD"
+      ],
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:7",
+      "disease_name": "Crohn's Disease",
+      "abbreviation": "CD",
+      "dataset_id": "GSE266616",
+      "tissue": "AscColon_TIleum",
+      "figure_path": "Crohn_Disease/GSE266616/AscColon_TIleum",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266616",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "search_abbreviations": [
+        "IBD"
+      ],
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:8",
+      "disease_name": "Crohn's Disease",
+      "abbreviation": "CD",
+      "dataset_id": "GSE268626",
+      "tissue": "PBMC",
+      "figure_path": "Crohn_Disease/GSE268626/PBMC",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE268626",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "search_abbreviations": [
+        "IBD"
+      ],
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:9",
+      "disease_name": "Crohn's Disease",
+      "abbreviation": "CD",
+      "dataset_id": "GSE284230",
+      "tissue": "SmallIntestine",
+      "figure_path": "Crohn_Disease/GSE284230/SmallIntestine",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284230",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "search_abbreviations": [
+        "IBD"
+      ],
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:10",
+      "disease_name": "Dermatomyositis",
+      "abbreviation": "DM",
+      "dataset_id": "GSE303609",
+      "tissue": "Skin",
+      "figure_path": "Dermatomyositis/GSE303609/Skin",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303609",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
+        "Case-distinct source features C2orf15 and C2ORF15 are preserved separately, without biological merging."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "case_sensitive_gene_symbols": [
+        "C2orf15",
+        "C2ORF15"
+      ],
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:11",
+      "disease_name": "Dupilumab-Associated Head and Neck Dermatitis",
+      "abbreviation": "DAHND",
+      "dataset_id": "GSE230575",
+      "tissue": "SkinBiopsy",
+      "figure_path": "Dupilumab_Associated_Head_Neck_Dermatitis/GSE230575/SkinBiopsy",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE230575",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
+        "The treatment-associated condition label is preserved; this object is not an independent primary-autoimmune-disease cohort."
+      ],
+      "scope_classification": "treatment_associated_condition",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:12",
+      "disease_name": "Gastroesophageal Reflux Disease",
+      "abbreviation": "GERD",
+      "dataset_id": "GSE295274",
+      "tissue": "Esophagus",
+      "figure_path": "Gastroesophageal_Reflux_Disease/GSE295274/Esophagus",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295274",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": false,
+        "kegg_score": false,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
+        "Only the reviewed main figures are published. Gene and pathway browsers are unavailable while the gene-image set is incomplete.",
+        "GERD is presented as a reference condition and is not classified as an autoimmune disease."
+      ],
+      "scope_classification": "reference_condition",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:13",
+      "disease_name": "Inactive Tattoo Uveitis",
+      "abbreviation": "ITU",
+      "dataset_id": "GSE232802",
+      "tissue": "PBMC",
+      "figure_path": "Inactive_Tattoo_Uveitis/GSE232802/PBMC",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE232802",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
+        "The sample-composition dendrogram is not applicable: the object contains only one non-missing Sample label. Sample labels are not verified donors."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:14",
+      "disease_name": "Interstitial Lung Disease",
+      "abbreviation": "ILD",
+      "dataset_id": "GSE296682",
+      "tissue": "BAL",
+      "figure_path": "Interstitial_Lung_Disease/GSE296682/BAL",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296682",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
+        "ILD is a broad source label. Autoimmune aetiology is not inferred; this object is presented as a reference resource."
+      ],
+      "scope_classification": "reference_condition",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:15",
+      "disease_name": "Juvenile Idiopathic Arthritis",
+      "abbreviation": "JIA",
+      "dataset_id": "GSE213095",
+      "tissue": "PBMC_SFMC",
+      "figure_path": "JIA/GSE213095/PBMC_SFMC",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE213095",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:16",
+      "disease_name": "Multiple Sclerosis",
+      "abbreviation": "MS",
+      "dataset_id": "GSE327243",
+      "tissue": "CSF",
+      "figure_path": "Multiple_Sclerosis/GSE327243/CSF",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327243",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:17",
+      "disease_name": "Multiple Sclerosis",
+      "abbreviation": "MS",
+      "dataset_id": "GSE328264",
+      "tissue": "CSF",
+      "figure_path": "Multiple_Sclerosis/GSE328264/CSF",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328264",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:18",
+      "disease_name": "Myasthenia Gravis",
+      "abbreviation": "MG",
+      "dataset_id": "GSE233180",
+      "tissue": "Thymus",
+      "figure_path": "Myasthenia_Gravis/GSE233180/Thymus",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE233180",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:19",
+      "disease_name": "Psoriasis",
+      "abbreviation": "PSO",
+      "dataset_id": "GSE301804",
+      "tissue": "Skin",
+      "figure_path": "Psoriasis/GSE301804/Skin",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE301804",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:20",
+      "disease_name": "Sarcoidosis",
+      "abbreviation": "SAR",
+      "dataset_id": "GSE232802",
+      "tissue": "PBMC",
+      "figure_path": "Sarcoidosis/GSE232802/PBMC",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE232802",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
+        "The sample-composition dendrogram is not applicable: the object contains only one non-missing Sample label. Sample labels are not verified donors."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:21",
+      "disease_name": "Sarcoidosis",
+      "abbreviation": "SAR",
+      "dataset_id": "GSE288459",
+      "tissue": "BAL",
+      "figure_path": "Sarcoidosis/GSE288459/BAL",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288459",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:22",
+      "disease_name": "Sarcoidosis",
+      "abbreviation": "SAR",
+      "dataset_id": "GSE319770",
+      "tissue": "Heart",
+      "figure_path": "Sarcoidosis/GSE319770/Heart",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319770",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": false,
+        "kegg_score": false,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
+        "Only the reviewed main figures are published. Gene and pathway browsers are unavailable while the gene-image set is incomplete."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:23",
+      "disease_name": "Systemic Lupus Erythematosus",
+      "abbreviation": "SLE",
+      "dataset_id": "GSE303609",
+      "tissue": "Skin",
+      "figure_path": "Systemic_Lupus_Erythematosus/GSE303609/Skin",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303609",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
+        "Case-distinct source features C2orf15 and C2ORF15 are preserved separately, without biological merging."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "case_sensitive_gene_symbols": [
+        "C2orf15",
+        "C2ORF15"
+      ],
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:24",
+      "disease_name": "Systemic Sclerosis",
+      "abbreviation": "SSs",
+      "dataset_id": "GSE295274",
+      "tissue": "Esophagus",
+      "figure_path": "Systemic_Sclerosis/GSE295274/Esophagus",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295274",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "search_abbreviations": [
+        "SSc"
+      ],
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:25",
+      "disease_name": "Type 1 Diabetes Mellitus",
+      "abbreviation": "T1DM",
+      "dataset_id": "GSE270142",
+      "tissue": "PBMC",
+      "figure_path": "T1D/GSE270142/PBMC",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE270142",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:26",
+      "disease_name": "Type 1 Diabetes Mellitus",
+      "abbreviation": "T1DM",
+      "dataset_id": "GSE271063",
+      "tissue": "PBMC",
+      "figure_path": "T1D/GSE271063/PBMC",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE271063",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:27",
+      "disease_name": "Type 1 Diabetes Mellitus",
+      "abbreviation": "T1DM",
+      "dataset_id": "GSE279086",
+      "tissue": "Kidney",
+      "figure_path": "T1D/GSE279086/Kidney",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE279086",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:28",
+      "disease_name": "Type 1 Diabetes Mellitus",
+      "abbreviation": "T1DM",
+      "dataset_id": "GSE316337",
+      "tissue": "PBMC",
+      "figure_path": "T1D/GSE316337/PBMC",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316337",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": false,
+        "kegg_score": false,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
+        "Only the reviewed main figures are published. Gene and pathway browsers are unavailable while the gene-image set is incomplete."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:29",
+      "disease_name": "Ulcerative Colitis",
+      "abbreviation": "UC",
+      "dataset_id": "GSE253006",
+      "tissue": "Colon",
+      "figure_path": "Ulcerative_Colitis/GSE253006/Colon",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE253006",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "search_abbreviations": [
+        "IBD"
+      ],
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:30",
+      "disease_name": "Ulcerative Colitis",
+      "abbreviation": "UC",
+      "dataset_id": "GSE253720",
+      "tissue": "ColonBiopsy",
+      "figure_path": "Ulcerative_Colitis/GSE253720/ColonBiopsy",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE253720",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "search_abbreviations": [
+        "IBD"
+      ],
+      "figure_path_aliases": []
+    },
+    {
+      "source_row": "new-aid-20261015:31",
+      "disease_name": "Ulcerative Colitis",
+      "abbreviation": "UC",
+      "dataset_id": "GSE268626",
+      "tissue": "PBMC",
+      "figure_path": "Ulcerative_Colitis/GSE268626/PBMC",
+      "h5_paths": {},
+      "catalog_aliases": [],
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE268626",
+      "release_id": "scaid-new-aid-20261015",
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ],
+      "scope_classification": "disease_resource",
+      "source_evidence": {
+        "curation_labels": "Supplied processed-object directory labels and existing QC receipts",
+        "independent_GEO_source_authentication": false,
+        "donor_clinical_mapping_authenticated": false,
+        "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
+      },
+      "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "search_abbreviations": [
+        "IBD"
+      ],
+      "figure_path_aliases": []
     }
   ],
-  "path_format": "portable-relative-v1"
+  "releases": [
+    {
+      "release_id": "scaid-new-aid-20261015",
+      "objects": 31,
+      "gene_and_pathway_objects": 28,
+      "main_figures_only_objects": 3,
+      "new_asset_manifest_sha256": "446bf84755365e6e8086976b89a21700d871610a4979b48d437b56f72e39c9d7",
+      "integrated_atlas_changed": false
+    }
+  ]
 }

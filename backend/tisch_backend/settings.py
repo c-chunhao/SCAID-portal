@@ -19,7 +19,7 @@ ALLOWED_HOSTS = [host.strip() for host in os.environ.get('SCAID_ALLOWED_HOSTS', 
 if not ALLOWED_HOSTS or '*' in ALLOWED_HOSTS:
     raise ImproperlyConfigured('Configure explicit SCAID_ALLOWED_HOSTS.')
 INSTALLED_APPS = ['django.contrib.admin', 'django.contrib.auth', 'django.contrib.contenttypes', 'django.contrib.sessions', 'django.contrib.messages', 'django.contrib.staticfiles', 'tisch_api', 'rest_framework', 'csp']
-MIDDLEWARE = ['django.middleware.security.SecurityMiddleware', 'django.contrib.sessions.middleware.SessionMiddleware', 'django.middleware.common.CommonMiddleware', 'django.middleware.csrf.CsrfViewMiddleware', 'django.contrib.auth.middleware.AuthenticationMiddleware', 'django.contrib.messages.middleware.MessageMiddleware', 'django.middleware.clickjacking.XFrameOptionsMiddleware', 'csp.middleware.CSPMiddleware']
+MIDDLEWARE = ['django.middleware.security.SecurityMiddleware', 'django.middleware.gzip.GZipMiddleware', 'django.contrib.sessions.middleware.SessionMiddleware', 'django.middleware.common.CommonMiddleware', 'django.middleware.csrf.CsrfViewMiddleware', 'django.contrib.auth.middleware.AuthenticationMiddleware', 'django.contrib.messages.middleware.MessageMiddleware', 'django.middleware.clickjacking.XFrameOptionsMiddleware', 'csp.middleware.CSPMiddleware']
 ROOT_URLCONF = 'tisch_backend.urls'
 WSGI_APPLICATION = 'tisch_backend.wsgi.application'
 TEMPLATES = [{'BACKEND': 'django.template.backends.django.DjangoTemplates', 'DIRS': [], 'APP_DIRS': True, 'OPTIONS': {'context_processors': ['django.template.context_processors.debug', 'django.template.context_processors.request', 'django.contrib.auth.context_processors.auth', 'django.contrib.messages.context_processors.messages']}}]
@@ -63,3 +63,15 @@ X_FRAME_OPTIONS = 'DENY'
 # that strips untrusted client forwarding headers and sets this value itself.
 if os.environ.get('SCAID_TRUST_PROXY_SSL', 'false').lower() == 'true':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Published gene/score families are a relative layout example, not a server path.
+# Register real assets explicitly; the source package contains no expression data.
+import json
+_published = BASE_DIR / 'tisch_api' / 'data' / 'published_figure_roots.json'
+if _published.is_file():
+    _published_base = Path(os.environ.get('SCAID_PUBLISHED_FIGURES_BASE', str(SCAID_FIGURE_ROOT / 'source_gene_score')))
+    for _root in json.loads(_published.read_text(encoding='utf-8'))['roots']:
+        _relative = Path(_root)
+        if _relative.is_absolute() or '..' in _relative.parts or _relative.name not in {'GeneUmap', 'KEGGScore'}:
+            raise ImproperlyConfigured('Published figure roots must be relative GeneUmap/KEGGScore families.')
+        SCAID_EXTRA_FIGURE_ROOTS.append((_published_base / _relative).resolve())

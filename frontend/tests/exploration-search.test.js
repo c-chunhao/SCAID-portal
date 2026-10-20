@@ -33,19 +33,20 @@ test('all 48 matching plots are reachable, with relative page requests and prese
     const first = (params.page - 1) * params.page_size
     return pageResponse(Array.from({ length: Math.min(params.page_size, 48 - first) }, (_, i) => ({ id: first + i + 1 })), 48)
   } })
-  const filters = { pdf_name: 'CD3D', abbreviation: 'AS', dataset_id: 'GSE216883' }
+  const filters = { pdf_name: 'CD3D', abbreviation: 'AS', dataset_id: 'GSE216883', tissue: 'PBMC/SFMC' }
   await search.submit(filters)
   assert.equal(search.state.total, 48)
   assert.equal(search.state.files.length, 10)
   const seen = new Set(search.state.files.map(item => item.id))
   filters.pdf_name = 'Changed form outside controller'
+  filters.tissue = 'Edited without submitting'
   for (let page = 2; page <= 5; page += 1) {
     await search.changePage(page)
     search.state.files.forEach(item => seen.add(item.id))
   }
   assert.equal(seen.size, 48)
   assert.equal(search.state.files.length, 8)
-  assert.ok(requests.every(({ url, params }) => url === '/pdf-images/' && params.pdf_name === 'CD3D' && params.abbreviation === 'AS' && params.dataset_id === 'GSE216883'))
+  assert.ok(requests.every(({ url, params }) => url === '/pdf-images/' && params.pdf_name === 'CD3D' && params.abbreviation === 'AS' && params.dataset_id === 'GSE216883' && params.tissue === 'PBMC/SFMC'))
   await search.changePageSize(999)
   assert.equal(search.state.pageSize, 100)
   assert.equal(search.state.page, 1)
@@ -58,11 +59,24 @@ test('KEGG requests select the KEGGScore family and retain the selected scoring 
     params = value
     return pageResponse([{ id: 1 }])
   } })
-  await search.submit({ pdf_name: ' hsa00240 ', kegg_param: 'UCell' })
+  await search.submit({ pdf_name: ' hsa00240 ', tissue: 'SFMC', kegg_param: 'UCell' })
   assert.equal(params.pdf_name, 'hsa00240')
   assert.equal(params.KEGGScore, 'KEGGScore')
   assert.equal(params.kegg_param, 'UCell')
+  assert.equal(params.tissue, 'SFMC')
   assert.equal('KEGGUmap' in params, false)
+})
+
+test('legacy searches omit tissue rather than imposing a new constraint', async () => {
+  for (const kind of ['gene', 'kegg']) {
+    let params
+    const search = createExplorationSearch({ kind, request: async (_, value) => {
+      params = value
+      return pageResponse([])
+    } })
+    await search.submit({ pdf_name: kind === 'gene' ? 'CD3D' : 'hsa00010' })
+    assert.equal('tissue' in params, false)
+  }
 })
 
 test('restoring a shared KEGG query requests its selected page and page size without fetching page one first', async () => {

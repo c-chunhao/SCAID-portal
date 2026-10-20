@@ -1,0 +1,1250 @@
+{
+  "release": "v0.2.0-rc1",
+  "retrieved_date": "2026-10-20",
+  "object_count": 79,
+  "cell_records": 4590932,
+  "entry_specific_sample_labels": 1095,
+  "conditions": 36,
+  "sample_labels_are_independent_donors": false,
+  "catalogue": [
+    {
+      "id": 97,
+      "disease_label": "Psoriatic Arthritis",
+      "abbreviation": "PsA",
+      "dataset_label": "E-MTAB-8207",
+      "dataset_source": "E-MTAB",
+      "tissue_label": "PBMC",
+      "cell_count": 15912,
+      "sample_size": 3,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 98,
+      "disease_label": "Psoriatic Arthritis",
+      "abbreviation": "PsA",
+      "dataset_label": "E-MTAB-8207",
+      "dataset_source": "E-MTAB",
+      "tissue_label": "SFMC",
+      "cell_count": 2729,
+      "sample_size": 1,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 99,
+      "disease_label": "Ankylosing Spondylitis",
+      "abbreviation": "AS",
+      "dataset_label": "GSE216883",
+      "dataset_source": "GEO",
+      "tissue_label": "PBMC/SFMC",
+      "cell_count": 60748,
+      "sample_size": 7,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 100,
+      "disease_label": "Gout",
+      "abbreviation": "Gout",
+      "dataset_label": "GSE211783",
+      "dataset_source": "GEO",
+      "tissue_label": "PBMC",
+      "cell_count": 49691,
+      "sample_size": 6,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 101,
+      "disease_label": "Gout",
+      "abbreviation": "Gout",
+      "dataset_label": "GSE217561",
+      "dataset_source": "GEO",
+      "tissue_label": "PBMC",
+      "cell_count": 60221,
+      "sample_size": 6,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 102,
+      "disease_label": "Gout",
+      "abbreviation": "Gout",
+      "dataset_label": "PRJNA861849",
+      "dataset_source": "SRA",
+      "tissue_label": "PBMC",
+      "cell_count": 68231,
+      "sample_size": 7,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 103,
+      "disease_label": "Gout",
+      "abbreviation": "Gout",
+      "dataset_label": "PRJNA861849",
+      "dataset_source": "SRA",
+      "tissue_label": "SFMC",
+      "cell_count": 1412,
+      "sample_size": 3,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 104,
+      "disease_label": "Lyme Disease",
+      "abbreviation": "Lyme",
+      "dataset_label": "GSE166796",
+      "dataset_source": "GEO",
+      "tissue_label": "skin",
+      "cell_count": 40001,
+      "sample_size": 6,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 105,
+      "disease_label": "Psoriasis",
+      "abbreviation": "PSO",
+      "dataset_label": "GSE151177",
+      "dataset_source": "GEO",
+      "tissue_label": "skin",
+      "cell_count": 14438,
+      "sample_size": 17,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 106,
+      "disease_label": "Psoriasis",
+      "abbreviation": "PSO",
+      "dataset_label": "GSE162183",
+      "dataset_source": "GEO",
+      "tissue_label": "skin",
+      "cell_count": 6096,
+      "sample_size": 3,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 107,
+      "disease_label": "Psoriasis",
+      "abbreviation": "PSO",
+      "dataset_label": "GSE220116",
+      "dataset_source": "GEO",
+      "tissue_label": "skin",
+      "cell_count": 18868,
+      "sample_size": 17,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 108,
+      "disease_label": "Juvenile Idiopathic Arthritis",
+      "abbreviation": "JIA",
+      "dataset_label": "GSE205095",
+      "dataset_source": "GEO",
+      "tissue_label": "PBMC",
+      "cell_count": 39908,
+      "sample_size": 12,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 109,
+      "disease_label": "Primary Sjögren's Syndrome",
+      "abbreviation": "pSS",
+      "dataset_label": "GSE157278",
+      "dataset_source": "GEO",
+      "tissue_label": "PBMC",
+      "cell_count": 29567,
+      "sample_size": 5,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 110,
+      "disease_label": "Behçet's Disease",
+      "abbreviation": "BD",
+      "dataset_label": "GSE198616",
+      "dataset_source": "GEO",
+      "tissue_label": "PBMC",
+      "cell_count": 20375,
+      "sample_size": 4,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 111,
+      "disease_label": "Systemic Lupus Erythematosus",
+      "abbreviation": "SLE",
+      "dataset_label": "GSE135779",
+      "dataset_source": "GEO",
+      "tissue_label": "PBMC",
+      "cell_count": 223250,
+      "sample_size": 40,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 112,
+      "disease_label": "Systemic Lupus Erythematosus",
+      "abbreviation": "SLE",
+      "dataset_label": "GSE174188",
+      "dataset_source": "GEO",
+      "tissue_label": "PBMC",
+      "cell_count": 664791,
+      "sample_size": 162,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 113,
+      "disease_label": "Systemic Lupus Erythematosus",
+      "abbreviation": "SLE",
+      "dataset_label": "GSE179633",
+      "dataset_source": "GEO",
+      "tissue_label": "Epidermal",
+      "cell_count": 22542,
+      "sample_size": 5,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 114,
+      "disease_label": "Systemic Lupus Erythematosus",
+      "abbreviation": "SLE",
+      "dataset_label": "GSE179633",
+      "dataset_source": "GEO",
+      "tissue_label": "Dermal",
+      "cell_count": 82535,
+      "sample_size": 7,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 115,
+      "disease_label": "Discoid Lupus Erythematosus",
+      "abbreviation": "DLE",
+      "dataset_label": "GSE179633",
+      "dataset_source": "SCP",
+      "tissue_label": "Epidermal",
+      "cell_count": 27004,
+      "sample_size": 5,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 116,
+      "disease_label": "Discoid Lupus Erythematosus",
+      "abbreviation": "DLE",
+      "dataset_label": "GSE179633",
+      "dataset_source": "SCP",
+      "tissue_label": "Dermal",
+      "cell_count": 42482,
+      "sample_size": 5,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 117,
+      "disease_label": "Rheumatoid Arthritis",
+      "abbreviation": "RA",
+      "dataset_label": "GSE159117",
+      "dataset_source": "GEO",
+      "tissue_label": "PBMC",
+      "cell_count": 10116,
+      "sample_size": 1,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 118,
+      "disease_label": "Rheumatoid Arthritis",
+      "abbreviation": "RA",
+      "dataset_label": "syn26710600",
+      "dataset_source": "SRA",
+      "tissue_label": "synovial",
+      "cell_count": 274487,
+      "sample_size": 84,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 119,
+      "disease_label": "Autoimmune Hepatitis",
+      "abbreviation": "AIH",
+      "dataset_label": "GSM6658039",
+      "dataset_source": "GEO",
+      "tissue_label": "PBMC",
+      "cell_count": 2971,
+      "sample_size": 1,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 120,
+      "disease_label": "Vogt–Koyanagi–Harada Disease (Uveitis)",
+      "abbreviation": "VKHD(Uveitis)",
+      "dataset_label": "https://cstr.cn/31253.11.sciencedb.02341",
+      "dataset_source": "scidb",
+      "tissue_label": "Aqueous humour",
+      "cell_count": 30300,
+      "sample_size": 3,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 121,
+      "disease_label": "Behçet’s Disease(Uveitis)",
+      "abbreviation": "BD(Uveitis)",
+      "dataset_label": "https://cstr.cn/31253.11.sciencedb.02341",
+      "dataset_source": "scidb",
+      "tissue_label": "Aqueous humour",
+      "cell_count": 15779,
+      "sample_size": 3,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 122,
+      "disease_label": "Bullous Pemphigoid",
+      "abbreviation": "BP",
+      "dataset_label": "zenodo:10924853",
+      "dataset_source": "zenodo",
+      "tissue_label": "Skin",
+      "cell_count": 17760,
+      "sample_size": 5,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 123,
+      "disease_label": "Bullous Pemphigoid",
+      "abbreviation": "BP",
+      "dataset_label": "zenodo:10924853",
+      "dataset_source": "zenodo",
+      "tissue_label": "PBMC",
+      "cell_count": 43752,
+      "sample_size": 8,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 124,
+      "disease_label": "Bullous Pemphigoid",
+      "abbreviation": "BP",
+      "dataset_label": "zenodo:10924853",
+      "dataset_source": "zenodo",
+      "tissue_label": "Blister fluid",
+      "cell_count": 18382,
+      "sample_size": 4,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 125,
+      "disease_label": "Systemic Sclerosis",
+      "abbreviation": "SSs",
+      "dataset_label": "GSE128169",
+      "dataset_source": "GEO",
+      "tissue_label": "Lung",
+      "cell_count": 22054,
+      "sample_size": 8,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 126,
+      "disease_label": "Systemic Sclerosis",
+      "abbreviation": "SSs",
+      "dataset_label": "GSE138669",
+      "dataset_source": "GEO",
+      "tissue_label": "Skin",
+      "cell_count": 22129,
+      "sample_size": 12,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 127,
+      "disease_label": "Systemic Sclerosis",
+      "abbreviation": "SSs",
+      "dataset_label": "GSE212109",
+      "dataset_source": "GEO",
+      "tissue_label": "Lung",
+      "cell_count": 12324,
+      "sample_size": 5,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 128,
+      "disease_label": "Prurigo Nodularis",
+      "abbreviation": "PN",
+      "dataset_label": "GSE233280",
+      "dataset_source": "GEO",
+      "tissue_label": "Skin",
+      "cell_count": 29417,
+      "sample_size": 6,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 129,
+      "disease_label": "Localized Scleroderma",
+      "abbreviation": "LS",
+      "dataset_label": "GSE160536",
+      "dataset_source": "GEO",
+      "tissue_label": "Skin",
+      "cell_count": 10109,
+      "sample_size": 6,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 130,
+      "disease_label": "Colitis Inflamed",
+      "abbreviation": "CI",
+      "dataset_label": "GSE121380",
+      "dataset_source": "GEO",
+      "tissue_label": "colon",
+      "cell_count": 32679,
+      "sample_size": 7,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 131,
+      "disease_label": "Colitis Inflamed",
+      "abbreviation": "CI",
+      "dataset_label": "HRA000072",
+      "dataset_source": "HRA",
+      "tissue_label": "colon",
+      "cell_count": 39033,
+      "sample_size": 12,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 132,
+      "disease_label": "Crohn's Disease",
+      "abbreviation": "CD",
+      "dataset_label": "E-MTAB-8901",
+      "dataset_source": "E-MTAB",
+      "tissue_label": "ileum",
+      "cell_count": 19189,
+      "sample_size": 7,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 133,
+      "disease_label": "Crohn's Disease",
+      "abbreviation": "CD",
+      "dataset_label": "GSE134809",
+      "dataset_source": "GEO",
+      "tissue_label": "ileum",
+      "cell_count": 24407,
+      "sample_size": 11,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 134,
+      "disease_label": "Crohn's Disease",
+      "abbreviation": "CD",
+      "dataset_label": "GSE134809",
+      "dataset_source": "GEO",
+      "tissue_label": "PBMC",
+      "cell_count": 29929,
+      "sample_size": 9,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 135,
+      "disease_label": "Crohn's Disease",
+      "abbreviation": "CD",
+      "dataset_label": "HRA000072",
+      "dataset_source": "HRA",
+      "tissue_label": "colon",
+      "cell_count": 14878,
+      "sample_size": 6,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 136,
+      "disease_label": "Ulcerative Colitis",
+      "abbreviation": "UC",
+      "dataset_label": "GSE125527",
+      "dataset_source": "GEO",
+      "tissue_label": "PBMC",
+      "cell_count": 47351,
+      "sample_size": 6,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 137,
+      "disease_label": "Ulcerative Colitis",
+      "abbreviation": "UC",
+      "dataset_label": "GSE125527",
+      "dataset_source": "GEO",
+      "tissue_label": "rectum",
+      "cell_count": 35210,
+      "sample_size": 7,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 138,
+      "disease_label": "Ulcerative Colitis",
+      "abbreviation": "UC",
+      "dataset_label": "HRA000072",
+      "dataset_source": "HRA",
+      "tissue_label": "colon",
+      "cell_count": 15032,
+      "sample_size": 4,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 139,
+      "disease_label": "Ulcerative Colitis",
+      "abbreviation": "UC",
+      "dataset_label": "SCP259",
+      "dataset_source": "SCP",
+      "tissue_label": "colon",
+      "cell_count": 31803,
+      "sample_size": 21,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 140,
+      "disease_label": "Type 1 Diabetes Mellitus",
+      "abbreviation": "T1DM",
+      "dataset_label": "GSE221297",
+      "dataset_source": "GEO",
+      "tissue_label": "PBMC",
+      "cell_count": 86992,
+      "sample_size": 9,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 141,
+      "disease_label": "Type 1 Diabetes Mellitus",
+      "abbreviation": "T1DM",
+      "dataset_label": "syn53641849",
+      "dataset_source": "SRA",
+      "tissue_label": "PBMC",
+      "cell_count": 75746,
+      "sample_size": 46,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 142,
+      "disease_label": "Atopic Dermatitis",
+      "abbreviation": "AD",
+      "dataset_label": "GSE222840",
+      "dataset_source": "GEO",
+      "tissue_label": "Skin Biopsy",
+      "cell_count": 50842,
+      "sample_size": 5,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 143,
+      "disease_label": "Atopic Prurigo",
+      "abbreviation": "AP",
+      "dataset_label": "GSE222840",
+      "dataset_source": "GEO",
+      "tissue_label": "Skin Biopsy",
+      "cell_count": 8382,
+      "sample_size": 1,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 144,
+      "disease_label": "Prurigo Nodularis",
+      "abbreviation": "PN",
+      "dataset_label": "GSE222840",
+      "dataset_source": "GEO",
+      "tissue_label": "Skin Biopsy",
+      "cell_count": 60626,
+      "sample_size": 7,
+      "module_availability": null,
+      "availability_notes": []
+    },
+    {
+      "id": 145,
+      "disease_label": "Active Tattoo Uveitis",
+      "abbreviation": "ATU",
+      "dataset_label": "GSE232802",
+      "dataset_source": "GEO",
+      "tissue_label": "PBMC",
+      "cell_count": 2578,
+      "sample_size": 1,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
+        "The sample-composition dendrogram is not applicable: the object contains only one non-missing Sample label. Sample labels are not verified donors."
+      ]
+    },
+    {
+      "id": 146,
+      "disease_label": "Antiphospholipid Syndrome",
+      "abbreviation": "APS",
+      "dataset_label": "GSE262240",
+      "dataset_source": "GEO",
+      "tissue_label": "PBMC",
+      "cell_count": 16915,
+      "sample_size": 4,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ]
+    },
+    {
+      "id": 147,
+      "disease_label": "Atopic Dermatitis",
+      "abbreviation": "AD",
+      "dataset_label": "GSE230575",
+      "dataset_source": "GEO",
+      "tissue_label": "SkinBiopsy",
+      "cell_count": 119023,
+      "sample_size": 10,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ]
+    },
+    {
+      "id": 148,
+      "disease_label": "Autoimmune Hemolytic Anemia",
+      "abbreviation": "AIHA",
+      "dataset_label": "GSE301528",
+      "dataset_source": "GEO",
+      "tissue_label": "BoneMarrow",
+      "cell_count": 51292,
+      "sample_size": 12,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ]
+    },
+    {
+      "id": 149,
+      "disease_label": "Checkpoint Inhibitor Colitis",
+      "abbreviation": "CIC",
+      "dataset_label": "GSE253720",
+      "dataset_source": "GEO",
+      "tissue_label": "ColonBiopsy",
+      "cell_count": 18081,
+      "sample_size": 6,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
+        "The treatment-associated condition label is preserved; this object is not an independent primary-autoimmune-disease cohort."
+      ]
+    },
+    {
+      "id": 150,
+      "disease_label": "Crohn's Disease",
+      "abbreviation": "CD",
+      "dataset_label": "GSE260842",
+      "dataset_source": "GEO",
+      "tissue_label": "Ileum_Colon_Fistula",
+      "cell_count": 123794,
+      "sample_size": 34,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ]
+    },
+    {
+      "id": 151,
+      "disease_label": "Crohn's Disease",
+      "abbreviation": "CD",
+      "dataset_label": "GSE266616",
+      "dataset_source": "GEO",
+      "tissue_label": "AscColon_TIleum",
+      "cell_count": 146913,
+      "sample_size": 52,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ]
+    },
+    {
+      "id": 152,
+      "disease_label": "Crohn's Disease",
+      "abbreviation": "CD",
+      "dataset_label": "GSE268626",
+      "dataset_source": "GEO",
+      "tissue_label": "PBMC",
+      "cell_count": 8852,
+      "sample_size": 6,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ]
+    },
+    {
+      "id": 153,
+      "disease_label": "Crohn's Disease",
+      "abbreviation": "CD",
+      "dataset_label": "GSE284230",
+      "dataset_source": "GEO",
+      "tissue_label": "SmallIntestine",
+      "cell_count": 171340,
+      "sample_size": 25,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ]
+    },
+    {
+      "id": 154,
+      "disease_label": "Dermatomyositis",
+      "abbreviation": "DM",
+      "dataset_label": "GSE303609",
+      "dataset_source": "GEO",
+      "tissue_label": "Skin",
+      "cell_count": 45707,
+      "sample_size": 16,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
+        "Case-distinct source features C2orf15 and C2ORF15 are preserved separately, without biological merging."
+      ]
+    },
+    {
+      "id": 155,
+      "disease_label": "Dupilumab-Associated Head and Neck Dermatitis",
+      "abbreviation": "DAHND",
+      "dataset_label": "GSE230575",
+      "dataset_source": "GEO",
+      "tissue_label": "SkinBiopsy",
+      "cell_count": 65999,
+      "sample_size": 6,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
+        "The treatment-associated condition label is preserved; this object is not an independent primary-autoimmune-disease cohort."
+      ]
+    },
+    {
+      "id": 156,
+      "disease_label": "Gastroesophageal Reflux Disease",
+      "abbreviation": "GERD",
+      "dataset_label": "GSE295274",
+      "dataset_source": "GEO",
+      "tissue_label": "Esophagus",
+      "cell_count": 32807,
+      "sample_size": 6,
+      "module_availability": {
+        "gene_umap": false,
+        "kegg_score": false,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
+        "Only the reviewed main figures are published. Gene and pathway browsers are unavailable while the gene-image set is incomplete.",
+        "GERD is presented as a reference condition and is not classified as an autoimmune disease."
+      ]
+    },
+    {
+      "id": 157,
+      "disease_label": "Inactive Tattoo Uveitis",
+      "abbreviation": "ITU",
+      "dataset_label": "GSE232802",
+      "dataset_source": "GEO",
+      "tissue_label": "PBMC",
+      "cell_count": 2988,
+      "sample_size": 1,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
+        "The sample-composition dendrogram is not applicable: the object contains only one non-missing Sample label. Sample labels are not verified donors."
+      ]
+    },
+    {
+      "id": 158,
+      "disease_label": "Interstitial Lung Disease",
+      "abbreviation": "ILD",
+      "dataset_label": "GSE296682",
+      "dataset_source": "GEO",
+      "tissue_label": "BAL",
+      "cell_count": 71805,
+      "sample_size": 25,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
+        "ILD is a broad source label. Autoimmune aetiology is not inferred; this object is presented as a reference resource."
+      ]
+    },
+    {
+      "id": 159,
+      "disease_label": "Juvenile Idiopathic Arthritis",
+      "abbreviation": "JIA",
+      "dataset_label": "GSE213095",
+      "dataset_source": "GEO",
+      "tissue_label": "PBMC_SFMC",
+      "cell_count": 164411,
+      "sample_size": 23,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ]
+    },
+    {
+      "id": 160,
+      "disease_label": "Multiple Sclerosis",
+      "abbreviation": "MS",
+      "dataset_label": "GSE327243",
+      "dataset_source": "GEO",
+      "tissue_label": "CSF",
+      "cell_count": 27134,
+      "sample_size": 18,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ]
+    },
+    {
+      "id": 161,
+      "disease_label": "Multiple Sclerosis",
+      "abbreviation": "MS",
+      "dataset_label": "GSE328264",
+      "dataset_source": "GEO",
+      "tissue_label": "CSF",
+      "cell_count": 13695,
+      "sample_size": 6,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ]
+    },
+    {
+      "id": 162,
+      "disease_label": "Myasthenia Gravis",
+      "abbreviation": "MG",
+      "dataset_label": "GSE233180",
+      "dataset_source": "GEO",
+      "tissue_label": "Thymus",
+      "cell_count": 32873,
+      "sample_size": 12,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ]
+    },
+    {
+      "id": 163,
+      "disease_label": "Psoriasis",
+      "abbreviation": "PSO",
+      "dataset_label": "GSE301804",
+      "dataset_source": "GEO",
+      "tissue_label": "Skin",
+      "cell_count": 76069,
+      "sample_size": 18,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ]
+    },
+    {
+      "id": 164,
+      "disease_label": "Sarcoidosis",
+      "abbreviation": "SAR",
+      "dataset_label": "GSE232802",
+      "dataset_source": "GEO",
+      "tissue_label": "PBMC",
+      "cell_count": 5125,
+      "sample_size": 1,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
+        "The sample-composition dendrogram is not applicable: the object contains only one non-missing Sample label. Sample labels are not verified donors."
+      ]
+    },
+    {
+      "id": 165,
+      "disease_label": "Sarcoidosis",
+      "abbreviation": "SAR",
+      "dataset_label": "GSE288459",
+      "dataset_source": "GEO",
+      "tissue_label": "BAL",
+      "cell_count": 55034,
+      "sample_size": 12,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ]
+    },
+    {
+      "id": 166,
+      "disease_label": "Sarcoidosis",
+      "abbreviation": "SAR",
+      "dataset_label": "GSE319770",
+      "dataset_source": "GEO",
+      "tissue_label": "Heart",
+      "cell_count": 241549,
+      "sample_size": 41,
+      "module_availability": {
+        "gene_umap": false,
+        "kegg_score": false,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
+        "Only the reviewed main figures are published. Gene and pathway browsers are unavailable while the gene-image set is incomplete."
+      ]
+    },
+    {
+      "id": 167,
+      "disease_label": "Systemic Lupus Erythematosus",
+      "abbreviation": "SLE",
+      "dataset_label": "GSE303609",
+      "dataset_source": "GEO",
+      "tissue_label": "Skin",
+      "cell_count": 35780,
+      "sample_size": 10,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
+        "Case-distinct source features C2orf15 and C2ORF15 are preserved separately, without biological merging."
+      ]
+    },
+    {
+      "id": 168,
+      "disease_label": "Systemic Sclerosis",
+      "abbreviation": "SSs",
+      "dataset_label": "GSE295274",
+      "dataset_source": "GEO",
+      "tissue_label": "Esophagus",
+      "cell_count": 97449,
+      "sample_size": 19,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ]
+    },
+    {
+      "id": 169,
+      "disease_label": "Type 1 Diabetes Mellitus",
+      "abbreviation": "T1DM",
+      "dataset_label": "GSE270142",
+      "dataset_source": "GEO",
+      "tissue_label": "PBMC",
+      "cell_count": 80295,
+      "sample_size": 11,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ]
+    },
+    {
+      "id": 170,
+      "disease_label": "Type 1 Diabetes Mellitus",
+      "abbreviation": "T1DM",
+      "dataset_label": "GSE271063",
+      "dataset_source": "GEO",
+      "tissue_label": "PBMC",
+      "cell_count": 70694,
+      "sample_size": 7,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ]
+    },
+    {
+      "id": 171,
+      "disease_label": "Type 1 Diabetes Mellitus",
+      "abbreviation": "T1DM",
+      "dataset_label": "GSE279086",
+      "dataset_source": "GEO",
+      "tissue_label": "Kidney",
+      "cell_count": 24663,
+      "sample_size": 26,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ]
+    },
+    {
+      "id": 172,
+      "disease_label": "Type 1 Diabetes Mellitus",
+      "abbreviation": "T1DM",
+      "dataset_label": "GSE316337",
+      "dataset_source": "GEO",
+      "tissue_label": "PBMC",
+      "cell_count": 160976,
+      "sample_size": 27,
+      "module_availability": {
+        "gene_umap": false,
+        "kegg_score": false,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
+        "Only the reviewed main figures are published. Gene and pathway browsers are unavailable while the gene-image set is incomplete."
+      ]
+    },
+    {
+      "id": 173,
+      "disease_label": "Ulcerative Colitis",
+      "abbreviation": "UC",
+      "dataset_label": "GSE253006",
+      "dataset_source": "GEO",
+      "tissue_label": "Colon",
+      "cell_count": 44235,
+      "sample_size": 23,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ]
+    },
+    {
+      "id": 174,
+      "disease_label": "Ulcerative Colitis",
+      "abbreviation": "UC",
+      "dataset_label": "GSE253720",
+      "dataset_source": "GEO",
+      "tissue_label": "ColonBiopsy",
+      "cell_count": 2837,
+      "sample_size": 6,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ]
+    },
+    {
+      "id": 175,
+      "disease_label": "Ulcerative Colitis",
+      "abbreviation": "UC",
+      "dataset_label": "GSE268626",
+      "dataset_source": "GEO",
+      "tissue_label": "PBMC",
+      "cell_count": 7539,
+      "sample_size": 6,
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": false
+      },
+      "availability_notes": [
+        "CellChat figures and matrix downloads are not included in this release.",
+        "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+      ]
+    }
+  ]
+}

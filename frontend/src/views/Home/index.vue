@@ -2,12 +2,12 @@
   <div class="container_box">
     <section class="hero" aria-labelledby="hero-title">
       <div class="container hero-inner">
-        <h1 id="hero-title" class="hero-title">Public single-cell data for autoimmune and related immune-mediated conditions</h1>
-        <p class="catalogue-context">One read-only catalogue. No account required.</p>
+        <h1 id="hero-title" class="hero-title">Single-cell data for autoimmune and related immune-mediated conditions</h1>
+        <p class="catalogue-context">Welcome to SCAID.</p>
         <p class="hero-lead">
           Browse annotated cell populations, precomputed gene and pathway maps and predicted cell–cell
-          communication for each disease–tissue data object, then download the expression matrix or
-          pathway scores to analyse under your own design.
+          communication where published for a disease–tissue data object. Available expression matrices
+          or pathway scores can be downloaded to analyse under your own design.
         </p>
         <form class="hero-search" role="search" @submit.prevent="handleSearch">
           <label class="search-label" for="home-search">Find a disease or dataset</label>
@@ -31,44 +31,60 @@
     </section>
 
     <section class="catalogue-summary container" aria-labelledby="catalogue-size-title" :aria-busy="statsLoading">
-        <h2 id="catalogue-size-title">Catalogue at a glance</h2>
+        <h2 id="catalogue-size-title">Database Statistics</h2>
         <p v-if="statsLoading" class="summary-status" role="status">Loading catalogue summary…</p>
         <p v-else-if="statsError" class="summary-status" role="status">Catalogue summary is temporarily unavailable. <button type="button" class="text-button" @click="fetchStats">Retry</button></p>
         <dl v-else-if="stats" class="stats" aria-label="Catalogue size, computed from the live catalogue">
           <div><dt>{{ fmt(stats.objects) }}</dt><dd>disease–tissue data objects</dd></div>
           <div><dt>{{ fmt(stats.sources) }}</dt><dd>source identifiers</dd></div>
-          <div><dt>{{ fmt(stats.cells) }}</dt><dd>cell records</dd></div>
-          <div><dt>{{ fmt(stats.samples) }}</dt><dd>sample labels</dd></div>
+          <div><dt>{{ fmt(stats.cells) }}</dt><dd>reported cell records</dd></div>
+          <div><dt>{{ fmt(stats.samples) }}</dt><dd>reported sample labels</dd></div>
           <div><dt>{{ fmt(stats.conditions) }}</dt><dd>condition labels</dd></div>
           <div><dt>{{ fmt(stats.tissues) }}</dt><dd>tissue labels</dd></div>
         </dl>
-        <p class="stats-note">Sample labels are not verified donors, and source identifiers are not independent studies. See <router-link to="/Information">Information</router-link> for provenance and limits.</p>
+        <p class="stats-note">Cell and sample totals sum available object-level values; cells are not deduplicated across objects. Sample labels are not verified donors, and source identifiers are not independent studies. See <router-link to="/Information">Information</router-link> for provenance and limits.</p>
     </section>
 
     <section class="browse container" aria-labelledby="browse-title">
       <div class="browse-heading">
-        <h2 id="browse-title">Browse by affected site</h2>
-        <p>Each link opens the Dataset page filtered to that condition. Diseases listed under several sites have data objects from more than one tissue.</p>
+        <h2 id="browse-title">Disease and condition coverage</h2>
+        <p>Explore autoimmune, related immune-mediated, treatment-associated and other conditions included in SCAID. Select a condition below to browse its published data objects.</p>
       </div>
-      <p v-if="loading" role="status">Loading diseases…</p>
-      <el-alert v-if="loadError" :title="loadError" type="error" show-icon :closable="false">
-        <el-button link type="primary" @click="fetchData">Retry</el-button>
-      </el-alert>
-      <div class="browse-grid">
-        <figure class="body-map">
-          <img src="../../assets/images/aid.jpg" alt="Schematic of the human body marking the tissues represented in SCAID" loading="lazy" decoding="async" />
+      <div class="coverage-layout">
+        <figure class="condition-overview coverage-figure">
+          <a :href="conditionOverview" class="overview-image-link" target="_blank" rel="noopener noreferrer" aria-label="Open the body illustration at full resolution in a new tab">
+            <img :src="conditionOverview" width="1122" height="1402" alt="A soft, flat illustration of the human body and its organs. Complete condition names and dataset links are provided as text on this page." aria-describedby="overview-caption" loading="lazy" decoding="async" />
+          </a>
+          <figcaption id="overview-caption">
+            <div class="overview-caption-heading">
+              <a :href="conditionOverview" download="SCAID-body-overview-flat-2026-10-16.png">Download illustration PNG</a>
+            </div>
+          </figcaption>
         </figure>
-        <div class="site-cards">
-          <article v-for="(item, index) in bloodList" :key="item.id || index" class="tissue-card">
-            <h3 class="tissue-title">{{ item.name_en }}</h3>
-            <ul class="disease-list">
-              <li v-for="(option, optionIndex) in item.diseases || []" :key="option.abbreviation || optionIndex">
-                <router-link v-if="option.abbreviation" :to="{ path: '/Dataset', query: { id: option.abbreviation } }" class="disease-name">{{ option.name_en }}</router-link>
-                <span v-else class="disease-name">{{ option.name_en }}</span>
-              </li>
-              <li v-if="!item.diseases?.length" class="empty-tissue">No datasets available</li>
-            </ul>
-          </article>
+        <div class="condition-index" :aria-busy="statsLoading">
+          <div class="condition-index-heading">
+            <h3>Browse all catalogued conditions</h3>
+            <p>Each link opens the Dataset Browser filtered to that condition.</p>
+            <p>The groups aid navigation. Conditions can affect several systems; a group does not identify a dataset’s sampled tissue or imply an exclusive affected organ. The linked index below follows the live catalogue.</p>
+          </div>
+          <p v-if="statsLoading" class="coverage-status" role="status">Loading condition coverage…</p>
+          <el-alert v-else-if="statsError" title="Unable to load the condition index. Please try again." type="error" show-icon :closable="false">
+            <el-button link type="primary" @click="fetchStats">Retry condition index</el-button>
+          </el-alert>
+          <div v-else-if="conditionGroups.length" class="condition-groups">
+            <section v-for="group in conditionGroups" :key="group.key" class="condition-group" :aria-labelledby="`coverage-${group.key}`">
+              <h4 :id="`coverage-${group.key}`">{{ group.title }}</h4>
+              <ul>
+                <li v-for="condition in group.conditions" :key="condition.abbreviation">
+                  <router-link :to="{ path: '/Dataset', query: { id: condition.abbreviation } }" class="condition-link">
+                    <span class="condition-name">{{ condition.label }}</span>
+                    <span v-if="condition.label !== condition.abbreviation" class="condition-abbreviation">{{ condition.abbreviation }}</span>
+                  </router-link>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <p v-else class="coverage-status" role="status">No conditions are currently listed in the published catalogue.</p>
         </div>
       </div>
     </section>
@@ -77,14 +93,15 @@
 
 <script setup>
 defineOptions({ name: 'ScaidHome' });
-import { ref, onMounted, onBeforeUnmount } from 'vue';
+import { computed, ref, onMounted, onBeforeUnmount } from 'vue';
 import { getRequest } from '@/api/home';
 import { useRouter } from 'vue-router';
+import { buildConditionCoverage } from '@/utils/conditionCoverage';
+import conditionOverview from '@/assets/images/scaid-body-overview-flat-20261016.png';
 const router = useRouter();
-const bloodList = ref([]);
+const catalogueRows = ref([]);
+const conditionGroups = computed(() => buildConditionCoverage(catalogueRows.value));
 const inputValue = ref('');
-const loading = ref(false);
-const loadError = ref('');
 const stats = ref(null);
 const statsLoading = ref(true);
 const statsError = ref(false);
@@ -98,20 +115,6 @@ const examples = [
 ];
 const fmt = (n) => (n == null ? '—' : Number(n).toLocaleString('en-US'));
 
-async function fetchData() {
-  loading.value = true;
-  loadError.value = '';
-  try {
-    const response = await getRequest('/by-site/', { format: 'json' });
-    if (response.code !== 200 || !Array.isArray(response.data)) throw new Error('Invalid disease response');
-    if (!disposed) bloodList.value = response.data;
-  } catch {
-    loadError.value = 'Unable to load disease categories. Please try again.';
-  } finally {
-    loading.value = false;
-  }
-}
-
 // Headline numbers are derived from the catalogue itself so they cannot drift from the data.
 async function fetchStats() {
   statsLoading.value = true;
@@ -120,6 +123,7 @@ async function fetchStats() {
     const rows = await getRequest('/cell-data-all/', { format: 'json' });
     if (!Array.isArray(rows) || !rows.length) throw new Error('Invalid catalogue response');
     if (disposed) return;
+    catalogueRows.value = rows;
     const uniq = (values) => new Set(values.filter(Boolean)).size;
     stats.value = {
       objects: rows.length,
@@ -141,7 +145,7 @@ function handleSearch() {
   const search = inputValue.value.trim();
   router.push({ path: '/Dataset', query: search ? { search } : {} });
 }
-onMounted(() => { fetchData(); fetchStats(); });
+onMounted(fetchStats);
 onBeforeUnmount(() => { disposed = true; });
 </script>
 
@@ -171,23 +175,37 @@ onBeforeUnmount(() => { disposed = true; });
 .browse { padding-top: 36px; padding-bottom: 64px; }
 .browse-heading h2 { margin: 0 0 8px; font-size: 1.5rem; font-weight: 650; color: var(--scaid-ink); }
 .browse-heading p { max-width: 75ch; margin: 0 0 28px; color: var(--scaid-muted); }
-.browse-grid { display: grid; grid-template-columns: minmax(240px, 2fr) 3fr; gap: 36px; align-items: start; }
-.body-map { margin: 0; position: sticky; top: 100px; }
-.body-map img { width: 100%; height: auto; aspect-ratio: 1100 / 633; display: block; }
-.site-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 24px; }
-.tissue-card { border-top: 1px solid var(--scaid-line); padding-top: 14px; min-width: 0; }
-.tissue-title { margin: 0 0 8px; font-size: 1rem; font-weight: 650; color: var(--scaid-ink); }
-.disease-list { list-style: none; margin: 0; padding: 0; }
-.disease-list li + li { margin-top: 4px; }
-.disease-name { display: block; padding: 6px 0; font-size: .95rem; color: var(--scaid-accent); text-decoration: underline; text-decoration-color: #dac3b6; text-underline-offset: 3px; overflow-wrap: anywhere; }
-a.disease-name:hover { color: #673924; text-decoration-color: currentColor; }
-.empty-tissue { font-size: .9rem; color: var(--scaid-muted); }
+/* Keep the illustration beside the live condition index, as in the original
+   site. All names remain readable HTML rather than text inside the artwork. */
+.coverage-layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 36px; align-items: start; }
+.condition-overview { min-width: 0; margin: 0; position: sticky; top: 100px; }
+.overview-image-link { display: block; background: #fff; }
+.overview-image-link img { display: block; width: 100%; height: auto; max-height: calc(100dvh - 220px); object-fit: contain; }
+.overview-image-link:focus-visible { outline: 2px solid var(--scaid-focus); outline-offset: 4px; }
+.condition-overview figcaption { padding-top: 14px; font-size: .875rem; color: var(--scaid-muted); }
+.overview-caption-heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px 24px; }
+.overview-caption-heading a { color: var(--scaid-accent); text-decoration: underline; text-underline-offset: 3px; }
+.condition-overview figcaption p { max-width: 75ch; margin: 8px 0 0; line-height: 1.65; }
+.condition-index { min-width: 0; margin-top: 0; }
+.condition-index-heading h3 { margin: 0 0 8px; font-size: 1.25rem; font-weight: 650; color: var(--scaid-ink); }
+.condition-index-heading p { max-width: 75ch; margin: 0 0 12px; color: var(--scaid-muted); }
+.condition-index-heading p:last-child { margin-bottom: 24px; }
+.condition-groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 24px; }
+.condition-group { min-width: 0; padding-top: 16px; border-top: 1px solid var(--scaid-line); }
+.condition-group h4 { margin: 0 0 10px; font-size: 1rem; font-weight: 650; line-height: 1.5; color: var(--scaid-ink); }
+.condition-group ul { list-style: none; margin: 0; padding: 0; }
+.condition-link { display: flex; align-items: baseline; justify-content: space-between; gap: 8px 12px; min-height: 44px; padding: 9px 0; color: var(--scaid-accent); text-decoration: none; line-height: 1.55; }
+.condition-name { min-width: 0; font-size: .9375rem; text-decoration: underline; text-decoration-color: #dac3b6; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.condition-abbreviation { flex-shrink: 0; color: var(--scaid-muted); font-size: .8rem; }
+.condition-link:hover .condition-name { color: #673924; text-decoration-color: currentColor; }
+.coverage-status { margin: 0; color: var(--scaid-muted); }
 @media (max-width: 991px) {
   .hero { padding: 36px 0; }
   .hero-title { font-size: 2rem; }
   .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
-  .browse-grid { grid-template-columns: 1fr; gap: 28px; }
-  .body-map { position: static; max-width: 560px; margin: 0 auto; }
+  .coverage-layout { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .condition-overview { position: static; width: 100%; max-width: 500px; margin: 0 auto; }
+  .overview-image-link img { max-height: none; }
 }
 @media (max-width: 600px) {
   .hero-title { font-size: 1.75rem; }
@@ -198,7 +216,9 @@ a.disease-name:hover { color: #673924; text-decoration-color: currentColor; }
   .chip { min-height: 44px; }
   .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 16px; }
   .browse { padding-top: 28px; padding-bottom: 40px; }
-  .site-cards { gap: 24px 18px; }
-  .disease-name { min-height: 44px; }
+  .overview-caption-heading { align-items: flex-start; flex-direction: column; gap: 4px; }
+  .overview-caption-heading a { display: inline-flex; align-items: center; min-height: 44px; }
+  .condition-groups { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .condition-link { gap: 12px; }
 }
 </style>

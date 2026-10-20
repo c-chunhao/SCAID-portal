@@ -26,14 +26,15 @@
     <article class="guide-content" aria-label="SCAID documentation">
       <section id="resource-overview" tabindex="-1" aria-labelledby="overview-title">
         <h1 id="overview-title">Explore SCAID, step by step</h1>
-        <p class="review-date">Information &amp; usage · Checked 30 September 2026</p>
+        <p class="review-date">Information &amp; usage · Updated 15 October 2026</p>
         <p class="lead">Find a dataset, inspect its precomputed figures, and download the data with the context needed to interpret it.</p>
-        <p>SCAID brings together single-cell data from autoimmune and related immune-mediated conditions. The current catalog contains <strong>48 disease–tissue data objects</strong>, linked to <strong>34 repository identifiers</strong>, with <strong>24 reconciled condition labels</strong> and <strong>14 tissue labels</strong>. E-MTAB-8207 is catalogued as psoriatic arthritis and GSE198616 as Behçet disease; the older object identifiers are kept for traceability.</p>
-        <div class="scope-summary" aria-label="Audited resource size">
-          <div><strong>2,572,480</strong><span>cell records in the audited objects</span></div>
-          <div><strong>625</strong><span>distinct sample labels</span></div>
+        <p>SCAID brings together single-cell data from autoimmune and related immune-mediated conditions, including explicitly labelled reference conditions. <template v-if="catalogueSummary">The live catalogue contains <strong>{{ fmt(catalogueSummary.objects) }} disease–tissue data objects</strong>, linked to <strong>{{ fmt(catalogueSummary.sources) }} repository identifiers</strong>, with <strong>{{ fmt(catalogueSummary.conditions) }} condition labels</strong> and <strong>{{ fmt(catalogueSummary.tissues) }} tissue labels</strong>.</template> E-MTAB-8207 is catalogued as psoriatic arthritis and GSE198616 as Behçet disease; the older object identifiers are kept for traceability.</p>
+        <div v-if="catalogueSummary" class="scope-summary" aria-label="Live catalogue object totals">
+          <div><strong>{{ fmt(catalogueSummary.cells) }}</strong><span>reported cell records (object totals)</span></div>
+          <div><strong>{{ fmt(catalogueSummary.samples) }}</strong><span>reported sample labels (object totals)</span></div>
         </div>
-        <p>A sample label is not necessarily an independent donor, and a repository identifier is not necessarily an independent study. One study can contribute several tissues or disease groups. Counts and examples on this page describe the checked snapshot and may change with later releases.</p>
+        <p>Cell and sample totals sum available object-level values; cells are not deduplicated across objects. A sample label is not necessarily an independent donor, and a repository identifier is not necessarily an independent study. One study can contribute several tissues or disease groups.</p>
+        <p>Modules are published separately for each object. Some objects currently offer only Overview, Marker, GO and KEGG enrichment figures. Gene and pathway-score filters include objects with published maps; CellChat and H5 download controls appear only where released. Adding individual data objects does not update the integrated atlases.</p>
         <p>Use the standard HTTPS address <a href="https://scaid01.com/">scaid01.com</a>. No account is required for public browsing.</p>
         <p>The web application source and scientific analysis scripts are available in the <a href="https://github.com/c-chunhao/SCAID-portal" target="_blank" rel="noopener noreferrer">public GitHub repository</a>, with installation instructions and a synthetic demonstration dataset. Consult the repository for software licensing and original dataset reuse conditions.</p>
       </section>
@@ -42,7 +43,7 @@
         <h2 id="dataset-title">1. Start with a disease: IBD</h2>
         <ol>
           <li>On Home, enter <code>IBD</code> in <strong>Find a disease or dataset</strong>, then click <strong>Explore</strong> or press Enter.</li>
-          <li>The Dataset page retains the query and returns <strong>10 dataset records</strong> in the checked snapshot. IBD is an umbrella text query covering the catalog labels CI, CD and UC; it is not a separate disease abbreviation option.</li>
+          <li>The Dataset page retains the query and shows the matching records in the current catalogue. IBD is an umbrella text query covering the catalog labels CI, CD and UC; it is not a separate disease abbreviation option.</li>
           <li>Find <strong>CI · GSE121380 · colon</strong> and select <strong>View details</strong> in its dataset column. Check the selected disease, accession and tissue below the table. The <strong>Overview</strong> section contains four figures for this record.</li>
           <li>Select <strong>Marker</strong>, <strong>GO</strong>, <strong>KEGG</strong>, or a <strong>Cellchat</strong> submenu to view available results. Use figure pagination when a category has more than one page.</li>
           <li>To narrow your search, choose <strong>Disease abbreviation</strong>, then <strong>Dataset ID</strong>, then <strong>Tissue</strong>, and click <strong>Search</strong>. Use <strong>Reset</strong> to return to the full catalog.</li>
@@ -56,7 +57,7 @@
         <ol>
           <li>Open <router-link to="/Gene">Gene</router-link>, type <code>CD3D</code> into the Gene field, and <strong>select the matching suggestion</strong>. Typing alone does not complete the selection.</li>
           <li>Leave Disease (abbreviation) and Dataset ID empty, then click <strong>Search plots</strong>.</li>
-          <li>The checked snapshot returns <strong>48 plots</strong>. Page 1 shows <strong>1–10</strong>; page 5 shows <strong>41–48</strong>. Use the page numbers, Next, or the page-size selector to explore all results.</li>
+          <li>The result count reflects the currently published maps. Use the page numbers, Next, or the page-size selector to explore all results.</li>
           <li>To restrict the results, select a disease abbreviation or accession and search again.</li>
         </ol>
         <p>For a broad gene suggestion search, use <strong>Load more</strong> when available. No matching plot means that a figure is unavailable for the selected query; it does not prove zero expression.</p>
@@ -67,15 +68,15 @@
         <ol>
           <li>Open <router-link to="/KEGG">KEGG</router-link>, type <code>hsa00010</code>, and select the matching suggestion.</li>
           <li>Choose <strong>AUCell</strong> under Scoring method. Leave disease and dataset filters empty, then click <strong>Search plots</strong>.</li>
-          <li>The checked snapshot returns <strong>48 plots</strong>, with 10 initially shown. Navigate the result pages to view the rest.</li>
-          <li>Choose <strong>UCell</strong> or <strong>singscore</strong> and search again to view that method’s output. Leaving Scoring method empty returns <strong>144 plots</strong> for this example: three methods across 48 objects.</li>
+          <li>The result count reflects the currently published maps, with 10 initially shown. Navigate the result pages to view the rest.</li>
+          <li>Choose <strong>UCell</strong> or <strong>singscore</strong> and search again to view that method’s output. Leave Scoring method empty to search all published methods.</li>
         </ol>
         <p>The KEGG page shows single-cell pathway-score figures. The Dataset page’s KEGG tab shows precomputed enrichment figures. These are different outputs, and score values from different methods or processing contexts do not automatically share a comparable scale.</p>
       </section>
 
       <section id="downloads" tabindex="-1" aria-labelledby="downloads-title">
         <h2 id="downloads-title">4. Download and inspect an H5 file</h2>
-        <p>On Dataset, select a row and verify its disease, accession and tissue. Once the list has loaded, click <strong>Download (4)</strong> and choose a method-labelled entry.</p>
+        <p>On Dataset, select a row and verify its disease, accession and tissue. Where H5 files have been released, click <strong>Download</strong> and choose a method-labelled entry. The number in the button shows the available files.</p>
         <div class="table-scroll" role="region" aria-label="Download formats" tabindex="0">
           <table>
             <thead><tr><th scope="col">Category</th><th scope="col">Data product</th><th scope="col">Before reuse</th></tr></thead>
@@ -109,9 +110,9 @@ with h5py.File("RNA/IBD_GSE121380_colon.h5", "r") as handle:
         <h2 id="interpretation-title">6. Interpret the results with their context</h2>
         <p>SCAID displays previously generated figures. Browser searches do not recalculate differential expression, UMAP coordinates, pathway scores or CellChat networks.</p>
         <ul>
-          <li><strong>Processing:</strong> retained command records describe LogNormalize with a scale factor of 10,000 in the 48 audited objects; 44 contain Harmony reductions. This does not establish uniform upstream QC or expression comparability across studies.</li>
+          <li><strong>Processing:</strong> the September 2026 audit of the original 48 objects found command records describing LogNormalize with a scale factor of 10,000; 44 contained Harmony reductions. These historical findings do not establish a common processing workflow for later releases, uniform upstream QC or expression comparability across studies.</li>
           <li><strong>Metadata:</strong> sample labels, donors, tissue, treatment and source study are different variables. Missing metadata and unrecovered QC or doublet records should remain unavailable or unverified.</li>
-          <li><strong>Annotation:</strong> final cell types reflect expert curation informed by available automated annotations. Agreement with those labels is not an independent accuracy benchmark.</li>
+          <li><strong>Annotation:</strong> cell-type labels follow the released object’s annotation workflow. Automated labels and agreement with them are not an independent accuracy benchmark.</li>
           <li><strong>Inference:</strong> marker and enrichment figures are descriptive. Predicted ligand–receptor communication does not by itself establish a causal interaction or a therapeutic target.</li>
           <li><strong>Replication:</strong> cells from one donor are not independent biological replicates. Formal disease comparisons need appropriate biological units, control groups, covariates and independent validation.</li>
         </ul>
@@ -125,7 +126,7 @@ with h5py.File("RNA/IBD_GSE121380_colon.h5", "r") as handle:
           <dt>Filters, figures or downloads could not be loaded</dt>
           <dd>This indicates a request failure. Use Retry where available, or search again. If the problem persists, record the exact visible error.</dd>
           <dt>No Download button or dataset details</dt>
-          <dd>Select a result row first, then wait for its download list. A new search clears the previous selection.</dd>
+          <dd>Select a result row first. H5 downloads appear only for objects with released files; an object can have published figures without an H5 export. A new search clears the previous selection.</dd>
           <dt>The legacy numeric address is blocked</dt>
           <dd>Use <a href="https://scaid01.com/">https://scaid01.com/</a>, which uses the standard HTTPS port.</dd>
         </dl>
@@ -162,8 +163,8 @@ with h5py.File("RNA/IBD_GSE121380_colon.h5", "r") as handle:
           <table>
             <thead><tr><th scope="col">Endpoint</th><th scope="col">Returns</th><th scope="col">Typical query</th></tr></thead>
             <tbody>
-              <tr><td><code>/api/cell-data-all/</code></td><td>Flat list of the 48 disease–tissue data objects</td><td><code>?name=IBD</code>, <code>?abbreviation=SLE</code>, <code>?dataset_id=GSE174188</code></td></tr>
-              <tr><td><code>/api/cell-data/</code></td><td>Same catalogue as a disease → accession → tissue tree</td><td>no parameters</td></tr>
+              <tr><td><code>/api/cell-data-all/</code></td><td>Flat list of released disease–tissue data objects and module availability</td><td><code>?name=IBD</code>, <code>?abbreviation=SLE</code>, <code>?dataset_id=GSE174188</code></td></tr>
+              <tr><td><code>/api/cell-data/</code></td><td>Catalogue as a disease → accession → tissue tree</td><td><code>?module=gene_umap</code>, <code>?module=kegg_score</code>, or no parameters</td></tr>
               <tr><td><code>/api/pdf-images/</code></td><td>Precomputed figures for one object (paginated)</td><td><code>?dataset_record_id=130&amp;pdf_name=Overview</code>, <code>?name=TRIM21&amp;GeneUmap=1</code></td></tr>
               <tr><td><code>/api/h5-file/</code></td><td>RNA and pathway-score H5 files for one object, with <code>download_url</code></td><td><code>?dataset_record_id=130</code></td></tr>
               <tr><td><code>/api/gene-kegg-enum/</code></td><td>Indexed gene symbols and KEGG pathway ids</td><td><code>?tp=gene&amp;name=TRIM</code></td></tr>
@@ -189,6 +190,8 @@ import { getRequest } from '@/api/home'
 const glossary = ref([])
 const glossaryLoading = ref(false)
 const glossaryError = ref('')
+const catalogueSummary = ref(null)
+const fmt = value => Number(value).toLocaleString('en-US')
 
 // Build the abbreviation table from the catalogue itself so it cannot drift from the data.
 async function loadGlossary() {
@@ -197,6 +200,15 @@ async function loadGlossary() {
   try {
     const rows = await getRequest('/cell-data-all/', { format: 'json' })
     if (!Array.isArray(rows)) throw new Error('Invalid catalogue response')
+    const uniq = values => new Set(values.filter(Boolean)).size
+    catalogueSummary.value = {
+      objects: rows.length,
+      sources: uniq(rows.map(row => row.dataset_label || row.dataset_id)),
+      conditions: uniq(rows.map(row => row.disease_label || row.disease_full_name || row.disease_name)),
+      tissues: uniq(rows.map(row => (row.tissue_label || row.tissue || '').toLowerCase())),
+      cells: rows.reduce((sum, row) => sum + (Number(row.cell_count) || 0), 0),
+      samples: rows.reduce((sum, row) => sum + (Number(row.sample_size) || 0), 0),
+    }
     const byCode = new Map()
     for (const row of rows) {
       const code = row.abbreviation || '—'

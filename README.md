@@ -1,6 +1,6 @@
 # SCAID source snapshot
 
-**Version 0.1.0-rc3 · 30 September 2026**
+**Version 0.2.0-rc1 · 20 October 2026**
 
 This repository contains the current Vue/Vite frontend and Django REST backend
 of the [SCAID portal](https://scaid01.com/), plus a reviewed public asset mapping,
@@ -8,12 +8,14 @@ aggregate catalogue snapshot and a synthetic fixture for local installation.
 The portal provides catalogue browsing, precomputed gene/pathway/CellChat views
 and registered HDF5 downloads. Its public API is read-only.
 
-The frozen aggregate catalogue included here describes **48 disease–tissue
-objects, 2,572,480 cell records, 625 sample labels and 24 condition labels**.
-Sample labels are not verified independent donors. The condition labels include
-subtypes and comparator conditions; they are not 24 equivalent diagnoses.
-The 2024–2026 dataset collection is separate ongoing work and is not counted as
-an already integrated release.
+The aggregate catalogue now documents **79 source–condition–tissue objects,
+4,590,932 cell records and 1,095 entry-specific sample labels under 36 condition
+labels**. The 48-object analytical collection contains 2,572,480 records and
+625 labels. The 31 additional browser entries contain 28 expression/score
+objects and three overview-only objects, without new CellChat or H5 downloads.
+Sample labels are not independent donor counts. Catalogue records and module
+flags were checked against the anonymous API on 20 October 2026. The atlas
+inputs and catalogue scope must not be added together as independent cells.
 
 This is a source release candidate. It does not establish peer-reviewed publication,
 a complete raw-data-to-paper reproduction or a separate archival DOI.
@@ -56,7 +58,7 @@ Do not import it into the scientific production catalogue.
 ```sh
 python manage.py test tisch_api.test_api_fixes tisch_api.test_thumbnails \
   tisch_api.test_catalog tisch_api.test_openapi tisch_api.test_tree_query_count \
-  tisch_api.test_release_fixes --settings=tisch_api.test_settings
+  tisch_api.test_release_fixes tisch_api.test_module_availability --settings=tisch_api.test_settings
 python manage.py runserver 127.0.0.1:18080
 ```
 
@@ -139,3 +141,23 @@ calibrated annotation accuracy or complete historical preprocessing records.
 Source cell/donor inputs remain subject to repository access and reuse conditions.
 The committed September 30 composition outputs are historical; reproduce the
 current coverage-aware outputs with the documented CLI.
+
+## October production-source synchronization
+
+This release refreshes the current frontend, API module-availability logic,
+case-sensitive gene lookup, current 79-entry asset catalogue and portable analysis
+modules. Business logic comes from the running deployment's working source;
+settings and asset roots are adapted for local installation. The source package
+does not include production database registrations, figure libraries, H5 matrices,
+clinical records, secrets or deployment certificates. Local demo and regression
+tests are reproducible without them. Runtime mirroring does not establish a full
+raw-data-to-paper reproduction or independent scientific validation.
+
+Set `SCAID_PUBLISHED_FIGURES_BASE` for the relative prepared gene/score family
+layout in `published_figure_roots.json`. Import reviewed file registrations using
+the documented manifest schema. Absent data families return unavailable results;
+installing source alone does not redistribute the production data library.
+
+`LICENSE_STATUS.md` remains authoritative: no new project licence is assigned
+by this release. Third-party source retains its original terms and provenance.
+A GitHub release is a versioned source reference, not a permanent archive DOI.

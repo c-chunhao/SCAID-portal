@@ -1,3 +1,11 @@
+# 0.2.0-rc1 — 20 October 2026
+
+- Synchronize October production frontend and API business logic.
+- Publish relative-path 79-entry catalogue and module-availability metadata.
+- Retain portable SQLite demo, MySQL production settings and data import tools.
+- Refresh portable scientific audit/analysis modules; patient inputs excluded.
+- Keep existing licence status and third-party notices; no project licence grant.
+
 # 0.1.0-rc3 — 2026-09-30
 
 - Current accessible responsive interface, shareable queries, search/filter

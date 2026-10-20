@@ -94,6 +94,18 @@ class CellDataSerializer(serializers.ModelSerializer):
     disease_label = serializers.SerializerMethodField()
     tissue_label = serializers.SerializerMethodField()
     dataset_label = serializers.SerializerMethodField()
+    module_availability = serializers.SerializerMethodField()
+    availability_notes = serializers.SerializerMethodField()
+
+    def get_module_availability(self, obj):
+        entry = manifest_entry(obj)
+        # Legacy releases do not yet carry a module-level publication manifest.
+        # Null retains their existing behaviour without claiming new validation.
+        return entry.get('module_availability') if entry else None
+
+    def get_availability_notes(self, obj):
+        entry = manifest_entry(obj)
+        return entry.get('availability_notes', []) if entry else []
 
     def get_disease_label(self, obj):
         return manifest_disease_label(obj)

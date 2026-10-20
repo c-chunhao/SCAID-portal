@@ -42,17 +42,24 @@
           <el-button :loading="state.optionsLoading" @click="search.retryOptions">Retry suggestions</el-button>
         </div>
 
-        <fieldset class="optional-filters">
-          <legend>Optional filters</legend>
-          <div class="filter-grid" :class="{ 'with-method': kind === 'kegg' }">
+        <details ref="optionalFilters" class="optional-filters" :open="!state.searched">
+          <summary>{{ filterSummary }}</summary>
+          <fieldset class="filter-fields">
+          <legend class="sr-only">Optional filters</legend>
+          <div class="filter-grid">
             <el-form-item label="Disease (abbreviation)" prop="abbreviation">
               <el-select v-model="form.abbreviation" filterable clearable :loading="filtersLoading" placeholder="All diseases" @change="onAbbreviationChange">
                 <el-option v-for="item in diseaseOptions" :key="item.abbreviation" :label="item.disease_label && item.disease_label !== item.abbreviation ? `${item.abbreviation} — ${item.disease_label}` : item.abbreviation" :value="item.abbreviation" />
               </el-select>
             </el-form-item>
             <el-form-item label="Dataset ID" prop="dataset_id">
-              <el-select v-model="form.dataset_id" filterable clearable :loading="filtersLoading" placeholder="All datasets">
+              <el-select v-model="form.dataset_id" filterable clearable :loading="filtersLoading" placeholder="All datasets" @change="onDatasetChange">
                 <el-option v-for="item in datasetOptions" :key="item.dataset_id" :label="item.dataset_label || item.dataset_id" :value="item.dataset_id" />
+              </el-select>
+            </el-form-item>
+            <el-form-item label="Tissue" prop="tissue">
+              <el-select v-model="form.tissue" filterable clearable :loading="filtersLoading" placeholder="All tissues">
+                <el-option v-for="item in tissueOptions" :key="item.tissue" :label="item.tissue_label || item.tissue" :value="item.tissue" />
               </el-select>
             </el-form-item>
             <el-form-item v-if="kind === 'kegg'" label="Scoring method" prop="kegg_param">
@@ -65,11 +72,13 @@
             <el-alert :title="filterError" type="error" :closable="false" show-icon />
             <el-button :loading="filtersLoading" @click="fetchFilters">Retry filters</el-button>
           </div>
-        </fieldset>
+          </fieldset>
+        </details>
         <div class="form-actions">
           <el-button type="primary" native-type="submit" :loading="state.loading">Search plots</el-button>
           <p>Leave optional filters empty to see all available results.</p>
         </div>
+        <p class="publication-scope">Filters include objects with published {{ kind === 'gene' ? 'gene-expression' : 'pathway-score' }} maps. Objects with only overview and annotation figures remain available in the <router-link to="/Dataset">Dataset Browser</router-link>.</p>
       </el-form>
 
       <section class="search-results" aria-labelledby="results-heading" :aria-busy="state.loading">
@@ -163,9 +172,17 @@ const route = useRoute()
 const router = useRouter()
 const title = computed(() => props.kind === 'gene' ? 'Gene' : 'KEGG')
 const querySelect = ref()
+const optionalFilters = ref()
+// Native disclosure state can change without a Vue render. Close it explicitly
+// when submitting or restoring a feature, including an unchanged query.
+const closeOptionalFilters = () => optionalFilters.value?.removeAttribute('open')
 const compactPagination = useMediaQuery('(max-width: 640px)')
-const form = reactive({ pdf_name: '', abbreviation: '', dataset_id: '', kegg_param: '' })
+const form = reactive({ pdf_name: '', abbreviation: '', dataset_id: '', tissue: '', kegg_param: '' })
 const state = reactive(createExplorationState())
+const filterSummary = computed(() => {
+  const selected = [form.abbreviation, form.dataset_id, form.tissue, props.kind === 'kegg' ? form.kegg_param : ''].filter(Boolean)
+  return selected.length ? `Optional filters · ${selected.join(' · ')}` : 'Optional filters · All published datasets'
+})
 const search = createExplorationSearch({ request: getRequest, kind: props.kind, state })
 // One suggestion request per pause in typing instead of one per keystroke.
 const fetchOptionsDebounced = useDebounceFn((query) => search.fetchOptions(query), 300)
@@ -176,12 +193,19 @@ const methods = ['AUCell', 'singscore', 'UCell']
 let filterController
 let filterVersion = 0
 const diseaseOptions = computed(() => filters.value.filter(item => item.abbreviation))
-const datasetOptions = computed(() => {
+const filteredDatasets = computed(() => {
   const groups = form.abbreviation
     ? filters.value.filter(item => item.abbreviation === form.abbreviation)
     : filters.value
-  const datasets = groups.flatMap(item => item.children || []).filter(item => item.dataset_id)
-  return [...new Map(datasets.map(item => [item.dataset_id, item])).values()]
+  return groups.flatMap(item => item.children || []).filter(item => item.dataset_id)
+})
+const datasetOptions = computed(() => [...new Map(filteredDatasets.value.map(item => [item.dataset_id, item])).values()])
+const tissueOptions = computed(() => {
+  const datasets = form.dataset_id
+    ? filteredDatasets.value.filter(item => item.dataset_id === form.dataset_id)
+    : filteredDatasets.value
+  const tissues = datasets.flatMap(item => item.children || []).filter(item => item.tissue)
+  return [...new Map(tissues.map(item => [item.tissue, item])).values()]
 })
 const firstResult = computed(() => (state.page - 1) * state.pageSize + 1)
 const lastResult = computed(() => (state.page - 1) * state.pageSize + state.files.length)
@@ -195,12 +219,12 @@ const fetchFilters = async () => {
   filtersLoading.value = true
   filterError.value = ''
   try {
-    const response = await getRequest('/cell-data/', { format: 'json' }, { signal: filterController.signal })
+    const response = await getRequest('/cell-data/', { format: 'json', module: props.kind === 'gene' ? 'gene_umap' : 'kegg_score' }, { signal: filterController.signal })
     if (version !== filterVersion) return
     if (!Array.isArray(response.data)) throw new Error('Invalid filter response')
     filters.value = response.data
   } catch (error) {
-    if (version === filterVersion) filterError.value = requestErrorMessage(error, 'Disease and dataset filters')
+    if (version === filterVersion) filterError.value = requestErrorMessage(error, 'Disease, dataset and tissue filters')
   } finally {
     if (version === filterVersion) filtersLoading.value = false
   }
@@ -214,7 +238,8 @@ const figureLabel = (item) => {
   const method = parts[3] === 'KEGGScore' && parts[4] ? ` · ${parts[4]}` : ''
   return scope ? scope + method : (item.name || '')
 }
-const onAbbreviationChange = () => { form.dataset_id = '' }
+const onAbbreviationChange = () => { form.dataset_id = ''; form.tissue = '' }
+const onDatasetChange = () => { form.tissue = '' }
 let restoringRoute = false
 let appliedQuery = ''
 const applyRouteQuery = async () => {
@@ -225,7 +250,7 @@ const applyRouteQuery = async () => {
   restoringRoute = true
   Object.assign(form, {
     pdf_name: restored.pdf_name, abbreviation: restored.abbreviation,
-    dataset_id: restored.dataset_id, kegg_param: restored.kegg_param
+    dataset_id: restored.dataset_id, tissue: restored.tissue, kegg_param: restored.kegg_param
   })
   restoringRoute = false
   state.pageSize = restored.pageSize
@@ -233,7 +258,10 @@ const applyRouteQuery = async () => {
   // Changing the URL while this component is reused cancels both result and
   // suggestion requests; version guards prevent late responses replacing it.
   search.fetchOptions(restored.pdf_name)
-  if (restored.pdf_name) await search.submit(form, restored.page)
+  if (restored.pdf_name) {
+    closeOptionalFilters()
+    await search.submit(form, restored.page)
+  }
 }
 const updateQuery = async (page = 1, pageSize = state.pageSize) => {
   const query = explorationQuery(form, props.kind, page, pageSize)
@@ -251,6 +279,7 @@ const submit = async () => {
     querySelect.value?.focus()
     return
   }
+  closeOptionalFilters()
   await updateQuery()
 }
 const changePage = (page) => updateQuery(page)
@@ -285,14 +314,18 @@ onBeforeUnmount(() => {
 .el-select { width: 100%; }
 .exploration-form :deep(.el-form-item__label) { color: var(--scaid-ink, #2b2320); font-weight: 600; }
 .exploration-form :deep(.el-select__wrapper) { min-height: 44px; }
-.optional-filters { min-width: 0; margin: 0; padding: 1.25rem 0 0; border: 0; border-top: 1px solid var(--scaid-line, #e5ddd7); }
-.optional-filters legend { float: none; width: auto; margin: 0; padding: 0 .75rem 0 0; font-size: .9rem; font-weight: 600; color: var(--scaid-muted, #6b5f5a); }
+.optional-filters { min-width: 0; margin: 0; border-top: 1px solid var(--scaid-line, #e5ddd7); }
+.optional-filters summary { min-height: 44px; padding: .75rem 0; color: var(--scaid-accent, #8a503a); font-size: .9rem; line-height: 1.5; cursor: pointer; overflow-wrap: anywhere; }
+.optional-filters summary:hover { text-decoration: underline; text-underline-offset: 3px; }
+.optional-filters summary:focus-visible { outline: 2px solid var(--scaid-accent, #8a503a); outline-offset: 3px; }
+.filter-fields { min-width: 0; margin: 0; padding: .5rem 0 0; border: 0; }
 .filter-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
-.filter-grid.with-method { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .filter-grid .el-form-item { min-width: 0; margin-bottom: 0; }
 .form-actions { display: flex; align-items: center; gap: 1rem; margin-top: 1.5rem; }
 .form-actions .el-button { min-height: 44px; padding: 0 1.75rem; font-weight: 600; }
 .form-actions p { margin: 0; color: var(--scaid-muted, #6b5f5a); font-size: .9rem; }
+.publication-scope { max-width: 75ch; margin: .9rem 0 0; color: var(--scaid-muted, #6b5f5a); font-size: .9rem; line-height: 1.6; }
+.publication-scope a { color: var(--scaid-accent, #8a503a); text-decoration: underline; text-underline-offset: .18em; }
 .inline-recovery { display: flex; align-items: center; flex-wrap: wrap; gap: .75rem; margin: 1rem 0; }
 .inline-recovery .el-alert { flex: 1 1 280px; }
 .inline-recovery .el-button, .results-recovery .el-button { min-height: 44px; }
@@ -340,7 +373,7 @@ onBeforeUnmount(() => {
   .exploration-intro .display-5 { font-size: 1.75rem; }
   .exploration-intro p { font-size: 1rem; }
   .exploration-content { padding-top: 1.5rem; }
-  .filter-grid, .filter-grid.with-method { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+  .filter-grid { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
   .form-actions { align-items: stretch; flex-direction: column; gap: .75rem; }
   .form-actions .el-button { width: 100%; }
   .form-actions p { font-size: .85rem; }

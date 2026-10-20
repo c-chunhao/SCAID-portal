@@ -6,7 +6,7 @@ test_openapi.py, which checks that every router path is described here.
 from django.http import JsonResponse
 from django.views.decorators.http import require_GET
 
-API_VERSION = "1.3.0"
+API_VERSION = "1.4.0"
 
 _ENVELOPE = {
     "type": "object",
@@ -48,6 +48,8 @@ _CELL_DATA = {
         "batch": {"type": "string", "nullable": True, "description": "Ingestion batch (YYYYMMDD); not a biological batch."},
         "asset_status": {"type": "string", "enum": ["linked", "unverified"]},
         "asset_message": {"type": "string"},
+        "module_availability": {"type": "object", "nullable": True, "description": "Explicit release flags for gene_umap, kegg_score, cellchat and downloads. Null denotes an older release without module flags.", "additionalProperties": {"type": "boolean"}},
+        "availability_notes": {"type": "array", "items": {"type": "string"}, "description": "Release-specific availability and interpretation notes."},
         "remarks": {"type": "string", "nullable": True},
         "file_name": {"type": "string", "nullable": True},
     },
@@ -101,6 +103,7 @@ SCHEMA = {
         "/cell-data/": {
             "get": {
                 "summary": "Catalogue tree grouped by disease abbreviation",
+                "parameters": [_q("module", "Exclude cohorts whose selected module has not been published.", {"type": "string", "enum": ["gene_umap", "kegg_score", "cellchat", "downloads"]})],
                 "description": "One node per disease abbreviation with nested dataset_id, tissue and batch entries. Used to populate filter menus. Cached server-side for a few minutes.",
                 "responses": {"200": {"description": "Tree", "content": {"application/json": {"schema": _ENVELOPE}}}},
             }
@@ -151,7 +154,7 @@ SCHEMA = {
                     _q("tissue", "Tissue label."),
                     _q("batch", "Ingestion batch folder."),
                     _q("pdf_name", "Figure family: Overview, Main_Marker, MajorCellType_Go_Ht, MajorCellType_KEGG_Ht, LRcircle, LRcontribution, SignalingCellRole, SignalingChord, SignalingCircle, SignalingHt, SignalingRole, Single, or an exact figure stem."),
-                    _q("name", "Gene symbol or KEGG pathway id (e.g. TRIM21, hsa00010); matched against the stored file basename."),
+                    _q("name", "Gene symbol or KEGG pathway id (e.g. TRIM21, hsa00010); matched against the stored file basename. Documented case-distinct source features (C2orf15 / C2ORF15) require their exact spelling."),
                     _q("GeneUmap", "Present (any value) to restrict to gene expression UMAP maps."),
                     _q("KEGGScore", "Present (any value) to restrict to pathway score maps."),
                     _q("KEGGUmap", "Alias of KEGGScore."),

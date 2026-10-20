@@ -23,10 +23,10 @@ export default defineConfig({
   ],
   server: {
     host: '0.0.0.0',
-    // Local development only: production serves /api and /system/media from the same Nginx origin.
+    // Use Nginx in development too: thumbnail responses need its X-Accel-Redirect handling.
     proxy: {
       '/api': {
-        target: process.env.SCAID_API_TARGET || 'http://127.0.0.1:18080',
+        target: process.env.SCAID_API_TARGET || 'http://127.0.0.1:10209',
         changeOrigin: true,
       },
       '/system/media/': {

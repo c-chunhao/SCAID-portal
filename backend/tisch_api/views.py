@@ -18,7 +18,7 @@ from rest_framework.response import Response
 
 from .asset_paths import (
     DISEASE_FOLDERS, dataset_names, path_sequence_condition, effective_abbreviation, matching_catalog_records, manifest_search_ids, canonical_query_ids,
-    manifest_image_condition, manifest_h5_condition, manifest_folders, folder_condition, resolved_h5_path, tissue_names,
+    manifest_image_condition, manifest_h5_condition, manifest_folders, folder_condition, resolved_h5_path, tissue_names, manifest_entry, case_sensitive_gene_symbols,
 )
 from .models import PDFImage, CellData, AffectedSite, GeneKeggEnum, H5File
 from .thumbnails import ensure_thumbnail, thumbnail_relative, wants_preview, resolved_figure_path
@@ -156,6 +156,17 @@ class PDFImageViewSet(PublicReadOnlyViewSet):
 
         if 'GeneUmap' in params:
             conditions &= folder_condition(folders, 'GeneUmap') if folders else path_sequence_condition('image', ('GeneUmap',))
+            symbol = (params.get('name') or params.get('pdf_name') or '').strip()
+            if symbol.lower().endswith(('.png', '.jpg')):
+                symbol = symbol[:-4]
+            if symbol.startswith('Umap_'):
+                symbol = symbol[5:]
+            if symbol.casefold() in case_sensitive_gene_symbols():
+                # MySQL's default collation conflates C2orf15 and C2ORF15.
+                # Keep the indexed name filter above, then resolve only these
+                # documented source collisions with a case-sensitive match.
+                import re
+                conditions &= Q(name__regex=r'^(?:Umap_)?' + re.escape(symbol) + r'\.(?:png|jpg)$')
         if 'KEGGScore' in params or 'KEGGUmap' in params:
             conditions &= folder_condition(folders, 'KEGGScore', prefix=True) if folders else path_sequence_condition('image', ('KEGGScore',))
         return queryset.filter(conditions)
@@ -204,6 +215,24 @@ class PDFImageViewSet(PublicReadOnlyViewSet):
 CATALOG_CACHE_SECONDS = getattr(settings, 'CATALOG_CACHE_SECONDS', 0)
 
 
+def published_module_records(records, module):
+    """Filter options by the release's explicit per-object publication flags.
+
+    Older releases have no flags and retain their existing filter options.
+    Iterating an already-fetched catalogue does not query the large figure table.
+    """
+    if module is None:
+        yield from records
+        return
+    if module not in {'gene_umap', 'kegg_score', 'cellchat', 'downloads'}:
+        raise ValidationError({'module': 'Unknown publication module.'})
+    for record in records:
+        entry = manifest_entry(record)
+        available = entry.get('module_availability') if entry else None
+        if available is None or available.get(module) is True:
+            yield record
+
+
 class CellDataViewSet(PublicReadOnlyViewSet):
     queryset = CellData.objects.all().order_by('id')
     serializer_class = CellDataTreeSerializer
@@ -212,7 +241,7 @@ class CellDataViewSet(PublicReadOnlyViewSet):
     def list(self, request, *args, **kwargs):
         representatives = {}
         catalog_groups = {}
-        for record in self.get_queryset():
+        for record in published_module_records(self.get_queryset(), request.query_params.get('module')):
             # Null abbreviations must not merge unrelated diseases into one tree.
             key = effective_abbreviation(record)
             representatives.setdefault(key, record)

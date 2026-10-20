@@ -2,15 +2,15 @@
 // SCAID_UI_URL, PLAYWRIGHT_CORE_PATH and CHROMIUM_PATH can override local defaults.
 import assert from 'node:assert/strict';
 import process from 'node:process';
-const { chromium } = await import(process.env.PLAYWRIGHT_CORE_PATH || '/tmp/scaid-audit-tools/node_modules/playwright-core/index.mjs');
-const browser = await chromium.launch({ executablePath: process.env.CHROMIUM_PATH || '/home/bio/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome', headless: true, args: ['--no-sandbox'] });
+const { chromium } = await import(process.env.PLAYWRIGHT_CORE_PATH || 'playwright-core');
+const browser = await chromium.launch({ executablePath: process.env.CHROMIUM_PATH || chromium.executablePath(), headless: true, args: ['--no-sandbox'] });
 const context = await browser.newContext({ viewport: { width: 1280, height: 900 }, acceptDownloads: true });
 const page = await context.newPage();
 const pageErrors = [];
 page.on('pageerror', error => pageErrors.push(error.message));
 const rows = [
-  { id: 1, abbreviation: 'JIA', dataset_id: 'GSE111', tissue: 'PBMC/SFMC', sample_size: 10, file_name: 'first.h5' },
-  { id: 2, abbreviation: 'RA', dataset_id: 'GSE222', tissue: 'PBMC', sample_size: 20, file_name: 'second.h5' },
+  { id: 1, abbreviation: 'JIA', dataset_id: 'GSE111', tissue: 'PBMC/SFMC', sample_size: 10, file_name: 'first.h5', disease_label: 'Juvenile idiopathic arthritis' },
+  { id: 2, abbreviation: 'RA', dataset_id: 'GSE222', tissue: 'PBMC', sample_size: 20, file_name: 'second.h5', disease_label: 'Rheumatoid arthritis' },
 ];
 const requests = [];
 let tableFailure = false;
@@ -41,6 +41,7 @@ await page.route('**/api/**', async route => {
     body = rows.filter(row => (!params.abbreviation || row.abbreviation === params.abbreviation) && (!params.name || Object.values(row).join(' ').toLowerCase().includes(params.name.toLowerCase())));
   } else if (path === '/api/pdf-images/') {
     assert.ok(params.dataset_record_id, 'image request must bind to a dataset record');
+    assert.ok(['Overview', 'Main_Marker', 'MajorCellType_Go_Ht', 'MajorCellType_KEGG_Ht'].includes(params.pdf_name), 'row-click events must never become analysis names');
     assert.ok(Number(params.page_size) <= 100, 'respect backend page size cap');
     if (imageFailure) { imageFailure = false; return route.fulfill({ status: 500, json: { detail: 'fixture failure' } }); }
     const old = delayOldDataset && params.dataset_record_id === '1';
@@ -79,12 +80,21 @@ await page.route('**/api/**', async route => {
   return route.fulfill({ json: body });
 });
 const row = dataset => page.locator('.el-table__body-wrapper tr').filter({ hasText: dataset });
+// The browser now has distinct browse/detail states. Switching datasets uses
+// its public Back action; do not reach hidden table rows through the DOM.
+async function selectDataset(dataset) {
+  if (await page.locator('.dataset-details').isVisible()) {
+    await page.getByRole('button', { name: 'Back to datasets', exact: true }).click();
+  }
+  await row(dataset).waitFor();
+  await row(dataset).click();
+}
 const figure = () => page.locator('.dataset-details .file_item img');
 const activeTab = () => page.locator('.dataset-menu .el-menu-item.is-active');
 try {
   await page.goto(`${process.env.SCAID_UI_URL || 'http://127.0.0.1:15173'}/Dataset`);
   await row('GSE111').waitFor();
-  await row('GSE111').click();
+  await selectDataset('GSE111');
   await until(async () => await figure().count() === 24, 'first figure page did not load');
   assert.match(await page.locator('.dataset-details .result-summary').innerText(), /31 figures.*Page 1 of 2/);
   await page.locator('.el-pagination .btn-next').click();
@@ -92,14 +102,17 @@ try {
   assert.match(await page.locator('.dataset-details .result-summary').innerText(), /Page 2 of 2/);
   await page.getByRole('menuitem', { name: 'Marker', exact: true }).click();
   await until(async () => await figure().count() === 2, 'marker did not load');
-  await row('GSE222').click();
+  await selectDataset('GSE222');
   await until(async () => await figure().count() === 24 && (await figure().first().getAttribute('src')).includes('/2-Overview-'), 'dataset switch did not reset Overview');
   assert.equal((await activeTab().innerText()).trim(), 'Overview');
 
   delayOldDataset = true;
-  await row('GSE111').click();
-  await until(() => requests.some(item => item.path === '/api/pdf-images/' && item.dataset_record_id === '1' && item.page === '1'), 'older request missing');
-  await row('GSE222').click();
+  const priorImageRequests = requests.filter(item => item.path === '/api/pdf-images/' && item.dataset_record_id === '1').length;
+  const priorDownloadRequests = requests.filter(item => item.path === '/api/h5-file/' && item.dataset_record_id === '1').length;
+  await selectDataset('GSE111');
+  await until(() => requests.filter(item => item.path === '/api/pdf-images/' && item.dataset_record_id === '1').length > priorImageRequests
+    && requests.filter(item => item.path === '/api/h5-file/' && item.dataset_record_id === '1').length > priorDownloadRequests, 'delayed requests were not started');
+  await selectDataset('GSE222');
   await until(() => completedOldImages === 1 && completedOldDownloads === 1, 'delayed requests did not complete');
   await until(async () => await figure().count() === 24, 'new dataset results missing');
   assert.ok((await figure().first().getAttribute('src')).includes('/2-Overview-'), 'stale image response overwrote the selected dataset');
@@ -125,6 +138,7 @@ try {
   await page.getByRole('button', { name: 'Retry figures' }).click();
   await until(async () => await figure().count() === 2, 'figure retry did not recover');
 
+  await page.getByRole('button', { name: 'Back to datasets', exact: true }).click();
   await page.getByPlaceholder('Enter a disease abbreviation, dataset ID, tissue or file name').fill('does-not-exist');
   await page.getByRole('button', { name: 'Search', exact: true }).click();
   await until(async () => await page.locator('.dataset-details').count() === 0 && await row('GSE111').count() === 0, 'search retained old details');
@@ -156,7 +170,10 @@ try {
   assert.match(await tissueSelect.innerText(), /All tissues/);
 
   await page.getByRole('link', { name: 'Home', exact: true }).click();
-  await page.getByText('No datasets available').waitFor();
+  await page.getByRole('heading', { name: 'Browse all catalogued conditions', exact: true }).waitFor();
+  await until(async () => await page.locator('.condition-link').count() === 2, 'Home catalogue condition links did not load');
+  assert.deepEqual(new Set(await page.locator('.condition-link').evaluateAll(links => links.map(link => new URL(link.href).searchParams.get('id')))), new Set(['JIA', 'RA']), 'Home must link every fixture condition and no condition absent from the catalogue');
+  assert.equal(await page.getByRole('link', { name: 'Gout', exact: true }).count(), 0, 'the former by-site response must not add an uncatalogued condition');
   const diseaseLink = page.getByRole('link', { name: 'Juvenile idiopathic arthritis' });
   assert.equal(await diseaseLink.getAttribute('href'), '/Dataset?id=JIA');
   await diseaseLink.click();

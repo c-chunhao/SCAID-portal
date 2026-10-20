@@ -82,6 +82,7 @@ export const createExplorationSearch = ({ request, kind, state = createExplorati
       pdf_name: name,
       abbreviation: filters.abbreviation || '',
       dataset_id: filters.dataset_id || '',
+      ...(filters.tissue ? { tissue: filters.tissue } : {}),
       ...(kind === 'gene' ? { GeneUmap: 'GeneUmap' } : { KEGGScore: 'KEGGScore', kegg_param: filters.kegg_param || '' })
     }
     await fetchResults(page)

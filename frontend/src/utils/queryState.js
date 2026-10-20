@@ -14,6 +14,7 @@ export const readExplorationQuery = (query, kind) => ({
   pdf_name: queryText(query[kind]),
   abbreviation: queryText(query.disease),
   dataset_id: queryText(query.dataset),
+  tissue: queryText(query.tissue),
   kegg_param: kind === 'kegg' && ['AUCell', 'UCell', 'singscore'].includes(query.method) ? query.method : '',
   page: queryPage(query.page),
   pageSize: [10, 20, 50, 100].includes(Number(query.size)) ? Number(query.size) : 10
@@ -22,6 +23,7 @@ export const explorationQuery = (filters, kind, page = 1, pageSize = 10) => comp
   [kind]: queryText(filters.pdf_name),
   disease: queryText(filters.abbreviation),
   dataset: queryText(filters.dataset_id),
+  tissue: queryText(filters.tissue),
   method: kind === 'kegg' ? queryText(filters.kegg_param) : '',
   page: page > 1 ? page : '',
   size: pageSize !== 10 ? pageSize : ''

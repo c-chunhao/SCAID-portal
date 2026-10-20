@@ -2,10 +2,10 @@
 import assert from 'node:assert/strict'
 import fs from 'node:fs/promises'
 import process from 'node:process'
-const { chromium } = await import(process.env.PLAYWRIGHT_CORE_PATH || '/tmp/scaid-audit-tools/node_modules/playwright-core/index.mjs')
+const { chromium } = await import(process.env.PLAYWRIGHT_CORE_PATH || 'playwright-core')
 const base = process.env.SCAID_UI_URL || 'http://127.0.0.1:15190'
-const output = process.env.SCAID_CHECK_OUTPUT || '/home/data/KWQ/全项目修复-2026-09-30/frontend'
-const browser = await chromium.launch({ executablePath: process.env.CHROMIUM_PATH || '/home/bio/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome', headless: true, args: ['--no-sandbox'] })
+const output = process.env.SCAID_CHECK_OUTPUT || '/tmp/scaid-browser-check'
+const browser = await chromium.launch({ executablePath: process.env.CHROMIUM_PATH || chromium.executablePath(), headless: true, args: ['--no-sandbox'] })
 const context = await browser.newContext({ viewport: { width: 1280, height: 900 }, permissions: ['clipboard-read', 'clipboard-write'] })
 const page = await context.newPage()
 const errors = [], requests = [], checks = []
@@ -72,7 +72,8 @@ try {
   await until(async () => await datasetPlots().count() === 7, 'shared dataset selection/page did not restore')
   assert.match(await page.locator('.selection-title').innerText(), /GSE121380/)
   assert.match(await page.locator('.analysis-help').innerText(), /Ligand–receptor networks/)
-  assert.equal(await page.locator('.figure-title').first().innerText(), 'LRcircle')
+  assert.equal(await page.locator('.figure-title').first().innerText(), 'Ligand–receptor networks')
+  assert.equal(await page.locator('.figure-source').first().innerText(), 'LRcircle.pdf', 'readable titles retain the exact source filename')
   assert.equal(await page.locator('.file_item > a').first().getAttribute('href'), '/api/pdf-images/25/original/')
   assert.ok(await page.getByText('Sample labels', { exact: true }).isVisible())
   await page.getByRole('button', { name: 'Copy query link', exact: true }).click()
@@ -114,6 +115,12 @@ try {
   await until(async () => new URL(page.url()).searchParams.get('page') === '3' && await genePlots().count() === 8, 'KEGG pagination did not sync URL')
   await navigate('/KEGG?kegg=hsa00240&method=UCell')
   await until(async () => await genePlots().count() === 10 && (await genePlots().first().getAttribute('alt')).includes('hsa00240'), 'same-component KEGG query retained old plots')
+  // Search results collapse optional controls; use the public disclosure to
+  // inspect the preserved method selection rather than querying hidden text.
+  const filterDisclosure = page.locator('.exploration-form details').first()
+  if (await filterDisclosure.count() && await filterDisclosure.getAttribute('open') === null) {
+    await filterDisclosure.locator('summary').click()
+  }
   assert.match(await page.locator('.optional-filters').innerText(), /UCell/)
   checks.push('KEGG links and pagination preserve pathway, method, filters and size; changing a reused query refreshes results.')
 

@@ -11,6 +11,7 @@ from __future__ import annotations
 import os
 import tempfile
 import fcntl
+from functools import lru_cache
 from contextlib import contextmanager
 from pathlib import Path
 
@@ -20,10 +21,17 @@ from PIL import Image
 PREVIEW_SUFFIXES = {'.png'}
 
 
+@lru_cache(maxsize=8)
+def _resolved_roots(roots):
+    return tuple(Path(root).resolve() for root in roots)
+
+
 def figure_roots():
     roots = [Path(settings.SCAID_FIGURE_ROOT), Path(settings.MEDIA_ROOT) / 'pdf_images']
     roots += [Path(root) for root in getattr(settings, 'SCAID_EXTRA_FIGURE_ROOTS', []) if root]
-    return [root.resolve() for root in roots]
+    # The tuple key follows settings overrides in tests while avoiding repeated
+    # filesystem resolution of dozens of approved source directories per image.
+    return _resolved_roots(tuple(str(root) for root in roots))
 
 
 def resolved_figure_path(record):
