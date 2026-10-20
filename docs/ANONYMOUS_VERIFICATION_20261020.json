@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-20",
+  "site": "https://scaid01.com/",
+  "api": "https://scaid01.com/api/",
+  "authentication": "Anonymous fresh HTTP requests and a fresh browser context; no account or session cookies",
+  "catalogue": {
+    "objects": 79,
+    "cell_records": 4590932,
+    "sample_labels": 1095,
+    "condition_labels": 36,
+    "missing_sample_counts": [],
+    "zero_sample_counts": []
+  },
+  "api_checks": {
+    "passed": true,
+    "checks": 14,
+    "new_entries": 31,
+    "new_expression_score_entries": 28,
+    "new_overview_entries": 3,
+    "new_entry_module_family_requests": 155,
+    "new_entry_unsupported_download_CellChat_requests": 62,
+    "original_H5_header_checks": 8,
+    "H5_range_bytes": "0-7 only; HDF5 signature checked, not full file contents"
+  },
+  "browser": {
+    "passed": true,
+    "workflow_count": 11,
+    "page_errors": 0,
+    "http_5xx": 0,
+    "workflows": [
+      {
+        "check": "home_and_IBD_query",
+        "passed": true
+      },
+      {
+        "check": "GSE135779_overview_and_download_menu",
+        "passed": true
+      },
+      {
+        "check": "GSE135779_CellChat_ICAM",
+        "passed": true
+      },
+      {
+        "check": "GSE174188_overview_and_download_menu",
+        "passed": true
+      },
+      {
+        "check": "GSE174188_CellChat_ICAM",
+        "passed": true
+      },
+      {
+        "check": "gene_CD3D_real_query",
+        "passed": true
+      },
+      {
+        "check": "pathway_JAK_STAT_UCell_real_query",
+        "passed": true
+      },
+      {
+        "check": "atlas_precomputed_views",
+        "passed": true
+      },
+      {
+        "check": "new_entry_expression_controls",
+        "passed": true
+      },
+      {
+        "check": "new_entry_overview_controls",
+        "passed": true
+      },
+      {
+        "check": "usage_and_anonymous_session",
+        "passed": true
+      }
+    ]
+  },
+  "production_frontend_comparison": {
+    "compared_files": 52,
+    "all_identical": true,
+    "index_sha256": "8766a0168908283b0e66b2ec07ff57369205f1dd1c59550fd7660e03e6a7c2a1"
+  },
+  "source_installation": {
+    "Django_isolated_tests": 56,
+    "frontend_unit_tests": 19,
+    "lint_build": "passed",
+    "SQLite_migrate_import_synthetic_demo": "passed",
+    "atlas_synthetic_diagnostics": "passed",
+    "Bcell_synthetic_stream_and_HC3_200_people": "passed"
+  },
+  "scope_notes": [
+    "Selected advertised workflows and module-family availability were checked, not every gene or pathway image.",
+    "Atlas browsing uses precomputed views and marker figures, without interactive cell selection.",
+    "Sample labels are source-object identifiers, not authenticated independent donor counts.",
+    "No production data, UI or catalogue registrations were changed during verification.",
+    "No source-individual/clinical tables, counts, barcodes, credentials or production database are distributed in this code package."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "recorded_at_UTC": "2026-10-20T08:27:05.929718+00:00",
+  "qualification": "Written before subgroup effect models and IFN extraction; the previously reported aggregate B-cell result was already known. This is an analysis plan, not external preregistration.",
+  "source": "GSE174188 locally archived remapped processed count matrix and original cg_cov/ct_cov metadata; not raw droplet or new cell-level QC.",
+  "batch_selection": "Reuse exactly the existing 233 individual/batch selections; largest total processed source cells among cohorts 2/3/4, lexical tie break. No selection by B abundance or IFN.",
+  "candidate_states": [
+    "B_naive",
+    "B_mem",
+    "B_atypical"
+  ],
+  "annotation": "Use original ct_cov exactly among cg_cov=B. Other labels, missing and coarse/fine discordance remain a separately quantified residual. Plasma cells in cg_cov=PB are a different coarse compartment, not included. No IFN-derived state labels.",
+  "primary_composition": "Fraction of each state among all source cg_cov=B cells, with zero numerators retained, in individuals with at least 20 total B cells.",
+  "secondary_composition": "State fractions among all source PBMC cells in the full 233-person selection.",
+  "state_IFN": "Per-cell mean of the 12 log1p(count/library*10000) gene values, then mean over source-recorded state cells within each selected individual; at least 20 target-state cells per individual.",
+  "IFN_genes": [
+    "ISG15",
+    "IFI6",
+    "IFI44L",
+    "MX1",
+    "OAS1",
+    "IFIT1",
+    "IFIT3",
+    "RSAD2",
+    "ISG20",
+    "XAF1",
+    "LY6E",
+    "IFI44"
+  ],
+  "marker_review_panel": [
+    "MS4A1",
+    "CD79A",
+    "CD74",
+    "TCL1A",
+    "IGHD",
+    "IGHM",
+    "FCER2",
+    "IL4R",
+    "CD27",
+    "TNFRSF13B",
+    "FCRL5",
+    "ITGAX",
+    "TBX21",
+    "JCHAIN",
+    "MZB1",
+    "XBP1"
+  ],
+  "model": "OLS: outcome ~ C(cohort) + Age10 + C(Sex) + C(pop_cov) + C(condition), condition HD as reference; HC3 covariance, independent observations are source individuals.",
+  "fit_eligibility": "At least 10 eligible individuals in each arm, full-rank design, residual degrees of freedom >=10 and finite positive HC3 disease standard error. No endpoint-dependent eligibility.",
+  "multiple_testing": {
+    "state_composition_within_B": "BH across the three planned source-recorded states.",
+    "state_IFN": "BH across the same three planned states; any unestimable planned test is represented by P=1 for adjustment and reported unavailable.",
+    "state_composition_all_PBMC": "Separate BH family of three secondary state fractions.",
+    "matched_B_population": "Separate BH family of two endpoints: overall B fraction and aggregate B IFN in the same >=20-B-cell individuals.",
+    "common_state_population": "Separate BH family across all eligible source-recorded states \u00d7 two endpoints (within-B fraction and state IFN), in the intersection of their >=20-state-cell individuals, if >=10 individuals remain in each arm.",
+    "mixture_adjusted_IFN": "One exploratory aggregate B-IFN model, adding the three named state fractions with the residual state omitted; cannot establish cell-intrinsic activation.",
+    "marker_panel": "Descriptive review only; no marker-test P values or labels trained using IFN.",
+    "cohort4_state_sensitivity": "Separate BH across three states \u00d7 two endpoints, planned unavailable tests represented by P=1.",
+    "status_consistent_state_sensitivity": "Separate BH across three states \u00d7 two endpoints, planned unavailable tests represented by P=1."
+  },
+  "sensitivity": "Within-source sensitivity analyses overlap the original cohort and are not independent replication. Main published model estimates will not be overwritten. State-level IFN and within-B fractions will additionally be fitted in selected processing cohort 4 and after excluding individuals whose source-recorded Status varies across batches; these are separate sensitivity families.",
+  "limitations": "Observational source-recorded states; subtype proportions and IFN differences need not distinguish intrinsic expression from unmeasured states, treatment, disease activity or residual technical effects."
+}

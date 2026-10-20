@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "purely_synthetic": true,
+  "source_metadata_or_counts_used": false,
+  "streamed_toy_counts": {
+    "cells": 5,
+    "genes": 4,
+    "selected_cells": 3,
+    "library_totals": [
+      9,
+      12,
+      11
+    ],
+    "watch_counts": [
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        0,
+        6,
+        8
+      ]
+    ],
+    "malformed_selected_count_rejected": true
+  },
+  "HC3_200_synthetic_people": [
+    {
+      "outcome": "synthetic_IFN_A",
+      "true_synthetic_difference": 0.17,
+      "estimate": 0.17534175326952486,
+      "HC3_95CI_low": 0.15515857175393416,
+      "HC3_95CI_high": 0.19552493478511557,
+      "p": 5.159575143965125e-65,
+      "people": 200,
+      "independent_rows_are_synthetic_people": true,
+      "BH_q": 1.5478725431895378e-64
+    },
+    {
+      "outcome": "synthetic_IFN_B",
+      "true_synthetic_difference": 0.1,
+      "estimate": 0.09901969265575433,
+      "HC3_95CI_low": 0.07900098227014227,
+      "HC3_95CI_high": 0.1190384030413664,
+      "p": 3.176255560463525e-22,
+      "people": 200,
+      "independent_rows_are_synthetic_people": true,
+      "BH_q": 4.764383340695288e-22
+    },
+    {
+      "outcome": "synthetic_null",
+      "true_synthetic_difference": 0.0,
+      "estimate": 0.005018866522409071,
+      "HC3_95CI_low": -0.013994333978794796,
+      "HC3_95CI_high": 0.02403206702361294,
+      "p": 0.6049001704414045,
+      "people": 200,
+      "independent_rows_are_synthetic_people": true,
+      "BH_q": 0.6049001704414045
+    }
+  ],
+  "not_a_reproduction_of_real_SLE_effects": true
+}

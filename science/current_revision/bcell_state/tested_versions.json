@@ -1,0 +1,11 @@
+{
+  "python": "3.13.11",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "statsmodels": "0.14.6",
+    "openpyxl": "3.1.5",
+    "scipy": "1.16.3"
+  },
+  "description": "Observed actual-analysis environment; synthetic example checked separately"
+}

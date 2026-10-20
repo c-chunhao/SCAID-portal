@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "atlas": "SYNTHETIC",
+  "independent_backend": "scipy.spatial.distance.cdist plus full per-query sorting; main analysis used sklearn nearest neighbours",
+  "checks": [
+    {
+      "representation": "harmony",
+      "stratum": [
+        "SYNTHETIC_CONDITION",
+        "SYNTHETIC_TISSUE",
+        "synthetic_lineage"
+      ],
+      "sampled_cells": 240,
+      "independent_cdist_same_source_fraction": 0.49277777777777776,
+      "reported_same_source_fraction": 0.4927777777777777,
+      "absolute_difference": 5.551115123125783e-17,
+      "finite_sample_expectation_verified": true
+    },
+    {
+      "representation": "harmony",
+      "stratum": [
+        "SYNTHETIC_CONDITION",
+        "SYNTHETIC_TISSUE",
+        "synthetic_lineage"
+      ],
+      "sampled_cells": 240,
+      "independent_cdist_same_source_fraction": 0.49277777777777776,
+      "reported_same_source_fraction": 0.4927777777777777,
+      "absolute_difference": 5.551115123125783e-17,
+      "finite_sample_expectation_verified": true
+    },
+    {
+      "representation": "pca",
+      "stratum": [
+        "SYNTHETIC_CONDITION",
+        "SYNTHETIC_TISSUE",
+        "synthetic_lineage"
+      ],
+      "sampled_cells": 240,
+      "independent_cdist_same_source_fraction": 0.5711111111111111,
+      "reported_same_source_fraction": 0.5711111111111111,
+      "absolute_difference": 0.0,
+      "finite_sample_expectation_verified": true
+    },
+    {
+      "representation": "pca",
+      "stratum": [
+        "SYNTHETIC_CONDITION",
+        "SYNTHETIC_TISSUE",
+        "synthetic_lineage"
+      ],
+      "sampled_cells": 240,
+      "independent_cdist_same_source_fraction": 0.5711111111111111,
+      "reported_same_source_fraction": 0.5711111111111111,
+      "absolute_difference": 0.0,
+      "finite_sample_expectation_verified": true
+    }
+  ],
+  "no_source_or_label_changes": true
+}

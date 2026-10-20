@@ -10,5 +10,11 @@
     "portable browser executable/module locations",
     "aggregate 79-entry catalogue; no patient-level tables"
   ],
-  "licence": "No author-designated project licence selected; existing notices preserved"
+  "licence": "No author-designated project licence selected; existing notices preserved",
+  "scientific_follow_up": {
+    "atlas_diagnostics": "current final-PCA/Harmony diagnostics and existing annotation evidence summary; source-only package",
+    "bcell_state": "final source-recorded state/IFN models and aggregate outputs; portable environment-variable input roots",
+    "real_individual_inputs_included": false,
+    "synthetic_examples_explicit": true
+  }
 }

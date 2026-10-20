@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "atlas": "SYNTHETIC",
+  "replayed_strata": 2,
+  "only_release_sampled_coordinates_used": true,
+  "all_reported_mixing_values_match": true
+}

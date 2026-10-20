@@ -142,6 +142,12 @@ Source cell/donor inputs remain subject to repository access and reuse condition
 The committed September 30 composition outputs are historical; reproduce the
 current coverage-aware outputs with the documented CLI.
 
+The [October scientific follow-up](science/current_revision/README.md) adds
+final-representation integration diagnostics, 63-label marker-evidence review
+and source-recorded B-state/IFN analysis. Each package includes dependencies,
+input schemas and an explicitly synthetic installation check; B-state outputs
+are aggregate only. The real clinical/count inputs are supplied separately.
+
 ## October production-source synchronization
 
 This release refreshes the current frontend, API module-availability logic,

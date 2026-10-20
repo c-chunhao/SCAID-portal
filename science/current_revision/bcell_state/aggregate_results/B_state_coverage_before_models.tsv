@@ -1,0 +1,11 @@
+state	condition	source_cells	n_individuals	n_ge1	n_ge20	median_cells	min_cells	max_cells
+B_naive	HD	15577	71	70	70	213.0	0	571
+B_naive	SLE	52342	162	156	146	268.5	0	1516
+B_mem	HD	10504	71	70	69	108.0	0	1453
+B_mem	SLE	14271	162	156	142	72.0	0	820
+B_atypical	HD	535	71	68	3	5.0	0	67
+B_atypical	SLE	2532	162	148	39	9.0	0	244
+Source_B_other_or_unresolved	HD	1437	71	69	18	13.0	0	237
+Source_B_other_or_unresolved	SLE	6397	162	157	88	23.5	0	642
+B_total	HD	28053	71	71	71	384.0	31	1801
+B_total	SLE	75542	162	160	159	408.0	0	1794

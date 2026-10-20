@@ -3,7 +3,9 @@
 - Synchronize October production frontend and API business logic.
 - Publish relative-path 79-entry catalogue and module-availability metadata.
 - Retain portable SQLite demo, MySQL production settings and data import tools.
-- Refresh portable scientific audit/analysis modules; patient inputs excluded.
+- Add portable final-atlas diagnostics and 63-label marker-evidence review.
+- Add final source-recorded B-state/IFN follow-up with 40 aggregate models, independent HC3/BH checks and an entirely synthetic C++/HC3 demonstration.
+- Refresh portable scientific audit/analysis modules; individual inputs excluded.
 - Keep existing licence status and third-party notices; no project licence grant.
 
 # 0.1.0-rc3 — 2026-09-30
@@ -18,5 +20,5 @@
 - Portable environment-based release settings; production secrets, database
   dumps, dependency installations and original template Git history excluded.
 
-Release-candidate numbering does not imply that a tagged public release, DOI,
-scientific-pipeline reproduction or article publication exists.
+Release-candidate numbering does not imply an archival DOI, independent
+scientific validation or article publication.

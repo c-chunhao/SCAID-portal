@@ -1,0 +1,7 @@
+work/
+data/
+__pycache__/
+*.pyc
+*.uint64
+*.int32
+stream_B_watch

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "synthetic_only": true,
+  "cells": 240,
+  "dimensions": 20,
+  "checks": [
+    {
+      "script": "replay_sampled_diagnostics.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"passed\": true,\n  \"atlas\": \"SYNTHETIC\",\n  \"replayed_strata\": 2,\n  \"only_release_sampled_coordinates_used\": true,\n  \"all_reported_mixing_values_match\": true\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "verify_final_diagnostics.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"passed\": true,\n  \"atlas\": \"SYNTHETIC\",\n  \"independent_backend\": \"scipy.spatial.distance.cdist plus full per-query sorting; main analysis used sklearn nearest neighbours\",\n  \"checks\": [\n    {\n      \"representation\": \"harmony\",\n      \"stratum\": [\n        \"SYNTHETIC_CONDITION\",\n        \"SYNTHETIC_TISSUE\",\n        \"synthetic_lineage\"\n      ],\n      \"sampled_cells\": 240,\n      \"independent_cdist_same_source_fraction\": 0.49277777777777776,\n      \"reported_same_source_fraction\": 0.4927777777777777,\n      \"absolute_difference\": 5.551115123125783e-17,\n      \"finite_sample_expectation_verified\": true\n    },\n    {\n      \"representation\": \"harmony\",\n      \"stratum\": [\n        \"SYNTHETIC_CONDITION\",\n        \"SYNTHETIC_TISSUE\",\n        \"synthetic_lineage\"\n      ],\n      \"sampled_cells\": 240,\n      \"independent_cdist_same_source_fraction\": 0.49277777777777776,\n      \"reported_same_source_fraction\": 0.4927777777777777,\n      \"absolute_difference\": 5.551115123125783e-17,\n      \"finite_sample_expectation_verified\": true\n    },\n    {\n      \"representation\": \"pca\",\n      \"stratum\": [\n        \"SYNTHETIC_CONDITION\",\n        \"SYNTHETIC_TISSUE\",\n        \"synthetic_lineage\"\n      ],\n      \"sampled_cells\": 240,\n      \"independent_cdist_same_source_fraction\": 0.5711111111111111,\n      \"reported_same_source_fraction\": 0.5711111111111111,\n      \"absolute_difference\": 0.0,\n      \"finite_sample_expectation_verified\": true\n    },\n    {\n      \"representation\": \"pca\",\n      \"stratum\": [\n        \"SYNTHETIC_CONDITION\",\n        \"SYNTHETIC_TISSUE\",\n        \"synthetic_lineage\"\n      ],\n      \"sampled_cells\": 240,\n      \"independent_cdist_same_source_fraction\": 0.5711111111111111,\n      \"reported_same_source_fraction\": 0.5711111111111111,\n      \"absolute_difference\": 0.0,\n      \"finite_sample_expectation_verified\": true\n    }\n  ],\n  \"no_source_or_label_changes\": true\n}\n",
+      "stderr": ""
+    }
+  ]
+}

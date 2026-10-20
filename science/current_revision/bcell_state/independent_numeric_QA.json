@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "estimated_models_independently_reconstructed": 36,
+  "manual_HC3_checks": "Closed-form OLS and sandwich HC3 using inverse(XtX), residuals, leverage and normal confidence limits; independent of statsmodels fitting.",
+  "max_absolute_numeric_error": 6.583622536027178e-14,
+  "BH_families_reconstructed": 10,
+  "synthetic_stream_scanner_verified": true,
+  "synthetic_duplicate_coordinates_summed": true,
+  "all_unassessed_label_rows_NA": true,
+  "common_205_intersection_exact": true,
+  "models_total": 40,
+  "unavailable_models": 4,
+  "unavailable_reasons": [
+    "Fewer than 10 eligible source individuals in at least one arm."
+  ]
+}

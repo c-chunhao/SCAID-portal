@@ -1,0 +1,107 @@
+{
+  "scope": "scripts, plans, explicitly synthetic demonstration and aggregate results only",
+  "excluded": [
+    "clinical and individual-level tables",
+    "source metadata/counts/barcodes",
+    "cell-ID mappings",
+    "binary scan outputs",
+    "batch-level coverage rows"
+  ],
+  "files": [
+    {
+      "file": ".gitignore",
+      "sha256": "14fda52bf75dc3058683e876f40f19988fb6a3d1e8de55f709476bf5d71c42e7",
+      "bytes": 63
+    },
+    {
+      "file": "README.md",
+      "sha256": "6ecfc75c8377623dce5fad3d222659a458c20e8bf1b3cfefaf2052991e0dd7f0",
+      "bytes": 4321
+    },
+    {
+      "file": "aggregate_results/B_source_label_coverage_by_condition_cohort.tsv",
+      "sha256": "97b7e942276b044e85cc7b71f333381e4caf21099cc2fec8191861c5d9b15ab3",
+      "bytes": 1098
+    },
+    {
+      "file": "aggregate_results/B_state_HC3_models.tsv",
+      "sha256": "82988d981398b8e039c30d5dc1f91a5a87829ea16e6a7e706d17cafc5fd7a6f0",
+      "bytes": 16262
+    },
+    {
+      "file": "aggregate_results/B_state_coverage_before_models.tsv",
+      "sha256": "be947320092e2e9a7bd4fba1d5be51873d98e613b623ce43e500e479d9059ee1",
+      "bytes": 522
+    },
+    {
+      "file": "aggregate_results/readable_results_bilingual.json",
+      "sha256": "89221ccd4185f71b2bec4b57ae823ed7bf8f90c7203b231cc634d08c3a85d914",
+      "bytes": 67869
+    },
+    {
+      "file": "aggregate_results/reference_original_aggregate_HC3_models.tsv",
+      "sha256": "164bf70bb0e6b6a0d1af834f91e701ab42184390424c011c397a02817ecdc283",
+      "bytes": 9967
+    },
+    {
+      "file": "aggregate_results/source_B_coarse_fine_label_pairs.tsv",
+      "sha256": "d47a7e4d2e68ad4917a351b062ee1d60d1dffc05c888d02b577fb4cf5c16521e",
+      "bytes": 165
+    },
+    {
+      "file": "analysis_plan.json",
+      "sha256": "606f76805bac1193ec59550f6919ed50779c5c293d61d4b5f58d6674be427a28",
+      "bytes": 4155
+    },
+    {
+      "file": "coverage_design_addendum.md",
+      "sha256": "4747a8dfcc35acb1c6e54a8ff0a09d4da654313ef05557b25c720ca72d907c0b",
+      "bytes": 887
+    },
+    {
+      "file": "independent_numeric_QA.json",
+      "sha256": "9690e4636a54a81fea533d26e1c2e56400e3b34327daa7fc6451e58be91bcd78",
+      "bytes": 656
+    },
+    {
+      "file": "requirements.txt",
+      "sha256": "9109a8e7fa763b9c339cdba56606393ae9fd67082e7e9cf092c9bfcce54cc682",
+      "bytes": 78
+    },
+    {
+      "file": "scripts/analyze_bcell_states.py",
+      "sha256": "b33f0fea748faaf4cbf6ec684dbe0ac56bd905314ff2925ab10fab7ede1cbec4",
+      "bytes": 28848
+    },
+    {
+      "file": "scripts/build_readable_results.py",
+      "sha256": "483a78d5e93743e908780e39deec3d30db64ab168c03b06ed71c4f6342c0ee41",
+      "bytes": 13572
+    },
+    {
+      "file": "scripts/prepare_bcell.py",
+      "sha256": "0d6ca4d9181771f21589b31a4c18fbc9bb5329156d951ff8d9da8caa34e4853e",
+      "bytes": 8730
+    },
+    {
+      "file": "scripts/stream_B_watch.cpp",
+      "sha256": "097d731e975be2e5691c8f7501c5b83373ada8348ceff4a86f575fa37b262de3",
+      "bytes": 3756
+    },
+    {
+      "file": "synthetic_example/run_synthetic.py",
+      "sha256": "5ea3cf3a9814dea83870ba57d30b8d6320f02814c443a5ae7e8e762202580403",
+      "bytes": 4137
+    },
+    {
+      "file": "synthetic_example_QA.json",
+      "sha256": "0c89e2d309f300ff1d9ad646fa13ea3438e6b9d0ee9ac26a40d6f1894f9609b6",
+      "bytes": 1572
+    },
+    {
+      "file": "tested_versions.json",
+      "sha256": "b992cdeae5d0e0e5af1439857d3de67347e1147b2309742c0511196d08202a6f",
+      "bytes": 264
+    }
+  ]
+}
