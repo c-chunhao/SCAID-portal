@@ -116,6 +116,7 @@
           <div><dt>Cell records</dt><dd>{{ formatCount(currentRow.cell_count) }}</dd></div>
           <div><dt>Sample labels</dt><dd>{{ formatCount(currentRow.sample_size) }}</dd></div>
         </dl>
+        <p v-if="currentRow.study_context" class="study-context">{{ currentRow.study_context }}</p>
         <div class="detail-actions">
           <nav v-if="hasPublishedModule(currentRow, 'gene_umap') || hasPublishedModule(currentRow, 'kegg_score')" class="exploration-links" aria-label="Explore this dataset">
             <RouterLink v-if="hasPublishedModule(currentRow, 'gene_umap')" :to="explorationTarget('gene')">Gene expression <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M4 10h12m-5-5 5 5-5 5" /></svg></RouterLink>
@@ -131,12 +132,13 @@
         <div class="dataset-toolbar">
           <el-menu :default-active="activeName" mode="horizontal" :ellipsis="false" @select="handleMenuSelect" class="dataset-menu">
             <el-menu-item v-if="hasPublishedAnalysis(currentRow, 'Overview')" index="Overview">Overview</el-menu-item>
-            <el-menu-item v-if="hasPublishedAnalysis(currentRow, 'Main_Marker')" index="Main_Marker">Marker</el-menu-item>
+            <el-menu-item v-if="hasPublishedAnalysis(currentRow, 'Main_Marker')" index="Main_Marker">Marker figures</el-menu-item>
+            <el-menu-item v-if="hasPublishedAnalysis(currentRow, 'Markers')" index="Markers">Markers</el-menu-item>
             <el-menu-item v-if="hasPublishedAnalysis(currentRow, 'MajorCellType_Go_Ht')" index="MajorCellType_Go_Ht">GO</el-menu-item>
             <el-menu-item v-if="hasPublishedAnalysis(currentRow, 'MajorCellType_KEGG_Ht')" index="MajorCellType_KEGG_Ht">KEGG</el-menu-item>
             <el-sub-menu v-if="hasPublishedModule(currentRow, 'cellchat')" index="CellChat">
               <template #title>CellChat</template>
-              <el-menu-item v-for="item in cellchatList" :key="item.key" :index="item.key">{{ item.label }}</el-menu-item>
+              <el-menu-item v-for="item in availableCellchatViews" :key="item.key" :index="item.key">{{ item.label }}</el-menu-item>
             </el-sub-menu>
           </el-menu>
           <el-dropdown v-if="hasPublishedModule(currentRow, 'downloads')" trigger="click" :disabled="downloadLoading || downList.length === 0" class="download-menu">
@@ -147,7 +149,7 @@
             <template #dropdown>
               <el-dropdown-menu>
                 <el-dropdown-item v-for="item in downList" :key="item.id">
-                  <a :href="item.download_url" :download="getDownloadName(item)" class="download-link">{{ getDownloadLabel(item) }}</a>
+                  <a :href="item.download_url" :download="getDownloadName(item)" :title="item.content_description || undefined" class="download-link">{{ getDownloadLabel(item) }}</a>
                 </el-dropdown-item>
               </el-dropdown-menu>
             </template>
@@ -158,7 +160,8 @@
         <el-alert v-if="downloadError" :title="downloadError" type="error" show-icon :closable="false">
           <el-button link type="primary" @click="loadDownloads(currentRow)">Retry downloads</el-button>
         </el-alert>
-        <div class="menu-content" :aria-busy="loading">
+        <MarkerTable v-if="activeName === 'Markers'" :key="currentRow.id" :dataset-record-id="currentRow.id" class="marker-content" />
+        <div v-else class="menu-content" :aria-busy="loading">
           <div v-if="loading" class="loading-container" role="status">
             <p>Loading figures…</p>
             <el-skeleton :rows="4" animated />
@@ -206,6 +209,7 @@ import { getFullImageUrl } from '@/config';
 import { datasetQuery, explorationQuery, querySignature, readDatasetQuery } from '@/utils/queryState';
 import { hasPublishedAnalysis, hasPublishedModule, publicationNotes } from '@/utils/moduleAvailability';
 import ShareQueryLink from '@/components/ShareQueryLink.vue';
+import MarkerTable from '@/components/MarkerTable.vue';
 
 const route = useRoute();
 const router = useRouter();
@@ -235,6 +239,7 @@ const downList = ref([]);
 const downloadLoading = ref(false);
 const downloadError = ref('');
 const cellchatList = [
+  { key: 'CellChatOverview', label: 'Interaction overview', description: 'Interaction counts, strength and signaling roles across cell groups.' },
   { key: 'LRcircle', label: 'Ligand–receptor networks', description: 'Circle plots for individual ligand–receptor pairs.' },
   { key: 'LRcontribution', label: 'Ligand–receptor contributions', description: 'Contributions of ligand–receptor pairs to a signaling pathway.' },
   { key: 'SignalingCellRole', label: 'Cell signaling roles', description: 'Cell-group roles for the selected signaling pathway.' },
@@ -244,14 +249,21 @@ const cellchatList = [
   { key: 'SignalingRole', label: 'Signaling role summaries', description: 'Summary views of cell-group signaling roles.' },
   { key: 'Single', label: 'Cell-group network views', description: 'Network views by cell group, labeled Count or Weight in the source figures.' },
 ];
-const analyses = ['Overview', 'Main_Marker', 'MajorCellType_Go_Ht', 'MajorCellType_KEGG_Ht', ...cellchatList.map(item => item.key)];
+const availableCellchatViews = computed(() => cellchatList.filter(item => item.key !== 'CellChatOverview' || currentRow.value?.module_availability?.cellchat_overview === true));
+const analyses = ['Overview', 'Main_Marker', 'Markers', 'MajorCellType_Go_Ht', 'MajorCellType_KEGG_Ht', ...cellchatList.map(item => item.key)];
 const selectedAnalysis = computed(() => cellchatList.find(item => item.key === activeName.value));
 const sourceHref = computed(() => /^GSE\d+$/i.test(currentRow.value?.dataset_id || '')
   ? `https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=${encodeURIComponent(currentRow.value.dataset_id)}` : '');
 const formatCount = value => Number.isFinite(Number(value)) && value !== null && value !== '' ? Number(value).toLocaleString('en-US') : 'Not reported';
 function moduleSummary(row) {
   if (!row.module_availability) return 'Browse analyses';
-  return row.module_availability.gene_umap && row.module_availability.kegg_score ? 'Main · Gene · Scores' : 'Main figures only';
+  const modules = ['Main'];
+  if (row.module_availability.gene_umap) modules.push('Gene');
+  if (row.module_availability.kegg_score) modules.push('Scores');
+  if (row.module_availability.marker_table) modules.push('Markers');
+  if (row.module_availability.cellchat) modules.push('CellChat');
+  if (row.module_availability.downloads) modules.push('Downloads');
+  return modules.join(' · ');
 }
 function explorationTarget(kind) {
   return { path: kind === 'gene' ? '/Gene' : '/KEGG', query: explorationQuery(currentRow.value, kind) };
@@ -363,6 +375,14 @@ async function loadImages(page = 1, syncUrl = true) {
   const requestId = ++imageRequestId;
   const row = currentRow.value;
   const tab = activeName.value;
+  if (tab === 'Markers') {
+    fileList.value = [];
+    imageCount.value = 0;
+    imagePage.value = 1;
+    loading.value = false;
+    if (syncUrl !== false) syncQuery();
+    return;
+  }
   imagePage.value = page;
   if (syncUrl !== false) syncQuery();
   fileList.value = [];
@@ -425,7 +445,10 @@ function getDownloadName(item) {
 }
 function getDownloadLabel(item) {
   const method = item.method || String(item.relative_path || '').split(/[\\/]/).find(segment => /^(RNA|AUCell|UCell|singscore)$/i.test(segment));
-  return method ? `${method} — ${getDownloadName(item)}` : getDownloadName(item);
+  const label = method === 'RNA' && /\.h5ad$/i.test(getDownloadName(item))
+    ? item.has_raw_counts === true ? 'RNA (expression + counts)' : item.has_raw_counts === false ? 'RNA (processed expression)' : 'RNA expression'
+    : method === 'RNA_counts_subset' ? 'RNA counts (verified subset)' : method;
+  return label ? `${label} — ${getDownloadName(item)}` : getDownloadName(item);
 }
 function getImageStyle(item) { return { width: item.image_width ? `${item.image_width}px` : '100%', maxWidth: '100%', height: 'auto' }; }
 function figureTitle(item) {
@@ -572,12 +595,14 @@ onBeforeUnmount(() => { disposed = true; });
 .download-menu :deep(.el-button) { min-height: 40px; }
 .download-chevron { width: 16px; height: 16px; margin-left: 6px; fill: none; stroke: currentColor; stroke-width: 1.5; }
 .download-link { display: block; width: 100%; padding: 10px 0; color: inherit; overflow-wrap: anywhere; max-width: calc(100vw - 64px); }
+.marker-content { padding-top: 24px; margin-bottom: 24px; }
 .menu-content { padding: 20px 0 0; min-height: 200px; margin-bottom: 24px; }
 .figure-summary { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px 16px; }
 .figure-summary > p { margin: 0; color: var(--dataset-muted); font-size: 0.85rem; line-height: 1.5; }
 .fileBox { margin: 26px 0; }
 .figure-heading { padding: 14px 16px 0; }
 .figure-source { margin: 3px 0 0; color: var(--dataset-muted); font-size: .8rem; line-height: 1.5; overflow-wrap: anywhere; }
+.study-context { max-width: 76ch; margin: 12px 0 20px; line-height: 1.6; color: var(--scaid-muted, #6b5f5a); font-size: .925rem; }
 .dataset-facts { display: grid; grid-template-columns: minmax(0, 1.6fr) repeat(3, minmax(0, 1fr)); gap: 16px; margin: 0 0 18px; padding: 18px 0; border-top: 1px solid var(--dataset-line); border-bottom: 1px solid var(--dataset-line); }
 .dataset-facts > div { min-width: 0; }
 .dataset-facts dt { margin: 0 0 5px; color: var(--dataset-muted); font-size: .8rem; font-weight: 400; }

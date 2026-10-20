@@ -2,7 +2,7 @@ from datetime import datetime, time, timedelta
 
 from django.db.models import Q
 from django.conf import settings
-from django.http import FileResponse, Http404, HttpResponse
+from django.http import FileResponse, Http404, HttpResponse, HttpResponseNotModified
 from django.utils.http import content_disposition_header
 from pathlib import Path
 from urllib.parse import quote
@@ -18,7 +18,7 @@ from rest_framework.response import Response
 
 from .asset_paths import (
     DISEASE_FOLDERS, dataset_names, path_sequence_condition, effective_abbreviation, matching_catalog_records, manifest_search_ids, canonical_query_ids,
-    manifest_image_condition, manifest_h5_condition, manifest_folders, folder_condition, resolved_h5_path, tissue_names, manifest_entry, case_sensitive_gene_symbols,
+    manifest_image_condition, manifest_h5_condition, manifest_folders, folder_condition, resolved_h5_path, tissue_names, manifest_entry, case_sensitive_gene_symbols, figure_manifest_entry,
 )
 from .models import PDFImage, CellData, AffectedSite, GeneKeggEnum, H5File
 from .thumbnails import ensure_thumbnail, thumbnail_relative, wants_preview, resolved_figure_path
@@ -46,6 +46,22 @@ def integer_param(params, name, minimum=0, maximum=9223372036854775807):
 def requested_dataset(params):
     record_id = integer_param(params, 'dataset_record_id', minimum=1)
     return get_object_or_404(CellData, pk=record_id) if record_id is not None else None
+
+
+def figure_cache_headers(record, path, default_max_age):
+    entry = figure_manifest_entry(record)
+    if entry and entry.get('gene_render_mode') == 'rna_cache' and str(record.relative_path or '').endswith('/GeneUmap'):
+        stat = path.stat()
+        return {'Cache-Control':'public, no-cache', 'ETag':f'"{stat.st_mtime_ns:x}-{stat.st_size:x}"'}
+    return {'Cache-Control':f'public, max-age={default_max_age}'}
+
+
+def figure_not_modified(request, headers):
+    from django.utils.http import parse_etags
+    etags = parse_etags(request.headers.get('If-None-Match',''))
+    if headers.get('ETag') and ('*' in etags or headers['ETag'] in etags):
+        return HttpResponseNotModified(headers=headers)
+    return None
 
 
 class PublicReadOnlyViewSet(viewsets.ReadOnlyModelViewSet):
@@ -137,6 +153,8 @@ class PDFImageViewSet(PublicReadOnlyViewSet):
             names = [stem + suffix for stem in stems for suffix in ('.pdf', '.png', '.jpg', '_page_1.jpg')]
             conditions &= Q(name__in=names)
             conditions &= folder_condition(folders, 'Dataset/Overview') if folders else path_sequence_condition('image', ('Overview',))
+        elif pdf_name == 'CellChatOverview':
+            conditions &= folder_condition(folders, 'CellChat/Overview') if folders else path_sequence_condition('image', ('CellChat',)) & path_sequence_condition('image', ('Overview',))
         elif pdf_name in {
             'LRcircle', 'LRcontribution', 'SignalingCellRole', 'SignalingChord',
             'SignalingCircle', 'SignalingHt', 'SignalingRole', 'Single',
@@ -185,10 +203,15 @@ class PDFImageViewSet(PublicReadOnlyViewSet):
         source = resolved_figure_path(record)
         if source is None or source.suffix.lower() not in {'.png', '.jpg', '.jpeg'}:
             raise Http404('Figure file unavailable.')
+        headers = figure_cache_headers(record,source,86400)
+        cached = figure_not_modified(request,headers)
+        if cached is not None:
+            return cached
         import mimetypes
         response = FileResponse(source.open('rb'), content_type=mimetypes.guess_type(source.name)[0] or 'application/octet-stream')
         response['Content-Disposition'] = content_disposition_header(False, source.name)
-        response['Cache-Control'] = 'public, max-age=86400'
+        for key,value in headers.items():
+            response[key] = value
         response['X-Content-Type-Options'] = 'nosniff'
         return response
 
@@ -201,13 +224,18 @@ class PDFImageViewSet(PublicReadOnlyViewSet):
         target = ensure_thumbnail(record)
         if target is None:
             raise Http404('Figure file unavailable.')
+        headers = figure_cache_headers(record,target,2592000)
+        cached = figure_not_modified(request,headers)
+        if cached is not None:
+            return cached
         prefix = getattr(settings, 'THUMBNAIL_ACCEL_PREFIX', '')
-        if prefix:
+        if prefix and 'ETag' not in headers:
             response = HttpResponse(content_type='image/jpeg')
             response['X-Accel-Redirect'] = prefix.rstrip('/') + '/' + quote(thumbnail_relative(record.pk).as_posix(), safe='/')
         else:
             response = FileResponse(target.open('rb'), content_type='image/jpeg')
-        response['Cache-Control'] = 'public, max-age=2592000'
+        for key,value in headers.items():
+            response[key] = value
         response['X-Content-Type-Options'] = 'nosniff'
         return response
 
@@ -224,12 +252,12 @@ def published_module_records(records, module):
     if module is None:
         yield from records
         return
-    if module not in {'gene_umap', 'kegg_score', 'cellchat', 'downloads'}:
+    if module not in {'gene_umap', 'kegg_score', 'cellchat', 'downloads', 'marker_table'}:
         raise ValidationError({'module': 'Unknown publication module.'})
     for record in records:
         entry = manifest_entry(record)
         available = entry.get('module_availability') if entry else None
-        if available is None or available.get(module) is True:
+        if (available is None and module != 'marker_table') or (available is not None and available.get(module) is True):
             yield record
 
 

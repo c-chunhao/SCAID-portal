@@ -36,6 +36,14 @@ def figure_roots():
 
 def resolved_figure_path(record):
     """Absolute source path for a PDFImage row, or None if it is outside the roots."""
+    if str(record.relative_path or '').rstrip('/').endswith('/GeneUmap'):
+        from .asset_paths import figure_manifest_entry
+        entry = figure_manifest_entry(record)
+        if entry and entry.get('gene_render_mode') == 'rna_cache':
+            # A registered matrix-backed cache must validate its source/index
+            # even when a previously rendered PNG already exists.
+            from .lazy_gene_plots import ensure_registered_gene_figure
+            return ensure_registered_gene_figure(record)
     name = (record.image.name if record.image else '') or ''
     if not name:
         return None

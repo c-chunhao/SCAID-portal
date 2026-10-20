@@ -96,6 +96,11 @@ class CellDataSerializer(serializers.ModelSerializer):
     dataset_label = serializers.SerializerMethodField()
     module_availability = serializers.SerializerMethodField()
     availability_notes = serializers.SerializerMethodField()
+    study_context = serializers.SerializerMethodField()
+
+    def get_study_context(self, obj):
+        entry = manifest_entry(obj)
+        return entry.get('study_context', '') if entry else ''
 
     def get_module_availability(self, obj):
         entry = manifest_entry(obj)
@@ -245,6 +250,33 @@ class CellDataTreeSerializer(serializers.ModelSerializer):
 class H5FileSerializer(serializers.ModelSerializer):
     download_url = serializers.SerializerMethodField()
     method = serializers.SerializerMethodField()
+    file_format = serializers.SerializerMethodField()
+    has_raw_counts = serializers.SerializerMethodField()
+    content_description = serializers.SerializerMethodField()
+
+    def _file_metadata(self, obj):
+        if not hasattr(obj, '_scaid_download_metadata'):
+            from .asset_paths import load_manifest
+            value = {}
+            for entry in load_manifest():
+                for method, path in entry.get('h5_paths', {}).items():
+                    if path == obj.path:
+                        value = entry.get('h5_file_metadata', {}).get(method, {})
+                        break
+                if value:
+                    break
+            obj._scaid_download_metadata = value
+        return obj._scaid_download_metadata
+
+    def get_has_raw_counts(self, obj):
+        return self._file_metadata(obj).get('has_raw_counts')
+
+    def get_content_description(self, obj):
+        return self._file_metadata(obj).get('content_description', '')
+
+    def get_file_format(self, obj):
+        from pathlib import Path
+        return 'H5AD' if Path(obj.path).suffix.lower() == '.h5ad' else 'H5'
 
     def get_method(self, obj):
         return obj.relative_path.strip("/\\").replace("\\", "/").split("/")[-1]
@@ -257,7 +289,7 @@ class H5FileSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = H5File
-        fields = ['id', 'name', 'relative_path', 'file_size', 'create_time', 'last_modified', 'download_url', 'method']
+        fields = ['id', 'name', 'relative_path', 'file_size', 'create_time', 'last_modified', 'download_url', 'method', 'file_format', 'has_raw_counts', 'content_description']
 
 
 class GeneKeggEnumSerializer(serializers.ModelSerializer):

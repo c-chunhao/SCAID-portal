@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "release_id": "scaid-new-aid-20261015",
-  "access": "read-only existing PNGs through registered figure IDs; no directory listing",
+  "access": "Relative source-family layout; install reviewed assets locally; no matrix or image library included.",
   "roots": [
     "Active_Tattoo_Uveitis/GSE232802/PBMC/GeneUmap",
     "Active_Tattoo_Uveitis/GSE232802/PBMC/KEGGScore",
@@ -58,6 +58,10 @@
     "Ulcerative_Colitis/GSE253720/ColonBiopsy/GeneUmap",
     "Ulcerative_Colitis/GSE253720/ColonBiopsy/KEGGScore",
     "Ulcerative_Colitis/GSE268626/PBMC/GeneUmap",
-    "Ulcerative_Colitis/GSE268626/PBMC/KEGGScore"
-  ]
+    "Ulcerative_Colitis/GSE268626/PBMC/KEGGScore",
+    "Gastroesophageal_Reflux_Disease/GSE295274/Esophagus/KEGGScore",
+    "Sarcoidosis/GSE319770/Heart/KEGGScore",
+    "T1D/GSE316337/PBMC/KEGGScore"
+  ],
+  "module_release": "scaid-modules-20261020"
 }

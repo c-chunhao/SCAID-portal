@@ -1,4 +1,4 @@
-# Exact packages from the independently installed Python 3.12.12 local web demo.
+# Previous rc2 Python 3.12 web lock, extended for the v0.3 renderer; a new independent installation is not claimed.
 asgiref==3.11.1
 Django==5.1.7
 django-csp==4.0
@@ -10,3 +10,5 @@ packaging==26.3
 pillow==11.1.0
 PyMuPDF==1.25.4
 sqlparse==0.5.5
+
+matplotlib==3.10.1

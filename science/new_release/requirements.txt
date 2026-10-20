@@ -1,0 +1,14 @@
+# Versions observed in the source-preparation scientific runtime.
+# Install separately from backend; this is not a claim of a fresh installation.
+anndata==0.12.17
+h5py==3.15.1
+numpy==1.26.4
+scipy==1.16.3
+pandas==2.3.3
+matplotlib==3.10.8
+scanpy==1.11.5
+harmonypy==0.2.0
+scikit-learn==1.8.0
+threadpoolctl==3.6.0
+pillow==12.1.0
+PyMuPDF==1.25.4

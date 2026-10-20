@@ -26,7 +26,7 @@
     <article class="guide-content" aria-label="SCAID documentation">
       <section id="resource-overview" tabindex="-1" aria-labelledby="overview-title">
         <h1 id="overview-title">Explore SCAID, step by step</h1>
-        <p class="review-date">Information &amp; usage · Updated 15 October 2026</p>
+        <p class="review-date">Information &amp; usage · Updated 20 October 2026</p>
         <p class="lead">Find a dataset, inspect its precomputed figures, and download the data with the context needed to interpret it.</p>
         <p>SCAID brings together single-cell data from autoimmune and related immune-mediated conditions, including explicitly labelled reference conditions. <template v-if="catalogueSummary">The live catalogue contains <strong>{{ fmt(catalogueSummary.objects) }} disease–tissue data objects</strong>, linked to <strong>{{ fmt(catalogueSummary.sources) }} repository identifiers</strong>, with <strong>{{ fmt(catalogueSummary.conditions) }} condition labels</strong> and <strong>{{ fmt(catalogueSummary.tissues) }} tissue labels</strong>.</template> E-MTAB-8207 is catalogued as psoriatic arthritis and GSE198616 as Behçet disease; the older object identifiers are kept for traceability.</p>
         <div v-if="catalogueSummary" class="scope-summary" aria-label="Live catalogue object totals">
@@ -34,7 +34,7 @@
           <div><strong>{{ fmt(catalogueSummary.samples) }}</strong><span>reported sample labels (object totals)</span></div>
         </div>
         <p>Cell and sample totals sum available object-level values; cells are not deduplicated across objects. A sample label is not necessarily an independent donor, and a repository identifier is not necessarily an independent study. One study can contribute several tissues or disease groups.</p>
-        <p>Modules are published separately for each object. Some objects currently offer only Overview, Marker, GO and KEGG enrichment figures. Gene and pathway-score filters include objects with published maps; CellChat and H5 download controls appear only where released. Adding individual data objects does not update the integrated atlases.</p>
+        <p>Modules are published separately for each object. Some objects currently offer only Overview, Marker, GO and KEGG enrichment figures. Gene and pathway-score filters include objects with published maps; searchable marker tables, CellChat and matrix downloads appear where released. Adding individual data objects does not update the integrated atlases.</p>
         <p>Use the standard HTTPS address <a href="https://scaid01.com/">scaid01.com</a>. No account is required for public browsing.</p>
         <p>The web application source and scientific analysis scripts are available in the <a href="https://github.com/c-chunhao/SCAID-portal" target="_blank" rel="noopener noreferrer">public GitHub repository</a>, with installation instructions and a synthetic demonstration dataset. Consult the repository for software licensing and original dataset reuse conditions.</p>
       </section>
@@ -45,7 +45,7 @@
           <li>On Home, enter <code>IBD</code> in <strong>Find a disease or dataset</strong>, then click <strong>Explore</strong> or press Enter.</li>
           <li>The Dataset page retains the query and shows the matching records in the current catalogue. IBD is an umbrella text query covering the catalog labels CI, CD and UC; it is not a separate disease abbreviation option.</li>
           <li>Find <strong>CI · GSE121380 · colon</strong> and select <strong>View details</strong> in its dataset column. Check the selected disease, accession and tissue below the table. The <strong>Overview</strong> section contains four figures for this record.</li>
-          <li>Select <strong>Marker</strong>, <strong>GO</strong>, <strong>KEGG</strong>, or a <strong>Cellchat</strong> submenu to view available results. Use figure pagination when a category has more than one page.</li>
+          <li>Select <strong>Marker figures</strong>, <strong>GO</strong>, <strong>KEGG</strong>, or a <strong>CellChat</strong> submenu to view available results. For the newly released objects, <strong>Markers</strong> also provides a searchable cell-type marker table. Use figure pagination when a category has more than one page.</li>
           <li>To narrow your search, choose <strong>Disease abbreviation</strong>, then <strong>Dataset ID</strong>, then <strong>Tissue</strong>, and click <strong>Search</strong>. Use <strong>Reset</strong> to return to the full catalog.</li>
         </ol>
         <router-link class="example-link" :to="{ path: '/Dataset', query: { search: 'IBD' } }">Open the IBD example →</router-link>
@@ -74,9 +74,15 @@
         <p>The KEGG page shows single-cell pathway-score figures. The Dataset page’s KEGG tab shows precomputed enrichment figures. These are different outputs, and score values from different methods or processing contexts do not automatically share a comparable scale.</p>
       </section>
 
+      <section id="markers" tabindex="-1" aria-labelledby="markers-guide-title">
+        <h2 id="markers-guide-title">Search and download cell-type markers</h2>
+        <p>Open a dataset and select <strong>Markers</strong>. Search by gene name, choose a cell type, or select a column heading to sort by log2 fold change, adjusted P value or expression percentage. <strong>Download full table</strong> preserves the original output; <strong>Download these results</strong> exports all rows matching the current filters and sort order.</p>
+        <p>Each comparison tests one annotated cell type against the remaining cells in that object. Positive and negative fold changes are retained. The original columns <code>test_group</code> and <code>test_group_number</code> summarize the cell types associated with a gene across the output; the current comparison is identified by <code>group1</code> and <code>group2</code>.</p>
+      </section>
+
       <section id="downloads" tabindex="-1" aria-labelledby="downloads-title">
-        <h2 id="downloads-title">4. Download and inspect an H5 file</h2>
-        <p>On Dataset, select a row and verify its disease, accession and tissue. Where H5 files have been released, click <strong>Download</strong> and choose a method-labelled entry. The number in the button shows the available files.</p>
+        <h2 id="downloads-title">4. Download expression and pathway matrices</h2>
+        <p>On Dataset, select a row and verify its disease, accession and tissue. Where matrix files have been released, click <strong>Download</strong> and choose a method-labelled entry. The number in the button shows the available files.</p>
         <div class="table-scroll" role="region" aria-label="Download formats" tabindex="0">
           <table>
             <thead><tr><th scope="col">Category</th><th scope="col">Data product</th><th scope="col">Before reuse</th></tr></thead>
@@ -89,9 +95,12 @@
           </table>
         </div>
         <p>Method entries may share a basename, such as <code>IBD_GSE121380_colon.h5</code>. Save each in a separate method folder or add the method to its filename to avoid overwriting another download.</p>
-        <h3>HDF5 is a container, not a universal single-cell schema</h3>
-        <p>The inspected RNA example contains <code>assay</code>, <code>graphs</code>, <code>names_obs</code>, <code>names_var</code>, <code>obs</code>, <code>reductions</code>, <code>uns</code> and <code>var</code>. The inspected score files contain <code>matrix/cell</code>, <code>matrix/pathway</code>, <code>matrix/value</code>, <code>matrix/x</code> and <code>matrix/y</code>.</p>
-        <p><strong>Do not pass these files directly to <code>scanpy.read_h5ad</code> or assume that renaming them to .h5ad converts them.</strong> Inspect the schema first and use a reader or conversion matched to that export format. A header-only inspection with Python is:</p>
+        <h3>Choose a reader for the exported format</h3>
+        <p><a href="/releases/scaid_new_aid_20261020_files.tsv" download>Download the new-release file catalogue (TSV)</a> for file sizes, scopes, direct links and SHA256 checksums.</p>
+        <p>New releases use AnnData <code>.h5ad</code> files. The RNA file stores expression in <code>X</code>. Verified source counts are included in <code>layers["counts"]</code> where available; the download label identifies files containing counts. Pathway files store scores in <code>X</code>; all four exports retain cell metadata and UMAP coordinates. Read these files with <code>anndata.read_h5ad</code> or <code>scanpy.read_h5ad</code>.</p>
+        <p>Earlier downloads use a different <code>.h5</code> schema, described below.</p>
+        <p>The earlier RNA example contains <code>assay</code>, <code>graphs</code>, <code>names_obs</code>, <code>names_var</code>, <code>obs</code>, <code>reductions</code>, <code>uns</code> and <code>var</code>. Earlier score files contain <code>matrix/cell</code>, <code>matrix/pathway</code>, <code>matrix/value</code>, <code>matrix/x</code> and <code>matrix/y</code>.</p>
+        <p><strong>Do not pass the earlier .h5 files directly to <code>scanpy.read_h5ad</code> or assume that renaming them to .h5ad converts them.</strong> Inspect the schema first and use a reader or conversion matched to that export format. A header-only inspection with Python is:</p>
         <pre><code>import h5py
 
 with h5py.File("RNA/IBD_GSE121380_colon.h5", "r") as handle:
@@ -108,7 +117,7 @@ with h5py.File("RNA/IBD_GSE121380_colon.h5", "r") as handle:
 
       <section id="interpretation" tabindex="-1" aria-labelledby="interpretation-title">
         <h2 id="interpretation-title">6. Interpret the results with their context</h2>
-        <p>SCAID displays previously generated figures. Browser searches do not recalculate differential expression, UMAP coordinates, pathway scores or CellChat networks.</p>
+        <p>SCAID displays processed expression data and analysis results. Browser searches do not recalculate differential expression, UMAP coordinates, pathway scores or CellChat networks.</p>
         <ul>
           <li><strong>Processing:</strong> the September 2026 audit of the original 48 objects found command records describing LogNormalize with a scale factor of 10,000; 44 contained Harmony reductions. These historical findings do not establish a common processing workflow for later releases, uniform upstream QC or expression comparability across studies.</li>
           <li><strong>Metadata:</strong> sample labels, donors, tissue, treatment and source study are different variables. Missing metadata and unrecovered QC or doublet records should remain unavailable or unverified.</li>
@@ -166,6 +175,8 @@ with h5py.File("RNA/IBD_GSE121380_colon.h5", "r") as handle:
               <tr><td><code>/api/cell-data-all/</code></td><td>Flat list of released disease–tissue data objects and module availability</td><td><code>?name=IBD</code>, <code>?abbreviation=SLE</code>, <code>?dataset_id=GSE174188</code></td></tr>
               <tr><td><code>/api/cell-data/</code></td><td>Catalogue as a disease → accession → tissue tree</td><td><code>?module=gene_umap</code>, <code>?module=kegg_score</code>, or no parameters</td></tr>
               <tr><td><code>/api/pdf-images/</code></td><td>Precomputed figures for one object (paginated)</td><td><code>?dataset_record_id=130&amp;pdf_name=Overview</code>, <code>?name=TRIM21&amp;GeneUmap=1</code></td></tr>
+              <tr><td><code>/api/markers/</code></td><td>Searchable cell-type marker rows, comparison labels and download entry</td><td><code>?dataset_record_id=145&amp;gene=NKG7&amp;ordering=-avg_log2FC</code></td></tr>
+              <tr><td><code>/api/markers/download/</code></td><td>Full or filtered marker table as TSV</td><td><code>?dataset_record_id=145</code></td></tr>
               <tr><td><code>/api/h5-file/</code></td><td>RNA and pathway-score H5 files for one object, with <code>download_url</code></td><td><code>?dataset_record_id=130</code></td></tr>
               <tr><td><code>/api/gene-kegg-enum/</code></td><td>Indexed gene symbols and KEGG pathway ids</td><td><code>?tp=gene&amp;name=TRIM</code></td></tr>
               <tr><td><code>/api/by-site/</code></td><td>Affected sites with their diseases (home page browser)</td><td>no parameters</td></tr>
@@ -238,7 +249,8 @@ const menuGroups = [
     { id: 'pathway-workflow', name: 'Explore hsa00010' },
   ] },
   { name: 'Reuse & help', children: [
-    { id: 'downloads', name: 'Download and read H5 files' },
+    { id: 'markers', name: 'Cell-type markers' },
+    { id: 'downloads', name: 'Download matrices' },
     { id: 'integration', name: 'Integrated atlases' },
     { id: 'interpretation', name: 'Interpretation and limits' },
     { id: 'troubleshooting', name: 'Troubleshooting' },

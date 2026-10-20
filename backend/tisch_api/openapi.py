@@ -6,7 +6,7 @@ test_openapi.py, which checks that every router path is described here.
 from django.http import JsonResponse
 from django.views.decorators.http import require_GET
 
-API_VERSION = "1.4.0"
+API_VERSION = "1.5.0"
 
 _ENVELOPE = {
     "type": "object",
@@ -48,7 +48,8 @@ _CELL_DATA = {
         "batch": {"type": "string", "nullable": True, "description": "Ingestion batch (YYYYMMDD); not a biological batch."},
         "asset_status": {"type": "string", "enum": ["linked", "unverified"]},
         "asset_message": {"type": "string"},
-        "module_availability": {"type": "object", "nullable": True, "description": "Explicit release flags for gene_umap, kegg_score, cellchat and downloads. Null denotes an older release without module flags.", "additionalProperties": {"type": "boolean"}},
+        "module_availability": {"type": "object", "nullable": True, "description": "Explicit release flags for gene_umap, kegg_score, cellchat, downloads and marker_table. Null denotes an older release without module flags.", "additionalProperties": {"type": "boolean"}},
+        "study_context": {"type": "string", "description": "Source assay selection and clinical context when relevant to interpreting this object."},
         "availability_notes": {"type": "array", "items": {"type": "string"}, "description": "Release-specific availability and interpretation notes."},
         "remarks": {"type": "string", "nullable": True},
         "file_name": {"type": "string", "nullable": True},
@@ -103,7 +104,7 @@ SCHEMA = {
         "/cell-data/": {
             "get": {
                 "summary": "Catalogue tree grouped by disease abbreviation",
-                "parameters": [_q("module", "Exclude cohorts whose selected module has not been published.", {"type": "string", "enum": ["gene_umap", "kegg_score", "cellchat", "downloads"]})],
+                "parameters": [_q("module", "Exclude cohorts whose selected module has not been published.", {"type": "string", "enum": ["gene_umap", "kegg_score", "cellchat", "downloads", "marker_table"]})],
                 "description": "One node per disease abbreviation with nested dataset_id, tissue and batch entries. Used to populate filter menus. Cached server-side for a few minutes.",
                 "responses": {"200": {"description": "Tree", "content": {"application/json": {"schema": _ENVELOPE}}}},
             }
@@ -153,7 +154,7 @@ SCHEMA = {
                     _q("dataset_source", "Repository name; refines dataset_id."),
                     _q("tissue", "Tissue label."),
                     _q("batch", "Ingestion batch folder."),
-                    _q("pdf_name", "Figure family: Overview, Main_Marker, MajorCellType_Go_Ht, MajorCellType_KEGG_Ht, LRcircle, LRcontribution, SignalingCellRole, SignalingChord, SignalingCircle, SignalingHt, SignalingRole, Single, or an exact figure stem."),
+                    _q("pdf_name", "Figure family: Overview, Main_Marker, MajorCellType_Go_Ht, MajorCellType_KEGG_Ht, CellChatOverview, LRcircle, LRcontribution, SignalingCellRole, SignalingChord, SignalingCircle, SignalingHt, SignalingRole, Single, or an exact figure stem."),
                     _q("name", "Gene symbol or KEGG pathway id (e.g. TRIM21, hsa00010); matched against the stored file basename. Documented case-distinct source features (C2orf15 / C2ORF15) require their exact spelling."),
                     _q("GeneUmap", "Present (any value) to restrict to gene expression UMAP maps."),
                     _q("KEGGScore", "Present (any value) to restrict to pathway score maps."),
@@ -206,7 +207,7 @@ SCHEMA = {
                     _q("start_date", "Registered on or after (YYYY-MM-DD)."),
                     _q("end_date", "Registered on or before (YYYY-MM-DD)."),
                 ],
-                "responses": {"200": {"description": "Array; download_url is a same-origin path", "content": {"application/json": {"schema": {"type": "array", "items": {"type": "object", "properties": {"id": {"type": "integer"}, "name": {"type": "string"}, "method": {"type": "string", "enum": ["RNA", "AUCell", "UCell", "singscore"]}, "file_size": {"type": "integer"}, "download_url": {"type": "string", "example": "/api/h5-file/273/download/"}}}}}}}, "400": {"description": "Invalid size or date parameter"}},
+                "responses": {"200": {"description": "Array; download_url is a same-origin path", "content": {"application/json": {"schema": {"type": "array", "items": {"type": "object", "properties": {"id": {"type": "integer"}, "name": {"type": "string"}, "method": {"type": "string", "enum": ["RNA", "AUCell", "UCell", "singscore", "RNA_counts_subset"]}, "file_size": {"type": "integer"}, "file_format": {"type": "string", "enum": ["H5", "H5AD"]}, "has_raw_counts": {"type": "boolean", "nullable": True}, "content_description": {"type": "string"}, "download_url": {"type": "string", "example": "/api/h5-file/273/download/"}}}}}}}, "400": {"description": "Invalid size or date parameter"}},
             }
         },
         "/h5-file/{id}/": {
@@ -247,6 +248,17 @@ SCHEMA = {
                 "parameters": [{"name": "id", "in": "path", "required": True, "schema": {"type": "integer"}}],
                 "responses": {"200": {"description": "Record"}, "404": {"description": "Unknown id"}},
             }
+        },
+        "/markers/": {
+            "get": {"summary": "Cell-type marker table for one selected data object",
+                "description": "Precomputed cell-type-versus-remaining-cells comparisons; not a disease-versus-control test. Original source values are preserved.",
+                "parameters": [{**_q("dataset_record_id", "Exact catalogue record id.", {"type": "integer", "minimum": 1}), "required": True}, _q("gene", "Case-insensitive gene substring."), _q("cell_type", "Exact target cell-type label."), _q("ordering", "Column name, optionally prefixed with - for descending order."), _q("page", "Results page.", {"type": "integer", "minimum": 1, "default": 1}), _q("page_size", "Markers per page.", {"type": "integer", "minimum": 1, "maximum": 100, "default": 25})],
+                "responses": {"200": {"description": "Marker rows, available flag, comparison, cell_types, row counts and download URL."}, "400": {"description": "Invalid or unknown query parameter."}, "404": {"description": "Unknown object, mismatched asset identity, or results page."}, "503": {"description": "Registered marker asset failed validation."}}}
+        },
+        "/markers/download/": {
+            "get": {"summary": "Download original marker values as TSV",
+                "parameters": [{**_q("dataset_record_id", "Exact catalogue record id.", {"type": "integer", "minimum": 1}), "required": True}, _q("gene", "Optional gene substring."), _q("cell_type", "Optional exact target cell type."), _q("ordering", "Optional output ordering.")],
+                "responses": {"200": {"description": "TSV with the source columns, optionally filtered."}, "400": {"description": "Invalid query."}, "404": {"description": "No registered marker table."}, "503": {"description": "Marker asset failed validation."}}}
         },
         "/schema/": {
             "get": {"summary": "This document", "responses": {"200": {"description": "OpenAPI 3.0 JSON"}}}

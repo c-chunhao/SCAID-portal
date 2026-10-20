@@ -1,3 +1,13 @@
+# 0.3.0-rc1 candidate — 21 October 2026
+
+- Prepare 31 additional objects for CellChat views and searchable/downloadable cell-type-versus-rest marker tables, with exact-object availability and input checks.
+- Add the 124-file H5AD export/independent-readback workflow, explicit RNA/score semantics and source-preserving gene indices with lazy PNG caches for the three previously missing Gene modules.
+- Retain verified nonnegative integer source count layers for 30 RNA objects; label the complete GSE279086 RNA object processed-only and preserve its fractional source values exactly.
+- Include optional 24-GSM/23,979-cell integer raw-count subset export separately from the main 124 files.
+- Add the descriptive PBMC pilot (7 objects, 5 studies, 14,000 cells) with assay-context restrictions and source-label marker review. The original two atlases are not replaced.
+- Publish portable source/configuration examples without matrices, individual metadata, credentials, production registries, generated PNG caches or private deployment backups.
+- Preserve existing licence status and third-party notices. The modules were deployed on 21 October 2026; two-stage acceptance recorded 518 API checks and HEAD/Range checks for all 125 files, with four small-file full SHA256 checks. This remains a source release candidate; no project/template licence grant is implied.
+
 # 0.2.0-rc2 — 20 October 2026
 
 - Document and actually check independent Python 3.12 scientific/web installations.

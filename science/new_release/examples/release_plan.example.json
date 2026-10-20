@@ -1,0 +1,473 @@
+{
+  "schema_version": 1,
+  "release_id": "new-aid-20261020-source-example",
+  "example_only": true,
+  "objects": [
+    {
+      "object_id": "Active_Tattoo_Uveitis/GSE232802/PBMC",
+      "catalog": {
+        "disease_name": "Active Tattoo Uveitis",
+        "disease_full_name": "Active Tattoo Uveitis",
+        "abbreviation": "ATU",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE232802",
+        "tissue": "PBMC",
+        "sample_size": null,
+        "cell_count": 2578,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "Antiphospholipid_Syndrome/GSE262240/PBMC",
+      "catalog": {
+        "disease_name": "Antiphospholipid Syndrome",
+        "disease_full_name": "Antiphospholipid Syndrome",
+        "abbreviation": "APS",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE262240",
+        "tissue": "PBMC",
+        "sample_size": null,
+        "cell_count": 16915,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "Atopic_Dermatitis/GSE230575/SkinBiopsy",
+      "catalog": {
+        "disease_name": "Atopic Dermatitis",
+        "disease_full_name": "Atopic Dermatitis",
+        "abbreviation": "AD",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE230575",
+        "tissue": "SkinBiopsy",
+        "sample_size": null,
+        "cell_count": 119023,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "Autoimmune_Hemolytic_Anemia/GSE301528/BoneMarrow",
+      "catalog": {
+        "disease_name": "Autoimmune Hemolytic Anemia",
+        "disease_full_name": "Autoimmune Hemolytic Anemia",
+        "abbreviation": "AIHA",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE301528",
+        "tissue": "BoneMarrow",
+        "sample_size": null,
+        "cell_count": 51292,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "Checkpoint_Inhibitor_Colitis/GSE253720/ColonBiopsy",
+      "catalog": {
+        "disease_name": "Checkpoint Inhibitor Colitis",
+        "disease_full_name": "Checkpoint Inhibitor Colitis",
+        "abbreviation": "CIC",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE253720",
+        "tissue": "ColonBiopsy",
+        "sample_size": null,
+        "cell_count": 18081,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "Crohn_Disease/GSE260842/Ileum_Colon_Fistula",
+      "catalog": {
+        "disease_name": "Crohn's Disease",
+        "disease_full_name": "Crohn's Disease",
+        "abbreviation": "CD",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE260842",
+        "tissue": "Ileum_Colon_Fistula",
+        "sample_size": null,
+        "cell_count": 123794,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "Crohn_Disease/GSE266616/AscColon_TIleum",
+      "catalog": {
+        "disease_name": "Crohn's Disease",
+        "disease_full_name": "Crohn's Disease",
+        "abbreviation": "CD",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE266616",
+        "tissue": "AscColon_TIleum",
+        "sample_size": null,
+        "cell_count": 146913,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "Crohn_Disease/GSE268626/PBMC",
+      "catalog": {
+        "disease_name": "Crohn's Disease",
+        "disease_full_name": "Crohn's Disease",
+        "abbreviation": "CD",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE268626",
+        "tissue": "PBMC",
+        "sample_size": null,
+        "cell_count": 8852,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "Crohn_Disease/GSE284230/SmallIntestine",
+      "catalog": {
+        "disease_name": "Crohn's Disease",
+        "disease_full_name": "Crohn's Disease",
+        "abbreviation": "CD",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE284230",
+        "tissue": "SmallIntestine",
+        "sample_size": null,
+        "cell_count": 171340,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "Dermatomyositis/GSE303609/Skin",
+      "catalog": {
+        "disease_name": "Dermatomyositis",
+        "disease_full_name": "Dermatomyositis",
+        "abbreviation": "DM",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE303609",
+        "tissue": "Skin",
+        "sample_size": null,
+        "cell_count": 45707,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "Dupilumab_Associated_Head_Neck_Dermatitis/GSE230575/SkinBiopsy",
+      "catalog": {
+        "disease_name": "Dupilumab-Associated Head and Neck Dermatitis",
+        "disease_full_name": "Dupilumab-Associated Head and Neck Dermatitis",
+        "abbreviation": "DAHND",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE230575",
+        "tissue": "SkinBiopsy",
+        "sample_size": null,
+        "cell_count": 65999,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "Gastroesophageal_Reflux_Disease/GSE295274/Esophagus",
+      "catalog": {
+        "disease_name": "Gastroesophageal Reflux Disease",
+        "disease_full_name": "Gastroesophageal Reflux Disease",
+        "abbreviation": "GERD",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE295274",
+        "tissue": "Esophagus",
+        "sample_size": null,
+        "cell_count": 32807,
+        "batch": "20261015"
+      },
+      "tier": "main_figures_only"
+    },
+    {
+      "object_id": "Inactive_Tattoo_Uveitis/GSE232802/PBMC",
+      "catalog": {
+        "disease_name": "Inactive Tattoo Uveitis",
+        "disease_full_name": "Inactive Tattoo Uveitis",
+        "abbreviation": "ITU",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE232802",
+        "tissue": "PBMC",
+        "sample_size": null,
+        "cell_count": 2988,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "Interstitial_Lung_Disease/GSE296682/BAL",
+      "catalog": {
+        "disease_name": "Interstitial Lung Disease",
+        "disease_full_name": "Interstitial Lung Disease",
+        "abbreviation": "ILD",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE296682",
+        "tissue": "BAL",
+        "sample_size": null,
+        "cell_count": 71805,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "JIA/GSE213095/PBMC_SFMC",
+      "catalog": {
+        "disease_name": "Juvenile Idiopathic Arthritis",
+        "disease_full_name": "Juvenile Idiopathic Arthritis",
+        "abbreviation": "JIA",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE213095",
+        "tissue": "PBMC_SFMC",
+        "sample_size": null,
+        "cell_count": 164411,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "Multiple_Sclerosis/GSE327243/CSF",
+      "catalog": {
+        "disease_name": "Multiple Sclerosis",
+        "disease_full_name": "Multiple Sclerosis",
+        "abbreviation": "MS",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE327243",
+        "tissue": "CSF",
+        "sample_size": null,
+        "cell_count": 27134,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "Multiple_Sclerosis/GSE328264/CSF",
+      "catalog": {
+        "disease_name": "Multiple Sclerosis",
+        "disease_full_name": "Multiple Sclerosis",
+        "abbreviation": "MS",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE328264",
+        "tissue": "CSF",
+        "sample_size": null,
+        "cell_count": 13695,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "Myasthenia_Gravis/GSE233180/Thymus",
+      "catalog": {
+        "disease_name": "Myasthenia Gravis",
+        "disease_full_name": "Myasthenia Gravis",
+        "abbreviation": "MG",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE233180",
+        "tissue": "Thymus",
+        "sample_size": null,
+        "cell_count": 32873,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "Psoriasis/GSE301804/Skin",
+      "catalog": {
+        "disease_name": "Psoriasis",
+        "disease_full_name": "Psoriasis",
+        "abbreviation": "PSO",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE301804",
+        "tissue": "Skin",
+        "sample_size": null,
+        "cell_count": 76069,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "Sarcoidosis/GSE232802/PBMC",
+      "catalog": {
+        "disease_name": "Sarcoidosis",
+        "disease_full_name": "Sarcoidosis",
+        "abbreviation": "SAR",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE232802",
+        "tissue": "PBMC",
+        "sample_size": null,
+        "cell_count": 5125,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "Sarcoidosis/GSE288459/BAL",
+      "catalog": {
+        "disease_name": "Sarcoidosis",
+        "disease_full_name": "Sarcoidosis",
+        "abbreviation": "SAR",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE288459",
+        "tissue": "BAL",
+        "sample_size": null,
+        "cell_count": 55034,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "Sarcoidosis/GSE319770/Heart",
+      "catalog": {
+        "disease_name": "Sarcoidosis",
+        "disease_full_name": "Sarcoidosis",
+        "abbreviation": "SAR",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE319770",
+        "tissue": "Heart",
+        "sample_size": null,
+        "cell_count": 241549,
+        "batch": "20261015"
+      },
+      "tier": "main_figures_only"
+    },
+    {
+      "object_id": "Systemic_Lupus_Erythematosus/GSE303609/Skin",
+      "catalog": {
+        "disease_name": "Systemic Lupus Erythematosus",
+        "disease_full_name": "Systemic Lupus Erythematosus",
+        "abbreviation": "SLE",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE303609",
+        "tissue": "Skin",
+        "sample_size": null,
+        "cell_count": 35780,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "Systemic_Sclerosis/GSE295274/Esophagus",
+      "catalog": {
+        "disease_name": "Systemic Sclerosis",
+        "disease_full_name": "Systemic Sclerosis",
+        "abbreviation": "SSs",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE295274",
+        "tissue": "Esophagus",
+        "sample_size": null,
+        "cell_count": 97449,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "T1D/GSE270142/PBMC",
+      "catalog": {
+        "disease_name": "Type 1 Diabetes Mellitus",
+        "disease_full_name": "Type 1 Diabetes Mellitus",
+        "abbreviation": "T1DM",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE270142",
+        "tissue": "PBMC",
+        "sample_size": null,
+        "cell_count": 80295,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "T1D/GSE271063/PBMC",
+      "catalog": {
+        "disease_name": "Type 1 Diabetes Mellitus",
+        "disease_full_name": "Type 1 Diabetes Mellitus",
+        "abbreviation": "T1DM",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE271063",
+        "tissue": "PBMC",
+        "sample_size": null,
+        "cell_count": 70694,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "T1D/GSE279086/Kidney",
+      "catalog": {
+        "disease_name": "Type 1 Diabetes Mellitus",
+        "disease_full_name": "Type 1 Diabetes Mellitus",
+        "abbreviation": "T1DM",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE279086",
+        "tissue": "Kidney",
+        "sample_size": null,
+        "cell_count": 24663,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "T1D/GSE316337/PBMC",
+      "catalog": {
+        "disease_name": "Type 1 Diabetes Mellitus",
+        "disease_full_name": "Type 1 Diabetes Mellitus",
+        "abbreviation": "T1DM",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE316337",
+        "tissue": "PBMC",
+        "sample_size": null,
+        "cell_count": 160976,
+        "batch": "20261015"
+      },
+      "tier": "main_figures_only"
+    },
+    {
+      "object_id": "Ulcerative_Colitis/GSE253006/Colon",
+      "catalog": {
+        "disease_name": "Ulcerative Colitis",
+        "disease_full_name": "Ulcerative Colitis",
+        "abbreviation": "UC",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE253006",
+        "tissue": "Colon",
+        "sample_size": null,
+        "cell_count": 44235,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "Ulcerative_Colitis/GSE253720/ColonBiopsy",
+      "catalog": {
+        "disease_name": "Ulcerative Colitis",
+        "disease_full_name": "Ulcerative Colitis",
+        "abbreviation": "UC",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE253720",
+        "tissue": "ColonBiopsy",
+        "sample_size": null,
+        "cell_count": 2837,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    },
+    {
+      "object_id": "Ulcerative_Colitis/GSE268626/PBMC",
+      "catalog": {
+        "disease_name": "Ulcerative Colitis",
+        "disease_full_name": "Ulcerative Colitis",
+        "abbreviation": "UC",
+        "dataset_source": "GEO",
+        "dataset_id": "GSE268626",
+        "tissue": "PBMC",
+        "sample_size": null,
+        "cell_count": 7539,
+        "batch": "20261015"
+      },
+      "tier": "gene_and_pathway"
+    }
+  ],
+  "note": "Aggregate object identities only. Supply authorized original Seurat files separately. These catalogue counts do not authenticate independent donors."
+}

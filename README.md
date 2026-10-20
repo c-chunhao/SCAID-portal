@@ -1,6 +1,6 @@
 # SCAID source snapshot
 
-**Version 0.2.0-rc2 · 20 October 2026**
+**Version 0.3.0-rc1 candidate · 21 October 2026**
 
 This repository contains the current Vue/Vite frontend and Django REST backend
 of the [SCAID portal](https://scaid01.com/), plus a reviewed public asset mapping,
@@ -8,14 +8,33 @@ aggregate catalogue snapshot and a synthetic fixture for local installation.
 The portal provides catalogue browsing, precomputed gene/pathway/CellChat views
 and registered HDF5 downloads. Its public API is read-only.
 
-The aggregate catalogue now documents **79 source–condition–tissue objects,
+The aggregate catalogue documents **79 source–condition–tissue objects,
 4,590,932 cell records and 1,095 entry-specific sample labels under 36 condition
-labels**. The 48-object analytical collection contains 2,572,480 records and
-625 labels. The 31 additional browser entries contain 28 expression/score
-objects and three overview-only objects, without new CellChat or H5 downloads.
-Sample labels are not independent donor counts. Catalogue records and module
-flags were checked against the anonymous API on 20 October 2026. The atlas
-inputs and catalogue scope must not be added together as independent cells.
+labels**. The existing 48-object collection has 2,572,480 records and 625 labels.
+This candidate adds module support for the 31 additional browser objects:
+CellChat, cell-type-versus-rest marker tables, 124 H5AD exports and exact-object
+lazy gene maps for three previously missing Gene modules. The two existing
+atlases remain unchanged. Sample labels are not authenticated independent donors,
+and catalogue/atlas scopes must not be added as independent cells.
+
+中文索引：[新增功能与科学脚本](science/new_release/README.md)、
+[本地资源注册示例](backend/docs/new_release_assets/README.md)、
+[许可状态](LICENSE_STATUS.md)。新增功能已于2026年10月21日部署并完成下述范围的验收。本包仍为源码候选；数据矩阵、
+个人元数据、生产密钥、绝对路径运行清单和图片缓存不随源码分发。
+
+The [new-module source notes](science/new_release/README.md) distinguish 30 RNA
+objects retaining integer source counts from the one processed-only RNA object;
+the optional 24-GSM raw-count subset is additional to the main 124 exports.
+The PBMC pilot (7 objects, 5 studies, 14,000 cells) is descriptive and does not
+replace either atlas or establish donor-level disease comparisons. The modules were deployed and verified on 21 October 2026 (Asia/Shanghai).
+Local verification passed 81 backend tests, 19 frontend tests, lint and build.
+The two production acceptance stages recorded 518 API checks (320 + 198);
+stage two made 374 HTTPS requests. All 125 download files passed HEAD and Range
+checks, and four small files passed complete-download SHA256 verification.
+These checks do not claim a network rehash of the complete approximately 40 GB
+download library. Desktop/mobile scenarios and six Gene/KEGG interaction
+scenarios also passed. Historical
+rc2 installation and website checks below retain their original dates/scope.
 
 This is a source release candidate. It does not establish peer-reviewed publication,
 a complete raw-data-to-paper reproduction or a separate archival DOI.
@@ -61,7 +80,10 @@ Do not import it into the scientific production catalogue.
 ```sh
 python manage.py test tisch_api.test_api_fixes tisch_api.test_thumbnails \
   tisch_api.test_catalog tisch_api.test_openapi tisch_api.test_tree_query_count \
-  tisch_api.test_release_fixes tisch_api.test_module_availability --settings=tisch_api.test_settings
+  tisch_api.test_release_fixes tisch_api.test_module_availability \
+  tisch_api.test_markers tisch_api.test_lazy_gene_plots \
+  tisch_api.test_new_release_modules tisch_api.test_dynamic_gene_thumbnails \
+  --settings=tisch_api.test_settings
 python manage.py runserver 127.0.0.1:18080
 ```
 
@@ -157,7 +179,7 @@ are aggregate only. The real clinical/count inputs are supplied separately.
 
 ## October production-source synchronization
 
-This release refreshes the current frontend, API module-availability logic,
+The preceding rc2 release refreshed the frontend, API module-availability logic,
 case-sensitive gene lookup, current 79-entry asset catalogue and portable analysis
 modules. Business logic comes from the running deployment's working source;
 settings and asset roots are adapted for local installation. The source package
@@ -179,5 +201,29 @@ The [additional source-pool sensitivity](science/current_revision/source_pool_se
 uses existing individual summaries, CR1 covariance and pool fixed effects, with
 aggregate results and a fully synthetic end-to-end example. The versioned
 verification evidence distinguishes the original live-site/rc1 build checks
-from rc2 independent installation and local proxy checks. The public website
-was not redeployed during this source release.
+from rc2 independent installation and local proxy checks. The v0.2.0-rc2 source release did not redeploy the website.
+
+
+## Additional module candidate and verification state
+
+The v0.3.0-rc1 candidate adds source for exact-object CellChat overview families,
+marker table pagination/filtering/TSV downloads, H5AD content metadata and
+source-bound lazy gene rendering. Install the web dependencies from
+`backend/requirements.txt` (or the Python 3.12 candidate lock); matplotlib and
+NumPy are required for lazy rendering. The preceding rc2 Python 3.12 lock has
+been extended for the new renderer and is not a fresh-installation receipt.
+Scientific dependencies are separate in `science/new_release/requirements.txt`.
+
+Set `SCAID_MARKERS_ROOT` and `SCAID_GENE_CACHE_MANIFEST` to locally prepared,
+reviewed resources. The source's gene registry is absent by default, so it does
+not attempt to load server-specific biological indices. Marker example IDs are
+local catalogue bindings, not portable database primary keys. See the
+[registration notes](backend/docs/new_release_assets/README.md).
+
+The 31 additional objects are deployed with the module and download availability
+recorded in this candidate. Production acceptance completed on 21 October 2026
+within the API/browser/download scope summarized above and in
+[the verification notes](docs/CANDIDATE_CHECKS.md). Release evidence records the
+frozen source tree separately from the production acceptance reports.
+The original licence and unresolved frontend-template permission notices remain
+unchanged; preparing this candidate grants no additional reuse rights.

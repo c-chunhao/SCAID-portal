@@ -17,3 +17,14 @@ backend/media/
 backend/staticfiles/
 
 .venv-science/
+
+# Generate reviewed runtime registries locally; examples are safe to version.
+backend/tisch_api/data/lazy_gene_plots.json
+science/new_release/work/
+science/new_release/inputs/
+*.h5
+*.h5ad
+*.rds
+*.RDS
+*.mtx
+*.mtx.gz

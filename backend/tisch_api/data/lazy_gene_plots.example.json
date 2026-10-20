@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "figure_root": "/srv/scaid/local/figures",
+  "index_root": "/srv/scaid/local/gene_indexes",
+  "objects": {}
+}

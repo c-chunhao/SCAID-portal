@@ -905,18 +905,24 @@
       "dataset_id": "GSE232802",
       "tissue": "PBMC",
       "figure_path": "Active_Tattoo_Uveitis/GSE232802/PBMC",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Active_Tattoo_Uveitis_GSE232802_PBMC_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Active_Tattoo_Uveitis_GSE232802_PBMC_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Active_Tattoo_Uveitis_GSE232802_PBMC_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Active_Tattoo_Uveitis_GSE232802_PBMC_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE232802",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
         "The sample-composition dendrogram is not applicable: the object contains only one non-missing Sample label. Sample labels are not verified donors."
@@ -929,6 +935,35 @@
         "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
       },
       "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "4e88c373a90f77f9452093c20ecc503edc49781201751f1967b36539856a52c5"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "df29c9d685dafe5a826b67354d9de76fe4ce59c06e671d3ab34513693fe33c66"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "63e601c914e006e17a7d4e273c1f71c11c78eb70b5e6f6d0cac57487f9068f60"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "b86302d2530ddc444ef494127b9ca937423443d70397c6dffc53cad36560886a"
+        }
+      },
+      "module_release": "scaid-modules-20261020",
       "figure_path_aliases": []
     },
     {
@@ -938,18 +973,24 @@
       "dataset_id": "GSE262240",
       "tissue": "PBMC",
       "figure_path": "Antiphospholipid_Syndrome/GSE262240/PBMC",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Antiphospholipid_Syndrome_GSE262240_PBMC_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Antiphospholipid_Syndrome_GSE262240_PBMC_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Antiphospholipid_Syndrome_GSE262240_PBMC_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Antiphospholipid_Syndrome_GSE262240_PBMC_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262240",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
       ],
@@ -961,6 +1002,36 @@
         "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
       },
       "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "5422e4308ae44a2f81a1fe40aac3c59cb6e7a268dfa89ff84a8c5a35f7c3c7f1"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "a90da78c1e4e9d0594a0aab7ac35909129a36ffbc8ccd34cd8dd1addc0b7096b"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "1c26089ce9572d0d2711e1b4d5b0ca1afb2b0802ec90631dc59da34f76f93e6b"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "0954353e4c63de943e40df9f61f1654f1d0077c43972e5334acf7014be037117"
+        }
+      },
+      "module_release": "scaid-modules-20261020",
+      "study_context": "Magnetically enriched B cells from participants with triple-positive primary antiphospholipid syndrome.",
       "figure_path_aliases": []
     },
     {
@@ -970,18 +1041,24 @@
       "dataset_id": "GSE230575",
       "tissue": "SkinBiopsy",
       "figure_path": "Atopic_Dermatitis/GSE230575/SkinBiopsy",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Atopic_Dermatitis_GSE230575_SkinBiopsy_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Atopic_Dermatitis_GSE230575_SkinBiopsy_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Atopic_Dermatitis_GSE230575_SkinBiopsy_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Atopic_Dermatitis_GSE230575_SkinBiopsy_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE230575",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
       ],
@@ -993,6 +1070,35 @@
         "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
       },
       "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "module_release": "scaid-modules-20261020",
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "e8aeed242ac79722c2d611871effdd5c0ad36cc239b69aca9cb8241be96b6e6b"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "a55cbc748f541a3a72a1c3afe0468407e5492b3c4faa6d0d825017a9d0545495"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "5808ad9f6dc1eef3020f5004bd7eae32a5f9e127c41b8945669fcbec06e68a67"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "aa34ff25a5a037baa3146bd752a14eca4cc4507dd7016ea3a9545013c26d2914"
+        }
+      },
       "figure_path_aliases": []
     },
     {
@@ -1002,18 +1108,24 @@
       "dataset_id": "GSE301528",
       "tissue": "BoneMarrow",
       "figure_path": "Autoimmune_Hemolytic_Anemia/GSE301528/BoneMarrow",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Autoimmune_Hemolytic_Anemia_GSE301528_BoneMarrow_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Autoimmune_Hemolytic_Anemia_GSE301528_BoneMarrow_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Autoimmune_Hemolytic_Anemia_GSE301528_BoneMarrow_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Autoimmune_Hemolytic_Anemia_GSE301528_BoneMarrow_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE301528",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
       ],
@@ -1025,6 +1137,35 @@
         "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
       },
       "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "8cd485d2aa300acb7a446199eb95f3a0eef8cb8094f94f8b43f39f4dc3b341c5"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "d8edbf94f81c3edabf6ca52739d62916d3e6dec66e76d35e4f4147b8a3b4667a"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "b9341ecd27a3af8ea495cf9d50b1e6fb92f8281ae174d13449721a4cbd8d827a"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "5d828023b6a42220b535ba51c9dc9603b48873d3a347aca88033049fbd73ca94"
+        }
+      },
+      "module_release": "scaid-modules-20261020",
       "figure_path_aliases": []
     },
     {
@@ -1034,18 +1175,24 @@
       "dataset_id": "GSE253720",
       "tissue": "ColonBiopsy",
       "figure_path": "Checkpoint_Inhibitor_Colitis/GSE253720/ColonBiopsy",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Checkpoint_Inhibitor_Colitis_GSE253720_ColonBiopsy_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Checkpoint_Inhibitor_Colitis_GSE253720_ColonBiopsy_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Checkpoint_Inhibitor_Colitis_GSE253720_ColonBiopsy_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Checkpoint_Inhibitor_Colitis_GSE253720_ColonBiopsy_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE253720",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
         "The treatment-associated condition label is preserved; this object is not an independent primary-autoimmune-disease cohort."
@@ -1058,6 +1205,35 @@
         "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
       },
       "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "d9a27871c51173510af48200f4f387ab0a7e28dbee1475ee2fada204fe80d57b"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "bf90c4b430e781549121c633fd9a9086228f43cc7ef54a6bd9dbc61e730b1126"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "e1cb2c290024d95c9bb3d886da55b260d2bfb1a1cbfee2aa641dd58f11a3b01f"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "674d632e5c30b3c81c18e4bc9f47c67e50eae47024b5900d061029179ce18d0d"
+        }
+      },
+      "module_release": "scaid-modules-20261020",
       "figure_path_aliases": []
     },
     {
@@ -1067,18 +1243,24 @@
       "dataset_id": "GSE260842",
       "tissue": "Ileum_Colon_Fistula",
       "figure_path": "Crohn_Disease/GSE260842/Ileum_Colon_Fistula",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Crohn_Disease_GSE260842_Ileum_Colon_Fistula_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Crohn_Disease_GSE260842_Ileum_Colon_Fistula_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Crohn_Disease_GSE260842_Ileum_Colon_Fistula_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Crohn_Disease_GSE260842_Ileum_Colon_Fistula_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE260842",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
       ],
@@ -1093,6 +1275,35 @@
       "search_abbreviations": [
         "IBD"
       ],
+      "module_release": "scaid-modules-20261020",
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "b9e95286679fbcafe6cc8d6f2ce78feca868e0cfbd0cb110068a83491c9e647e"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "9c18376303acd0385822296e3329004472934e217183617b65534f3ac25c0e99"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "c819bdcafb3aae991027cbc20f62b555ff0bc861170473d5f9df41d0be3ae6e3"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "f3e8678a481467276783beae511b5a9184de6b1290b6c38356f6812996bd2e4a"
+        }
+      },
       "figure_path_aliases": []
     },
     {
@@ -1102,18 +1313,24 @@
       "dataset_id": "GSE266616",
       "tissue": "AscColon_TIleum",
       "figure_path": "Crohn_Disease/GSE266616/AscColon_TIleum",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Crohn_Disease_GSE266616_AscColon_TIleum_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Crohn_Disease_GSE266616_AscColon_TIleum_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Crohn_Disease_GSE266616_AscColon_TIleum_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Crohn_Disease_GSE266616_AscColon_TIleum_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266616",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
       ],
@@ -1128,6 +1345,35 @@
       "search_abbreviations": [
         "IBD"
       ],
+      "module_release": "scaid-modules-20261020",
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "4c9de8742868092719eed170d183567ceeae3c1e52a6f73b207b2d209241661f"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "5473ce3d02862c7fa1faf3dd01160f95dc25a9ed28100294ce164d6ae8d42a03"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "d6061b1a261a72ab31a1726e9d0e2629aa3c1b34dcbe4d424773448270256bb8"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "a7b8b0e6d6820de1b478da9560c8494aa697f84aa1952351d60e4680b4c933e8"
+        }
+      },
       "figure_path_aliases": []
     },
     {
@@ -1137,18 +1383,24 @@
       "dataset_id": "GSE268626",
       "tissue": "PBMC",
       "figure_path": "Crohn_Disease/GSE268626/PBMC",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Crohn_Disease_GSE268626_PBMC_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Crohn_Disease_GSE268626_PBMC_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Crohn_Disease_GSE268626_PBMC_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Crohn_Disease_GSE268626_PBMC_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE268626",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
       ],
@@ -1163,6 +1415,36 @@
       "search_abbreviations": [
         "IBD"
       ],
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "d6284b05fea9fc24be38ba3105e9d344da1141939f58575a69e0f91a888d6eb4"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "19e956f6ef3ea88e929d2c7aca03b3a91964601953d37c979505823436526383"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "0c7aa0a29b1d87533551aaa419ba3fc20f4e4a880cf0ef8537ff588d2ad4409e"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "1761111dc5cd67f6178ed99819835bbb03b538a06421a71c485c20d508c58e54"
+        }
+      },
+      "module_release": "scaid-modules-20261020",
+      "study_context": "Peripheral blood monocytes were enriched by negative magnetic selection in the source study. Cell-group results describe the retained processed object, rather than unselected PBMC composition.",
       "figure_path_aliases": []
     },
     {
@@ -1172,18 +1454,24 @@
       "dataset_id": "GSE284230",
       "tissue": "SmallIntestine",
       "figure_path": "Crohn_Disease/GSE284230/SmallIntestine",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Crohn_Disease_GSE284230_SmallIntestine_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Crohn_Disease_GSE284230_SmallIntestine_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Crohn_Disease_GSE284230_SmallIntestine_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Crohn_Disease_GSE284230_SmallIntestine_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284230",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
       ],
@@ -1198,6 +1486,35 @@
       "search_abbreviations": [
         "IBD"
       ],
+      "module_release": "scaid-modules-20261020",
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "f0f27885eb95c11052421f903a11ebaaa9c8093ec2d5b51f7bb30f0cbdeca1c2"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "320e9a9a0811f180dc8b7261d4fb3d9388ee2d1ade411a733a1f7a6757cb5ae8"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "723295533d66474d8d5d103a1b7af03359f748c7e8340f0e6c7a0620a6b08d7b"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "ad926185d350aa3581bd48571d5bc3d75f935dbe0f60c0370baa6450d6c811ab"
+        }
+      },
       "figure_path_aliases": []
     },
     {
@@ -1207,18 +1524,24 @@
       "dataset_id": "GSE303609",
       "tissue": "Skin",
       "figure_path": "Dermatomyositis/GSE303609/Skin",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Dermatomyositis_GSE303609_Skin_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Dermatomyositis_GSE303609_Skin_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Dermatomyositis_GSE303609_Skin_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Dermatomyositis_GSE303609_Skin_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303609",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
         "Case-distinct source features C2orf15 and C2ORF15 are preserved separately, without biological merging."
@@ -1235,6 +1558,35 @@
         "C2orf15",
         "C2ORF15"
       ],
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "5d3b2c0240b38dbee22aa3657aaa5b90be6eacdf4aff7c3c4bef574171afde06"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "8f61865bca53b9b61d31acdd377498289c14cf3812871b061168ce58f146657c"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "e44410738d12e83caa053ab355b6d6cc03138c8c8fd50552d0c058b5ac05c250"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "f31cae02e4595f5f3383166849ad83dc16f3db103a6fa5c925c28b3e8ecee96a"
+        }
+      },
+      "module_release": "scaid-modules-20261020",
       "figure_path_aliases": []
     },
     {
@@ -1244,18 +1596,24 @@
       "dataset_id": "GSE230575",
       "tissue": "SkinBiopsy",
       "figure_path": "Dupilumab_Associated_Head_Neck_Dermatitis/GSE230575/SkinBiopsy",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Dupilumab_Associated_Head_Neck_Dermatitis_GSE230575_SkinBiopsy_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Dupilumab_Associated_Head_Neck_Dermatitis_GSE230575_SkinBiopsy_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Dupilumab_Associated_Head_Neck_Dermatitis_GSE230575_SkinBiopsy_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Dupilumab_Associated_Head_Neck_Dermatitis_GSE230575_SkinBiopsy_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE230575",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
         "The treatment-associated condition label is preserved; this object is not an independent primary-autoimmune-disease cohort."
@@ -1268,6 +1626,35 @@
         "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
       },
       "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "13984f494fbe7739c9cbf7efb28ed1ec210b59cbdf33d5744599f60307cac2d9"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "4ab252de8412d934777665fd38b650c96b383b2353a27895f88cf311ad4398d6"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "44607e408e5eb66b8ba16adee086771a1fa0490a59423a124c142079a3f6cff5"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "208a14b919bf7e87246f90c87d7f00734d60cd634fea79ad8d8331c8a7bc16ec"
+        }
+      },
+      "module_release": "scaid-modules-20261020",
       "figure_path_aliases": []
     },
     {
@@ -1277,21 +1664,26 @@
       "dataset_id": "GSE295274",
       "tissue": "Esophagus",
       "figure_path": "Gastroesophageal_Reflux_Disease/GSE295274/Esophagus",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Gastroesophageal_Reflux_Disease_GSE295274_Esophagus_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Gastroesophageal_Reflux_Disease_GSE295274_Esophagus_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Gastroesophageal_Reflux_Disease_GSE295274_Esophagus_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Gastroesophageal_Reflux_Disease_GSE295274_Esophagus_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295274",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
-        "gene_umap": false,
-        "kegg_score": false,
-        "cellchat": false,
-        "downloads": false
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
-        "Only the reviewed main figures are published. Gene and pathway browsers are unavailable while the gene-image set is incomplete.",
         "GERD is presented as a reference condition and is not classified as an autoimmune disease."
       ],
       "scope_classification": "reference_condition",
@@ -1302,6 +1694,37 @@
         "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
       },
       "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "707291c90d9510f5c0b375ac52bec87555d811a6e7196edf9debf08c5bd335c5"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "4d1058d989777e71bbbd2ced5f2a7ce27a30211be9ea887323409b2f575e38b4"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "d3d858c6251ed7e9bce171136e557ea085690f986269c58cdb5ba049088e089a"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "00714b812848b5e4ad88058942f3efd9c1a96495f49adb1eee98309c52b292b5"
+        }
+      },
+      "module_release": "scaid-modules-20261020",
+      "gene_render_mode": "rna_cache",
+      "case_sensitive_gene_symbols": [],
       "figure_path_aliases": []
     },
     {
@@ -1311,18 +1734,24 @@
       "dataset_id": "GSE232802",
       "tissue": "PBMC",
       "figure_path": "Inactive_Tattoo_Uveitis/GSE232802/PBMC",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Inactive_Tattoo_Uveitis_GSE232802_PBMC_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Inactive_Tattoo_Uveitis_GSE232802_PBMC_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Inactive_Tattoo_Uveitis_GSE232802_PBMC_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Inactive_Tattoo_Uveitis_GSE232802_PBMC_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE232802",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
         "The sample-composition dendrogram is not applicable: the object contains only one non-missing Sample label. Sample labels are not verified donors."
@@ -1335,6 +1764,35 @@
         "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
       },
       "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "e0d3987e9698f64597c4ca17b8eeea7549c5f97e06d2484729c00e3b6b6cb5ea"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "29ca849927a0ff4c84d03d161fb03c5a4b4d890f99ed659e40bccbbed4426dbe"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "94a98e8ac3324ef5b603cfc42acb8a3d4e7b98c95226ecb56b3d8304d710d65a"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "e287b368207f30e37d48532bc7238f1fb7143500d4c24d9dcc7f9884fa395603"
+        }
+      },
+      "module_release": "scaid-modules-20261020",
       "figure_path_aliases": []
     },
     {
@@ -1344,18 +1802,24 @@
       "dataset_id": "GSE296682",
       "tissue": "BAL",
       "figure_path": "Interstitial_Lung_Disease/GSE296682/BAL",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Interstitial_Lung_Disease_GSE296682_BAL_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Interstitial_Lung_Disease_GSE296682_BAL_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Interstitial_Lung_Disease_GSE296682_BAL_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Interstitial_Lung_Disease_GSE296682_BAL_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296682",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
         "ILD is a broad source label. Autoimmune aetiology is not inferred; this object is presented as a reference resource."
@@ -1368,6 +1832,35 @@
         "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
       },
       "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "module_release": "scaid-modules-20261020",
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "7889e2e7f189034d78ba3a124462fecfb7c0fd5b3395836c00df9810ff9e47c0"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "b5b648fbcf21ee890769756f4772066cfa79ddf06af405714c561950422e830e"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "4d0f3264c112533ad42d3e1c20886c95b05596b367e86eacdeaeded64c855863"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "7f6f57fe05e30a41690319022fb58f9e5e15e44b3f2c4523b298137d10753ef6"
+        }
+      },
       "figure_path_aliases": []
     },
     {
@@ -1377,18 +1870,24 @@
       "dataset_id": "GSE213095",
       "tissue": "PBMC_SFMC",
       "figure_path": "JIA/GSE213095/PBMC_SFMC",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/JIA_GSE213095_PBMC_SFMC_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/JIA_GSE213095_PBMC_SFMC_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/JIA_GSE213095_PBMC_SFMC_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/JIA_GSE213095_PBMC_SFMC_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE213095",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
       ],
@@ -1400,6 +1899,35 @@
         "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
       },
       "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "module_release": "scaid-modules-20261020",
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "a6bbdb0d27a1d0d97af6a0442f466dde93f9b2a254f46eb435762def82e28a53"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "28b501a0c330cd6e486e76996bf8d5407f26e6a8838f499081437e9d759b5237"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "17c89b64600337d9631b87caf65b14e5ad8a9672b355fa222de66920799a9048"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "6d38a216f3dc0d1829ed8f2b04c706435d9a48ce08967f8af46fe0cca088dc4b"
+        }
+      },
       "figure_path_aliases": []
     },
     {
@@ -1409,18 +1937,24 @@
       "dataset_id": "GSE327243",
       "tissue": "CSF",
       "figure_path": "Multiple_Sclerosis/GSE327243/CSF",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Multiple_Sclerosis_GSE327243_CSF_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Multiple_Sclerosis_GSE327243_CSF_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Multiple_Sclerosis_GSE327243_CSF_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Multiple_Sclerosis_GSE327243_CSF_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327243",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
       ],
@@ -1432,6 +1966,35 @@
         "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
       },
       "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "9aeeb49d3c5b67918c3679e6ecf1ae646380058de2f370b505a5f15c2b518267"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "e8a03dd52626e1ed923874b5604ce5a345f739990f8f268bc026fc8447ac4de5"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "0d85cfc28fd2a7a77acf3b99b317d875111c8e2897d001fffaa5999a2c90d7cf"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "df05e1fd14973edd267580872c8b04ad4a7e016fac76b47a14f1bb2f7a3bc548"
+        }
+      },
+      "module_release": "scaid-modules-20261020",
       "figure_path_aliases": []
     },
     {
@@ -1441,18 +2004,24 @@
       "dataset_id": "GSE328264",
       "tissue": "CSF",
       "figure_path": "Multiple_Sclerosis/GSE328264/CSF",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Multiple_Sclerosis_GSE328264_CSF_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Multiple_Sclerosis_GSE328264_CSF_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Multiple_Sclerosis_GSE328264_CSF_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Multiple_Sclerosis_GSE328264_CSF_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328264",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
       ],
@@ -1464,6 +2033,35 @@
         "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
       },
       "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "2ed8418d1c2c73f362e1d1544a9bb1b1a1ee0eb1699cd4bfbd090ba6ac52869d"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "a341892085507cfe400597d8002c76098cfa6f4618e598816f219e7820b8cd58"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "f3dd6c7b7217f6be599f3675d27e6aead177155da2438eb4b3b92b1ade3b5ea7"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "63566a8ebce5aa78334d70d0cd5981b3144a8cc1bfb9ee47226a1da9870eb30d"
+        }
+      },
+      "module_release": "scaid-modules-20261020",
       "figure_path_aliases": []
     },
     {
@@ -1473,18 +2071,24 @@
       "dataset_id": "GSE233180",
       "tissue": "Thymus",
       "figure_path": "Myasthenia_Gravis/GSE233180/Thymus",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Myasthenia_Gravis_GSE233180_Thymus_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Myasthenia_Gravis_GSE233180_Thymus_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Myasthenia_Gravis_GSE233180_Thymus_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Myasthenia_Gravis_GSE233180_Thymus_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE233180",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
       ],
@@ -1496,6 +2100,35 @@
         "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
       },
       "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "5c5f70dac9c842f3f8fad1951f20678dfcffc4cf5acee73187cb86b4114e27b8"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "533adc8dac3be68c7def405a5a7aee7ecaf657df6bc1470804da503f119f5d3f"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "bb4c19f267fbe6e2356279899cde79448408f1c259208b2edec4f012d2ef7c80"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "7baf58eb3e434d8a1615e39afd705e82570fa5c553fab347e4b3c6ccc705476b"
+        }
+      },
+      "module_release": "scaid-modules-20261020",
       "figure_path_aliases": []
     },
     {
@@ -1505,18 +2138,24 @@
       "dataset_id": "GSE301804",
       "tissue": "Skin",
       "figure_path": "Psoriasis/GSE301804/Skin",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Psoriasis_GSE301804_Skin_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Psoriasis_GSE301804_Skin_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Psoriasis_GSE301804_Skin_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Psoriasis_GSE301804_Skin_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE301804",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
       ],
@@ -1528,6 +2167,35 @@
         "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
       },
       "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "6b97c0acc80ff9383740f15dc8e5fe7b336d1fea6c792f4f2ac5237707cc986b"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "932f6ee72724ed84f8076794614c5567d0816d284a3e9c36068e344427e18f9a"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "6f22d4cba2f675780b58eafff76de6088ca34b8289b04b770edcb0af7bd4d3fc"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "000c5882615ebf978384a8e4d0975fbd16f442f4e74e1d3f27f6dae1a8c32a4a"
+        }
+      },
+      "module_release": "scaid-modules-20261020",
       "figure_path_aliases": []
     },
     {
@@ -1537,18 +2205,24 @@
       "dataset_id": "GSE232802",
       "tissue": "PBMC",
       "figure_path": "Sarcoidosis/GSE232802/PBMC",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Sarcoidosis_GSE232802_PBMC_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Sarcoidosis_GSE232802_PBMC_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Sarcoidosis_GSE232802_PBMC_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Sarcoidosis_GSE232802_PBMC_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE232802",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
         "The sample-composition dendrogram is not applicable: the object contains only one non-missing Sample label. Sample labels are not verified donors."
@@ -1561,6 +2235,35 @@
         "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
       },
       "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "2b376c72898b3b3a64d3e4ed7d002352f517ce4d193f61c2b8a4b2afe763d0ba"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "0dcebad35e5183512ff84921d7b942f91fac9436ea1795754c0df4005b23799c"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "25ee12ac30e36b38fd359115137970004b8937f2435c03d7e9ecbfbe43f4ed9c"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "1c52b329082515fedd2354563f9fa6f97de1f6649aeaecd0f7e27f15081cd610"
+        }
+      },
+      "module_release": "scaid-modules-20261020",
       "figure_path_aliases": []
     },
     {
@@ -1570,18 +2273,24 @@
       "dataset_id": "GSE288459",
       "tissue": "BAL",
       "figure_path": "Sarcoidosis/GSE288459/BAL",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Sarcoidosis_GSE288459_BAL_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Sarcoidosis_GSE288459_BAL_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Sarcoidosis_GSE288459_BAL_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Sarcoidosis_GSE288459_BAL_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288459",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
       ],
@@ -1593,6 +2302,35 @@
         "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
       },
       "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "977573c1f2bd1427bcf97dc3b6e41f417811716b9dbb1f5661698f917e6b5041"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "7f3f9d882e99f0178f3aec4f9d533d23922ecc6e4c487f4b1a9000c415369d90"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "44a364a130142e3c825deae0e58bb3f602803d65cdf5d95122a7f8557999ec7f"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "125d24642ad5554da038b7cf49f81b36d6afd3fa9c901fb50fb0719e8d78ea28"
+        }
+      },
+      "module_release": "scaid-modules-20261020",
       "figure_path_aliases": []
     },
     {
@@ -1602,21 +2340,26 @@
       "dataset_id": "GSE319770",
       "tissue": "Heart",
       "figure_path": "Sarcoidosis/GSE319770/Heart",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Sarcoidosis_GSE319770_Heart_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Sarcoidosis_GSE319770_Heart_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Sarcoidosis_GSE319770_Heart_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Sarcoidosis_GSE319770_Heart_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319770",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
-        "gene_umap": false,
-        "kegg_score": false,
-        "cellchat": false,
-        "downloads": false
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
-        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
-        "Only the reviewed main figures are published. Gene and pathway browsers are unavailable while the gene-image set is incomplete."
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
       ],
       "scope_classification": "disease_resource",
       "source_evidence": {
@@ -1626,6 +2369,37 @@
         "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
       },
       "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "module_release": "scaid-modules-20261020",
+      "gene_render_mode": "rna_cache",
+      "case_sensitive_gene_symbols": [],
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "fa6b0ec0c23bcc1bf01d5153b023925b25dfd03b92a74b5105387ebb237b4479"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "f1e33d5805617a4fb2e8e9962ac656a717c87138a72989d32b1f3939466f5cc2"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "6bee4d225a97d121ca7cfe05b7c33d696e199a4799d897ac5c289226d86346c2"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "1781198f3ad194d06c7a6282ea3e433f9a4d49a44fb18773ca9bc1e85e489900"
+        }
+      },
       "figure_path_aliases": []
     },
     {
@@ -1635,18 +2409,24 @@
       "dataset_id": "GSE303609",
       "tissue": "Skin",
       "figure_path": "Systemic_Lupus_Erythematosus/GSE303609/Skin",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Systemic_Lupus_Erythematosus_GSE303609_Skin_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Systemic_Lupus_Erythematosus_GSE303609_Skin_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Systemic_Lupus_Erythematosus_GSE303609_Skin_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Systemic_Lupus_Erythematosus_GSE303609_Skin_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303609",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
         "Case-distinct source features C2orf15 and C2ORF15 are preserved separately, without biological merging."
@@ -1663,6 +2443,35 @@
         "C2orf15",
         "C2ORF15"
       ],
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "a258008d770688f43a4a0a24c9e9a5ac50baea0881df41f70b1baed73ca16db0"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "b22e3abdc6ca30d6bc5126dfe22e6d32d0ef0276b88675b86f6463fb307f129e"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "59193aaa36612a449a5efcd3c69da9f09056f8a06af4120917d27e132f1a13b5"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "259416302ba2222f1c9b86f407f66550d2162a6ebc4fa32c24c479c2202c087d"
+        }
+      },
+      "module_release": "scaid-modules-20261020",
       "figure_path_aliases": []
     },
     {
@@ -1672,18 +2481,24 @@
       "dataset_id": "GSE295274",
       "tissue": "Esophagus",
       "figure_path": "Systemic_Sclerosis/GSE295274/Esophagus",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Systemic_Sclerosis_GSE295274_Esophagus_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Systemic_Sclerosis_GSE295274_Esophagus_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Systemic_Sclerosis_GSE295274_Esophagus_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Systemic_Sclerosis_GSE295274_Esophagus_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295274",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
       ],
@@ -1698,6 +2513,35 @@
       "search_abbreviations": [
         "SSc"
       ],
+      "module_release": "scaid-modules-20261020",
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "a1a993d20edd3078092501b0128b02c5ddeecb947bf415db8f415f70c002f5ca"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "6cfb5d184277277859036432c8d4d82d12374ec48fecdc74869f8dae67e222e8"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "e3e30c3a96117bf9c9a6909d413ef5e17170a3039c67a9206b586ec2374bb0ca"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "02342191e93a47298a847a549350bf70c37111870b11696bbcc87f663431dd78"
+        }
+      },
       "figure_path_aliases": []
     },
     {
@@ -1707,20 +2551,27 @@
       "dataset_id": "GSE270142",
       "tissue": "PBMC",
       "figure_path": "T1D/GSE270142/PBMC",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/T1D_GSE270142_PBMC_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/T1D_GSE270142_PBMC_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/T1D_GSE270142_PBMC_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/T1D_GSE270142_PBMC_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE270142",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
-        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
+        "Islet-antigen-reactive B cells were sorted from PBMCs. This object includes autoantibody-positive participants and participants with newly diagnosed type 1 diabetes; Disease_subtype retains disease stage."
       ],
       "scope_classification": "disease_resource",
       "source_evidence": {
@@ -1730,6 +2581,36 @@
         "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
       },
       "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "cdb590dcd0d1f64c9785df4a0c59d4d56c303d04543e079a71c673b778d0f057"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "10b0d98e163a129242d94d6a672845679dc9960c14d74eff0037abc32cacf253"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "cc1e7ef6daa446643117ff67c35fcc576b6426196b6529668ef2b62ae59f904c"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "dfd0fe24a47512e6dc767315509bfd3ef545ccc1a561fcb4e79de935fd43270e"
+        }
+      },
+      "module_release": "scaid-modules-20261020",
+      "study_context": "Islet-antigen-reactive B cells sorted from PBMCs; autoantibody-positive and recent-onset type 1 diabetes groups are retained.",
       "figure_path_aliases": []
     },
     {
@@ -1739,20 +2620,27 @@
       "dataset_id": "GSE271063",
       "tissue": "PBMC",
       "figure_path": "T1D/GSE271063/PBMC",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/T1D_GSE271063_PBMC_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/T1D_GSE271063_PBMC_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/T1D_GSE271063_PBMC_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/T1D_GSE271063_PBMC_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE271063",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
-        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
+        "This object contains the teplizumab-treated arm of an at-risk type 1 diabetes trial. Source Group labels describe trial arms, not diabetes versus healthy status."
       ],
       "scope_classification": "disease_resource",
       "source_evidence": {
@@ -1762,6 +2650,36 @@
         "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
       },
       "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "8f11e51f5a4120f5ad08e149e12734279aacbbb2e5a71f49ab9e4e8fe64d17e1"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "78a813b1f30900efbac45d9bef96112594fa287bc42e42e07c062096e633f98f"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "4bd8feb322f518f80131a4a78b3e9b1fc4135b01c7ee74155ce60c1aa82cb31b"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "53d7b5c31c1b8cab739f944c5dc407c802a7b24ee62da25fd5422405d6ff84b7"
+        }
+      },
+      "module_release": "scaid-modules-20261020",
+      "study_context": "Teplizumab-treated participants in a trial of people at risk of type 1 diabetes. Source Group labels identify treatment arms.",
       "figure_path_aliases": []
     },
     {
@@ -1771,18 +2689,25 @@
       "dataset_id": "GSE279086",
       "tissue": "Kidney",
       "figure_path": "T1D/GSE279086/Kidney",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/T1D_GSE279086_Kidney_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/T1D_GSE279086_Kidney_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/T1D_GSE279086_Kidney_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/T1D_GSE279086_Kidney_UCell.h5ad",
+        "RNA_counts_subset": "new_aid_20261020/RNA_counts_subset/T1D_GSE279086_Kidney_integer_raw_counts_24GSM_23979cells.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE279086",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
       ],
@@ -1794,6 +2719,41 @@
         "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
       },
       "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "module_release": "scaid-modules-20261020",
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": false,
+          "content_description": "Processed RNA expression; cell metadata and embeddings. Original counts are not included.",
+          "raw_count_status": "unavailable_exact_source_axis_mapping_incomplete",
+          "sha256": "9683ebe09b2c264466342e474d5ed0ea40312d030d095fe905884ead7ef1b0d8"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "923b802e8c716589d423d434bf4e47a90d20ea54b4714d2debdcd3569d467840"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "adc8127dfe6b20d6c3e60a0c9227091cccb6b0c5bf0b1ac8354ba758bbb6512f"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "cc8e70ec0840a06f9dd2c84f0a852cb0049fc5679fd07e2f6abb9c5b7578bd88"
+        },
+        "RNA_counts_subset": {
+          "has_raw_counts": true,
+          "content_description": "Integer raw counts for the independently verified subset of 24 GSM samples and 23,979 retained cells; 36,601 source gene rows. This is a subset of the complete processed RNA object.",
+          "raw_count_status": "verified_raw_subset_24_GSM_23979_cells",
+          "sha256": "6c50d1fd52b10a30f5ae0d20b23dc465b886909ee64791a11fdb5e862f3d0919"
+        }
+      },
       "figure_path_aliases": []
     },
     {
@@ -1803,21 +2763,26 @@
       "dataset_id": "GSE316337",
       "tissue": "PBMC",
       "figure_path": "T1D/GSE316337/PBMC",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/T1D_GSE316337_PBMC_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/T1D_GSE316337_PBMC_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/T1D_GSE316337_PBMC_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/T1D_GSE316337_PBMC_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316337",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
-        "gene_umap": false,
-        "kegg_score": false,
-        "cellchat": false,
-        "downloads": false
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
-        "Donor and clinical metadata have not been independently authenticated; no donor total is reported.",
-        "Only the reviewed main figures are published. Gene and pathway browsers are unavailable while the gene-image set is incomplete."
+        "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
       ],
       "scope_classification": "disease_resource",
       "source_evidence": {
@@ -1827,6 +2792,37 @@
         "image_release_mode": "Reviewed main figures are rendered for the portal; gene and score PNGs are read-only references to existing source files."
       },
       "mapping_note": "Accession, condition subset and tissue follow the supplied processed object. Source filenames and cell annotations are not rewritten.",
+      "module_release": "scaid-modules-20261020",
+      "gene_render_mode": "rna_cache",
+      "case_sensitive_gene_symbols": [],
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "b6602344f8f55011af05976ed8323605cccd7a896806d915a48842e2641a2cd6"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "02aba58997efe6692b1b75001204e8ebd84ccc142961f06925fd510477500bb4"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "4578c6fe116b2c859769f5df769566f541ab509c13f9d21b7ea11a17371ae872"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "ab4240695a1eebcdd99dc73ae6ddf0ef0160e2d08b2c877e27d767b38d745399"
+        }
+      },
       "figure_path_aliases": []
     },
     {
@@ -1836,18 +2832,24 @@
       "dataset_id": "GSE253006",
       "tissue": "Colon",
       "figure_path": "Ulcerative_Colitis/GSE253006/Colon",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Ulcerative_Colitis_GSE253006_Colon_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Ulcerative_Colitis_GSE253006_Colon_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Ulcerative_Colitis_GSE253006_Colon_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Ulcerative_Colitis_GSE253006_Colon_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE253006",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
       ],
@@ -1862,6 +2864,35 @@
       "search_abbreviations": [
         "IBD"
       ],
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "06ca5a3a9610e99f71d1117091f0725c661c4ca657804e32e83322ee1da9780a"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "fdb45ea35a63152012b21a9f60f11f2779235be206a14f5f5f4aa11170e75351"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "272578ebbc6fac14af852e32ec03fb205b63884bcae9324e7ac0a294c5963b84"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "de394c0e8e739bcb382c6b6006d0649cb7f6660b3ba2d01a7d6c0e780b53e019"
+        }
+      },
+      "module_release": "scaid-modules-20261020",
       "figure_path_aliases": []
     },
     {
@@ -1871,18 +2902,24 @@
       "dataset_id": "GSE253720",
       "tissue": "ColonBiopsy",
       "figure_path": "Ulcerative_Colitis/GSE253720/ColonBiopsy",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Ulcerative_Colitis_GSE253720_ColonBiopsy_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Ulcerative_Colitis_GSE253720_ColonBiopsy_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Ulcerative_Colitis_GSE253720_ColonBiopsy_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Ulcerative_Colitis_GSE253720_ColonBiopsy_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE253720",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
       ],
@@ -1897,6 +2934,35 @@
       "search_abbreviations": [
         "IBD"
       ],
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "4bcbb876f924053f33aa9bf9207a75992a0a00481949d34f5a6390c14ca85d18"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "5e0f405a2d75a52c0be177f2153f92ce7f2d7e98e33e2dea9abbdd69009b023f"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "fcc01e30926f615adef4d9dda5ff7bd6eca3711497971167aa1edd0f18fc91be"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "12d6d5ec0c86fd91d310da0bb225fd4b550fa31253e349270bf50e2c94f74977"
+        }
+      },
+      "module_release": "scaid-modules-20261020",
       "figure_path_aliases": []
     },
     {
@@ -1906,18 +2972,24 @@
       "dataset_id": "GSE268626",
       "tissue": "PBMC",
       "figure_path": "Ulcerative_Colitis/GSE268626/PBMC",
-      "h5_paths": {},
+      "h5_paths": {
+        "RNA": "new_aid_20261020/RNA/Ulcerative_Colitis_GSE268626_PBMC_RNA.h5ad",
+        "AUCell": "new_aid_20261020/AUCell/Ulcerative_Colitis_GSE268626_PBMC_AUCell.h5ad",
+        "singscore": "new_aid_20261020/singscore/Ulcerative_Colitis_GSE268626_PBMC_singscore.h5ad",
+        "UCell": "new_aid_20261020/UCell/Ulcerative_Colitis_GSE268626_PBMC_UCell.h5ad"
+      },
       "catalog_aliases": [],
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE268626",
       "release_id": "scaid-new-aid-20261015",
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
-        "downloads": false
+        "cellchat": true,
+        "downloads": true,
+        "cellchat_overview": true,
+        "marker_table": true
       },
       "availability_notes": [
-        "CellChat figures and matrix downloads are not included in this release.",
         "Cell counts describe this processed object; repeated accessions and disease subsets must not be summed as independent cohorts.",
         "Donor and clinical metadata have not been independently authenticated; no donor total is reported."
       ],
@@ -1932,6 +3004,36 @@
       "search_abbreviations": [
         "IBD"
       ],
+      "download_format": "H5AD",
+      "download_description": "RNA expression with cell metadata and embeddings; separate AUCell, UCell and singscore pathway matrices. File labels identify whether original counts are available.",
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "RNA expression and original counts; cell metadata and embeddings.",
+          "raw_count_status": "integer_count_layer_preserved_from_processed_source",
+          "sha256": "21d710fc5ac9a88bb0803737966d7a3632cf60d65533704f96cbdd107cdeb425"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "8c1b58c4a458d3d9826a69efc5b343c47a14eab7c1222383d9b7fc21b90f4baf"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "f59e6e51dc1c998b965593a0fbe7fd8276d95c2ee9ac7e720c9fb7daa3fdfa18"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell pathway scores; cell metadata and embeddings.",
+          "raw_count_status": "not_applicable_pathway_scores",
+          "sha256": "46f65a7bb4bd587f1ad5e31226c39176e8a7c5fee342b351d92b5a84a8f43257"
+        }
+      },
+      "module_release": "scaid-modules-20261020",
+      "study_context": "Peripheral blood monocytes were enriched by negative magnetic selection in the source study. Cell-group results describe the retained processed object, rather than unselected PBMC composition.",
       "figure_path_aliases": []
     }
   ],
@@ -1944,5 +3046,6 @@
       "new_asset_manifest_sha256": "446bf84755365e6e8086976b89a21700d871610a4979b48d437b56f72e39c9d7",
       "integrated_atlas_changed": false
     }
-  ]
+  ],
+  "module_release": "scaid-modules-20261020"
 }

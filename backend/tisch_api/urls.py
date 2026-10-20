@@ -2,6 +2,7 @@
 from django.urls import path
 from rest_framework.routers import DefaultRouter
 from .openapi import openapi_schema
+from .marker_views import MarkerViewSet
 from .views import CellDataViewSet, PDFImageViewSet, AffectedSitesWithDiseasesViewSet, CellDataViewSetAll, H5FileViewSet, GeneKeggEnumViewSet
 
 router = DefaultRouter()
@@ -11,5 +12,6 @@ router.register(r'pdf-images', PDFImageViewSet)
 router.register(r'by-site', AffectedSitesWithDiseasesViewSet, basename='affected-sites')
 router.register(r'h5-file', H5FileViewSet)
 router.register(r'gene-kegg-enum', GeneKeggEnumViewSet)
+router.register(r'markers', MarkerViewSet, basename='markers')
 
 urlpatterns = [path('schema/', openapi_schema, name='api-schema'), *router.urls]
