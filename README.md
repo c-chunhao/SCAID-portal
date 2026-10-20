@@ -1,6 +1,6 @@
 # SCAID source snapshot
 
-**Version 0.2.0-rc1 · 20 October 2026**
+**Version 0.2.0-rc2 · 20 October 2026**
 
 This repository contains the current Vue/Vite frontend and Django REST backend
 of the [SCAID portal](https://scaid01.com/), plus a reviewed public asset mapping,
@@ -27,14 +27,17 @@ not included. See [LICENSE_STATUS.md](LICENSE_STATUS.md) for licensing status.
 
 ## Local backend and synthetic fixture
 
-The checked runtime is Python 3.13.11. `backend/requirements.txt` records the
-observed web runtime versions. Use a fresh environment and local paths:
+The production web runtime was Python 3.13.11. A separate clean local web
+installation and synthetic SQLite/API demo also passed with Python 3.12.12.
+The exact local installation is recorded in
+`backend/requirements-tested-python312.txt`; the original observed web versions
+remain in `backend/requirements.txt`. Use a fresh environment and local paths:
 
 ```sh
 cd backend
-python3 -m venv .venv
+python3.12 -m venv .venv
 . .venv/bin/activate
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-tested-python312.txt
 export SCAID_SECRET_KEY="$(python -c 'import secrets; print(secrets.token_urlsafe(64))')"
 export SCAID_SQLITE_PATH=/tmp/scaid-demo.sqlite3
 export SCAID_FIGURE_ROOT=/tmp/scaid-synthetic-demo/figures
@@ -142,6 +145,10 @@ Source cell/donor inputs remain subject to repository access and reuse condition
 The committed September 30 composition outputs are historical; reproduce the
 current coverage-aware outputs with the documented CLI.
 
+Install the current scientific packages in the separate
+[Python 3.12 environment](science/current_revision/INSTALLATION.md); the
+Python 3.13 runtime above refers to the web service.
+
 The [October scientific follow-up](science/current_revision/README.md) adds
 final-representation integration diagnostics, 63-label marker-evidence review
 and source-recorded B-state/IFN analysis. Each package includes dependencies,
@@ -167,3 +174,10 @@ installing source alone does not redistribute the production data library.
 `LICENSE_STATUS.md` remains authoritative: no new project licence is assigned
 by this release. Third-party source retains its original terms and provenance.
 A GitHub release is a versioned source reference, not a permanent archive DOI.
+
+The [additional source-pool sensitivity](science/current_revision/source_pool_sensitivity/README.md)
+uses existing individual summaries, CR1 covariance and pool fixed effects, with
+aggregate results and a fully synthetic end-to-end example. The versioned
+verification evidence distinguishes the original live-site/rc1 build checks
+from rc2 independent installation and local proxy checks. The public website
+was not redeployed during this source release.

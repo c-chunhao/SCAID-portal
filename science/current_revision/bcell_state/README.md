@@ -1,5 +1,9 @@
 # Source-recorded B-cell states and individual-level IFN12
 
+Use the [independent Python 3.12 environment](../INSTALLATION.md). The
+package-specific `tested_versions.json` records the original analysis runtime;
+it is separate from the clean installation environment.
+
 This package contains the scripts used for the within-GSE174188 B-state follow-up
 and aggregate results. It does not contain clinical tables, individual-level
 records, original barcodes/count matrices, cell-ID mappings or scan binaries.

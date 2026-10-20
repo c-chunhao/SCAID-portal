@@ -23,14 +23,14 @@ export default defineConfig({
   ],
   server: {
     host: '0.0.0.0',
-    // Use Nginx in development too: thumbnail responses need its X-Accel-Redirect handling.
+    // Match the separate local-demo backend documented in the root README.
     proxy: {
       '/api': {
-        target: process.env.SCAID_API_TARGET || 'http://127.0.0.1:10209',
+        target: process.env.SCAID_API_TARGET || 'http://127.0.0.1:18080',
         changeOrigin: true,
       },
       '/system/media/': {
-        target: process.env.SCAID_MEDIA_TARGET || 'http://127.0.0.1:10209',
+        target: process.env.SCAID_MEDIA_TARGET || 'http://127.0.0.1:18080',
         changeOrigin: true,
       },
     },

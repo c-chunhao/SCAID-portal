@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "only_invented_inputs": true,
+  "N_synthetic": 200,
+  "synthetic_source_pools": 20,
+  "model_rows": 56,
+  "estimated": 54,
+  "unavailable_planned_tests": 2
+}

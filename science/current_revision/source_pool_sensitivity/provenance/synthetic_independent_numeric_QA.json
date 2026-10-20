@@ -1,0 +1,490 @@
+{
+  "passed": true,
+  "method": "Independent scipy pivoted-QR least squares, QR inverse-information, grouped-score CR1 covariance, scipy t(G-1), manual BH sorted-rank formula.",
+  "n_models": 54,
+  "max_abs_error": 2.8310687127941492e-14,
+  "BH_families": [
+    {
+      "variant": "cohort_design_CR1",
+      "family": "common_state_population",
+      "size": 4,
+      "max_abs_error": 2.0194839173657902e-28
+    },
+    {
+      "variant": "cohort_design_CR1",
+      "family": "matched_B_population",
+      "size": 2,
+      "max_abs_error": 2.524354896707238e-29
+    },
+    {
+      "variant": "cohort_design_CR1",
+      "family": "mixture_adjusted_IFN",
+      "size": 2,
+      "max_abs_error": 0.0
+    },
+    {
+      "variant": "cohort_design_CR1",
+      "family": "original_3_IFN",
+      "size": 3,
+      "max_abs_error": 0.0
+    },
+    {
+      "variant": "cohort_design_CR1",
+      "family": "original_8_PBMC_fractions",
+      "size": 8,
+      "max_abs_error": 5.551115123125783e-16
+    },
+    {
+      "variant": "cohort_design_CR1",
+      "family": "source_label_coverage",
+      "size": 3,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "variant": "cohort_design_CR1",
+      "family": "state_IFN",
+      "size": 3,
+      "max_abs_error": 0.0
+    },
+    {
+      "variant": "cohort_design_CR1",
+      "family": "state_composition_within_B",
+      "size": 3,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "variant": "pool_fixed_effects_CR1",
+      "family": "common_state_population",
+      "size": 4,
+      "max_abs_error": 0.0
+    },
+    {
+      "variant": "pool_fixed_effects_CR1",
+      "family": "matched_B_population",
+      "size": 2,
+      "max_abs_error": 0.0
+    },
+    {
+      "variant": "pool_fixed_effects_CR1",
+      "family": "mixture_adjusted_IFN",
+      "size": 2,
+      "max_abs_error": 0.0
+    },
+    {
+      "variant": "pool_fixed_effects_CR1",
+      "family": "original_3_IFN",
+      "size": 3,
+      "max_abs_error": 1.262177448353619e-29
+    },
+    {
+      "variant": "pool_fixed_effects_CR1",
+      "family": "original_8_PBMC_fractions",
+      "size": 8,
+      "max_abs_error": 3.3306690738754696e-16
+    },
+    {
+      "variant": "pool_fixed_effects_CR1",
+      "family": "source_label_coverage",
+      "size": 3,
+      "max_abs_error": 0.0
+    },
+    {
+      "variant": "pool_fixed_effects_CR1",
+      "family": "state_IFN",
+      "size": 3,
+      "max_abs_error": 4.0389678347315804e-28
+    },
+    {
+      "variant": "pool_fixed_effects_CR1",
+      "family": "state_composition_within_B",
+      "size": 3,
+      "max_abs_error": 0.0
+    }
+  ],
+  "checks": [
+    {
+      "model_key": "original_fraction_T4",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 1.4432899320127035e-15,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "original_fraction_T4",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 6.328271240363392e-15,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "original_fraction_T8",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 8.049116928532385e-16,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "original_fraction_T8",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 3.5388358909926865e-15,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "original_fraction_B",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 1.5543122344752192e-15,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "original_fraction_B",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 8.93729534823251e-15,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "original_fraction_NK",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 4.107825191113079e-15,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "original_fraction_NK",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 1.63202784619898e-14,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "original_fraction_cM",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 1.3322676295501878e-15,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "original_fraction_cM",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 1.1546319456101628e-14,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "original_fraction_ncM",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 2.7755575615628914e-15,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "original_fraction_ncM",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 1.1102230246251565e-14,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "original_fraction_cDC",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 6.661338147750939e-15,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "original_fraction_cDC",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 1.1879386363489175e-14,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "original_fraction_pDC",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 3.1086244689504383e-15,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "original_fraction_pDC",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 9.43689570931383e-15,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "original_IFN_cM",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 8.326672684688674e-17,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "original_IFN_cM",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 2.498001805406602e-16,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "original_IFN_T4",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 8.326672684688674e-17,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "original_IFN_T4",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 2.7755575615628914e-16,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "original_IFN_B",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 8.326672684688674e-17,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "original_IFN_B",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 3.885780586188048e-16,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_same_eligible_B_population_B_B_fraction_all_PBMC",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 1.5543122344752192e-15,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_same_eligible_B_population_B_B_fraction_all_PBMC",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 8.93729534823251e-15,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_same_eligible_B_population_B_B_IFN12",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 8.326672684688674e-17,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_same_eligible_B_population_B_B_IFN12",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 3.885780586188048e-16,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_source_B_state_primary_B_naive_state_fraction_within_B",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 7.549516567451064e-15,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_source_B_state_primary_B_naive_state_fraction_within_B",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 2.8310687127941492e-14,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_source_B_state_primary_B_naive_state_IFN12",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 7.45931094670027e-17,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_source_B_state_primary_B_naive_state_IFN12",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 3.608224830031759e-16,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_source_B_state_primary_B_mem_state_fraction_within_B",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 6.661338147750939e-15,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_source_B_state_primary_B_mem_state_fraction_within_B",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 2.4646951146678475e-14,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_source_B_state_primary_B_mem_state_IFN12",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 1.3877787807814457e-16,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_source_B_state_primary_B_mem_state_IFN12",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 3.885780586188048e-16,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_source_B_state_primary_B_atypical_state_fraction_within_B",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 1.7763568394002505e-15,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_source_B_state_primary_B_atypical_state_fraction_within_B",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 7.882583474838611e-15,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_common_state_eligible_population_B_naive_state_fraction_within_B",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 7.549516567451064e-15,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_common_state_eligible_population_B_naive_state_fraction_within_B",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 2.8310687127941492e-14,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_common_state_eligible_population_B_naive_state_IFN12",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 1.3877787807814457e-16,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_common_state_eligible_population_B_naive_state_IFN12",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 3.0531133177191805e-16,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_common_state_eligible_population_B_mem_state_fraction_within_B",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 6.661338147750939e-15,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_common_state_eligible_population_B_mem_state_fraction_within_B",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 2.4646951146678475e-14,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_common_state_eligible_population_B_mem_state_IFN12",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 6.938893903907228e-17,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_common_state_eligible_population_B_mem_state_IFN12",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 3.0531133177191805e-16,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_assessed_state_population_B_IFN_unadjusted_B_B_IFN12",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 8.326672684688674e-17,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_assessed_state_population_B_IFN_unadjusted_B_B_IFN12",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 3.885780586188048e-16,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_state_fraction_adjusted_B_IFN_B_B_IFN12",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 1.942890293094024e-16,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_state_fraction_adjusted_B_IFN_B_B_IFN12",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 6.765421556309548e-17,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_source_label_coverage_diagnostic_missing_fine_label_coverage_fraction_within_B",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 1.0547118733938987e-15,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_source_label_coverage_diagnostic_missing_fine_label_coverage_fraction_within_B",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 3.9968028886505635e-15,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_source_label_coverage_diagnostic_other_labelled_coverage_fraction_within_B",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 4.107825191113079e-15,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_source_label_coverage_diagnostic_other_labelled_coverage_fraction_within_B",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 1.4765966227514582e-14,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_source_label_coverage_diagnostic_total_unresolved_coverage_fraction_within_B",
+      "variant": "cohort_design_CR1",
+      "max_abs_error": 5.551115123125783e-16,
+      "N": 200,
+      "G": 20
+    },
+    {
+      "model_key": "B_source_label_coverage_diagnostic_total_unresolved_coverage_fraction_within_B",
+      "variant": "pool_fixed_effects_CR1",
+      "max_abs_error": 7.688294445529209e-15,
+      "N": 200,
+      "G": 20
+    }
+  ],
+  "synthetic_self_test": {
+    "passed": true,
+    "input": "200 fully synthetic observations in 20 groups",
+    "coefficient": 0.3697788078975808
+  },
+  "input_models_sha256": "4f04031d178070e8de65e62d06450f4a4463d7f9bf45137ec9a731b0cc9a0704"
+}

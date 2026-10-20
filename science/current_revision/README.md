@@ -1,5 +1,8 @@
 # October 2026 scientific follow-up
 
+See [INSTALLATION.md](INSTALLATION.md) for the actually checked independent
+Python 3.12 installation, resolved dependencies and synthetic examples.
+
 These packages contain the current-revision diagnostic and B-state follow-up
 scripts alongside their explicitly synthetic installation checks. Their
 dependencies, real-data input requirements and tested versions are documented
@@ -25,3 +28,7 @@ The supplemental diagnostics and source-recorded states support conditional and
 within-source interpretation. They do not constitute independent cohort
 replication or causal evidence. Source availability and third-party reuse terms
 follow the repository's existing licence notices; no licence is assigned here.
+
+- [source_pool_sensitivity](source_pool_sensitivity/README.md): additional
+  CR1/pool-fixed-effect sensitivity using existing individual summaries, with
+  aggregate results and a 200-person/20-pool synthetic end-to-end example.

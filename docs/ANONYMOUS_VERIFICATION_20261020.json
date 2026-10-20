@@ -93,5 +93,18 @@
     "Sample labels are source-object identifiers, not authenticated independent donor counts.",
     "No production data, UI or catalogue registrations were changed during verification.",
     "No source-individual/clinical tables, counts, barcodes, credentials or production database are distributed in this code package."
-  ]
+  ],
+  "live_site_and_production_build_source_version": "v0.2.0-rc1",
+  "rc2_independent_installation": {
+    "python": "3.12.12",
+    "scientific_packages_lock": "science/current_revision/requirements-tested-python312.txt",
+    "web_packages_lock": "backend/requirements-tested-python312.txt",
+    "scientific_example_checks": [
+      "B-state C++/MTX/HC3",
+      "atlas replay and independent calculation",
+      "source-pool end-to-end and independent QR/CR1/BH"
+    ],
+    "local_API_proxy": "Separate SQLite synthetic demo, actual HTTP200 and matching catalogue JSON; defaults18080 verified, actual override18081 because18080 was in use.",
+    "production_deployment_changed": false
+  }
 }

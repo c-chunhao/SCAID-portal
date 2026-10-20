@@ -1,3 +1,13 @@
+# 0.2.0-rc2 — 20 October 2026
+
+- Document and actually check independent Python 3.12 scientific/web installations.
+- Include exact resolved scientific/web package locks and synthetic installation commands.
+- Correct the local Vite proxy defaults to match the documented backend port 18080.
+- Add source-pool CR1/fixed-effect sensitivity, aggregate outputs and a pure synthetic 200-person/20-pool example.
+- Remove 12 unreferenced frontend scaffold/assets; keep functional routes/styles and existing third-party notices.
+- Keep rc1 live-site/52-file checks as dated historical evidence; this source release does not deploy the website.
+- Assign no new project or third-party licence and no SCAID archive DOI.
+
 # 0.2.0-rc1 — 20 October 2026
 
 - Synchronize October production frontend and API business logic.

@@ -1,5 +1,10 @@
 # Anonymous workflow and source-installation checks
 
+The dated live-site and 52-file production comparison belongs to the
+production-source snapshot released as v0.2.0-rc1. v0.2.0-rc2 adds independent
+Python 3.12 installations, a local API/proxy check and source-pool code. These
+new checks and the older live-site checks have separate scopes.
+
 The live HTTPS site/API were checked on 20 October 2026 without login cookies
 or credentials. The compact [machine-readable record](ANONYMOUS_VERIFICATION_20261020.json)
 records the tested scope. Catalogue totals were 79 objects, 4,590,932 cell

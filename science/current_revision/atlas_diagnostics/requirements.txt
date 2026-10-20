@@ -1,5 +1,6 @@
-numpy
-pandas
-scipy
-scikit-learn
-openpyxl
+# Install in a separate Python 3.12 scientific environment.
+numpy>=1.26.4,<3
+pandas==2.3.3
+scipy==1.16.3
+openpyxl==3.1.5
+scikit-learn==1.8.0

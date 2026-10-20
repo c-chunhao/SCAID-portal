@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-10-20T09:37:27.198695+00:00",
+  "passed": true,
+  "environment": {
+    "python": "3.12.12 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 20:16:04) [GCC 11.2.0]",
+    "numpy": "2.5.4",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "statsmodels": "0.14.6",
+    "scikit-learn": "1.8.0",
+    "openpyxl": "3.1.5",
+    "enable_user_site": false
+  },
+  "fresh_isolated_venv": true,
+  "inherited_system_site_packages": false,
+  "production_environment_changed": false,
+  "real_metadata_or_count_inputs_used": false,
+  "checks": [
+    {
+      "name": "Bcell_C++_MTX_and_200_synthetic_people_HC3",
+      "exit_code": 0
+    },
+    {
+      "name": "replay_sampled_diagnostics.py",
+      "exit_code": 0
+    },
+    {
+      "name": "verify_final_diagnostics.py",
+      "exit_code": 0
+    }
+  ],
+  "actual_installation_completed": true,
+  "PyPI_wheels_only": true,
+  "same_real_data_analysis_recomputed": false,
+  "source_pool_synthetic_check": {
+    "passed": true,
+    "invented_people": 200,
+    "invented_pools": 20,
+    "model_rows": 56,
+    "estimable": 54,
+    "independent_numeric_QA_passed": true
+  }
+}

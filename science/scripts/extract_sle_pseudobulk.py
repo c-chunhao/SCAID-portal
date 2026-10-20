@@ -1,6 +1,6 @@
 import os
 """Read the archived sparse source MTX once; write donor/cell-type aggregates only.
-Select one sequencing batch per verified source individual before target labels/genes
+Select one multiplexed source pool per verified source individual before target labels/genes
 are tested. Largest total source cell count in cohorts 2/3/4; lexical batch tie break.
 """
 from pathlib import Path
@@ -34,7 +34,7 @@ print('loaded',x.shape,x.nnz,flush=True)
 assert x.shape==(len(genes),len(m))
 assert np.isfinite(x.data).all() and (x.data>=0).all() and np.allclose(x.data,np.rint(x.data))
 x=x.tocsr();print('csr',flush=True)
-# Match one source biological individual + one selected sequencing batch; never
+# Match one source biological individual + one selected source pool; never
 # combine batches/visits into independent pseudoreplicates.
 key=m.ind_cov.astype(str)+'|'+m.batch_cov.astype(str)
 choice_keys=chosen.unit_id.tolist();ids=pd.Index(choice_keys).get_indexer(key)

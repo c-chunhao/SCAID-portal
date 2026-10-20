@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "n_endpoint_specs": 28,
+  "n_model_rows": 56,
+  "estimated": 54,
+  "unavailable": [
+    {
+      "model_key": "B_source_B_state_primary_B_atypical_state_IFN12",
+      "variant": "cohort_design_CR1",
+      "n_SLE": 39,
+      "n_HD": 3,
+      "reason": "Fewer than 10 eligible individuals in at least one condition; original threshold retained."
+    },
+    {
+      "model_key": "B_source_B_state_primary_B_atypical_state_IFN12",
+      "variant": "pool_fixed_effects_CR1",
+      "n_SLE": 39,
+      "n_HD": 3,
+      "reason": "Fewer than 10 eligible individuals in at least one condition; original threshold retained."
+    }
+  ],
+  "manual_covariance_checks": 54,
+  "max_manual_covariance_abs_error": 9.73610081445031e-13,
+  "all_cohort_design_coefficients_preserved": true,
+  "no_cell_matrix_read": true,
+  "no_new_participant_or_cell_filters": true,
+  "cohort_removed_from_pool_FE": true,
+  "FDR_separate_by_design_and_existing_family": true,
+  "t_df": "G-1",
+  "small_cluster_inference_is_approximate": true,
+  "input_files_unchanged": {
+    "composition": true,
+    "IFN": true,
+    "inventory": true,
+    "original_models": true,
+    "B_individual": true,
+    "B_model_rows": true,
+    "B_models": true
+  },
+  "script_sha256": "988f956f588f50e6962b53927e32eab13b938dde75bf7576520beee03cdb3b2a",
+  "analysis_plan_sha256": "5df1dbddb1baa9a656c966ef56ef31619080cf6ce04d59e11a8f9f89722fdc4b"
+}

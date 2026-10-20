@@ -1,5 +1,5 @@
 import os
-"""One preselected source sequencing batch per source individual; complete zeros.
+"""One preselected multiplexed source pool per source individual; complete zeros.
 Within-study covariate-adjusted composition/IFN models with donor HC3 variance.
 Excluding source activity-switch donors and cohort4 are sensitivity checks, not
 independent replication, because some individuals overlap the primary analysis.

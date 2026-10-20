@@ -1,5 +1,9 @@
 # Final-atlas diagnostic and marker-review scripts
 
+Use the [independent Python 3.12 environment](../INSTALLATION.md). The
+package-specific `tested_versions.json` records the original analysis runtime;
+it is separate from the clean installation environment.
+
 These scripts diagnose existing atlas representations and summarize previously measured marker evidence. They do not integrate new data, replace labels, apply new QC filters, or claim independent annotation accuracy.
 
 ## Synthetic example

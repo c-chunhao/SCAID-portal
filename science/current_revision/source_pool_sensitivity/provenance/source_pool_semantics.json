@@ -1,0 +1,19 @@
+{
+  "source_paper": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9297655/",
+  "source_paper_doi": "10.1126/science.abf1970",
+  "source_author_code_doi": "10.5281/zenodo.4724043",
+  "source_author_code_file": "Figure_1_2.Final.ipynb",
+  "source_author_code_evidence": "Author code uses batch_cov to select the multiplexed label dmx_YS-JY-22_pool6 and separately plots Processing_Cohort (cells 7, 8 and 20).",
+  "paper_processing": "23 multiplexed pools profiled across four processing batches; donor identity recovered by genotype demultiplexing.",
+  "local_field_mapping": "batch_cov identifies source multiplexed pools and is nested in the four Processing_Cohort values (inventory field cohort); 20 pools are retained by the unchanged one-source-batch-per-individual selection. The mapping is supported jointly by author code, source metadata and the primary paper.",
+  "all_inventory_pools": 23,
+  "all_inventory_cohorts": 4,
+  "pools_per_cohort": {
+    "1": 3,
+    "2": 10,
+    "3": 4,
+    "4": 6
+  },
+  "pools_completely_nested_in_cohort": true,
+  "selected_primary_pools": 20
+}

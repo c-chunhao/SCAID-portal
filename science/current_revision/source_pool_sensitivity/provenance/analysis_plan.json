@@ -1,0 +1,15 @@
+{
+  "recorded_at_UTC": "2026-10-20T09:45:44.996501+00:00",
+  "type": "Additional sensitivity after review of shared source processing pools; not an original prespecified primary analysis.",
+  "population": "Keep original one-selected-batch per individual and each existing endpoint eligibility; >=20 target cells for IFN and >=10 people per arm.",
+  "variants": [
+    "Original age/sex/ancestry/cohort design with CR1 by source batch_cov and t(G-1) inference.",
+    "Age/sex/ancestry/source batch_cov fixed effects with CR1 by batch_cov and t(G-1) inference; processing cohort omitted because nested."
+  ],
+  "CR1_correction": "G/(G-1)*(N-1)/(N-K), where K is full-rank design width.",
+  "multiplicity": "BH separately within each pre-existing endpoint family and sensitivity variant; unavailable planned state IFN tests enter as P=1.",
+  "validation": "Independent manual grouped-score covariance for every estimable model and leave-one-pool-out point estimates for key endpoints.",
+  "limits": "Approximately 20 clusters; t intervals are finite-cluster approximations, not exact or unbiased guarantees. Observational within-source associations, not independent replication.",
+  "source_counts_read": false,
+  "original_results_overwritten": false
+}

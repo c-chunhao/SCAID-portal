@@ -1,14 +1,15 @@
 {
-  "version": "0.2.0-rc1",
+  "version": "0.2.0-rc2",
   "date": "2026-10-20",
-  "base_commit": "b009ec8ec17864eefcb7a24d3a2e7582a975e895",
+  "base_commit": "f8d882b01acf3d71dfd487c93dc591870f26925d",
   "production_backend": "running Django working source",
   "production_frontend": "current Vue working source, checked against deployed index",
   "adaptations": [
     "environment-only settings; SQLite local demo and explicit MySQL mode",
     "relative public asset manifest and prepared gene/score family paths",
     "portable browser executable/module locations",
-    "aggregate 79-entry catalogue; no patient-level tables"
+    "aggregate 79-entry catalogue; no patient-level tables",
+    "local development proxy defaults match README backend on 127.0.0.1:18080"
   ],
   "licence": "No author-designated project licence selected; existing notices preserved",
   "scientific_follow_up": {
@@ -16,5 +17,13 @@
     "bcell_state": "final source-recorded state/IFN models and aggregate outputs; portable environment-variable input roots",
     "real_individual_inputs_included": false,
     "synthetic_examples_explicit": true
-  }
+  },
+  "changes_after_rc1": [
+    "independent Python3.12 scientific and web installation with exact resolved locks",
+    "local-development proxy defaults18080 match README; real isolated API/proxy workflow checked",
+    "remove12 genuinely unreferenced frontend files; originals retained privately",
+    "additional source-pool sensitivity scripts and aggregate outputs; no individual inputs",
+    "no production deployment and no new licence grant"
+  ],
+  "third_party_template_permission": "Unresolved unless author factually confirms ownership/permission; existing notices retained."
 }

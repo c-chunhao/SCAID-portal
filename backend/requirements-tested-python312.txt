@@ -1,0 +1,12 @@
+# Exact packages from the independently installed Python 3.12.12 local web demo.
+asgiref==3.11.1
+Django==5.1.7
+django-csp==4.0
+djangorestframework==3.15.2
+gunicorn==23.0.0
+h5py==3.13.0
+numpy==2.5.4
+packaging==26.3
+pillow==11.1.0
+PyMuPDF==1.25.4
+sqlparse==0.5.5
