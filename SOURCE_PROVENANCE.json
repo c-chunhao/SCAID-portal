@@ -497,5 +497,26 @@
     "original_figure_assets_unchanged": true,
     "new_raster_assets_added": false,
     "tag_or_release_created": false
+  },
+  "home_illustration_cleanup_20261024": {
+    "base_commit": "e5c2d2f3753e6b8751b5be27cb72b1428f9e7ce9",
+    "base_tree": "1844dbd85783657159c24cd710f5afa677fd1038",
+    "scope": "Home illustration download-caption removal and three publication metadata files",
+    "copied_application_files": [
+      {
+        "public_path": "frontend/src/views/Home/index.vue",
+        "live_source_sha256": "40549372ae78ccff439fdea0274d478bc893f54d04e4885196030ca543f9cae7",
+        "published_sha256": "40549372ae78ccff439fdea0274d478bc893f54d04e4885196030ca543f9cae7",
+        "byte_identical_to_live": true
+      }
+    ],
+    "source_hash_lock_sha256": "9b70eba73a005c5605158d4f3d51e77491f85f702053335682dcef278bed759b",
+    "production_deployment_receipt_sha256": "438cec95923f0aaadcfc43905712adc4f10f6789e5b490afcd15fa385802effc",
+    "scientific_source_version": "0.3.1-ad20261024",
+    "scientific_sources_unchanged": true,
+    "backend_unchanged": true,
+    "scientific_results_or_catalogue_data_changed": false,
+    "original_figure_assets_unchanged": true,
+    "tag_or_release_created": false
   }
 }

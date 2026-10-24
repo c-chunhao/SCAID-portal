@@ -73,13 +73,8 @@
       <div class="coverage-layout">
         <figure class="condition-overview coverage-figure">
           <a :href="conditionOverview" class="overview-image-link" target="_blank" rel="noopener noreferrer" aria-label="Open the body illustration at full resolution in a new tab">
-            <img :src="conditionOverview" width="1122" height="1402" alt="A soft, flat illustration of the human body and its organs. Complete condition names and dataset links are provided as text on this page." aria-describedby="overview-caption" loading="lazy" decoding="async" />
+            <img :src="conditionOverview" width="1122" height="1402" alt="A soft, flat illustration of the human body and its organs. Complete condition names and dataset links are provided as text on this page." loading="lazy" decoding="async" />
           </a>
-          <figcaption id="overview-caption">
-            <div class="overview-caption-heading">
-              <a :href="conditionOverview" download="SCAID-body-overview-flat-2026-10-16.png">Download illustration PNG</a>
-            </div>
-          </figcaption>
         </figure>
         <div class="condition-index" :aria-busy="statsLoading">
           <div class="condition-index-heading">
@@ -314,7 +309,7 @@ onBeforeUnmount(() => { disposed = true; });
   gap: 48px;
   align-items: start;
 }
-.condition-overview { position: sticky; top: 100px; min-width: 0; margin: 0; padding: 24px 24px 12px; border: 1px solid var(--scaid-line); border-radius: var(--scaid-radius); background: #fff; }
+.condition-overview { position: sticky; top: 100px; min-width: 0; margin: 0; padding: 24px; border: 1px solid var(--scaid-line); border-radius: var(--scaid-radius); background: #fff; }
 .overview-image-link { display: block; background: #fff; }
 .overview-image-link img {
   display: block;
@@ -324,16 +319,6 @@ onBeforeUnmount(() => { disposed = true; });
   object-fit: contain;
 }
 .overview-image-link:focus-visible { outline: 2px solid var(--scaid-focus); outline-offset: 4px; }
-.condition-overview figcaption { margin-top: 14px; padding-top: 6px; border-top: 1px solid var(--scaid-line); color: var(--scaid-muted); font-size: .8125rem; }
-.overview-caption-heading { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 24px; }
-.overview-caption-heading a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  color: var(--scaid-accent);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
 .condition-index { min-width: 0; }
 .condition-index-heading { margin-bottom: 20px; }
 .condition-index-heading h3 {
@@ -439,7 +424,7 @@ onBeforeUnmount(() => { disposed = true; });
   .browse-heading p { font-size: .9375rem; }
   .condition-jump { margin: 20px 0 24px; }
   .coverage-layout { gap: 24px; }
-  .condition-overview { max-width: 300px; padding: 18px 18px 8px; }
+  .condition-overview { max-width: 300px; padding: 18px; }
   .condition-groups { grid-template-columns: minmax(0, 1fr); gap: 26px; }
   .condition-link { gap: 12px; }
   .condition-name { font-size: .9375rem; }

@@ -1,3 +1,8 @@
+# Home illustration cleanup — 24 October 2026
+
+- Remove the illustration download link and separator below the home-page body illustration; retain the original image and native browser image actions.
+- Scientific data, analysis outputs, backend code and existing image assets are unchanged.
+
 # Home workflow preview — 24 October 2026
 
 - Replace the upper-right home hero atlas thumbnail with a compact usage workflow rendered in HTML and SVG.
