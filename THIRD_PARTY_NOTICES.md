@@ -29,3 +29,5 @@ custom application files. It does not redistribute another template checkout or
 assert a new licence for the historical template-derived frontend. The
 original-to-public source map documents path-only scientific-source redaction.
 External KEGG, CellTypist models and CellChat DB weights are not bundled.
+
+The 24 October interface update bundles the IBM Plex Sans Latin WOFF2, copyright © 2017 IBM Corp., under SIL Open Font License 1.1. The complete licence is in `frontend/public/fonts/OFL-IBM-Plex-Sans.txt`; `frontend/public/fonts/SOURCE.json` records the public source and SHA256. The font is served locally. Its licence applies to the font, without changing the project or historical template licence status.

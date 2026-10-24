@@ -1,0 +1,13 @@
+{
+  "family": "IBM Plex Sans",
+  "licence": "SIL Open Font License 1.1",
+  "licence_source": "https://github.com/google/fonts/blob/main/ofl/ibmplexsans/OFL.txt",
+  "files": [
+    {
+      "file": "ibm-plex-sans-latin.woff2",
+      "source": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYY.woff2",
+      "bytes": 45712,
+      "sha256": "e2291e842cf5af167122a22881a740c7f2dda7716f1e8cd76680264f4a859470"
+    }
+  ]
+}

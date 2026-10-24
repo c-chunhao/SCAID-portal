@@ -18,7 +18,7 @@
 
 <style scoped lang="scss">
 .site-footer {
-  background: var(--scaid-soft, #f8f5f2);
+  background: #fff;
   border-top: 1px solid var(--scaid-line, #e5ddd7);
   color: var(--scaid-muted, #6b5f5a);
   font-size: .8125rem;
@@ -30,10 +30,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px 28px;
+  gap: 16px 32px;
   flex-wrap: wrap;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .footer-brand {
@@ -45,7 +45,7 @@
 }
 
 .footer-brand strong {
-  color: var(--scaid-accent, #8a503a);
+  color: var(--scaid-ink);
   letter-spacing: .04em;
 }
 

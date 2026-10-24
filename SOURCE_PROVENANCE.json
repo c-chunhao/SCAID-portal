@@ -260,5 +260,122 @@
     "production_mutated": false,
     "large_data_rehashed_in_this_source_audit": false,
     "original_final_source_hash_checks_passed": 26
+  },
+  "visual_refresh_20261024": {
+    "base_commit": "3274f10f618eb78d04d7684e8950e7be63bdf691",
+    "scope": "Identified custom frontend files, locally served licensed font and publication manifests only",
+    "copied_application_files": [
+      {
+        "public_path": "frontend/index.html",
+        "live_source_sha256": "4dca90358bab32c4f34b4bc8468aa3461d6f2d2c1b038e1f34bc1c95edd0544b",
+        "published_sha256": "4dca90358bab32c4f34b4bc8468aa3461d6f2d2c1b038e1f34bc1c95edd0544b",
+        "byte_identical_to_live": true
+      },
+      {
+        "public_path": "frontend/src/styles/scaid.scss",
+        "live_source_sha256": "fe833ee6c00283ccf3c10e067fe9331cc47111acda3969372bfe43acbe9bd7dc",
+        "published_sha256": "fe833ee6c00283ccf3c10e067fe9331cc47111acda3969372bfe43acbe9bd7dc",
+        "byte_identical_to_live": true
+      },
+      {
+        "public_path": "frontend/src/styles/element/index.scss",
+        "live_source_sha256": "7085bc7ffae9a4a4f25168d64167681abd03211e6fd62725a0f7580168b4c063",
+        "published_sha256": "7085bc7ffae9a4a4f25168d64167681abd03211e6fd62725a0f7580168b4c063",
+        "byte_identical_to_live": true
+      },
+      {
+        "public_path": "frontend/src/views/Home/index.vue",
+        "live_source_sha256": "a3addea5cf3837e0fed10e19bbf7053d42399d15d8fe8cb9ed5563cbeb7ece8e",
+        "published_sha256": "a3addea5cf3837e0fed10e19bbf7053d42399d15d8fe8cb9ed5563cbeb7ece8e",
+        "byte_identical_to_live": true
+      },
+      {
+        "public_path": "frontend/src/views/Layout/components/LayoutHeader.vue",
+        "live_source_sha256": "cd98ae99a6b6a4edac50427008b24ff9331564e897ab75c73833700b16b7dc38",
+        "published_sha256": "cd98ae99a6b6a4edac50427008b24ff9331564e897ab75c73833700b16b7dc38",
+        "byte_identical_to_live": true
+      },
+      {
+        "public_path": "frontend/src/views/Layout/components/LayoutFooter.vue",
+        "live_source_sha256": "e8e08735fdb361be4b1786afdf25dfa43384982f1f752dd98ec66d48c2d438a1",
+        "published_sha256": "e8e08735fdb361be4b1786afdf25dfa43384982f1f752dd98ec66d48c2d438a1",
+        "byte_identical_to_live": true
+      },
+      {
+        "public_path": "frontend/src/views/Dataset/index.vue",
+        "live_source_sha256": "f2734277d99172934772cae5cd36ce3be1c8d80cdf4b9108aa09a229c4595348",
+        "published_sha256": "f2734277d99172934772cae5cd36ce3be1c8d80cdf4b9108aa09a229c4595348",
+        "byte_identical_to_live": true
+      },
+      {
+        "public_path": "frontend/src/components/ExplorationSearch.vue",
+        "live_source_sha256": "27177738d63aeb4e4e0ee9b538ac2bd057509011cdbdf8590b9fd5e566429d39",
+        "published_sha256": "27177738d63aeb4e4e0ee9b538ac2bd057509011cdbdf8590b9fd5e566429d39",
+        "byte_identical_to_live": true
+      },
+      {
+        "public_path": "frontend/src/views/TeamInformation/index.vue",
+        "live_source_sha256": "2bc642b3668c902bdb1b8d9745b78482119255808ae63f762ad70229a350e6eb",
+        "published_sha256": "2bc642b3668c902bdb1b8d9745b78482119255808ae63f762ad70229a350e6eb",
+        "byte_identical_to_live": true
+      },
+      {
+        "public_path": "frontend/src/views/Documentation/index.vue",
+        "live_source_sha256": "69af675a5df39c9a0e459cea8fe5b6ad3f59d2f5b2486fdbdd7d782db0eddff2",
+        "published_sha256": "69af675a5df39c9a0e459cea8fe5b6ad3f59d2f5b2486fdbdd7d782db0eddff2",
+        "byte_identical_to_live": true
+      },
+      {
+        "public_path": "frontend/src/utils/catalogueSummary.js",
+        "live_source_sha256": "4e570eecb5b9beee9374d8e40d278a43a77ca44c8074611f21411fabc0c988f9",
+        "published_sha256": "4e570eecb5b9beee9374d8e40d278a43a77ca44c8074611f21411fabc0c988f9",
+        "byte_identical_to_live": true
+      },
+      {
+        "public_path": "frontend/tests/catalogue-summary.test.js",
+        "live_source_sha256": "6cbd831ce623272190c49a08cba05f14d371e2b0556a58893a2922d9d291081f",
+        "published_sha256": "6cbd831ce623272190c49a08cba05f14d371e2b0556a58893a2922d9d291081f",
+        "byte_identical_to_live": true
+      },
+      {
+        "public_path": "frontend/public/fonts/ibm-plex-sans-latin.woff2",
+        "live_source_sha256": "e2291e842cf5af167122a22881a740c7f2dda7716f1e8cd76680264f4a859470",
+        "published_sha256": "e2291e842cf5af167122a22881a740c7f2dda7716f1e8cd76680264f4a859470",
+        "byte_identical_to_live": true
+      },
+      {
+        "public_path": "frontend/public/fonts/OFL-IBM-Plex-Sans.txt",
+        "live_source_sha256": "37784b44044a4ffd9256702b7c0982c37e5c8887ba90c6dca0479aea93dc898d",
+        "published_sha256": "37784b44044a4ffd9256702b7c0982c37e5c8887ba90c6dca0479aea93dc898d",
+        "byte_identical_to_live": true
+      },
+      {
+        "public_path": "frontend/public/fonts/SOURCE.json",
+        "live_source_sha256": "2e69a044c4a0641fc1f3c127d122f46f51d70a946d5ceb21c7c089ef05880abc",
+        "published_sha256": "2e69a044c4a0641fc1f3c127d122f46f51d70a946d5ceb21c7c089ef05880abc",
+        "byte_identical_to_live": true
+      }
+    ],
+    "source_hash_lock_sha256": "6733c1d2e9325ad24bd1e5c5a9862f214499edfbb6ac94cd0db82e6636ad362c",
+    "production_deployment_receipt_sha256": "73b2e7e66a37f3d6d6c87e6b59ff7ed1ea30ee223bc249d617d3a7ce1d2f98a1",
+    "scientific_source_version": "0.3.1-ad20261024",
+    "scientific_sources_unchanged": true,
+    "backend_unchanged": true,
+    "scientific_results_or_catalogue_data_changed": false,
+    "font": {
+      "family": "IBM Plex Sans",
+      "licence": "SIL Open Font License 1.1",
+      "licence_source": "https://github.com/google/fonts/blob/main/ofl/ibmplexsans/OFL.txt",
+      "files": [
+        {
+          "file": "ibm-plex-sans-latin.woff2",
+          "source": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYY.woff2",
+          "bytes": 45712,
+          "sha256": "e2291e842cf5af167122a22881a740c7f2dda7716f1e8cd76680264f4a859470"
+        }
+      ]
+    },
+    "template_permission_expanded": false,
+    "tag_or_release_created": false
   }
 }

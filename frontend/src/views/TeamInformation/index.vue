@@ -54,10 +54,10 @@ const caption = (fileName) => {
 </script>
 
 <style scoped lang="scss">
-.atlas-intro { max-width: 900px; margin: 0 0 24px; h1 { font-size: 1.6rem; color: #2b2320; margin: 0 0 10px; } p { color: #4d4340; line-height: 1.6; margin: 0; } }
-figcaption { font-size: .95rem; color: var(--scaid-muted); padding: 12px 16px; background: #fff; }
+.atlas-intro { max-width: 75ch; margin: 0 0 32px; h1 { font-size: 2.25rem; font-weight: 600; line-height: 1.2; letter-spacing: -.025em; color: var(--scaid-ink); margin: 0 0 16px; } p { color: var(--scaid-muted); line-height: 1.7; margin: 0; } }
+figcaption { font-size: .9rem; color: var(--scaid-muted); padding: 16px 20px; background: #fff; border-top: 1px solid var(--scaid-line); }
 .body2 {
-  padding-top: 36px;
+  padding-top: 40px;
   padding-bottom: 48px;
   width: 100%;
   
@@ -71,7 +71,7 @@ figcaption { font-size: .95rem; color: var(--scaid-muted); padding: 12px 16px; b
   .image-grid {
     display: flex;
       flex-direction: column;
-    gap: 1.5rem;
+    gap: 32px;
     padding: 0;
   }
   
@@ -115,5 +115,10 @@ figcaption { font-size: .95rem; color: var(--scaid-muted); padding: 12px 16px; b
       }
     }
   }
+}
+@media (max-width: 767px) {
+  .body2 { padding-top: 28px; }
+  .atlas-intro h1 { font-size: 1.8rem; }
+  figcaption { padding: 14px 16px; }
 }
 </style>

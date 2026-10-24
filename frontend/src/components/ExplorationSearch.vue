@@ -9,34 +9,40 @@
 
     <div class="container exploration-content">
       <el-form class="exploration-form" :model="form" label-position="top" @submit.prevent="submit">
-        <el-form-item class="query-field" :label="kind === 'gene' ? 'Gene' : 'KEGG pathway'" prop="pdf_name" :error="state.validationError" required>
-          <el-select
-            ref="querySelect"
-            v-model="form.pdf_name"
-            filterable
-            remote
-            clearable
-            :remote-method="fetchOptionsDebounced"
-            :loading="state.optionsLoading"
-            :placeholder="kind === 'gene' ? 'Type a gene symbol to find suggestions' : 'Type a pathway ID to find suggestions'"
-            :no-data-text="state.optionsError ? 'Suggestions unavailable' : 'No matching suggestions'"
-            @clear="search.fetchOptions('')"
-          >
-            <el-option v-for="item in state.options" :key="item.id || item.name" :label="item.name" :value="item.name" />
-            <template v-if="state.optionsTotal" #footer>
-              <div class="suggestion-footer">
-                <span>{{ state.options.length }} of {{ state.optionsTotal }} suggestions</span>
-                <el-button
-                  v-if="state.options.length < state.optionsTotal"
-                  size="small"
-                  :loading="state.optionsLoading"
-                  @mousedown.prevent
-                  @click="search.loadMoreOptions"
-                >Load more</el-button>
-              </div>
-            </template>
-          </el-select>
-        </el-form-item>
+        <div class="primary-query-row">
+          <el-form-item class="query-field" :label="kind === 'gene' ? 'Gene' : 'KEGG pathway'" prop="pdf_name" :error="state.validationError" required>
+            <el-select
+              ref="querySelect"
+              v-model="form.pdf_name"
+              filterable
+              remote
+              clearable
+              :remote-method="fetchOptionsDebounced"
+              :loading="state.optionsLoading"
+              :placeholder="kind === 'gene' ? 'Type a gene symbol to find suggestions' : 'Type a pathway ID to find suggestions'"
+              :no-data-text="state.optionsError ? 'Suggestions unavailable' : 'No matching suggestions'"
+              @clear="search.fetchOptions('')"
+            >
+              <el-option v-for="item in state.options" :key="item.id || item.name" :label="item.name" :value="item.name" />
+              <template v-if="state.optionsTotal" #footer>
+                <div class="suggestion-footer">
+                  <span>{{ state.options.length }} of {{ state.optionsTotal }} suggestions</span>
+                  <el-button
+                    v-if="state.options.length < state.optionsTotal"
+                    size="small"
+                    :loading="state.optionsLoading"
+                    @mousedown.prevent
+                    @click="search.loadMoreOptions"
+                  >Load more</el-button>
+                </div>
+              </template>
+            </el-select>
+          </el-form-item>
+          <div class="form-actions">
+            <el-button type="primary" native-type="submit" :loading="state.loading">Search plots</el-button>
+            <p>Leave optional filters empty to see all available results.</p>
+          </div>
+        </div>
         <div v-if="state.optionsError" class="inline-recovery">
           <el-alert :title="state.optionsError" type="error" :closable="false" show-icon />
           <el-button :loading="state.optionsLoading" @click="search.retryOptions">Retry suggestions</el-button>
@@ -46,7 +52,7 @@
           <summary>{{ filterSummary }}</summary>
           <fieldset class="filter-fields">
           <legend class="sr-only">Optional filters</legend>
-          <div class="filter-grid">
+          <div class="filter-grid" :class="{ 'filter-grid--pathway': kind === 'kegg' }">
             <el-form-item label="Disease (abbreviation)" prop="abbreviation">
               <el-select v-model="form.abbreviation" filterable clearable :loading="filtersLoading" placeholder="All diseases" @change="onAbbreviationChange">
                 <el-option v-for="item in diseaseOptions" :key="item.abbreviation" :label="item.disease_label && item.disease_label !== item.abbreviation ? `${item.abbreviation} — ${item.disease_label}` : item.abbreviation" :value="item.abbreviation" />
@@ -74,10 +80,6 @@
           </div>
           </fieldset>
         </details>
-        <div class="form-actions">
-          <el-button type="primary" native-type="submit" :loading="state.loading">Search plots</el-button>
-          <p>Leave optional filters empty to see all available results.</p>
-        </div>
         <p class="publication-scope">Filters include objects with published {{ kind === 'gene' ? 'gene-expression' : 'pathway-score' }} maps. Objects with only overview and annotation figures remain available in the <router-link to="/Dataset">Dataset Browser</router-link>.</p>
       </el-form>
 
@@ -297,91 +299,98 @@ onBeforeUnmount(() => {
 <style lang="scss" scoped>
 .exploration-page {
   padding-bottom: 3.5rem;
-  color: var(--scaid-ink, #2b2320);
+  color: var(--scaid-ink);
 }
 .exploration-intro {
   margin-bottom: 0;
-  padding: 2.75rem 0 2.25rem;
-  background: var(--scaid-soft, #f8f5f2);
-  border-bottom: 1px solid var(--scaid-line, #e5ddd7);
-  .display-5 { margin: 0 0 .75rem; text-align: left; font-size: 2.15rem; font-weight: 700; }
-  p { max-width: 75ch; margin: 0; font-size: 1.05rem; line-height: 1.65; color: var(--scaid-muted, #6b5f5a); }
-  :deep(a) { color: var(--scaid-accent, #8a503a); text-decoration: underline; text-underline-offset: .18em; }
+  padding: 30px 0 26px;
+  background: var(--scaid-soft);
+  border-bottom: 1px solid var(--scaid-line);
+  .display-5 { margin: 0 0 10px; text-align: left; font-size: clamp(2rem, 2.7vw, 2.4rem); font-weight: 600; letter-spacing: -.025em; line-height: 1.2; }
+  p { max-width: 75ch; margin: 0; font-size: 1rem; line-height: 1.6; color: var(--scaid-muted); }
+  :deep(a) { color: var(--scaid-accent); text-decoration: underline; text-underline-offset: .18em; }
 }
-.exploration-content { padding-top: 2rem; }
-.exploration-form { max-width: 100%; }
-.query-field { margin-bottom: 1.75rem; }
+.exploration-content { padding-top: 24px; }
+.exploration-form { max-width: 100%; padding: 24px; background: var(--scaid-soft); border: 1px solid var(--scaid-line); border-radius: 12px; }
+.primary-query-row { display: grid; grid-template-columns: minmax(0, 640px) minmax(180px, 1fr); align-items: start; gap: 24px; }
+.query-field { min-width: 0; margin-bottom: 0; }
 .el-select { width: 100%; }
-.exploration-form :deep(.el-form-item__label) { color: var(--scaid-ink, #2b2320); font-weight: 600; }
-.exploration-form :deep(.el-select__wrapper) { min-height: 44px; }
-.optional-filters { min-width: 0; margin: 0; border-top: 1px solid var(--scaid-line, #e5ddd7); }
-.optional-filters summary { min-height: 44px; padding: .75rem 0; color: var(--scaid-accent, #8a503a); font-size: .9rem; line-height: 1.5; cursor: pointer; overflow-wrap: anywhere; }
+.exploration-form :deep(.el-form-item__label) { margin-bottom: 8px; color: var(--scaid-ink); font-size: .875rem; font-weight: 600; line-height: 1.4; }
+.exploration-form :deep(.el-select__wrapper) { min-height: 44px; background: #fff; }
+.query-field :deep(.el-select__wrapper) { min-height: 48px; }
+.optional-filters { min-width: 0; margin: 20px 0 0; border-top: 1px solid var(--scaid-line); }
+.optional-filters summary { min-height: 44px; padding: 12px 0 10px; color: var(--scaid-accent); font-size: .875rem; line-height: 1.5; cursor: pointer; overflow-wrap: anywhere; }
 .optional-filters summary:hover { text-decoration: underline; text-underline-offset: 3px; }
-.optional-filters summary:focus-visible { outline: 2px solid var(--scaid-accent, #8a503a); outline-offset: 3px; }
-.filter-fields { min-width: 0; margin: 0; padding: .5rem 0 0; border: 0; }
-.filter-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.optional-filters summary:focus-visible { outline: 2px solid var(--scaid-accent); outline-offset: 3px; }
+.filter-fields { min-width: 0; margin: 0; padding: 8px 0 0; border: 0; }
+.filter-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.filter-grid--pathway { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .filter-grid .el-form-item { min-width: 0; margin-bottom: 0; }
-.form-actions { display: flex; align-items: center; gap: 1rem; margin-top: 1.5rem; }
-.form-actions .el-button { min-height: 44px; padding: 0 1.75rem; font-weight: 600; }
-.form-actions p { margin: 0; color: var(--scaid-muted, #6b5f5a); font-size: .9rem; }
-.publication-scope { max-width: 75ch; margin: .9rem 0 0; color: var(--scaid-muted, #6b5f5a); font-size: .9rem; line-height: 1.6; }
-.publication-scope a { color: var(--scaid-accent, #8a503a); text-decoration: underline; text-underline-offset: .18em; }
+.form-actions { display: flex; align-items: flex-start; flex-direction: column; gap: 8px; padding-top: 28px; }
+.form-actions .el-button { min-height: 48px; padding: 0 24px; font-weight: 600; }
+.form-actions p { max-width: 34ch; margin: 0; color: var(--scaid-muted); font-size: .8125rem; line-height: 1.5; }
+.publication-scope { max-width: 75ch; margin: 12px 0 0; color: var(--scaid-muted); font-size: .8125rem; line-height: 1.6; }
+.publication-scope a { color: var(--scaid-accent); text-decoration: underline; text-underline-offset: .18em; }
 .inline-recovery { display: flex; align-items: center; flex-wrap: wrap; gap: .75rem; margin: 1rem 0; }
 .inline-recovery .el-alert { flex: 1 1 280px; }
 .inline-recovery .el-button, .results-recovery .el-button { min-height: 44px; }
 .suggestion-footer { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; gap: .5rem; white-space: normal; font-size: .85rem; }
-.search-results { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--scaid-line, #e5ddd7); }
-.results-heading { display: flex; align-items: baseline; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; margin-bottom: 1rem; }
-.results-heading h2 { margin: 0; font-size: 1.3rem; font-weight: 700; }
-.results-heading p { display: flex; flex-wrap: wrap; gap: .75rem; margin: 0; font-size: .9rem; color: var(--scaid-muted, #6b5f5a); }
-.results-heading strong { color: var(--scaid-ink, #2b2320); font-weight: 600; }
-.results-placeholder { padding: 1.5rem; background: var(--scaid-soft, #f8f5f2); border-radius: 12px; }
+.search-results { margin-top: 28px; }
+.results-heading { display: flex; align-items: baseline; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; margin-bottom: 16px; }
+.results-heading h2 { margin: 0; font-size: 1.25rem; font-weight: 600; letter-spacing: -.015em; }
+.results-heading p { display: flex; flex-wrap: wrap; gap: .75rem; margin: 0; font-size: .875rem; color: var(--scaid-muted); }
+.results-heading strong { color: var(--scaid-ink); font-weight: 600; }
+.results-placeholder { padding: 24px; background: var(--scaid-soft); border-radius: 12px; }
 .results-placeholder h3 { margin: 0 0 .5rem; font-size: 1rem; font-weight: 600; }
-.results-placeholder p, .loading-results > p { max-width: 72ch; margin: 0; color: var(--scaid-muted, #6b5f5a); font-size: .95rem; line-height: 1.6; }
+.results-placeholder p, .loading-results > p { max-width: 72ch; margin: 0; color: var(--scaid-muted); font-size: .95rem; line-height: 1.6; }
 .results-recovery { display: grid; justify-items: start; gap: 1rem; }
-.results-toolbar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1.25rem; }
+.results-toolbar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 16px; }
 .page-size-control { display: flex; align-items: center; gap: .75rem; }
-.page-size-control label, .page-position { margin: 0; color: var(--scaid-muted, #6b5f5a); font-size: .85rem; font-variant-numeric: tabular-nums; }
+.page-size-control label, .page-position { margin: 0; color: var(--scaid-muted); font-size: .8125rem; font-variant-numeric: tabular-nums; }
 .page-size-control .el-select { width: 80px; }
 .page-size-control :deep(.el-select__wrapper) { min-height: 44px; }
 .pagination-control { display: flex; align-items: center; flex-wrap: wrap; gap: .75rem; }
 .el-pagination { --el-pagination-button-width: 40px; --el-pagination-button-height: 44px; max-width: 100%; padding: 0; }
-.results-footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--scaid-line, #e5ddd7); }
-.file-box { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 1.25rem; }
+.results-footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--scaid-line); }
+.file-box { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 24px; }
 .file-item {
   min-width: 0;
   margin: 0;
   background: #fff;
-  border: 1px solid var(--scaid-line, #e5ddd7);
+  border: 1px solid var(--scaid-line);
   border-radius: 12px;
-  transition: border-color .18s ease;
-  &:hover, &:focus-within { border-color: var(--scaid-accent, #8a503a); }
-  figcaption { padding: .9rem 1rem 1rem; border-top: 1px solid var(--scaid-line, #e5ddd7); font-size: .9rem; line-height: 1.5; overflow-wrap: anywhere; }
+  transition: border-color 160ms ease-out;
+  &:hover, &:focus-within { border-color: var(--scaid-accent); }
+  figcaption { padding: 16px 20px 18px; border-top: 1px solid var(--scaid-line); font-size: .9rem; line-height: 1.5; overflow-wrap: anywhere; }
 }
-.figure-link { display: flex; aspect-ratio: 1; align-items: center; justify-content: center; padding: .5rem; border-radius: 12px 12px 0 0; }
-.figure-link:focus-visible { outline: 3px solid var(--scaid-accent, #8a503a); outline-offset: 3px; }
-.figure-link img { display: block; width: 100%; height: 100%; object-fit: contain; background: #fff; }
-.figure-scope { display: block; font-weight: 600; }
-.figure-hint { display: block; margin-top: .4rem; color: var(--scaid-muted, #6b5f5a); font-size: .8rem; }
-.loading-results .file-box { margin-top: 1.25rem; }
-.plot-skeleton { padding: .75rem; border: 1px solid var(--scaid-line, #e5ddd7); border-radius: 12px; }
-.skeleton-image { aspect-ratio: 1; background: var(--scaid-soft, #f8f5f2); border-radius: 6px; }
-.skeleton-caption { width: 65%; height: .85rem; margin: 1rem 0 .5rem; background: var(--scaid-line, #e5ddd7); border-radius: 3px; }
+.figure-scope { display: block; color: var(--scaid-ink); font-weight: 600; }
+.figure-hint { display: block; margin-top: 6px; color: var(--scaid-muted); font-size: .8125rem; }
+.loading-results .file-box { margin-top: 20px; }
+.plot-skeleton { padding: 12px; border: 1px solid var(--scaid-line); border-radius: 12px; }
+.skeleton-image { aspect-ratio: 1; background: var(--scaid-soft); border-radius: 6px; }
+.skeleton-caption { width: 65%; height: .85rem; margin: 1rem 0 .5rem; background: var(--scaid-line); border-radius: 3px; }
+@media (max-width: 991px) {
+  .primary-query-row { grid-template-columns: minmax(0, 1fr) 200px; gap: 20px; }
+  .filter-grid, .filter-grid--pathway { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 @media (max-width: 640px) {
   .exploration-page { padding-bottom: 2.5rem; }
-  .exploration-intro { padding: 1.75rem 0; }
+  .exploration-intro { padding: 24px 0; }
   .exploration-intro .display-5 { font-size: 1.75rem; }
   .exploration-intro p { font-size: 1rem; }
-  .exploration-content { padding-top: 1.5rem; }
-  .filter-grid { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
-  .form-actions { align-items: stretch; flex-direction: column; gap: .75rem; }
+  .exploration-content { padding-top: 20px; }
+  .exploration-form { padding: 20px 16px; }
+  .primary-query-row { display: block; }
+  .filter-grid, .filter-grid--pathway { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .form-actions { align-items: stretch; padding-top: 12px; gap: 8px; }
   .form-actions .el-button { width: 100%; }
-  .form-actions p { font-size: .85rem; }
-  .search-results { margin-top: 2rem; }
-  .results-placeholder { padding: 1.25rem; }
+  .form-actions p { max-width: none; }
+  .search-results { margin-top: 24px; }
+  .results-placeholder { padding: 20px; }
   .results-toolbar { align-items: stretch; flex-direction: column; }
   .page-size-control, .pagination-control { justify-content: space-between; }
   .el-pagination { --el-pagination-button-width: 44px; }
+  .file-item figcaption { padding: 14px 16px 16px; }
   .plot-skeleton:not(:first-child) { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {

@@ -186,6 +186,7 @@ curl -OJ "https://scaid01.com/api/h5-file/273/download/"   # RNA matrix, IBD_GSE
 defineOptions({ name: 'ScaidDocumentation' })
 import { onMounted, ref } from 'vue'
 import { getRequest } from '@/api/home'
+import { summarizeCatalogue } from '@/utils/catalogueSummary'
 
 const glossary = ref([])
 const glossaryLoading = ref(false)
@@ -200,15 +201,7 @@ async function loadGlossary() {
   try {
     const rows = await getRequest('/cell-data-all/', { format: 'json' })
     if (!Array.isArray(rows)) throw new Error('Invalid catalogue response')
-    const uniq = values => new Set(values.filter(Boolean)).size
-    catalogueSummary.value = {
-      objects: rows.length,
-      sources: uniq(rows.map(row => row.dataset_label || row.dataset_id)),
-      conditions: uniq(rows.map(row => row.disease_label || row.disease_full_name || row.disease_name)),
-      tissues: uniq(rows.map(row => (row.tissue_label || row.tissue || '').toLowerCase())),
-      cells: rows.reduce((sum, row) => sum + (Number(row.cell_count) || 0), 0),
-      samples: rows.reduce((sum, row) => sum + (Number(row.sample_size) || 0), 0),
-    }
+    catalogueSummary.value = summarizeCatalogue(rows)
     const byCode = new Map()
     for (const row of rows) {
       const code = row.abbreviation || '—'
@@ -265,50 +258,51 @@ const scrollToSection = (sectionId) => {
 </script>
 
 <style scoped>
-.documentation-page { display: flex; max-width: 1320px; margin: 0 auto; background: #fff; color: var(--scaid-ink); }
-.sidebar { position: sticky; top: 88px; align-self: flex-start; max-height: calc(100vh - 104px); width: 270px; flex-shrink: 0; overflow-y: auto; padding: 28px 16px; background: var(--scaid-soft); border-right: 1px solid var(--scaid-line); }
-.sidebar-heading { margin: 0 8px 20px; font-size: 20px; font-weight: 650; color: var(--scaid-ink); }
+.documentation-page { display: flex; gap: 48px; max-width: 1280px; padding: 0 32px; margin: 0 auto; background: #fff; color: var(--scaid-ink); }
+.sidebar { position: sticky; top: 92px; align-self: flex-start; max-height: calc(100dvh - 108px); width: 232px; flex-shrink: 0; overflow-y: auto; padding: 32px 20px 28px 0; background: #fff; border-right: 1px solid var(--scaid-line); }
+.sidebar-heading { margin: 0 12px 24px; font-size: 18px; font-weight: 600; color: var(--scaid-ink); }
 .contents-toggle { display: none; }
 .menu-group { margin-bottom: 18px; }
-.menu-group-title { margin: 0 8px 6px; font-size: 14px; font-weight: 650; color: var(--scaid-muted); }
+.menu-group-title { margin: 0 12px 6px; font-size: 13px; font-weight: 600; color: var(--scaid-muted); }
 .submenu { list-style: none; padding: 0; margin: 0; }
-.submenu button { display: block; width: 100%; text-align: left; border: 0; border-radius: 5px; background: transparent; color: #495057; padding: 10px 12px; line-height: 1.4; font-size: 15px; cursor: pointer; }
-.submenu button:hover { color: var(--scaid-accent); background: #efe6df; }
-.submenu button.active { color: var(--scaid-accent); font-weight: 650; background: #ede0d7; }
+.submenu button { display: block; width: 100%; text-align: left; border: 0; min-height: 44px; border-radius: 6px; background: transparent; color: var(--scaid-muted); padding: 10px 12px; line-height: 1.4; font-size: 14px; cursor: pointer; }
+.submenu button:hover { color: var(--scaid-ink); background: var(--scaid-soft); }
+.submenu button.active { color: var(--scaid-accent); font-weight: 500; background: var(--scaid-accent-soft); }
 button:focus-visible, a:focus-visible, .table-scroll:focus-visible { outline: 2px solid var(--scaid-focus); outline-offset: 3px; }
-.guide-content { min-width: 0; flex: 1; padding: 36px clamp(24px, 4vw, 56px) 60px; }
+.guide-content { min-width: 0; flex: 1; padding: 40px 0 64px; }
 .guide-content section { max-width: 75ch; margin: 0 auto 42px; padding-bottom: 32px; border-bottom: 1px solid var(--scaid-line); scroll-margin-top: 100px; }
 .guide-content section:last-child { border-bottom: 0; margin-bottom: 0; }
 .guide-content section:focus { outline: none; }
 .review-date { font-size: 14px; color: var(--scaid-muted); }
-h1 { margin: 0 0 12px; font-size: 2rem; font-weight: 650; line-height: 1.25; color: var(--scaid-ink); }
-h2 { margin: 0 0 18px; font-size: 25px; line-height: 1.3; color: #493c36; }
-h3 { font-size: 20px; margin: 24px 0 12px; line-height: 1.4; }
+h1 { margin: 0 0 12px; font-size: 2.25rem; font-weight: 600; line-height: 1.2; letter-spacing: -.025em; color: var(--scaid-ink); }
+h2 { margin: 0 0 16px; font-size: 24px; font-weight: 600; line-height: 1.3; color: var(--scaid-ink); }
+h3 { font-size: 19px; font-weight: 600; margin: 28px 0 12px; line-height: 1.4; }
 p, li, dd { font-size: 16px; line-height: 1.75; }
 p { margin: 0 0 16px; }
-.lead { font-size: 19px; color: #59646c; }
+.lead { font-size: 18px; color: var(--scaid-muted); }
 ol, .guide-content ul { padding-left: 25px; margin: 0 0 20px; }
 li { margin-bottom: 10px; }
 .submenu li { margin: 0; }
 a { color: var(--scaid-accent); text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
 .example-link { display: inline-block; margin: 2px 0 20px; font-weight: 600; }
-.note { border: 1px solid var(--scaid-line); border-radius: 6px; padding: 12px 16px; background: var(--scaid-soft); }
-.scope-summary { display: flex; gap: 24px; margin: 22px 0; padding: 22px; background: #f8f5f1; border-radius: 6px; }
+.note { border-radius: 8px; padding: 16px 20px; background: var(--scaid-soft); }
+.scope-summary { display: flex; gap: 32px; margin: 24px 0; padding: 20px 0; border-top: 1px solid var(--scaid-line); border-bottom: 1px solid var(--scaid-line); }
 .scope-summary div { flex: 1; }
-.scope-summary strong { display: block; font-size: 30px; color: #88523c; line-height: 1.3; }
+.scope-summary strong { display: block; font-size: 28px; font-weight: 500; color: var(--scaid-ink); line-height: 1.3; font-variant-numeric: tabular-nums; }
 .scope-summary span { display: block; margin-top: 6px; font-size: 14px; }
 .table-scroll { overflow-x: auto; margin: 18px 0; }
 table { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.6; }
-th, td { text-align: left; padding: 12px; border: 1px solid #dde2e6; vertical-align: top; }
-thead { background: #f1f4f6; }
+th, td { text-align: left; padding: 13px 16px; border-bottom: 1px solid var(--scaid-line); vertical-align: top; }
+thead { background: var(--scaid-soft); }
+th { font-weight: 500; }
 code { font-size: .9em; color: #6c4434; background: #f4f4f3; padding: 2px 4px; border-radius: 3px; overflow-wrap: anywhere; }
-pre { max-width: 100%; padding: 18px; background: #f4f4f3; border: 1px solid #e4e6e8; border-radius: 5px; overflow-x: auto; }
-pre code { padding: 0; background: transparent; color: #33424b; overflow-wrap: normal; }
+pre { max-width: 100%; padding: 18px; background: var(--scaid-soft); border-radius: 8px; overflow-x: auto; }
+pre code { padding: 0; background: transparent; color: var(--scaid-ink); overflow-wrap: normal; }
 .troubleshooting-list dt { margin-top: 18px; color: #493c36; font-weight: 700; }
 .troubleshooting-list dd { margin: 6px 0 0; }
 .back-to-top { border: 1px solid #9b5f47; border-radius: 5px; background: #fff; color: #845038; padding: 10px 16px; cursor: pointer; }
 @media (max-width: 991px) {
-  .documentation-page { display: block; }
+  .documentation-page { display: block; padding: 0 20px; }
   .sidebar { position: static; max-height: none; width: 100%; border-right: 0; border-bottom: 1px solid var(--scaid-line); padding: 14px 16px; overflow: visible; }
   .sidebar-top { display: flex; justify-content: space-between; gap: 16px; align-items: center; }
   .sidebar-heading { margin: 0; font-size: 18px; }
@@ -318,7 +312,7 @@ pre code { padding: 0; background: transparent; color: #33424b; overflow-wrap: n
   .menu-group { margin-bottom: 0; }
   .menu-group-title { font-size: 12px; }
   .submenu button { min-height: 44px; font-size: 14px; padding: 9px 8px; }
-  .guide-content { overflow: visible; padding: 26px 20px 40px; }
+  .guide-content { overflow: visible; padding: 28px 0 40px; }
   .guide-content section { scroll-margin-top: 100px; margin-bottom: 28px; padding-bottom: 22px; }
   h1 { font-size: 1.75rem; }
   h2 { font-size: 23px; }
@@ -329,7 +323,7 @@ pre code { padding: 0; background: transparent; color: #33424b; overflow-wrap: n
   .sidebar nav { grid-template-columns: 1fr 1fr; }
   .menu-group:last-child { grid-column: 1 / -1; }
   .menu-group:last-child .submenu { display: grid; grid-template-columns: 1fr 1fr; }
-  .guide-content { padding-right: 16px; padding-left: 16px; }
+  .guide-content { padding-right: 0; padding-left: 0; }
   .scope-summary { display: block; }
   .scope-summary div + div { margin-top: 16px; }
   th, td { padding: 8px; font-size: 13px; overflow-wrap: anywhere; }

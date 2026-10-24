@@ -1,3 +1,10 @@
+# Interface update — 24 October 2026
+
+- Refine navigation, spacing, typography, responsive layouts and catalogue browsing while retaining the medical illustration and existing scientific figures.
+- Host the IBM Plex Sans Latin WOFF2 locally with its complete SIL Open Font License 1.1 and source checksum.
+- Count conditions by stable catalogue codes so mixed-cohort descriptions do not create another condition.
+- This interface update does not change scientific data, analysis outputs, backend code or the original two atlases. The scientific source version remains 0.3.1-ad20261024.
+
 # 0.3.1-ad20261024 — 24 October 2026
 
 - Synchronize five custom application files with the actual live source; add ADT download schema and manifest-driven overview stems.

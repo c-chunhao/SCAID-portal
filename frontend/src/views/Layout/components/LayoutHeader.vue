@@ -30,6 +30,10 @@
             >{{ item.name }}</router-link>
           </li>
         </ul>
+        <a class="source-link" href="https://github.com/c-chunhao/SCAID-portal" target="_blank" rel="noopener noreferrer" aria-label="SCAID source code on GitHub (opens in a new tab)">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4m8-8 4 4-4 4m-3-12-2 16" /></svg>
+          Source code
+        </a>
       </div>
     </nav>
   </header>
@@ -97,7 +101,6 @@ onBeforeUnmount(() => {
   z-index: 100;
   width: 100%;
   background: #fff;
-  border-top: 3px solid var(--scaid-accent, #8a503a);
   border-bottom: 1px solid var(--scaid-line, #e5ddd7);
 }
 
@@ -105,7 +108,7 @@ onBeforeUnmount(() => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 24px;
   min-height: 76px;
 }
 
@@ -121,17 +124,18 @@ onBeforeUnmount(() => {
 
 .brand img {
   display: block;
-  width: 78px;
-  height: 65px;
+  width: 66px;
+  height: 55px;
   object-fit: contain;
 }
 
 .brand-text {
-  max-width: 290px;
-  font-size: .875rem;
+  max-width: 220px;
+  font-size: .8125rem;
   line-height: 1.45;
 }
 
+.navigation-links { display: flex; align-items: center; gap: 24px; }
 .navigation-list {
   display: flex;
   align-items: center;
@@ -145,11 +149,11 @@ onBeforeUnmount(() => {
   display: flex;
   align-items: center;
   min-height: 44px;
-  padding: 10px 12px;
-  border-radius: 4px;
+  padding: 10px 14px;
+  border-radius: 6px;
   color: var(--scaid-ink, #2b2320);
   font-size: .9375rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   white-space: nowrap;
   text-decoration: none;
@@ -166,8 +170,12 @@ onBeforeUnmount(() => {
 
 .navigation-link[aria-current='page'] {
   color: var(--scaid-accent, #8a503a);
-  text-decoration: underline;
+  background: var(--scaid-accent-soft);
 }
+
+.source-link { display: inline-flex; align-items: center; gap: 7px; min-height: 44px; color: var(--scaid-muted); font-size: .8125rem; font-weight: 500; text-decoration: none; white-space: nowrap; }
+.source-link svg { width: 18px; height: 18px; }
+.source-link:hover { color: var(--scaid-accent); text-decoration: underline; }
 
 .brand:focus-visible,
 .navigation-link:focus-visible,
@@ -222,6 +230,7 @@ onBeforeUnmount(() => {
   }
 
   .navigation-links.is-open { display: block; }
+  .source-link { padding: 10px 12px; margin-top: 8px; }
 
   .navigation-list {
     display: grid;
