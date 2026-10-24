@@ -85,10 +85,13 @@
 
       <section class="search-results" aria-labelledby="results-heading" :aria-busy="state.loading">
         <div class="results-heading">
-          <h2 id="results-heading">Plots</h2>
-          <p v-if="state.searched && !state.loading && !state.error && state.total" role="status">
-            <strong>{{ state.total }} found</strong><span>Showing {{ firstResult }}–{{ lastResult }}</span>
-          </p>
+          <div class="results-heading-copy">
+            <h2 id="results-heading">Plots</h2>
+            <p v-if="state.searched && !state.loading && !state.error && state.total" role="status">
+              <strong>{{ state.total }} found</strong><span v-if="totalPages > 1">Showing {{ firstResult }}–{{ lastResult }}</span>
+            </p>
+          </div>
+          <ShareQueryLink v-if="state.searched && !state.loading && !state.error && state.total" :href="shareHref" />
         </div>
         <div v-if="state.loading" class="loading-results">
           <p role="status">Loading {{ title }} plots…</p>
@@ -108,14 +111,14 @@
           <p>Try another {{ kind === 'gene' ? 'gene' : 'pathway' }}, or clear an optional filter and search again.</p>
         </div>
         <template v-else-if="state.searched">
-          <div class="results-toolbar">
+          <div v-if="state.total > 10" class="results-toolbar">
             <div class="page-size-control">
               <label for="plots-per-page">Plots per page</label>
               <el-select id="plots-per-page" :model-value="state.pageSize" @update:model-value="changePageSize">
                 <el-option v-for="size in [10, 20, 50, 100]" :key="size" :label="String(size)" :value="size" />
               </el-select>
             </div>
-            <div class="pagination-control">
+            <div v-if="totalPages > 1" class="pagination-control">
               <span class="page-position">Page {{ state.page }} of {{ totalPages }}</span>
               <el-pagination
                 :current-page="state.page"
@@ -126,15 +129,18 @@
                 @update:current-page="changePage"
               />
             </div>
-            <ShareQueryLink :href="shareHref" :disabled="state.loading" />
           </div>
           <div class="file-box">
             <figure v-for="item in state.files" :key="item.id" class="file-item">
-              <FigurePreview :src="item.thumb_url || getFullImageUrl(item.image)" :full-src="getFullImageUrl(item.image)" :alt="`${title} plot for ${form.pdf_name} in ${figureLabel(item)}`" square />
               <figcaption>
-                <span class="figure-scope">{{ figureLabel(item) }}</span>
-                <span class="figure-hint">Select figure to open full resolution</span>
+                <h3>{{ form.pdf_name }}</h3>
+                <p class="figure-scope">{{ figureLabel(item) }}</p>
               </figcaption>
+              <FigurePreview :src="item.thumb_url || getFullImageUrl(item.image)" :full-src="getFullImageUrl(item.image)" :alt="`${title} plot for ${form.pdf_name} in ${figureLabel(item)}`" square />
+              <details v-if="item.name || item.relative_path" class="figure-file-details">
+                <summary>File details</summary>
+                <p>{{ item.name || item.relative_path.split('/').pop() }}</p>
+              </details>
             </figure>
           </div>
           <div v-if="state.total > state.pageSize" class="results-footer">
@@ -336,7 +342,8 @@ onBeforeUnmount(() => {
 .inline-recovery .el-button, .results-recovery .el-button { min-height: 44px; }
 .suggestion-footer { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; gap: .5rem; white-space: normal; font-size: .85rem; }
 .search-results { margin-top: 28px; }
-.results-heading { display: flex; align-items: baseline; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; margin-bottom: 16px; }
+.results-heading { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; margin-bottom: 16px; }
+.results-heading-copy { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 16px; }
 .results-heading h2 { margin: 0; font-size: 1.25rem; font-weight: 600; letter-spacing: -.015em; }
 .results-heading p { display: flex; flex-wrap: wrap; gap: .75rem; margin: 0; font-size: .875rem; color: var(--scaid-muted); }
 .results-heading strong { color: var(--scaid-ink); font-weight: 600; }
@@ -361,10 +368,13 @@ onBeforeUnmount(() => {
   border-radius: 12px;
   transition: border-color 160ms ease-out;
   &:hover, &:focus-within { border-color: var(--scaid-accent); }
-  figcaption { padding: 16px 20px 18px; border-top: 1px solid var(--scaid-line); font-size: .9rem; line-height: 1.5; overflow-wrap: anywhere; }
+  figcaption { padding: 16px 20px 12px; font-size: .9rem; line-height: 1.5; overflow-wrap: anywhere; }
+  figcaption h3 { margin: 0; color: var(--scaid-ink); font-size: 1.125rem; font-weight: 600; letter-spacing: -.015em; }
 }
-.figure-scope { display: block; color: var(--scaid-ink); font-weight: 600; }
-.figure-hint { display: block; margin-top: 6px; color: var(--scaid-muted); font-size: .8125rem; }
+.figure-scope { margin: 4px 0 0; color: var(--scaid-muted); font-size: .8125rem; }
+.figure-file-details { padding: 0 20px; border-top: 1px solid var(--scaid-line); }
+.figure-file-details summary { display: list-item; width: fit-content; min-height: 44px; padding: 11px 0; color: var(--scaid-muted); font-size: .8125rem; cursor: pointer; }
+.figure-file-details p { margin: 0 0 14px; overflow-wrap: anywhere; color: var(--scaid-muted); font-size: .8125rem; }
 .loading-results .file-box { margin-top: 20px; }
 .plot-skeleton { padding: 12px; border: 1px solid var(--scaid-line); border-radius: 12px; }
 .skeleton-image { aspect-ratio: 1; background: var(--scaid-soft); border-radius: 6px; }
@@ -390,7 +400,8 @@ onBeforeUnmount(() => {
   .results-toolbar { align-items: stretch; flex-direction: column; }
   .page-size-control, .pagination-control { justify-content: space-between; }
   .el-pagination { --el-pagination-button-width: 44px; }
-  .file-item figcaption { padding: 14px 16px 16px; }
+  .file-item figcaption { padding: 14px 16px 10px; }
+  .figure-file-details { padding: 0 16px; }
   .plot-skeleton:not(:first-child) { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {

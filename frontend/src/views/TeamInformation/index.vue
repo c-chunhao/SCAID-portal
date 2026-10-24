@@ -19,8 +19,15 @@
           class="image-item"
         >
           <figure class="image-container">
+            <figcaption>
+              <h2>{{ caption(image.name) }}</h2>
+              <p>Integrated lymphocyte atlas · {{ image.name.startsWith('FIG') && Number(image.name.match(/^FIG(\d+)/)?.[1]) <= 6 ? 'T/NK cells' : 'B/plasma cells' }}</p>
+            </figcaption>
             <FigurePreview :src="image.url" :full-src="image.original" :alt="caption(image.name)" />
-            <figcaption>{{ caption(image.name) }}</figcaption>
+            <details class="figure-file-details">
+              <summary>File details</summary>
+              <p>{{ image.name }}</p>
+            </details>
           </figure>
         </div>
       </div>
@@ -49,13 +56,19 @@ const caption = (fileName) => {
     .replace(/^T_NK/, 'T/NK').replace(/^B_Plasma/, 'B/plasma')
     .replace(/_celltype$/, ' cell types').replace(/_Marker_layer(\d)/, ' marker panel, layer $1')
     .replace(/_/g, ' ')
-  return match ? `Fig. ${match[1]} · ${body}` : body
+  return body
 }
 </script>
 
 <style scoped lang="scss">
 .atlas-intro { max-width: 75ch; margin: 0 0 32px; h1 { font-size: 2.25rem; font-weight: 600; line-height: 1.2; letter-spacing: -.025em; color: var(--scaid-ink); margin: 0 0 16px; } p { color: var(--scaid-muted); line-height: 1.7; margin: 0; } }
-figcaption { font-size: .9rem; color: var(--scaid-muted); padding: 16px 20px; background: #fff; border-top: 1px solid var(--scaid-line); }
+figcaption { padding: 20px 24px 12px; background: #fff; }
+figcaption h2 { margin: 0; color: var(--scaid-ink); font-size: 1.25rem; font-weight: 600; line-height: 1.4; letter-spacing: -.015em; }
+figcaption p { margin: 4px 0 0; color: var(--scaid-muted); font-size: .875rem; }
+.figure-file-details { padding: 0 24px; border-top: 1px solid var(--scaid-line); }
+.figure-file-details summary { width: fit-content; min-height: 44px; padding: 11px 0; color: var(--scaid-muted); font-size: .8125rem; cursor: pointer; }
+.figure-file-details p { margin: 0 0 14px; color: var(--scaid-muted); font-size: .8125rem; overflow-wrap: anywhere; }
+.image-container :deep(.preview-image) { padding: 12px 24px 24px; }
 .body2 {
   padding-top: 40px;
   padding-bottom: 48px;
@@ -119,6 +132,8 @@ figcaption { font-size: .9rem; color: var(--scaid-muted); padding: 16px 20px; ba
 @media (max-width: 767px) {
   .body2 { padding-top: 28px; }
   .atlas-intro h1 { font-size: 1.8rem; }
-  figcaption { padding: 14px 16px; }
+  figcaption { padding: 16px 16px 10px; }
+  .figure-file-details { padding: 0 16px; }
+  .image-container :deep(.preview-image) { padding: 10px 16px 16px; }
 }
 </style>

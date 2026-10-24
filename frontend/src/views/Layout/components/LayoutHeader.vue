@@ -3,7 +3,7 @@
     <nav class="container navigation" aria-label="Main navigation">
       <router-link to="/Home" class="brand" aria-label="SCAID home" @click="selectNavigation">
         <img src="@/assets/images/SCAID_nav.png" alt="SCAID" width="84" height="70" />
-        <span class="brand-text">Single-Cell AutoImmune Disease database</span>
+        <span class="brand-text"><span>Single-Cell AutoImmune</span><span>Disease database</span></span>
       </router-link>
       <button
         ref="menuButton"
@@ -108,8 +108,8 @@ onBeforeUnmount(() => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
-  min-height: 76px;
+  gap: 32px;
+  min-height: 80px;
 }
 
 .brand {
@@ -124,22 +124,27 @@ onBeforeUnmount(() => {
 
 .brand img {
   display: block;
-  width: 66px;
-  height: 55px;
+  width: 74px;
+  height: 62px;
   object-fit: contain;
 }
 
 .brand-text {
-  max-width: 220px;
+  display: grid;
+  gap: 2px;
+  color: var(--scaid-ink);
   font-size: .8125rem;
-  line-height: 1.45;
+  font-weight: 500;
+  line-height: 1.35;
+  white-space: nowrap;
 }
+.brand-text > span:last-child { color: var(--scaid-muted); font-weight: 400; }
 
-.navigation-links { display: flex; align-items: center; gap: 24px; }
+.navigation-links { display: flex; align-items: center; gap: 20px; }
 .navigation-list {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -149,10 +154,10 @@ onBeforeUnmount(() => {
   display: flex;
   align-items: center;
   min-height: 44px;
-  padding: 10px 14px;
+  padding: 10px 12px;
   border-radius: 6px;
   color: var(--scaid-ink, #2b2320);
-  font-size: .9375rem;
+  font-size: .875rem;
   font-weight: 500;
   line-height: 1.5;
   white-space: nowrap;
@@ -170,15 +175,17 @@ onBeforeUnmount(() => {
 
 .navigation-link[aria-current='page'] {
   color: var(--scaid-accent, #8a503a);
-  background: var(--scaid-accent-soft);
+  background: transparent;
+  text-decoration: underline;
 }
 
-.source-link { display: inline-flex; align-items: center; gap: 7px; min-height: 44px; color: var(--scaid-muted); font-size: .8125rem; font-weight: 500; text-decoration: none; white-space: nowrap; }
-.source-link svg { width: 18px; height: 18px; }
+.source-link { display: inline-flex; align-items: center; gap: 7px; min-height: 44px; padding-left: 20px; border-left: 1px solid var(--scaid-line); color: var(--scaid-muted); font-size: .8125rem; font-weight: 500; text-decoration: none; white-space: nowrap; }
+.source-link svg { width: 16px; height: 16px; }
 .source-link:hover { color: var(--scaid-accent); text-decoration: underline; }
 
 .brand:focus-visible,
 .navigation-link:focus-visible,
+.source-link:focus-visible,
 .menu-toggle:focus-visible {
   outline: 2px solid var(--scaid-accent, #8a503a);
   outline-offset: 3px;
@@ -191,7 +198,7 @@ onBeforeUnmount(() => {
   gap: 8px;
   min-height: 44px;
   padding: 9px 12px;
-  border: 1px solid #c9bcb5;
+  border: 1px solid var(--scaid-line-strong);
   border-radius: 6px;
   color: var(--scaid-ink, #2b2320);
   background: #fff;
@@ -203,7 +210,10 @@ onBeforeUnmount(() => {
 }
 
 @media (max-width: 1199px) {
-  .brand-text { display: none; }
+  .navigation { gap: 20px; }
+  .navigation-links { gap: 12px; }
+  .navigation-link { padding-right: 10px; padding-left: 10px; }
+  .source-link { padding-left: 12px; }
 }
 
 @media (max-width: 991px) {
@@ -214,9 +224,11 @@ onBeforeUnmount(() => {
   }
 
   .brand img {
-    width: 72px;
-    height: 60px;
+    width: 70px;
+    height: 58px;
   }
+
+  .brand-text { display: none; }
 
   .menu-toggle { display: flex; }
 
@@ -230,7 +242,7 @@ onBeforeUnmount(() => {
   }
 
   .navigation-links.is-open { display: block; }
-  .source-link { padding: 10px 12px; margin-top: 8px; }
+  .source-link { min-height: 44px; padding: 10px 12px; margin-top: 8px; border-left: 0; }
 
   .navigation-list {
     display: grid;
@@ -240,6 +252,7 @@ onBeforeUnmount(() => {
   .navigation-link {
     min-height: 46px;
     padding: 10px 12px;
+    font-size: .9375rem;
     text-underline-offset: 4px;
   }
 

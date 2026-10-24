@@ -1,3 +1,9 @@
+# Interface refinement, second round — 24 October 2026
+
+- Refine home-page condition browsing, navigation emphasis, dataset shortcuts and atlas figure controls.
+- Add a shared figure viewer with bounded zoom, drag-to-pan, fit, reset and accessible controls.
+- Keep the scientific source version at 0.3.1-ad20261024; scientific data, analysis outputs, backend code and existing figure assets are unchanged.
+
 # Interface update — 24 October 2026
 
 - Refine navigation, spacing, typography, responsive layouts and catalogue browsing while retaining the medical illustration and existing scientific figures.

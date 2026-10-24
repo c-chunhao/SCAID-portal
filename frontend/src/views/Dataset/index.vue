@@ -174,20 +174,21 @@
             <el-empty v-if="fileList.length === 0" description="No figures available for this selection" />
             <template v-else>
               <div class="figure-summary">
-                <p class="result-summary" aria-live="polite">{{ imageCount }} figures · Page {{ imagePage }} of {{ Math.ceil(imageCount / IMAGE_PAGE_SIZE) }}</p>
-                <p>Open a figure to inspect it at full resolution.</p>
+                <p class="result-summary" aria-live="polite">{{ imageCount }} figures<span v-if="imageCount > IMAGE_PAGE_SIZE"> · Page {{ imagePage }} of {{ Math.ceil(imageCount / IMAGE_PAGE_SIZE) }}</span></p>
+
               </div>
               <div v-for="group in imageGroups" :key="group.name" class="fileBox">
-                <div v-for="item in group.files" :key="item.id" class="file_item">
-                  <div class="figure-heading">
+                <figure v-for="item in group.files" :key="item.id" class="file_item">
+                  <figcaption class="figure-heading">
                     <h2 class="figure-title">{{ figureTitle(item) }}</h2>
-                    <p class="figure-source">{{ item.name || item.pdf_name || activeName }}</p>
-                  </div>
-                  <a :href="getFullImageUrl(item.image)" target="_blank" rel="noopener" title="Open the full-resolution figure in a new tab">
-                    <img :src="item.thumb_url || getFullImageUrl(item.image)" :style="getImageStyle(item)" :width="item.image_width || undefined" :height="item.image_height || undefined" :alt="`${currentRow.dataset_id}: ${item.name || activeName}`" loading="lazy" decoding="async" @error="imageLoadError = true" />
-                    <span class="figure-link-label">Open full-resolution figure <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M11 4h5v5M16 4l-8 8M8 4H4v12h12v-4" /></svg></span>
-                  </a>
-                </div>
+                    <p class="figure-source">{{ [currentRow.abbreviation, currentRow.dataset_label || currentRow.dataset_id, currentRow.tissue_label || currentRow.tissue].filter(Boolean).join(' · ') }}</p>
+                  </figcaption>
+                  <FigurePreview :src="item.thumb_url || getFullImageUrl(item.image)" :full-src="getFullImageUrl(item.image)" :image-style="getImageStyle(item)" :width="item.image_width || undefined" :height="item.image_height || undefined" :alt="`${figureTitle(item)} · ${currentRow.dataset_label || currentRow.dataset_id} · ${currentRow.tissue_label || currentRow.tissue}`" @imageerror="imageLoadError = true" />
+                  <details class="figure-file-details">
+                    <summary>File details</summary>
+                    <p>{{ item.name || item.pdf_name || activeName }}</p>
+                  </details>
+                </figure>
               </div>
             </template>
             <el-pagination v-if="imageCount > IMAGE_PAGE_SIZE" :current-page="imagePage" :page-size="IMAGE_PAGE_SIZE" :total="imageCount" layout="prev, pager, next" @current-change="loadImages" />
@@ -207,6 +208,7 @@ import { getFullImageUrl } from '@/config';
 import { datasetQuery, explorationQuery, querySignature, readDatasetQuery } from '@/utils/queryState';
 import { hasPublishedAnalysis, hasPublishedModule, publicationNotes } from '@/utils/moduleAvailability';
 import ShareQueryLink from '@/components/ShareQueryLink.vue';
+import FigurePreview from '@/components/FigurePreview.vue';
 
 const route = useRoute();
 const router = useRouter();
@@ -584,7 +586,7 @@ onBeforeUnmount(() => { disposed = true; });
 .figure-summary { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px 16px; }
 .figure-summary > p { margin: 0; color: var(--dataset-muted); font-size: 0.85rem; line-height: 1.5; }
 .fileBox { margin: 24px 0; }
-.figure-heading { padding: 18px 20px 0; }
+.figure-heading { padding: 18px 20px 12px; }
 .figure-source { margin: 4px 0 0; color: var(--dataset-muted); font-size: .8125rem; line-height: 1.5; overflow-wrap: anywhere; }
 .dataset-facts { display: grid; grid-template-columns: minmax(0, 1.6fr) repeat(3, minmax(0, 1fr)); gap: 24px; margin: 0 0 16px; padding: 20px 24px; border-radius: 12px; background: var(--dataset-soft); }
 .dataset-facts > div { min-width: 0; }
@@ -601,12 +603,13 @@ onBeforeUnmount(() => { disposed = true; });
 .publication-details summary { width: fit-content; min-height: 44px; padding: 10px 0; color: var(--dataset-accent); font-size: .9rem; cursor: pointer; }
 .publication-details summary:hover { text-decoration: underline; text-underline-offset: 3px; }
 .publication-details[open] { margin-bottom: 20px; }
-.file_item { margin-bottom: 24px; border: 1px solid var(--dataset-line); border-radius: 12px; background: #fff; transition: border-color 160ms ease-out; }
+.file_item { margin: 0 0 24px; border: 1px solid var(--dataset-line); border-radius: 12px; background: #fff; transition: border-color 160ms ease-out; }
 .file_item:hover, .file_item:focus-within { border-color: var(--dataset-accent); }
-.file_item > a { display: block; padding: 20px; border-radius: 12px; color: var(--dataset-accent); text-decoration: none; }
-.file_item img { display: block; margin: 0 auto; object-fit: contain; }
-.figure-link-label { display: flex; justify-content: flex-end; align-items: center; gap: 6px; margin-top: 16px; font-size: .8125rem; line-height: 1.5; }
-.figure-link-label svg { flex-shrink: 0; width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.file_item :deep(.preview-image) { padding: 12px 20px 20px; }
+.file_item :deep(.preview-image img) { margin: 0 auto; }
+.figure-file-details { padding: 0 20px; border-top: 1px solid var(--dataset-line); }
+.figure-file-details summary { width: fit-content; min-height: 44px; padding: 11px 0; color: var(--dataset-muted); font-size: .8125rem; cursor: pointer; }
+.figure-file-details p { margin: 0 0 14px; color: var(--dataset-muted); font-size: .8125rem; overflow-wrap: anywhere; }
 .loading-container { padding: 24px 0; min-height: 230px; color: var(--dataset-muted); }
 .loading-container p { margin: 0 0 24px; }
 .menu-content :deep(.el-pagination) { justify-content: center; flex-wrap: wrap; gap: 6px; margin-top: 24px; }
@@ -642,8 +645,9 @@ onBeforeUnmount(() => { disposed = true; });
   .download-menu { padding-bottom: 14px; }
   .download-menu :deep(.el-button) { width: 100%; min-height: 44px; }
   .menu-content { padding-top: 16px; }
-  .figure-heading { padding: 16px 16px 0; }
-  .file_item > a { padding: 16px; }
+  .figure-heading { padding: 16px 16px 10px; }
+  .file_item :deep(.preview-image) { padding: 10px 16px 16px; }
+  .figure-file-details { padding: 0 16px; }
   .figure-link-label { justify-content: flex-start; }
 }
 @media (prefers-reduced-motion: reduce) {

@@ -377,5 +377,76 @@
     },
     "template_permission_expanded": false,
     "tag_or_release_created": false
+  },
+  "visual_refinement_round2_20261024": {
+    "base_commit": "e8a16da2b840beb3c835c6ea5c7fc226ff659f01",
+    "base_tree": "029ee7ed63652f0699d0ad52a42053c34a65a45b",
+    "scope": "Nine identified frontend component, view, utility and test files, plus three publication manifests",
+    "copied_application_files": [
+      {
+        "public_path": "frontend/src/components/ExplorationSearch.vue",
+        "live_source_sha256": "a3e14e833d07b9d1a7b441a68a6e28932815fed4c22ccea24e6c490baabaf5e5",
+        "published_sha256": "a3e14e833d07b9d1a7b441a68a6e28932815fed4c22ccea24e6c490baabaf5e5",
+        "byte_identical_to_live": true
+      },
+      {
+        "public_path": "frontend/src/components/FigurePreview.vue",
+        "live_source_sha256": "b9fc74da9db209cc140cdc0705d368b40d04bc62ca6b4ebaf494cd264fcdecaf",
+        "published_sha256": "b9fc74da9db209cc140cdc0705d368b40d04bc62ca6b4ebaf494cd264fcdecaf",
+        "byte_identical_to_live": true
+      },
+      {
+        "public_path": "frontend/src/components/FigureViewer.vue",
+        "live_source_sha256": "79a2d3eabb7c0b018b48b0355e2955fd96d2618724b58b31ef7d600774340181",
+        "published_sha256": "79a2d3eabb7c0b018b48b0355e2955fd96d2618724b58b31ef7d600774340181",
+        "byte_identical_to_live": true
+      },
+      {
+        "public_path": "frontend/src/utils/figureViewport.js",
+        "live_source_sha256": "9d4942a3e9fc47de13ad3929235a7670c9c812eb3dcc7c2e7e8f115c5eead9e6",
+        "published_sha256": "9d4942a3e9fc47de13ad3929235a7670c9c812eb3dcc7c2e7e8f115c5eead9e6",
+        "byte_identical_to_live": true
+      },
+      {
+        "public_path": "frontend/tests/figure-viewport.test.js",
+        "live_source_sha256": "e5e176c2cca194922733477cab265f4c2d72e609cf0ccf25f7515775efdc3a7a",
+        "published_sha256": "e5e176c2cca194922733477cab265f4c2d72e609cf0ccf25f7515775efdc3a7a",
+        "byte_identical_to_live": true
+      },
+      {
+        "public_path": "frontend/src/views/Home/index.vue",
+        "live_source_sha256": "71323f2a274bd4d1fedae4be075acc6a08b2c5838903050de1aa01af99d2331a",
+        "published_sha256": "71323f2a274bd4d1fedae4be075acc6a08b2c5838903050de1aa01af99d2331a",
+        "byte_identical_to_live": true
+      },
+      {
+        "public_path": "frontend/src/views/Dataset/index.vue",
+        "live_source_sha256": "ff9e7a0738d83401205c7bc6a3850e8fef41fc8f13e35e9e58afaa97e93c29bf",
+        "published_sha256": "ff9e7a0738d83401205c7bc6a3850e8fef41fc8f13e35e9e58afaa97e93c29bf",
+        "byte_identical_to_live": true
+      },
+      {
+        "public_path": "frontend/src/views/TeamInformation/index.vue",
+        "live_source_sha256": "b29b1e182bf61681ab0722fd3f327cecd807a13a23bd64d538fc02f4c5653931",
+        "published_sha256": "b29b1e182bf61681ab0722fd3f327cecd807a13a23bd64d538fc02f4c5653931",
+        "byte_identical_to_live": true
+      },
+      {
+        "public_path": "frontend/src/views/Layout/components/LayoutHeader.vue",
+        "live_source_sha256": "c17288ba9a38f338ec6b089a912b747b9e864aeb4a3a737b8cb677f892cbd867",
+        "published_sha256": "c17288ba9a38f338ec6b089a912b747b9e864aeb4a3a737b8cb677f892cbd867",
+        "byte_identical_to_live": true
+      }
+    ],
+    "source_hash_lock_sha256": "18c988b7414c346034695a075f2d221f428427d99430aa67615354b1f378d183",
+    "production_deployment_receipt_sha256": "2bc853b77ab9a7e3d34c30b0931768a151f6d8e84d957df3ab3049bbb4d51041",
+    "deployment_source_lock_sha256": "52de52b2d79a3be7968d7c19f417be1989ec6df0f7704a1ae7081f38d5918c6a",
+    "scientific_source_version": "0.3.1-ad20261024",
+    "scientific_sources_unchanged": true,
+    "backend_unchanged": true,
+    "scientific_results_or_catalogue_data_changed": false,
+    "original_figure_assets_unchanged": true,
+    "template_permission_expanded": false,
+    "tag_or_release_created": false
   }
 }
