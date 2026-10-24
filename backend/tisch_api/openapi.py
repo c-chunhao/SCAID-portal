@@ -198,7 +198,7 @@ SCHEMA = {
         "/h5-file/": {
             "get": {
                 "summary": "Downloadable H5 files for one data object",
-                "description": "Requires dataset_record_id or name; without either the list is empty. Each object has an RNA matrix and AUCell, UCell and singscore pathway-score files (field `method`).",
+                "description": "Requires dataset_record_id or name; without either the list is empty. Registered files can include RNA, ADT and pathway-score matrices; available methods depend on the data object (field `method`).",
                 "parameters": [
                     _q("dataset_record_id", "id from /cell-data-all/.", {"type": "integer", "minimum": 1}),
                     _q("name", "Exact H5 file name (case-insensitive)."),
@@ -207,7 +207,7 @@ SCHEMA = {
                     _q("start_date", "Registered on or after (YYYY-MM-DD)."),
                     _q("end_date", "Registered on or before (YYYY-MM-DD)."),
                 ],
-                "responses": {"200": {"description": "Array; download_url is a same-origin path", "content": {"application/json": {"schema": {"type": "array", "items": {"type": "object", "properties": {"id": {"type": "integer"}, "name": {"type": "string"}, "method": {"type": "string", "enum": ["RNA", "AUCell", "UCell", "singscore", "RNA_counts_subset"]}, "file_size": {"type": "integer"}, "file_format": {"type": "string", "enum": ["H5", "H5AD"]}, "has_raw_counts": {"type": "boolean", "nullable": True}, "content_description": {"type": "string"}, "download_url": {"type": "string", "example": "/api/h5-file/273/download/"}}}}}}}, "400": {"description": "Invalid size or date parameter"}},
+                "responses": {"200": {"description": "Array; download_url is a same-origin path", "content": {"application/json": {"schema": {"type": "array", "items": {"type": "object", "properties": {"id": {"type": "integer"}, "name": {"type": "string"}, "method": {"type": "string", "enum": ["RNA", "ADT", "AUCell", "UCell", "singscore", "RNA_counts_subset"]}, "file_size": {"type": "integer"}, "file_format": {"type": "string", "enum": ["H5", "H5AD"]}, "has_raw_counts": {"type": "boolean", "nullable": True}, "content_description": {"type": "string"}, "download_url": {"type": "string", "example": "/api/h5-file/273/download/"}}}}}}}, "400": {"description": "Invalid size or date parameter"}},
             }
         },
         "/h5-file/{id}/": {

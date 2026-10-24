@@ -3035,6 +3035,83 @@
       "module_release": "scaid-modules-20261020",
       "study_context": "Peripheral blood monocytes were enriched by negative magnetic selection in the source study. Cell-group results describe the retained processed object, rather than unselected PBMC composition.",
       "figure_path_aliases": []
+    },
+    {
+      "source_row": "GSE332623-corrected-20261024",
+      "disease_name": "Atopic dermatitis",
+      "display_name": "Atopic dermatitis and healthy-reference PBMC cohort",
+      "abbreviation": "AD",
+      "dataset_id": "GSE332623",
+      "tissue": "PBMC",
+      "figure_path": "Atopic_Dermatitis/GSE332623/PBMC/",
+      "h5_paths": {
+        "RNA": "new_ad_20261024/RNA/Atopic_Dermatitis_GSE332623_PBMC_RNA.h5ad",
+        "ADT": "new_ad_20261024/ADT/Atopic_Dermatitis_GSE332623_PBMC_ADT.h5ad",
+        "AUCell": "new_ad_20261024/AUCell/Atopic_Dermatitis_GSE332623_PBMC_AUCell.h5ad",
+        "UCell": "new_ad_20261024/UCell/Atopic_Dermatitis_GSE332623_PBMC_UCell.h5ad",
+        "singscore": "new_ad_20261024/singscore/Atopic_Dermatitis_GSE332623_PBMC_singscore.h5ad"
+      },
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE332623",
+      "catalog_aliases": [],
+      "release_id": "scaid-GSE332623-corrected-20261024",
+      "scope_classification": "mixed_case_control_study_cohort",
+      "gene_render_mode": "rna_cache",
+      "study_context": "Mixed atopic dermatitis and healthy-reference PBMC cohort. The 27 labels represent technical libraries; cell-level donor and clinical groups are unassigned.",
+      "clinical_comparison_eligible": false,
+      "sample_label_kind": "technical_library",
+      "overview_stems": [
+        "Umap_library",
+        "Umap_Leiden",
+        "Umap_MajorCellType",
+        "MajorCellType_CellPro"
+      ],
+      "module_availability": {
+        "overview": true,
+        "marker": true,
+        "go": true,
+        "kegg": true,
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": true,
+        "cellchat_overview": true,
+        "downloads": true,
+        "marker_table": true
+      },
+      "availability_notes": [
+        "RNA and antibody measurements were processed separately; all source library identifiers and QC records are preserved.",
+        "Cell counts describe QC-retained library-barcode records from the deposited matrices. They are not independently confirmed donors or the published final-cell list.",
+        "Cell-type annotation combines reference predictions with RNA and antibody-marker checks; uncertain labels are retained.",
+        "CellChat uses eight annotated PBMC populations; unassigned records, provisional nonimmune predictions and groups with fewer than ten cells are excluded.",
+        "Pathway scores and predicted communication describe the pooled study cohort; no AD-versus-control or age-group comparison is provided."
+      ],
+      "h5_file_metadata": {
+        "RNA": {
+          "has_raw_counts": true,
+          "content_description": "Normalized RNA, source integer counts aggregated by gene symbol, cell annotations and embeddings; clinical groups unassigned.",
+          "sha256": "b9aa963123cb8f010d3e092e03507b70d02170afd93d32a6cdea2efe2a2c09ec"
+        },
+        "ADT": {
+          "has_raw_counts": true,
+          "content_description": "Separately processed antibody measurements, original integer ADT counts and matched cell metadata; clinical groups unassigned.",
+          "sha256": "f23a4fb3b3e1812b478b80f635d017fb4a9e111686f000fccfc09fa683dfa7c4"
+        },
+        "AUCell": {
+          "has_raw_counts": null,
+          "content_description": "AUCell scores for 356 KEGG gene sets; matched cells, metadata and embeddings.",
+          "sha256": "a87c7b41532777232d1584bed1b33515c3ff0f930ef7206254f73dbc2d70083e"
+        },
+        "UCell": {
+          "has_raw_counts": null,
+          "content_description": "UCell scores for 356 KEGG gene sets; matched cells, metadata and embeddings.",
+          "sha256": "8096fe3faa572cab30b9832e5d83e93e246ee7301ac431666d33f2781d69ddeb"
+        },
+        "singscore": {
+          "has_raw_counts": null,
+          "content_description": "singscore scores for 356 KEGG gene sets; matched cells, metadata and embeddings.",
+          "sha256": "0ed4882734f913748e5be922291ad4c5927928041cea4403ec94c9542ff3d01b"
+        }
+      },
+      "case_sensitive_gene_symbols": []
     }
   ],
   "releases": [
@@ -3047,5 +3124,6 @@
       "integrated_atlas_changed": false
     }
   ],
-  "module_release": "scaid-modules-20261020"
+  "module_release": "scaid-modules-20261020",
+  "release": "v0.3.1-ad20261024"
 }

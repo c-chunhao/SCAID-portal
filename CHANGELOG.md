@@ -1,3 +1,11 @@
+# 0.3.1-ad20261024 — 24 October 2026
+
+- Synchronize five custom application files with the actual live source; add ADT download schema and manifest-driven overview stems.
+- Record the 80-object/5,172,657-cell-record catalogue and the 581,725-record/27-technical-library mixed GSE332623 cohort. Donor/clinical status remains Unresolved; comparisons are disabled. Existing atlases are unchanged.
+- Publish actual RNA/ADT ingest, RNA QC, PCA-selection/annotation, final corrected three-score, sparse-exact CellChat, CSC/DB-cache and independent validation sources with original-to-public SHA256 mapping.
+- Include 81 raw-member checksums, observed environment/package versions, QC thresholds/priors, seeds, model/resource identities and executable frozen-RNA replay glue. No data matrices, cell tables, model weights, credentials or unknown-template source expansion.
+- Distinguish historical proof receipts, new local source checks and unrepeated clean raw-to-final reproduction. Exact external KEGG/model/DB resources remain prerequisites; no new project or third-party licence is granted.
+
 # 0.3.0-rc1 candidate — 21 October 2026
 
 - Prepare 31 additional objects for CellChat views and searchable/downloadable cell-type-versus-rest marker tables, with exact-object availability and input checks.

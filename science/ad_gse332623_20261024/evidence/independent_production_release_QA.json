@@ -1,0 +1,47 @@
+{
+  "status": "validated",
+  "reviewed_utc": "2026-10-23T21:43:53.446530+00:00",
+  "scope": "Independent SQL/manifest/archive verification of recorded public HTTPS/browser acceptance",
+  "network_requests": 0,
+  "production_mutations": false,
+  "record_id": 176,
+  "release_plan_sha256": "ec8afc9b51c7181d3c2a4a88e3d956532fbb9696b483b311888d2861b091d538",
+  "selected_CellChat": {
+    "root": "@PROJECT@/00.corrected_analysis/GSE332623/pathway_and_cellchat/cellchat_sparse_exact_candidate",
+    "selection_sha256": "6cbded3642e00b3ebff35275c9c19fa24c420993d2af0470e125fd82af29a0b4",
+    "completion_sha256": "761e0ee0f41cfacef5ed9c973a5077920a6abd18247370e013974574405eca4e",
+    "nboot": 100,
+    "modeled_cells": 528739
+  },
+  "SQL": {
+    "catalogue_rows": 80,
+    "old_79_full_rows_unchanged": true,
+    "old_H5_full_rows_unchanged": true,
+    "new_H5_rows": 5,
+    "new_figure_rows": 35085,
+    "all_new_H5_and_figure_paths_match_plan": true
+  },
+  "manifests": {
+    "old_79_asset_entries_unchanged": true,
+    "old_gene_and_marker_objects_unchanged": true,
+    "mixed_study_context_explicit": true,
+    "sample_label_kind": "technical_library",
+    "clinical_comparison_eligible": false,
+    "gene_index_under_configured_root": true
+  },
+  "source_status": {
+    "old_mixed_modality_outputs_still_withheld": true,
+    "corrected_release_recorded": true
+  },
+  "delivery": {
+    "archive": "@WORK@/SCAID_AD重分析与上线材料_20261024.zip",
+    "sha256": "63706902593905c2800f5b328ee512a16096fea632f9e6731af46f2b17f48be6",
+    "members": 294,
+    "all_member_SHA256_match_manifest": true,
+    "no_private_backup_secret_or_hidden_dependency_members": true,
+    "scanned_text_members": 232,
+    "text_scan_scope": "JSON/TXT/TSV/CSV/PY/R/MJS/MD/CPP/H/PATCH members below20MB each; high-confidence private-key and GitHub/OpenAI token patterns only",
+    "scanned_text_no_high_confidence_literal_secret_patterns": true
+  },
+  "restrictions": "Mixed-cohort technical browsing; cell-level donor/clinical mapping unresolved; rare cell-type predictions remain provisional; no expert confirmation claimed."
+}

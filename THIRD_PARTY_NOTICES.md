@@ -23,3 +23,9 @@ included as frontend assets. Their authorship and reuse rights are not assigned
 by this notice. Per-cell matrices, donor/clinical metadata and the full external
 research data library are excluded. No project-wide software/data licence or
 third-party permission has been invented by preparing this snapshot.
+
+The 24 October update adds project analysis scripts and changes only identified
+custom application files. It does not redistribute another template checkout or
+assert a new licence for the historical template-derived frontend. The
+original-to-public source map documents path-only scientific-source redaction.
+External KEGG, CellTypist models and CellChat DB weights are not bundled.

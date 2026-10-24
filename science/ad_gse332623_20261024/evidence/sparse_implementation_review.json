@@ -1,0 +1,121 @@
+{
+  "status": "passed_implementation_review_not_formal_network",
+  "signed_utc": "2026-10-23T21:15:43.058181+00:00",
+  "implementation_kind": "Exact nonnegative sparse-positive type7 quartiles with unchanged installed R mean",
+  "source_RNA_sha256": "b9aa963123cb8f010d3e092e03507b70d02170afd93d32a6cdea2efe2a2c09ec",
+  "reviewed_code_sha256": {
+    "run_cellchat_sparse_optimized.py": "f7825da9d7d5661210276ad0e2b4adcacbd3da64d7f36dd95291e1321be1f1e3",
+    "run_cellchat_sparse_optimized.R": "ec14ccf2ef01e0dd4db5c6f1bf0fc7554491478cdfea3ced0f673d12d72ddd76",
+    "cellchat_exact_mean.R": "8e357819fa04319454d912d7168c7c075b51929aea08bbc4d6d84daa82f1fe96",
+    "render_cellchat.R": "fe8d0e7298ee86668aa74b9ee57df803f1ab75c35ddefd464fad1dc945c4685c",
+    "pathway_core.R": "c13e3e02883f5738b2a246df142b6df1554a1beadf30481c45eb9aed960beeff",
+    "symbol_alias_view.R": "69d1f154586ecf263ec02068552814b0a098bfb03d8b99e11744a93b745f6d88",
+    "sparse_trimean_prototype.R": "7c9ce91687bae63a649810d01117fe516ea57aa7974f67bda3948082a7bcca49",
+    "sparse_trimean_prototype.cpp": "4976fda1fcc4b61a594e4750bef3f232970c87cb194e2df7ee93c1653c62199e"
+  },
+  "reviewed_code_paths": {
+    "run_cellchat_sparse_optimized.py": "@WORK@/pathway_and_cellchat/code/run_cellchat_sparse_optimized.py",
+    "run_cellchat_sparse_optimized.R": "@WORK@/pathway_and_cellchat/code/run_cellchat_sparse_optimized.R",
+    "cellchat_exact_mean.R": "@WORK@/pathway_and_cellchat/code/cellchat_exact_mean.R",
+    "render_cellchat.R": "@WORK@/pathway_and_cellchat/code/render_cellchat.R",
+    "pathway_core.R": "@WORK@/pathway_and_cellchat/code/pathway_core.R",
+    "symbol_alias_view.R": "@WORK@/pathway_and_cellchat/code/symbol_alias_view.R",
+    "sparse_trimean_prototype.R": "@WORK@/pathway_and_cellchat/code/sparse_trimean_prototype.R",
+    "sparse_trimean_prototype.cpp": "@WORK@/pathway_and_cellchat/code/sparse_trimean_prototype.cpp"
+  },
+  "prototype_copies_exactly_match_tested_source": true,
+  "cache_review": {
+    "receipt_path": "@WORK@/pathway_and_cellchat/performance_cache/normalized_DB_expression_cache_receipt.json",
+    "receipt_sha256": "48af3e8dbad15bd0da758f467081a1ff13f2a6f2889b934d5de74c3cbf0a8b7c",
+    "cache_sha256": "557ebe5f3fcc9b9f744c5ba68455b6a25100d31ec03d15e678d82853144fa363",
+    "shape": [
+      581725,
+      1434
+    ],
+    "modeled_cells": 528739,
+    "zero_columns_retained": 48,
+    "entire_source_components_and_axes_independently_verified": true
+  },
+  "full_axis_review": {
+    "path": "@WORK@/analysis/validation/sparse_triMean_prototype/formal_axis_means.json",
+    "sha256": "d8593b225408280b3aa156c33c004afc3673bd68d6fa435ef544846322bd949c",
+    "status": "validated_formal_axis_means_only_not_network"
+  },
+  "independent_review": {
+    "path": "@WORK@/validation/triMean_type7_review/independent_sparse_helper_review.json",
+    "sha256": "ce0512bb39d216a66cbbea98c073251f16249ea1e9a03190d86231e13b2bc225",
+    "status": "passed_independent_sparse_helper_review_not_formal_network"
+  },
+  "independent_full_axis_review": {
+    "path": "@WORK@/validation/triMean_type7_review/independent_sparse_formal_axis_supplement.json",
+    "sha256": "50f444c6ecbb152e270ad52e36a689012d106cc9c2b62745ee5a2898f0f9943c",
+    "status": "passed_independent_sparse_formal_axis_supplement_not_network"
+  },
+  "pilot_review": {
+    "path": "@WORK@/analysis/validation/sparse_triMean_prototype/pilot100.json",
+    "sha256": "cc8a90d4e4260cfbc9a3b194b721fe0f12eb378f74ad480a2a2f0607e37f85f5",
+    "status": "prototype_bitwise_equivalent_not_formal_release"
+  },
+  "pilot_probability_arrays_sha256": "383b1dcae676985700e7da15840d26974627d36e79e8a5a9c28bfa4a9f5445fd",
+  "full_axis_array_sha256": "d99a5f3b5570e67d29717ebc59f1f80f1abd63a894804c5d49564cf9039d3960",
+  "installed_official_function_source_sha256": "c9b8d9d52ca8debbd0aad6a140c788806b4e810a9b8beac77a63bd31fa8b4df6",
+  "official_quantile_primary_source": "https://raw.githubusercontent.com/cran/collapse/2.1.6/src/fnth_fmedian_fquantile.c",
+  "evidence": {
+    "real_pilot": {
+      "cells": 17536,
+      "groups": 7,
+      "nboot": 100,
+      "all_prob_pval_and_dimnames_bitwise_identical": true,
+      "official_seconds": 258.382,
+      "pretransposed_seconds": 73.701,
+      "sparse_seconds": 15.549999999999999
+    },
+    "formal_axis": {
+      "cells": 528739,
+      "genes": 1434,
+      "groups": 8,
+      "observed_and_first_two_seed2026_permutations_all_values_and_attributes_bitwise_identical": true,
+      "independent_values_compared": 34416,
+      "prepare_seconds": 5.969999999999999,
+      "comparisons": [
+        {
+          "grouping": "Observed",
+          "gene_group_values": 11472,
+          "bitwise_all_values_and_attributes_identical": true,
+          "official_triMean_helper_seconds": 42.493,
+          "sparse_positive_seconds": 0.625
+        },
+        {
+          "grouping": "Seed2026_permutation_1",
+          "gene_group_values": 11472,
+          "bitwise_all_values_and_attributes_identical": true,
+          "official_triMean_helper_seconds": 38.239000000000004,
+          "sparse_positive_seconds": 0.4579999999999984
+        },
+        {
+          "grouping": "Seed2026_permutation_2",
+          "gene_group_values": 11472,
+          "bitwise_all_values_and_attributes_identical": true,
+          "official_triMean_helper_seconds": 37.794,
+          "sparse_positive_seconds": 0.5289999999999964
+        }
+      ]
+    },
+    "independent_helper_scope": "QC compiled its own small tests, verified AST hooks and no RNG changes, then read all real-pilot probability and P arrays; formal-axis supplement independently verified all34416 values, full canonical order and group counts, all masked nonzeros for max, and exact full two permutations"
+  },
+  "unchanged_model_parameters": {
+    "workers": 1,
+    "type": "triMean",
+    "nboot": 100,
+    "seed": 2026,
+    "population_size": false,
+    "raw_use": true,
+    "distance_use": false,
+    "PPI_projection": false,
+    "minimum_cells": 10,
+    "significance": "Strict nominal p<0.05, not donor-level or multiple-testing-adjusted evidence"
+  },
+  "arithmetic_domain": "Only finite nonnegative RNA log1p(cp10k), same scalar max scaling, unique gene/cell axes, nonempty factor levels. Positive values retain original cell indices; implicit zeros counted in original group sizes; collapse2.1.6 type7 a+gamma*(b-a) followed by unchanged R mean(Q25,Q50,Q50,Q75). NA/negative inputs explicitly rejected; no generic support claim.",
+  "approved_execution_scope": "Root-controlled isolated one-worker cellchat_sparse_exact_candidate only after v1 candidate has stopped, retaining original reference. All immutable source RNA/H5 and clinical Unresolved scope unchanged. This is implementation equivalence, not a completed formal network; final actual outputs, source binding, saved probabilities and rendering still require independent validation.",
+  "formal_network_completed_by_this_review": false
+}

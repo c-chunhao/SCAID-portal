@@ -1,6 +1,24 @@
 # SCAID source snapshot
 
-**Version 0.3.0-rc1 candidate · 21 October 2026**
+**Version 0.3.1-ad20261024 · 24 October 2026**
+
+This revision synchronizes the current custom application files and adds the
+[actual GSE332623 analysis source, environment, parameters and reproduction guide](science/ad_gse332623_20261024/README.md).
+The current catalogue has **80 source–condition–tissue objects, 5,172,657 cell
+records and 1,122 entry-specific technical/sample labels**. The added mixed
+AD/healthy-reference cohort retains 581,725 records in 27 technical libraries;
+donor and clinical groups are unresolved and clinical comparisons are disabled.
+The two original integrated atlases remain unchanged. Current API and UI source
+concordance is recorded in [the source map](science/ad_gse332623_20261024/SOURCE_EXECUTION_MAP.json).
+
+The default source retains all earlier backend modules. The current deployed
+Dataset UI has figure tabs and download entries; the earlier candidate's
+MarkerTable UI component is retained as source but has no current Dataset tab.
+Its earlier candidate validation statements below describe their original dates
+and scope. The 24 October source update does not newly reproduce those historical
+checks or a complete clean raw-data-to-final scientific analysis.
+
+## Earlier 21 October module release context
 
 This repository contains the current Vue/Vite frontend and Django REST backend
 of the [SCAID portal](https://scaid01.com/), plus a reviewed public asset mapping,

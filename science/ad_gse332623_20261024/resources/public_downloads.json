@@ -1,0 +1,56 @@
+{
+  "record_id": 176,
+  "retrieved_date": "2026-10-24",
+  "files": [
+    {
+      "id": 510,
+      "name": "Atopic_Dermatitis_GSE332623_PBMC_RNA.h5ad",
+      "file_size": 5096973409,
+      "download_url": "/api/h5-file/510/download/",
+      "method": "RNA",
+      "file_format": "H5AD",
+      "has_raw_counts": true,
+      "content_description": "Normalized RNA, source integer counts aggregated by gene symbol, cell annotations and embeddings; clinical groups unassigned."
+    },
+    {
+      "id": 511,
+      "name": "Atopic_Dermatitis_GSE332623_PBMC_ADT.h5ad",
+      "file_size": 382862867,
+      "download_url": "/api/h5-file/511/download/",
+      "method": "ADT",
+      "file_format": "H5AD",
+      "has_raw_counts": true,
+      "content_description": "Separately processed antibody measurements, original integer ADT counts and matched cell metadata; clinical groups unassigned."
+    },
+    {
+      "id": 512,
+      "name": "Atopic_Dermatitis_GSE332623_PBMC_AUCell.h5ad",
+      "file_size": 1037236512,
+      "download_url": "/api/h5-file/512/download/",
+      "method": "AUCell",
+      "file_format": "H5AD",
+      "has_raw_counts": null,
+      "content_description": "AUCell scores for 356 KEGG gene sets; matched cells, metadata and embeddings."
+    },
+    {
+      "id": 513,
+      "name": "Atopic_Dermatitis_GSE332623_PBMC_UCell.h5ad",
+      "file_size": 1021713847,
+      "download_url": "/api/h5-file/513/download/",
+      "method": "UCell",
+      "file_format": "H5AD",
+      "has_raw_counts": null,
+      "content_description": "UCell scores for 356 KEGG gene sets; matched cells, metadata and embeddings."
+    },
+    {
+      "id": 514,
+      "name": "Atopic_Dermatitis_GSE332623_PBMC_singscore.h5ad",
+      "file_size": 1048170119,
+      "download_url": "/api/h5-file/514/download/",
+      "method": "singscore",
+      "file_format": "H5AD",
+      "has_raw_counts": null,
+      "content_description": "singscore scores for 356 KEGG gene sets; matched cells, metadata and embeddings."
+    }
+  ]
+}

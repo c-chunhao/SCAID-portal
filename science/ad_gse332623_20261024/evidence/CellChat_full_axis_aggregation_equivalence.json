@@ -1,0 +1,55 @@
+{
+  "status": "validated_formal_axis_means_only_not_network",
+  "source_RNA_sha256": "b9aa963123cb8f010d3e092e03507b70d02170afd93d32a6cdea2efe2a2c09ec",
+  "source_cache_sha256": "557ebe5f3fcc9b9f744c5ba68455b6a25100d31ec03d15e678d82853144fa363",
+  "cells": 528739,
+  "genes": 1434,
+  "groups": 8,
+  "group_counts": {
+    "B cells": 60179,
+    "Dendritic cells": 4631,
+    "Monocytes": 171553,
+    "NK cells": 47772,
+    "pDC": 3327,
+    "Plasma cells": 671,
+    "Platelets": 145,
+    "T cells": 240461
+  },
+  "prepare_seconds": 5.969999999999999,
+  "comparisons": [
+    {
+      "grouping": "Observed",
+      "gene_group_values": 11472,
+      "bitwise_all_values_and_attributes_identical": true,
+      "official_triMean_helper_seconds": 42.493,
+      "sparse_positive_seconds": 0.625
+    },
+    {
+      "grouping": "Seed2026_permutation_1",
+      "gene_group_values": 11472,
+      "bitwise_all_values_and_attributes_identical": true,
+      "official_triMean_helper_seconds": 38.239000000000004,
+      "sparse_positive_seconds": 0.4579999999999984
+    },
+    {
+      "grouping": "Seed2026_permutation_2",
+      "gene_group_values": 11472,
+      "bitwise_all_values_and_attributes_identical": true,
+      "official_triMean_helper_seconds": 37.794,
+      "sparse_positive_seconds": 0.5289999999999964
+    }
+  ],
+  "seed": 2026,
+  "permutations_checked": 2,
+  "scope": "All 1434 genes and8groups on actual528739 CellChat records; normalized RNA unchanged, same max scaling and exact seed2026 first2 sample.int permutations; no communication model or running formal job modified",
+  "peak_memory_status": "VmHWM:\t14867520 kB",
+  "proof_array_sha256": "d99a5f3b5570e67d29717ebc59f1f80f1abd63a894804c5d49564cf9039d3960",
+  "prototype_source_sha256": {
+    "sparse_trimean_prototype.R": "7c9ce91687bae63a649810d01117fe516ea57aa7974f67bda3948082a7bcca49",
+    "sparse_trimean_prototype.cpp": "4976fda1fcc4b61a594e4750bef3f232970c87cb194e2df7ee93c1653c62199e"
+  },
+  "official_quantile_primary_source": "https://raw.githubusercontent.com/cran/collapse/2.1.6/src/fnth_fmedian_fquantile.c",
+  "official_runtime_function_sha256": "c9b8d9d52ca8debbd0aad6a140c788806b4e810a9b8beac77a63bd31fa8b4df6",
+  "fixed_runtime_scope": "Linux R4.3 / collapse2.1.6; finite nonnegative normalized RNA, exact quartile positions and R mean; no claim of generic NA/negative-input support",
+  "source_cache_receipt_sha256": "48af3e8dbad15bd0da758f467081a1ff13f2a6f2889b934d5de74c3cbf0a8b7c"
+}

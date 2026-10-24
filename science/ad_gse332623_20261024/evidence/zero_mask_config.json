@@ -1,0 +1,45 @@
+{
+  "input": "@PROJECT@/00.corrected_analysis/GSE332623/integration/RNA_normalized_annotated.h5ad",
+  "output": "@PROJECT@/00.corrected_analysis/GSE332623/pathway_and_cellchat/pathways",
+  "mode": "formal",
+  "object_id": "Atopic_Dermatitis/GSE332623/PBMC",
+  "code_dir": "@WORK@/pathway_and_cellchat/code",
+  "raw_scores": "@PROJECT@/00.corrected_analysis/GSE332623/pathway_and_cellchat/pathways/scores_all_methods.h5",
+  "genesets": "@PROJECT@/20240526_kegg_hsa_list.rds",
+  "genesets_sha256": "ccb053e043dc678796520c6e7c0a36ad8f09bd4dd8673e582dcd309526e608de",
+  "chunk_size": 1000,
+  "workers": 8,
+  "checkpoints": "@PROJECT@/00.corrected_analysis/GSE332623/pathway_and_cellchat/pathways/checkpoints",
+  "resource_pause_file": "@WORK@/pathway_and_cellchat/formal_pause_new_batches.flag",
+  "seed": 2026,
+  "AUCell_chunk_seed": "seed + chunk_index - 1; explicit SerialParam RNGseed",
+  "RNA_gene_universe": 33660,
+  "cell_count": 581725,
+  "source_sha256": "b9aa963123cb8f010d3e092e03507b70d02170afd93d32a6cdea2efe2a2c09ec",
+  "cell_axis_sha256": "485d3df1fd5684a0ff2bf42d95e2a993ca4ed2ff9bc393ddf21633384436c514",
+  "gene_axis_sha256": "3a7a11b1b19649a0045a782b84707b606f8b248ada21a45c20f3f1cd2989d6cf",
+  "ready_receipt": "@PROJECT@/00.corrected_analysis/GSE332623/integration/analysis_ready.json",
+  "algorithm_version": "RNA_full_universe_vectorized_v2",
+  "source_stat": {
+    "bytes": 5096973409,
+    "mtime_ns": 1792780023830809151
+  },
+  "pipeline_code_sha256": {
+    "run_pathways.py": "d971cf3286ad52764c4576396af720135f286ccb2a20bddaa86d53d1be52c1ea",
+    "run_pathways.R": "73a908753b54246b95ea27ce18d00762cca57466d55f27ce5211cfead13e404d",
+    "pathway_core.R": "c13e3e02883f5738b2a246df142b6df1554a1beadf30481c45eb9aed960beeff"
+  },
+  "assay_semantics": "Existing log1p normalized RNA only; no ADT features, filtering, relabeling or renormalization.",
+  "created_utc": "2026-10-23T19:25:53.019096+00:00",
+  "symbol_alias_path": "@WORK@/analysis/validation/resource_gene_crosswalk/approved_symbol_renames.tsv",
+  "symbol_alias_sha256": "1c08833b7f9be7ffec22501a97506c803d87d34c1febfcede02fc8f288dee3fd",
+  "symbol_alias_approval": "@WORK@/pathway_and_cellchat/KEGG_alias_mapping_approved.json",
+  "symbol_alias_approval_sha256": "520d7ae688800682474b372b250ff3b41f9034f9a3ac82cde8c3875e9b404a4b",
+  "AUCell_zero_mask_code_sha256": {
+    "aucell_zero_mask_core.R": "d12fc406928e399a08d7ac20b0eccafca2e9f33438de2107bce21d5900b826a6",
+    "run_aucell_zero_mask.R": "1337b264577cdd3aaf38a3545c5b61c2f2d8f5b4553531502cab2b42ee9776d8",
+    "symbol_alias_view.R": "69d1f154586ecf263ec02068552814b0a098bfb03d8b99e11744a93b745f6d88",
+    "run_pathways.py": "d971cf3286ad52764c4576396af720135f286ccb2a20bddaa86d53d1be52c1ea"
+  },
+  "AUCell_zero_mask_version": "RNA_scores_zero_mask_and_alias_v1"
+}

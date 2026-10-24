@@ -1,0 +1,55 @@
+## Independent official reference on full RNA first 1000 cells, unified mapping.
+args<-commandArgs(TRUE);stopifnot(length(args)==5)
+source(file.path(args[1],'pathway_core.R'))
+axes<-read_axes(args[2]);aliases<-read.delim(args[3],check.names=FALSE,stringsAsFactors=FALSE)
+impact<-read.delim(args[4],check.names=FALSE,stringsAsFactors=FALSE)
+out<-args[5];dir.create(out,recursive=TRUE,showWarnings=FALSE)
+stopifnot(nrow(aliases)==1172,all(aliases$source_symbol%in%axes$genes),!any(aliases$canonical_symbol%in%axes$genes),!anyDuplicated(aliases$source_symbol),!anyDuplicated(aliases$canonical_symbol))
+fh<-H5File$new(args[2],'r');mat<-read_rna_chunk(fh,axes$genes,axes$cells,1,1000);fh$close_all()
+original_genes<-rownames(mat)
+original_sets<-readRDS('@PROJECT@/20240526_kegg_hsa_list.rds')
+reverse<-setNames(aliases$source_symbol,aliases$canonical_symbol)
+sets<-lapply(original_sets,function(g){
+ g<-unique(as.character(g));physical<-g
+ missing<-!g%in%original_genes
+ physical[missing]<-unname(reverse[g[missing]])
+ unique(physical[!is.na(physical)&physical%in%original_genes])
+})
+names(sets)<-substr(names(original_sets),1,8)
+sets<-sets[lengths(sets)>=1&lengths(sets)<=500]
+included<-tolower(as.character(impact$included))=='true'
+stopifnot(length(sets)==356L,setequal(names(sets),impact$pathway_id[included]))
+stopifnot(identical(as.integer(lengths(sets)),as.integer(impact$corrected_RNA_gene_overlap[match(names(sets),impact$pathway_id)])))
+set.seed(2026L)
+rank_a<-AUCell_buildRankings(mat,plotStats=FALSE,splitByBlocks=TRUE,
+ BPPARAM=SerialParam(RNGseed=2026L),keepZeroesAsNA=FALSE,verbose=FALSE)
+r<-getRanking(rank_a);r[as.matrix(mat)==0]<-NA_integer_
+SummarizedExperiment::assay(rank_a,'ranking')<-r;rm(r);invisible(gc(FALSE))
+a<-as.matrix(getAUC(AUCell_calcAUC(sets,rank_a,nCores=1,normAUC=TRUE,
+ aucMaxRank=ceiling(.05*nrow(mat)),verbose=FALSE)))
+rm(rank_a);invisible(gc(FALSE))
+u<-UCell::ScoreSignatures_UCell(matrix=mat,features=sets,maxRank=1500,w_neg=1,
+ name='_UCell',ncores=1,chunk.size=1000,BPPARAM=SerialParam(),ties.method='average',force.gc=TRUE)
+u<-t(as.matrix(u[,paste0(names(sets),'_UCell'),drop=FALSE]));rownames(u)<-names(sets)
+r<-singscore::rankGenes(as.matrix(mat),tiesMethod='min')
+s<-t(vapply(sets,function(g)singscore::simpleScore(r,upSet=g,centerScore=FALSE)$TotalScore,numeric(ncol(mat))))
+colnames(s)<-colnames(mat);rm(r);invisible(gc(FALSE))
+values<-list(AUCell=a,UCell=u,singscore=s)
+stopifnot(all(vapply(values,function(x)all(is.finite(x))&&identical(dim(x),c(356L,1000L)),logical(1))))
+h<-H5File$new(file.path(out,'official_1000x356_unified_crosswalk.h5'),'w')
+h[['cell_ids']]<-colnames(mat);h[['pathway_ids']]<-names(sets)
+h[['source_RNA_genes']]<-original_genes
+for(method in names(values))h[[method]]<-values[[method]]
+h$close_all()
+sha<-function(p)substr(system2('sha256sum',shQuote(p),stdout=TRUE),1,64)
+report<-list(status='official_reference_completed',source_RNA=args[2],source_RNA_sha256='b9aa963123cb8f010d3e092e03507b70d02170afd93d32a6cdea2efe2a2c09ec',
+ cells=1000,RNA_genes=nrow(mat),pathways=356,pathway_ids=names(sets),seed=2026,aucMaxRank=1683,
+ source_RNA_axis_unchanged_on_disk=TRUE,source_RNA_axis_unchanged_in_memory=TRUE,
+ gene_set_member_matching='Existing direct RNA source member first; otherwise approved canonical member to unique original RNA source; deduplicate physical source rows',
+ available_one_to_one_renames=nrow(aliases),
+ aliases_sha256=sha(args[3]),sets_impact_sha256=sha(args[4]),
+ official_methods=list(AUCell='AUCell_buildRankings and AUCell_calcAUC; original zero RNA ranks explicitly NA',UCell='ScoreSignatures_UCell, maxRank1500, average ties',singscore='rankGenes ties min; simpleScore centerScore=FALSE'),
+ reference_h5=file.path(out,'official_1000x356_unified_crosswalk.h5'),reference_sha256=sha(file.path(out,'official_1000x356_unified_crosswalk.h5')),
+ packages=as.list(vapply(c('AUCell','UCell','singscore'),function(x)as.character(packageVersion(x)),character(1))),RSS_GiB=current_rss_gib())
+write_json(report,file.path(out,'official_1000x356_unified_crosswalk_receipt.json'),pretty=TRUE,auto_unbox=TRUE,digits=17)
+cat('OFFICIAL_UNIFIED_CROSSWALK_1000x356_COMPLETE\n')

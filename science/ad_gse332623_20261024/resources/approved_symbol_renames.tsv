@@ -1,0 +1,1173 @@
+source_symbol	canonical_symbol	source_ensembl_id	source_alias_confirmed	NCBI_gene_id	official_gene_name	canonical_reference_Ensembl_ids	canonical_present_in_RNA	identity_mapping	accepted	rejection_reason	annotation_version
+FAM132A	C1QTNF12	ENSG00000184163	True	388581	C1q and TNF related 12	ENSG00000184163	False	False	True		org.Hs.eg.db 3.18.0
+CPSF3L	INTS11	ENSG00000127054	True	54973	integrator complex subunit 11	ENSG00000127054	False	False	True		org.Hs.eg.db 3.18.0
+C1orf233	FNDC10	ENSG00000228594	True	643988	fibronectin type III domain containing 10	ENSG00000228594	False	False	True		org.Hs.eg.db 3.18.0
+FAM213B	PRXL2B	ENSG00000157870	True	127281	peroxiredoxin like 2B	ENSG00000157870	False	False	True		org.Hs.eg.db 3.18.0
+TP73-AS1	GFOD3P	ENSG00000227372	True	57212	Gfo/Idh/MocA-like oxidoreductase domain containing 3, pseudogene	ENSG00000227372	False	False	True		org.Hs.eg.db 3.18.0
+APITD1	CENPS	ENSG00000175279	True	378708	centromere protein S	ENSG00000175279	False	False	True		org.Hs.eg.db 3.18.0
+PTCHD2	DISP3	ENSG00000204624	True	57540	dispatched RND transporter family member 3	ENSG00000204624	False	False	True		org.Hs.eg.db 3.18.0
+C1orf158	CFAP107	ENSG00000157330	True	93190	cilia and flagella associated protein 107	ENSG00000157330	False	False	True		org.Hs.eg.db 3.18.0
+C1orf195	TMEM51-AS2	ENSG00000204464	True	727684	TMEM51 antisense RNA 2	ENSG00000204464	False	False	True		org.Hs.eg.db 3.18.0
+C1orf64	SRARP	ENSG00000183888	True	149563	steroid receptor associated and regulated protein	ENSG00000183888	False	False	True		org.Hs.eg.db 3.18.0
+RSG1	CPLANE2	ENSG00000132881	True	79363	ciliogenesis and planar polarity effector complex subunit 2	ENSG00000132881	False	False	True		org.Hs.eg.db 3.18.0
+PQLC2	SLC66A1	ENSG00000040487	True	54896	solute carrier family 66 member 1	ENSG00000040487	False	False	True		org.Hs.eg.db 3.18.0
+MINOS1	MICOS10	ENSG00000173436	True	440574	mitochondrial contact site and cristae organizing system subunit 10	ENSG00000173436	False	False	True		org.Hs.eg.db 3.18.0
+C1orf234	TEX46	ENSG00000227868	True	729059	testis expressed 46	ENSG00000227868	False	False	True		org.Hs.eg.db 3.18.0
+TCEB3	ELOA	ENSG00000011007	True	6924	elongin A	ENSG00000011007	False	False	True		org.Hs.eg.db 3.18.0
+TCEB3-AS1	ELOA-AS1	ENSG00000236810	True	100506963	ELOA antisense RNA 1	ENSG00000236810	False	False	True		org.Hs.eg.db 3.18.0
+TMEM57	MACO1	ENSG00000204178	True	55219	macoilin 1	ENSG00000204178	False	False	True		org.Hs.eg.db 3.18.0
+SEPN1	SELENON	ENSG00000162430	True	57190	selenoprotein N	ENSG00000162430	False	False	True		org.Hs.eg.db 3.18.0
+AIM1L	CRYBG2	ENSG00000176092	True	55057	crystallin beta-gamma domain containing 2	ENSG00000176092	False	False	True		org.Hs.eg.db 3.18.0
+FAM46B	TENT5B	ENSG00000158246	True	115572	terminal nucleotidyltransferase 5B	ENSG00000158246	False	False	True		org.Hs.eg.db 3.18.0
+ATPIF1	ATP5IF1	ENSG00000130770	True	93974	ATP synthase inhibitory factor subunit 1	ENSG00000130770	False	False	True		org.Hs.eg.db 3.18.0
+KIAA1522	NHSL3	ENSG00000162522	True	57648	NHS like 3	ENSG00000162522	False	False	True		org.Hs.eg.db 3.18.0
+YARS	YARS1	ENSG00000134684	True	8565	tyrosyl-tRNA synthetase 1	ENSG00000134684	False	False	True		org.Hs.eg.db 3.18.0
+ZMYM6NB	TMEM35B	ENSG00000243749	True	100506144	transmembrane protein 35B	ENSG00000243749	False	False	True		org.Hs.eg.db 3.18.0
+ADPRHL2	ADPRS	ENSG00000116863	True	54936	ADP-ribosylserine hydrolase	ENSG00000116863	False	False	True		org.Hs.eg.db 3.18.0
+LINC01137	LITATS1	ENSG00000233621	True	728431	lncRNA induced by TGF-beta and antagonizes TGF-beta signaling 1	ENSG00000233621	False	False	True		org.Hs.eg.db 3.18.0
+C1orf109	AIRIM	ENSG00000116922	True	54955	AFG2 interacting ribosome maturation factor	ENSG00000116922	False	False	True		org.Hs.eg.db 3.18.0
+UTP11L	UTP11	ENSG00000183520	True	51118	UTP11 small subunit processome component	ENSG00000183520	False	False	True		org.Hs.eg.db 3.18.0
+SLC2A1-AS1	SLC2A1-DT	ENSG00000227533	True	440584	SLC2A1 divergent transcript	ENSG00000227533	False	False	True		org.Hs.eg.db 3.18.0
+FAM183A	CFAP144	ENSG00000186973	True	440585	cilia and flagella associated protein 144	ENSG00000186973	False	False	True		org.Hs.eg.db 3.18.0
+C1orf228	ARMH1	ENSG00000198520	True	339541	armadillo like helical domain containing 1	ENSG00000198520	False	False	True		org.Hs.eg.db 3.18.0
+TCTEX1D4	DYNLT4	ENSG00000188396	True	343521	dynein light chain Tctex-type 4	ENSG00000188396	False	False	True		org.Hs.eg.db 3.18.0
+CCDC163P	CCDC163	ENSG00000280670	True	126661	CCDC163 homolog	ENSG00000280670	False	False	True		org.Hs.eg.db 3.18.0
+ZCCHC11	TUT4	ENSG00000134744	True	23318	terminal uridylyl transferase 4	ENSG00000134744	False	False	True		org.Hs.eg.db 3.18.0
+FAM159A	SHISAL2A	ENSG00000182183	True	348378	shisa like 2A	ENSG00000182183	False	False	True		org.Hs.eg.db 3.18.0
+C1orf123	CZIB	ENSG00000162384	True	54987	CXXC motif containing zinc binding protein	ENSG00000162384	False	False	True		org.Hs.eg.db 3.18.0
+HSPB11	IFT25	ENSG00000081870	True	51668	intraflagellar transport 25	ENSG00000081870	False	False	True		org.Hs.eg.db 3.18.0
+LEXM	CIMAP2	ENSG00000162398	True	163747	ciliary microtubule associated protein 2	ENSG00000162398	False	False	True		org.Hs.eg.db 3.18.0
+C1orf168	FYB2	ENSG00000187889	True	199920	FYN binding protein 2	ENSG00000187889	False	False	True		org.Hs.eg.db 3.18.0
+INADL	PATJ	ENSG00000132849	True	10207	PATJ crumbs cell polarity complex component	ENSG00000132849	False	False	True		org.Hs.eg.db 3.18.0
+TCTEX1D1	DYNLT5	ENSG00000152760	True	200132	dynein light chain Tctex-type family member 5	ENSG00000152760	False	False	True		org.Hs.eg.db 3.18.0
+WDR78	DNAI4	ENSG00000152763	True	79819	dynein axonemal intermediate chain 4	ENSG00000152763	False	False	True		org.Hs.eg.db 3.18.0
+HHLA3	ANKRD13C-DT	ENSG00000197568	True	11147	ANKRD13C divergent transcript	ENSG00000197568	False	False	True		org.Hs.eg.db 3.18.0
+FAM73A	MIGA1	ENSG00000180488	True	374986	mitoguardin 1	ENSG00000180488	False	False	True		org.Hs.eg.db 3.18.0
+WDR63	DNAI3	ENSG00000162643	True	126820	dynein axonemal intermediate chain 3	ENSG00000162643	False	False	True		org.Hs.eg.db 3.18.0
+CYR61	CCN1	ENSG00000142871	True	3491	cellular communication network factor 1	ENSG00000142871	False	False	True		org.Hs.eg.db 3.18.0
+SEP15	SELENOF	ENSG00000183291	True	9403	selenoprotein F	ENSG00000183291	False	False	True		org.Hs.eg.db 3.18.0
+CCBL2	KYAT3	ENSG00000137944	True	56267	kynurenine aminotransferase 3	ENSG00000137944	False	False	True		org.Hs.eg.db 3.18.0
+FAM69A	DIPK1A	ENSG00000154511	True	388650	divergent protein kinase domain 1A	ENSG00000154511	False	False	True		org.Hs.eg.db 3.18.0
+TMEM56	TLCD4	ENSG00000152078	True	148534	TLC domain containing 4	ENSG00000152078	False	False	True		org.Hs.eg.db 3.18.0
+FAM102B	EEIG2	ENSG00000162636	True	284611	EEIG family member 2	ENSG00000162636	False	False	True		org.Hs.eg.db 3.18.0
+C1orf194	CFAP276	ENSG00000179902	True	127003	cilia and flagella associated protein 276	ENSG00000179902	False	False	True		org.Hs.eg.db 3.18.0
+KIAA1324	ELAPOR1	ENSG00000116299	True	57535	endosome-lysosome associated apoptosis and autophagy regulator 1	ENSG00000116299	False	False	True		org.Hs.eg.db 3.18.0
+SARS	SARS1	ENSG00000031698	True	6301	seryl-tRNA synthetase 1	ENSG00000031698	False	False	True		org.Hs.eg.db 3.18.0
+PIFO	CIMAP3	ENSG00000173947	True	128344	ciliary microtubule associated protein 3	ENSG00000173947	False	False	True		org.Hs.eg.db 3.18.0
+ATP5F1	ATP5PB	ENSG00000116459	True	515	ATP synthase peripheral stalk-membrane subunit b	ENSG00000116459	False	False	True		org.Hs.eg.db 3.18.0
+FAM212B	INKA2	ENSG00000197852	True	55924	inka box actin regulator 2	ENSG00000197852	False	False	True		org.Hs.eg.db 3.18.0
+FAM212B-AS1	INKA2-AS1	ENSG00000227811	True	100506343	INKA2 antisense RNA 1	ENSG00000227811	False	False	True		org.Hs.eg.db 3.18.0
+FAM19A3	TAFA3	ENSG00000184599	True	284467	TAFA chemokine like family member 3	ENSG00000184599	False	False	True		org.Hs.eg.db 3.18.0
+C1orf137	LINC02868	ENSG00000203864	True	388667	long intergenic non-protein coding RNA 2868	ENSG00000203864	False	False	True		org.Hs.eg.db 3.18.0
+FAM46C	TENT5C	ENSG00000183508	True	54855	terminal nucleotidyltransferase 5C	ENSG00000183508	False	False	True		org.Hs.eg.db 3.18.0
+HFE2	HJV	ENSG00000168509	True	148738	hemojuvelin BMP co-receptor	ENSG00000168509	False	False	True		org.Hs.eg.db 3.18.0
+NOTCH2NL	NOTCH2NLA	ENSG00000264343	True	388677	notch 2 N-terminal like A	ENSG00000264343	False	False	True		org.Hs.eg.db 3.18.0
+HIST2H2BF	H2BC18	ENSG00000203814	True	440689	H2B clustered histone 18	ENSG00000203814	False	False	True		org.Hs.eg.db 3.18.0
+HIST2H3D	H3C13	ENSG00000183598	True	653604	H3 clustered histone 13	ENSG00000183598	False	False	True		org.Hs.eg.db 3.18.0
+HIST2H4A	H4C14	ENSG00000270882	True	8370	H4 clustered histone 14	ENSG00000270882	False	False	True		org.Hs.eg.db 3.18.0
+HIST2H3C	H3C14	ENSG00000203811	True	126961	H3 clustered histone 14	ENSG00000203811	False	False	True		org.Hs.eg.db 3.18.0
+HIST2H2BE	H2BC21	ENSG00000184678	True	8349	H2B clustered histone 21	ENSG00000184678	False	False	True		org.Hs.eg.db 3.18.0
+HIST2H3A	H3C15	ENSG00000203852	True	333932	H3 clustered histone 15	ENSG00000203852	False	False	True		org.Hs.eg.db 3.18.0
+HIST2H4B	H4C15	ENSG00000270276	True	554313	H4 clustered histone 15	ENSG00000270276	False	False	True		org.Hs.eg.db 3.18.0
+HIST2H2AC	H2AC20	ENSG00000184260	True	8338	H2A clustered histone 20	ENSG00000184260	False	False	True		org.Hs.eg.db 3.18.0
+HIST2H2AB	H2AC21	ENSG00000184270	True	317772	H2A clustered histone 21	ENSG00000184270	False	False	True		org.Hs.eg.db 3.18.0
+FAM63A	MINDY1	ENSG00000143409	True	55793	MINDY lysine 48 deubiquitinase 1	ENSG00000143409	False	False	True		org.Hs.eg.db 3.18.0
+PRUNE	PRUNE1	ENSG00000143363	True	58497	prune exopolyphosphatase 1	ENSG00000143363	False	False	True		org.Hs.eg.db 3.18.0
+C1orf68	KPLCE	ENSG00000198854	True	100129271	KPRP N-terminal and LCE C-terminal like protein	ENSG00000198854	False	False	True		org.Hs.eg.db 3.18.0
+LOR	LORICRIN	ENSG00000203782	True	4014	loricrin cornified envelope precursor protein	ENSG00000203782	False	False	True		org.Hs.eg.db 3.18.0
+C1orf189	CFAP141	ENSG00000163263	True	388701	cilia and flagella associated protein 141	ENSG00000163263	False	False	True		org.Hs.eg.db 3.18.0
+GBA	GBA1	ENSG00000177628	True	2629	glucosylceramidase beta 1	ENSG00000177628	False	False	True		org.Hs.eg.db 3.18.0
+FAM189B	ENTREP3	ENSG00000160767	True	10712	endosomal transmembrane epsin interactor 3	ENSG00000160767	False	False	True		org.Hs.eg.db 3.18.0
+KIAA0907	KHDC4	ENSG00000132680	True	22889	KH domain containing 4, pre-mRNA splicing factor	ENSG00000132680	False	False	True		org.Hs.eg.db 3.18.0
+C1orf61	MIR9-1HG	ENSG00000125462	True	10485	MIR9-1 host gene	ENSG00000125462	False	False	True		org.Hs.eg.db 3.18.0
+APOA1BP	NAXE	ENSG00000163382	True	128240	NAD(P)HX epimerase	ENSG00000163382	False	False	True		org.Hs.eg.db 3.18.0
+RRNAD1	METTL25B	ENSG00000143303	True	51093	methyltransferase like 25B	ENSG00000143303	False	False	True		org.Hs.eg.db 3.18.0
+KIRREL	KIRREL1	ENSG00000183853	True	55243	kirre like nephrin family adhesion molecule 1	ENSG00000183853	False	False	True		org.Hs.eg.db 3.18.0
+C1orf204	SNHG28	ENSG00000188004	True	284677	small nucleolar RNA host gene 28	ENSG00000188004	False	False	True		org.Hs.eg.db 3.18.0
+PVRL4	NECTIN4	ENSG00000143217	True	81607	nectin cell adhesion molecule 4	ENSG00000143217	False	False	True		org.Hs.eg.db 3.18.0
+C1orf111	SPATA46	ENSG00000171722	True	284680	spermatogenesis associated 46	ENSG00000171722	False	False	True		org.Hs.eg.db 3.18.0
+DUSP27	STYXL2	ENSG00000198842	True	92235	serine/threonine/tyrosine interacting like 2	ENSG00000198842	False	False	True		org.Hs.eg.db 3.18.0
+C1orf112	FIRRM	ENSG00000000460	True	55732	FIGNL1 interacting regulator of recombination and mitosis	ENSG00000000460	False	False	True		org.Hs.eg.db 3.18.0
+METTL11B	NTMT2	ENSG00000203740	True	149281	N-terminal Xaa-Pro-Lys N-methyltransferase 2	ENSG00000203740	False	False	True		org.Hs.eg.db 3.18.0
+RFWD2	COP1	ENSG00000143207	True	64326	COP1 E3 ubiquitin ligase	ENSG00000143207	False	False	True		org.Hs.eg.db 3.18.0
+LINC00083	CLEC20A	ENSG00000188585	True	400797	C-type lectin domain containing 20A	ENSG00000188585	False	False	True		org.Hs.eg.db 3.18.0
+GM140	LINC01699	ENSG00000179452	True	100287948	long intergenic non-protein coding RNA 1699	ENSG00000179452	False	False	True		org.Hs.eg.db 3.18.0
+FAM129A	NIBAN1	ENSG00000135842	True	116496	niban apoptosis regulator 1	ENSG00000135842	False	False	True		org.Hs.eg.db 3.18.0
+C1orf27	ODR4	ENSG00000157181	True	54953	odr-4 GPCR localization factor homolog	ENSG00000157181	False	False	True		org.Hs.eg.db 3.18.0
+TROVE2	RO60	ENSG00000116747	True	6738	Ro60, Y RNA binding protein	ENSG00000116747	False	False	True		org.Hs.eg.db 3.18.0
+C1orf106	INAVA	ENSG00000163362	True	55765	innate immunity activator	ENSG00000163362	False	False	True		org.Hs.eg.db 3.18.0
+LINC01136	BTG2-DT	ENSG00000233791	True	730227	BTG2 divergent transcript	ENSG00000233791	False	False	True		org.Hs.eg.db 3.18.0
+MFSD4	MFSD4A	ENSG00000174514	True	148808	major facilitator superfamily domain containing 4A	ENSG00000174514	False	False	True		org.Hs.eg.db 3.18.0
+C1orf186	RHEX	ENSG00000263961	True	440712	regulator of hemoglobinization and erythroid cell expansion	ENSG00000263961	False	False	True		org.Hs.eg.db 3.18.0
+C1orf147	IKBKE-AS1	ENSG00000162888	True	574431	IKBKE antisense RNA 1	ENSG00000162888	False	False	True		org.Hs.eg.db 3.18.0
+DIEXF	UTP25	ENSG00000117597	True	27042	UTP25 small subunit processome component	ENSG00000117597	False	False	True		org.Hs.eg.db 3.18.0
+TMEM206	PACC1	ENSG00000065600	True	55248	proton activated chloride channel 1	ENSG00000065600	False	False	True		org.Hs.eg.db 3.18.0
+FAM71A	GARIN4	ENSG00000162771	True	149647	golgi associated RAB2 interactor family member 4	ENSG00000162771	False	False	True		org.Hs.eg.db 3.18.0
+FLVCR1-AS1	FLVCR1-DT	ENSG00000198468	True	642946	FLVCR1 divergent transcript	ENSG00000198468	False	False	True		org.Hs.eg.db 3.18.0
+C1orf143	LINC02869	ENSG00000228208	True	440714	long intergenic non-protein coding RNA 2869	ENSG00000228208	False	False	True		org.Hs.eg.db 3.18.0
+LYPLAL1-AS1	LYPLAL1-DT	ENSG00000228063	True	643723	LYPLAL1 divergent transcript	ENSG00000228063	False	False	True		org.Hs.eg.db 3.18.0
+EPRS	EPRS1	ENSG00000136628	True	2058	glutamyl-prolyl-tRNA synthetase 1	ENSG00000136628	False	False	True		org.Hs.eg.db 3.18.0
+MARC2	MTARC2	ENSG00000117791	True	54996	mitochondrial amidoxime reducing component 2	ENSG00000117791	False	False	True		org.Hs.eg.db 3.18.0
+MARC1	MTARC1	ENSG00000186205	True	64757	mitochondrial amidoxime reducing component 1	ENSG00000186205	False	False	True		org.Hs.eg.db 3.18.0
+C1orf140	LINC02817	ENSG00000234754	True	400804	long intergenic non-protein coding RNA 2817	ENSG00000234754	False	False	True		org.Hs.eg.db 3.18.0
+H3F3A	H3-3A	ENSG00000163041	True	3020	H3.3 histone A	ENSG00000163041	False	False	True		org.Hs.eg.db 3.18.0
+C1orf95	STUM	ENSG00000203685	True	375057	stum, mechanosensory transduction mediator homolog	ENSG00000203685	False	False	True		org.Hs.eg.db 3.18.0
+ADCK3	COQ8A	ENSG00000163050	True	56997	coenzyme Q8A	ENSG00000163050	False	False	True		org.Hs.eg.db 3.18.0
+IBA57-AS1	IBA57-DT	ENSG00000203684	True	574432	IBA57 divergent transcript	ENSG00000203684	False	False	True		org.Hs.eg.db 3.18.0
+C1orf145	OBSCN-AS1	ENSG00000162913	True	574407	OBSCN antisense RNA 1	ENSG00000162913	False	False	True		org.Hs.eg.db 3.18.0
+HIST3H3	H3-4	ENSG00000168148	True	8290	H3.4 histone, cluster member	ENSG00000168148	False	False	True		org.Hs.eg.db 3.18.0
+HIST3H2A	H2AC25	ENSG00000181218	True	92815	H2A clustered histone 25	ENSG00000181218	False	False	True		org.Hs.eg.db 3.18.0
+HIST3H2BB	H2BC26	ENSG00000196890	True	128312	H2B clustered histone 26	ENSG00000196890	False	False	True		org.Hs.eg.db 3.18.0
+PCNXL2	PCNX2	ENSG00000135749	True	80003	pecanex 2	ENSG00000135749	False	False	True		org.Hs.eg.db 3.18.0
+C1orf100	SPMIP3	ENSG00000173728	True	200159	sperm microtubule inner protein 3	ENSG00000173728	False	False	True		org.Hs.eg.db 3.18.0
+ADSS	ADSS2	ENSG00000035687	True	159	adenylosuccinate synthase 2	ENSG00000035687	False	False	True		org.Hs.eg.db 3.18.0
+C1orf101	CATSPERE	ENSG00000179397	True	257044	catsper channel auxiliary subunit epsilon	ENSG00000179397	False	False	True		org.Hs.eg.db 3.18.0
+C1orf229	LINC02897	ENSG00000221953	True	388759	long intergenic non-protein coding RNA 2897	ENSG00000221953	False	False	True		org.Hs.eg.db 3.18.0
+FAM150B	ALKAL2	ENSG00000189292	True	285016	ALK and LTK ligand 2	ENSG00000189292	False	False	True		org.Hs.eg.db 3.18.0
+TSSC1	EIPR1	ENSG00000032389	True	7260	EARP complex and GARP complex interacting protein 1	ENSG00000032389	False	False	True		org.Hs.eg.db 3.18.0
+RNASEH1-AS1	RNASEH1-DT	ENSG00000234171	True	100506054	RNASEH1 divergent transcript	ENSG00000234171	False	False	True		org.Hs.eg.db 3.18.0
+PQLC3	SLC66A3	ENSG00000162976	True	130814	solute carrier family 66 member 3	ENSG00000162976	False	False	True		org.Hs.eg.db 3.18.0
+FAM84A	LRATD1	ENSG00000162981	True	151354	LRAT domain containing 1	ENSG00000162981	False	False	True		org.Hs.eg.db 3.18.0
+FAM49A	CYRIA	ENSG00000197872	True	81553	CYFIP related Rac1 interactor A	ENSG00000197872	False	False	True		org.Hs.eg.db 3.18.0
+C2orf44	WDCP	ENSG00000163026	True	80304	WD repeat and coiled coil containing	ENSG00000163026	False	False	True		org.Hs.eg.db 3.18.0
+EPT1	SELENOI	ENSG00000138018	True	85465	selenoprotein I	ENSG00000138018	False	False	True		org.Hs.eg.db 3.18.0
+C2orf70	CIMIP2C	ENSG00000173557	True	339778	ciliary microtubule inner protein 2C	ENSG00000173557	False	False	True		org.Hs.eg.db 3.18.0
+C2orf16	SPATA31H1	ENSG00000221843	True	84226	SPATA31 subfamily H member 1	ENSG00000221843	False	False	True		org.Hs.eg.db 3.18.0
+BRE	BABAM2	ENSG00000158019	True	9577	BRISC and BRCA1 A complex member 2	ENSG00000158019	False	False	True		org.Hs.eg.db 3.18.0
+FAM179A	TOGARAM2	ENSG00000189350	True	165186	TOG array regulator of axonemal microtubules 2	ENSG00000189350	False	False	True		org.Hs.eg.db 3.18.0
+C2orf71	PCARE	ENSG00000179270	True	388939	photoreceptor cilium actin regulator	ENSG00000179270	False	False	True		org.Hs.eg.db 3.18.0
+LINC00211	PIRAT1	ENSG00000237803	True	101929559	PU.1 (SPI1) induced regulator of S100A8 and S100A9 alarmin transcription 1	ENSG00000237803	False	False	True		org.Hs.eg.db 3.18.0
+C2orf91	LINC02898	ENSG00000205086	True	400950	long intergenic non-protein coding RNA 2898	ENSG00000205086	False	False	True		org.Hs.eg.db 3.18.0
+C2orf61	STPG4	ENSG00000239605	True	285051	sperm-tail PG-rich repeat containing 4	ENSG00000239605	False	False	True		org.Hs.eg.db 3.18.0
+HCG2040054	MSH2-OT1	ENSG00000235760	True	644093	MSH2 overlapping transcript 1	ENSG00000235760	False	False	True		org.Hs.eg.db 3.18.0
+LINC01185	REL-DT	ENSG00000228414	True	400957	REL divergent transcript	ENSG00000228414	False	False	True		org.Hs.eg.db 3.18.0
+KIAA1841	SANBR	ENSG00000162929	True	84542	SANT and BTB domain regulator of CSR	ENSG00000162929	False	False	True		org.Hs.eg.db 3.18.0
+AHSA2	AHSA2P	ENSG00000173209	True	130872	activator of HSP90 ATPase homolog 2, pseudogene	ENSG00000173209	False	False	True		org.Hs.eg.db 3.18.0
+WDR92	DNAAF10	ENSG00000243667	True	116143	dynein axonemal assembly factor 10	ENSG00000243667	False	False	True		org.Hs.eg.db 3.18.0
+BOLA3-AS1	BOLA3-DT	ENSG00000225439	True	100507171	BOLA3 divergent transcript	ENSG00000225439	False	False	True		org.Hs.eg.db 3.18.0
+LINC00152	CYTOR	ENSG00000222041	True	112597	cytoskeleton regulator RNA	ENSG00000222041	False	False	True		org.Hs.eg.db 3.18.0
+TEX37	SPMIP9	ENSG00000172073	True	200523	sperm microtubule inner protein 9	ENSG00000172073	False	False	True		org.Hs.eg.db 3.18.0
+LINC01125	C2orf92	ENSG00000228486	True	728537	chromosome 2 open reading frame 92	ENSG00000228486	False	False	True		org.Hs.eg.db 3.18.0
+KIAA1211L	CRACDL	ENSG00000196872	True	343990	CRACD like	ENSG00000196872	False	False	True		org.Hs.eg.db 3.18.0
+UTAT33	MRPS9-AS1	ENSG00000231851	True	101927492	MRPS9 antisense RNA 1	ENSG00000231851	False	False	True		org.Hs.eg.db 3.18.0
+C2orf40	ECRG4	ENSG00000119147	True	84417	ECRG4 augurin precursor	ENSG00000119147	False	False	True		org.Hs.eg.db 3.18.0
+SEPT10	SEPTIN10	ENSG00000186522	True	151011	septin 10	ENSG00000186522	False	False	True		org.Hs.eg.db 3.18.0
+LINC00116	MTLN	ENSG00000175701	True	205251	mitoregulin	ENSG00000175701	False	False	True		org.Hs.eg.db 3.18.0
+LIMS3L	LIMS4	ENSG00000256671	True	100288695	LIM zinc finger domain containing 4	ENSG00000256671	False	False	True		org.Hs.eg.db 3.18.0
+CBWD2	ZNG1B	ENSG00000136682	True	150472	Zn regulated GTPase metalloprotein activator 1B	ENSG00000136682	False	False	True		org.Hs.eg.db 3.18.0
+C2orf27B	CDRT15P3	ENSG00000186825	True	408029	CDRT15 pseudogene 3	ENSG00000186825	False	False	True		org.Hs.eg.db 3.18.0
+DARS	DARS1	ENSG00000115866	True	1615	aspartyl-tRNA synthetase 1	ENSG00000115866	False	False	True		org.Hs.eg.db 3.18.0
+MARCH7	MARCHF7	ENSG00000136536	True	64844	membrane associated ring-CH-type finger 7	ENSG00000136536	False	False	True		org.Hs.eg.db 3.18.0
+CCDC173	CFAP210	ENSG00000154479	True	129881	cilia and flagella associated protein 210	ENSG00000154479	False	False	True		org.Hs.eg.db 3.18.0
+DLX2-AS1	DLX2-DT	ENSG00000236651	True	104326193	DLX2 divergent transcript	ENSG00000236651	False	False	True		org.Hs.eg.db 3.18.0
+MLK7-AS1	MAP3K20-AS1	ENSG00000238133	True	339751	MAP3K20 antisense RNA 1	ENSG00000238133	False	False	True		org.Hs.eg.db 3.18.0
+ATP5G3	ATP5MC3	ENSG00000154518	True	518	ATP synthase membrane subunit c locus 3	ENSG00000154518	False	False	True		org.Hs.eg.db 3.18.0
+KIAA1715	LNPK	ENSG00000144320	True	80856	lunapark, ER junction formation factor	ENSG00000144320	False	False	True		org.Hs.eg.db 3.18.0
+TTC30B	IFT70B	ENSG00000196659	True	150737	intraflagellar transport 70B	ENSG00000196659	False	False	True		org.Hs.eg.db 3.18.0
+TTC30A	IFT70A	ENSG00000197557	True	92104	intraflagellar transport 70A	ENSG00000197557	False	False	True		org.Hs.eg.db 3.18.0
+DFNB59	PJVK	ENSG00000204311	True	494513	pejvakin	ENSG00000204311	False	False	True		org.Hs.eg.db 3.18.0
+SSFA2	ITPRID2	ENSG00000138434	True	6744	ITPR interacting domain containing 2	ENSG00000138434	False	False	True		org.Hs.eg.db 3.18.0
+SDPR	CAVIN2	ENSG00000168497	True	8436	caveolae associated protein 2	ENSG00000168497	False	False	True		org.Hs.eg.db 3.18.0
+C2orf47	MAIP1	ENSG00000162972	True	79568	matrix AAA peptidase interacting protein 1	ENSG00000162972	False	False	True		org.Hs.eg.db 3.18.0
+SGOL2	SGO2	ENSG00000163535	True	151246	shugoshin 2	ENSG00000163535	False	False	True		org.Hs.eg.db 3.18.0
+FAM126B	HYCC2	ENSG00000155744	True	285172	hyccin PI4KA lipid kinase complex subunit 2	ENSG00000155744	False	False	True		org.Hs.eg.db 3.18.0
+ALS2CR12	FLACC1	ENSG00000155749	True	130540	flagellum associated containing coiled-coil domains 1	ENSG00000155749	False	False	True		org.Hs.eg.db 3.18.0
+ALS2CR11	C2CD6	ENSG00000155754	True	151254	C2 calcium dependent domain containing 6	ENSG00000155754	False	False	True		org.Hs.eg.db 3.18.0
+GPR1	CMKLR2	ENSG00000183671	True	2825	chemerin chemokine-like receptor 2	ENSG00000183671	False	False	True		org.Hs.eg.db 3.18.0
+PKI55	LINC01963	ENSG00000260804	True	150967	long intergenic non-protein coding RNA 1963	ENSG00000260804	False	False	True		org.Hs.eg.db 3.18.0
+MARCH4	MARCHF4	ENSG00000144583	True	57574	membrane associated ring-CH-type finger 4	ENSG00000144583	False	False	True		org.Hs.eg.db 3.18.0
+RQCD1	CNOT9	ENSG00000144580	True	9125	CCR4-NOT transcription complex subunit 9	ENSG00000144580	False	False	True		org.Hs.eg.db 3.18.0
+FAM134A	RETREG2	ENSG00000144567	True	79137	reticulophagy regulator family member 2	ENSG00000144567	False	False	True		org.Hs.eg.db 3.18.0
+C2orf57	TEX44	ENSG00000177673	True	165100	testis expressed 44	ENSG00000177673	False	False	True		org.Hs.eg.db 3.18.0
+ALPPL2	ALPG	ENSG00000163286	True	251	alkaline phosphatase, germ cell	ENSG00000163286	False	False	True		org.Hs.eg.db 3.18.0
+C2orf82	SNORC	ENSG00000182600	True	389084	secondary ossification center associated regulator of chondrocyte maturation	ENSG00000182600	False	False	True		org.Hs.eg.db 3.18.0
+FAM132B	ERFE	ENSG00000178752	True	151176	erythroferrone	ENSG00000178752	False	False	True		org.Hs.eg.db 3.18.0
+MYEOV2	COPS9	ENSG00000172428	True	150678	COP9 signalosome subunit 9	ENSG00000172428	False	False	True		org.Hs.eg.db 3.18.0
+CAPN10-AS1	CAPN10-DT	ENSG00000260942	True	101752400	CAPN10 divergent transcript	ENSG00000260942	False	False	True		org.Hs.eg.db 3.18.0
+C2orf54	MAB21L4	ENSG00000172478	True	79919	mab-21 like 4	ENSG00000172478	False	False	True		org.Hs.eg.db 3.18.0
+SEPT2	SEPTIN2	ENSG00000168385	True	4735	septin 2	ENSG00000168385	False	False	True		org.Hs.eg.db 3.18.0
+ITPR1-AS1	ITPR1-DT	ENSG00000231249	True	100996539	ITPR1 divergent transcript	ENSG00000231249	False	False	True		org.Hs.eg.db 3.18.0
+SGOL1	SGO1	ENSG00000129810	True	151648	shugoshin 1	ENSG00000129810	False	False	True		org.Hs.eg.db 3.18.0
+UBE2E2-AS1	UBE2E2-DT	ENSG00000233153	True	100505877	UBE2E2 divergent transcript	ENSG00000233153	False	False	True		org.Hs.eg.db 3.18.0
+C3orf35	APRG1	ENSG00000198590	True	339883	APRG1 tumor suppressor candidate	ENSG00000198590	False	False	True		org.Hs.eg.db 3.18.0
+FAM198A	GASK1A	ENSG00000144649	True	729085	golgi associated kinase 1A	ENSG00000144649	False	False	True		org.Hs.eg.db 3.18.0
+LINC00694	C3orf86P	ENSG00000225873	True	102724231	long intergenic non-protein coding RNA 694	ENSG00000225873	False	False	True		org.Hs.eg.db 3.18.0
+TDGF1	CRIPTO	ENSG00000241186	True	6997	cripto, EGF-CFC family member	ENSG00000241186	False	False	True		org.Hs.eg.db 3.18.0
+PRSS46	PRSS46P	ENSG00000261603	True	100287362	serine protease 46, pseudogene	ENSG00000261603	False	False	True		org.Hs.eg.db 3.18.0
+PRSS42	PRSS42P	ENSG00000178055	True	339906	serine protease 42, pseudogene	ENSG00000178055	False	False	True		org.Hs.eg.db 3.18.0
+CELSR3-AS1	LINC02585	ENSG00000228350	True	102724368	long intergenic non-protein coding RNA 2585	ENSG00000228350	False	False	True		org.Hs.eg.db 3.18.0
+QARS	QARS1	ENSG00000172053	True	5859	glutaminyl-tRNA synthetase 1	ENSG00000172053	False	False	True		org.Hs.eg.db 3.18.0
+CCDC36	IHO1	ENSG00000173421	True	339834	interactor of HORMAD1 1	ENSG00000173421	False	False	True		org.Hs.eg.db 3.18.0
+BSN-AS2	BSN-DT	ENSG00000226913	True	100132677	BSN divergent transcript	ENSG00000226913	False	False	True		org.Hs.eg.db 3.18.0
+FAM212A	INKA1	ENSG00000185614	True	389119	inka box actin regulator 1	ENSG00000185614	False	False	True		org.Hs.eg.db 3.18.0
+NAT6	NAA80	ENSG00000243477	True	24142	N-alpha-acetyltransferase 80, NatH catalytic subunit	ENSG00000243477	False	False	True		org.Hs.eg.db 3.18.0
+VPRBP	DCAF1	ENSG00000145041	True	9730	DDB1 and CUL4 associated factor 1	ENSG00000145041	False	False	True		org.Hs.eg.db 3.18.0
+SMIM4	UQCC5	ENSG00000168273	True	440957	ubiquinol-cytochrome c reductase complex assembly factor 5	ENSG00000168273	False	False	True		org.Hs.eg.db 3.18.0
+TMEM110	STIMATE	ENSG00000213533	True	375346	STIM activating enhancer	ENSG00000213533	False	False	True		org.Hs.eg.db 3.18.0
+SELK	SELENOK	ENSG00000113811	True	58515	selenoprotein K	ENSG00000113811	False	False	True		org.Hs.eg.db 3.18.0
+FAM208A	TASOR	ENSG00000163946	True	23272	transcription activation suppressor	ENSG00000163946	False	False	True		org.Hs.eg.db 3.18.0
+C3orf67	CFAP20DC	ENSG00000163689	True	200844	CFAP20 domain containing	ENSG00000163689	False	False	True		org.Hs.eg.db 3.18.0
+C3orf67-AS1	CFAP20DC-AS1	ENSG00000242428	True	101929238	CFAP20DC antisense RNA 1	ENSG00000242428	False	False	True		org.Hs.eg.db 3.18.0
+C3orf14	CEP15	ENSG00000114405	True	57415	centrosomal protein 15	ENSG00000114405	False	False	True		org.Hs.eg.db 3.18.0
+SUCLG2-AS1	SUCLG2-DT	ENSG00000241316	True	101927111	SUCLG2 divergent transcript	ENSG00000241316	False	False	True		org.Hs.eg.db 3.18.0
+FAM19A1	TAFA1	ENSG00000183662	True	407738	TAFA chemokine like family member 1	ENSG00000183662	False	False	True		org.Hs.eg.db 3.18.0
+FAM19A4	TAFA4	ENSG00000163377	True	151647	TAFA chemokine like family member 4	ENSG00000163377	False	False	True		org.Hs.eg.db 3.18.0
+LINC01212	SAMMSON	ENSG00000240405	True	101927152	survival associated mitochondrial melanoma specific oncogenic non-coding RNA	ENSG00000240405	False	False	True		org.Hs.eg.db 3.18.0
+DHFRL1	DHFR2	ENSG00000178700	True	200895	dihydrofolate reductase 2	ENSG00000178700	False	False	True		org.Hs.eg.db 3.18.0
+MINA	RIOX2	ENSG00000170854	True	84864	ribosomal oxygenase 2	ENSG00000170854	False	False	True		org.Hs.eg.db 3.18.0
+TMEM30C	TMEM30CP	ENSG00000235156	True	644444	transmembrane protein 30C, pseudogene	ENSG00000235156	False	False	True		org.Hs.eg.db 3.18.0
+TOMM70A	TOMM70	ENSG00000154174	True	9868	translocase of outer mitochondrial membrane 70	ENSG00000154174	False	False	True		org.Hs.eg.db 3.18.0
+KIAA1524	CIP2A	ENSG00000163507	True	57650	cellular inhibitor of PP2A	ENSG00000163507	False	False	True		org.Hs.eg.db 3.18.0
+PVRL3	NECTIN3	ENSG00000177707	True	25945	nectin cell adhesion molecule 3	ENSG00000177707	False	False	True		org.Hs.eg.db 3.18.0
+C3orf17	NEPRO	ENSG00000163608	True	25871	nucleolus and neural progenitor protein	ENSG00000163608	False	False	True		org.Hs.eg.db 3.18.0
+QTRTD1	QTRT2	ENSG00000151576	True	79691	queuine tRNA-ribosyltransferase accessory subunit 2	ENSG00000151576	False	False	True		org.Hs.eg.db 3.18.0
+C3orf30	TEX55	ENSG00000163424	True	152405	testis expressed 55	ENSG00000163424	False	False	True		org.Hs.eg.db 3.18.0
+MAATS1	CFAP91	ENSG00000183833	True	89876	cilia and flagella associated protein 91	ENSG00000183833	False	False	True		org.Hs.eg.db 3.18.0
+CCDC58	MIX23	ENSG00000160124	True	131076	mitochondrial matrix import factor 23	ENSG00000160124	False	False	True		org.Hs.eg.db 3.18.0
+DIRC2	SLC49A4	ENSG00000138463	True	84925	solute carrier family 49 member 4	ENSG00000138463	False	False	True		org.Hs.eg.db 3.18.0
+CCDC37-AS1	CFAP100-DT	ENSG00000249833	True	100506907	CFAP100 divergent transcript	ENSG00000249833	False	False	True		org.Hs.eg.db 3.18.0
+C3orf56	PRR23E	ENSG00000214324	True	285311	PRR23 family member E	ENSG00000214324	False	False	True		org.Hs.eg.db 3.18.0
+KIAA1257	CFAP92	ENSG00000114656	True	57501	cilia and flagella associated protein 92 (putative)	ENSG00000114656	False	False	True		org.Hs.eg.db 3.18.0
+H1FX	H1-10	ENSG00000184897	True	8971	H1.10 linker histone	ENSG00000184897	False	False	True		org.Hs.eg.db 3.18.0
+H1FOO	H1-8	ENSG00000178804	True	132243	H1.8 linker histone	ENSG00000178804	False	False	True		org.Hs.eg.db 3.18.0
+TMCC1-AS1	TMCC1-DT	ENSG00000271270	True	100507032	TMCC1 divergent transcript	ENSG00000271270	False	False	True		org.Hs.eg.db 3.18.0
+ACPP	ACP3	ENSG00000014257	True	55	acid phosphatase 3	ENSG00000014257	False	False	True		org.Hs.eg.db 3.18.0
+C3orf58	DIPK2A	ENSG00000181744	True	205428	divergent protein kinase domain 2A	ENSG00000181744	False	False	True		org.Hs.eg.db 3.18.0
+SELT	SELENOT	ENSG00000198843	True	51714	selenoprotein T	ENSG00000198843	False	False	True		org.Hs.eg.db 3.18.0
+C3orf79	LINC02877	ENSG00000237787	True	152118	long intergenic non-protein coding RNA 2877	ENSG00000237787	False	False	True		org.Hs.eg.db 3.18.0
+PQLC2L	SLC66A1L	ENSG00000174899	True	152078	solute carrier family 66 member 1 like (pseudogene)	ENSG00000174899	False	False	True		org.Hs.eg.db 3.18.0
+LINC01330	LRRC77P	ENSG00000244227	True	646168	leucine rich repeat containing 77, pseudogene	ENSG00000244227	False	False	True		org.Hs.eg.db 3.18.0
+KCCAT211	LINC02015	ENSG00000231574	True	102724550	long intergenic non-protein coding RNA 2015	ENSG00000231574	False	False	True		org.Hs.eg.db 3.18.0
+EIF2B5-AS1	LINC01840	ENSG00000230215	True	100874079	long intergenic non-protein coding RNA 1840	ENSG00000230215	False	False	True		org.Hs.eg.db 3.18.0
+HRASLS	PLAAT1	ENSG00000127252	True	57110	phospholipase A and acyltransferase 1	ENSG00000127252	False	False	True		org.Hs.eg.db 3.18.0
+TCTEX1D2	DYNLT2B	ENSG00000213123	True	255758	dynein light chain Tctex-type 2B	ENSG00000213123	False	False	True		org.Hs.eg.db 3.18.0
+NCBP2-AS2	NCBP2AS2	ENSG00000270170	True	152217	NCBP2 antisense 2 (head to head)	ENSG00000270170	False	False	True		org.Hs.eg.db 3.18.0
+MFI2	MELTF	ENSG00000163975	True	4241	melanotransferrin	ENSG00000163975	False	False	True		org.Hs.eg.db 3.18.0
+MFI2-AS1	MELTF-AS1	ENSG00000228109	True	100507057	MELTF antisense RNA 1	ENSG00000228109	False	False	True		org.Hs.eg.db 3.18.0
+ATP5I	ATP5ME	ENSG00000169020	True	521	ATP synthase membrane subunit e	ENSG00000169020	False	False	True		org.Hs.eg.db 3.18.0
+MFSD7	SLC49A3	ENSG00000169026	True	84179	solute carrier family 49 member 3	ENSG00000169026	False	False	True		org.Hs.eg.db 3.18.0
+CTBP1-AS2	CTBP1-DT	ENSG00000196810	True	92070	CTBP1 divergent transcript	ENSG00000196810	False	False	True		org.Hs.eg.db 3.18.0
+WHSC1	NSD2	ENSG00000109685	True	7468	nuclear receptor binding SET domain protein 2	ENSG00000109685	False	False	True		org.Hs.eg.db 3.18.0
+C4orf48	NICOL1	ENSG00000243449	True	401115	NELL2 interacting cell ontogeny regulator 1	ENSG00000243449	False	False	True		org.Hs.eg.db 3.18.0
+DEFB131	DEFB131A	ENSG00000186146	True	644414	defensin beta 131A	ENSG00000186146	False	False	True		org.Hs.eg.db 3.18.0
+CPEB2-AS1	CPEB2-DT	ENSG00000247624	True	441009	CPEB2 divergent transcript	ENSG00000247624	False	False	True		org.Hs.eg.db 3.18.0
+UCHL1-AS1	UCHL1-DT	ENSG00000251173	True	101410542	UCHL1 divergent transcript	ENSG00000251173	False	False	True		org.Hs.eg.db 3.18.0
+LVCAT1	LINC02475	ENSG00000251350	True	100506827	long intergenic non-protein coding RNA 2475	ENSG00000251350	False	False	True		org.Hs.eg.db 3.18.0
+USP46-AS1	USP46-DT	ENSG00000248866	True	643783	USP46 divergent transcript	ENSG00000248866	False	False	True		org.Hs.eg.db 3.18.0
+KIAA1211	CRACD	ENSG00000109265	True	57482	capping protein inhibiting regulator of actin dynamics	ENSG00000109265	False	False	True		org.Hs.eg.db 3.18.0
+THEGL	SPMAP2L	ENSG00000249693	True	100506564	sperm microtubule associated protein 2 like	ENSG00000249693	False	False	True		org.Hs.eg.db 3.18.0
+UBA6-AS1	UBA6-DT	ENSG00000248049	True	550112	UBA6 divergent transcript	ENSG00000248049	False	False	True		org.Hs.eg.db 3.18.0
+PROL1	OPRPN	ENSG00000171199	True	58503	opiorphin prepropeptide	ENSG00000171199	False	False	True		org.Hs.eg.db 3.18.0
+C4orf26	ODAPH	ENSG00000174792	True	152816	odontogenesis associated phosphoprotein	ENSG00000174792	False	False	True		org.Hs.eg.db 3.18.0
+SEPT11	SEPTIN11	ENSG00000138758	True	55752	septin 11	ENSG00000138758	False	False	True		org.Hs.eg.db 3.18.0
+C4orf22	CFAP299	ENSG00000197826	True	255119	cilia and flagella associated protein 299	ENSG00000197826	False	False	True		org.Hs.eg.db 3.18.0
+FAM175A	ABRAXAS1	ENSG00000163322	True	84142	abraxas 1, BRCA1 A complex subunit	ENSG00000163322	False	False	True		org.Hs.eg.db 3.18.0
+BMPR1B-AS1	BMPR1B-DT	ENSG00000249599	True	100507012	BMPR1B divergent transcript	ENSG00000249599	False	False	True		org.Hs.eg.db 3.18.0
+H2AFZ	H2AZ1	ENSG00000164032	True	3015	H2A.Z variant histone 1	ENSG00000164032	False	False	True		org.Hs.eg.db 3.18.0
+RPL34-AS1	RPL34-DT	ENSG00000234492	True	285456	RPL34 divergent transcript	ENSG00000234492	False	False	True		org.Hs.eg.db 3.18.0
+CCDC109B	MCUB	ENSG00000005059	True	55013	mitochondrial calcium uniporter dominant negative subunit beta	ENSG00000005059	False	False	True		org.Hs.eg.db 3.18.0
+C4orf32	FAM241A	ENSG00000174749	True	132720	family with sequence similarity 241 member A	ENSG00000174749	False	False	True		org.Hs.eg.db 3.18.0
+TMEM155	SMIM43	ENSG00000164112	True	132332	small integral membrane protein 43	ENSG00000164112	False	False	True		org.Hs.eg.db 3.18.0
+KIAA1109	BLTP1	ENSG00000138688	True	84162	bridge-like lipid transfer protein family member 1	ENSG00000138688	False	False	True		org.Hs.eg.db 3.18.0
+SPATA5	AFG2A	ENSG00000145375	True	166378	AFG2 AAA ATPase homolog A	ENSG00000145375	False	False	True		org.Hs.eg.db 3.18.0
+FAM160A1	FHIP1A	ENSG00000164142	True	729830	FHF complex subunit HOOK interacting protein 1A	ENSG00000164142	False	False	True		org.Hs.eg.db 3.18.0
+DEAR	FBXW7-AS1	ENSG00000270751	True	102191832	FBXW7 antisense RNA 1	ENSG00000270751	False	False	True		org.Hs.eg.db 3.18.0
+DKFZP434I0714	MIR4453HG	ENSG00000268471	True	54553	MIR4453 host gene	ENSG00000268471	False	False	True		org.Hs.eg.db 3.18.0
+KIAA0922	TMEM131L	ENSG00000121210	True	23240	transmembrane 131 like	ENSG00000121210	False	False	True		org.Hs.eg.db 3.18.0
+GUCY1A3	GUCY1A1	ENSG00000164116	True	2982	guanylate cyclase 1 soluble subunit alpha 1	ENSG00000164116	False	False	True		org.Hs.eg.db 3.18.0
+GUCY1B3	GUCY1B1	ENSG00000061918	True	2983	guanylate cyclase 1 soluble subunit beta 1	ENSG00000061918	False	False	True		org.Hs.eg.db 3.18.0
+FAM198B	GASK1B	ENSG00000164125	True	51313	golgi associated kinase 1B	ENSG00000164125	False	False	True		org.Hs.eg.db 3.18.0
+C4orf45	SPMIP2	ENSG00000164123	True	152940	sperm microtubule inner protein 2	ENSG00000164123	False	False	True		org.Hs.eg.db 3.18.0
+MARCH1	MARCHF1	ENSG00000145416	True	55016	membrane associated ring-CH-type finger 1	ENSG00000145416	False	False	True		org.Hs.eg.db 3.18.0
+LINC01207	SMIM31	ENSG00000248771	True	100505989	small integral membrane protein 31	ENSG00000248771	False	False	True		org.Hs.eg.db 3.18.0
+C4orf27	HPF1	ENSG00000056050	True	54969	histone PARylation factor 1	ENSG00000056050	False	False	True		org.Hs.eg.db 3.18.0
+C4orf47	CFAP96	ENSG00000205129	True	441054	cilia and flagella associated protein 96	ENSG00000205129	False	False	True		org.Hs.eg.db 3.18.0
+PP7080	SLC9A3-OT1	ENSG00000188242	True	25845	SLC9A3 3' UTR overlapping transcript 1	ENSG00000188242	False	False	True		org.Hs.eg.db 3.18.0
+CTD-3080P12.3	TERLR1	ENSG00000249201	True	101928857	TERT regulating lncRNA 1	ENSG00000249201	False	False	True		org.Hs.eg.db 3.18.0
+CTD-2297D10.2	ADAMTS16-DT	ENSG00000250579	True	101929176	ADAMTS16 divergent transcript	ENSG00000250579	False	False	True		org.Hs.eg.db 3.18.0
+PAPD7	TENT4A	ENSG00000112941	True	11044	terminal nucleotidyltransferase 4A	ENSG00000112941	False	False	True		org.Hs.eg.db 3.18.0
+C5orf49	CFAP90	ENSG00000215217	True	134121	cilia and flagella associated protein 90	ENSG00000215217	False	False	True		org.Hs.eg.db 3.18.0
+CTD-2201E9.1	SEMA5A-AS1	ENSG00000251370	True	101929338	SEMA5A antisense RNA 1	ENSG00000251370	False	False	True		org.Hs.eg.db 3.18.0
+FAM173B	ATPSCKMT	ENSG00000150756	True	134145	ATP synthase c subunit lysine N-methyltransferase	ENSG00000150756	False	False	True		org.Hs.eg.db 3.18.0
+MARCH6	MARCHF6	ENSG00000145495	True	10299	membrane associated ring-CH-type finger 6	ENSG00000145495	False	False	True		org.Hs.eg.db 3.18.0
+FAM105A	OTULINL	ENSG00000145569	True	54491	OTU deubiquitinase with linear linkage specificity like	ENSG00000145569	False	False	True		org.Hs.eg.db 3.18.0
+MARCH11	MARCHF11	ENSG00000183654	True	441061	membrane associated ring-CH-type finger 11	ENSG00000183654	False	False	True		org.Hs.eg.db 3.18.0
+FAM134B	RETREG1	ENSG00000154153	True	54463	reticulophagy regulator 1	ENSG00000154153	False	False	True		org.Hs.eg.db 3.18.0
+C5orf17	LINC02899	ENSG00000248874	True	439936	long intergenic non-protein coding RNA 2899	ENSG00000248874	False	False	True		org.Hs.eg.db 3.18.0
+LINC01021	PURPL	ENSG00000250337	True	643401	p53 upregulated regulator of p53 levels	ENSG00000250337	False	False	True		org.Hs.eg.db 3.18.0
+TARS	TARS1	ENSG00000113407	True	6897	threonyl-tRNA synthetase 1	ENSG00000113407	False	False	True		org.Hs.eg.db 3.18.0
+C5orf42	CPLANE1	ENSG00000197603	True	65250	ciliogenesis and planar polarity effector complex subunit 1	ENSG00000197603	False	False	True		org.Hs.eg.db 3.18.0
+FYB	FYB1	ENSG00000082074	True	2533	FYN binding protein 1	ENSG00000082074	False	False	True		org.Hs.eg.db 3.18.0
+C5orf51	RIMOC1	ENSG00000205765	True	285636	RAB7A interacting MON1-CCZ1 complex subunit 1	ENSG00000205765	False	False	True		org.Hs.eg.db 3.18.0
+SEPP1	SELENOP	ENSG00000250722	True	6414	selenoprotein P	ENSG00000250722	False	False	True		org.Hs.eg.db 3.18.0
+C5orf28	TMEM267	ENSG00000151881	True	64417	transmembrane protein 267	ENSG00000151881	False	False	True		org.Hs.eg.db 3.18.0
+SKIV2L2	MTREX	ENSG00000039123	True	23517	Mtr4 exosome RNA helicase	ENSG00000039123	False	False	True		org.Hs.eg.db 3.18.0
+FAM159B	SHISAL2B	ENSG00000145642	True	100132916	shisa like 2B	ENSG00000145642	False	False	True		org.Hs.eg.db 3.18.0
+CTC-534A2.2	SHLD3	ENSG00000253251	True	112441434	shieldin complex subunit 3	ENSG00000253251	False	False	True		org.Hs.eg.db 3.18.0
+ERBB2IP	ERBIN	ENSG00000112851	True	55914	erbb2 interacting protein	ENSG00000112851	False	False	True		org.Hs.eg.db 3.18.0
+COL4A3BP	CERT1	ENSG00000113163	True	10087	ceramide transporter 1	ENSG00000113163	False	False	True		org.Hs.eg.db 3.18.0
+PAPD4	TENT2	ENSG00000164329	True	167153	terminal nucleotidyltransferase 2	ENSG00000164329	False	False	True		org.Hs.eg.db 3.18.0
+CTD-2201I18.1	THBS4-AS1	ENSG00000249825	True	101929215	THBS4 antisense RNA 1	ENSG00000249825	False	False	True		org.Hs.eg.db 3.18.0
+TMEM161B-AS1	TMEM161B-DT	ENSG00000247828	True	100505894	TMEM161B divergent transcript	ENSG00000247828	False	False	True		org.Hs.eg.db 3.18.0
+LINC00461	MIR9-2HG	ENSG00000245526	True	645323	MIR9-2 host gene	ENSG00000245526	False	False	True		org.Hs.eg.db 3.18.0
+FAM172A	ARB2A	ENSG00000113391	True	83989	ARB2 cotranscriptional regulator A	ENSG00000113391	False	False	True		org.Hs.eg.db 3.18.0
+TTC37	SKIC3	ENSG00000198677	True	9652	SKI3 subunit of superkiller complex	ENSG00000198677	False	False	True		org.Hs.eg.db 3.18.0
+C5orf30	MACIR	ENSG00000181751	True	90355	macrophage immunometabolism regulator	ENSG00000181751	False	False	True		org.Hs.eg.db 3.18.0
+EPB41L4A-AS2	EPB41L4A-DT	ENSG00000278921	True	54508	EPB41L4A divergent transcript	ENSG00000278921	False	False	True		org.Hs.eg.db 3.18.0
+ZRSR1	ZRSR2P1	ENSG00000212643	True	7310	ZRSR2 pseudogene 1	ENSG00000212643	False	False	True		org.Hs.eg.db 3.18.0
+HNCAT21	LINC02148	ENSG00000250427	True	100505811	long intergenic non-protein coding RNA 2148	ENSG00000250427	False	False	True		org.Hs.eg.db 3.18.0
+GRAMD3	GRAMD2B	ENSG00000155324	True	65983	GRAM domain containing 2B	ENSG00000155324	False	False	True		org.Hs.eg.db 3.18.0
+TEX43	SPMIP10	ENSG00000196900	True	389320	sperm microtubule inner protein 10	ENSG00000196900	False	False	True		org.Hs.eg.db 3.18.0
+MARCH3	MARCHF3	ENSG00000173926	True	115123	membrane associated ring-CH-type finger 3	ENSG00000173926	False	False	True		org.Hs.eg.db 3.18.0
+LINC01183	CCDC192	ENSG00000230561	True	728586	coiled-coil domain containing 192	ENSG00000230561	False	False	True		org.Hs.eg.db 3.18.0
+LINC01184	SLC12A2-DT	ENSG00000245937	True	644873	SLC12A2 divergent transcript	ENSG00000245937	False	False	True		org.Hs.eg.db 3.18.0
+KIAA1024L	MINAR2	ENSG00000186367	True	100127206	membrane integral NOTCH2 associated receptor 2	ENSG00000186367	False	False	True		org.Hs.eg.db 3.18.0
+SEPT8	SEPTIN8	ENSG00000164402	True	23176	septin 8	ENSG00000164402	False	False	True		org.Hs.eg.db 3.18.0
+C5orf66	PITX1-AS1	ENSG00000224186	True	100996485	PITX1 antisense RNA 1	ENSG00000224186	False	False	True		org.Hs.eg.db 3.18.0
+C5orf66-AS1	EPIST	ENSG00000249082	True	101927953	esophagus epithelial intergenic associated transcript	ENSG00000249082	False	False	True		org.Hs.eg.db 3.18.0
+C5orf66-AS2	LINC02900	ENSG00000249647	True	340073	long intergenic non-protein coding RNA 2900	ENSG00000249647	False	False	True		org.Hs.eg.db 3.18.0
+H2AFY	MACROH2A1	ENSG00000113648	True	9555	macroH2A.1 histone	ENSG00000113648	False	False	True		org.Hs.eg.db 3.18.0
+TMEM173	STING1	ENSG00000184584	True	340061	stimulator of interferon response cGAMP interactor 1	ENSG00000184584	False	False	True		org.Hs.eg.db 3.18.0
+HARS	HARS1	ENSG00000170445	True	3035	histidyl-tRNA synthetase 1	ENSG00000170445	False	False	True		org.Hs.eg.db 3.18.0
+KIAA0141	DELE1	ENSG00000081791	True	9812	DAP3 binding cell death enhancer 1	ENSG00000081791	False	False	True		org.Hs.eg.db 3.18.0
+LARS	LARS1	ENSG00000133706	True	51520	leucyl-tRNA synthetase 1	ENSG00000133706	False	False	True		org.Hs.eg.db 3.18.0
+CTB-113P19.1	CLMAT3	ENSG00000249035	True	101927096	colorectal liver metastasis associated transcript 3	ENSG00000249035	False	False	True		org.Hs.eg.db 3.18.0
+CTB-12O2.1	LINC01933	ENSG00000254226	True	101927115	long intergenic non-protein coding RNA 1933	ENSG00000254226	False	False	True		org.Hs.eg.db 3.18.0
+FAM71B	GARIN3	ENSG00000170613	True	153745	golgi associated RAB2B interactor family member 3	ENSG00000170613	False	False	True		org.Hs.eg.db 3.18.0
+ZBED8	FAM200C	ENSG00000221886	True	63920	family with sequence similarity 200 member C	ENSG00000221886	False	False	True		org.Hs.eg.db 3.18.0
+CTB-7E3.1	LINC01947	ENSG00000254130	True	102557615	long intergenic non-protein coding RNA 1947	ENSG00000254130	False	False	True		org.Hs.eg.db 3.18.0
+CTB-178M22.2	TENM2-AS1	ENSG00000253978	True	101927862	TENM2 antisense RNA 2	ENSG00000253978	False	False	True		org.Hs.eg.db 3.18.0
+RARS	RARS1	ENSG00000113643	True	5917	arginyl-tRNA synthetase 1	ENSG00000113643	False	False	True		org.Hs.eg.db 3.18.0
+FAM196B	INSYN2B	ENSG00000204767	True	100131897	inhibitory synaptic factor family member 2B	ENSG00000204767	False	False	True		org.Hs.eg.db 3.18.0
+CTD-2270F17.1	KCNIP1-OT1	ENSG00000253647	True	101928033	KCNIP1 overlapping transcript 1	ENSG00000253647	False	False	True		org.Hs.eg.db 3.18.0
+CTB-54I1.1	LINC01944	ENSG00000254299	True	105377728	long intergenic non-protein coding RNA 1944	ENSG00000254299	False	False	True		org.Hs.eg.db 3.18.0
+HMP19	NSG2	ENSG00000170091	True	51617	neuronal vesicle trafficking associated 2	ENSG00000170091	False	False	True		org.Hs.eg.db 3.18.0
+FAM153C	FAM153CP	ENSG00000204677	True	653316	protein FAM153C	ENSG00000204677	False	False	True		org.Hs.eg.db 3.18.0
+C5orf45	MRNIP	ENSG00000161010	True	51149	MRN complex interacting protein	ENSG00000161010	False	False	True		org.Hs.eg.db 3.18.0
+GNB2L1	RACK1	ENSG00000204628	True	10399	receptor for activated C kinase 1	ENSG00000204628	False	False	True		org.Hs.eg.db 3.18.0
+GMDS-AS1	GMDS-DT	ENSG00000250903	True	100508120	GMDS divergent transcript	ENSG00000250903	False	False	True		org.Hs.eg.db 3.18.0
+C6orf201	TEX56P	ENSG00000185689	True	404220	testis expressed 56, pseudogene	ENSG00000185689	False	False	True		org.Hs.eg.db 3.18.0
+C6orf229	ARMH2	ENSG00000260286	True	101928603	armadillo like helical domain containing 2	ENSG00000260286	False	False	True		org.Hs.eg.db 3.18.0
+FAM65B	RIPOR2	ENSG00000111913	True	9750	RHO family interacting cell polarization regulator 2	ENSG00000111913	False	False	True		org.Hs.eg.db 3.18.0
+LRRC16A	CARMIL1	ENSG00000079691	True	55604	capping protein regulator and myosin 1 linker 1	ENSG00000079691	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2AA	H2AC1	ENSG00000164508	True	221613	H2A clustered histone 1	ENSG00000164508	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2BA	H2BC1	ENSG00000146047	True	255626	H2B clustered histone 1	ENSG00000146047	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H1A	H1-1	ENSG00000124610	True	3024	H1.1 linker histone, cluster member	ENSG00000124610	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H3A	H3C1	ENSG00000275714	True	8350	H3 clustered histone 1	ENSG00000275714	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H4A	H4C1	ENSG00000278637	True	8359	H4 clustered histone 1	ENSG00000278637	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H4B	H4C2	ENSG00000278705	True	8366	H4 clustered histone 2	ENSG00000278705	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2AB	H2AC4	ENSG00000278463	True	8335	H2A clustered histone 4	ENSG00000278463	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2BB	H2BC3	ENSG00000276410	True	3018	H2B clustered histone 3	ENSG00000276410	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H1C	H1-2	ENSG00000187837	True	3006	H1.2 linker histone, cluster member	ENSG00000187837	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H4C	H4C3	ENSG00000197061	True	8364	H4 clustered histone 3	ENSG00000197061	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H1T	H1-6	ENSG00000187475	True	3010	H1.6 linker histone, cluster member	ENSG00000187475	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2BC	H2BC4	ENSG00000180596	True	8347	H2B clustered histone 4	ENSG00000180596	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2AC	H2AC6	ENSG00000180573	True	8334	H2A clustered histone 6	ENSG00000180573	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H1E	H1-4	ENSG00000168298	True	3008	H1.4 linker histone, cluster member	ENSG00000168298	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2BD	H2BC5	ENSG00000158373	True	3017	H2B clustered histone 5	ENSG00000158373	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2BE	H2BC6	ENSG00000274290	True	8344	H2B clustered histone 6	ENSG00000274290	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H4D	H4C4	ENSG00000277157	True	8360	H4 clustered histone 4	ENSG00000277157	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H3D	H3C4	ENSG00000197409	True	8351	H3 clustered histone 4	ENSG00000197409	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2AD	H2AC7	ENSG00000196866	True	3013	H2A clustered histone 7	ENSG00000196866	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2BF	H2BC7	ENSG00000277224	True	8343	H2B clustered histone 7	ENSG00000277224	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H4E	H4C5	ENSG00000276966	True	8367	H4 clustered histone 5	ENSG00000276966	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2BG	H2BC8	ENSG00000273802	True	8339	H2B clustered histone 8	ENSG00000273802	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2AE	H2AC8	ENSG00000277075	True	3012	H2A clustered histone 8	ENSG00000277075	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H3E	H3C6	ENSG00000274750	True	8353	H3 clustered histone 6	ENSG00000274750	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H1D	H1-3	ENSG00000124575	True	3007	H1.3 linker histone, cluster member	ENSG00000124575	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H4F	H4C6	ENSG00000274618	True	8361	H4 clustered histone 6	ENSG00000274618	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H4G	H4C7	ENSG00000275663	True	8369	H4 clustered histone 7	ENSG00000275663	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H3F	H3C7	ENSG00000277775	True	8968	H3 clustered histone 7	ENSG00000277775	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2BH	H2BC9	ENSG00000275713	True	8345	H2B clustered histone 9	ENSG00000275713	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H3G	H3C8	ENSG00000273983	True	8355	H3 clustered histone 8	ENSG00000273983	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2BI	H2BC10	ENSG00000278588	True	8346	H2B clustered histone 10	ENSG00000278588	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H4H	H4C8	ENSG00000158406	True	8365	H4 clustered histone 8	ENSG00000158406	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2BJ	H2BC11	ENSG00000124635	True	8970	H2B clustered histone 11	ENSG00000124635	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2AG	H2AC11	ENSG00000196787	True	8969	H2A clustered histone 11	ENSG00000196787	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H4I	H4C9	ENSG00000276180	True	8294	H4 clustered histone 9	ENSG00000276180	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2BK	H2BC12	ENSG00000197903	True	85236	H2B clustered histone 12	ENSG00000197903	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2AH	H2AC12	ENSG00000274997	True	85235	H2A clustered histone 12	ENSG00000274997	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2BL	H2BC13	ENSG00000185130	True	8340	H2B clustered histone 13	ENSG00000185130	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2AI	H2AC13	ENSG00000196747	True	8329	H2A clustered histone 13	ENSG00000196747	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H3H	H3C10	ENSG00000278828	True	8357	H3 clustered histone 10	ENSG00000278828	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2AJ	H2AC14	ENSG00000276368	True	8331	H2A clustered histone 14	ENSG00000276368	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2BM	H2BC14	ENSG00000273703	True	8342	H2B clustered histone 14	ENSG00000273703	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H4J	H4C11	ENSG00000197238	True	8363	H4 clustered histone 11	ENSG00000197238	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H4K	H4C12	ENSG00000273542	True	8362	H4 clustered histone 12	ENSG00000273542	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2BN	H2BC15	ENSG00000233822	True	8341	H2B clustered histone 15	ENSG00000233822	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2AK	H2AC15	ENSG00000275221	True	8330	H2A clustered histone 15	ENSG00000275221	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2AL	H2AC16	ENSG00000276903	True	8332	H2A clustered histone 16	ENSG00000276903	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H1B	H1-5	ENSG00000184357	True	3009	H1.5 linker histone, cluster member	ENSG00000184357	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H3I	H3C11	ENSG00000275379	True	8354	H3 clustered histone 11	ENSG00000275379	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H4L	H4C13	ENSG00000275126	True	8368	H4 clustered histone 13	ENSG00000275126	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H3J	H3C12	ENSG00000197153	True	8356	H3 clustered histone 12	ENSG00000197153	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2AM	H2AC17	ENSG00000278677	True	8336	H2A clustered histone 17	ENSG00000278677	False	False	True		org.Hs.eg.db 3.18.0
+HIST1H2BO	H2BC17	ENSG00000274641	True	8348	H2B clustered histone 17	ENSG00000274641	False	False	True		org.Hs.eg.db 3.18.0
+ZBED9	SCAND3	ENSG00000232040	True	114821	SCAN domain containing 3	ENSG00000232040	False	False	True		org.Hs.eg.db 3.18.0
+ZNRD1-AS1	POLR1HASP	ENSG00000204623	True	80862	POLR1H antisense, pseudogene	ENSG00000204623	False	False	True		org.Hs.eg.db 3.18.0
+ZNRD1	POLR1H	ENSG00000066379	True	30834	RNA polymerase I subunit H	ENSG00000066379	False	False	True		org.Hs.eg.db 3.18.0
+DPCR1	MUCL3	ENSG00000168631	True	135656	mucin like 3	ENSG00000168631	False	False	True		org.Hs.eg.db 3.18.0
+C6orf25	MPIG6B	ENSG00000204420	True	80739	megakaryocyte and platelet inhibitory receptor G6b	ENSG00000204420	False	False	True		org.Hs.eg.db 3.18.0
+VARS	VARS1	ENSG00000204394	True	7407	valyl-tRNA synthetase 1	ENSG00000204394	False	False	True		org.Hs.eg.db 3.18.0
+C6orf48	SNHG32	ENSG00000204387	True	50854	small nucleolar RNA host gene 32	ENSG00000204387	False	False	True		org.Hs.eg.db 3.18.0
+SKIV2L	SKIC2	ENSG00000204351	True	6499	SKI2 subunit of superkiller complex	ENSG00000204351	False	False	True		org.Hs.eg.db 3.18.0
+C6orf10	TSBP1	ENSG00000204296	True	10665	testis expressed basic protein 1	ENSG00000204296	False	False	True		org.Hs.eg.db 3.18.0
+C6orf1	SMIM29	ENSG00000186577	True	221491	small integral membrane protein 29	ENSG00000186577	False	False	True		org.Hs.eg.db 3.18.0
+C6orf106	ILRUN	ENSG00000196821	True	64771	inflammation and lipid regulator with UBA-like and NBR1-like domains	ENSG00000196821	False	False	True		org.Hs.eg.db 3.18.0
+UHRF1BP1	BLTP3A	ENSG00000065060	True	54887	bridge-like lipid transfer protein family member 3A	ENSG00000065060	False	False	True		org.Hs.eg.db 3.18.0
+C6orf222	BNIP5	ENSG00000189325	True	389384	BCL2 interacting protein 5	ENSG00000189325	False	False	True		org.Hs.eg.db 3.18.0
+GLTSCR1L	BICRAL	ENSG00000112624	True	23506	BICRA like chromatin remodeling complex associated protein	ENSG00000112624	False	False	True		org.Hs.eg.db 3.18.0
+C6orf223	LINC03040	ENSG00000181577	True	221416	long intergenic non-protein coding RNA 3040	ENSG00000181577	False	False	True		org.Hs.eg.db 3.18.0
+MUT	MMUT	ENSG00000146085	True	4594	methylmalonyl-CoA mutase	ENSG00000146085	False	False	True		org.Hs.eg.db 3.18.0
+ICK	CILK1	ENSG00000112144	True	22858	ciliogenesis associated kinase 1	ENSG00000112144	False	False	True		org.Hs.eg.db 3.18.0
+MB21D1	CGAS	ENSG00000164430	True	115004	cyclic GMP-AMP synthase	ENSG00000164430	False	False	True		org.Hs.eg.db 3.18.0
+FAM46A	TENT5A	ENSG00000112773	True	55603	terminal nucleotidyltransferase 5A	ENSG00000112773	False	False	True		org.Hs.eg.db 3.18.0
+DOPEY1	DOP1A	ENSG00000083097	True	23033	DOP1 leucine zipper like protein A	ENSG00000083097	False	False	True		org.Hs.eg.db 3.18.0
+MANEA-AS1	MANEA-DT	ENSG00000261366	True	101927288	MANEA divergent transcript	ENSG00000261366	False	False	True		org.Hs.eg.db 3.18.0
+LINC00577	LIN28B-AS1	ENSG00000203809	True	100113403	LIN28B antisense RNA 1	ENSG00000203809	False	False	True		org.Hs.eg.db 3.18.0
+AIM1	CRYBG1	ENSG00000112297	True	202	crystallin beta-gamma domain containing 1	ENSG00000112297	False	False	True		org.Hs.eg.db 3.18.0
+C6orf203	MTRES1	ENSG00000130349	True	51250	mitochondrial transcription rescue factor 1	ENSG00000130349	False	False	True		org.Hs.eg.db 3.18.0
+LACE1	AFG1L	ENSG00000135537	True	246269	AFG1 like ATPase	ENSG00000135537	False	False	True		org.Hs.eg.db 3.18.0
+KIAA1919	MFSD4B	ENSG00000173214	True	91749	major facilitator superfamily domain containing 4B	ENSG00000173214	False	False	True		org.Hs.eg.db 3.18.0
+WISP3	CCN6	ENSG00000112761	True	8838	cellular communication network factor 6	ENSG00000112761	False	False	True		org.Hs.eg.db 3.18.0
+LINC01268	MROCKI	ENSG00000227502	True	285758	MARCKS cis regulating lncRNA promoter of cytokines and inflammation	ENSG00000227502	False	False	True		org.Hs.eg.db 3.18.0
+FAM26F	CALHM6	ENSG00000188820	True	441168	calcium homeostasis modulator family member 6	ENSG00000188820	False	False	True		org.Hs.eg.db 3.18.0
+FAM26E	CALHM5	ENSG00000178033	True	254228	calcium homeostasis modulator family member 5	ENSG00000178033	False	False	True		org.Hs.eg.db 3.18.0
+FAM26D	CALHM4	ENSG00000164451	True	221301	calcium homeostasis modulator family member 4	ENSG00000164451	False	False	True		org.Hs.eg.db 3.18.0
+ZUFSP	ZUP1	ENSG00000153975	True	221302	zinc finger containing ubiquitin peptidase 1	ENSG00000153975	False	False	True		org.Hs.eg.db 3.18.0
+SOGA3	MTCL3	ENSG00000214338	True	387104	MTCL family member 3	ENSG00000214338	False	False	True		org.Hs.eg.db 3.18.0
+CTGF	CCN2	ENSG00000118523	True	1490	cellular communication network factor 2	ENSG00000118523	False	False	True		org.Hs.eg.db 3.18.0
+VNN3	VNN3P	ENSG00000093134	True	55350	vanin 3, pseudogene	ENSG00000093134	False	False	True		org.Hs.eg.db 3.18.0
+LINC00271	AHI1-DT	ENSG00000231028	True	100131814	AHI1 divergent transcript	ENSG00000231028	False	False	True		org.Hs.eg.db 3.18.0
+GVQW2	CCDC28A-AS1	ENSG00000279968	True	100507462	CCDC28A antisense RNA 1	ENSG00000279968	False	False	True		org.Hs.eg.db 3.18.0
+C6orf99	LINC02901	ENSG00000203711	True	100130967	long intergenic non-protein coding RNA 2901	ENSG00000203711	False	False	True		org.Hs.eg.db 3.18.0
+PARK2	PRKN	ENSG00000185345	True	5071	parkin RBR E3 ubiquitin protein ligase	ENSG00000185345	False	False	True		org.Hs.eg.db 3.18.0
+T	TBXT	ENSG00000164458	True	6862	T-box transcription factor T	ENSG00000164458	False	False	True		org.Hs.eg.db 3.18.0
+FGFR1OP	CEP43	ENSG00000213066	True	11116	centrosomal protein 43	ENSG00000213066	False	False	True		org.Hs.eg.db 3.18.0
+MLLT4	AFDN	ENSG00000130396	True	4301	afadin, adherens junction formation factor	ENSG00000130396	False	False	True		org.Hs.eg.db 3.18.0
+TCTE3	DYNLT2	ENSG00000184786	True	6991	dynein light chain Tctex-type 2	ENSG00000184786	False	False	True		org.Hs.eg.db 3.18.0
+HRAT92	PDGFA-DT	ENSG00000223855	True	441307	PDGFA divergent transcript	ENSG00000223855	False	False	True		org.Hs.eg.db 3.18.0
+FTSJ2	MRM2	ENSG00000122687	True	29960	mitochondrial rRNA methyltransferase 2	ENSG00000122687	False	False	True		org.Hs.eg.db 3.18.0
+C7orf26	INTS15	ENSG00000146576	True	79034	integrator complex subunit 15	ENSG00000146576	False	False	True		org.Hs.eg.db 3.18.0
+MEOX2-AS1	LINC02587	ENSG00000229108	True	101927524	long intergenic non-protein coding RNA 2587	ENSG00000229108	False	False	True		org.Hs.eg.db 3.18.0
+ISPD	CRPPA	ENSG00000214960	True	729920	CDP-L-ribitol pyrophosphorylase A	ENSG00000214960	False	False	True		org.Hs.eg.db 3.18.0
+ISPD-AS1	CRPPA-AS1	ENSG00000229688	True	100506025	CRPPA antisense RNA 1	ENSG00000229688	False	False	True		org.Hs.eg.db 3.18.0
+TWISTNB	POLR1F	ENSG00000105849	True	221830	RNA polymerase I subunit F	ENSG00000105849	False	False	True		org.Hs.eg.db 3.18.0
+FAM126A	HYCC1	ENSG00000122591	True	84668	hyccin PI4KA lipid kinase complex subunit 1	ENSG00000122591	False	False	True		org.Hs.eg.db 3.18.0
+NUPL2	NUP42	ENSG00000136243	True	11097	nucleoporin 42	ENSG00000136243	False	False	True		org.Hs.eg.db 3.18.0
+MPP6	PALS2	ENSG00000105926	True	51678	protein associated with LIN7 2, MAGUK p55 family member	ENSG00000105926	False	False	True		org.Hs.eg.db 3.18.0
+DFNA5	GSDME	ENSG00000105928	True	1687	gasdermin E	ENSG00000105928	False	False	True		org.Hs.eg.db 3.18.0
+C7orf31	SPMIP4	ENSG00000153790	True	136895	sperm microtubule inner protein 4	ENSG00000153790	False	False	True		org.Hs.eg.db 3.18.0
+C7orf71	LINC02860	ENSG00000222004	True	285941	long intergenic non-protein coding RNA 2860	ENSG00000222004	False	False	True		org.Hs.eg.db 3.18.0
+GARS	GARS1	ENSG00000106105	True	2617	glycyl-tRNA synthetase 1	ENSG00000106105	False	False	True		org.Hs.eg.db 3.18.0
+FAM188B	MINDY4	ENSG00000106125	True	84182	MINDY lysine 48 deubiquitinase 4	ENSG00000106125	False	False	True		org.Hs.eg.db 3.18.0
+CCDC129	ITPRID1	ENSG00000180347	True	223075	ITPR interacting domain containing 1	ENSG00000180347	False	False	True		org.Hs.eg.db 3.18.0
+SEPT7	SEPTIN7	ENSG00000122545	True	989	septin 7	ENSG00000122545	False	False	True		org.Hs.eg.db 3.18.0
+KIAA0895	MATCAP2	ENSG00000164542	True	23366	microtubule associated tyrosine carboxypeptidase 2	ENSG00000164542	False	False	True		org.Hs.eg.db 3.18.0
+YAE1D1	YAE1	ENSG00000241127	True	57002	YAE1 maturation factor of ABCE1	ENSG00000241127	False	False	True		org.Hs.eg.db 3.18.0
+H2AFV	H2AZ2	ENSG00000105968	True	94239	H2A.Z variant histone 2	ENSG00000105968	False	False	True		org.Hs.eg.db 3.18.0
+C7orf65	LINC02902	ENSG00000221845	True	401335	long intergenic non-protein coding RNA 2902	ENSG00000221845	False	False	True		org.Hs.eg.db 3.18.0
+C7orf69	PKD1L1-AS1	ENSG00000136275	True	80099	PKD1L1 antisense RNA 1	ENSG00000136275	False	False	True		org.Hs.eg.db 3.18.0
+C7orf72	SPMIP7	ENSG00000164500	True	100130988	sperm microtubule inner protein 7	ENSG00000164500	False	False	True		org.Hs.eg.db 3.18.0
+SEPT14	SEPTIN14	ENSG00000154997	True	346288	septin 14	ENSG00000154997	False	False	True		org.Hs.eg.db 3.18.0
+GBAS	NIPSNAP2	ENSG00000146729	True	2631	nipsnap homolog 2	ENSG00000146729	False	False	True		org.Hs.eg.db 3.18.0
+GS1-124K5.4	LINC03011	ENSG00000237310	True	100289098	long intergenic non-protein coding RNA 3011	ENSG00000237310	False	False	True		org.Hs.eg.db 3.18.0
+WBSCR17	GALNT17	ENSG00000185274	True	64409	polypeptide N-acetylgalactosaminyltransferase 17	ENSG00000185274	False	False	True		org.Hs.eg.db 3.18.0
+WBSCR22	BUD23	ENSG00000071462	True	114049	BUD23 rRNA methyltransferase and ribosome maturation factor	ENSG00000071462	False	False	True		org.Hs.eg.db 3.18.0
+WBSCR27	METTL27	ENSG00000165171	True	155368	methyltransferase like 27	ENSG00000165171	False	False	True		org.Hs.eg.db 3.18.0
+WBSCR28	TMEM270	ENSG00000175877	True	135886	transmembrane protein 270	ENSG00000175877	False	False	True		org.Hs.eg.db 3.18.0
+CTB-51J22.1	ELN-AS1	ENSG00000232415	True	107986809	ELN antisense RNA 1	ENSG00000232415	False	False	True		org.Hs.eg.db 3.18.0
+GATSL2	CASTOR2	ENSG00000274070	True	729438	cytosolic arginine sensor for mTORC1 subunit 2	ENSG00000274070	False	False	True		org.Hs.eg.db 3.18.0
+WBSCR16	RCC1L	ENSG00000274523	True	81554	RCC1 like	ENSG00000274523	False	False	True		org.Hs.eg.db 3.18.0
+KIAA1324L	ELAPOR2	ENSG00000164659	True	222223	endosome-lysosome associated apoptosis and autophagy regulator family member 2	ENSG00000164659	False	False	True		org.Hs.eg.db 3.18.0
+C7orf62	TEX47	ENSG00000164645	True	219557	testis expressed 47	ENSG00000164645	False	False	True		org.Hs.eg.db 3.18.0
+SHFM1	SEM1	ENSG00000127922	True	7979	SEM1 26S proteasome subunit	ENSG00000127922	False	False	True		org.Hs.eg.db 3.18.0
+ATP5J2	ATP5MF	ENSG00000241468	True	9551	ATP synthase membrane subunit f	ENSG00000241468	False	False	True		org.Hs.eg.db 3.18.0
+GS1-259H13.2	TMEM225B	ENSG00000244219	True	100289187	transmembrane protein 225B	ENSG00000244219	False	False	True		org.Hs.eg.db 3.18.0
+C7orf43	TRAPPC14	ENSG00000146826	True	55262	trafficking protein particle complex subunit 14	ENSG00000146826	False	False	True		org.Hs.eg.db 3.18.0
+C7orf61	SPACDR	ENSG00000185955	True	402573	sperm acrosome developmental regulator	ENSG00000185955	False	False	True		org.Hs.eg.db 3.18.0
+UPK3BL	UPK3BL1	ENSG00000267368	True	100134938	uroplakin 3B like 1	ENSG00000267368	False	False	True		org.Hs.eg.db 3.18.0
+C7orf66	LINC02903	ENSG00000205174	True	154907	long intergenic non-protein coding RNA 2903	ENSG00000205174	False	False	True		org.Hs.eg.db 3.18.0
+C7orf60	BMT2	ENSG00000164603	True	154743	base methyltransferase of 25S rRNA 2 homolog	ENSG00000164603	False	False	True		org.Hs.eg.db 3.18.0
+LINC00998	SMIM30	ENSG00000214194	True	401397	small integral membrane protein 30	ENSG00000214194	False	False	True		org.Hs.eg.db 3.18.0
+C7orf77	LINC03043	ENSG00000275356	True	154872	long intergenic non-protein coding RNA 3043	ENSG00000275356	False	False	True		org.Hs.eg.db 3.18.0
+FAM71F2	GARIN1A	ENSG00000205085	True	346653	golgi associated RAB2 interactor 1A	ENSG00000205085	False	False	True		org.Hs.eg.db 3.18.0
+FAM71F1	GARIN1B	ENSG00000135248	True	84691	golgi associated RAB2 interactor 1B	ENSG00000135248	False	False	True		org.Hs.eg.db 3.18.0
+C7orf49	CYREN	ENSG00000122783	True	78996	cell cycle regulator of NHEJ	ENSG00000122783	False	False	True		org.Hs.eg.db 3.18.0
+C7orf73	STMP1	ENSG00000243317	True	647087	short transmembrane mitochondrial protein 1	ENSG00000243317	False	False	True		org.Hs.eg.db 3.18.0
+TTC26	IFT56	ENSG00000105948	True	79989	intraflagellar transport 56	ENSG00000105948	False	False	True		org.Hs.eg.db 3.18.0
+C7orf55	FMC1	ENSG00000164898	True	154791	formation of mitochondrial complex V assembly factor 1 homolog	ENSG00000164898	False	False	True		org.Hs.eg.db 3.18.0
+JHDM1D-AS1	KDM7A-DT	ENSG00000260231	True	100134229	KDM7A divergent transcript	ENSG00000260231	False	False	True		org.Hs.eg.db 3.18.0
+KIAA1147	DENND11	ENSG00000257093	True	57189	DENN domain containing 11	ENSG00000257093	False	False	True		org.Hs.eg.db 3.18.0
+C7orf34	LLCFC1	ENSG00000165131	True	135927	LLLL and CFNLAS motif containing 1	ENSG00000165131	False	False	True		org.Hs.eg.db 3.18.0
+SSPO	SSPOP	ENSG00000197558	True	23145	SCO-spondin, pseudogene	ENSG00000197558	False	False	True		org.Hs.eg.db 3.18.0
+PAXIP1-AS1	PAXIP1-DT	ENSG00000273344	True	202781	PAXIP1 divergent transcript	ENSG00000273344	False	False	True		org.Hs.eg.db 3.18.0
+LINC01006	RNF32-DT	ENSG00000182648	True	100506380	RNF32 divergent transcript	ENSG00000182648	False	False	True		org.Hs.eg.db 3.18.0
+WDR60	DYNC2I1	ENSG00000126870	True	55112	dynein 2 intermediate chain 1	ENSG00000126870	False	False	True		org.Hs.eg.db 3.18.0
+ARSE	ARSL	ENSG00000157399	True	415	arylsulfatase L	ENSG00000157399	False	False	True		org.Hs.eg.db 3.18.0
+FIGF	VEGFD	ENSG00000165197	True	2277	vascular endothelial growth factor D	ENSG00000165197	False	False	True		org.Hs.eg.db 3.18.0
+GS1-594A7.3	ACE2-DT	ENSG00000225833	True	104798195	ACE2 divergent transcript	ENSG00000225833	False	False	True		org.Hs.eg.db 3.18.0
+TMEM27	CLTRN	ENSG00000147003	True	57393	collectrin, amino acid transport regulator	ENSG00000147003	False	False	True		org.Hs.eg.db 3.18.0
+CXorf23	BCLAF3	ENSG00000173681	True	256643	BCLAF1 and THRAP3 family member 3	ENSG00000173681	False	False	True		org.Hs.eg.db 3.18.0
+ZNF645	CBLL2	ENSG00000175809	True	158506	Cbl proto-oncogene like 2	ENSG00000175809	False	False	True		org.Hs.eg.db 3.18.0
+MAGEB6P1	MAGEB6B	ENSG00000232030	True	392433	MAGE family member B6B	ENSG00000232030	False	False	True		org.Hs.eg.db 3.18.0
+CXorf21	TASL	ENSG00000120280	True	80231	TLR adaptor interacting with endolysosomal SLC15A4	ENSG00000120280	False	False	True		org.Hs.eg.db 3.18.0
+HYPM	H2AP	ENSG00000187516	True	25763	H2A.P histone	ENSG00000187516	False	False	True		org.Hs.eg.db 3.18.0
+CXorf36	DIPK2B	ENSG00000147113	True	79742	divergent protein kinase domain 2B	ENSG00000147113	False	False	True		org.Hs.eg.db 3.18.0
+USP27X-AS1	USP27X-DT	ENSG00000234390	True	158572	USP27X divergent transcript	ENSG00000234390	False	False	True		org.Hs.eg.db 3.18.0
+CXorf67	EZHIP	ENSG00000187690	True	340602	EZH inhibitory protein	ENSG00000187690	False	False	True		org.Hs.eg.db 3.18.0
+CENPVP3	CENPVL3	ENSG00000224109	True	347549	centromere protein V like 3	ENSG00000224109	False	False	True		org.Hs.eg.db 3.18.0
+CENPVP1	CENPVL1	ENSG00000223591	True	389857	centromere protein V like 1	ENSG00000223591	False	False	True		org.Hs.eg.db 3.18.0
+FAM104B	VCF2	ENSG00000182518	True	90736	VCP nuclear cofactor family member 2	ENSG00000182518	False	False	True		org.Hs.eg.db 3.18.0
+LINC01420	NBDY	ENSG00000204272	True	550643	negative regulator of P-body association	ENSG00000204272	False	False	True		org.Hs.eg.db 3.18.0
+NLRP2P	NLRP2B	ENSG00000215174	True	286430	NLR family pyrin domain containing 2B	ENSG00000215174	False	False	True		org.Hs.eg.db 3.18.0
+FAM155B	NALF2	ENSG00000130054	True	27112	NALCN channel auxiliary factor 2	ENSG00000130054	False	False	True		org.Hs.eg.db 3.18.0
+ACRC	GCNA	ENSG00000147174	True	93953	germ cell nuclear acidic peptidase	ENSG00000147174	False	False	True		org.Hs.eg.db 3.18.0
+RGAG4	RTL5	ENSG00000242732	True	340526	retrotransposon Gag like 5	ENSG00000242732	False	False	True		org.Hs.eg.db 3.18.0
+LINC00684	FAM236A	ENSG00000275520	True	100129407	family with sequence similarity 236 member A	ENSG00000275520	False	False	True		org.Hs.eg.db 3.18.0
+NAP1L6	NAP1L6P	ENSG00000204118	True	645996	nucleosome assembly protein 1 like 6, pseudogene	ENSG00000204118	False	False	True		org.Hs.eg.db 3.18.0
+KIAA2022	NEXMIF	ENSG00000050030	True	340533	neurite extension and migration factor	ENSG00000050030	False	False	True		org.Hs.eg.db 3.18.0
+ZCCHC5	RTL3	ENSG00000179300	True	203430	retrotransposon Gag like 3	ENSG00000179300	False	False	True		org.Hs.eg.db 3.18.0
+FAM46D	TENT5D	ENSG00000174016	True	169966	terminal nucleotidyltransferase 5D	ENSG00000174016	False	False	True		org.Hs.eg.db 3.18.0
+TMEM35	TMEM35A	ENSG00000126950	True	59353	transmembrane protein 35A	ENSG00000126950	False	False	True		org.Hs.eg.db 3.18.0
+BHLHB9	GPRASP3	ENSG00000198908	True	80823	G protein-coupled receptor associated sorting protein family member 3	ENSG00000198908	False	False	True		org.Hs.eg.db 3.18.0
+WBP5	TCEAL9	ENSG00000185222	True	51186	transcription elongation factor A like 9	ENSG00000185222	False	False	True		org.Hs.eg.db 3.18.0
+NGFRAP1	BEX3	ENSG00000166681	True	27018	brain expressed X-linked 3	ENSG00000166681	False	False	True		org.Hs.eg.db 3.18.0
+H2BFWT	H2BW1	ENSG00000123569	True	158983	H2B.W histone 1	ENSG00000123569	False	False	True		org.Hs.eg.db 3.18.0
+H2BFM	H2BW2	ENSG00000101812	True	286436	H2B.W histone 2	ENSG00000101812	False	False	True		org.Hs.eg.db 3.18.0
+MUM1L1	PWWP3B	ENSG00000157502	True	139221	PWWP domain containing 3B	ENSG00000157502	False	False	True		org.Hs.eg.db 3.18.0
+CXorf57	RADX	ENSG00000147231	True	55086	RPA1 related single stranded DNA binding protein, X-linked	ENSG00000147231	False	False	True		org.Hs.eg.db 3.18.0
+PIH1D3	DNAAF6	ENSG00000080572	True	139212	dynein axonemal assembly factor 6	ENSG00000080572	False	False	True		org.Hs.eg.db 3.18.0
+RGAG1	RTL9	ENSG00000243978	True	57529	retrotransposon Gag like 9	ENSG00000243978	False	False	True		org.Hs.eg.db 3.18.0
+LINC00890	SERTM2	ENSG00000260802	True	401613	serine rich and transmembrane domain containing 2	ENSG00000260802	False	False	True		org.Hs.eg.db 3.18.0
+ZCCHC16	RTL4	ENSG00000187823	True	340595	retrotransposon Gag like 4	ENSG00000187823	False	False	True		org.Hs.eg.db 3.18.0
+CXorf56	STEEP1	ENSG00000018610	True	63932	STING1 ER exit protein 1	ENSG00000018610	False	False	True		org.Hs.eg.db 3.18.0
+SEPT6	SEPTIN6	ENSG00000125354	True	23157	septin 6	ENSG00000125354	False	False	True		org.Hs.eg.db 3.18.0
+FAM122B	PABIR2	ENSG00000156504	True	159090	PABIR family member 2	ENSG00000156504	False	False	True		org.Hs.eg.db 3.18.0
+FAM122C	PABIR3	ENSG00000156500	True	159091	PABIR family member 3	ENSG00000156500	False	False	True		org.Hs.eg.db 3.18.0
+FAM127C	RTL8B	ENSG00000212747	True	441518	retrotransposon Gag like 8B	ENSG00000212747	False	False	True		org.Hs.eg.db 3.18.0
+FAM127A	RTL8C	ENSG00000134590	True	8933	retrotransposon Gag like 8C	ENSG00000134590	False	False	True		org.Hs.eg.db 3.18.0
+FAM127B	RTL8A	ENSG00000203950	True	26071	retrotransposon Gag like 8A	ENSG00000203950	False	False	True		org.Hs.eg.db 3.18.0
+LINC00633	ETDB	ENSG00000224107	True	100129515	embryonic testis differentiation homolog B	ENSG00000224107	False	False	True		org.Hs.eg.db 3.18.0
+DDX26B-AS1	INTS6L-AS1	ENSG00000225235	True	100874118	INTS6L antisense RNA 1	ENSG00000225235	False	False	True		org.Hs.eg.db 3.18.0
+DDX26B	INTS6L	ENSG00000165359	True	203522	integrator complex subunit 6 like	ENSG00000165359	False	False	True		org.Hs.eg.db 3.18.0
+LINC00893	EOLA1-DT	ENSG00000241769	True	100131434	EOLA1 divergent transcript	ENSG00000241769	False	False	True		org.Hs.eg.db 3.18.0
+CXorf40A	EOLA1	ENSG00000197620	True	91966	endothelium and lymphocyte associated ASCH domain 1	ENSG00000197620	False	False	True		org.Hs.eg.db 3.18.0
+CXorf40B	EOLA2	ENSG00000197021	True	541578	endothelium and lymphocyte associated ASCH domain 2	ENSG00000197021	False	False	True		org.Hs.eg.db 3.18.0
+LINC00894	EOLA2-DT	ENSG00000235703	True	100272228	EOLA2 divergent transcript	ENSG00000235703	False	False	True		org.Hs.eg.db 3.18.0
+FAM58A	CCNQ	ENSG00000262919	True	92002	cyclin Q	ENSG00000262919	False	False	True		org.Hs.eg.db 3.18.0
+TAZ	TAFAZZIN	ENSG00000102125	True	6901	tafazzin, phospholipid-lysophospholipid transacylase	ENSG00000102125	False	False	True		org.Hs.eg.db 3.18.0
+CH17-340M24.3	ATP6AP1-DT	ENSG00000197180	True	158960	ATP6AP1 divergent transcript	ENSG00000197180	False	False	True		org.Hs.eg.db 3.18.0
+H2AFB1	H2AB1	ENSG00000274183	True	474382	H2A.B variant histone 1	ENSG00000274183	False	False	True		org.Hs.eg.db 3.18.0
+H2AFB2	H2AB2	ENSG00000277858	True	474381	H2A.B variant histone 2	ENSG00000277858	False	False	True		org.Hs.eg.db 3.18.0
+H2AFB3	H2AB3	ENSG00000277745	True	83740	H2A.B variant histone 3	ENSG00000277745	False	False	True		org.Hs.eg.db 3.18.0
+SGK223	PRAG1	ENSG00000275342	True	157285	PEAK1 related, kinase-activating pseudokinase 1	ENSG00000275342	False	False	True		org.Hs.eg.db 3.18.0
+LINC00599	MIR124-1HG	ENSG00000253230	True	157627	MIR124-1 host gene	ENSG00000253230	False	False	True		org.Hs.eg.db 3.18.0
+LINCR-0001	LINC03022	ENSG00000253641	True	101929191	long intergenic non-protein coding RNA 3022	ENSG00000253641	False	False	True		org.Hs.eg.db 3.18.0
+DEFB130	DEFB130A	ENSG00000232948	True	245940	defensin beta 130A	ENSG00000232948	False	False	True		org.Hs.eg.db 3.18.0
+KIAA1456	TRMT9B	ENSG00000250305	True	57604	tRNA methyltransferase 9B (putative)	ENSG00000250305	False	False	True		org.Hs.eg.db 3.18.0
+FAM160B2	FHIP2B	ENSG00000158863	True	64760	FHF complex subunit HOOK interacting protein 2B	ENSG00000158863	False	False	True		org.Hs.eg.db 3.18.0
+FAM183CP	LINC02209	ENSG00000253279	True	286135	long intergenic non-protein coding RNA 2209	ENSG00000253279	False	False	True		org.Hs.eg.db 3.18.0
+PROSC	PLPBP	ENSG00000147471	True	11212	pyridoxal phosphate binding protein	ENSG00000147471	False	False	True		org.Hs.eg.db 3.18.0
+WHSC1L1	NSD3	ENSG00000147548	True	54904	nuclear receptor binding SET domain protein 3	ENSG00000147548	False	False	True		org.Hs.eg.db 3.18.0
+C8orf86	LINC03042	ENSG00000196166	True	389649	long intergenic non-protein coding RNA 3042	ENSG00000196166	False	False	True		org.Hs.eg.db 3.18.0
+C8orf4	TCIM	ENSG00000176907	True	56892	transcriptional and immune response regulator	ENSG00000176907	False	False	True		org.Hs.eg.db 3.18.0
+EFCAB1	CLXN	ENSG00000034239	True	79645	calaxin	ENSG00000034239	False	False	True		org.Hs.eg.db 3.18.0
+C8orf22	PPDPFL	ENSG00000168333	True	492307	pancreatic progenitor cell differentiation and proliferation factor like	ENSG00000168333	False	False	True		org.Hs.eg.db 3.18.0
+FAM150A	ALKAL1	ENSG00000196711	True	389658	ALK and LTK ligand 1	ENSG00000196711	False	False	True		org.Hs.eg.db 3.18.0
+IMPAD1	BPNT2	ENSG00000104331	True	54928	3'(2'), 5'-bisphosphate nucleotidase 2	ENSG00000104331	False	False	True		org.Hs.eg.db 3.18.0
+YTHDF3-AS1	YTHDF3-DT	ENSG00000270673	True	101410533	YTHDF3 divergent transcript	ENSG00000270673	False	False	True		org.Hs.eg.db 3.18.0
+RRS1-AS1	RRS1-DT	ENSG00000246145	True	100505676	RRS1 divergent transcript	ENSG00000246145	False	False	True		org.Hs.eg.db 3.18.0
+C8orf46	VXN	ENSG00000169085	True	254778	vexin	ENSG00000169085	False	False	True		org.Hs.eg.db 3.18.0
+TCEB1	ELOC	ENSG00000154582	True	6921	elongin C	ENSG00000154582	False	False	True		org.Hs.eg.db 3.18.0
+C8orf59	RBIS	ENSG00000176731	True	401466	ribosomal biogenesis factor	ENSG00000176731	False	False	True		org.Hs.eg.db 3.18.0
+TMEM55A	PIP4P2	ENSG00000155099	True	55529	phosphatidylinositol-4,5-bisphosphate 4-phosphatase 2	ENSG00000155099	False	False	True		org.Hs.eg.db 3.18.0
+C8orf87	LINC02906	ENSG00000279847	True	389676	long intergenic non-protein coding RNA 2906	ENSG00000279847	False	False	True		org.Hs.eg.db 3.18.0
+LINC00535	CIBAR1-DT	ENSG00000246662	True	642924	CIBAR1 divergent transcript	ENSG00000246662	False	False	True		org.Hs.eg.db 3.18.0
+FAM92A1	CIBAR1	ENSG00000188343	True	137392	CBY1 interacting BAR domain containing 1	ENSG00000188343	False	False	True		org.Hs.eg.db 3.18.0
+KIAA1429	VIRMA	ENSG00000164944	True	25962	vir like m6A methyltransferase associated	ENSG00000164944	False	False	True		org.Hs.eg.db 3.18.0
+C8orf37-AS1	CFAP418-AS1	ENSG00000253773	True	100616530	CFAP418 antisense RNA 1	ENSG00000253773	False	False	True		org.Hs.eg.db 3.18.0
+C8orf37	CFAP418	ENSG00000156172	True	157657	cilia and flagella associated protein 418	ENSG00000156172	False	False	True		org.Hs.eg.db 3.18.0
+HRSP12	RIDA	ENSG00000132541	True	10247	reactive intermediate imine deaminase A homolog	ENSG00000132541	False	False	True		org.Hs.eg.db 3.18.0
+KB-1980E6.3	LINC03047	ENSG00000253633	True	107986898	long intergenic non-protein coding RNA 3047	ENSG00000253633	False	False	True		org.Hs.eg.db 3.18.0
+NOV	CCN3	ENSG00000136999	True	4856	cellular communication network factor 3	ENSG00000136999	False	False	True		org.Hs.eg.db 3.18.0
+WDYHV1	NTAQ1	ENSG00000156795	True	55093	N-terminal glutamine amidase 1	ENSG00000156795	False	False	True		org.Hs.eg.db 3.18.0
+RNF139-AS1	RNF139-DT	ENSG00000245149	True	101927612	RNF139 divergent transcript	ENSG00000245149	False	False	True		org.Hs.eg.db 3.18.0
+KIAA0196	WASHC5	ENSG00000164961	True	9897	WASH complex subunit 5	ENSG00000164961	False	False	True		org.Hs.eg.db 3.18.0
+KIAA0196-AS1	WASHC5-AS1	ENSG00000253167	True	106479020	WASHC5 antisense RNA 1	ENSG00000253167	False	False	True		org.Hs.eg.db 3.18.0
+FAM84B	LRATD2	ENSG00000168672	True	157638	LRAT domain containing 2	ENSG00000168672	False	False	True		org.Hs.eg.db 3.18.0
+FAM49B	CYRIB	ENSG00000153310	True	51571	CYFIP related Rac1 interactor B	ENSG00000153310	False	False	True		org.Hs.eg.db 3.18.0
+LRRC6	DNAAF11	ENSG00000129295	True	23639	dynein axonemal assembly factor 11	ENSG00000129295	False	False	True		org.Hs.eg.db 3.18.0
+WISP1	CCN4	ENSG00000104415	True	8840	cellular communication network factor 4	ENSG00000104415	False	False	True		org.Hs.eg.db 3.18.0
+PYCRL	PYCR3	ENSG00000104524	True	65263	pyrroline-5-carboxylate reductase 3	ENSG00000104524	False	False	True		org.Hs.eg.db 3.18.0
+TSTA3	GFUS	ENSG00000104522	True	7264	GDP-L-fucose synthase	ENSG00000104522	False	False	True		org.Hs.eg.db 3.18.0
+FAM83H-AS1	IQANK1	ENSG00000203499	True	642574	IQ motif and ankyrin repeat containing 1	ENSG00000203499	False	False	True		org.Hs.eg.db 3.18.0
+CYHR1	ZFTRAF1	ENSG00000187954	True	50626	zinc finger TRAF-type containing 1	ENSG00000187954	False	False	True		org.Hs.eg.db 3.18.0
+CBWD1	ZNG1A	ENSG00000172785	True	55871	Zn regulated GTPase metalloprotein activator 1A	ENSG00000172785	False	False	True		org.Hs.eg.db 3.18.0
+C9orf66	DOCK8-AS1	ENSG00000183784	True	157983	DOCK8 antisense RNA 1	ENSG00000183784	False	False	True		org.Hs.eg.db 3.18.0
+RFX3-AS1	RFX3-DT	ENSG00000232104	True	101929302	RFX3 divergent transcript	ENSG00000232104	False	False	True		org.Hs.eg.db 3.18.0
+CDC37L1-AS1	CDC37L1-DT	ENSG00000273061	True	101929351	CDC37L1 divergent transcript	ENSG00000273061	False	False	True		org.Hs.eg.db 3.18.0
+TMEM261	DMAC1	ENSG00000137038	True	90871	distal membrane arm assembly component 1	ENSG00000137038	False	False	True		org.Hs.eg.db 3.18.0
+PTPRD-AS2	PTPRD-DT	ENSG00000226717	True	101929428	PTPRD divergent transcript	ENSG00000226717	False	False	True		org.Hs.eg.db 3.18.0
+C9orf92	LINC03041	ENSG00000205549	True	100129385	long intergenic non-protein coding RNA 3041	ENSG00000205549	False	False	True		org.Hs.eg.db 3.18.0
+DDX58	RIGI	ENSG00000107201	True	23586	RNA sensor RIG-I	ENSG00000107201	False	False	True		org.Hs.eg.db 3.18.0
+TOPORS-AS1	SMIM27	ENSG00000235453	True	100129250	small integral membrane protein 27	ENSG00000235453	False	False	True		org.Hs.eg.db 3.18.0
+KIAA1161	MYORG	ENSG00000164976	True	57462	myogenesis regulating glycosidase (putative)	ENSG00000164976	False	False	True		org.Hs.eg.db 3.18.0
+C9orf24	SPMIP6	ENSG00000164972	True	84688	sperm microtubule inner protein 6	ENSG00000164972	False	False	True		org.Hs.eg.db 3.18.0
+FAM205A	SPATA31F1	ENSG00000205108	True	259308	SPATA31 subfamily F member 1	ENSG00000205108	False	False	True		org.Hs.eg.db 3.18.0
+FAM205C	SPATA31F3	ENSG00000187791	True	100129969	SPATA31 subfamily F member 3	ENSG00000187791	False	False	True		org.Hs.eg.db 3.18.0
+DNAJB5-AS1	DNAJB5-DT	ENSG00000281491	True	101926900	DNAJB5 divergent transcript	ENSG00000281491	False	False	True		org.Hs.eg.db 3.18.0
+C9orf131	SPATA31G1	ENSG00000174038	True	138724	SPATA31 subfamily G member 1	ENSG00000174038	False	False	True		org.Hs.eg.db 3.18.0
+FAM214B	ATOSB	ENSG00000005238	True	80256	atos homolog B	ENSG00000005238	False	False	True		org.Hs.eg.db 3.18.0
+FAM166B	CIMIP2B	ENSG00000215187	True	730112	ciliary microtubule inner protein 2B	ENSG00000215187	False	False	True		org.Hs.eg.db 3.18.0
+LINC00961	SPAAR	ENSG00000235387	True	158376	small regulatory polypeptide of amino acid response	ENSG00000235387	False	False	True		org.Hs.eg.db 3.18.0
+EBLN3	EBLN3P	ENSG00000281649	True	100506710	endogenous Bornavirus like nucleoprotein 3, pseudogene	ENSG00000281649	False	False	True		org.Hs.eg.db 3.18.0
+CBWD7	ZNG1F	ENSG00000215126	True	644019	Zn regulated GTPase metalloprotein activator 1F	ENSG00000215126	False	False	True		org.Hs.eg.db 3.18.0
+CBWD5	ZNG1E	ENSG00000147996	True	220869	Zn regulated GTPase metalloprotein activator 1E	ENSG00000147996	False	False	True		org.Hs.eg.db 3.18.0
+CBWD3	ZNG1C	ENSG00000196873	True	445571	Zn regulated GTPase metalloprotein activator 1C	ENSG00000196873	False	False	True		org.Hs.eg.db 3.18.0
+FAM122A	PABIR1	ENSG00000187866	True	116224	PP2A Aalpha (PPP2R1A) and B55A (PPP2R2A) interacting phosphatase regulator 1	ENSG00000187866	False	False	True		org.Hs.eg.db 3.18.0
+FAM189A2	ENTREP1	ENSG00000135063	True	9413	endosomal transmembrane epsin interactor 1	ENSG00000135063	False	False	True		org.Hs.eg.db 3.18.0
+C9orf135-AS1	CFAP95-DT	ENSG00000225626	True	494558	CFAP95 divergent transcript	ENSG00000225626	False	False	True		org.Hs.eg.db 3.18.0
+C9orf135	CFAP95	ENSG00000204711	True	138255	cilia and flagella associated protein 95	ENSG00000204711	False	False	True		org.Hs.eg.db 3.18.0
+TMEM2	CEMIP2	ENSG00000135048	True	23670	cell migration inducing hyaluronidase 2	ENSG00000135048	False	False	True		org.Hs.eg.db 3.18.0
+C9orf64	QNG1	ENSG00000165118	True	84267	Q-nucleotide N-glycosylase 1	ENSG00000165118	False	False	True		org.Hs.eg.db 3.18.0
+ZCCHC6	TUT7	ENSG00000083223	True	79670	terminal uridylyl transferase 7	ENSG00000083223	False	False	True		org.Hs.eg.db 3.18.0
+C9orf170	LINC02872	ENSG00000204446	True	401535	long intergenic non-protein coding RNA 2872	ENSG00000204446	False	False	True		org.Hs.eg.db 3.18.0
+IARS	IARS1	ENSG00000196305	True	3376	isoleucyl-tRNA synthetase 1	ENSG00000196305	False	False	True		org.Hs.eg.db 3.18.0
+BARX1-AS1	BARX1-DT	ENSG00000235601	True	101928040	BARX1 divergent transcript	ENSG00000235601	False	False	True		org.Hs.eg.db 3.18.0
+MIRLET7DHG	LINC02603	ENSG00000230262	True	158257	long intergenic non-protein coding RNA 2603	ENSG00000230262	False	False	True		org.Hs.eg.db 3.18.0
+C9orf3	AOPEP	ENSG00000148120	True	84909	aminopeptidase O (putative)	ENSG00000148120	False	False	True		org.Hs.eg.db 3.18.0
+AAED1	PRXL2C	ENSG00000158122	True	195827	peroxiredoxin like 2C	ENSG00000158122	False	False	True		org.Hs.eg.db 3.18.0
+MURC	CAVIN4	ENSG00000170681	True	347273	caveolae associated protein 4	ENSG00000170681	False	False	True		org.Hs.eg.db 3.18.0
+TMEM246	PGAP4	ENSG00000165152	True	84302	post-GPI attachment to proteins GalNAc transferase 4	ENSG00000165152	False	False	True		org.Hs.eg.db 3.18.0
+SMC2-AS1	SMC2-DT	ENSG00000270332	True	101928550	SMC2 divergent transcript	ENSG00000270332	False	False	True		org.Hs.eg.db 3.18.0
+IKBKAP	ELP1	ENSG00000070061	True	8518	elongator acetyltransferase complex subunit 1	ENSG00000070061	False	False	True		org.Hs.eg.db 3.18.0
+FAM206A	ABITRAM	ENSG00000119328	True	54942	actin binding transcription modulator	ENSG00000119328	False	False	True		org.Hs.eg.db 3.18.0
+PALM2-AKAP2	PALM2AKAP2	ENSG00000157654	True	445815	PALM2 and AKAP2 fusion	ENSG00000157654	False	False	True		org.Hs.eg.db 3.18.0
+KIAA0368	ECPAS	ENSG00000136813	True	23392	Ecm29 proteasome adaptor and scaffold	ENSG00000136813	False	False	True		org.Hs.eg.db 3.18.0
+C9orf84	SHOC1	ENSG00000165181	True	158401	shortage in chiasmata 1	ENSG00000165181	False	False	True		org.Hs.eg.db 3.18.0
+DFNB31	WHRN	ENSG00000095397	True	25861	whirlin	ENSG00000095397	False	False	True		org.Hs.eg.db 3.18.0
+C9orf91	TMEM268	ENSG00000157693	True	203197	transmembrane protein 268	ENSG00000157693	False	False	True		org.Hs.eg.db 3.18.0
+DEC1	DELEC1	ENSG00000173077	True	50514	deleted in esophageal cancer 1	ENSG00000173077	False	False	True		org.Hs.eg.db 3.18.0
+PSMD5-AS1	CUTALP	ENSG00000226752	True	253039	cutA divalent cation tolerance like, pseudogene	ENSG00000226752	False	False	True		org.Hs.eg.db 3.18.0
+FAM129B	NIBAN2	ENSG00000136830	True	64855	niban apoptosis regulator 2	ENSG00000136830	False	False	True		org.Hs.eg.db 3.18.0
+FAM102A	EEIG1	ENSG00000167106	True	399665	estrogen-induced osteoclastogenesis regulator 1	ENSG00000167106	False	False	True		org.Hs.eg.db 3.18.0
+C9orf16	BBLN	ENSG00000171159	True	79095	bublin coiled coil protein	ENSG00000171159	False	False	True		org.Hs.eg.db 3.18.0
+WDR34	DYNC2I2	ENSG00000119333	True	89891	dynein 2 intermediate chain 2	ENSG00000119333	False	False	True		org.Hs.eg.db 3.18.0
+C9orf114	SPOUT1	ENSG00000198917	True	51490	SPOUT domain containing methyltransferase 1	ENSG00000198917	False	False	True		org.Hs.eg.db 3.18.0
+CCBL1	KYAT1	ENSG00000171097	True	883	kynurenine aminotransferase 1	ENSG00000171097	False	False	True		org.Hs.eg.db 3.18.0
+FAM73B	MIGA2	ENSG00000148343	True	84895	mitoguardin 2	ENSG00000148343	False	False	True		org.Hs.eg.db 3.18.0
+PPP2R4	PTPA	ENSG00000119383	True	5524	protein phosphatase 2 phosphatase activator	ENSG00000119383	False	False	True		org.Hs.eg.db 3.18.0
+C9orf9	SPACA9	ENSG00000165698	True	11092	sperm acrosome associated 9	ENSG00000165698	False	False	True		org.Hs.eg.db 3.18.0
+TMEM8C	MYMK	ENSG00000187616	True	389827	myomaker, myoblast fusion factor	ENSG00000187616	False	False	True		org.Hs.eg.db 3.18.0
+LINC00094	BRD3OS	ENSG00000235106	True	266655	BRD3 opposite strand	ENSG00000235106	False	False	True		org.Hs.eg.db 3.18.0
+C9orf62	LINC02907	ENSG00000178243	True	157927	long intergenic non-protein coding RNA 2907	ENSG00000178243	False	False	True		org.Hs.eg.db 3.18.0
+C9orf116	PIERCE1	ENSG00000160345	True	138162	piercer of microtubule wall 1	ENSG00000160345	False	False	True		org.Hs.eg.db 3.18.0
+C9orf69	TMEM250	ENSG00000238227	True	90120	transmembrane protein 250	ENSG00000238227	False	False	True		org.Hs.eg.db 3.18.0
+SDCCAG3	ENTR1	ENSG00000165689	True	10807	endosome associated trafficking regulator 1	ENSG00000165689	False	False	True		org.Hs.eg.db 3.18.0
+FAM69B	DIPK1B	ENSG00000165716	True	138311	divergent protein kinase domain 1B	ENSG00000165716	False	False	True		org.Hs.eg.db 3.18.0
+C9orf172	AJM1	ENSG00000232434	True	389813	apical junction component 1 homolog	ENSG00000232434	False	False	True		org.Hs.eg.db 3.18.0
+C9orf142	PAXX	ENSG00000148362	True	286257	PAXX non-homologous end joining factor	ENSG00000148362	False	False	True		org.Hs.eg.db 3.18.0
+C9orf139	LINC02908	ENSG00000180539	True	401563	long intergenic non-protein coding RNA 2908	ENSG00000180539	False	False	True		org.Hs.eg.db 3.18.0
+MAN1B1-AS1	MAN1B1-DT	ENSG00000268996	True	100289341	MAN1B1 divergent transcript	ENSG00000268996	False	False	True		org.Hs.eg.db 3.18.0
+FAM166A	CIMIP2A	ENSG00000188163	True	401565	ciliary microtubule inner protein 2A	ENSG00000188163	False	False	True		org.Hs.eg.db 3.18.0
+C9orf173-AS1	STPG3-AS1	ENSG00000275549	True	100129722	STPG3 antisense RNA 1	ENSG00000275549	False	False	True		org.Hs.eg.db 3.18.0
+C9orf173	STPG3	ENSG00000197768	True	441476	sperm-tail PG-rich repeat containing 3	ENSG00000197768	False	False	True		org.Hs.eg.db 3.18.0
+ODF3	CIMAP1A	ENSG00000177947	True	113746	ciliary microtubule associated protein 1A	ENSG00000177947	False	False	True		org.Hs.eg.db 3.18.0
+ATHL1	PGGHG	ENSG00000142102	True	80162	protein-glucosylgalactosylhydroxylysine glucosidase	ENSG00000142102	False	False	True		org.Hs.eg.db 3.18.0
+PDDC1	GATD1	ENSG00000177225	True	347862	glutamine amidotransferase class 1 domain containing 1	ENSG00000177225	False	False	True		org.Hs.eg.db 3.18.0
+TOLLIP-AS1	TOLLIP-DT	ENSG00000255153	True	255512	TOLLIP divergent transcript	ENSG00000255153	False	False	True		org.Hs.eg.db 3.18.0
+CARS	CARS1	ENSG00000110619	True	833	cysteinyl-tRNA synthetase 1	ENSG00000110619	False	False	True		org.Hs.eg.db 3.18.0
+CARS-AS1	CARS1-AS1	ENSG00000247473	True	100852407	CARS1 antisense RNA 1	ENSG00000247473	False	False	True		org.Hs.eg.db 3.18.0
+FAM160A2	FHIP1B	ENSG00000051009	True	84067	FHF complex subunit HOOK interacting protein 1B	ENSG00000051009	False	False	True		org.Hs.eg.db 3.18.0
+PRKCDBP	CAVIN3	ENSG00000170955	True	112464	caveolae associated protein 3	ENSG00000170955	False	False	True		org.Hs.eg.db 3.18.0
+ST5	DENND2B	ENSG00000166444	True	6764	DENN domain containing 2B	ENSG00000166444	False	False	True		org.Hs.eg.db 3.18.0
+MRVI1-AS1	IRAG1-AS1	ENSG00000177112	True	100129827	IRAG1 antisense RNA 1	ENSG00000177112	False	False	True		org.Hs.eg.db 3.18.0
+MRVI1	IRAG1	ENSG00000072952	True	10335	inositol 1,4,5-triphosphate receptor associated 1	ENSG00000072952	False	False	True		org.Hs.eg.db 3.18.0
+ARNTL	BMAL1	ENSG00000133794	True	406	basic helix-loop-helix ARNT like 1	ENSG00000133794	False	False	True		org.Hs.eg.db 3.18.0
+SPTY2D1-AS1	MISFA	ENSG00000247595	True	100506540	mitochondrial sheath formation associated	ENSG00000247595	False	False	True		org.Hs.eg.db 3.18.0
+CSTF3-AS1	CSTF3-DT	ENSG00000247151	True	338739	CSTF3 divergent transcript	ENSG00000247151	False	False	True		org.Hs.eg.db 3.18.0
+FBXO3-AS1	FBXO3-DT	ENSG00000254508	True	101928440	FBXO3 divergent transcript	ENSG00000254508	False	False	True		org.Hs.eg.db 3.18.0
+C11orf74	IFTAP	ENSG00000166352	True	119710	intraflagellar transport associated protein	ENSG00000166352	False	False	True		org.Hs.eg.db 3.18.0
+C11orf94	FREY1	ENSG00000234776	True	143678	Frey regulator of sperm-oocyte fusion 1	ENSG00000234776	False	False	True		org.Hs.eg.db 3.18.0
+GYLTL1B	LARGE2	ENSG00000165905	True	120071	LARGE xylosyl- and glucuronyltransferase 2	ENSG00000165905	False	False	True		org.Hs.eg.db 3.18.0
+C11orf49	CSTPP1	ENSG00000149179	True	79096	centriolar satellite-associated tubulin polyglutamylase complex regulator 1	ENSG00000149179	False	False	True		org.Hs.eg.db 3.18.0
+C11orf31	SELENOH	ENSG00000211450	True	280636	selenoprotein H	ENSG00000211450	False	False	True		org.Hs.eg.db 3.18.0
+GLYATL1P3	GLYATL1B	ENSG00000255151	True	100287520	glycine-N-acyltransferase like 1B	ENSG00000255151	False	False	True		org.Hs.eg.db 3.18.0
+GIF	CBLIF	ENSG00000134812	True	2694	cobalamin binding intrinsic factor	ENSG00000134812	False	False	True		org.Hs.eg.db 3.18.0
+PPP1R32	SAXO4	ENSG00000162148	True	220004	stabilizer of axonemal microtubules 4	ENSG00000162148	False	False	True		org.Hs.eg.db 3.18.0
+DKFZP434K028	MYRF-AS1	ENSG00000124915	True	26070	MYRF antisense RNA 1	ENSG00000124915	False	False	True		org.Hs.eg.db 3.18.0
+METTL12	CSKMT	ENSG00000214756	True	751071	citrate synthase lysine methyltransferase	ENSG00000214756	False	False	True		org.Hs.eg.db 3.18.0
+HRASLS5	PLAAT5	ENSG00000168004	True	117245	phospholipase A and acyltransferase 5	ENSG00000168004	False	False	True		org.Hs.eg.db 3.18.0
+RARRES3	PLAAT4	ENSG00000133321	True	5920	phospholipase A and acyltransferase 4	ENSG00000133321	False	False	True		org.Hs.eg.db 3.18.0
+HRASLS2	PLAAT2	ENSG00000133328	True	54979	phospholipase A and acyltransferase 2	ENSG00000133328	False	False	True		org.Hs.eg.db 3.18.0
+PLA2G16	PLAAT3	ENSG00000176485	True	11145	phospholipase A and acyltransferase 3	ENSG00000176485	False	False	True		org.Hs.eg.db 3.18.0
+C11orf95	ZFTA	ENSG00000188070	True	65998	zinc finger translocation associated	ENSG00000188070	False	False	True		org.Hs.eg.db 3.18.0
+C11orf84	SPINDOC	ENSG00000168005	True	144097	spindlin interactor and repressor of chromatin binding	ENSG00000168005	False	False	True		org.Hs.eg.db 3.18.0
+TEX40	CATSPERZ	ENSG00000219435	True	25858	catsper channel auxiliary subunit zeta	ENSG00000219435	False	False	True		org.Hs.eg.db 3.18.0
+C11orf85	MAJIN	ENSG00000168070	True	283129	membrane anchored junction protein	ENSG00000168070	False	False	True		org.Hs.eg.db 3.18.0
+SSSCA1	ZNRD2	ENSG00000173465	True	10534	zinc ribbon domain containing 2	ENSG00000173465	False	False	True		org.Hs.eg.db 3.18.0
+PCNXL3	PCNX3	ENSG00000197136	True	399909	pecanex 3	ENSG00000197136	False	False	True		org.Hs.eg.db 3.18.0
+C11orf80	TOP6BL	ENSG00000173715	True	79703	TOP6B like initiator of meiotic double strand breaks	ENSG00000173715	False	False	True		org.Hs.eg.db 3.18.0
+ADRBK1	GRK2	ENSG00000173020	True	156	G protein-coupled receptor kinase 2	ENSG00000173020	False	False	True		org.Hs.eg.db 3.18.0
+C11orf72	NDUFV1-DT	ENSG00000184224	True	100505621	NDUFV1 divergent transcript	ENSG00000184224	False	False	True		org.Hs.eg.db 3.18.0
+MTL5	TESMIN	ENSG00000132749	True	9633	testis expressed metallothionein like protein	ENSG00000132749	False	False	True		org.Hs.eg.db 3.18.0
+ORAOV1	LTO1	ENSG00000149716	True	220064	LTO1 maturation factor of ABCE1	ENSG00000149716	False	False	True		org.Hs.eg.db 3.18.0
+FAM86C1	FAM86C1P	ENSG00000158483	True	55199	family with sequence similarity 86 member C1, pseudogene	ENSG00000158483	False	False	True		org.Hs.eg.db 3.18.0
+PRKRIR	THAP12	ENSG00000137492	True	5612	THAP domain containing 12	ENSG00000137492	False	False	True		org.Hs.eg.db 3.18.0
+C11orf73	HIKESHI	ENSG00000149196	True	51501	heat shock protein nuclear import factor hikeshi	ENSG00000149196	False	False	True		org.Hs.eg.db 3.18.0
+CCDC67	DEUP1	ENSG00000165325	True	159989	deuterosome assembly protein 1	ENSG00000165325	False	False	True		org.Hs.eg.db 3.18.0
+MRE11A	MRE11	ENSG00000020922	True	4361	MRE11 homolog, double strand break repair nuclease	ENSG00000020922	False	False	True		org.Hs.eg.db 3.18.0
+C11orf70	CFAP300	ENSG00000137691	True	85016	cilia and flagella associated protein 300	ENSG00000137691	False	False	True		org.Hs.eg.db 3.18.0
+KDELC2	POGLUT3	ENSG00000178202	True	143888	protein O-glucosyltransferase 3	ENSG00000178202	False	False	True		org.Hs.eg.db 3.18.0
+C11orf53	POU2AF2	ENSG00000150750	True	341032	POU class 2 homeobox associating factor 2	ENSG00000150750	False	False	True		org.Hs.eg.db 3.18.0
+COLCA2	POU2AF3	ENSG00000214290	True	120376	POU class 2 homeobox associating factor 3	ENSG00000214290	False	False	True		org.Hs.eg.db 3.18.0
+C11orf88	HOATZ	ENSG00000183644	True	399949	HOATZ cilia and flagella associated protein	ENSG00000183644	False	False	True		org.Hs.eg.db 3.18.0
+C11orf1	CFAP68	ENSG00000137720	True	64776	cilia and flagella associated protein 68	ENSG00000137720	False	False	True		org.Hs.eg.db 3.18.0
+C11orf57	NKAPD1	ENSG00000150776	True	55216	NKAP domain containing 1	ENSG00000150776	False	False	True		org.Hs.eg.db 3.18.0
+TMPRSS4-AS1	SMIM35	ENSG00000255274	True	100526771	small integral membrane protein 35	ENSG00000255274	False	False	True		org.Hs.eg.db 3.18.0
+ATP5L	ATP5MG	ENSG00000167283	True	10632	ATP synthase membrane subunit g	ENSG00000167283	False	False	True		org.Hs.eg.db 3.18.0
+CCDC84	CENATAC	ENSG00000186166	True	338657	centrosomal AT-AC splicing factor	ENSG00000186166	False	False	True		org.Hs.eg.db 3.18.0
+H2AFX	H2AX	ENSG00000188486	True	3014	H2A.X variant histone	ENSG00000188486	False	False	True		org.Hs.eg.db 3.18.0
+PDZD3	NHERF4	ENSG00000172367	True	79849	NHERF family PDZ scaffold protein 4	ENSG00000172367	False	False	True		org.Hs.eg.db 3.18.0
+PVRL1	NECTIN1	ENSG00000110400	True	5818	nectin cell adhesion molecule 1	ENSG00000110400	False	False	True		org.Hs.eg.db 3.18.0
+TMEM136	TLCD5	ENSG00000181264	True	219902	TLC domain containing 5	ENSG00000181264	False	False	True		org.Hs.eg.db 3.18.0
+C11orf63	JHY	ENSG00000109944	True	79864	junctional cadherin complex regulator	ENSG00000109944	False	False	True		org.Hs.eg.db 3.18.0
+PKNOX2-AS1	PKNOX2-DT	ENSG00000254880	True	103695364	PKNOX2 divergent transcript	ENSG00000254880	False	False	True		org.Hs.eg.db 3.18.0
+C11orf45	KCNJ5-AS1	ENSG00000174370	True	219833	KCNJ5 antisense RNA 1	ENSG00000174370	False	False	True		org.Hs.eg.db 3.18.0
+C11orf44	LINC02873	ENSG00000175728	True	283171	long intergenic non-protein coding RNA 2873	ENSG00000175728	False	False	True		org.Hs.eg.db 3.18.0
+PRR26	DIP2C-AS1	ENSG00000180525	True	414235	DIP2C antisense RNA 1	ENSG00000180525	False	False	True		org.Hs.eg.db 3.18.0
+LINC00704	MANCR	ENSG00000231298	True	100216001	mitotically associated long non coding RNA	ENSG00000231298	False	False	True		org.Hs.eg.db 3.18.0
+FAM208B	TASOR2	ENSG00000108021	True	54906	transcription activation suppressor family member 2	ENSG00000108021	False	False	True		org.Hs.eg.db 3.18.0
+FBXO18	FBH1	ENSG00000134452	True	84893	F-box DNA helicase 1	ENSG00000134452	False	False	True		org.Hs.eg.db 3.18.0
+ATP5C1	ATP5F1C	ENSG00000165629	True	509	ATP synthase F1 subunit gamma	ENSG00000165629	False	False	True		org.Hs.eg.db 3.18.0
+C10orf111	RPP38-DT	ENSG00000176236	True	221060	RPP38 divergent transcript	ENSG00000176236	False	False	True		org.Hs.eg.db 3.18.0
+FAM188A	MINDY3	ENSG00000148481	True	80013	MINDY lysine 48 deubiquitinase 3	ENSG00000148481	False	False	True		org.Hs.eg.db 3.18.0
+STAM-AS1	STAM-DT	ENSG00000260589	True	102723166	STAM divergent transcript	ENSG00000260589	False	False	True		org.Hs.eg.db 3.18.0
+CASC10	MIR1915HG	ENSG00000204682	True	399726	MIR1915 host gene	ENSG00000204682	False	False	True		org.Hs.eg.db 3.18.0
+ARMC4	ODAD2	ENSG00000169126	True	55130	outer dynein arm docking complex subunit 2	ENSG00000169126	False	False	True		org.Hs.eg.db 3.18.0
+KIAA1462	JCAD	ENSG00000165757	True	57608	junctional cadherin 5 associated	ENSG00000165757	False	False	True		org.Hs.eg.db 3.18.0
+PARD3-AS1	PARD3-DT	ENSG00000226386	True	100505601	PARD3 divergent transcript	ENSG00000226386	False	False	True		org.Hs.eg.db 3.18.0
+C10orf142	LINC02881	ENSG00000277288	True	100130539	long intergenic non-protein coding RNA 2881	ENSG00000277288	False	False	True		org.Hs.eg.db 3.18.0
+C10orf10	DEPP1	ENSG00000165507	True	11067	DEPP autophagy regulator 1	ENSG00000165507	False	False	True		org.Hs.eg.db 3.18.0
+C10orf25	ZNF22-AS1	ENSG00000165511	True	220979	ZNF22 antisense RNA 1	ENSG00000165511	False	False	True		org.Hs.eg.db 3.18.0
+MARCH8	MARCHF8	ENSG00000165406	True	220972	membrane associated ring-CH-type finger 8	ENSG00000165406	False	False	True		org.Hs.eg.db 3.18.0
+FAM21C	WASHC2C	ENSG00000172661	True	253725	WASH complex subunit 2C	ENSG00000172661	False	False	True		org.Hs.eg.db 3.18.0
+CH17-360D5.1	NPY4R2	ENSG00000264717	True	100996758	neuropeptide Y receptor Y4-2	ENSG00000264717	False	False	True		org.Hs.eg.db 3.18.0
+C10orf128	TMEM273	ENSG00000204161	True	170371	transmembrane protein 273	ENSG00000204161	False	False	True		org.Hs.eg.db 3.18.0
+FAM21A	WASHC2A	ENSG00000099290	True	387680	WASH complex subunit 2A	ENSG00000099290	False	False	True		org.Hs.eg.db 3.18.0
+C10orf107	CABCOCO1	ENSG00000183346	True	219621	ciliary associated calcium binding coiled-coil 1	ENSG00000183346	False	False	True		org.Hs.eg.db 3.18.0
+KIF1BP	KIFBP	ENSG00000198954	True	26128	kinesin family binding protein	ENSG00000198954	False	False	True		org.Hs.eg.db 3.18.0
+C10orf35	FAM241B	ENSG00000171224	True	219738	family with sequence similarity 241 member B	ENSG00000171224	False	False	True		org.Hs.eg.db 3.18.0
+H2AFY2	MACROH2A2	ENSG00000099284	True	55506	macroH2A.2 histone	ENSG00000099284	False	False	True		org.Hs.eg.db 3.18.0
+C10orf54	VSIR	ENSG00000107738	True	64115	V-set immunoregulatory receptor	ENSG00000107738	False	False	True		org.Hs.eg.db 3.18.0
+DUPD1	DUSP29	ENSG00000188716	True	338599	dual specificity phosphatase 29	ENSG00000188716	False	False	True		org.Hs.eg.db 3.18.0
+C10orf11	LRMDA	ENSG00000148655	True	83938	leucine rich melanocyte differentiation associated	ENSG00000148655	False	False	True		org.Hs.eg.db 3.18.0
+FAM213A	PRXL2A	ENSG00000122378	True	84293	peroxiredoxin like 2A	ENSG00000122378	False	False	True		org.Hs.eg.db 3.18.0
+C10orf99	GPR15LG	ENSG00000188373	True	387695	G protein-coupled receptor 15 ligand	ENSG00000188373	False	False	True		org.Hs.eg.db 3.18.0
+FAM35A	SHLD2	ENSG00000122376	True	54537	shieldin complex subunit 2	ENSG00000122376	False	False	True		org.Hs.eg.db 3.18.0
+TNKS2-AS1	TNKS2-DT	ENSG00000228701	True	100507633	TNKS2 divergent transcript	ENSG00000228701	False	False	True		org.Hs.eg.db 3.18.0
+MARCH5	MARCHF5	ENSG00000198060	True	54708	membrane associated ring-CH-type finger 5	ENSG00000198060	False	False	True		org.Hs.eg.db 3.18.0
+LINC00866	GOLGA7B-DT	ENSG00000227356	True	100505561	GOLGA7B divergent transcript	ENSG00000227356	False	False	True		org.Hs.eg.db 3.18.0
+C10orf2	TWNK	ENSG00000107815	True	56652	twinkle mtDNA helicase	ENSG00000107815	False	False	True		org.Hs.eg.db 3.18.0
+MGEA5	OGA	ENSG00000198408	True	10724	O-GlcNAcase	ENSG00000198408	False	False	True		org.Hs.eg.db 3.18.0
+C10orf76	ARMH3	ENSG00000120029	True	79591	armadillo like helical domain containing 3	ENSG00000120029	False	False	True		org.Hs.eg.db 3.18.0
+USMG5	ATP5MK	ENSG00000173915	True	84833	ATP synthase membrane subunit k	ENSG00000173915	False	False	True		org.Hs.eg.db 3.18.0
+OBFC1	STN1	ENSG00000107960	True	79991	STN1 subunit of CST complex	ENSG00000107960	False	False	True		org.Hs.eg.db 3.18.0
+CFAP58-AS1	CFAP58-DT	ENSG00000231233	True	100505869	CFAP58 divergent transcript	ENSG00000231233	False	False	True		org.Hs.eg.db 3.18.0
+FAM160B1	FHIP2A	ENSG00000151553	True	57700	FHF complex subunit HOOK interacting protein 2A	ENSG00000151553	False	False	True		org.Hs.eg.db 3.18.0
+C10orf82	SPMIP5	ENSG00000165863	True	143379	sperm microtubule inner protein 5	ENSG00000165863	False	False	True		org.Hs.eg.db 3.18.0
+FAM45A	DENND10	ENSG00000119979	True	404636	DENN domain containing 10	ENSG00000119979	False	False	True		org.Hs.eg.db 3.18.0
+WDR11-AS1	WDR11-DT	ENSG00000227165	True	283089	WDR11 divergent transcript	ENSG00000227165	False	False	True		org.Hs.eg.db 3.18.0
+METTL10	EEF1AKMT2	ENSG00000203791	True	399818	EEF1A lysine methyltransferase 2	ENSG00000203791	False	False	True		org.Hs.eg.db 3.18.0
+FAM175B	ABRAXAS2	ENSG00000165660	True	23172	abraxas 2, BRISC complex subunit	ENSG00000165660	False	False	True		org.Hs.eg.db 3.18.0
+FAM196A	INSYN2A	ENSG00000188916	True	642938	inhibitory synaptic factor 2A	ENSG00000188916	False	False	True		org.Hs.eg.db 3.18.0
+LINC00959	C10orf143	ENSG00000237489	True	387723	chromosome 10 open reading frame 143	ENSG00000237489	False	False	True		org.Hs.eg.db 3.18.0
+U47924.27	MIR200CHG	ENSG00000257084	True	105369635	MIR200C and MIR141 host gene	ENSG00000257084	False	False	True		org.Hs.eg.db 3.18.0
+CLECL1	CLECL1P	ENSG00000184293	True	160365	C-type lectin like 1, pseudogene	ENSG00000184293	False	False	True		org.Hs.eg.db 3.18.0
+EIF2S3L	EIF2S3B	ENSG00000180574	True	255308	eukaryotic translation initiation factor 2 subunit gamma B	ENSG00000180574	False	False	True		org.Hs.eg.db 3.18.0
+HIST4H4	H4C16	ENSG00000197837	True	121504	H4 histone 16	ENSG00000197837	False	False	True		org.Hs.eg.db 3.18.0
+H2AFJ	H2AJ	ENSG00000246705	True	55766	H2A.J histone	ENSG00000246705	False	False	True		org.Hs.eg.db 3.18.0
+C12orf77	LINC02909	ENSG00000226397	True	196415	long intergenic non-protein coding RNA 2909	ENSG00000226397	False	False	True		org.Hs.eg.db 3.18.0
+LRMP	IRAG2	ENSG00000118308	True	4033	inositol 1,4,5-triphosphate receptor associated 2	ENSG00000118308	False	False	True		org.Hs.eg.db 3.18.0
+CASC1	DNAI7	ENSG00000118307	True	55259	dynein axonemal intermediate chain 7	ENSG00000118307	False	False	True		org.Hs.eg.db 3.18.0
+LYRM5	ETFRF1	ENSG00000205707	True	144363	electron transfer flavoprotein regulatory factor 1	ENSG00000205707	False	False	True		org.Hs.eg.db 3.18.0
+ASUN	INTS13	ENSG00000064102	True	55726	integrator complex subunit 13	ENSG00000064102	False	False	True		org.Hs.eg.db 3.18.0
+ARNTL2	BMAL2	ENSG00000029153	True	56938	basic helix-loop-helix ARNT like 2	ENSG00000029153	False	False	True		org.Hs.eg.db 3.18.0
+ARNTL2-AS1	BMAL2-AS1	ENSG00000245311	True	101928646	BMAL2 antisense RNA 1	ENSG00000245311	False	False	True		org.Hs.eg.db 3.18.0
+FAM60A	SINHCAF	ENSG00000139146	True	58516	SIN3-HDAC complex associated factor	ENSG00000139146	False	False	True		org.Hs.eg.db 3.18.0
+METTL20	ETFBKMT	ENSG00000139160	True	254013	electron transfer flavoprotein subunit beta lysine methyltransferase	ENSG00000139160	False	False	True		org.Hs.eg.db 3.18.0
+H3F3C	H3-5	ENSG00000188375	True	440093	H3.5 histone	ENSG00000188375	False	False	True		org.Hs.eg.db 3.18.0
+KIAA1551	RESF1	ENSG00000174718	True	55196	retroelement silencing factor 1	ENSG00000174718	False	False	True		org.Hs.eg.db 3.18.0
+H1FNT	H1-7	ENSG00000187166	True	341567	H1.7 linker histone	ENSG00000187166	False	False	True		org.Hs.eg.db 3.18.0
+LINC00935	SPMIP11	ENSG00000257987	True	255411	sperm microtubule inner protein 11	ENSG00000257987	False	False	True		org.Hs.eg.db 3.18.0
+METTL7A	TMT1A	ENSG00000185432	True	25840	thiol methyltransferase 1A	ENSG00000185432	False	False	True		org.Hs.eg.db 3.18.0
+GRASP	TAMALIN	ENSG00000161835	True	160622	trafficking regulator and scaffold protein tamalin	ENSG00000161835	False	False	True		org.Hs.eg.db 3.18.0
+C12orf10	MYG1	ENSG00000139637	True	60314	MYG1 exonuclease	ENSG00000139637	False	False	True		org.Hs.eg.db 3.18.0
+ATP5G2	ATP5MC2	ENSG00000135390	True	517	ATP synthase membrane subunit c locus 2	ENSG00000135390	False	False	True		org.Hs.eg.db 3.18.0
+METTL7B	TMT1B	ENSG00000170439	True	196410	thiol methyltransferase 1B	ENSG00000170439	False	False	True		org.Hs.eg.db 3.18.0
+ATP5B	ATP5F1B	ENSG00000110955	True	506	ATP synthase F1 subunit beta	ENSG00000110955	False	False	True		org.Hs.eg.db 3.18.0
+MARS	MARS1	ENSG00000166986	True	4141	methionyl-tRNA synthetase 1	ENSG00000166986	False	False	True		org.Hs.eg.db 3.18.0
+SLC26A10	SLC26A10P	ENSG00000135502	True	65012	solute carrier family 26 member 10, pseudogene	ENSG00000135502	False	False	True		org.Hs.eg.db 3.18.0
+MARCH9	MARCHF9	ENSG00000139266	True	92979	membrane associated ring-CH-type finger 9	ENSG00000139266	False	False	True		org.Hs.eg.db 3.18.0
+METTL21B	EEF1AKMT3	ENSG00000123427	True	25895	EEF1A lysine methyltransferase 3	ENSG00000123427	False	False	True		org.Hs.eg.db 3.18.0
+XRCC6BP1	ATP23	ENSG00000166896	True	91419	ATP23 metallopeptidase and ATP synthase assembly factor homolog	ENSG00000166896	False	False	True		org.Hs.eg.db 3.18.0
+FAM19A2	TAFA2	ENSG00000198673	True	338811	TAFA chemokine like family member 2	ENSG00000198673	False	False	True		org.Hs.eg.db 3.18.0
+TMEM5	RXYLT1	ENSG00000118600	True	10329	ribitol xylosyltransferase 1	ENSG00000118600	False	False	True		org.Hs.eg.db 3.18.0
+TMEM5-AS1	RXYLT1-AS1	ENSG00000255850	True	104169670	RXYLT1 antisense RNA 1	ENSG00000255850	False	False	True		org.Hs.eg.db 3.18.0
+C12orf66	KICS2	ENSG00000174206	True	144577	KICSTOR subunit 2	ENSG00000174206	False	False	True		org.Hs.eg.db 3.18.0
+LLPH-AS1	LLPH-DT	ENSG00000239335	True	103625681	LLPH divergent transcript	ENSG00000239335	False	False	True		org.Hs.eg.db 3.18.0
+C12orf29	RLIG1	ENSG00000133641	True	91298	RNA 5'-phosphate and 3'-OH ligase 1	ENSG00000133641	False	False	True		org.Hs.eg.db 3.18.0
+LINC00936	ATP2B1-AS1	ENSG00000271614	True	338758	ATP2B1 antisense RNA 1	ENSG00000271614	False	False	True		org.Hs.eg.db 3.18.0
+CLLU1OS	CLLU1-AS1	ENSG00000205057	True	574016	CLLU1 antisense RNA 1	ENSG00000205057	False	False	True		org.Hs.eg.db 3.18.0
+CEP83-AS1	CEP83-DT	ENSG00000278916	True	144486	CEP83 divergent transcript	ENSG00000278916	False	False	True		org.Hs.eg.db 3.18.0
+FAM71C	GARIN6	ENSG00000180219	True	196472	golgi associated RAB2 interactor family member 6	ENSG00000180219	False	False	True		org.Hs.eg.db 3.18.0
+UHRF1BP1L	BLTP3B	ENSG00000111647	True	23074	bridge-like lipid transfer protein family member 3B	ENSG00000111647	False	False	True		org.Hs.eg.db 3.18.0
+CCDC53	WASHC3	ENSG00000120860	True	51019	WASH complex subunit 3	ENSG00000120860	False	False	True		org.Hs.eg.db 3.18.0
+C12orf73	UQCC6	ENSG00000204954	True	728568	ubiquinol-cytochrome c reductase complex assembly factor 6	ENSG00000204954	False	False	True		org.Hs.eg.db 3.18.0
+C12orf45	NOPCHAP1	ENSG00000151131	True	121053	NOP protein chaperone 1	ENSG00000151131	False	False	True		org.Hs.eg.db 3.18.0
+KIAA1033	WASHC4	ENSG00000136051	True	23325	WASH complex subunit 4	ENSG00000136051	False	False	True		org.Hs.eg.db 3.18.0
+BTBD11	ABTB3	ENSG00000151136	True	121551	ankyrin repeat and BTB domain containing 3	ENSG00000151136	False	False	True		org.Hs.eg.db 3.18.0
+FAM109A	PHETA1	ENSG00000198324	True	144717	PH domain containing endocytic trafficking adaptor 1	ENSG00000198324	False	False	True		org.Hs.eg.db 3.18.0
+C12orf49	SPRING1	ENSG00000111412	True	79794	SREBF pathway regulator in golgi 1	ENSG00000111412	False	False	True		org.Hs.eg.db 3.18.0
+CCDC64	BICDL1	ENSG00000135127	True	92558	BICD family like cargo adaptor 1	ENSG00000135127	False	False	True		org.Hs.eg.db 3.18.0
+WDR66	CFAP251	ENSG00000158023	True	144406	cilia and flagella associated protein 251	ENSG00000158023	False	False	True		org.Hs.eg.db 3.18.0
+C12orf65	MTRFR	ENSG00000130921	True	91574	mitochondrial translation release factor in rescue	ENSG00000130921	False	False	True		org.Hs.eg.db 3.18.0
+LINC00350	TPTE2-AS1	ENSG00000225316	True	100874136	TPTE2 antisense RNA 1	ENSG00000225316	False	False	True		org.Hs.eg.db 3.18.0
+N6AMT2	EEF1AKMT1	ENSG00000150456	True	221143	EEF1A lysine methyltransferase 1	ENSG00000150456	False	False	True		org.Hs.eg.db 3.18.0
+SPG20	SPART	ENSG00000133104	True	23111	spartin	ENSG00000133104	False	False	True		org.Hs.eg.db 3.18.0
+SPG20-AS1	SPART-AS1	ENSG00000120664	True	100507135	SPART antisense RNA 1	ENSG00000120664	False	False	True		org.Hs.eg.db 3.18.0
+LHFP	LHFPL6	ENSG00000183722	True	10186	LHFPL tetraspan subfamily member 6	ENSG00000183722	False	False	True		org.Hs.eg.db 3.18.0
+LINC00284	NRAD1	ENSG00000233725	True	121838	non-coding RNA in the aldehyde dehydrogenase 1A pathway	ENSG00000233725	False	False	True		org.Hs.eg.db 3.18.0
+SPERT	CBY2	ENSG00000174015	True	220082	chibby family member 2	ENSG00000174015	False	False	True		org.Hs.eg.db 3.18.0
+KIAA0226L	RUBCNL	ENSG00000102445	True	80183	rubicon like autophagy enhancer	ENSG00000102445	False	False	True		org.Hs.eg.db 3.18.0
+LINC00441	RB1-DT	ENSG00000231473	True	100862704	RB1 divergent transcript	ENSG00000231473	False	False	True		org.Hs.eg.db 3.18.0
+LINC00371	C13orf42	ENSG00000226792	True	647166	chromosome 13 open reading frame 42	ENSG00000226792	False	False	True		org.Hs.eg.db 3.18.0
+LINC00282	TMEM272	ENSG00000281106	True	283521	transmembrane protein 272	ENSG00000281106	False	False	True		org.Hs.eg.db 3.18.0
+LECT1	CNMD	ENSG00000136110	True	11061	chondromodulin	ENSG00000136110	False	False	True		org.Hs.eg.db 3.18.0
+IRG1	ACOD1	ENSG00000102794	True	730249	aconitate decarboxylase 1	ENSG00000102794	False	False	True		org.Hs.eg.db 3.18.0
+RNF219-AS1	OBI1-AS1	ENSG00000234377	True	100874222	OBI1 antisense RNA 1	ENSG00000234377	False	False	True		org.Hs.eg.db 3.18.0
+RNF219	OBI1	ENSG00000152193	True	79596	ORC ubiquitin ligase 1	ENSG00000152193	False	False	True		org.Hs.eg.db 3.18.0
+DNAJC3-AS1	DNAJC3-DT	ENSG00000247400	True	100289274	DNAJC3 divergent transcript	ENSG00000247400	False	False	True		org.Hs.eg.db 3.18.0
+KDELC1	POGLUT2	ENSG00000134901	True	79070	protein O-glucosyltransferase 2	ENSG00000134901	False	False	True		org.Hs.eg.db 3.18.0
+LINC00551	ARGLU1-DT	ENSG00000272274	True	283483	ARGLU1 divergent transcript	ENSG00000272274	False	False	True		org.Hs.eg.db 3.18.0
+FAM155A	NALF1	ENSG00000204442	True	728215	NALCN channel auxiliary factor 1	ENSG00000204442	False	False	True		org.Hs.eg.db 3.18.0
+CARKD	NAXD	ENSG00000213995	True	55739	NAD(P)HX dehydratase	ENSG00000213995	False	False	True		org.Hs.eg.db 3.18.0
+LINC00346	PRECSIT	ENSG00000255874	True	283487	p53 regulated carcinoma associated Stat3 activating long intergenic non-protein coding transcript	ENSG00000255874	False	False	True		org.Hs.eg.db 3.18.0
+LINC00403	SOX1-OT	ENSG00000224243	True	100505996	SOX1 overlapping transcript	ENSG00000224243	False	False	True		org.Hs.eg.db 3.18.0
+GAS6-AS2	GAS6-DT	ENSG00000272695	True	100506394	GAS6 divergent transcript	ENSG00000272695	False	False	True		org.Hs.eg.db 3.18.0
+TMEM55B	PIP4P1	ENSG00000165782	True	90809	phosphatidylinositol-4,5-bisphosphate 4-phosphatase 1	ENSG00000165782	False	False	True		org.Hs.eg.db 3.18.0
+LRRC16B	CARMIL3	ENSG00000186648	True	90668	capping protein regulator and myosin 1 linker 3	ENSG00000186648	False	False	True		org.Hs.eg.db 3.18.0
+NOVA1-AS1	NOVA1-DT	ENSG00000257842	True	102725045	NOVA1 divergent transcript	ENSG00000257842	False	False	True		org.Hs.eg.db 3.18.0
+KIAA0391	PRORP	ENSG00000100890	True	9692	protein only RNase P catalytic subunit	ENSG00000100890;ENSG00000258790	False	False	True		org.Hs.eg.db 3.18.0
+FAM179B	TOGARAM1	ENSG00000198718	True	23116	TOG array regulator of axonemal microtubules 1	ENSG00000198718	False	False	True		org.Hs.eg.db 3.18.0
+ATP5S	DMAC2L	ENSG00000125375	True	27109	distal membrane arm assembly component 2 like	ENSG00000125375	False	False	True		org.Hs.eg.db 3.18.0
+C14orf166	RTRAF	ENSG00000087302	True	51637	RNA transcription, translation and transport factor	ENSG00000087302	False	False	True		org.Hs.eg.db 3.18.0
+C14orf105	CCDC198	ENSG00000100557	True	55195	coiled-coil domain containing 198	ENSG00000100557	False	False	True		org.Hs.eg.db 3.18.0
+C14orf37	ARMH4	ENSG00000139971	True	145407	armadillo like helical domain containing 4	ENSG00000139971	False	False	True		org.Hs.eg.db 3.18.0
+PCNXL4	PCNX4	ENSG00000126773	True	64430	pecanex 4	ENSG00000126773	False	False	True		org.Hs.eg.db 3.18.0
+FAM71D	GARIN2	ENSG00000172717	True	161142	golgi associated RAB2 interactor family member 2	ENSG00000172717	False	False	True		org.Hs.eg.db 3.18.0
+MPP5	PALS1	ENSG00000072415	True	64398	protein associated with LIN7 1, MAGUK p55 family member	ENSG00000072415	False	False	True		org.Hs.eg.db 3.18.0
+ACTN1-AS1	ACTN1-DT	ENSG00000259062	True	161159	ACTN1 divergent transcript	ENSG00000259062	False	False	True		org.Hs.eg.db 3.18.0
+PCNX	PCNX1	ENSG00000100731	True	22990	pecanex 1	ENSG00000100731	False	False	True		org.Hs.eg.db 3.18.0
+C14orf169	RIOX1	ENSG00000170468	True	79697	ribosomal oxygenase 1	ENSG00000170468	False	False	True		org.Hs.eg.db 3.18.0
+ELMSAN1	MIDEAS	ENSG00000156030	True	91748	mitotic deacetylase associated SANT domain protein	ENSG00000156030	False	False	True		org.Hs.eg.db 3.18.0
+C14orf1	ERG28	ENSG00000133935	True	11161	ergosterol biosynthesis 28 homolog	ENSG00000133935	False	False	True		org.Hs.eg.db 3.18.0
+LINC01146	HISLA	ENSG00000258867	True	283587	HIF1A stabilizing long noncoding RNA	ENSG00000258867	False	False	True		org.Hs.eg.db 3.18.0
+C14orf159	DGLUCY	ENSG00000133943	True	80017	D-glutamate cyclase	ENSG00000133943	False	False	True		org.Hs.eg.db 3.18.0
+TMEM251	LYSET	ENSG00000153485	True	26175	lysosomal enzyme trafficking factor	ENSG00000153485	False	False	True		org.Hs.eg.db 3.18.0
+C14orf142	GON7	ENSG00000170270	True	84520	GON7 subunit of KEOPS complex	ENSG00000170270	False	False	True		org.Hs.eg.db 3.18.0
+LINC00521	CCDC197	ENSG00000175699	True	256369	coiled-coil domain containing 197	ENSG00000175699	False	False	True		org.Hs.eg.db 3.18.0
+C14orf177	LINC02914	ENSG00000176605	True	283598	long intergenic non-protein coding RNA 2914	ENSG00000176605	False	False	True		org.Hs.eg.db 3.18.0
+WARS	WARS1	ENSG00000140105	True	7453	tryptophanyl-tRNA synthetase 1	ENSG00000140105	False	False	True		org.Hs.eg.db 3.18.0
+APOPT1	COA8	ENSG00000256053	True	84334	cytochrome c oxidase assembly factor 8	ENSG00000256053	False	False	True		org.Hs.eg.db 3.18.0
+LINC00637	PPP1R13B-DT	ENSG00000258735	True	145216	PPP1R13B divergent transcript	ENSG00000258735	False	False	True		org.Hs.eg.db 3.18.0
+C14orf2	ATP5MJ	ENSG00000156411	True	9556	ATP synthase membrane subunit j	ENSG00000156411	False	False	True		org.Hs.eg.db 3.18.0
+ADSSL1	ADSS1	ENSG00000185100	True	122622	adenylosuccinate synthase 1	ENSG00000185100	False	False	True		org.Hs.eg.db 3.18.0
+C14orf79	CLBA1	ENSG00000140104	True	122616	clathrin binding box of aftiphilin containing 1	ENSG00000140104	False	False	True		org.Hs.eg.db 3.18.0
+C14orf80	TEDC1	ENSG00000185347	True	283643	tubulin epsilon and delta complex 1	ENSG00000185347	False	False	True		org.Hs.eg.db 3.18.0
+KIAA0125	FAM30A	ENSG00000226777	True	9834	family with sequence similarity 30 member A	ENSG00000226777	False	False	True		org.Hs.eg.db 3.18.0
+IGHVIII-51-1	IGHV8-51-1	ENSG00000254167	True	28343	immunoglobulin heavy variable IGHV8-51-1 (non-functional)	ENSG00000254167	False	False	True		org.Hs.eg.db 3.18.0
+FAM189A1	ENTREP2	ENSG00000104059	True	23359	endosomal transmembrane epsin interactor 2	ENSG00000104059	False	False	True		org.Hs.eg.db 3.18.0
+DKFZP434L187	LINC02249	ENSG00000225930	True	26082	long intergenic non-protein coding RNA 2249	ENSG00000225930	False	False	True		org.Hs.eg.db 3.18.0
+C15orf41	CDIN1	ENSG00000186073	True	84529	CDAN1 interacting nuclease 1	ENSG00000186073	False	False	True		org.Hs.eg.db 3.18.0
+C15orf54	LINC02915	ENSG00000175746	True	400360	long intergenic non-protein coding RNA 2915	ENSG00000175746	False	False	True		org.Hs.eg.db 3.18.0
+SRP14-AS1	SRP14-DT	ENSG00000248508	True	100131089	SRP14 divergent transcript	ENSG00000248508	False	False	True		org.Hs.eg.db 3.18.0
+C15orf52	CCDC9B	ENSG00000188549	True	388115	coiled-coil domain containing 9B	ENSG00000188549	False	False	True		org.Hs.eg.db 3.18.0
+C15orf57	CCDC32	ENSG00000128891	True	90416	coiled-coil domain containing 32	ENSG00000128891	False	False	True		org.Hs.eg.db 3.18.0
+CASC5	KNL1	ENSG00000137812	True	57082	kinetochore scaffold 1	ENSG00000137812	False	False	True		org.Hs.eg.db 3.18.0
+CASC4	GOLM2	ENSG00000166734	True	113201	golgi membrane protein 2	ENSG00000166734	False	False	True		org.Hs.eg.db 3.18.0
+EIF3J-AS1	EIF3J-DT	ENSG00000179523	True	645212	EIF3J divergent transcript	ENSG00000179523	False	False	True		org.Hs.eg.db 3.18.0
+C15orf43	TERB2	ENSG00000167014	True	145645	telomere repeat binding bouquet formation protein 2	ENSG00000167014	False	False	True		org.Hs.eg.db 3.18.0
+SPATA5L1	AFG2B	ENSG00000171763	True	79029	AFG2 AAA ATPase homolog B	ENSG00000171763	False	False	True		org.Hs.eg.db 3.18.0
+SQRDL	SQOR	ENSG00000137767	True	58472	sulfide quinone oxidoreductase	ENSG00000137767	False	False	True		org.Hs.eg.db 3.18.0
+FAM214A	ATOSA	ENSG00000047346	True	56204	atos homolog A	ENSG00000047346	False	False	True		org.Hs.eg.db 3.18.0
+C15orf65	PIERCE2	ENSG00000261652	True	145788	piercer of microtubule wall 2	ENSG00000261652	False	False	True		org.Hs.eg.db 3.18.0
+DYX1C1	DNAAF4	ENSG00000256061	True	161582	dynein axonemal assembly factor 4	ENSG00000256061	False	False	True		org.Hs.eg.db 3.18.0
+FAM63B	MINDY2	ENSG00000128923	True	54629	MINDY lysine 48 deubiquitinase 2	ENSG00000128923	False	False	True		org.Hs.eg.db 3.18.0
+FAM96A	CIAO2A	ENSG00000166797	True	84191	cytosolic iron-sulfur assembly component 2A	ENSG00000166797	False	False	True		org.Hs.eg.db 3.18.0
+KIAA0101	PCLAF	ENSG00000166803	True	9768	PCNA clamp associated factor	ENSG00000166803	False	False	True		org.Hs.eg.db 3.18.0
+VWA9	INTS14	ENSG00000138614	True	81556	integrator complex subunit 14	ENSG00000138614	False	False	True		org.Hs.eg.db 3.18.0
+GRAMD2	GRAMD2A	ENSG00000175318	True	196996	GRAM domain containing 2A	ENSG00000175318	False	False	True		org.Hs.eg.db 3.18.0
+C15orf59	INSYN1	ENSG00000205363	True	388135	inhibitory synaptic factor 1	ENSG00000205363	False	False	True		org.Hs.eg.db 3.18.0
+UBL7-AS1	UBL7-DT	ENSG00000247240	True	440288	UBL7 divergent transcript	ENSG00000247240	False	False	True		org.Hs.eg.db 3.18.0
+ODF3L1	CIMAP1C	ENSG00000182950	True	161753	ciliary microtubule associated protein 1C	ENSG00000182950	False	False	True		org.Hs.eg.db 3.18.0
+WDR61	SKIC8	ENSG00000140395	True	80349	SKI8 subunit of superkiller complex	ENSG00000140395	False	False	True		org.Hs.eg.db 3.18.0
+KIAA1024	MINAR1	ENSG00000169330	True	23251	membrane integral NOTCH2 associated receptor 1	ENSG00000169330	False	False	True		org.Hs.eg.db 3.18.0
+LINC01314	CTXND1	ENSG00000259417	True	100996492	cortexin domain containing 1	ENSG00000259417	False	False	True		org.Hs.eg.db 3.18.0
+MESDC2	MESD	ENSG00000117899	True	23184	mesoderm development LRP chaperone	ENSG00000117899	False	False	True		org.Hs.eg.db 3.18.0
+MESDC1	TLNRD1	ENSG00000140406	True	59274	talin rod domain containing 1	ENSG00000140406	False	False	True		org.Hs.eg.db 3.18.0
+EFTUD1	EFL1	ENSG00000140598	True	79631	elongation factor like GTPase 1	ENSG00000140598	False	False	True		org.Hs.eg.db 3.18.0
+FAM103A1	RAMAC	ENSG00000169612	True	83640	RNA guanine-7 methyltransferase activating subunit	ENSG00000169612	False	False	True		org.Hs.eg.db 3.18.0
+LINC01197	LETR1	ENSG00000248441	True	400456	lymphatic endothelial transcriptional regulator lncRNA 1	ENSG00000248441	False	False	True		org.Hs.eg.db 3.18.0
+VIMP	SELENOS	ENSG00000131871	True	55829	selenoprotein S	ENSG00000131871	False	False	True		org.Hs.eg.db 3.18.0
+TARSL2	TARS3	ENSG00000185418	True	123283	threonyl-tRNA synthetase 3	ENSG00000185418	False	False	True		org.Hs.eg.db 3.18.0
+TMEM8A	PGAP6	ENSG00000129925	True	58986	post-GPI attachment to proteins 6	ENSG00000129925	False	False	True		org.Hs.eg.db 3.18.0
+C16orf13	METTL26	ENSG00000130731	True	84326	methyltransferase like 26	ENSG00000130731	False	False	True		org.Hs.eg.db 3.18.0
+FAM195A	MCRIP2	ENSG00000172366	True	84331	MAPK regulated corepressor interacting protein 2	ENSG00000172366	False	False	True		org.Hs.eg.db 3.18.0
+LA16c-313D11.9	STUB1-DT	ENSG00000260394	True	105371184	STUB1 divergent transcript	ENSG00000260394	False	False	True		org.Hs.eg.db 3.18.0
+FAM173A	ANTKMT	ENSG00000103254	True	65990	adenine nucleotide translocase lysine methyltransferase	ENSG00000103254	False	False	True		org.Hs.eg.db 3.18.0
+NARFL	CIAO3	ENSG00000103245	True	64428	cytosolic iron-sulfur assembly component 3	ENSG00000103245	False	False	True		org.Hs.eg.db 3.18.0
+C16orf91	UQCC4	ENSG00000174109	True	283951	ubiquinol-cytochrome c reductase complex assembly factor 4	ENSG00000174109	False	False	True		org.Hs.eg.db 3.18.0
+HN1L	JPT2	ENSG00000206053	True	90861	Jupiter microtubule associated homolog 2	ENSG00000206053	False	False	True		org.Hs.eg.db 3.18.0
+LA16c-329F2.1	MAPK8IP3-AS1	ENSG00000261399	True	101929480	MAPK8IP3 antisense RNA 1	ENSG00000261399	False	False	True		org.Hs.eg.db 3.18.0
+SLC9A3R2	NHERF2	ENSG00000065054	True	9351	NHERF family PDZ scaffold protein 2	ENSG00000065054	False	False	True		org.Hs.eg.db 3.18.0
+C16orf59	TEDC2	ENSG00000162062	True	80178	tubulin epsilon and delta complex 2	ENSG00000162062	False	False	True		org.Hs.eg.db 3.18.0
+TCEB2	ELOB	ENSG00000103363	True	6923	elongin B	ENSG00000103363	False	False	True		org.Hs.eg.db 3.18.0
+CCDC64B	BICDL2	ENSG00000162069	True	146439	BICD family like cargo adaptor 2	ENSG00000162069	False	False	True		org.Hs.eg.db 3.18.0
+C16orf71	DNAAF8	ENSG00000166246	True	146562	dynein axonemal assembly factor 8	ENSG00000166246	False	False	True		org.Hs.eg.db 3.18.0
+SEPT12	SEPTIN12	ENSG00000140623	True	124404	septin 12	ENSG00000140623	False	False	True		org.Hs.eg.db 3.18.0
+C16orf72	HAPSTR1	ENSG00000182831	True	29035	HUWE1 associated protein modifying stress responses	ENSG00000182831	False	False	True		org.Hs.eg.db 3.18.0
+MKL2	MRTFB	ENSG00000186260	True	57496	myocardin related transcription factor B	ENSG00000186260	False	False	True		org.Hs.eg.db 3.18.0
+C16orf45	BMERB1	ENSG00000166780	True	89927	bMERB domain containing 1	ENSG00000166780	False	False	True		org.Hs.eg.db 3.18.0
+KIAA0430	MARF1	ENSG00000166783	True	9665	meiosis regulator and mRNA stability factor 1	ENSG00000166783	False	False	True		org.Hs.eg.db 3.18.0
+FOPNL	CEP20	ENSG00000133393	True	123811	centrosomal protein 20	ENSG00000133393	False	False	True		org.Hs.eg.db 3.18.0
+C16orf62	VPS35L	ENSG00000103544	True	57020	VPS35 endosomal protein sorting factor like	ENSG00000103544	False	False	True		org.Hs.eg.db 3.18.0
+TMEM159	LDAF1	ENSG00000011638	True	57146	lipid droplet assembly factor 1	ENSG00000011638	False	False	True		org.Hs.eg.db 3.18.0
+C16orf52	MOSMO	ENSG00000185716	True	730094	modulator of smoothened	ENSG00000185716	False	False	True		org.Hs.eg.db 3.18.0
+KIAA0556	KATNIP	ENSG00000047578	True	23247	katanin interacting protein	ENSG00000047578	False	False	True		org.Hs.eg.db 3.18.0
+CDIPT-AS1	CDIPTOSP	ENSG00000214725	True	440356	CDIP transferase opposite strand, pseudogene	ENSG00000214725	False	False	True		org.Hs.eg.db 3.18.0
+FAM57B	TLCD3B	ENSG00000149926	True	83723	TLC domain containing 3B	ENSG00000149926	False	False	True		org.Hs.eg.db 3.18.0
+MYLPF	MYL11	ENSG00000180209	True	29895	myosin light chain 11	ENSG00000180209	False	False	True		org.Hs.eg.db 3.18.0
+SEPT1	SEPTIN1	ENSG00000180096	True	1731	septin 1	ENSG00000180096	False	False	True		org.Hs.eg.db 3.18.0
+CCDC189	CFAP119	ENSG00000196118	True	90835	cilia and flagella associated protein 119	ENSG00000196118	False	False	True		org.Hs.eg.db 3.18.0
+C16orf58	RUSF1	ENSG00000140688	True	64755	RUS family member 1	ENSG00000140688	False	False	True		org.Hs.eg.db 3.18.0
+ZNF720	KRBOX5	ENSG00000197302	True	124411	KRAB box domain containing 5	ENSG00000197302	False	False	True		org.Hs.eg.db 3.18.0
+PAPD5	TENT4B	ENSG00000121274	True	64282	terminal nucleotidyltransferase 4B	ENSG00000121274	False	False	True		org.Hs.eg.db 3.18.0
+DKFZP434H168	GNAO1-AS1	ENSG00000261439	True	26077	GNAO1 antisense RNA 1	ENSG00000261439	False	False	True		org.Hs.eg.db 3.18.0
+FAM192A	PSME3IP1	ENSG00000172775	True	80011	proteasome activator subunit 3 interacting protein 1	ENSG00000172775	False	False	True		org.Hs.eg.db 3.18.0
+TEPP	SPMIP8	ENSG00000159648	True	374739	sperm microtubule inner protein 8	ENSG00000159648	False	False	True		org.Hs.eg.db 3.18.0
+CCDC79	TERB1	ENSG00000249961	True	283847	telomere repeat binding bouquet formation protein 1	ENSG00000249961	False	False	True		org.Hs.eg.db 3.18.0
+FAM96B	CIAO2B	ENSG00000166595	True	51647	cytosolic iron-sulfur assembly component 2B	ENSG00000166595	False	False	True		org.Hs.eg.db 3.18.0
+C16orf70	PHAF1	ENSG00000125149	True	80262	phagosome assembly factor 1	ENSG00000125149	False	False	True		org.Hs.eg.db 3.18.0
+KIAA0895L	MATCAP1	ENSG00000196123	True	653319	microtubule associated tyrosine carboxypeptidase 1	ENSG00000196123	False	False	True		org.Hs.eg.db 3.18.0
+LRRC29	FBXL9P	ENSG00000125122	True	26231	F-box and leucine rich repeat protein, pseudogene	ENSG00000125122	False	False	True		org.Hs.eg.db 3.18.0
+FAM65A	RIPOR1	ENSG00000039523	True	79567	RHO family interacting cell polarization regulator 1	ENSG00000039523	False	False	True		org.Hs.eg.db 3.18.0
+RLTPR	CARMIL2	ENSG00000159753	True	146206	capping protein regulator and myosin 1 linker 2	ENSG00000159753	False	False	True		org.Hs.eg.db 3.18.0
+AARS	AARS1	ENSG00000090861	True	16	alanyl-tRNA synthetase 1	ENSG00000090861	False	False	True		org.Hs.eg.db 3.18.0
+FUK	FCSK	ENSG00000157353	True	197258	fucose kinase	ENSG00000157353	False	False	True		org.Hs.eg.db 3.18.0
+MTSS1L	MTSS2	ENSG00000132613	True	92154	MTSS I-BAR domain containing 2	ENSG00000132613	False	False	True		org.Hs.eg.db 3.18.0
+LINC01568	LOHAN2	ENSG00000258779	True	100506172	lncRNA oncogene in head and neck cancer 2	ENSG00000258779	False	False	True		org.Hs.eg.db 3.18.0
+KARS	KARS1	ENSG00000065427	True	3735	lysyl-tRNA synthetase 1	ENSG00000065427	False	False	True		org.Hs.eg.db 3.18.0
+PRCAT47	ARLNC1	ENSG00000260896	True	100996425	androgen receptor regulated long noncoding RNA 1	ENSG00000260896	False	False	True		org.Hs.eg.db 3.18.0
+TLDC1	MEAK7	ENSG00000140950	True	57707	MTOR associated protein, eak-7 homolog	ENSG00000140950	False	False	True		org.Hs.eg.db 3.18.0
+FAM92B	CIBAR2	ENSG00000153789	True	339145	CBY1 interacting BAR domain containing 2	ENSG00000153789	False	False	True		org.Hs.eg.db 3.18.0
+LA16c-444G7.2	LINC02182	ENSG00000260420	True	101928880	long intergenic non-protein coding RNA 2182	ENSG00000260420	False	False	True		org.Hs.eg.db 3.18.0
+CENPBD1	CENPBD1P	ENSG00000177946	True	92806	CENPB DNA-binding domain containing 1, pseudogene	ENSG00000177946	False	False	True		org.Hs.eg.db 3.18.0
+C17orf97	LIAT1	ENSG00000187624	True	400566	ligand of ATE1	ENSG00000187624	False	False	True		org.Hs.eg.db 3.18.0
+FAM101B	RFLNB	ENSG00000183688	True	359845	refilin B	ENSG00000183688	False	False	True		org.Hs.eg.db 3.18.0
+FAM57A	TLCD3A	ENSG00000167695	True	79850	TLC domain containing 3A	ENSG00000167695	False	False	True		org.Hs.eg.db 3.18.0
+RNMTL1	MRM3	ENSG00000171861	True	55178	mitochondrial rRNA methyltransferase 3	ENSG00000171861	False	False	True		org.Hs.eg.db 3.18.0
+TUSC5	TRARG1	ENSG00000184811	True	286753	trafficking regulator of GLUT4 (SLC2A4) 1	ENSG00000184811	False	False	True		org.Hs.eg.db 3.18.0
+GSG2	HASPIN	ENSG00000177602	True	83903	histone H3 associated protein kinase	ENSG00000177602	False	False	True		org.Hs.eg.db 3.18.0
+FAM64A	PIMREG	ENSG00000129195	True	54478	PICALM interacting mitotic regulator	ENSG00000129195	False	False	True		org.Hs.eg.db 3.18.0
+C17orf74	SPEM2	ENSG00000184560	True	201243	SPEM family member 2	ENSG00000184560	False	False	True		org.Hs.eg.db 3.18.0
+LINC00675	TMEM238L	ENSG00000263429	True	100289255	transmembrane protein 238 like	ENSG00000263429	False	False	True		org.Hs.eg.db 3.18.0
+CDRT1	FBXW10B	ENSG00000241322	True	374286	F-box and WD repeat domain containing 10B	ENSG00000241322	False	False	True		org.Hs.eg.db 3.18.0
+C17orf51	LINC02693	ENSG00000212719	True	339263	long intergenic non-protein coding RNA 2693	ENSG00000212719	False	False	True		org.Hs.eg.db 3.18.0
+FAM27L	FAM27E5	ENSG00000178130	True	284123	family with sequence similarity E5	ENSG00000178130	False	False	True		org.Hs.eg.db 3.18.0
+SGK494	RSKR	ENSG00000167524	True	124923	ribosomal protein S6 kinase related	ENSG00000167524	False	False	True		org.Hs.eg.db 3.18.0
+KIAA0100	BLTP2	ENSG00000007202	True	9703	bridge-like lipid transfer protein family member 2	ENSG00000007202	False	False	True		org.Hs.eg.db 3.18.0
+C17orf102	TMEM132E-DT	ENSG00000197322	True	400591	TMEM132E divergent transcript	ENSG00000197322	False	False	True		org.Hs.eg.db 3.18.0
+C17orf96	EPOP	ENSG00000273604	True	100170841	elongin BC and polycomb repressive complex 2 associated protein	ENSG00000273604	False	False	True		org.Hs.eg.db 3.18.0
+C17orf98	SPMAP1	ENSG00000275489	True	388381	sperm microtubule associated protein 1	ENSG00000275489	False	False	True		org.Hs.eg.db 3.18.0
+LINC00672	LASP1NB	ENSG00000263874	True	100505576	LASP1 neighbor	ENSG00000263874	False	False	True		org.Hs.eg.db 3.18.0
+TMEM99	KRT10-AS1	ENSG00000167920	True	147184	KRT10 antisense RNA 1	ENSG00000167920	False	False	True		org.Hs.eg.db 3.18.0
+KRTAP4-16P	KRTAP4-16	ENSG00000241241	True	85354	keratin associated protein 4-16	ENSG00000241241	False	False	True		org.Hs.eg.db 3.18.0
+TTC25	ODAD4	ENSG00000204815	True	83538	outer dynein arm docking complex subunit 4	ENSG00000204815	False	False	True		org.Hs.eg.db 3.18.0
+PTRF	CAVIN1	ENSG00000177469	True	284119	caveolae associated protein 1	ENSG00000177469	False	False	True		org.Hs.eg.db 3.18.0
+FAM134C	RETREG3	ENSG00000141699	True	162427	reticulophagy regulator family member 3	ENSG00000141699	False	False	True		org.Hs.eg.db 3.18.0
+G6PC	G6PC1	ENSG00000131482	True	2538	glucose-6-phosphatase catalytic subunit 1	ENSG00000131482	False	False	True		org.Hs.eg.db 3.18.0
+C17orf105	CFAP97D1	ENSG00000231256	True	284067	CFAP97 domain containing 1	ENSG00000231256	False	False	True		org.Hs.eg.db 3.18.0
+C17orf53	HROB	ENSG00000125319	True	78995	homologous recombination factor with OB-fold	ENSG00000125319	False	False	True		org.Hs.eg.db 3.18.0
+THCAT158	EFCAB13-DT	ENSG00000263293	True	102724508	EFCAB13 divergent transcript	ENSG00000263293	False	False	True		org.Hs.eg.db 3.18.0
+THRA1/BTR	SKAP1-AS2	ENSG00000235300	True	105371807	SKAP1 antisense RNA 2	ENSG00000235300	False	False	True		org.Hs.eg.db 3.18.0
+ATP5G1	ATP5MC1	ENSG00000159199	True	516	ATP synthase membrane subunit c locus 1	ENSG00000159199	False	False	True		org.Hs.eg.db 3.18.0
+PHB	PHB1	ENSG00000167085	True	5245	prohibitin 1	ENSG00000167085	False	False	True		org.Hs.eg.db 3.18.0
+C17orf112	LINC02876	ENSG00000227011	True	100506650	long intergenic non-protein coding RNA 2876	ENSG00000227011	False	False	True		org.Hs.eg.db 3.18.0
+BZRAP1	TSPOAP1	ENSG00000005379	True	9256	TSPO associated protein 1	ENSG00000005379	False	False	True		org.Hs.eg.db 3.18.0
+BZRAP1-AS1	TSPOAP1-AS1	ENSG00000265148	True	100506779	TSPOAP1, SUPT4H1 and RNF43 antisense RNA 1	ENSG00000265148	False	False	True		org.Hs.eg.db 3.18.0
+SEPT4-AS1	SEPTIN4-AS1	ENSG00000264672	True	101927688	SEPTIN4 antisense RNA 1	ENSG00000264672	False	False	True		org.Hs.eg.db 3.18.0
+SEPT4	SEPTIN4	ENSG00000108387	True	5414	septin 4	ENSG00000108387	False	False	True		org.Hs.eg.db 3.18.0
+C17orf64	CHCT1	ENSG00000141371	True	124773	CHD1 helical C-terminal domain containing 1	ENSG00000141371	False	False	True		org.Hs.eg.db 3.18.0
+C17orf82	LINC02875	ENSG00000187013	True	388407	long intergenic non-protein coding RNA 2875	ENSG00000187013	False	False	True		org.Hs.eg.db 3.18.0
+MARCH10	MARCHF10	ENSG00000173838	True	162333	membrane associated ring-CH-type finger 10	ENSG00000173838	False	False	True		org.Hs.eg.db 3.18.0
+CRAT40	LINC02563	ENSG00000263520	True	105827617	long intergenic non-protein coding RNA 2563	ENSG00000263520	False	False	True		org.Hs.eg.db 3.18.0
+FAM104A	VCF1	ENSG00000133193	True	84923	VCP nuclear cofactor family member 1	ENSG00000133193	False	False	True		org.Hs.eg.db 3.18.0
+C17orf77	CD300LD-AS1	ENSG00000182352	True	146723	CD300LD antisense RNA 1	ENSG00000182352	False	False	True		org.Hs.eg.db 3.18.0
+SLC9A3R1	NHERF1	ENSG00000109062	True	9368	NHERF family PDZ scaffold protein 1	ENSG00000109062	False	False	True		org.Hs.eg.db 3.18.0
+ICT1	MRPL58	ENSG00000167862	True	3396	mitochondrial ribosomal protein L58	ENSG00000167862	False	False	True		org.Hs.eg.db 3.18.0
+ATP5H	ATP5PD	ENSG00000167863	True	10476	ATP synthase peripheral stalk subunit d	ENSG00000167863	False	False	True		org.Hs.eg.db 3.18.0
+HN1	JPT1	ENSG00000189159	True	51155	Jupiter microtubule associated homolog 1	ENSG00000189159	False	False	True		org.Hs.eg.db 3.18.0
+H3F3B	H3-3B	ENSG00000132475	True	3021	H3.3 histone B	ENSG00000132475	False	False	True		org.Hs.eg.db 3.18.0
+SEPT9	SEPTIN9	ENSG00000184640	True	10801	septin 9	ENSG00000184640	False	False	True		org.Hs.eg.db 3.18.0
+HP09025	LINC02078	ENSG00000267719	True	100652929	long intergenic non-protein coding RNA 2078	ENSG00000267719	False	False	True		org.Hs.eg.db 3.18.0
+BAIAP2-AS1	BAIAP2-DT	ENSG00000226137	True	440465	BAIAP2 divergent transcript	ENSG00000226137	False	False	True		org.Hs.eg.db 3.18.0
+AATK-AS1	PVALEF	ENSG00000225180	True	388428	parvalbumin like EF-hand containing	ENSG00000225180	False	False	True		org.Hs.eg.db 3.18.0
+ENTHD2	TEPSIN	ENSG00000167302	True	146705	TEPSIN adaptor related protein complex 4 accessory protein	ENSG00000167302	False	False	True		org.Hs.eg.db 3.18.0
+C17orf89	NDUFAF8	ENSG00000224877	True	284184	NADH:ubiquinone oxidoreductase complex assembly factor 8	ENSG00000224877	False	False	True		org.Hs.eg.db 3.18.0
+FAM195B	MCRIP1	ENSG00000225663	True	348262	MAPK regulated corepressor interacting protein 1	ENSG00000225663	False	False	True		org.Hs.eg.db 3.18.0
+MAFG-AS1	MILIP	ENSG00000265688	True	92659	MYC inducible lncRNA inactivating p53	ENSG00000265688	False	False	True		org.Hs.eg.db 3.18.0
+STRA13	CENPX	ENSG00000169689	True	201254	centromere protein X	ENSG00000169689	False	False	True		org.Hs.eg.db 3.18.0
+HEXDC	HEXD	ENSG00000169660	True	284004	hexosaminidase D	ENSG00000169660	False	False	True		org.Hs.eg.db 3.18.0
+C17orf62	CYBC1	ENSG00000178927	True	79415	cytochrome b-245 chaperone 1	ENSG00000178927	False	False	True		org.Hs.eg.db 3.18.0
+C18orf42	AKAIN1	ENSG00000231824	True	642597	A-kinase anchor inhibitor 1	ENSG00000231824	False	False	True		org.Hs.eg.db 3.18.0
+C18orf8	RMC1	ENSG00000141452	True	29919	regulator of MON1-CCZ1	ENSG00000141452	False	False	True		org.Hs.eg.db 3.18.0
+ATP5A1	ATP5F1A	ENSG00000152234	True	498	ATP synthase F1 subunit alpha	ENSG00000152234	False	False	True		org.Hs.eg.db 3.18.0
+C18orf25	ARK2N	ENSG00000152242	True	147339	arkadia (RNF111) N-terminal like PKA signaling regulator 2N	ENSG00000152242	False	False	True		org.Hs.eg.db 3.18.0
+RNF165	ARK2C	ENSG00000141622	True	494470	arkadia (RNF111) C-terminal like ring finger ubiquitin ligase 2C	ENSG00000141622	False	False	True		org.Hs.eg.db 3.18.0
+TCEB3B	ELOA2	ENSG00000206181	True	51224	elongin A2	ENSG00000206181	False	False	True		org.Hs.eg.db 3.18.0
+NARS	NARS1	ENSG00000134440	True	4677	asparaginyl-tRNA synthetase 1	ENSG00000134440	False	False	True		org.Hs.eg.db 3.18.0
+KIAA1468	RELCH	ENSG00000134444	True	57614	RAB11 binding and LisH domain, coiled-coil and HEAT repeat containing	ENSG00000134444	False	False	True		org.Hs.eg.db 3.18.0
+FAM69C	DIPK1C	ENSG00000187773	True	125704	divergent protein kinase domain 1C	ENSG00000187773	False	False	True		org.Hs.eg.db 3.18.0
+LINC00909	ZNF407-AS1	ENSG00000264247	True	400657	ZNF407 antisense RNA 1	ENSG00000264247	False	False	True		org.Hs.eg.db 3.18.0
+ZADH2	PTGR3	ENSG00000180011	True	284273	prostaglandin reductase 3	ENSG00000180011	False	False	True		org.Hs.eg.db 3.18.0
+C18orf65	ZNF516-DT	ENSG00000275763	True	400658	ZNF516 divergent transcript	ENSG00000275763	False	False	True		org.Hs.eg.db 3.18.0
+PQLC1	SLC66A2	ENSG00000122490	True	80148	solute carrier family 66 member 2	ENSG00000122490	False	False	True		org.Hs.eg.db 3.18.0
+C20orf194	DNAAF9	ENSG00000088854	True	25943	dynein axonemal assembly factor 9	ENSG00000088854	False	False	True		org.Hs.eg.db 3.18.0
+C20orf27	ADISSP	ENSG00000101220	True	54976	adipose secreted signaling protein	ENSG00000101220	False	False	True		org.Hs.eg.db 3.18.0
+C20orf196	SHLD1	ENSG00000171984	True	149840	shieldin complex subunit 1	ENSG00000171984	False	False	True		org.Hs.eg.db 3.18.0
+PAK7	PAK5	ENSG00000101349	True	57144	p21 (RAC1) activated kinase 5	ENSG00000101349	False	False	True		org.Hs.eg.db 3.18.0
+CSRP2BP	KAT14	ENSG00000149474	True	57325	lysine acetyltransferase 14	ENSG00000149474	False	False	True		org.Hs.eg.db 3.18.0
+LINC00493	SMIM26	ENSG00000232388	True	388789	small integral membrane protein 26	ENSG00000232388	False	False	True		org.Hs.eg.db 3.18.0
+LINC01384	LNCNEF	ENSG00000237396	True	101929685	lncRNA neighboring enhancer of FOXA2	ENSG00000237396	False	False	True		org.Hs.eg.db 3.18.0
+MMP24-AS1	MMP24OS	ENSG00000126005	True	101410538	MMP24 opposite strand	ENSG00000126005	False	False	True		org.Hs.eg.db 3.18.0
+LINC00657	NORAD	ENSG00000260032	True	647979	non-coding RNA activated by DNA damage	ENSG00000260032	False	False	True		org.Hs.eg.db 3.18.0
+C20orf24	RAB5IF	ENSG00000101084	True	55969	RAB5 interacting factor	ENSG00000101084	False	False	True		org.Hs.eg.db 3.18.0
+SOGA1	MTCL2	ENSG00000149639	True	140710	microtubule crosslinking factor 2	ENSG00000149639	False	False	True		org.Hs.eg.db 3.18.0
+OSER1-AS1	OSER1-DT	ENSG00000223891	True	100505783	OSER1 divergent transcript	ENSG00000223891	False	False	True		org.Hs.eg.db 3.18.0
+WISP2	CCN5	ENSG00000064205	True	8839	cellular communication network factor 5	ENSG00000064205	False	False	True		org.Hs.eg.db 3.18.0
+STK4-AS1	STK4-DT	ENSG00000227477	True	100505826	STK4 divergent transcript	ENSG00000227477	False	False	True		org.Hs.eg.db 3.18.0
+CSE1L-AS1	CSE1L-DT	ENSG00000227431	True	102723483	CSE1L divergent transcript	ENSG00000227431	False	False	True		org.Hs.eg.db 3.18.0
+TMEM189	PEDS1	ENSG00000240849	True	387521	plasmanylethanolamine desaturase 1	ENSG00000240849	False	False	True		org.Hs.eg.db 3.18.0
+LINC01272	PELATON	ENSG00000224397	True	100506115	plaque enriched lncRNA in atherosclerotic and inflammatory bowel macrophage regulation	ENSG00000224397	False	False	True		org.Hs.eg.db 3.18.0
+FAM65C	RIPOR3	ENSG00000042062	True	140876	RIPOR family member 3	ENSG00000042062	False	False	True		org.Hs.eg.db 3.18.0
+RTFDC1	RTF2	ENSG00000022277	True	51507	replication termination factor 2	ENSG00000022277	False	False	True		org.Hs.eg.db 3.18.0
+C20orf85	CIMIP1	ENSG00000124237	True	128602	ciliary microtubule inner protein 1	ENSG00000124237	False	False	True		org.Hs.eg.db 3.18.0
+ATP5E	ATP5F1E	ENSG00000124172	True	514	ATP synthase F1 subunit epsilon	ENSG00000124172	False	False	True		org.Hs.eg.db 3.18.0
+C20orf197	LINC02910	ENSG00000176659	True	284756	long intergenic non-protein coding RNA 2910	ENSG00000176659	False	False	True		org.Hs.eg.db 3.18.0
+C20orf195	FNDC11	ENSG00000125531	True	79025	fibronectin type III domain containing 11	ENSG00000125531	False	False	True		org.Hs.eg.db 3.18.0
+LINC00176	C20orf204	ENSG00000196421	True	284739	chromosome 20 open reading frame 204	ENSG00000196421	False	False	True		org.Hs.eg.db 3.18.0
+THEG	SPMAP2	ENSG00000105549	True	51298	sperm microtubule associated protein 2	ENSG00000105549	False	False	True		org.Hs.eg.db 3.18.0
+ODF3L2	CIMAP1D	ENSG00000181781	True	284451	CIMAP1 family member D	ENSG00000181781	False	False	True		org.Hs.eg.db 3.18.0
+HMHA1	ARHGAP45	ENSG00000180448	True	23526	Rho GTPase activating protein 45	ENSG00000180448	False	False	True		org.Hs.eg.db 3.18.0
+ATP5D	ATP5F1D	ENSG00000099624	True	513	ATP synthase F1 subunit delta	ENSG00000099624	False	False	True		org.Hs.eg.db 3.18.0
+C19orf24	FAM174C	ENSG00000228300	True	55009	family with sequence similarity 174 member C	ENSG00000228300	False	False	True		org.Hs.eg.db 3.18.0
+MUM1	PWWP3A	ENSG00000160953	True	84939	PWWP domain containing 3A, DNA repair factor	ENSG00000160953	False	False	True		org.Hs.eg.db 3.18.0
+C19orf35	PEAK3	ENSG00000188305	True	374872	PEAK family member 3	ENSG00000188305	False	False	True		org.Hs.eg.db 3.18.0
+AES	TLE5	ENSG00000104964	True	166	TLE family member 5, transcriptional modulator	ENSG00000104964	False	False	True		org.Hs.eg.db 3.18.0
+C19orf71	TEKTIP1	ENSG00000183397	True	100128569	tektin bundle interacting protein 1	ENSG00000183397	False	False	True		org.Hs.eg.db 3.18.0
+CCDC94	YJU2	ENSG00000105248	True	55702	YJU2 splicing factor homolog	ENSG00000105248	False	False	True		org.Hs.eg.db 3.18.0
+C19orf70	MICOS13	ENSG00000174917	True	125988	mitochondrial contact site and cristae organizing system subunit 13	ENSG00000174917	False	False	True		org.Hs.eg.db 3.18.0
+C19orf45	SAXO5	ENSG00000198723	True	374877	stabilizer of axonemal microtubules 5	ENSG00000198723	False	False	True		org.Hs.eg.db 3.18.0
+MARCH2	MARCHF2	ENSG00000099785	True	51257	membrane associated ring-CH-type finger 2	ENSG00000099785	False	False	True		org.Hs.eg.db 3.18.0
+C19orf66	SHFL	ENSG00000130813	True	55337	shiftless antiviral inhibitor of ribosomal frameshifting	ENSG00000130813	False	False	True		org.Hs.eg.db 3.18.0
+FDX1L	FDX2	ENSG00000267673	True	112812	ferredoxin 2	ENSG00000267673	False	False	True		org.Hs.eg.db 3.18.0
+ILF3-AS1	ILF3-DT	ENSG00000267100	True	147727	ILF3 divergent transcript	ENSG00000267100	False	False	True		org.Hs.eg.db 3.18.0
+C19orf52	TIMM29	ENSG00000142444	True	90580	translocase of inner mitochondrial membrane 29	ENSG00000142444	False	False	True		org.Hs.eg.db 3.18.0
+CCDC151	ODAD3	ENSG00000198003	True	115948	outer dynein arm docking complex subunit 3	ENSG00000198003	False	False	True		org.Hs.eg.db 3.18.0
+C19orf43	TRIR	ENSG00000123144	True	79002	telomerase RNA component interacting RNase	ENSG00000123144	False	False	True		org.Hs.eg.db 3.18.0
+ASNA1	GET3	ENSG00000198356	True	439	guided entry of tail-anchored proteins factor 3, ATPase	ENSG00000198356	False	False	True		org.Hs.eg.db 3.18.0
+CCDC130	YJU2B	ENSG00000104957	True	81576	YJU2 splicing factor homolog B	ENSG00000104957	False	False	True		org.Hs.eg.db 3.18.0
+C19orf57	BRME1	ENSG00000132016	True	79173	break repair meiotic recombinase recruitment factor 1	ENSG00000132016	False	False	True		org.Hs.eg.db 3.18.0
+CCDC105	TEKTL1	ENSG00000160994	True	126402	tektin like 1	ENSG00000160994	False	False	True		org.Hs.eg.db 3.18.0
+FAM129C	NIBAN3	ENSG00000167483	True	199786	niban apoptosis regulator 3	ENSG00000167483	False	False	True		org.Hs.eg.db 3.18.0
+KIAA1683	IQCN	ENSG00000130518	True	80726	IQ motif containing N	ENSG00000130518	False	False	True		org.Hs.eg.db 3.18.0
+C19orf60	REX1BD	ENSG00000006015	True	55049	required for excision 1-B domain containing	ENSG00000006015	False	False	True		org.Hs.eg.db 3.18.0
+ZNF724P	ZNF724	ENSG00000196081	True	440519	zinc finger protein 724	ENSG00000196081	False	False	True		org.Hs.eg.db 3.18.0
+CTB-32O4.2	UQCRFS1-DT	ENSG00000267498	True	105372352	UQCRFS1 divergent transcript	ENSG00000267498	False	False	True		org.Hs.eg.db 3.18.0
+CEBPA-AS1	CEBPA-DT	ENSG00000267296	True	80054	CEBPA divergent transcript	ENSG00000267296	False	False	True		org.Hs.eg.db 3.18.0
+KIAA0355	GARRE1	ENSG00000166398	True	9710	granule associated Rac and RHOG effector 1	ENSG00000166398	False	False	True		org.Hs.eg.db 3.18.0
+LINC01534	ZNF567-DT	ENSG00000225975	True	101927621	ZNF567 divergent transcript	ENSG00000225975	False	False	True		org.Hs.eg.db 3.18.0
+HKR1	ZNF875	ENSG00000181666	True	284459	zinc finger protein 875	ENSG00000181666	False	False	True		org.Hs.eg.db 3.18.0
+SELV	SELENOV	ENSG00000186838	True	348303	selenoprotein V	ENSG00000186838	False	False	True		org.Hs.eg.db 3.18.0
+CNTD2	CCNP	ENSG00000105219	True	79935	cyclin P	ENSG00000105219	False	False	True		org.Hs.eg.db 3.18.0
+ADCK4	COQ8B	ENSG00000123815	True	79934	coenzyme Q8B	ENSG00000123815	False	False	True		org.Hs.eg.db 3.18.0
+C19orf54	ACTMAP	ENSG00000188493	True	284325	actin maturation protease	ENSG00000188493	False	False	True		org.Hs.eg.db 3.18.0
+ATP5SL	DMAC2	ENSG00000105341	True	55101	distal membrane arm assembly component 2	ENSG00000105341	False	False	True		org.Hs.eg.db 3.18.0
+PVRL2	NECTIN2	ENSG00000130202	True	5819	nectin cell adhesion molecule 2	ENSG00000130202	False	False	True		org.Hs.eg.db 3.18.0
+CD3EAP	POLR1G	ENSG00000117877	True	10849	RNA polymerase I subunit G	ENSG00000117877	False	False	True		org.Hs.eg.db 3.18.0
+BHMG1	MEIOSIN	ENSG00000237452	True	388553	meiosis initiator	ENSG00000237452	False	False	True		org.Hs.eg.db 3.18.0
+PNMAL1	PNMA8A	ENSG00000182013	True	55228	PNMA family member 8A	ENSG00000182013	False	False	True		org.Hs.eg.db 3.18.0
+PNMAL2	PNMA8B	ENSG00000204851	True	57469	PNMA family member 8B	ENSG00000204851	False	False	True		org.Hs.eg.db 3.18.0
+GLTSCR1	BICRA	ENSG00000063169	True	29998	BRD4 interacting chromatin remodeling complex associated protein	ENSG00000063169	False	False	True		org.Hs.eg.db 3.18.0
+GLTSCR2	NOP53	ENSG00000105373	True	29997	NOP53 ribosome biogenesis factor	ENSG00000105373	False	False	True		org.Hs.eg.db 3.18.0
+GLTSCR2-AS1	NOP53-AS1	ENSG00000269656	True	106144593	NOP53 antisense RNA 1	ENSG00000269656	False	False	True		org.Hs.eg.db 3.18.0
+SEPW1	SELENOW	ENSG00000178980	True	6415	selenoprotein W	ENSG00000178980	False	False	True		org.Hs.eg.db 3.18.0
+C19orf68	ZSWIM9	ENSG00000185453	True	374920	zinc finger SWIM-type containing 9	ENSG00000185453	False	False	True		org.Hs.eg.db 3.18.0
+CCDC114	ODAD1	ENSG00000105479	True	93233	outer dynein arm docking complex subunit 1	ENSG00000105479	False	False	True		org.Hs.eg.db 3.18.0
+CGB	CGB3	ENSG00000104827	True	1082	chorionic gonadotropin subunit beta 3	ENSG00000104827	False	False	True		org.Hs.eg.db 3.18.0
+CCDC155	KASH5	ENSG00000161609	True	147872	KASH domain containing 5	ENSG00000161609	False	False	True		org.Hs.eg.db 3.18.0
+FAM71E1	GARIN5A	ENSG00000142530	True	112703	golgi associated RAB2 interactor 5A	ENSG00000142530	False	False	True		org.Hs.eg.db 3.18.0
+ACPT	ACP4	ENSG00000142513	True	93650	acid phosphatase 4	ENSG00000142513	False	False	True		org.Hs.eg.db 3.18.0
+C19orf48	C19orf48P	ENSG00000167747	True	84798	multidrug resistance-related protein	ENSG00000167747	False	False	True		org.Hs.eg.db 3.18.0
+SPACA6P-AS	SPACA6-AS1	ENSG00000269959	True	102238594	SPACA6 antisense RNA 1	ENSG00000269959	False	False	True		org.Hs.eg.db 3.18.0
+FAM71E2	GARIN5B	ENSG00000180043	True	284418	golgi associated RAB2 interactor family member 5B	ENSG00000180043	False	False	True		org.Hs.eg.db 3.18.0
+ZSCAN5CP	ZSCAN5C	ENSG00000204532	True	649137	zinc finger and SCAN domain containing 5C	ENSG00000204532	False	False	True		org.Hs.eg.db 3.18.0
+ZNF582-AS1	ZNF582-DT	ENSG00000267454	True	386758	ZNF582 divergent transcript	ENSG00000267454	False	False	True		org.Hs.eg.db 3.18.0
+TRAPPC2P1	TRAPPC2B	ENSG00000256060	True	10597	trafficking protein particle complex subunit 2B	ENSG00000256060	False	False	True		org.Hs.eg.db 3.18.0
+LINC00266-4P	SEPTIN14P23	ENSG00000228786	True	107126290	septin 14 pseudogene 23	ENSG00000228786	False	False	True		org.Hs.eg.db 3.18.0
+CECR6	TMEM121B	ENSG00000183307	True	27439	transmembrane protein 121B	ENSG00000183307	False	False	True		org.Hs.eg.db 3.18.0
+CECR5	HDHD5	ENSG00000069998	True	27440	haloacid dehalogenase like hydrolase domain containing 5	ENSG00000069998	False	False	True		org.Hs.eg.db 3.18.0
+CECR5-AS1	HDHD5-AS1	ENSG00000185837	True	100130717	HDHD5 antisense RNA 1	ENSG00000185837	False	False	True		org.Hs.eg.db 3.18.0
+CECR1	ADA2	ENSG00000093072	True	51816	adenosine deaminase 2	ENSG00000093072	False	False	True		org.Hs.eg.db 3.18.0
+DGCR14	ESS2	ENSG00000100056	True	8220	ess-2 splicing factor homolog	ENSG00000100056	False	False	True		org.Hs.eg.db 3.18.0
+UFD1L	UFD1	ENSG00000070010	True	7353	ubiquitin recognition factor in ER associated degradation 1	ENSG00000070010	False	False	True		org.Hs.eg.db 3.18.0
+SEPT5	SEPTIN5	ENSG00000184702	True	5413	septin 5	ENSG00000184702	False	False	True		org.Hs.eg.db 3.18.0
+C22orf29	RTL10	ENSG00000215012	True	79680	retrotransposon Gag like 10	ENSG00000215012	False	False	True		org.Hs.eg.db 3.18.0
+USP41	USP41P	ENSG00000161133	True	373856	ubiquitin specific peptidase 41, pseudogene	ENSG00000161133	False	False	True		org.Hs.eg.db 3.18.0
+TMEM211	LHFPL7	ENSG00000206069	True	255349	LHFPL tetraspan subfamily member 7	ENSG00000206069	False	False	True		org.Hs.eg.db 3.18.0
+ADRBK2	GRK3	ENSG00000100077	True	157	G protein-coupled receptor kinase 3	ENSG00000100077	False	False	True		org.Hs.eg.db 3.18.0
+GATSL3	CASTOR1	ENSG00000239282	True	652968	cytosolic arginine sensor for mTORC1 subunit 1	ENSG00000239282	False	False	True		org.Hs.eg.db 3.18.0
+SELM	SELENOM	ENSG00000198832	True	140606	selenoprotein M	ENSG00000198832	False	False	True		org.Hs.eg.db 3.18.0
+PIK3IP1-AS1	PIK3IP1-DT	ENSG00000228839	True	101929760	PIK3IP1 divergent transcript	ENSG00000228839	False	False	True		org.Hs.eg.db 3.18.0
+LARGE	LARGE1	ENSG00000133424	True	9215	LARGE xylosyl- and glucuronyltransferase 1	ENSG00000133424	False	False	True		org.Hs.eg.db 3.18.0
+LL22NC03-86D4.1	LINC01643	ENSG00000236052	True	105373010	long intergenic non-protein coding RNA 1643	ENSG00000236052	False	False	True		org.Hs.eg.db 3.18.0
+TEX33	CIMIP4	ENSG00000185264	True	339669	ciliary microtubule inner protein 4	ENSG00000185264	False	False	True		org.Hs.eg.db 3.18.0
+H1F0	H1-0	ENSG00000189060	True	3005	H1.0 linker histone	ENSG00000189060	False	False	True		org.Hs.eg.db 3.18.0
+MKL1	MRTFA	ENSG00000196588	True	57591	myocardin related transcription factor A	ENSG00000196588	False	False	True		org.Hs.eg.db 3.18.0
+C22orf46	C22orf46P	ENSG00000184208	True	79640	CTA-216E10.6	ENSG00000184208	False	False	True		org.Hs.eg.db 3.18.0
+SEPT3	SEPTIN3	ENSG00000100167	True	55964	septin 3	ENSG00000100167	False	False	True		org.Hs.eg.db 3.18.0
+FAM109B	PHETA2	ENSG00000177096	True	150368	PH domain containing endocytic trafficking adaptor 2	ENSG00000177096	False	False	True		org.Hs.eg.db 3.18.0
+ATP5L2	ATP5MGL	ENSG00000249222	True	267020	ATP synthase membrane subunit g like	ENSG00000249222	False	False	True		org.Hs.eg.db 3.18.0
+KIAA1644	SHISAL1	ENSG00000138944	True	85352	shisa like 1	ENSG00000138944	False	False	True		org.Hs.eg.db 3.18.0
+LDOC1L	RTL6	ENSG00000188636	True	84247	retrotransposon Gag like 6	ENSG00000188636	False	False	True		org.Hs.eg.db 3.18.0
+NUP50-AS1	NUP50-DT	ENSG00000226328	True	100506714	NUP50 divergent transcript	ENSG00000226328	False	False	True		org.Hs.eg.db 3.18.0
+GTSE1-AS1	GTSE1-DT	ENSG00000277232	True	150384	GTSE1 divergent transcript	ENSG00000277232	False	False	True		org.Hs.eg.db 3.18.0
+LL22NC03-75H12.2	LINC01644	ENSG00000218357	True	101927722	long intergenic non-protein coding RNA 1644	ENSG00000218357	False	False	True		org.Hs.eg.db 3.18.0
+FAM19A5	TAFA5	ENSG00000219438	True	25817	TAFA chemokine like family member 5	ENSG00000219438	False	False	True		org.Hs.eg.db 3.18.0
+C22orf34	MIR3667HG	ENSG00000188511	True	348645	MIR3667 host gene	ENSG00000188511	False	False	True		org.Hs.eg.db 3.18.0
+SELO	SELENOO	ENSG00000073169	True	83642	selenoprotein O	ENSG00000073169	False	False	True		org.Hs.eg.db 3.18.0
+ODF3B	CIMAP1B	ENSG00000177989	True	440836	ciliary microtubule associated protein 1B	ENSG00000177989	False	False	True		org.Hs.eg.db 3.18.0
+CHKB-AS1	CHKB-DT	ENSG00000205559	True	100144603	CHKB divergent transcript	ENSG00000205559	False	False	True		org.Hs.eg.db 3.18.0
+ATP5J	ATP5PF	ENSG00000154723	True	522	ATP synthase peripheral stalk subunit F6	ENSG00000154723	False	False	True		org.Hs.eg.db 3.18.0
+C21orf59	CFAP298	ENSG00000159079	True	56683	cilia and flagella associated protein 298	ENSG00000159079	False	False	True		org.Hs.eg.db 3.18.0
+ATP5O	ATP5PO	ENSG00000241837	True	539	ATP synthase peripheral stalk subunit OSCP	ENSG00000241837	False	False	True		org.Hs.eg.db 3.18.0
+DOPEY2	DOP1B	ENSG00000142197	True	9980	DOP1 leucine zipper like protein B	ENSG00000142197	False	False	True		org.Hs.eg.db 3.18.0
+DSCR3	VPS26C	ENSG00000157538	True	10311	VPS26 endosomal protein sorting factor C	ENSG00000157538	False	False	True		org.Hs.eg.db 3.18.0
+WRB	GET1	ENSG00000182093	True	7485	guided entry of tail-anchored proteins factor 1	ENSG00000182093	False	False	True		org.Hs.eg.db 3.18.0
+C21orf33	GATD3	ENSG00000160221	True	8209	glutamine amidotransferase class 1 domain containing 3	ENSG00000160221	False	False	True		org.Hs.eg.db 3.18.0
+C21orf2	CFAP410	ENSG00000160226	True	755	cilia and flagella associated protein 410	ENSG00000160226	False	False	True		org.Hs.eg.db 3.18.0
+LRRC3-AS1	LRRC3-DT	ENSG00000229356	True	100861510	LRRC3 divergent transcript	ENSG00000229356	False	False	True		org.Hs.eg.db 3.18.0
+FAM207A	SLX9	ENSG00000160256	True	85395	SLX9 ribosome biogenesis factor	ENSG00000160256	False	False	True		org.Hs.eg.db 3.18.0
+LINC00162	PICSAR	ENSG00000275874	True	378825	P38 inhibited cutaneous squamous cell carcinoma associated lincRNA	ENSG00000275874	False	False	True		org.Hs.eg.db 3.18.0

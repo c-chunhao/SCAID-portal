@@ -1,0 +1,266 @@
+{
+  "status": "validated",
+  "scope": "Full QC-retained mixed AD/HC cohort; clinical mapping unresolved; no case-control analysis",
+  "RNA_path": "@PROJECT@/00.corrected_analysis/GSE332623/integration/RNA_normalized_annotated.h5ad",
+  "RNA_sha256": "b9aa963123cb8f010d3e092e03507b70d02170afd93d32a6cdea2efe2a2c09ec",
+  "pipeline_code_sha256": "d46534d44f2b9d6700c52e9f26237f7a90ec2f64757ec4442630b547e8e4d6d8",
+  "capture_manifest_sha256": "16c1e2d1742c3d81f71c37b4bed2300b39e16abcd4ec9d194ce64131bf91a926",
+  "QC_sources": [
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA1_ADT1/counts_bridge.h5",
+      "sha256": "690af345119e39081ab47382119f5d5959a34c2ac52d18dcd9efa396cf3c59e9",
+      "n_cells": 26243
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA1_ADT2/counts_bridge.h5",
+      "sha256": "03d95c3b5c368f888d933a18240eda99987ae7be834641f8f8ae37831fe1e2b3",
+      "n_cells": 24083
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA1_ADT3/counts_bridge.h5",
+      "sha256": "5f8d818a1c0c87c3dd94a057bb73a60444b259ed646b09b89388588940ecc332",
+      "n_cells": 22635
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA1_ADT4/counts_bridge.h5",
+      "sha256": "5228af62b761519477aa117abfab41e8b87425c42af33ff06b45f72e6c5e0c11",
+      "n_cells": 24132
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA2_ADT1/counts_bridge.h5",
+      "sha256": "b596c94b6db4c36410fc3254bb0f9b8790c414d188fd5cc0c0da1f3988580d5a",
+      "n_cells": 29464
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA2_ADT2/counts_bridge.h5",
+      "sha256": "b98b0de33ac32387f057843dc69ebafd08cdd23f909dc2deaef669b3c5282e5b",
+      "n_cells": 30334
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA2_ADT3/counts_bridge.h5",
+      "sha256": "6c64a39764ef287739d1fa646fe038e5ad472d713cee28799c70512194e6483a",
+      "n_cells": 32767
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA3_ADT1/counts_bridge.h5",
+      "sha256": "afb94fc0c1182e84fe081e7959a682e1db040095a0c5cdedc7c4613d42774b1a",
+      "n_cells": 13750
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA3_ADT2/counts_bridge.h5",
+      "sha256": "507dabf8e4a42d98be72be04a17ec40747d2eb92ccf3f908f96fd07dc67f9b63",
+      "n_cells": 15102
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA3_ADT3/counts_bridge.h5",
+      "sha256": "8048832c1e5eaea3802df6c8dc7e3d22a439b845318eacbe43f33fc1d9ac0862",
+      "n_cells": 15094
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA3_ADT4/counts_bridge.h5",
+      "sha256": "91d0123d2531382024649c069fccb0589171756c2c6dd464b8dcfeae465d4f2d",
+      "n_cells": 15000
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA4_ADT1/counts_bridge.h5",
+      "sha256": "4c7646b5923b505bde35f908c0503e9275154142f51dcb1a7bb099bf7e57a71a",
+      "n_cells": 15699
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA4_ADT2/counts_bridge.h5",
+      "sha256": "ee35cf646943e364f4a7c51739f239593fb68c7bda99618ebe05e73f18396bf6",
+      "n_cells": 18010
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA4_ADT3/counts_bridge.h5",
+      "sha256": "ae2a5a6633d1a7c0ecc59a570b309cbf1155866879d4e3536cb4cfdf2ff0f33f",
+      "n_cells": 16507
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA4_ADT4/counts_bridge.h5",
+      "sha256": "6172d31e893ca38dab5c416415b8742cc2547e47a9c19fb499e904ac719bfe6e",
+      "n_cells": 15994
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA5_ADT1/counts_bridge.h5",
+      "sha256": "6223878019eba97a1102deb4a65a9d4bf23df62017cc702b7d7547c12bccfafd",
+      "n_cells": 19369
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA5_ADT2/counts_bridge.h5",
+      "sha256": "da1073e0832a79753f54a1cba7eed7302eed1d4e30b285bc69dd5faee1621208",
+      "n_cells": 17218
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA5_ADT3/counts_bridge.h5",
+      "sha256": "1fcea0408e5830d5415d110c5458152a86613a8285c391804e33d2b38537b6ed",
+      "n_cells": 18349
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA5_ADT4/counts_bridge.h5",
+      "sha256": "ccfaeed7660ac971d967f0403ec4f4669c97e251ec1ed19b037f3a30b10b2621",
+      "n_cells": 18274
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA6_ADT1/counts_bridge.h5",
+      "sha256": "556a2d2ae2934e9a2724ebbea0653ad97a222dfcc724687e212f2f52d75f0acc",
+      "n_cells": 18055
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA6_ADT2/counts_bridge.h5",
+      "sha256": "9a9c469178f1913f3571b28f64ec3a5dd8e5d43ab2eaed4c8c95ad821406e891",
+      "n_cells": 17473
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA6_ADT3/counts_bridge.h5",
+      "sha256": "73acf0528bc87ecc757a75dd276bb97864be384f7c5bc9c3060fbe2385b28e43",
+      "n_cells": 18203
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA6_ADT4/counts_bridge.h5",
+      "sha256": "53b60dcfb2e86a022d3b44b8ccdb2b8944565cb591a737164431370e4153ded3",
+      "n_cells": 16225
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA7_ADT1/counts_bridge.h5",
+      "sha256": "debc56c73ecbde2df7dfa77864f2d6829a8c7b10285d04c7ab9e846d06c0d492",
+      "n_cells": 33253
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA7_ADT2/counts_bridge.h5",
+      "sha256": "7f5052cd5fc4ffdb17a07dcff9e6ea1f28e21198df1e4e579817c79043e51f5f",
+      "n_cells": 30846
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA7_ADT3/counts_bridge.h5",
+      "sha256": "1ccc95b3cb304e358ea25fed45cea1930deeeb244d63e99e74c3a2c8d2151d4a",
+      "n_cells": 27754
+    },
+    {
+      "bridge": "@PROJECT@/00.corrected_analysis/GSE332623/qc/GSE332623_TotalseqB_NEA7_ADT4/counts_bridge.h5",
+      "sha256": "27351fcf744ad08fbc317b78c6913a8d1e5cec2532c2aec8ee514404f30c4f06",
+      "n_cells": 31892
+    }
+  ],
+  "ADT_path": "@PROJECT@/00.corrected_analysis/GSE332623/integration/ADT_normalized.h5ad",
+  "ADT_sha256": "f23a4fb3b3e1812b478b80f635d017fb4a9e111686f000fccfc09fa683dfa7c4",
+  "cell_metadata_path": "@PROJECT@/00.corrected_analysis/GSE332623/integration/cell_metadata.tsv.gz",
+  "genes_path": "@PROJECT@/00.corrected_analysis/GSE332623/integration/genes.tsv",
+  "marker_table_path": "@PROJECT@/00.corrected_analysis/GSE332623/integration/MajorCellType_markers.tsv",
+  "n_cells": 581725,
+  "n_RNA_features": 33660,
+  "n_ADT_features": 140,
+  "n_libraries": 27,
+  "cell_axis_sha256": "37691110335d21ec1d4617915364d11d438331d65bb7eb310f7c2f17dc7df0c1",
+  "feature_axis_sha256": "e5b68994128331af30dec8207f4530cd6f596b7249a5a1efd68f616a30fe6afb",
+  "UMAP_sha256": "7c71e58c8275b763661a6959564eebcec290b1c4db2d2d69d8490bcad3aa84ce",
+  "normalized_X_data_sha256": "23230da3f1ddcd8c25cf826073e2728fdc2e80f3c31f118dbcb2f3c7b3f2d013",
+  "normalized_X_indices_sha256": "c9ae999ad5c4e80af9d11928e9faaf65ba9e0158316a697af02431ccc3f446dc",
+  "normalized_X_indptr_sha256": "eea9959a2d224cd6b186af2fc02fcd64c93fa6f2d47bf464eac3ea3d297de6af",
+  "MajorCellType_counts": {
+    "T cells": 240461,
+    "Monocytes": 171553,
+    "B cells": 60179,
+    "Unassigned": 52809,
+    "NK cells": 47772,
+    "Dendritic cells": 4631,
+    "pDC": 3327,
+    "Plasma cells": 671,
+    "Fibroblasts": 172,
+    "Platelets": 145,
+    "Mast cells": 4,
+    "Neutrophils": 1
+  },
+  "celltype_fine_counts": {
+    "Classical monocytes": 139760,
+    "T cells (subtype unassigned)": 120122,
+    "Tcm/Naive helper T cells": 66805,
+    "Unassigned": 52809,
+    "Naive B cells": 36138,
+    "CD16+ NK cells": 29366,
+    "Tcm/Naive cytotoxic T cells": 21158,
+    "NK cells (subtype unassigned)": 18406,
+    "Non-classical monocytes": 16109,
+    "Monocytes (subtype unassigned)": 15684,
+    "B cells (subtype unassigned)": 13072,
+    "Tem/Temra cytotoxic T cells": 12129,
+    "Tem/Effector helper T cells": 11669,
+    "Memory B cells": 10969,
+    "MAIT cells": 5729,
+    "pDC": 3299,
+    "Regulatory T cells": 2849,
+    "DC2": 2740,
+    "Dendritic cells (subtype unassigned)": 1891,
+    "Plasma cells": 551,
+    "Fibroblasts (subtype unassigned)": 172,
+    "Platelets (subtype unassigned)": 145,
+    "Plasma cells (subtype unassigned)": 120,
+    "pDC (subtype unassigned)": 28,
+    "Mast cells (subtype unassigned)": 4,
+    "Neutrophils (subtype unassigned)": 1
+  },
+  "MajorCellType_field": "MajorCellType",
+  "fine_label_field": "celltype_fine",
+  "source_clinical_state": "Unresolved",
+  "expert_confirmation_claimed": false,
+  "old_annotations_or_embeddings_reused": false,
+  "software_versions": {
+    "numpy": "1.26.4",
+    "scipy": "1.16.3",
+    "pandas": "2.3.3",
+    "anndata": "0.12.17",
+    "scanpy": "1.11.5",
+    "harmonypy": "0.2.0",
+    "celltypist": "1.7.1",
+    "scikit-learn": "1.8.0",
+    "igraph": "1.0.0",
+    "leidenalg": "0.11.0"
+  },
+  "legacy_AnnData_readback": {
+    "status": "validated",
+    "anndata_version": "0.11.3",
+    "reader": "@WEB_PYTHON@",
+    "RNA_path": "@PROJECT@/00.corrected_analysis/GSE332623/integration/RNA_normalized_annotated.h5ad",
+    "ADT_path": "@PROJECT@/00.corrected_analysis/GSE332623/integration/ADT_normalized.h5ad",
+    "RNA_shape": [
+      581725,
+      33660
+    ],
+    "ADT_shape": [
+      581725,
+      140
+    ],
+    "axes_equal": true,
+    "UMAP_equal_finite": true,
+    "counts_integer_dtype": true,
+    "clinical_status": "Unresolved",
+    "log_transform": "Natural log1p; base=None key omitted for cross-version compatibility"
+  },
+  "modern_AnnData_readback": {
+    "status": "validated",
+    "anndata_version": "0.12.17",
+    "RNA_shape": [
+      581725,
+      33660
+    ],
+    "ADT_shape": [
+      581725,
+      140
+    ],
+    "axes_equal": true,
+    "metadata_equal": true,
+    "UMAP_equal_finite": true,
+    "counts_integer_dtype": true
+  },
+  "selected_representation": "PCA",
+  "cell_axis_order": "capture_manifest library order, original retained-cell order within each QC bridge",
+  "analysis_candidate_path": "@PROJECT@/00.corrected_analysis/GSE332623/integration/analysis_candidate.json",
+  "analysis_candidate_sha256": "b944ba3dbdb5f4fc42b423871fd6835912758e38d865d04f87894309a517d71d",
+  "independent_QA_path": "@PROJECT@/00.corrected_analysis/GSE332623/integration/independent_QA.json",
+  "independent_QA_sha256": "ea66ca9f453e97c33cdd02526b15d4fcda5cb0230e51b11e7be3fdfce4bcdb52",
+  "analytical_review_path": "@PROJECT@/00.corrected_analysis/GSE332623/integration/provenance/analytical_review.json",
+  "analytical_review_sha256": "2aab4148b8684352cc77fb76ba97c187d2f58c7b8daba311bf847128c8b9e4f3",
+  "rare_prediction_review_path": "@PROJECT@/00.corrected_analysis/GSE332623/integration/annotation_evidence/coarse_annotation_review.tsv",
+  "clinical_case_control_eligible": false,
+  "final_ready_utc": "2026-10-23T18:37:32Z"
+}

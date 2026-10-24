@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "signed_utc": "2026-10-23T21:28:20.232713+00:00",
+  "source_RNA_sha256": "b9aa963123cb8f010d3e092e03507b70d02170afd93d32a6cdea2efe2a2c09ec",
+  "resource_gene_alias_table_sha256": "1c08833b7f9be7ffec22501a97506c803d87d34c1febfcede02fc8f288dee3fd",
+  "pathway_completion_sha256": "c7006f2074f5af85e0dccdef849cbcb93875208674db3a0b04f6d615df9b93e2",
+  "cellchat_completion_sha256": "761e0ee0f41cfacef5ed9c973a5077920a6abd18247370e013974574405eca4e",
+  "cellchat_dir": "@PROJECT@/00.corrected_analysis/GSE332623/pathway_and_cellchat/cellchat_sparse_exact_candidate",
+  "cellchat_selection": {
+    "status": "selected_for_independent_review",
+    "cellchat_dir": "@PROJECT@/00.corrected_analysis/GSE332623/pathway_and_cellchat/cellchat_sparse_exact_candidate",
+    "source_RNA_sha256": "b9aa963123cb8f010d3e092e03507b70d02170afd93d32a6cdea2efe2a2c09ec",
+    "cellchat_completion_sha256": "761e0ee0f41cfacef5ed9c973a5077920a6abd18247370e013974574405eca4e",
+    "implementation_review": {
+      "status": "passed",
+      "path": "@WORK@/analysis/validation/exact_sparse_mean_implementation_review.json",
+      "sha256": "2b14dda75ff7d9ab1dec2604880e809cb2619fa7c37a93e1c4d128214d28b36a"
+    },
+    "additional_implementation_reviews": [
+      {
+        "path": "@WORK@/validation/triMean_type7_review/independent_sparse_helper_review.json",
+        "sha256": "ce0512bb39d216a66cbbea98c073251f16249ea1e9a03190d86231e13b2bc225"
+      },
+      {
+        "path": "@WORK@/validation/triMean_type7_review/independent_sparse_formal_axis_supplement.json",
+        "sha256": "50f444c6ecbb152e270ad52e36a689012d106cc9c2b62745ee5a2898f0f9943c"
+      }
+    ],
+    "selected_utc": "2026-10-23T21:28:05.417809+00:00",
+    "selection_basis": "First complete internally validated formal output; implementation equivalence gates passed. Final independent network, role-data, source and rendering review remains required.",
+    "original_reference_preserved_at_selection": true
+  },
+  "enrichment_receipt_sha256": "5e13844bafa601747d97d1a057211b08e30540c7733eb174dda696d84e66b328",
+  "review_evidence": "@WORK@/analysis/validation/downstream_scientific_review.json",
+  "review_evidence_sha256": "77c14e010af1cda746f2bba3eb84d1e1c36c6b31805f681eb190f6b0e0a57185",
+  "review_script_sha256": "1b52ffdf47869ad77a1017d233d8cb3eb40391915dd1dd759c5820fadf72d3f8",
+  "network_review_script_sha256": "f0434aebe8427fe7a45b00c2d929952bcfad02c37b6e2e28ad15b03685618be2",
+  "independent_network_review_sha256": "2921d4d52d440e996d58977bb077a86f2c2be58536e65774831426163c7d53a5",
+  "scope": "Read-only scientific parameter, matching, statistical-scope and actual final-product checks. Small full-first-block official score reference and saved network arrays checked; no expensive full analyses repeated.",
+  "interpretation_limits": [
+    "Mixed source AD/HC cohort with unresolved cell-level clinical/donor identities; no patient-level or disease/control inference",
+    "RNA gene-set expression summaries and pooled predicted transcript communication; no proven pathway activation or physical contact",
+    "Nominal cell-label permutation P<0.05 for CellChat, not multiple-testing-adjusted patient evidence",
+    "Rare/source-dominated automatic labels remain provisional, with ambiguous/small/provisional groups excluded from communication modeling",
+    "Reference-model annotation and RNA/ADT consistency review do not constitute team-expert confirmation or independent-cohort validation",
+    "The 27 source libraries were processed as technical channels; pool/library labels do not establish independent donors or independently verified physical captures",
+    "Genotype-based cell-to-donor demultiplexing was unavailable; RNA-based doublet prediction does not establish donor-singlet identity",
+    "Retained library-barcode records are this RNA-only reanalysis, not a reconstruction of the publication demultiplexed participant-level analytical cohort",
+    "Fixed org.Hs.eg.db3.18 stable-ID resource matching; not a live comprehensive HGNC reannotation"
+  ]
+}

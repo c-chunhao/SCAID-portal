@@ -1,0 +1,106 @@
+{
+  "status": "passed_independent_sparse_helper_review_not_formal_network",
+  "created_utc": "2026-10-23T21:11:03.933119+00:00",
+  "reviewer": "acceptance_logic_audit independent agent",
+  "scope": "Specific finite-nonnegative sparse-positive mean helper and the stored100bootstrap pilot, with isolated small tests. No formal model run and no source RNA/ADT/public outputs modified. Formal1434-gene/8-group aggregation and full network QA remain separate required gates.",
+  "reviewed_code_sha256": {
+    "sparse_trimean_prototype.cpp": "4976fda1fcc4b61a594e4750bef3f232970c87cb194e2df7ee93c1653c62199e",
+    "sparse_trimean_prototype.R": "7c9ce91687bae63a649810d01117fe516ea57aa7974f67bda3948082a7bcca49",
+    "cellchat_exact_mean.R": "8e357819fa04319454d912d7168c7c075b51929aea08bbc4d6d84daa82f1fe96"
+  },
+  "source_RNA_sha256": "b9aa963123cb8f010d3e092e03507b70d02170afd93d32a6cdea2efe2a2c09ec",
+  "internal_DB_cache_sha256": "557ebe5f3fcc9b9f744c5ba68455b6a25100d31ec03d15e678d82853144fa363",
+  "official_source": {
+    "URL": "https://raw.githubusercontent.com/cran/collapse/2.1.6/src/fnth_fmedian_fquantile.c",
+    "version": "collapse2.1.6",
+    "lines": [
+      "60-64: zero-based type7 h=(n-1)*p",
+      "113-120: lower value plus fractional coefficient times upper-lower; last element/nonpositive fraction returns lower",
+      "131-140: integer/fraction split before quickselect",
+      "235-248 and261-275: singleton/empty/NA behavior and unweighted default branch"
+    ],
+    "access": "Inspected official CRAN GitHub mirror through web source reader. Direct raw/CRAN source downloads failed SSL; no archive checksum assertion."
+  },
+  "code_findings": {
+    "finite_nonnegative_input_guard": true,
+    "zeros_counted_as_group_size_minus_positive_members": true,
+    "zero_based_implicit_zero_boundary_and_singleton_ranks_correct": true,
+    "positive_values_sorted_once_with_cell_indices_and_unique_deterministic_tie_order": true,
+    "quarter_probability_integer_numerators_exact_for_this_study_size": true,
+    "elementary_double_interpolation_order_preserved_no_FMA": true,
+    "final_four_quantiles_combined_by_original_R_mean": true,
+    "group_factor_levels_and_observation_order_preserved": true,
+    "RNG_state_unchanged_by_helpers": true,
+    "restoring_one_preparation_and_two_aggregate_hooks_yields_exact_approved_base_AST": true,
+    "all_other_function_calls_parameters_and_formals_unchanged": true
+  },
+  "independent_tests": {
+    "small_helper": {
+      "status": "passed_independent_small_helper_QA_not_formal_model",
+      "R": "R version 4.3.3 (2024-02-29)",
+      "CellChat": "2.2.0.9001",
+      "collapse": "2.1.6",
+      "cases": 85,
+      "permutations": 720,
+      "group_gene_outputs_compared": 16595,
+      "actual_aggregate_data_frames_bitwise_identical": true,
+      "custom_factor_level_order_preserved": true,
+      "one_gene_one_group_all_zero_boundaries": true,
+      "missing_negative_infinite_empty_level_and_wrong_axis_inputs_rejected": true,
+      "source_RNA_modified": false,
+      "formal_model_started": false
+    },
+    "AST_RNG": {
+      "status": "passed_independent_AST_RNG_review_not_formal_network",
+      "prototype_restored_AST_identical_to_approved_exact_mean_base": true,
+      "exact_allowed_prep_replacements": 1,
+      "exact_allowed_aggregate_replacements": 2,
+      "all_other_calls_assignments_parameters_and_formals_unchanged": true,
+      "helper_does_not_change_R_RNG_state": true,
+      "execution_scope": "One worker; finite nonnegative normalized input; nonempty fixed group levels, canonical/source mapping and inclusion mask unchanged",
+      "formal_model_started": false
+    },
+    "saved_pilot100_arrays": {
+      "status": "passed_independent_saved_array_review_not_formal_network",
+      "probability_arrays_bitwise_identical": true,
+      "pvalue_arrays_bitwise_identical": true,
+      "dimnames_identical": true,
+      "dim": [
+        7,
+        7,
+        1465
+      ],
+      "prob_values": 71785,
+      "pvalue_values": 71785,
+      "all_values_finite": true,
+      "bootstrap_grid100": true,
+      "no_model_rerun": true
+    },
+    "floating_point_characterization": {
+      "arbitrary_vectors": 484,
+      "delta_interpolation_different_vectors": 0,
+      "max_normalized_float32_like_vectors": 10000,
+      "stats_quantile_bitwise_different_vectors": 1208,
+      "weighted_mean_shortcut_bitwise_different_vectors": 1565,
+      "interpretation": "Equivalent algebra is insufficient for bitwise assurance; retained collapse interpolation order and native R mean are necessary."
+    }
+  },
+  "evidence_sha256": {
+    "numeric_characterization.json": "78808c5ef795e08edc12a1d373de40d75358dfd387337c09646d1280a77e29ed",
+    "normalized_float32_characterization.json": "90437853ffa9c8d9bf266a2445d7eaed4907e59ea6bbb5cbd65fec4e2e0b25e7",
+    "independent_sparse_helper_test.json": "d996c9c8a075046c6e5e6ddc299161421c1c936c83f4b6a194c787ed07696c33",
+    "independent_sparse_AST_RNG_test.json": "637457239c32c6b4705e4f9bbf833c2df7dd9e6d040329534e0d4c69fe6041c6",
+    "independent_pilot100_saved_arrays.json": "b6c11f0b33929551db1828479a0d9eb61d0efdfdb3f5e35ecab441bd2f9b1b99"
+  },
+  "saved_pilot_RDS_sha256": {
+    "official_reference": "ec0a548eea74b26a99b756705da0e2df5a58a39ec71056a48f951ffdfb25656a",
+    "sparse_positive": "383b1dcae676985700e7da15840d26974627d36e79e8a5a9c28bfa4a9f5445fd"
+  },
+  "approved_execution_scope": "One-worker candidate only, finite nonnegative original normalized DB view, same cells/mask/genes/group levels/seed2026/100bootstrap, no scientific formula change; root controls launch after independent formal-axis gate. New executable helper changes require a new review.",
+  "blocking_findings_within_reviewed_scope": [],
+  "not_claimed": [
+    "This is not completion of the formal581725-cell/528739-modeled network.",
+    "Pilot100 compares the original17536-cell/7-group/1425-gene view; independent actual1434-gene/8-group axes and aggregation checks must also pass before a new candidate launches.",
+    "No donor/condition mapping, disease-specific result, external expert confirmation or independent clinical validation is established."
+  ]
+}

@@ -1,7 +1,7 @@
 {
-  "version": "0.3.0-rc1",
-  "date": "2026-10-21",
-  "base_commit": "df927655fade20fb081487b35f5b16425f4647f4",
+  "version": "0.3.1-ad20261024",
+  "date": "2026-10-24",
+  "base_commit": "a9f63a0fce22e4ff82f7a5bb5702d30c32562918",
   "production_backend": "Final module candidate Django working source; local source regression checks passed",
   "production_frontend": "Final module candidate Vue working source and public 125-file catalogue; local build/tests passed",
   "adaptations": [
@@ -53,7 +53,7 @@
   },
   "base_release": "v0.2.0-rc2",
   "repository": "https://github.com/c-chunhao/SCAID-portal",
-  "release_state": "Source candidate for release/portal-v0.3.0-rc1; deployed website accepted within recorded scope; main and v0.2.0-rc2 preserved",
+  "release_state": "Source revision prepared for tag v0.3.1-ad20261024; remote publication receipt is separate",
   "new_release_scope": {
     "additional_objects": 31,
     "main_h5ad_files": 124,
@@ -110,5 +110,155 @@
     "whole_download_library_network_rehash_claimed": false,
     "desktop_mobile_scenarios": 5,
     "Gene_KEGG_interaction_scenarios": 6
+  },
+  "previous_snapshot_0_3_0": {
+    "version": "0.3.0-rc1",
+    "date": "2026-10-21",
+    "base_commit": "df927655fade20fb081487b35f5b16425f4647f4",
+    "production_backend": "Final module candidate Django working source; local source regression checks passed",
+    "production_frontend": "Final module candidate Vue working source and public 125-file catalogue; local build/tests passed",
+    "adaptations": [
+      "environment-only settings; SQLite local demo and explicit MySQL mode",
+      "relative public asset manifest and prepared gene/score family paths",
+      "portable browser executable/module locations",
+      "aggregate 79-entry catalogue; no patient-level tables",
+      "local development proxy defaults match README backend on 127.0.0.1:18080",
+      "New scientific scripts use environment-configured local inputs and output roots",
+      "Actual gene registry omitted; marker registry is an explicit local-ID binding example only",
+      "No private deployment scripts, accounts, raw matrices, generated PNG caches or internal QA reports"
+    ],
+    "licence": "No author-designated project licence selected; existing notices preserved",
+    "scientific_follow_up": {
+      "atlas_diagnostics": "current final-PCA/Harmony diagnostics and existing annotation evidence summary; source-only package",
+      "bcell_state": "final source-recorded state/IFN models and aggregate outputs; portable environment-variable input roots",
+      "real_individual_inputs_included": false,
+      "synthetic_examples_explicit": true
+    },
+    "third_party_template_permission": "Unresolved unless author factually confirms ownership/permission; existing notices retained.",
+    "previous_snapshot": {
+      "version": "0.2.0-rc2",
+      "date": "2026-10-20",
+      "base_commit": "f8d882b01acf3d71dfd487c93dc591870f26925d",
+      "production_backend": "running Django working source",
+      "production_frontend": "current Vue working source, checked against deployed index",
+      "adaptations": [
+        "environment-only settings; SQLite local demo and explicit MySQL mode",
+        "relative public asset manifest and prepared gene/score family paths",
+        "portable browser executable/module locations",
+        "aggregate 79-entry catalogue; no patient-level tables",
+        "local development proxy defaults match README backend on 127.0.0.1:18080"
+      ],
+      "licence": "No author-designated project licence selected; existing notices preserved",
+      "scientific_follow_up": {
+        "atlas_diagnostics": "current final-PCA/Harmony diagnostics and existing annotation evidence summary; source-only package",
+        "bcell_state": "final source-recorded state/IFN models and aggregate outputs; portable environment-variable input roots",
+        "real_individual_inputs_included": false,
+        "synthetic_examples_explicit": true
+      },
+      "changes_after_rc1": [
+        "independent Python3.12 scientific and web installation with exact resolved locks",
+        "local-development proxy defaults18080 match README; real isolated API/proxy workflow checked",
+        "remove12 genuinely unreferenced frontend files; originals retained privately",
+        "additional source-pool sensitivity scripts and aggregate outputs; no individual inputs",
+        "no production deployment and no new licence grant"
+      ],
+      "third_party_template_permission": "Unresolved unless author factually confirms ownership/permission; existing notices retained."
+    },
+    "base_release": "v0.2.0-rc2",
+    "repository": "https://github.com/c-chunhao/SCAID-portal",
+    "release_state": "Source candidate for release/portal-v0.3.0-rc1; deployed website accepted within recorded scope; main and v0.2.0-rc2 preserved",
+    "new_release_scope": {
+      "additional_objects": 31,
+      "main_h5ad_files": 124,
+      "integer_RNA_source_layers": 30,
+      "processed_only_RNA_objects": 1,
+      "descriptive_PBMC_pilot": {
+        "objects": 7,
+        "studies": 5,
+        "cells": 14000
+      },
+      "original_two_atlases_replaced": false,
+      "data_or_runtime_registry_included": false
+    },
+    "local_source_QA": {
+      "backend_tests": 81,
+      "frontend_tests": 19,
+      "frontend_lint": "passed",
+      "frontend_build": "passed",
+      "python_AST": 119,
+      "json_parse": 43,
+      "independent_manifest_review": "passed",
+      "website_acceptance": {
+        "date": "2026-10-21",
+        "timezone": "Asia/Shanghai",
+        "deployed": true,
+        "two_stage_API_checks": 518,
+        "phase1_resolved_checks": 320,
+        "phase2_checks": 198,
+        "phase2_HTTPS_requests": 374,
+        "download_files_HEAD_and_Range": 125,
+        "complete_small_file_SHA256_verifications": 4,
+        "whole_download_library_network_rehash_claimed": false,
+        "desktop_mobile_scenarios": 5,
+        "Gene_KEGG_interaction_scenarios": 6
+      }
+    },
+    "previous_rc2_changes_after_rc1": [
+      "independent Python3.12 scientific and web installation with exact resolved locks",
+      "local-development proxy defaults18080 match README; real isolated API/proxy workflow checked",
+      "remove12 genuinely unreferenced frontend files; originals retained privately",
+      "additional source-pool sensitivity scripts and aggregate outputs; no individual inputs",
+      "no production deployment and no new licence grant"
+    ],
+    "deployment_acceptance": {
+      "date": "2026-10-21",
+      "timezone": "Asia/Shanghai",
+      "deployed": true,
+      "two_stage_API_checks": 518,
+      "phase1_resolved_checks": 320,
+      "phase2_checks": 198,
+      "phase2_HTTPS_requests": 374,
+      "download_files_HEAD_and_Range": 125,
+      "complete_small_file_SHA256_verifications": 4,
+      "whole_download_library_network_rehash_claimed": false,
+      "desktop_mobile_scenarios": 5,
+      "Gene_KEGG_interaction_scenarios": 6
+    }
+  },
+  "current_scientific_package": "science/ad_gse332623_20261024",
+  "catalogue": {
+    "objects": 80,
+    "cell_records": 5172657,
+    "entry_specific_sample_labels": 1122
+  },
+  "current_source_concordance": "Five changed custom application files are byte-identical to live working source; portable settings/path handling retained",
+  "current_ui_scope": "Current live Dataset page does not expose the earlier candidate MarkerTable tab; component retained as source",
+  "clean_raw_to_final_replay_performed": false,
+  "current_source_QA": {
+    "date": "2026-10-24",
+    "base_commit": "a9f63a0fce22e4ff82f7a5bb5702d30c32562918",
+    "backend_tests": {
+      "passed": 81,
+      "database": "isolated test database"
+    },
+    "frontend_tests": {
+      "passed": 19,
+      "dependencies": "existing locked deployment dependency installation reused; clean installation not repeated"
+    },
+    "frontend_lint": "passed",
+    "frontend_build": "passed; existing Sass legacy-API deprecation notices",
+    "R_source_parse": 23,
+    "Python_and_JSON_parse": "passed",
+    "new_entrypoint_checks": [
+      "help",
+      "plan",
+      "materialization",
+      "idempotent materialization",
+      "wrong RNA rejected before output creation"
+    ],
+    "full_scientific_replay_repeated": false,
+    "production_mutated": false,
+    "large_data_rehashed_in_this_source_audit": false,
+    "original_final_source_hash_checks_passed": 26
   }
 }

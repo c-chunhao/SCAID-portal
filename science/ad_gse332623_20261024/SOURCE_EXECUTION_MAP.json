@@ -1,0 +1,561 @@
+{
+  "version": "0.3.1-ad20261024",
+  "base_commit": "a9f63a0fce22e4ff82f7a5bb5702d30c32562918",
+  "source_files": [
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/project/code/GSE332623_build_corrected_input.R",
+      "source_locator": "@PROJECT@/code/GSE332623_build_corrected_input.R",
+      "executed_source_sha256": "a52a6bcf6f08d12904ab20ba4563fbb44d3bd5b0fa6d6ddf409d1f0adc318d17",
+      "published_sha256": "5fa1fa6898164984bc8f9ed42161807de187eded303611111d0d82e32d0a9822",
+      "path_redaction_only": true,
+      "role": "raw_ingest_or_RNA_QC"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/project/code/build_all_AD_corrected_inputs.py",
+      "source_locator": "@PROJECT@/code/build_all_AD_corrected_inputs.py",
+      "executed_source_sha256": "231974449d1cdcfb8b013d724f3afca71e15275463c1f31b88382e049deff89b",
+      "published_sha256": "78a4305437824e9e7fd09ebb3f99089d1ce76eb7d3430c414099cfbd0465ca04",
+      "path_redaction_only": true,
+      "role": "raw_ingest_or_RNA_QC"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/project/code/GSE332623_qc_preflight.R",
+      "source_locator": "@PROJECT@/code/GSE332623_qc_preflight.R",
+      "executed_source_sha256": "f7d0e315721d541f98f29fcd986c497d4a4880bad20c9db05a3ea4ecc790dcfc",
+      "published_sha256": "56ba3f42b584563b9850cae75e44682513eb355fc63e97efa59540a04b06328e",
+      "path_redaction_only": true,
+      "role": "raw_ingest_or_RNA_QC"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/project/code/GSE332623_rna_qc.R",
+      "source_locator": "@PROJECT@/code/GSE332623_rna_qc.R",
+      "executed_source_sha256": "7c613d6352be49908241c4e4cdb637b310c0feb0274ae7b49a46ef147a4c6b06",
+      "published_sha256": "dee7667b1f8a0a6ce27f8bb9d6aa8665337a04577d312e5cf6df45fc51a909f6",
+      "path_redaction_only": true,
+      "role": "raw_ingest_or_RNA_QC"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/project/code/GSE332623_finalize_qc.R",
+      "source_locator": "@PROJECT@/code/GSE332623_finalize_qc.R",
+      "executed_source_sha256": "d565da92098a23ab29c2c7c628a118c2fa9f76b8ad35c755e36c7e4006ed7e23",
+      "published_sha256": "f766484d68a076057a00f4079d18bab275b7295afc9d0b8274ae2f2a9fb1f2fa",
+      "path_redaction_only": true,
+      "role": "raw_ingest_or_RNA_QC"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/project/code/GSE332623_run_qc.py",
+      "source_locator": "@PROJECT@/code/GSE332623_run_qc.py",
+      "executed_source_sha256": "7d78fe2b3793333c06b7bd135cd2c4fed977c2d98b6343f80f533aaec346d7a7",
+      "published_sha256": "cddc39659719498ffcef59a3991a0fdb19ccfa6e5f01d740e90eb9e5d5a67f6c",
+      "path_redaction_only": true,
+      "role": "raw_ingest_or_RNA_QC"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/project/code/GSE332623_summarize_qc.py",
+      "source_locator": "@PROJECT@/code/GSE332623_summarize_qc.py",
+      "executed_source_sha256": "ba4091aadb684cb5d3ef5e39479c645ed8c3fe39a44d354c729a2f6482605325",
+      "published_sha256": "697636f2c10dc6ccf5a198851bad66cb08e91abde8f4deb99867569c5efab831",
+      "path_redaction_only": true,
+      "role": "raw_ingest_or_RNA_QC"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/project/code/GSE332623_validate_qc_bridges.py",
+      "source_locator": "@PROJECT@/code/GSE332623_validate_qc_bridges.py",
+      "executed_source_sha256": "bab173ed2f46a8b76e776a68f1b8cc8ce7a39963bb59b26a66bce8e8a819592f",
+      "published_sha256": "4be8f2c0e0501547f21432ddb911d892488f77f217ad5be51ab1772988d7afb3",
+      "path_redaction_only": true,
+      "role": "raw_ingest_or_RNA_QC"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/project/code/v2/GSE332623.multimodal.R",
+      "source_locator": "@PROJECT@/code/v2/GSE332623.multimodal.R",
+      "executed_source_sha256": "292d9c4c191b0aa77f331511db7213c2baf0ddc36424ace21726ef7480cf17bc",
+      "published_sha256": "292d9c4c191b0aa77f331511db7213c2baf0ddc36424ace21726ef7480cf17bc",
+      "path_redaction_only": true,
+      "role": "modality_separating_source_reader"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/analysis/code/analysis_pipeline.py",
+      "source_locator": "@WORK@/analysis/code/analysis_pipeline.py",
+      "executed_source_sha256": "d46534d44f2b9d6700c52e9f26237f7a90ec2f64757ec4442630b547e8e4d6d8",
+      "published_sha256": "8fc4417b717f5a971718b1027679de4a75633f6f79d5fe423dbd339ed46bf724",
+      "path_redaction_only": true,
+      "role": "final_integration_or_independent_validation"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/analysis/code/run_when_QC_ready.py",
+      "source_locator": "@WORK@/analysis/code/run_when_QC_ready.py",
+      "executed_source_sha256": "db9a0f7a59bfafcf4f7c54579f2eb5952b08663e1d92acafe376a6dfd9b1781d",
+      "published_sha256": "4289dcf92a1cab62bd8890107f26c5c3871e60f9a5c04288a17580d2122e06f9",
+      "path_redaction_only": true,
+      "role": "final_integration_or_independent_validation"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/analysis/code/remap_and_recheck_reference.py",
+      "source_locator": "@WORK@/analysis/code/remap_and_recheck_reference.py",
+      "executed_source_sha256": "3fd6b9986e5c957531807584266eb726ca443e83f58cb4ae65f884369ac99d74",
+      "published_sha256": "3fd6b9986e5c957531807584266eb726ca443e83f58cb4ae65f884369ac99d74",
+      "path_redaction_only": true,
+      "role": "final_integration_or_independent_validation"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/analysis/code/extend_coarse_marker_review.py",
+      "source_locator": "@WORK@/analysis/code/extend_coarse_marker_review.py",
+      "executed_source_sha256": "3953f642cac36f1d9cbe41ae7b74ce917e53587a5600af7c8d877ec15fffb3d3",
+      "published_sha256": "d96d12e0d852c1f4c0c4268af207a26430e41d616611812c7e7b691714dce83e",
+      "path_redaction_only": true,
+      "role": "final_integration_or_independent_validation"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/analysis/code/render_coarse_marker_summary.py",
+      "source_locator": "@WORK@/analysis/code/render_coarse_marker_summary.py",
+      "executed_source_sha256": "7d7338c62c75de662f152ee516e6516137aa3b10f667b815c8c2bc47e83e9bc6",
+      "published_sha256": "30e9bc95e52cc07d6f7440486ef6c1b0aaf976b5f9dba8f2f606f3f58a5a1966",
+      "path_redaction_only": true,
+      "role": "final_integration_or_independent_validation"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/analysis/code/build_resource_symbol_crosswalk.py",
+      "source_locator": "@WORK@/analysis/code/build_resource_symbol_crosswalk.py",
+      "executed_source_sha256": "54e6ef33d90b7e8f4e47d0aec7c694cb0fe3af7e55e920c12ed38343780ad710",
+      "published_sha256": "39598a6e22873e28577913a89048d0a433b74466650d1091e0414781744cf02e",
+      "path_redaction_only": true,
+      "role": "final_integration_or_independent_validation"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/analysis/code/official_versioned_crosswalk_1000.R",
+      "source_locator": "@WORK@/analysis/code/official_versioned_crosswalk_1000.R",
+      "executed_source_sha256": "6084f28d0dcdab355be7c3742c6ffffc80eec6d4b5c0141947daf6534ca1799b",
+      "published_sha256": "b62e9993068a31f05af674c7791f3c3012cf1ea02bffa05f3d5f13bee684f333",
+      "path_redaction_only": true,
+      "role": "final_integration_or_independent_validation"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/analysis/code/benchmark_sparse_trimean_prototype.R",
+      "source_locator": "@WORK@/analysis/code/benchmark_sparse_trimean_prototype.R",
+      "executed_source_sha256": "44896a27c1af0948adffb3438ac0ec2aa92ac788b23cf7548493df1c2830ed10",
+      "published_sha256": "44896a27c1af0948adffb3438ac0ec2aa92ac788b23cf7548493df1c2830ed10",
+      "path_redaction_only": true,
+      "role": "final_integration_or_independent_validation"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/analysis/code/validate_sparse_trimean_formal_axis.R",
+      "source_locator": "@WORK@/analysis/code/validate_sparse_trimean_formal_axis.R",
+      "executed_source_sha256": "9f2a1a54f8433fe8ec80bbd0d4231c483838a3ea04a867edf2ecffff4d624cdf",
+      "published_sha256": "9f2a1a54f8433fe8ec80bbd0d4231c483838a3ea04a867edf2ecffff4d624cdf",
+      "path_redaction_only": true,
+      "role": "final_integration_or_independent_validation"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/analysis/code/sparse_trimean_prototype.R",
+      "source_locator": "@WORK@/analysis/code/sparse_trimean_prototype.R",
+      "executed_source_sha256": "7c9ce91687bae63a649810d01117fe516ea57aa7974f67bda3948082a7bcca49",
+      "published_sha256": "7c9ce91687bae63a649810d01117fe516ea57aa7974f67bda3948082a7bcca49",
+      "path_redaction_only": true,
+      "role": "final_integration_or_independent_validation"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/analysis/code/sparse_trimean_prototype.cpp",
+      "source_locator": "@WORK@/analysis/code/sparse_trimean_prototype.cpp",
+      "executed_source_sha256": "4976fda1fcc4b61a594e4750bef3f232970c87cb194e2df7ee93c1653c62199e",
+      "published_sha256": "4976fda1fcc4b61a594e4750bef3f232970c87cb194e2df7ee93c1653c62199e",
+      "path_redaction_only": true,
+      "role": "final_integration_or_independent_validation"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/analysis/code/downstream_scientific_review.py",
+      "source_locator": "@WORK@/analysis/code/downstream_scientific_review.py",
+      "executed_source_sha256": "1b52ffdf47869ad77a1017d233d8cb3eb40391915dd1dd759c5820fadf72d3f8",
+      "published_sha256": "4183e126786f10de4b8c63f88f01a302ac089dacaca373ddfa2c8e314ffcb2ee",
+      "path_redaction_only": true,
+      "role": "final_integration_or_independent_validation"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/analysis/code/check_small_cellchat_network.R",
+      "source_locator": "@WORK@/analysis/code/check_small_cellchat_network.R",
+      "executed_source_sha256": "f0434aebe8427fe7a45b00c2d929952bcfad02c37b6e2e28ad15b03685618be2",
+      "published_sha256": "f0434aebe8427fe7a45b00c2d929952bcfad02c37b6e2e28ad15b03685618be2",
+      "path_redaction_only": true,
+      "role": "final_integration_or_independent_validation"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/pathway_and_cellchat/code/run_pathways.py",
+      "source_locator": "@WORK@/pathway_and_cellchat/code/run_pathways.py",
+      "executed_source_sha256": "d971cf3286ad52764c4576396af720135f286ccb2a20bddaa86d53d1be52c1ea",
+      "published_sha256": "1eca41d8158a6100fbad8d9ab73ae0207b6cfb88d798ee2c84458b9f97bd0991",
+      "path_redaction_only": true,
+      "role": "final_scoring_or_selected_CellChat"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/pathway_and_cellchat/code/run_pathways.R",
+      "source_locator": "@WORK@/pathway_and_cellchat/code/run_pathways.R",
+      "executed_source_sha256": "73a908753b54246b95ea27ce18d00762cca57466d55f27ce5211cfead13e404d",
+      "published_sha256": "73a908753b54246b95ea27ce18d00762cca57466d55f27ce5211cfead13e404d",
+      "path_redaction_only": true,
+      "role": "final_scoring_or_selected_CellChat"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/pathway_and_cellchat/code/pathway_core.R",
+      "source_locator": "@WORK@/pathway_and_cellchat/code/pathway_core.R",
+      "executed_source_sha256": "c13e3e02883f5738b2a246df142b6df1554a1beadf30481c45eb9aed960beeff",
+      "published_sha256": "c13e3e02883f5738b2a246df142b6df1554a1beadf30481c45eb9aed960beeff",
+      "path_redaction_only": true,
+      "role": "final_scoring_or_selected_CellChat"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/pathway_and_cellchat/code/run_aucell_zero_mask.R",
+      "source_locator": "@WORK@/pathway_and_cellchat/code/run_aucell_zero_mask.R",
+      "executed_source_sha256": "1337b264577cdd3aaf38a3545c5b61c2f2d8f5b4553531502cab2b42ee9776d8",
+      "published_sha256": "1337b264577cdd3aaf38a3545c5b61c2f2d8f5b4553531502cab2b42ee9776d8",
+      "path_redaction_only": true,
+      "role": "final_scoring_or_selected_CellChat"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/pathway_and_cellchat/code/aucell_zero_mask_core.R",
+      "source_locator": "@WORK@/pathway_and_cellchat/code/aucell_zero_mask_core.R",
+      "executed_source_sha256": "d12fc406928e399a08d7ac20b0eccafca2e9f33438de2107bce21d5900b826a6",
+      "published_sha256": "d12fc406928e399a08d7ac20b0eccafca2e9f33438de2107bce21d5900b826a6",
+      "path_redaction_only": true,
+      "role": "final_scoring_or_selected_CellChat"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/pathway_and_cellchat/code/symbol_alias_view.R",
+      "source_locator": "@WORK@/pathway_and_cellchat/code/symbol_alias_view.R",
+      "executed_source_sha256": "69d1f154586ecf263ec02068552814b0a098bfb03d8b99e11744a93b745f6d88",
+      "published_sha256": "69d1f154586ecf263ec02068552814b0a098bfb03d8b99e11744a93b745f6d88",
+      "path_redaction_only": true,
+      "role": "final_scoring_or_selected_CellChat"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/pathway_and_cellchat/code/run_cellchat_sparse_optimized.py",
+      "source_locator": "@WORK@/pathway_and_cellchat/code/run_cellchat_sparse_optimized.py",
+      "executed_source_sha256": "f7825da9d7d5661210276ad0e2b4adcacbd3da64d7f36dd95291e1321be1f1e3",
+      "published_sha256": "f7825da9d7d5661210276ad0e2b4adcacbd3da64d7f36dd95291e1321be1f1e3",
+      "path_redaction_only": true,
+      "role": "final_scoring_or_selected_CellChat"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/pathway_and_cellchat/code/run_cellchat_sparse_optimized.R",
+      "source_locator": "@WORK@/pathway_and_cellchat/code/run_cellchat_sparse_optimized.R",
+      "executed_source_sha256": "ec14ccf2ef01e0dd4db5c6f1bf0fc7554491478cdfea3ced0f673d12d72ddd76",
+      "published_sha256": "ec14ccf2ef01e0dd4db5c6f1bf0fc7554491478cdfea3ced0f673d12d72ddd76",
+      "path_redaction_only": true,
+      "role": "final_scoring_or_selected_CellChat"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/pathway_and_cellchat/code/cellchat_exact_mean.R",
+      "source_locator": "@WORK@/pathway_and_cellchat/code/cellchat_exact_mean.R",
+      "executed_source_sha256": "8e357819fa04319454d912d7168c7c075b51929aea08bbc4d6d84daa82f1fe96",
+      "published_sha256": "8e357819fa04319454d912d7168c7c075b51929aea08bbc4d6d84daa82f1fe96",
+      "path_redaction_only": true,
+      "role": "final_scoring_or_selected_CellChat"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/pathway_and_cellchat/code/sparse_trimean_prototype.R",
+      "source_locator": "@WORK@/pathway_and_cellchat/code/sparse_trimean_prototype.R",
+      "executed_source_sha256": "7c9ce91687bae63a649810d01117fe516ea57aa7974f67bda3948082a7bcca49",
+      "published_sha256": "7c9ce91687bae63a649810d01117fe516ea57aa7974f67bda3948082a7bcca49",
+      "path_redaction_only": true,
+      "role": "final_scoring_or_selected_CellChat"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/pathway_and_cellchat/code/sparse_trimean_prototype.cpp",
+      "source_locator": "@WORK@/pathway_and_cellchat/code/sparse_trimean_prototype.cpp",
+      "executed_source_sha256": "4976fda1fcc4b61a594e4750bef3f232970c87cb194e2df7ee93c1653c62199e",
+      "published_sha256": "4976fda1fcc4b61a594e4750bef3f232970c87cb194e2df7ee93c1653c62199e",
+      "path_redaction_only": true,
+      "role": "final_scoring_or_selected_CellChat"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/pathway_and_cellchat/code/render_cellchat.R",
+      "source_locator": "@WORK@/pathway_and_cellchat/code/render_cellchat.R",
+      "executed_source_sha256": "fe8d0e7298ee86668aa74b9ee57df803f1ab75c35ddefd464fad1dc945c4685c",
+      "published_sha256": "fe8d0e7298ee86668aa74b9ee57df803f1ab75c35ddefd464fad1dc945c4685c",
+      "path_redaction_only": true,
+      "role": "final_scoring_or_selected_CellChat"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/pathway_and_cellchat/code/render_pathways.py",
+      "source_locator": "@WORK@/pathway_and_cellchat/code/render_pathways.py",
+      "executed_source_sha256": "8e6ce1e9e04a6ddb6c917cc9f9621dde4cb70e0310ac7884f42184f48a65fc86",
+      "published_sha256": "8e6ce1e9e04a6ddb6c917cc9f9621dde4cb70e0310ac7884f42184f48a65fc86",
+      "path_redaction_only": true,
+      "role": "final_scoring_or_selected_CellChat"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/pathway_and_cellchat/code/test_pathway_methods.R",
+      "source_locator": "@WORK@/pathway_and_cellchat/code/test_pathway_methods.R",
+      "executed_source_sha256": "adcb9782d89224f9e038664b2eced6485114fe93154659597369f8ec25550003",
+      "published_sha256": "adcb9782d89224f9e038664b2eced6485114fe93154659597369f8ec25550003",
+      "path_redaction_only": true,
+      "role": "final_scoring_or_selected_CellChat"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/pathway_and_cellchat/code/validate_aucell_zero_mask.R",
+      "source_locator": "@WORK@/pathway_and_cellchat/code/validate_aucell_zero_mask.R",
+      "executed_source_sha256": "66ae7f10bd604b270b6a943611ee7a79dac5bbc4754aeac53b64e458d7523a7d",
+      "published_sha256": "f0303898d538ce867e8e7b2659e75b09e59fd62c36203c0a7af53ef47c679d51",
+      "path_redaction_only": true,
+      "role": "final_scoring_or_selected_CellChat"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/pathway_and_cellchat/code/validate_final_cellchat.R",
+      "source_locator": "@WORK@/pathway_and_cellchat/code/validate_final_cellchat.R",
+      "executed_source_sha256": "5dae6dbb7c4eecbd31504a02a745f4da3b97a92a47049b03c49a2c22a0dbd60a",
+      "published_sha256": "5dae6dbb7c4eecbd31504a02a745f4da3b97a92a47049b03c49a2c22a0dbd60a",
+      "path_redaction_only": true,
+      "role": "final_scoring_or_selected_CellChat"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/pathway_and_cellchat/performance_cache/build_normalized_DB_expression_cache.py",
+      "source_locator": "@WORK@/pathway_and_cellchat/performance_cache/build_normalized_DB_expression_cache.py",
+      "executed_source_sha256": "8cc7936f06c17ec0c3c45c055e736c74ea50a5627085cce40ae923062292dbba",
+      "published_sha256": "9fcbfae5b70a8c225071bb0dab1ec7489cda744e4b464a68d22350e467014393",
+      "path_redaction_only": true,
+      "role": "validated_CSC_bridge_or_lineage_enrichment"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/website/gene_index_builder_large_cohort.py",
+      "source_locator": "@WORK@/website/gene_index_builder_large_cohort.py",
+      "executed_source_sha256": "e548b5d93c16f7a4ad1fe471ac9e3edba6a055b7e25a5cf392b74918a9b8a2f7",
+      "published_sha256": "e548b5d93c16f7a4ad1fe471ac9e3edba6a055b7e25a5cf392b74918a9b8a2f7",
+      "path_redaction_only": true,
+      "role": "validated_CSC_bridge_or_lineage_enrichment"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/source_templates/work/website/enrich_lineage_markers.R",
+      "source_locator": "@WORK@/website/enrich_lineage_markers.R",
+      "executed_source_sha256": "d94ed66759ad96fc19b19f034b68baf9a279f59525623de6bba0288453543866",
+      "published_sha256": "cb6ff590d40530cf7620d6e5b76451a326cf219cecf6ae48087ee9d2793afd9a",
+      "path_redaction_only": true,
+      "role": "validated_CSC_bridge_or_lineage_enrichment"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/evidence/final_scientific_scope_review.json",
+      "source_locator": "@WORK@/analysis/validation/final_scientific_scope_review.json",
+      "executed_source_sha256": "43298e0a7ce3e2c61e9ee0d7de27c35c180f99ec6deab9cd3095e271bfe61cf7",
+      "published_sha256": "e4352c987d1e4af4e4dcbcfa1f2a5afbfe840c06449ecc55353882a816c17266",
+      "adaptation": "JSON reserialization and absolute-root redaction only; embedded original hashes remain historical bindings",
+      "role": "dated_execution_receipt"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/evidence/sparse_implementation_review.json",
+      "source_locator": "@WORK@/analysis/validation/exact_sparse_mean_implementation_review.json",
+      "executed_source_sha256": "2b14dda75ff7d9ab1dec2604880e809cb2619fa7c37a93e1c4d128214d28b36a",
+      "published_sha256": "58c57f870bbb1862c6e9ea0761e101c589e25f76cddd6f7d4973ffc045d1b572",
+      "adaptation": "JSON reserialization and absolute-root redaction only; embedded original hashes remain historical bindings",
+      "role": "dated_execution_receipt"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/evidence/CellChat_pilot_100bootstrap_equivalence.json",
+      "source_locator": "@WORK@/analysis/validation/sparse_triMean_prototype/pilot100.json",
+      "executed_source_sha256": "cc8a90d4e4260cfbc9a3b194b721fe0f12eb378f74ad480a2a2f0607e37f85f5",
+      "published_sha256": "cc8a90d4e4260cfbc9a3b194b721fe0f12eb378f74ad480a2a2f0607e37f85f5",
+      "adaptation": "JSON reserialization and absolute-root redaction only; embedded original hashes remain historical bindings",
+      "role": "dated_execution_receipt"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/evidence/CellChat_full_axis_aggregation_equivalence.json",
+      "source_locator": "@WORK@/analysis/validation/sparse_triMean_prototype/formal_axis_means.json",
+      "executed_source_sha256": "d8593b225408280b3aa156c33c004afc3673bd68d6fa435ef544846322bd949c",
+      "published_sha256": "d8593b225408280b3aa156c33c004afc3673bd68d6fa435ef544846322bd949c",
+      "adaptation": "JSON reserialization and absolute-root redaction only; embedded original hashes remain historical bindings",
+      "role": "dated_execution_receipt"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/evidence/independent_sparse_helper_review.json",
+      "source_locator": "@WORK@/validation/triMean_type7_review/independent_sparse_helper_review.json",
+      "executed_source_sha256": "ce0512bb39d216a66cbbea98c073251f16249ea1e9a03190d86231e13b2bc225",
+      "published_sha256": "ce0512bb39d216a66cbbea98c073251f16249ea1e9a03190d86231e13b2bc225",
+      "adaptation": "JSON reserialization and absolute-root redaction only; embedded original hashes remain historical bindings",
+      "role": "dated_execution_receipt"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/evidence/independent_full_axis_review.json",
+      "source_locator": "@WORK@/validation/triMean_type7_review/independent_sparse_formal_axis_supplement.json",
+      "executed_source_sha256": "50f444c6ecbb152e270ad52e36a689012d106cc9c2b62745ee5a2898f0f9943c",
+      "published_sha256": "646497106852568d26c8ee520b67c0d3bf755c9e35231e3d6dcd67d84bdddf07",
+      "adaptation": "JSON reserialization and absolute-root redaction only; embedded original hashes remain historical bindings",
+      "role": "dated_execution_receipt"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/evidence/normalized_DB_expression_cache_receipt.json",
+      "source_locator": "@WORK@/pathway_and_cellchat/performance_cache/normalized_DB_expression_cache_receipt.json",
+      "executed_source_sha256": "48af3e8dbad15bd0da758f467081a1ff13f2a6f2889b934d5de74c3cbf0a8b7c",
+      "published_sha256": "f5cfd5fd63eecb5773dc6d6866c4333d740d94ca5c75e9b6b01dd9e312f986d9",
+      "adaptation": "JSON reserialization and absolute-root redaction only; embedded original hashes remain historical bindings",
+      "role": "dated_execution_receipt"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/evidence/KEGG_alias_mapping_approved.json",
+      "source_locator": "@WORK@/pathway_and_cellchat/KEGG_alias_mapping_approved.json",
+      "executed_source_sha256": "520d7ae688800682474b372b250ff3b41f9034f9a3ac82cde8c3875e9b404a4b",
+      "published_sha256": "e70cbdc2a59820fe8ea8b4a0c6d3da22b10d3f591361fc6833fd638a14e6f1d1",
+      "adaptation": "JSON reserialization and absolute-root redaction only; embedded original hashes remain historical bindings",
+      "role": "dated_execution_receipt"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/evidence/official_1000x356_score_equivalence.json",
+      "source_locator": "@WORK@/pathway_and_cellchat/testing/zero_mask_alias_1172_actual_1000/actual_pipeline_validation.json",
+      "executed_source_sha256": "0bac1efde6e2a70a2c7744af9f6ad96f1255e11dcee47e75c6098053dc2cf12c",
+      "published_sha256": "1e45dca6fe9e100e03713062964a3ff1eefc1d253d04156088ab8859c4f47eaf",
+      "adaptation": "JSON reserialization and absolute-root redaction only; embedded original hashes remain historical bindings",
+      "role": "dated_execution_receipt"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/evidence/independent_AUCell_zero_mask_validation.json",
+      "source_locator": "@WORK@/pathway_and_cellchat/testing/independent_AUCell_zero_mask_validation.json",
+      "executed_source_sha256": "8f0534ec904fc2bf7e859b63e11aa01536320674904008ddcaaa20cbde71325c",
+      "published_sha256": "3759fb7924b0fc953745832daaa545f78296009c5338773eee2c56febefde71e",
+      "adaptation": "JSON reserialization and absolute-root redaction only; embedded original hashes remain historical bindings",
+      "role": "dated_execution_receipt"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/evidence/independent_formal_scores_QA.json",
+      "source_locator": "@WORK@/pathway_and_cellchat/independent_formal_scores_QA.json",
+      "executed_source_sha256": "2bde2d5099fa76268350e1c0ae2d2959465de40555107d5f5920deea144be5e0",
+      "published_sha256": "fda867da60401284a1bb438a996952560599d3a9702ad07f869321e158e29c29",
+      "adaptation": "JSON reserialization and absolute-root redaction only; embedded original hashes remain historical bindings",
+      "role": "dated_execution_receipt"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/evidence/independent_final_CellChat_QA.json",
+      "source_locator": "@WORK@/pathway_and_cellchat/independent_sparse_candidate_CellChat_QA.json",
+      "executed_source_sha256": "1350400096b96559a8c7e0c21031294d053f87e71734d0a38809f5685be620bb",
+      "published_sha256": "4cd30df842190f29e60ff4cfac819b2ff114519c9cc5c083999b2dab3c7ae644",
+      "adaptation": "JSON reserialization and absolute-root redaction only; embedded original hashes remain historical bindings",
+      "role": "dated_execution_receipt"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/evidence/independent_production_release_QA.json",
+      "source_locator": "@WORK@/website/validation/independent_production_release_QA.json",
+      "executed_source_sha256": "589dce80693bdb9ca1fe8a32165e48e10a2c5d86341a39b60f4805fc37d6ba32",
+      "published_sha256": "6289717bae67a9c9eab6b88a80efa1e67ee46c228f15cf1a2b036eeea73b007a",
+      "adaptation": "JSON reserialization and absolute-root redaction only; embedded original hashes remain historical bindings",
+      "role": "dated_execution_receipt"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/evidence/analysis_ready.json",
+      "source_locator": "@PROJECT@/00.corrected_analysis/GSE332623/integration/analysis_ready.json",
+      "executed_source_sha256": "e2a44f48fb93216d6bd307269efaa3987311c379641a11e8e20fe3e99dcb85a0",
+      "published_sha256": "f410edace6d6688730a33d95bec1ca885e79a0292c84efdddd3f8a054726eb4a",
+      "adaptation": "JSON reserialization and absolute-root redaction only; embedded original hashes remain historical bindings",
+      "role": "dated_execution_receipt"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/evidence/zero_mask_config.json",
+      "source_locator": "@PROJECT@/00.corrected_analysis/GSE332623/pathway_and_cellchat/pathways/RNA_scores_zero_mask_and_alias_v1/zero_mask_config.json",
+      "executed_source_sha256": "7da713e9dd2fbec67aa498fe10b4ab0ce7b72c54838a4aad7b809314d115ba25",
+      "published_sha256": "ef94fb54cac702e363b0a57ffb5cc875497398917c79e3b6937d50962173cdcf",
+      "adaptation": "JSON reserialization and absolute-root redaction only; embedded original hashes remain historical bindings",
+      "role": "dated_execution_receipt"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/evidence/r_zero_mask_completion.json",
+      "source_locator": "@PROJECT@/00.corrected_analysis/GSE332623/pathway_and_cellchat/pathways/RNA_scores_zero_mask_and_alias_v1/r_zero_mask_completion.json",
+      "executed_source_sha256": "48c88406c57c313b8c166a008f674af1dd9bcefc99808c848ee720ffaaf26933",
+      "published_sha256": "9ffcb7b8af013994acc410f07de589e29ac4290afdac5118feff5c8e021ce5fb",
+      "adaptation": "JSON reserialization and absolute-root redaction only; embedded original hashes remain historical bindings",
+      "role": "dated_execution_receipt"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/evidence/cellchat_config.json",
+      "source_locator": "@PROJECT@/00.corrected_analysis/GSE332623/pathway_and_cellchat/cellchat_sparse_exact_candidate/cellchat_config.json",
+      "executed_source_sha256": "6e48e29c5fde8b5573e5549d049cfcf6c26ff27614006e819167216cd1c614b9",
+      "published_sha256": "f029a290d9b2a2dfbf0911cf9ba9696773baf4a54446a0cdce537cb142c58652",
+      "adaptation": "JSON reserialization and absolute-root redaction only; embedded original hashes remain historical bindings",
+      "role": "dated_execution_receipt"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/evidence/cellchat_computation.json",
+      "source_locator": "@PROJECT@/00.corrected_analysis/GSE332623/pathway_and_cellchat/cellchat_sparse_exact_candidate/cellchat_computation.json",
+      "executed_source_sha256": "bdea51ac3a65abd6a7981c1c180edaa170aada24af318a582714316ceaa03018",
+      "published_sha256": "44d9c5d48f559292026c830ea3c25143fcc5cedd822821d6a02d001f42d4b680",
+      "adaptation": "JSON reserialization and absolute-root redaction only; embedded original hashes remain historical bindings",
+      "role": "dated_execution_receipt"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/resources/approved_symbol_renames.tsv",
+      "source_locator": "@WORK@/analysis/validation/resource_gene_crosswalk/approved_symbol_renames.tsv",
+      "executed_source_sha256": "1c08833b7f9be7ffec22501a97506c803d87d34c1febfcede02fc8f288dee3fd",
+      "published_sha256": "1c08833b7f9be7ffec22501a97506c803d87d34c1febfcede02fc8f288dee3fd",
+      "path_redaction_only": true,
+      "role": "aggregate_reference_mapping_no_individual_records"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/resources/KEGG_set_impact.tsv",
+      "source_locator": "@WORK@/analysis/validation/resource_gene_crosswalk/KEGG_set_impact.tsv",
+      "executed_source_sha256": "9f8dbbb15fbac7fd08ac42f97de9cb7b090abe5b1b331eafaaeb9a7838d6f2fd",
+      "published_sha256": "9f8dbbb15fbac7fd08ac42f97de9cb7b090abe5b1b331eafaaeb9a7838d6f2fd",
+      "path_redaction_only": true,
+      "role": "aggregate_reference_mapping_no_individual_records"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/resources/cellchat_symbol_aliases_verified.tsv",
+      "source_locator": "@WORK@/analysis/validation/hgnc_alias_review/cellchat_symbol_aliases_verified.tsv",
+      "executed_source_sha256": "51873d0026a7cb6657298baf266f7de7c4f9b1b7ab132e4b2193c932703b18cd",
+      "published_sha256": "51873d0026a7cb6657298baf266f7de7c4f9b1b7ab132e4b2193c932703b18cd",
+      "path_redaction_only": true,
+      "role": "aggregate_reference_mapping_no_individual_records"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/resources/coarse_annotation_review.tsv",
+      "source_locator": "@PROJECT@/00.corrected_analysis/GSE332623/integration/annotation_evidence/coarse_annotation_review.tsv",
+      "executed_source_sha256": "b9d7a5cc5af84fc683996c28e1f1081e9aec1ad9882b10d2fd078d192d907d1d",
+      "published_sha256": "b9d7a5cc5af84fc683996c28e1f1081e9aec1ad9882b10d2fd078d192d907d1d",
+      "path_redaction_only": true,
+      "role": "aggregate_reference_mapping_no_individual_records"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/resources/SampleInventory.GSE332623.tsv",
+      "source_locator": "audit_generated_resources/SampleInventory.GSE332623.required_columns.tsv",
+      "executed_source_sha256": "7883d1d126237d513b8e3257da1f3335dc20348d7d197c71efb5676a99b35d65",
+      "published_sha256": "7883d1d126237d513b8e3257da1f3335dc20348d7d197c71efb5676a99b35d65",
+      "path_redaction_only": true,
+      "role": "aggregate_reference_mapping_no_individual_records",
+      "adaptation": "Required-column projection of public GSE332623 sample inventory"
+    },
+    {
+      "public_path": "science/ad_gse332623_20261024/resources/capture_manifest.tsv",
+      "source_locator": "@PROJECT@/00.corrected_analysis/GSE332623/capture_manifest.tsv",
+      "executed_source_sha256": "16c1e2d1742c3d81f71c37b4bed2300b39e16abcd4ec9d194ce64131bf91a926",
+      "published_sha256": "e08a809677dcf8b1784ba87be326cf42df184187b28bf065f9d708f367e48157",
+      "path_redaction_only": true,
+      "role": "technical_library_manifest_no_donor_assignment"
+    }
+  ],
+  "changed_application_files": [
+    {
+      "public_path": "backend/tisch_api/views.py",
+      "live_source_sha256": "02c8a8574f3cf8dd07c55203a926abe75812627dc1d07e03b9e22ccc2fcdcd12",
+      "published_sha256": "02c8a8574f3cf8dd07c55203a926abe75812627dc1d07e03b9e22ccc2fcdcd12",
+      "byte_identical_to_live": true
+    },
+    {
+      "public_path": "backend/tisch_api/openapi.py",
+      "live_source_sha256": "ea193cbd59d3f03fdfc63fdae438eb8ea4d6c6613d8d035304d504745fb3c7e0",
+      "published_sha256": "ea193cbd59d3f03fdfc63fdae438eb8ea4d6c6613d8d035304d504745fb3c7e0",
+      "byte_identical_to_live": true
+    },
+    {
+      "public_path": "frontend/src/views/Dataset/index.vue",
+      "live_source_sha256": "d03724ed98bffee173f4d964cc0c6a56c2c49be028e3c1567de317ae61dc95f7",
+      "published_sha256": "d03724ed98bffee173f4d964cc0c6a56c2c49be028e3c1567de317ae61dc95f7",
+      "byte_identical_to_live": true
+    },
+    {
+      "public_path": "frontend/src/utils/moduleAvailability.js",
+      "live_source_sha256": "7c5bd206cf3449febc8106c6095db9570f10eb391e2b771ba593b500aa4131cc",
+      "published_sha256": "7c5bd206cf3449febc8106c6095db9570f10eb391e2b771ba593b500aa4131cc",
+      "byte_identical_to_live": true
+    },
+    {
+      "public_path": "frontend/src/views/Documentation/index.vue",
+      "live_source_sha256": "dcff95ba7dc196c60ba228477bbbb9152b0ab09aae92be0faf38173bb4bbff85",
+      "published_sha256": "dcff95ba7dc196c60ba228477bbbb9152b0ab09aae92be0faf38173bb4bbff85",
+      "byte_identical_to_live": true
+    }
+  ],
+  "licence": "No new project licence granted; existing headers and THIRD_PARTY_NOTICES preserved",
+  "script_packaging": "Deterministic absolute-root placeholders only; scientific algorithms unchanged. See reproduce.py to materialize local paths. Historical embedded digests refer to original executed bytes, not redacted receipts."
+}

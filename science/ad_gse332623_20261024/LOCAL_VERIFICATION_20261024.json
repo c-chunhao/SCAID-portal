@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-24",
+  "base_commit": "a9f63a0fce22e4ff82f7a5bb5702d30c32562918",
+  "backend_tests": {
+    "passed": 81,
+    "database": "isolated test database"
+  },
+  "frontend_tests": {
+    "passed": 19,
+    "dependencies": "existing locked deployment dependency installation reused; clean installation not repeated"
+  },
+  "frontend_lint": "passed",
+  "frontend_build": "passed; existing Sass legacy-API deprecation notices",
+  "R_source_parse": 23,
+  "Python_and_JSON_parse": "passed",
+  "new_entrypoint_checks": [
+    "help",
+    "plan",
+    "materialization",
+    "idempotent materialization",
+    "wrong RNA rejected before output creation"
+  ],
+  "full_scientific_replay_repeated": false,
+  "production_mutated": false,
+  "large_data_rehashed_in_this_source_audit": false,
+  "original_final_source_hash_checks_passed": 26
+}

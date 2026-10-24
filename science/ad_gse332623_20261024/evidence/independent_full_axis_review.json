@@ -1,0 +1,37 @@
+{
+  "status": "passed_independent_sparse_formal_axis_supplement_not_network",
+  "created_utc": "2026-10-23T21:14:08.711849+00:00",
+  "scope": "Independent saved-array, full-cell-axis metadata, canonical gene order, masked normalizer and seed permutation checks for the actual1434-gene/8-group528739-record cohort. No network inferred or formal live job changed.",
+  "helper_review_path": "@WORK@/validation/triMean_type7_review/independent_sparse_helper_review.json",
+  "helper_review_sha256": "ce0512bb39d216a66cbbea98c073251f16249ea1e9a03190d86231e13b2bc225",
+  "formal_axis_proof_path": "@WORK@/analysis/validation/sparse_triMean_prototype/formal_axis_means.json",
+  "formal_axis_proof_sha256": "d8593b225408280b3aa156c33c004afc3673bd68d6fa435ef544846322bd949c",
+  "formal_axis_RDS_sha256": "d99a5f3b5570e67d29717ebc59f1f80f1abd63a894804c5d49564cf9039d3960",
+  "original_RNA_sha256": "b9aa963123cb8f010d3e092e03507b70d02170afd93d32a6cdea2efe2a2c09ec",
+  "internal_cache_sha256": "557ebe5f3fcc9b9f744c5ba68455b6a25100d31ec03d15e678d82853144fa363",
+  "reviewed_code_sha256": {
+    "sparse_trimean_prototype.R": "7c9ce91687bae63a649810d01117fe516ea57aa7974f67bda3948082a7bcca49",
+    "sparse_trimean_prototype.cpp": "4976fda1fcc4b61a594e4750bef3f232970c87cb194e2df7ee93c1653c62199e"
+  },
+  "independent_saved_array_review": {
+    "status": "passed_independent_formal_axis_saved_array_review_not_network",
+    "group_gene_values_per_comparison": 11472,
+    "comparisons": 3,
+    "total_group_gene_values_compared": 34416,
+    "all_saved_values_and_dataframe_attributes_bitwise_identical": true,
+    "all1434_canonical_genes_exact_actual_cache_order": true,
+    "all8_group_labels_and_counts_exact_actual_cache": true,
+    "normalizer_exact_independent_all_NNZ_masked_max": true,
+    "seed2026_first_two_full_sample_int_permutations_exact": true,
+    "modeled_cells": 528739,
+    "genes": 1434,
+    "groups": 8,
+    "source_RNA_modified": false,
+    "formal_model_started": false
+  },
+  "independent_metadata_and_normalizer_path": "@WORK@/validation/triMean_type7_review/formal_axis_metadata_and_normalizer.json",
+  "independent_metadata_and_normalizer_sha256": "fa4d7cc82f3361574244ccd354d4402ababbe8aba2b57852b279d818f7db1ebe",
+  "approved_execution_scope": "Ready for root-controlled one-worker sparse exact candidate using the same immutable cache, inclusion mask,1434DB view,8groups,seed2026,nboot100; no formula, source RNA/public naming, or clinical scope changes. Formal candidate completion and saved-output QA are still required.",
+  "remaining_blocking_findings_within_this_scope": [],
+  "formal_model_started_by_this_review": false
+}

@@ -1,0 +1,43 @@
+{
+  "status": "validated",
+  "source_RNA_sha256": "b9aa963123cb8f010d3e092e03507b70d02170afd93d32a6cdea2efe2a2c09ec",
+  "resource_gene_alias_table_sha256": "1c08833b7f9be7ffec22501a97506c803d87d34c1febfcede02fc8f288dee3fd",
+  "cells": 581725,
+  "pathways": 356,
+  "corrected_pathway_count": 159,
+  "unchanged_US_columns": 197,
+  "restored_scored_member_entries": 799,
+  "KEGG_effective_alias_count": 247,
+  "KEGG_effective_alias_count_scored_sets": 244,
+  "low_RNA_gene_coverage_pathways_under10": 16,
+  "all_score_files_SHA_match": true,
+  "first_1000_all356_official_float32_equal": true,
+  "corrected_var_gene_coverage_verified": true,
+  "all_source_cell_axes_preserved": true,
+  "H5AD_zero_mask_and_alias_metadata_present": true,
+  "files": [
+    {
+      "method": "AUCell",
+      "path": "@PROJECT@/00.corrected_analysis/GSE332623/pathway_and_cellchat/pathways/RNA_scores_zero_mask_and_alias_v1/GSE332623_PBMC_AUCell_corrected.h5ad",
+      "sha256": "a87c7b41532777232d1584bed1b33515c3ff0f930ef7206254f73dbc2d70083e",
+      "first_1000_official_float32_equal": true
+    },
+    {
+      "method": "UCell",
+      "path": "@PROJECT@/00.corrected_analysis/GSE332623/pathway_and_cellchat/pathways/RNA_scores_zero_mask_and_alias_v1/GSE332623_PBMC_UCell_corrected.h5ad",
+      "sha256": "8096fe3faa572cab30b9832e5d83e93e246ee7301ac431666d33f2781d69ddeb",
+      "first_1000_official_float32_equal": true
+    },
+    {
+      "method": "singscore",
+      "path": "@PROJECT@/00.corrected_analysis/GSE332623/pathway_and_cellchat/pathways/RNA_scores_zero_mask_and_alias_v1/GSE332623_PBMC_singscore_corrected.h5ad",
+      "sha256": "0ed4882734f913748e5be922291ad4c5927928041cea4403ec94c9542ff3d01b",
+      "first_1000_official_float32_equal": true
+    }
+  ],
+  "source_score_receipt_sha256": "c7006f2074f5af85e0dccdef849cbcb93875208674db3a0b04f6d615df9b93e2",
+  "receipt_metadata_clarification_only": true,
+  "KEGG_aliases_in_all_source_sets": 247,
+  "KEGG_aliases_in_scored_sets": 244,
+  "KEGG_restored_member_entries": 799
+}

@@ -1,0 +1,18 @@
+{
+  "status": "approved",
+  "authority": "Parent explicit approval of final1172 resource crosswalk after independent gate and official1000x356 equality",
+  "path": "@WORK@/analysis/validation/resource_gene_crosswalk/approved_symbol_renames.tsv",
+  "sha256": "1c08833b7f9be7ffec22501a97506c803d87d34c1febfcede02fc8f288dee3fd",
+  "mapping_count": 1172,
+  "affected_included_pathways": 159,
+  "KEGG_effective_alias_count": 247,
+  "KEGG_effective_alias_count_scored_sets": 244,
+  "unchanged_US_columns": 197,
+  "independent_review": "@WORK@/validation/HGNC_independent_review/global_resource_crosswalk_review.json",
+  "independent_review_sha256": "6a03f7248535ca64280e471a9755b33223f399c56c24cce09711f373b491fb78",
+  "actual_pipeline_validation": "@WORK@/pathway_and_cellchat/testing/zero_mask_alias_1172_actual_1000/actual_pipeline_validation.json",
+  "actual_pipeline_validation_sha256": "0bac1efde6e2a70a2c7744af9f6ad96f1255e11dcee47e75c6098053dc2cf12c",
+  "official_reference": "@WORK@/analysis/validation/resource_gene_crosswalk/official_1000x356_unified_crosswalk.h5",
+  "official_reference_sha256": "3ce0323bb5dda06550a9ddfdffc0b5cb8f574db7404310de22fe7e765a6eb19a",
+  "matching_rule": "Direct source symbols first; canonical-to-source fallback only if absent; unique physical RNA rows; no RNA changes"
+}

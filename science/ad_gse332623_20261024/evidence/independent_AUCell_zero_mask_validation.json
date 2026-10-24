@@ -1,0 +1,13 @@
+{
+  "status": "validated",
+  "cells": 1000,
+  "pathways": 356,
+  "seed": 2026,
+  "aucMaxRank": 1683,
+  "explicit_RNA_zero_to_NA_official_calcAUC_max_absolute_error": 0,
+  "zero_detection_pairs": 54693,
+  "zero_detection_nonzero_scores": 0,
+  "reference": "@WORK@/analysis/validation/aucell_zero_sensitivity/explicit_zero_mask_arrays.h5",
+  "reference_semantics": "Independent official AUCell ranking with RNA-zero positions set NA before official calcAUC",
+  "zero_policy": "Seeded standard full-gene ranking weights multiplied by RNA>0; expressed-gene rank and denominator unchanged"
+}

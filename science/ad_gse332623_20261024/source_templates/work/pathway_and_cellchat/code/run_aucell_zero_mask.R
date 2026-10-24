@@ -1,0 +1,8 @@
+args<-commandArgs(TRUE);stopifnot(length(args)==2L)
+cfg<-jsonlite::read_json(args[1],simplifyVector=TRUE)
+source(file.path(cfg$code_dir,'pathway_core.R'))
+source(file.path(cfg$code_dir,'aucell_zero_mask_core.R'))
+source(file.path(cfg$code_dir,'symbol_alias_view.R'))
+answer<-run_aucell_zero_mask_chunks(cfg,args[2])
+answer$packages<-as.list(vapply(c('AUCell','BiocParallel','Matrix','hdf5r'),function(x)as.character(packageVersion(x)),character(1)))
+jsonlite::write_json(answer,file.path(args[2],'r_zero_mask_completion.json'),pretty=TRUE,auto_unbox=TRUE)

@@ -150,6 +150,12 @@ class PDFImageViewSet(PublicReadOnlyViewSet):
             conditions &= Q(name__in=[f'{clean_name}.png', f'Umap_{clean_name}.png', f'{clean_name}.jpg', f'Umap_{clean_name}.jpg'])
         elif pdf_name == 'Overview':
             stems = ('Umap_Sample', 'Umap_RNA_snn_res.1', 'Umap_MajorCellType', 'MajorCellType_CellPro')
+            overview_records = [record] if record is not None else candidates
+            if overview_records:
+                stems = tuple(dict.fromkeys(
+                    stem for item in overview_records
+                    for stem in ((manifest_entry(item) or {}).get('overview_stems') or stems)
+                ))
             names = [stem + suffix for stem in stems for suffix in ('.pdf', '.png', '.jpg', '_page_1.jpg')]
             conditions &= Q(name__in=names)
             conditions &= folder_condition(folders, 'Dataset/Overview') if folders else path_sequence_condition('image', ('Overview',))

@@ -1,0 +1,6 @@
+{
+  "CellChat": "2.2.0.9001",
+  "original_saved_function_source_sha256": "c9b8d9d52ca8debbd0aad6a140c788806b4e810a9b8beac77a63bd31fa8b4df6",
+  "canonicalization": "R eval(parse(saved function source)), then writeLines(deparse(function,width.cutoff=500L),useBytes=TRUE); no function body executed",
+  "canonical_function_sha256": "9276e1dcecc815bd07baece541b649fd6065dba228e11514dafdb48e195a89e0"
+}

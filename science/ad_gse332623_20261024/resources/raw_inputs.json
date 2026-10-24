@@ -1,0 +1,493 @@
+{
+  "accession": "GSE332623",
+  "download_page": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE332623",
+  "supplementary_tar": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE332nnn/GSE332623/suppl/GSE332623_RAW.tar",
+  "files": [
+    {
+      "library_id": "GSE332623_TotalseqB_NEA1_ADT1",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA1_ADT1_matrix.mtx.gz",
+      "sha256": "be613bb0b55a3507e0519100d311a118fa7035af992a5ccb1ddef0fd628f8bdd"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA1_ADT1",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA1_ADT1_features.tsv.gz",
+      "sha256": "74b68443c2bff55a0cfc7b65ef55e79d91981159680747f30a5dfe772143399c"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA1_ADT1",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA1_ADT1_barcodes.tsv.gz",
+      "sha256": "80008b88b504e7c29d9b6c162c744c56a672031d31a57fdd31d7bf3ecd7ce7c7"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA1_ADT2",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA1_ADT2_matrix.mtx.gz",
+      "sha256": "c1df974bd4a54f65460b63ae8d7bf9c62d869fe6239529822a05326dc49fc3ff"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA1_ADT2",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA1_ADT2_features.tsv.gz",
+      "sha256": "053be49b3e30622f17eee8a903e9c0fcf87f9e4c02f06cd3cbc9288b44c27764"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA1_ADT2",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA1_ADT2_barcodes.tsv.gz",
+      "sha256": "8115b82049471e92f725ebac1b9b4e46346d5ca8e38cc8b2077c22e6686416d0"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA1_ADT3",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA1_ADT3_matrix.mtx.gz",
+      "sha256": "8a97d9bd17b47bb29a0d87b8db06e1e8965c2f3d0a1f0625124d0522ef01e008"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA1_ADT3",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA1_ADT3_features.tsv.gz",
+      "sha256": "6155be0dbdcdcd73a2b12a145d18019a3715607b0b985c228789a4ffde4749c2"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA1_ADT3",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA1_ADT3_barcodes.tsv.gz",
+      "sha256": "8bc6a9ce6bab63fa2ca234177cd66d411dc3654a2e24828d163f3f52e577e3ca"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA1_ADT4",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA1_ADT4_matrix.mtx.gz",
+      "sha256": "a6518159bcf706548a423811af922aed38ab6baacf666fdc729972127451a4b6"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA1_ADT4",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA1_ADT4_features.tsv.gz",
+      "sha256": "6481800c614c30a478a9a9a5020c6df825af02cf1fe73bc6111f6d0f55d98dcf"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA1_ADT4",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA1_ADT4_barcodes.tsv.gz",
+      "sha256": "0659f358395b275205b0b1ebd1fc17c6590a0e536e0b66e900971d7f94af5a2a"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA2_ADT1",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA2_ADT1_matrix.mtx.gz",
+      "sha256": "8da5a2c14a56ddb12ac31a17d45cf131e71bb1290e0394d71023374a016671f0"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA2_ADT1",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA2_ADT1_features.tsv.gz",
+      "sha256": "5ee20808e8712cbf98faaee3c40313e9dcfca86d669e478d4e27ad325891b3f7"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA2_ADT1",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA2_ADT1_barcodes.tsv.gz",
+      "sha256": "73a76c9d393e077ceeb665718b26ec4922b12a9154ffcc945cd2f8f9512e42a4"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA2_ADT2",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA2_ADT2_matrix.mtx.gz",
+      "sha256": "423cffee1d996619a19ba21da061d75617d06f5f5a62bcb239fb8e56c29d55e6"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA2_ADT2",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA2_ADT2_features.tsv.gz",
+      "sha256": "d4347d0a2c24ac405b31eb397f95dc01f372c9c061d750530f410398a70f3231"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA2_ADT2",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA2_ADT2_barcodes.tsv.gz",
+      "sha256": "7951748fff7becb6fd9570ab745d0edcd8379258dfa822aa1658334e3354b7a6"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA2_ADT3",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA2_ADT3_matrix.mtx.gz",
+      "sha256": "204a58a962655e80912c27b1a114bc378f37a8abbb77b406e58ba50cc2755050"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA2_ADT3",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA2_ADT3_features.tsv.gz",
+      "sha256": "65b3d63e5d704d5cdd774010dfc168b2f68f4106539605f62e5da7755c728cf4"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA2_ADT3",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA2_ADT3_barcodes.tsv.gz",
+      "sha256": "5a35f85d04907f4259f345f4820e99bcb0f2de17846ff73d983334e432d0b88e"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA3_ADT1",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA3_ADT1_matrix.mtx.gz",
+      "sha256": "f0946f01a685408d46b7fa958765832c194c04bb8e8e562f8c29743d9218f70a"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA3_ADT1",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA3_ADT1_features.tsv.gz",
+      "sha256": "e1f0393644244a195800dd3edfbe6344bda8035cae2d8d03e8b66fcecfeff16b"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA3_ADT1",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA3_ADT1_barcodes.tsv.gz",
+      "sha256": "deb9deea04cb9166d8251971662667747198019c03b1ec5b7e3be8c01efb987a"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA3_ADT2",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA3_ADT2_matrix.mtx.gz",
+      "sha256": "e2be0b1a8579b500b7451557a50c34057b80edd03b88e244046798b44c3ba18b"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA3_ADT2",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA3_ADT2_features.tsv.gz",
+      "sha256": "fcf112822a35125ad922218ad6f939a5385ea209f7eb08c17c8c929e97023dcb"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA3_ADT2",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA3_ADT2_barcodes.tsv.gz",
+      "sha256": "c850cd714ed995a90bceb0d43e495eeb81c74f46eb05f0577352221c635a1cd6"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA3_ADT3",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA3_ADT3_matrix.mtx.gz",
+      "sha256": "2dfa7968621c0d1d58d2c002a097dc17f29b37d082d4ef51e8687b5a0d06d6e5"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA3_ADT3",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA3_ADT3_features.tsv.gz",
+      "sha256": "331fa2a644e4790fcc0102df2ae504b6c8c56a58da1b1d5b94efbf32aa2b4379"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA3_ADT3",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA3_ADT3_barcodes.tsv.gz",
+      "sha256": "fe94a1a5efadefab713f3ee33f01a3630d267561eb18f4843246c8ddf6985437"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA3_ADT4",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA3_ADT4_matrix.mtx.gz",
+      "sha256": "25bc8c483ae61daf74979de20007ae49efabf462fc6e2d5ae267153b6df81dd8"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA3_ADT4",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA3_ADT4_features.tsv.gz",
+      "sha256": "ef6eb867f029a0f0abc92cf233a55860b0a109663faa71199c876b371bb7e112"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA3_ADT4",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA3_ADT4_barcodes.tsv.gz",
+      "sha256": "ebe223c257a08243b740b55fa57093d3f1f44c69af4b031033196fbd6abeb519"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA4_ADT1",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA4_ADT1_matrix.mtx.gz",
+      "sha256": "d19b63e0085adf160dda3affd8e252ea7325ef6dc642b0ed2d1111903db0d4c5"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA4_ADT1",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA4_ADT1_features.tsv.gz",
+      "sha256": "77d39f81cf703a2403ff20fcc1070f8d9a1ac2af8e835dae6c5251f938bf3c49"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA4_ADT1",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA4_ADT1_barcodes.tsv.gz",
+      "sha256": "11b5338ff052cfef760d7f51c6046ce7646ff6b09e817096cd642348a006bb80"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA4_ADT2",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA4_ADT2_matrix.mtx.gz",
+      "sha256": "9161b3f4d238ae0b3f0678f5c3d2c489e177e60a36d2cb5be367faf015e8ee56"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA4_ADT2",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA4_ADT2_features.tsv.gz",
+      "sha256": "48487c5010ab7be4c1e327d503d1838cd313d71e491c43486de2b4cd8c06b1f4"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA4_ADT2",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA4_ADT2_barcodes.tsv.gz",
+      "sha256": "94db83ca6d5ae8769ba093d3683de9321690f5d08a79dd5fae5fe1788c7d4cf6"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA4_ADT3",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA4_ADT3_matrix.mtx.gz",
+      "sha256": "a32d383192ebe97797d4a280433dd970b236e42de14f99d23c555c67b70494f4"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA4_ADT3",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA4_ADT3_features.tsv.gz",
+      "sha256": "15bcfa7767251a3d5315e2b4f2c97c7bf62cabedc34b9af777e6a1ad196022eb"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA4_ADT3",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA4_ADT3_barcodes.tsv.gz",
+      "sha256": "3a8b6001d6f9c171da92612b7fe1469425e8287a693c2a176caa36461fe59675"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA4_ADT4",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA4_ADT4_matrix.mtx.gz",
+      "sha256": "82b4dbed7b1eb371e6d4ed7d15d1db479df657e850eec9c6cfb8555cbbd2ac15"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA4_ADT4",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA4_ADT4_features.tsv.gz",
+      "sha256": "89782a16bb4ea029b566b1f3bb299842d7745d2ca8b360f3cd04f307c9d4a970"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA4_ADT4",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA4_ADT4_barcodes.tsv.gz",
+      "sha256": "9a4cd652bc051ed3cda6688670214c892d5c8b08ae11d833990ebdad31d33ffc"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA5_ADT1",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA5_ADT1_matrix.mtx.gz",
+      "sha256": "30d0ba8178d00118fb14cb95c32a5b37864ba5fad2c26ee5f9db86d62c5fb942"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA5_ADT1",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA5_ADT1_features.tsv.gz",
+      "sha256": "1ec21f5d9bd58a01195057b7656f67cfa1b89b2800c04c36a6d5ec17957ac0b0"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA5_ADT1",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA5_ADT1_barcodes.tsv.gz",
+      "sha256": "af47471b8fec22950033fd7ee42faa0cf99d3f0b6a3598dd18c79aa3b47d8ea7"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA5_ADT2",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA5_ADT2_matrix.mtx.gz",
+      "sha256": "013a74dee7b66be68fa1dd7c0ff3e0377405a93ba531da9f6a6ee46590f89789"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA5_ADT2",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA5_ADT2_features.tsv.gz",
+      "sha256": "19475cb2063f6c31b601f9611fd14a6cbcbaa61209273d31ba63cb4e14bd5374"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA5_ADT2",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA5_ADT2_barcodes.tsv.gz",
+      "sha256": "268970de620a2a3b57cda60db559dd39fed3a81ee7be2932e40d6652a1a279d7"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA5_ADT3",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA5_ADT3_matrix.mtx.gz",
+      "sha256": "7a9c09709e6426420b6bb597dba13ff113546bbe4fc76e35d68943de656369ab"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA5_ADT3",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA5_ADT3_features.tsv.gz",
+      "sha256": "b5eced08ba9bf8308381978699af2cb41297be22104af6813e76605435e3a4d7"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA5_ADT3",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA5_ADT3_barcodes.tsv.gz",
+      "sha256": "ce2c699555ae9ecafba89162dc2d0b72d8d8522fe9a74d4efd3d470c5a299dec"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA5_ADT4",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA5_ADT4_matrix.mtx.gz",
+      "sha256": "b9aa253da9db1fffd39db6690374ff3a027a64d512d27d4075341f3467f11216"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA5_ADT4",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA5_ADT4_features.tsv.gz",
+      "sha256": "87e4cafb51826383e9db07afcf57955c9bcb727b815c8d451d2d35ee25dd75b7"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA5_ADT4",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA5_ADT4_barcodes.tsv.gz",
+      "sha256": "fa8356bc44e4a49279e43ec0258dafdc7e84bcaec41ca167aa87b9e59ff6dd61"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA6_ADT1",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA6_ADT1_matrix.mtx.gz",
+      "sha256": "4f2f4461f8b3705193723c7eac4e2014fce97af9a4c3a97a4c876dd436dd37cc"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA6_ADT1",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA6_ADT1_features.tsv.gz",
+      "sha256": "1795098f1a0c5378f025a8a608f9537a22647b265a375345e2902c789e4fc8d5"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA6_ADT1",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA6_ADT1_barcodes.tsv.gz",
+      "sha256": "2cd4bc27cc4f2092695dd0a4efe08165fa79477f7471235451ed7967c8923070"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA6_ADT2",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA6_ADT2_matrix.mtx.gz",
+      "sha256": "59956a1d3ff8090d24fab2e0dbd206dea7967bf357cb62bea29236e3c8b73db0"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA6_ADT2",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA6_ADT2_features.tsv.gz",
+      "sha256": "63704d0252be098eb92ea4de23c3235f85b42fba38dbef494a9677a3b38736b0"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA6_ADT2",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA6_ADT2_barcodes.tsv.gz",
+      "sha256": "c66189abd81f288d49ff8045e5d651e732d74c2d1632e903983dc9892bcca2da"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA6_ADT3",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA6_ADT3_matrix.mtx.gz",
+      "sha256": "1e544fc6aae94c1656a1658d434ecb4c9db6c2b481a3b3d6b0bc68c91dc4edd4"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA6_ADT3",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA6_ADT3_features.tsv.gz",
+      "sha256": "37b216412a1ddf13139e26e0d04354b62f9494c80241663f745bbc78bc06498e"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA6_ADT3",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA6_ADT3_barcodes.tsv.gz",
+      "sha256": "7443a212a5006acf7e4cfca555a4bad57f5531ba72f293d168daec55e2803aab"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA6_ADT4",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA6_ADT4_matrix.mtx.gz",
+      "sha256": "b18efeab6416f74927d0189ab7249888bbfdc44e8a3619a7d4123691023f4602"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA6_ADT4",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA6_ADT4_features.tsv.gz",
+      "sha256": "5a4e50091f8dd3a1bca742b5659a92b4d06926815c8cc1e0b69c7f21f8029d62"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA6_ADT4",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA6_ADT4_barcodes.tsv.gz",
+      "sha256": "5a2b2769f7c7ee6be2068dfb7aaa5a05dbc1183a82697b9febdf6f40c1a4736c"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA7_ADT1",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA7_ADT1_matrix.mtx.gz",
+      "sha256": "5b4aae05d4111ad7f0cffb2f476e453f01a1fad075be3dce67641f7412fa34b4"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA7_ADT1",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA7_ADT1_features.tsv.gz",
+      "sha256": "c9ecfc468178fc8db39fe7eca6cf503a4b56bfdc41f910d9db76b172ac61670a"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA7_ADT1",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA7_ADT1_barcodes.tsv.gz",
+      "sha256": "2c6bb0ff9b20964bbd828282829f1fb8cb70a580a81a5ab023b04c179752be40"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA7_ADT2",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA7_ADT2_matrix.mtx.gz",
+      "sha256": "4985db6df86990d9a6094753f317192f83fde5477c57f2269c2bed298ff6cb79"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA7_ADT2",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA7_ADT2_features.tsv.gz",
+      "sha256": "f3787373aed84993927e16e445e2342c4fa0f42da9fc33664ce15c28c4824ea5"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA7_ADT2",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA7_ADT2_barcodes.tsv.gz",
+      "sha256": "d732a800797a5ddba8cffbd47eabb85a20ba056523fd96d184013ac7af765da6"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA7_ADT3",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA7_ADT3_matrix.mtx.gz",
+      "sha256": "7d9b30075bcbbbe41a5532248561d2deb78e899c3f4c2aabe9505c423a5b951a"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA7_ADT3",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA7_ADT3_features.tsv.gz",
+      "sha256": "1a7dcc0718a5c7ff8de7e722fd4926f483e1b4717af6bb8c523997a2a7d363b7"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA7_ADT3",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA7_ADT3_barcodes.tsv.gz",
+      "sha256": "09eb883608fd551271b27f30ec7324320c8112ba4fdbe5d8eeb0cdaf3a958614"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA7_ADT4",
+      "member": "matrix",
+      "filename": "GSE332623_TotalseqB_NEA7_ADT4_matrix.mtx.gz",
+      "sha256": "3eb8936f86c322158eb573c467c6a83833f81d3af882a8e384d4e293290e9849"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA7_ADT4",
+      "member": "features",
+      "filename": "GSE332623_TotalseqB_NEA7_ADT4_features.tsv.gz",
+      "sha256": "c9ee2a598ec6d3960769157e8eda9a455dd2c13ded4beafbf6c1017dd3ca48e1"
+    },
+    {
+      "library_id": "GSE332623_TotalseqB_NEA7_ADT4",
+      "member": "barcodes",
+      "filename": "GSE332623_TotalseqB_NEA7_ADT4_barcodes.tsv.gz",
+      "sha256": "45c49c8f8e94e847f8d1a301a9a9e4624beabd5050097b50b970b49f1cadd4f6"
+    }
+  ]
+}

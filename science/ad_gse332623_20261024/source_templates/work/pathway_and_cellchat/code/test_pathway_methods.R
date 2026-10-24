@@ -1,0 +1,26 @@
+args<-commandArgs(TRUE)
+source(file.path(args[1],'pathway_core.R'))
+input<-args[2];output<-args[3]
+axes<-read_axes(input);sets<-prepare_sets(args[4],axes$genes)
+f<-H5File$new(input,'r');m<-read_rna_chunk(f,axes$genes,axes$cells,1L,min(70L,length(axes$cells)));f$close_all()
+scores<-score_chunk(m,sets$sets,sets$membership,2026L)
+rank_s<-singscore::rankGenes(as.matrix(m),tiesMethod='min')
+test_ids<-unique(c(names(sets$sets)[c(1,20,100,length(sets$sets))],names(sets$sets)[which.max(lengths(sets$sets))]))
+errors<-sapply(test_ids,function(id){
+  official<-singscore::simpleScore(rank_s,upSet=sets$sets[[id]],centerScore=FALSE)
+  stopifnot(identical(rownames(official),colnames(m)))
+  max(abs(official$TotalScore-scores$singscore[id,]))
+})
+stopifnot(max(errors)<1e-12)
+set.seed(2026)
+ra<-AUCell_buildRankings(m,plotStats=FALSE,splitByBlocks=TRUE,BPPARAM=SerialParam(RNGseed=2026L),keepZeroesAsNA=FALSE,verbose=FALSE)
+a<-as.matrix(getAUC(AUCell_calcAUC(sets$sets,ra,nCores=1,normAUC=TRUE,aucMaxRank=ceiling(.05*nrow(m)),verbose=FALSE)))
+stopifnot(max(abs(a-scores$AUCell))==0)
+u<-UCell::ScoreSignatures_UCell(matrix=m,features=sets$sets,maxRank=min(1500L,nrow(m)),w_neg=1,name='_UCell',ncores=1,chunk.size=ncol(m),BPPARAM=SerialParam(),ties.method='average',force.gc=TRUE)
+u<-t(as.matrix(u[,paste0(names(sets$sets),'_UCell'),drop=FALSE]))
+stopifnot(max(abs(u-scores$UCell))==0)
+report<-list(status='validated',input=input,cells=ncol(m),RNA_genes=nrow(m),pathways=length(sets$sets),
+  source_cell_sums=as.numeric(colSums(m)),source_cell_nnz=as.numeric(diff(m@p)),source_first_cell_gene_probes=as.numeric(m[c(1,101,1001),1]),
+  singscore_official_max_error=max(errors),singscore_test_ids=test_ids,AUCell_official_max_error=max(abs(a-scores$AUCell)),UCell_official_max_error=max(abs(u-scores$UCell)),RSS_GiB=current_rss_gib())
+write_json(report,output,auto_unbox=TRUE,pretty=TRUE,digits=17)
+cat('OFFICIAL_METHOD_COMPARISON_VALIDATED\n')

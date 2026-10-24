@@ -1,0 +1,41 @@
+{
+  "status": "prototype_bitwise_equivalent_not_formal_release",
+  "scope": "Independent nonnegative finite sparse-positive quartile prototype; both running formal jobs and all source H5 files untouched",
+  "cells": 17536,
+  "groups": 7,
+  "bootstrap": 100,
+  "seed": 2026,
+  "sparse_positive_seconds": 15.549999999999999,
+  "prepare_seconds": 0.8409999999999993,
+  "aggregate_seconds": 8.568999999999996,
+  "aggregate_calls": 101,
+  "probability_max_absolute_error": 0,
+  "pvalue_max_absolute_error": 0,
+  "all_probability_pvalue_and_dimnames_bitwise_identical": true,
+  "edge_test": {
+    "cases": 84,
+    "group_gene_outputs": 10304,
+    "permutations": 100,
+    "additional_group_gene_outputs": 13600,
+    "n1_to_80_and_large_odd_even": true,
+    "all_zero_and_ties": true,
+    "very_small_and_arbitrary_double": true,
+    "NA_and_negative_explicitly_rejected": true
+  },
+  "arithmetic": "collapse2.1.6 type7 a+gamma*(b-a), with explicit double operation order; official R mean combines Q25,Q50,Q50,Q75 unchanged",
+  "packages": {
+    "CellChat": "2.2.0.9001",
+    "collapse": "2.1.6",
+    "Rcpp": "1.1.1"
+  },
+  "proof_array_sha256": "383b1dcae676985700e7da15840d26974627d36e79e8a5a9c28bfa4a9f5445fd",
+  "prototype_source_sha256": {
+    "sparse_trimean_prototype.R": "7c9ce91687bae63a649810d01117fe516ea57aa7974f67bda3948082a7bcca49",
+    "sparse_trimean_prototype.cpp": "4976fda1fcc4b61a594e4750bef3f232970c87cb194e2df7ee93c1653c62199e"
+  },
+  "official_quantile_primary_source": "https://raw.githubusercontent.com/cran/collapse/2.1.6/src/fnth_fmedian_fquantile.c",
+  "official_runtime_function_sha256": "c9b8d9d52ca8debbd0aad6a140c788806b4e810a9b8beac77a63bd31fa8b4df6",
+  "fixed_runtime_scope": "Linux R4.3 / collapse2.1.6; finite nonnegative normalized RNA, exact quartile positions and R mean; no claim of generic NA/negative-input support",
+  "input_RDS_sha256": "42ee52f193c17fe170a6b6e9817cf3e00bffcb992ac12041718281a5b1692d09",
+  "official_reference_sha256": "ec0a548eea74b26a99b756705da0e2df5a58a39ec71056a48f951ffdfb25656a"
+}

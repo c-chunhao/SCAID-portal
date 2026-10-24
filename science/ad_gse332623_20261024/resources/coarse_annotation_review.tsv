@@ -1,0 +1,13 @@
+MajorCellType	n_records	n_source_libraries	dominant_library	dominant_source_fraction	review_status	interpretation
+T cells	240461	27	GSE332623_TotalseqB_NEA2_ADT3	0.05828387971438196	main_PBMC_reference_prediction	Computational reference/RNA evidence; no external expert confirmation claimed.
+NK cells	47772	27	GSE332623_TotalseqB_NEA2_ADT3	0.068973457255296	main_PBMC_reference_prediction	Computational reference/RNA evidence; no external expert confirmation claimed.
+B cells	60179	27	GSE332623_TotalseqB_NEA7_ADT4	0.0648398943152927	main_PBMC_reference_prediction	Computational reference/RNA evidence; no external expert confirmation claimed.
+Plasma cells	671	27	GSE332623_TotalseqB_NEA6_ADT1	0.09836065573770492	main_PBMC_reference_prediction	Computational reference/RNA evidence; no external expert confirmation claimed.
+Monocytes	171553	27	GSE332623_TotalseqB_NEA7_ADT4	0.07679842381071739	main_PBMC_reference_prediction	Computational reference/RNA evidence; no external expert confirmation claimed.
+Dendritic cells	4631	27	GSE332623_TotalseqB_NEA7_ADT3	0.05614338155905852	main_PBMC_reference_prediction	Computational reference/RNA evidence; no external expert confirmation claimed.
+pDC	3327	27	GSE332623_TotalseqB_NEA1_ADT1	0.0739404869251578	main_PBMC_reference_prediction	Computational reference/RNA evidence; no external expert confirmation claimed.
+Platelets	145	23	GSE332623_TotalseqB_NEA1_ADT2	0.15862068965517243	main_PBMC_reference_prediction	Computational reference/RNA evidence; no external expert confirmation claimed.
+Fibroblasts	172	1	GSE332623_TotalseqB_NEA7_ADT2	1.0	source_dominated_provisional_prediction	All172records from NEA7_ADT2/source-dominated cluster23. Model and collagen/DCN RNA support retained; cell identity/tissue origin requires team review, not a validated new finding.
+Mast cells	4	4	GSE332623_TotalseqB_NEA2_ADT2	0.25	very_rare_provisional_prediction	Retain original computational prediction for review; no discrete fine subtype or new-cell-population claim. The single neutrophil prediction lacks FCGR3B support.
+Neutrophils	1	1	GSE332623_TotalseqB_NEA2_ADT1	1.0	very_rare_provisional_prediction	Retain original computational prediction for review; no discrete fine subtype or new-cell-population claim. The single neutrophil prediction lacks FCGR3B support.
+Unassigned	52809	27	GSE332623_TotalseqB_NEA7_ADT1	0.11219678463898199	unresolved_computational_annotation	All records retained; raw reference labels and uncertainty remain available.
