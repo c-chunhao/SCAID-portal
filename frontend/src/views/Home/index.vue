@@ -14,13 +14,7 @@
           </p>
         </div>
         <div class="hero-explore">
-          <router-link to="/TeamInformation" class="atlas-preview" aria-label="Explore the T and NK cell atlas">
-            <img :src="atlasPreview" width="1600" height="863" alt="Published T and NK cell atlas showing cell-type annotations across UMAP panels." decoding="async" />
-            <span class="atlas-preview-caption">
-              <span>T / NK cell atlas</span>
-              <span class="atlas-preview-action">Explore atlas <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg></span>
-            </span>
-          </router-link>
+          <HomeWorkflow />
           <form class="hero-search" role="search" @submit.prevent="handleSearch">
             <label class="search-label" for="home-search">Find a disease or dataset</label>
             <div class="search-controls">
@@ -131,7 +125,7 @@ import { useRouter } from 'vue-router';
 import { buildConditionCoverage } from '@/utils/conditionCoverage';
 import { summarizeCatalogue } from '@/utils/catalogueSummary';
 import conditionOverview from '@/assets/images/scaid-body-overview-flat-20261016.png';
-import atlasPreview from '@/assets/images/dataIntegration_preview/FIG1_T_NK_celltype.jpg';
+import HomeWorkflow from '@/components/HomeWorkflow.vue';
 const router = useRouter();
 const catalogueRows = ref([]);
 const conditionGroups = computed(() => buildConditionCoverage(catalogueRows.value));
@@ -217,12 +211,6 @@ onBeforeUnmount(() => { disposed = true; });
   padding-left: 36px;
   border-left: 1px solid var(--scaid-line);
 }
-.atlas-preview { display: block; margin-bottom: 24px; color: var(--scaid-ink); text-decoration: none; }
-.atlas-preview img { display: block; width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #fff; }
-.atlas-preview-caption { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 10px; font-size: .8125rem; font-weight: 500; }
-.atlas-preview-action { display: inline-flex; align-items: center; gap: 6px; color: var(--scaid-accent); white-space: nowrap; }
-.atlas-preview-action svg { width: 17px; height: 17px; }
-.atlas-preview:hover .atlas-preview-action { color: var(--scaid-accent-hover); text-decoration: underline; text-underline-offset: 3px; }
 .search-label {
   display: block;
   margin-bottom: 12px;
@@ -409,7 +397,6 @@ onBeforeUnmount(() => { disposed = true; });
   .hero-title { max-width: none; }
   .hero-brand { font-size: 4.5rem; margin-bottom: 16px; }
   .hero-subtitle { max-width: 36ch; font-size: 1.875rem; }
-  .atlas-preview { display: none; }
   .hero-explore { padding: 24px 0 0; border-top: 1px solid var(--scaid-line); border-left: 0; }
   .search-label { margin-bottom: 12px; }
   .search-controls .el-button { min-width: 130px; }

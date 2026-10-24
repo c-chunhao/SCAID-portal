@@ -1,3 +1,8 @@
+# Home workflow preview — 24 October 2026
+
+- Replace the upper-right home hero atlas thumbnail with a compact usage workflow rendered in HTML and SVG.
+- Retain home search and the remaining home-page content; scientific data, analysis outputs, backend code and existing image assets are unchanged.
+
 # Dataset analysis labels — 24 October 2026
 
 - Label the Dataset column Available analyses and expose all already available module labels, including CellChat, GO, KEGG and Downloads.

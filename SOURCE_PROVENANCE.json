@@ -469,5 +469,33 @@
     "scientific_results_or_catalogue_data_changed": false,
     "original_figure_assets_unchanged": true,
     "tag_or_release_created": false
+  },
+  "home_workflow_preview_20261024": {
+    "base_commit": "7883a1a7e0161998aa6090fc094dc60c6c6e4aa7",
+    "base_tree": "a2325073b670564b3a931f357d6445f413c3ca78",
+    "scope": "Home hero usage workflow component, Home view and three publication metadata files",
+    "copied_application_files": [
+      {
+        "public_path": "frontend/src/views/Home/index.vue",
+        "live_source_sha256": "63f00bc2f6c103173be4c82f09d03d50a2cdaf39a28728b2c67c5227c9df302b",
+        "published_sha256": "63f00bc2f6c103173be4c82f09d03d50a2cdaf39a28728b2c67c5227c9df302b",
+        "byte_identical_to_live": true
+      },
+      {
+        "public_path": "frontend/src/components/HomeWorkflow.vue",
+        "live_source_sha256": "709ee6cc08caf358793ee6c81af371b2d6c439823157a93396883322f0062a73",
+        "published_sha256": "709ee6cc08caf358793ee6c81af371b2d6c439823157a93396883322f0062a73",
+        "byte_identical_to_live": true
+      }
+    ],
+    "source_hash_lock_sha256": "0118fc371fa0d8d05fdbf7a64a1166f00f643c9a514f0128243efd58f6cd20b2",
+    "production_deployment_receipt_sha256": "3d9f8debcfc5a164223508566cf9d8b2d71d9155cd17100c053c92e75de903a3",
+    "scientific_source_version": "0.3.1-ad20261024",
+    "scientific_sources_unchanged": true,
+    "backend_unchanged": true,
+    "scientific_results_or_catalogue_data_changed": false,
+    "original_figure_assets_unchanged": true,
+    "new_raster_assets_added": false,
+    "tag_or_release_created": false
   }
 }
