@@ -448,5 +448,26 @@
     "original_figure_assets_unchanged": true,
     "template_permission_expanded": false,
     "tag_or_release_created": false
+  },
+  "dataset_analysis_labels_20261024": {
+    "base_commit": "a2d76e211d957711b35604163cc9984941af5186",
+    "base_tree": "0f4ff27ad409852466b3e233966e8a3cca23e1b7",
+    "scope": "Dataset available-analysis labels and three publication metadata files",
+    "copied_application_files": [
+      {
+        "public_path": "frontend/src/views/Dataset/index.vue",
+        "live_source_sha256": "707a88e6b5c5e5dc3a0d77c3b243c0603276b745b9ae681fc238f157b2400a9d",
+        "published_sha256": "707a88e6b5c5e5dc3a0d77c3b243c0603276b745b9ae681fc238f157b2400a9d",
+        "byte_identical_to_live": true
+      }
+    ],
+    "source_hash_lock_sha256": "51dfa7770006ef62f97eec8b1fb3e0e9ac5c31a5548785df0d13468128ae5880",
+    "production_deployment_receipt_sha256": "0a6a1b2fa4ad94d55306b60ad7cc522d17770d695fe3c6d4c7ff4a896b66044f",
+    "scientific_source_version": "0.3.1-ad20261024",
+    "scientific_sources_unchanged": true,
+    "backend_unchanged": true,
+    "scientific_results_or_catalogue_data_changed": false,
+    "original_figure_assets_unchanged": true,
+    "tag_or_release_created": false
   }
 }

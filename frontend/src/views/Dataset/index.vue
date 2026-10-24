@@ -88,8 +88,8 @@
               <el-table-column label="Cell records" min-width="125" align="right">
                 <template #default="scope">{{ formatCount(scope.row.cell_count) }}</template>
               </el-table-column>
-              <el-table-column label="Published views" min-width="175">
-                <template #default="scope"><span class="module-summary">{{ moduleSummary(scope.row) }}</span></template>
+              <el-table-column label="Available analyses" min-width="230">
+                <template #default="scope"><span class="module-summary analysis-summary">{{ moduleSummary(scope.row) }}</span></template>
               </el-table-column>
             </el-table>
           </div>
@@ -255,8 +255,21 @@ const sourceHref = computed(() => /^GSE\d+$/i.test(currentRow.value?.dataset_id 
   ? `https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=${encodeURIComponent(currentRow.value.dataset_id)}` : '');
 const formatCount = value => Number.isFinite(Number(value)) && value !== null && value !== '' ? Number(value).toLocaleString('en-US') : 'Not reported';
 function moduleSummary(row) {
-  if (!row.module_availability) return 'Browse analyses';
-  return row.module_availability.gene_umap && row.module_availability.kegg_score ? 'Main · Gene · Scores' : 'Main figures only';
+  const availability = row.module_availability;
+  if (!availability || !Object.keys(availability).length) return 'View analyses';
+  const labels = [];
+  if (hasPublishedAnalysis(row, 'Overview')) labels.push('Overview');
+  if (hasPublishedAnalysis(row, 'Main_Marker')) labels.push('Markers');
+  const go = hasPublishedAnalysis(row, 'MajorCellType_Go_Ht');
+  const kegg = hasPublishedAnalysis(row, 'MajorCellType_KEGG_Ht');
+  if (go && kegg) labels.push('GO/KEGG');
+  else if (go) labels.push('GO');
+  else if (kegg) labels.push('KEGG');
+  if (availability.gene_umap === true) labels.push('Gene');
+  if (availability.kegg_score === true) labels.push('Pathway scores');
+  if (availability.cellchat === true) labels.push('CellChat');
+  if (availability.downloads === true) labels.push('Downloads');
+  return labels.join(' · ') || 'No analyses available';
 }
 function explorationTarget(kind) {
   return { path: kind === 'gene' ? '/Gene' : '/KEGG', query: explorationQuery(currentRow.value, kind) };
@@ -599,6 +612,7 @@ onBeforeUnmount(() => { disposed = true; });
 .exploration-links svg { width: 16px; height: 16px; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
 .exploration-links a:hover { text-decoration: underline; text-decoration-thickness: 1px; }
 .module-summary { color: var(--dataset-muted); font-size: .85rem; line-height: 1.5; }
+.analysis-summary { display: block; white-space: normal; overflow-wrap: break-word; line-height: 1.65; }
 .publication-details { margin-bottom: 12px; }
 .publication-details summary { width: fit-content; min-height: 44px; padding: 10px 0; color: var(--dataset-accent); font-size: .9rem; cursor: pointer; }
 .publication-details summary:hover { text-decoration: underline; text-underline-offset: 3px; }

@@ -1,3 +1,9 @@
+# Dataset analysis labels — 24 October 2026
+
+- Label the Dataset column Available analyses and expose all already available module labels, including CellChat, GO, KEGG and Downloads.
+- Use the conservative View analyses label when legacy availability metadata is absent.
+- This frontend label correction leaves scientific data, analysis results, backend code and figure assets unchanged.
+
 # Interface refinement, second round — 24 October 2026
 
 - Refine home-page condition browsing, navigation emphasis, dataset shortcuts and atlas figure controls.
