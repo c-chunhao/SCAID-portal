@@ -34,7 +34,7 @@ class CanonicalConditionTests(TestCase):
         self.psa = [CellData.objects.create(abbreviation='AS', dataset_id='E-MTAB-8207', tissue=tissue) for tissue in ('PBMC', 'SFMC')]
         self.as_record = CellData.objects.create(abbreviation='AS', dataset_id='GSE216883', tissue='PBMC/SFMC')
         self.bd = CellData.objects.create(abbreviation='SV', dataset_id='GSE198616', tissue='PBMC')
-        self.uveitis = CellData.objects.create(abbreviation='AIR', disease_full_name='Behcets_disease', dataset_id='bAF7fe', tissue='眼前房液（房水）')
+        self.uveitis = CellData.objects.create(abbreviation='AIR', disease_full_name='Behcets_disease', dataset_id='bAF7fe', tissue='\u773c\u524d\u623f\u6db2\uff08\u623f\u6c34\uff09')
 
     def test_psa_and_true_as_are_distinct_in_filter_search_and_tree(self):
         for key in ('abbreviation', 'name'):
@@ -57,14 +57,14 @@ class CanonicalConditionTests(TestCase):
         self.assertEqual(rows[0]['abbreviation'], 'BD(Uveitis)')
 
     def test_tree_names_match_flat_canonical_names_without_rewriting_history(self):
-        for record, legacy in [(self.psa[0], '强直性脊柱炎'), (self.bd, '血管炎')]:
+        for record, legacy in [(self.psa[0], '\u5f3a\u76f4\u6027\u810a\u67f1\u708e'), (self.bd, '\u8840\u7ba1\u708e')]:
             record.disease_name = legacy
             record.disease_full_name = legacy
             record.save(update_fields=['disease_name', 'disease_full_name'])
         tree = {row['abbreviation']: row for row in self.client.get('/api/cell-data/').json()['data']}
         for record, code, expected, legacy in [
-            (self.psa[0], 'PsA', 'Psoriatic Arthritis', '强直性脊柱炎'),
-            (self.bd, 'BD', "Behçet's Disease", '血管炎'),
+            (self.psa[0], 'PsA', 'Psoriatic Arthritis', '\u5f3a\u76f4\u6027\u810a\u67f1\u708e'),
+            (self.bd, 'BD', "Behçet's Disease", '\u8840\u7ba1\u708e'),
         ]:
             flat = self.client.get('/api/cell-data-all/', {'abbreviation': code}).json()[0]
             for field in ('disease_name', 'disease_full_name', 'disease_label'):

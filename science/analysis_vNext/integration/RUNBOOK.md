@@ -1,8 +1,8 @@
 # Public module runbook
 
-## 无私有矩阵/模型的guard检查
+## Guard checks without private matrices or models
 
-Python需要numpy/scipy/h5py；R需要SeuratObject/Matrix/jsonlite/digest。当前目录应为本integration目录。
+Python requires numpy/scipy/h5py; R requires SeuratObject/Matrix/jsonlite/digest. Run from this integration directory.
 
 ```bash
 export OPENBLAS_NUM_THREADS=4 OMP_NUM_THREADS=4 MKL_NUM_THREADS=4
@@ -10,9 +10,9 @@ python check_released_rna_public.py
 Rscript check_integration_safeguards.R
 ```
 
-Python临时toy实测fullRNA/denseHVG轴、未知dense failclosed、乱序cell-ID、full-library denominator与fraction100000.1/badptr/badindex/重复coordinates拒绝。R临时toy实测counts getter、embedding/metadata错序重排、missing/dup拒绝、稀疏全RNA normalization及从实际scale.data getter写出独立featureaxis。
+Temporary Python toy tests check full-RNA/dense-HVG axes, rejection of an unverified dense axis, reordered cell IDs, the full-library denominator, and rejection of the fractional value 100000.1, invalid pointers, invalid indices and duplicate coordinates. Temporary R toy tests check the counts getter, reordering of embeddings/metadata, rejection of missing/duplicate IDs, sparse full-RNA normalization, and writing an independent feature axis from the actual `scale.data` getter.
 
-## 指定自己的真实输入
+## Specify your own real inputs
 
 ```bash
 python released_rna.py /path/to/released_RNA.h5 --out /path/to/new_schema.json
@@ -23,8 +23,8 @@ python reannotate_t1d_full_rna_pilot.py --h5 /path/to/T1D_RNA.h5 \
 Rscript assemble_B_Plasma_vNext.R /path/to/B_Plasma_input_root /path/to/distinct_output.rds
 ```
 
-pilot input是SCAID multi-feature H5（names_obs/names_var与RNA/rawdata CSR）；source-metadata需要cell_id/Sample_ID/Cluster_Annotation_Merged列，与H5的Sample逐项对应，仅用于审阅，模型目录需Immune_All_High.pkl和Immune_All_Low.pkl。模型以及临床cellmetadata未随代码发布。assembly预期inputroot下历史Mult_01/Mult_03(B、Plasma、Bgc)结构，base显式为Mult_01/scRNA.Mult1.rds，branch逐个只保留metadata；巨型执行前安排资源，不覆盖production。
+The pilot input is a SCAID multi-feature H5 (`names_obs`/`names_var` and RNA/rawdata CSR). Source metadata require `cell_id`/`Sample_ID`/`Cluster_Annotation_Merged` columns corresponding element by element to the H5 `Sample`, and are used only for review. The model directory requires `Immune_All_High.pkl` and `Immune_All_Low.pkl`. Models and clinical cell metadata are not distributed with the code. Assembly expects the historical `Mult_01`/`Mult_03` (B, Plasma, Bgc) structure under the input root, with the base explicitly set to `Mult_01/scRNA.Mult1.rds`; only metadata are retained from each branch. Arrange resources before large runs, and do not overwrite production outputs.
 
-future writer应在序列化的同一Seurat对象上调用 `export_RNA_layer_axes_checked(object,sidecar_path,source_file)`，metadata必须用match按真实matrix rownames排序。legacydense读取时必须独立验证相应source scale.data行序和export关联；fullRNA raw正常可读。
+Future writers should call `export_RNA_layer_axes_checked(object,sidecar_path,source_file)` on the same Seurat object that is serialized. Metadata must be ordered with `match` against actual matrix row names. Reading legacy dense data requires independent verification of the corresponding source `scale.data` row order and its export linkage. Full raw RNA remains readable normally.
 
-`validate_raw_reader_corruption_guards.py`另含本地真实T1D5000cells regression，需要指定本机release路径，公开环境先运行self-contained check。
+`validate_raw_reader_corruption_guards.py` also contains a local regression check using 5000 real T1D cells and requires an explicit local release path. In a public environment, run the self-contained check first.

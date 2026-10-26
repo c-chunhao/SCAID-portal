@@ -34,9 +34,9 @@
       "bytes": 522
     },
     {
-      "file": "aggregate_results/readable_results_bilingual.json",
-      "sha256": "89221ccd4185f71b2bec4b57ae823ed7bf8f90c7203b231cc634d08c3a85d914",
-      "bytes": 67869
+      "file": "aggregate_results/readable_results.json",
+      "sha256": "f2aa4b984d4e64e6c94a527e90d9944bc6f87aff99e63421885f0592f93a50d6",
+      "bytes": 68514
     },
     {
       "file": "aggregate_results/reference_original_aggregate_HC3_models.tsv",
@@ -70,13 +70,13 @@
     },
     {
       "file": "scripts/analyze_bcell_states.py",
-      "sha256": "b33f0fea748faaf4cbf6ec684dbe0ac56bd905314ff2925ab10fab7ede1cbec4",
-      "bytes": 28848
+      "sha256": "6f2dec12682778d865c3872d522274ff8a1c58efac6cdc28905c0356fe995314",
+      "bytes": 25708
     },
     {
       "file": "scripts/build_readable_results.py",
-      "sha256": "483a78d5e93743e908780e39deec3d30db64ab168c03b06ed71c4f6342c0ee41",
-      "bytes": 13572
+      "sha256": "c7b897f272f02fd895a5e0b0f0c0c34e892f156ed6ab15353c140bfaf72d6119",
+      "bytes": 8819
     },
     {
       "file": "scripts/prepare_bcell.py",

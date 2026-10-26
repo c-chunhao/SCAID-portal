@@ -1,25 +1,25 @@
-# RNA 矩阵与 feature axis 规范
+# RNA matrix and feature-axis specification
 
-`names_obs` 是 cell axis。`names_var` 与 `var/rawvar/_index` 是完整 raw RNA feature axis。`assay/RNA/layers/rawdata` 的 CSR blocks 对应完整 raw RNA counts，顺序必须与前述 axes 一致。
+`names_obs` is the cell axis. `names_var` and `var/rawvar/_index` are the full raw-RNA feature axis. CSR blocks under `assay/RNA/layers/rawdata` contain full raw-RNA counts, with order matching those axes.
 
-`assay/RNA/layers/data` 的现有 dense matrix 只有 2000 个 HVG features。它的列名必须读取 `var/var/_index`，不能使用 `names_var` 的前 2000 个 gene。实物矩阵 shape 为 cells×HVG，而旧 `shape` attribute 写成 HVG×cells；读取时以真实 dataset shape 及明确 feature index 校验，保留倒序 attribute 作为兼容诊断。名称 `data` 不足以证明它是全基因 normalized RNA；有负值的矩阵更不能当 raw counts 或 CellTypist log1p 输入。
+The existing dense matrix under `assay/RNA/layers/data` contains only 2000 HVG features. Read its column names from `var/var/_index`, not from the first 2000 genes in `names_var`. The actual matrix shape is cells × HVG, while the legacy `shape` attribute records HVG × cells. Validate reads against the real dataset shape and an explicit feature index, retaining the reversed attribute as a compatibility diagnostic. The name `data` does not establish that the matrix contains normalized RNA for all genes. A matrix with negative values cannot be treated as raw counts or CellTypist log1p input.
 
-新的 `SCAID-RNA-sidecar-1.0` JSON 明确记录每个 block 的 cell offset、真实 cells×features 形状、feature index、matrix semantics、encoding、倒序 attribute 状态和允许的分析用途。`released_rna.py` 提供可复用 reader，并在 feature 轴不确定时拒绝猜测。
+The new `SCAID-RNA-sidecar-1.0` JSON explicitly records each block's cell offset, actual cells × features shape, feature index, matrix semantics, encoding, reversed-attribute status and permitted analytical uses. `released_rna.py` provides a reusable reader and refuses to guess when the feature axis is uncertain.
 
-还需区分“有 2000 个轴名”和“每列的 gene 次序已独立验证”。easySCFr 导出代码选择 `rawvar[rownames(rawvar) %in% VariableFeatures(sce), ]` 生成该层 var metadata，未显式按 `rownames(scaleData)` 重排。T1D 的真实 archived postprocessed RDS（20241116/00.data/type_1_diabetes_mellitus/syn53641849/PBMC）已成功读取：RNA scale.data 的全部 2000 rownames 与 H5 的 declared axis 逐项完全一致；16 cells×2000 scaled values 最大差 5.33e-15，符合文本 round-trip 精度；同16 cells×20,690 genes raw counts 与独立 official source 完全一致。因此该 T1D dense axis 已有独立实物支持，未发现错配。历史实际 exporter-call 关联没有存档；其余对象没有由此自动验证。旧 dense/HVG reader 默认拒绝读取，T1D 可显式传入这份独立核验的 `T1D_export_candidate_2_scale_feature_names.txt` 授权读取。Raw counts 正常可读。
+Having 2000 axis names must also be distinguished from independently verifying the gene order in every column. The easySCFr exporter selects `rawvar[rownames(rawvar) %in% VariableFeatures(sce), ]` to create var metadata for this layer, without explicitly reordering it by `rownames(scaleData)`. The actual archived postprocessed T1D RDS (`20241116/00.data/type_1_diabetes_mellitus/syn53641849/PBMC`) was successfully read: all 2000 RNA `scale.data` row names exactly matched the H5 declared axis, element by element. The maximum difference across 16 cells × 2000 scaled values was 5.33e-15, consistent with text round-trip precision. Raw counts for the same 16 cells × 20,690 genes exactly matched the independent official source. The T1D dense axis therefore has independent support from the actual object, with no mismatch found. The link to the historical exporter call was not archived; other objects are not automatically validated by this result. The legacy dense/HVG reader rejects reads by default. T1D reading can be explicitly authorized by supplying the independently verified `T1D_export_candidate_2_scale_feature_names.txt`. Raw counts remain readable normally.
 
-新 writer 必须分别写 `raw_feature_names = rownames(raw_counts)` 与 `scaled_HVG_feature_names = rownames(scaleData)`；对应 metadata 必须用 `match()` 按该 axis 重排，并 `identical(rownames(metadata), rownames(matrix))` 校验，不能仅用 membership filtering。每层记录 counts/lognormalized/scaled 的语义，不再把 scaled RNA 仅名为 data。
+New writers must separately record `raw_feature_names = rownames(raw_counts)` and `scaled_HVG_feature_names = rownames(scaleData)`. Corresponding metadata must be reordered to that axis with `match()` and checked with `identical(rownames(metadata), rownames(matrix))`; membership filtering alone is insufficient. Each layer records whether its values are counts, log-normalized or scaled, rather than naming scaled RNA only `data`.
 
-CellTypist 输入先对完整 raw counts 按全 RNA library 归一化到 10000，再 log1p；若需删选模型 genes，在归一化后删选。不能先截 HVG，再把 HVG library 重新归一化到 10000。单个 CSR block 可独立归一化和分类；不必将百万 cells 转成 dense matrix。
+For CellTypist input, first normalize full raw counts to 10000 using the full RNA library, then apply log1p. If a model-gene subset is needed, select it after normalization. Do not subset HVGs first and then renormalize the HVG library to 10000. Each CSR block can be normalized and classified independently; millions of cells need not be converted to a dense matrix.
 
-规范只消除错误读取风险，不等于现有网站已发生基因错配。当前网站展示预生成图件，不直接通过这个 dense layer 进行表达矩阵查询。旧文件保持原样，新的 reader 和 JSON sidecar 用于可复现分析和未来导出。
+This specification addresses the risk of incorrect reads; it does not establish that gene mismatches occurred on the existing website. The current website displays pregenerated figures and does not directly query expression matrices through this dense layer. Legacy files remain unchanged. The new reader and JSON sidecar support reproducible analysis and future exports.
 
-复现：
+Reproduction:
 
 ```bash
 python released_rna.py /path/to/released_RNA.h5 --out schema.json
 ```
 
-返回的 counts CSR 严格检查非负整数值、rows 覆盖和 full gene order。`iter_full_log1p` 保留稀疏矩阵；`read_dense_hvg` 单次最多读 10000 cells，默认关闭，需要 `verified_source_feature_names`（已确认相应 export source 的 scale.data row names）。不把从 legacy H5 读到的 var index 再传进去冒充独立来源。
+The returned counts CSR is strictly checked for nonnegative integer values, row coverage and full gene order. `iter_full_log1p` retains sparsity. `read_dense_hvg` reads at most 10000 cells per call and is disabled by default; it requires `verified_source_feature_names`, the verified `scale.data` row names of the corresponding export source. Do not pass the var index read from the legacy H5 back into the reader as if it were an independent source.
 
-官方 exporter 源码：[easySCFr save.R](https://github.com/xleizi/easySCF/blob/main/r/R/save.R)。本地历史调用见 `20250706/Fig/SV/GSE198616/PBMC/revise.R:74`；历史 package 版本未保存，当前官方源码仅作语义/实现复核来源。
+Official exporter source: [easySCFr save.R](https://github.com/xleizi/easySCF/blob/main/r/R/save.R). The historical local call is in `20250706/Fig/SV/GSE198616/PBMC/revise.R:74`. The historical package version was not saved; the current official source is used only to review semantics and implementation.

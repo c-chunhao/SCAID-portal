@@ -145,7 +145,7 @@ class PublicApiTests(TestCase):
         cd = CellData(abbreviation=None, disease_full_name='IBD_Crohns_Disease', dataset_id='HRA000072', tissue='colon')
         self.assertIn('IBD_CI', manifest_entry(ci)['h5_paths']['RNA'])
         self.assertIn('IBD_CD', manifest_entry(cd)['h5_paths']['RNA'])
-        uncertain = CellData(abbreviation='AIH', dataset_id='GSE216064', tissue='外周血')
+        uncertain = CellData(abbreviation='AIH', dataset_id='GSE216064', tissue='\u5916\u5468\u8840')
         self.assertEqual(manifest_entry(uncertain)['source_row'], 2)
         self.assertIn('ncbi.nlm.nih.gov', manifest_entry(uncertain)['mapping_source'])
         self.assertIsNone(manifest_entry(CellData(abbreviation='AIH', dataset_id='GSE-unknown', tissue='PBMC')))
@@ -173,8 +173,8 @@ class PublicApiTests(TestCase):
             ('CI', dict(disease_full_name='IBD_Colitis_inflamed', dataset_id='HRA000072', tissue='colon')),
             ('UC', dict(disease_full_name='IBD_Ulcerative_Colitis', dataset_id='HRA000072', tissue='colon')),
             ('T1DM', dict(disease_name='type_1_diabetes_mellitus', dataset_id='GSE221297', tissue='PBMC')),
-            ('BD(Uveitis)', dict(abbreviation='AIR', disease_full_name='Behcets_disease', dataset_id='bAF7fe', tissue='眼前房液（房水）')),
-            ('VKHD(Uveitis)', dict(abbreviation='AIR', disease_full_name='Vogt_Koyanag_Harada_disease', dataset_id='bAF7fe', tissue='眼前房液（房水）')),
+            ('BD(Uveitis)', dict(abbreviation='AIR', disease_full_name='Behcets_disease', dataset_id='bAF7fe', tissue='\u773c\u524d\u623f\u6db2\uff08\u623f\u6c34\uff09')),
+            ('VKHD(Uveitis)', dict(abbreviation='AIR', disease_full_name='Vogt_Koyanag_Harada_disease', dataset_id='bAF7fe', tissue='\u773c\u524d\u623f\u6db2\uff08\u623f\u6c34\uff09')),
         ]
         for abbreviation, data in fixtures:
             wanted = CellData.objects.create(**data)

@@ -1,13 +1,13 @@
 {
   "title_en": "Source-recorded B-cell states, IFN12 and matched-population sensitivity",
-  "title_zh": "来源B细胞状态、IFN12及同人群敏感性分析",
+  "title_zh": "Source-recorded B-cell states, IFN12 and matched-population sensitivity",
   "main_model_unchanged": true,
   "models": 40,
   "sections": [
     {
       "family": "original_main_check",
       "title_en": "Original aggregate models (recalculated, unchanged)",
-      "title_zh": "原总体模型（重算核对，结果不变）",
+      "title_zh": "Original aggregate models (recalculated, unchanged)",
       "headers_en": [
         "Population",
         "Outcome",
@@ -17,12 +17,12 @@
         "Note"
       ],
       "headers_zh": [
-        "细胞群",
-        "结局",
-        "SLE/参考人数",
-        "校正差异（95%CI）",
+        "Population",
+        "Outcome",
+        "SLE / reference n",
+        "Adjusted difference (95% CI)",
         "BH q",
-        "说明"
+        "Note"
       ],
       "rows_en": [
         [
@@ -44,19 +44,19 @@
       ],
       "rows_zh": [
         [
-          "总体B",
-          "B/全部PBMC（%）",
+          "Total B",
+          "B / all PBMC (%)",
           "162 / 71",
           "-0.24 (-2.53, 2.05)",
-          "保留原结局族",
+          "Original family unchanged",
           ""
         ],
         [
-          "总体B",
+          "Total B",
           "B IFN12",
           "159 / 71",
           "0.171 (0.130, 0.211)",
-          "保留原结局族",
+          "Original family unchanged",
           ""
         ]
       ],
@@ -118,7 +118,7 @@
     {
       "family": "matched_B_population",
       "title_en": "Aggregate B-cell outcomes in the same 230 individuals",
-      "title_zh": "同一230人的总体B细胞结局",
+      "title_zh": "Aggregate B-cell outcomes in the same 230 individuals",
       "headers_en": [
         "Population",
         "Outcome",
@@ -128,12 +128,12 @@
         "Note"
       ],
       "headers_zh": [
-        "细胞群",
-        "结局",
-        "SLE/参考人数",
-        "校正差异（95%CI）",
+        "Population",
+        "Outcome",
+        "SLE / reference n",
+        "Adjusted difference (95% CI)",
         "BH q",
-        "说明"
+        "Note"
       ],
       "rows_en": [
         [
@@ -155,15 +155,15 @@
       ],
       "rows_zh": [
         [
-          "总体B",
-          "B/全部PBMC（%）",
+          "Total B",
+          "B / all PBMC (%)",
           "159 / 71",
           "0.03 (-2.26, 2.31)",
           "0.982",
           ""
         ],
         [
-          "总体B",
+          "Total B",
           "B IFN12",
           "159 / 71",
           "0.171 (0.130, 0.211)",
@@ -229,7 +229,7 @@
     {
       "family": "state_composition_within_B",
       "title_en": "Source-recorded state fractions among all B cells",
-      "title_zh": "来源状态占全部B细胞的比例",
+      "title_zh": "Source-recorded state fractions among all B cells",
       "headers_en": [
         "Population",
         "Outcome",
@@ -239,12 +239,12 @@
         "Note"
       ],
       "headers_zh": [
-        "细胞群",
-        "结局",
-        "SLE/参考人数",
-        "校正差异（95%CI）",
+        "Population",
+        "Outcome",
+        "SLE / reference n",
+        "Adjusted difference (95% CI)",
         "BH q",
-        "说明"
+        "Note"
       ],
       "rows_en": [
         [
@@ -274,24 +274,24 @@
       ],
       "rows_zh": [
         [
-          "初始B",
-          "已标注状态/全部B（%）",
+          "Naive B",
+          "Assigned state / all B (%)",
           "155 / 70",
           "8.49 (2.90, 14.08)",
           "0.00292",
           ""
         ],
         [
-          "记忆B",
-          "已标注状态/全部B（%）",
+          "Memory B",
+          "Assigned state / all B (%)",
           "155 / 70",
           "-10.14 (-15.56, -4.73)",
           "0.000722",
           ""
         ],
         [
-          "非典型B",
-          "已标注状态/全部B（%）",
+          "Atypical B",
+          "Assigned state / all B (%)",
           "155 / 70",
           "1.79 (0.65, 2.93)",
           "0.00292",
@@ -382,7 +382,7 @@
     {
       "family": "state_composition_all_PBMC",
       "title_en": "Secondary recorded-state fractions among all source PBMCs",
-      "title_zh": "次要分析：来源状态占全部PBMC的比例",
+      "title_zh": "Secondary recorded-state fractions among all source PBMCs",
       "headers_en": [
         "Population",
         "Outcome",
@@ -392,12 +392,12 @@
         "Note"
       ],
       "headers_zh": [
-        "细胞群",
-        "结局",
-        "SLE/参考人数",
-        "校正差异（95%CI）",
+        "Population",
+        "Outcome",
+        "SLE / reference n",
+        "Adjusted difference (95% CI)",
         "BH q",
-        "说明"
+        "Note"
       ],
       "rows_en": [
         [
@@ -427,24 +427,24 @@
       ],
       "rows_zh": [
         [
-          "初始B",
-          "已标注状态/全部PBMC（%）",
+          "Naive B",
+          "Assigned state / all PBMC (%)",
           "158 / 70",
           "1.39 (-0.35, 3.14)",
           "0.117",
           ""
         ],
         [
-          "记忆B",
-          "已标注状态/全部PBMC（%）",
+          "Memory B",
+          "Assigned state / all PBMC (%)",
           "158 / 70",
           "-1.97 (-2.95, -0.99)",
           "0.000231",
           ""
         ],
         [
-          "非典型B",
-          "已标注状态/全部PBMC（%）",
+          "Atypical B",
+          "Assigned state / all PBMC (%)",
           "158 / 70",
           "0.19 (-0.00, 0.37)",
           "0.0759",
@@ -535,7 +535,7 @@
     {
       "family": "state_IFN",
       "title_en": "IFN12 within source-recorded B states",
-      "title_zh": "来源B状态内IFN12",
+      "title_zh": "IFN12 within source-recorded B states",
       "headers_en": [
         "Population",
         "Outcome",
@@ -545,12 +545,12 @@
         "Note"
       ],
       "headers_zh": [
-        "细胞群",
-        "结局",
-        "SLE/参考人数",
-        "校正差异（95%CI）",
+        "Population",
+        "Outcome",
+        "SLE / reference n",
+        "Adjusted difference (95% CI)",
         "BH q",
-        "说明"
+        "Note"
       ],
       "rows_en": [
         [
@@ -580,28 +580,28 @@
       ],
       "rows_zh": [
         [
-          "初始B",
-          "状态内IFN12",
+          "Naive B",
+          "State IFN12",
           "146 / 70",
           "0.165 (0.124, 0.206)",
           "5.91e-15",
           ""
         ],
         [
-          "记忆B",
-          "状态内IFN12",
+          "Memory B",
+          "State IFN12",
           "142 / 69",
           "0.166 (0.122, 0.210)",
           "1.79e-13",
           ""
         ],
         [
-          "非典型B",
-          "状态内IFN12",
+          "Atypical B",
+          "State IFN12",
           "39 / 3",
-          "不可估计",
-          "不适用",
-          "每组不足10名合格个体"
+          "Not estimable",
+          "Not applicable",
+          "Fewer than 10 eligible source individuals in at least one arm."
         ]
       ],
       "raw_results": [
@@ -688,7 +688,7 @@
     {
       "family": "common_state_population",
       "title_en": "Shared 205-person population for naive/memory outcomes",
-      "title_zh": "初始与记忆B结局的共同205人群",
+      "title_zh": "Shared 205-person population for naive/memory outcomes",
       "headers_en": [
         "Population",
         "Outcome",
@@ -698,12 +698,12 @@
         "Note"
       ],
       "headers_zh": [
-        "细胞群",
-        "结局",
-        "SLE/参考人数",
-        "校正差异（95%CI）",
+        "Population",
+        "Outcome",
+        "SLE / reference n",
+        "Adjusted difference (95% CI)",
         "BH q",
-        "说明"
+        "Note"
       ],
       "rows_en": [
         [
@@ -741,32 +741,32 @@
       ],
       "rows_zh": [
         [
-          "初始B",
-          "已标注状态/全部B（%）",
+          "Naive B",
+          "Assigned state / all B (%)",
           "136 / 69",
           "11.06 (5.91, 16.21)",
           "2.55e-05",
           ""
         ],
         [
-          "初始B",
-          "状态内IFN12",
+          "Naive B",
+          "State IFN12",
           "136 / 69",
           "0.151 (0.111, 0.191)",
           "3.27e-13",
           ""
         ],
         [
-          "记忆B",
-          "已标注状态/全部B（%）",
+          "Memory B",
+          "Assigned state / all B (%)",
           "136 / 69",
           "-12.38 (-17.21, -7.55)",
           "6.75e-07",
           ""
         ],
         [
-          "记忆B",
-          "状态内IFN12",
+          "Memory B",
+          "State IFN12",
           "136 / 69",
           "0.169 (0.124, 0.214)",
           "3.27e-13",
@@ -883,7 +883,7 @@
     {
       "family": "mixture_adjusted_IFN",
       "title_en": "Aggregate IFN in the same 225 assessed-state individuals",
-      "title_zh": "相同225名状态可评估个体中的总体IFN",
+      "title_zh": "Aggregate IFN in the same 225 assessed-state individuals",
       "headers_en": [
         "Population",
         "Outcome",
@@ -893,12 +893,12 @@
         "Note"
       ],
       "headers_zh": [
-        "细胞群",
-        "结局",
-        "SLE/参考人数",
-        "校正差异（95%CI）",
+        "Population",
+        "Outcome",
+        "SLE / reference n",
+        "Adjusted difference (95% CI)",
         "BH q",
-        "说明"
+        "Note"
       ],
       "rows_en": [
         [
@@ -920,20 +920,20 @@
       ],
       "rows_zh": [
         [
-          "总体B",
+          "Total B",
           "B IFN12",
           "155 / 70",
           "0.171 (0.130, 0.212)",
           "5.47e-16",
-          "未加入状态比例"
+          "Unadjusted"
         ],
         [
-          "总体B",
+          "Total B",
           "B IFN12",
           "155 / 70",
           "0.134 (0.091, 0.178)",
           "1.8e-09",
-          "加入来源状态比例"
+          "Adjusted for recorded-state fractions"
         ]
       ],
       "raw_results": [
@@ -994,7 +994,7 @@
     {
       "family": "cohort4_state_sensitivity",
       "title_en": "Selected processing cohort 4 sensitivity",
-      "title_zh": "选定处理队列4的敏感性分析",
+      "title_zh": "Selected processing cohort 4 sensitivity",
       "headers_en": [
         "Population",
         "Outcome",
@@ -1004,12 +1004,12 @@
         "Note"
       ],
       "headers_zh": [
-        "细胞群",
-        "结局",
-        "SLE/参考人数",
-        "校正差异（95%CI）",
+        "Population",
+        "Outcome",
+        "SLE / reference n",
+        "Adjusted difference (95% CI)",
         "BH q",
-        "说明"
+        "Note"
       ],
       "rows_en": [
         [
@@ -1063,52 +1063,52 @@
       ],
       "rows_zh": [
         [
-          "初始B",
-          "已标注状态/全部B（%）",
+          "Naive B",
+          "Assigned state / all B (%)",
           "39 / 44",
           "9.67 (1.63, 17.71)",
           "0.0275",
           ""
         ],
         [
-          "初始B",
-          "状态内IFN12",
+          "Naive B",
+          "State IFN12",
           "38 / 44",
           "0.148 (0.094, 0.203)",
           "7.11e-07",
           ""
         ],
         [
-          "记忆B",
-          "已标注状态/全部B（%）",
+          "Memory B",
+          "Assigned state / all B (%)",
           "39 / 44",
           "-10.57 (-18.32, -2.82)",
           "0.015",
           ""
         ],
         [
-          "记忆B",
-          "状态内IFN12",
+          "Memory B",
+          "State IFN12",
           "37 / 43",
           "0.155 (0.093, 0.216)",
           "2.23e-06",
           ""
         ],
         [
-          "非典型B",
-          "已标注状态/全部B（%）",
+          "Atypical B",
+          "Assigned state / all B (%)",
           "39 / 44",
           "1.27 (-0.24, 2.78)",
           "0.12",
           ""
         ],
         [
-          "非典型B",
-          "状态内IFN12",
+          "Atypical B",
+          "State IFN12",
           "12 / 3",
-          "不可估计",
-          "不适用",
-          "每组不足10名合格个体"
+          "Not estimable",
+          "Not applicable",
+          "Fewer than 10 eligible source individuals in at least one arm."
         ]
       ],
       "raw_results": [
@@ -1273,7 +1273,7 @@
     {
       "family": "status_consistent_state_sensitivity",
       "title_en": "Consistent source-recorded status sensitivity",
-      "title_zh": "来源状态记录一致个体的敏感性分析",
+      "title_zh": "Consistent source-recorded status sensitivity",
       "headers_en": [
         "Population",
         "Outcome",
@@ -1283,12 +1283,12 @@
         "Note"
       ],
       "headers_zh": [
-        "细胞群",
-        "结局",
-        "SLE/参考人数",
-        "校正差异（95%CI）",
+        "Population",
+        "Outcome",
+        "SLE / reference n",
+        "Adjusted difference (95% CI)",
         "BH q",
-        "说明"
+        "Note"
       ],
       "rows_en": [
         [
@@ -1342,52 +1342,52 @@
       ],
       "rows_zh": [
         [
-          "初始B",
-          "已标注状态/全部B（%）",
+          "Naive B",
+          "Assigned state / all B (%)",
           "146 / 70",
           "8.86 (3.13, 14.58)",
           "0.00364",
           ""
         ],
         [
-          "初始B",
-          "状态内IFN12",
+          "Naive B",
+          "State IFN12",
           "138 / 70",
           "0.165 (0.122, 0.208)",
           "3.26e-13",
           ""
         ],
         [
-          "记忆B",
-          "已标注状态/全部B（%）",
+          "Memory B",
+          "Assigned state / all B (%)",
           "146 / 70",
           "-10.51 (-16.00, -5.03)",
           "0.000346",
           ""
         ],
         [
-          "记忆B",
-          "状态内IFN12",
+          "Memory B",
+          "State IFN12",
           "135 / 69",
           "0.164 (0.118, 0.209)",
           "5.41e-12",
           ""
         ],
         [
-          "非典型B",
-          "已标注状态/全部B（%）",
+          "Atypical B",
+          "Assigned state / all B (%)",
           "146 / 70",
           "1.86 (0.48, 3.24)",
           "0.00969",
           ""
         ],
         [
-          "非典型B",
-          "状态内IFN12",
+          "Atypical B",
+          "State IFN12",
           "38 / 3",
-          "不可估计",
-          "不适用",
-          "每组不足10名合格个体"
+          "Not estimable",
+          "Not applicable",
+          "Fewer than 10 eligible source individuals in at least one arm."
         ]
       ],
       "raw_results": [
@@ -1552,7 +1552,7 @@
     {
       "family": "source_label_coverage",
       "title_en": "Source fine-label coverage diagnostics",
-      "title_zh": "来源细标签覆盖诊断",
+      "title_zh": "Source fine-label coverage diagnostics",
       "headers_en": [
         "Population",
         "Outcome",
@@ -1562,12 +1562,12 @@
         "Note"
       ],
       "headers_zh": [
-        "细胞群",
-        "结局",
-        "SLE/参考人数",
-        "校正差异（95%CI）",
+        "Population",
+        "Outcome",
+        "SLE / reference n",
+        "Adjusted difference (95% CI)",
         "BH q",
-        "说明"
+        "Note"
       ],
       "rows_en": [
         [
@@ -1597,24 +1597,24 @@
       ],
       "rows_zh": [
         [
-          "缺失细标签",
-          "覆盖类别/全部B（%）",
+          "Missing fine label",
+          "Coverage category / all B (%)",
           "159 / 71",
           "-0.12 (-0.93, 0.70)",
           "0.779",
           ""
         ],
         [
-          "其他已标注",
-          "覆盖类别/全部B（%）",
+          "Other labelled",
+          "Coverage category / all B (%)",
           "159 / 71",
           "-0.02 (-0.07, 0.04)",
           "0.779",
           ""
         ],
         [
-          "全部未细分",
-          "覆盖类别/全部B（%）",
+          "All unresolved",
+          "Coverage category / all B (%)",
           "159 / 71",
           "-0.13 (-0.95, 0.68)",
           "0.779",
@@ -1705,7 +1705,7 @@
     {
       "family": "annotation_coverage_sensitivity",
       "title_en": "At least 90% named-state coverage sensitivity",
-      "title_zh": "至少90%命名状态覆盖的敏感性分析",
+      "title_zh": "At least 90% named-state coverage sensitivity",
       "headers_en": [
         "Population",
         "Outcome",
@@ -1715,12 +1715,12 @@
         "Note"
       ],
       "headers_zh": [
-        "细胞群",
-        "结局",
-        "SLE/参考人数",
-        "校正差异（95%CI）",
+        "Population",
+        "Outcome",
+        "SLE / reference n",
+        "Adjusted difference (95% CI)",
         "BH q",
-        "说明"
+        "Note"
       ],
       "rows_en": [
         [
@@ -1774,52 +1774,52 @@
       ],
       "rows_zh": [
         [
-          "初始B",
-          "已标注状态/全部B（%）",
+          "Naive B",
+          "Assigned state / all B (%)",
           "117 / 64",
           "7.88 (2.05, 13.72)",
           "0.00974",
           ""
         ],
         [
-          "初始B",
-          "状态内IFN12",
+          "Naive B",
+          "State IFN12",
           "110 / 64",
           "0.166 (0.124, 0.209)",
           "8.36e-14",
           ""
         ],
         [
-          "记忆B",
-          "已标注状态/全部B（%）",
+          "Memory B",
+          "Assigned state / all B (%)",
           "117 / 64",
           "-9.44 (-15.06, -3.83)",
           "0.00196",
           ""
         ],
         [
-          "记忆B",
-          "状态内IFN12",
+          "Memory B",
+          "State IFN12",
           "108 / 63",
           "0.172 (0.126, 0.218)",
           "6.73e-13",
           ""
         ],
         [
-          "非典型B",
-          "已标注状态/全部B（%）",
+          "Atypical B",
+          "Assigned state / all B (%)",
           "117 / 64",
           "1.80 (0.54, 3.06)",
           "0.00776",
           ""
         ],
         [
-          "非典型B",
-          "状态内IFN12",
+          "Atypical B",
+          "State IFN12",
           "33 / 3",
-          "不可估计",
-          "不适用",
-          "每组不足10名合格个体"
+          "Not estimable",
+          "Not applicable",
+          "Fewer than 10 eligible source individuals in at least one arm."
         ]
       ],
       "raw_results": [
@@ -1993,14 +1993,14 @@
     "Unresolved labels are retained and described by condition, processing cohort and batch. Sensitivity populations overlap and are not independent replication; within-state IFN differences do not prove intrinsic activation."
   ],
   "notes_zh": [
-    "比例效应单位为百分点；IFN效应单位为平均log1p（每10,000计数）。",
-    "原总体组成模型纳入162例SLE与71名参考个体；总体IFN及同人群B比例敏感性纳入159例SLE与71名参考个体（每人至少20个B细胞）。",
-    "命名状态组成纳入155例SLE与70名参考个体：每人至少20个B细胞，且至少有一个细胞被标注为B_naive/B_mem/B_atypical。5名有B细胞但细标签完全缺失的个体，其状态组成不可评估，不记为亚型零值。分母保留全部来源B细胞，包括未细分细胞。",
-    "共同205人包括136例SLE与69名参考个体，均来自原选定批次，同时满足至少20个总体B、至少20个B_naive及至少20个B_mem细胞；不要求B_atypical。两种状态组成及两种状态内IFN结局复用同一批个体，不是独立样本。",
-    "状态IFN要求每人至少20个该状态细胞，且每组至少10名合格个体；B_atypical仅有3名合格参考个体，故不拟合该组间模型。",
-    "按所列结局族分别BH校正；不可估计的计划检验以P=1参与校正，其q显示不可用。原总体模型只重算核对，不替换其原FDR结局族。",
-    "覆盖诊断及至少90%注释覆盖敏感性在来源标签复核后追加，不称为外部预注册，也不表示进行了新的细胞级QC。",
-    "未细分标签予以保留，并按病例/参考、处理队列及批次描述。敏感性人群彼此重叠，不是独立验证；状态内IFN差异不能证明细胞内在激活。"
+    "Fraction effects are in percentage points; IFN effects are mean log1p(counts per 10,000) units.",
+    "Original aggregate composition uses 162 SLE and 71 references. Aggregate IFN and the same-population B-fraction sensitivity use 159 SLE and 71 references (>=20 B cells).",
+    "Named-state composition uses 155 SLE and 70 references: >=20 total B cells and at least one assigned B_naive/B_mem/B_atypical cell. Five B-positive individuals with wholly unassigned fine labels are unavailable for state composition, not subtype-zero observations. All source B cells, including unresolved cells, remain in denominators.",
+    "The common 205-person population consists of 136 SLE and 69 references from the original selected batches with >=20 total B cells, >=20 B_naive cells and >=20 B_mem cells; B_atypical is not required. Both state composition and both state IFN outcomes reuse these same individuals and are not independent samples.",
+    "State IFN eligibility is >=20 target-state cells in each individual and >=10 eligible individuals in each arm; B_atypical has only three eligible references and remains unavailable.",
+    "BH correction is separate by listed planned family. Unavailable planned tests enter adjustment as P=1 but their q is displayed as unavailable. The original aggregate model is only recalculated for equality; its original FDR family is not replaced.",
+    "Coverage diagnostics and the >=90% annotation-coverage analysis were added after source-label review and are not external preregistration. Their outcomes do not imply new cell-level QC.",
+    "Unresolved labels are retained and described by condition, processing cohort and batch. Sensitivity populations overlap and are not independent replication; within-state IFN differences do not prove intrinsic activation."
   ],
   "coverage_summary": [
     {
@@ -2103,5 +2103,7 @@
     "HD": 70,
     "SLE": 155
   },
-  "value_table": "aggregate_results/B_state_HC3_models.tsv"
+  "value_table": "aggregate_results/B_state_HC3_models.tsv",
+  "language": "en",
+  "legacy_language_keys_note": "Keys ending in _zh contain English aliases retained for schema compatibility."
 }

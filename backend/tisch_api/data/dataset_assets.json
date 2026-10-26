@@ -19,7 +19,7 @@
         {
           "abbreviation": "AIH",
           "dataset_id": "GSE216064",
-          "tissue": "外周血"
+          "tissue": "\u5916\u5468\u8840"
         }
       ],
       "mapping_note": "NCBI GEO explicitly lists GSM6658039 as a sample of GSE216064, with PBMC tissue and Autoimmune hepatitis disease. This associates the existing series record to its documented sample asset without overwriting catalog metadata.",
@@ -132,7 +132,7 @@
           "abbreviation": "AIR",
           "disease_full_name": "Behcets_disease",
           "dataset_id": "bAF7fe",
-          "tissue": "眼前房液（房水）"
+          "tissue": "\u773c\u524d\u623f\u6db2\uff08\u623f\u6c34\uff09"
         }
       ],
       "mapping_note": "Legacy AIR records are distinguished by the explicit disease_full_name and tissue, matching separate disease paths in the supplied sample table.",
@@ -891,7 +891,7 @@
           "abbreviation": "AIR",
           "disease_full_name": "Vogt_Koyanag_Harada_disease",
           "dataset_id": "bAF7fe",
-          "tissue": "眼前房液（房水）"
+          "tissue": "\u773c\u524d\u623f\u6db2\uff08\u623f\u6c34\uff09"
         }
       ],
       "mapping_note": "Legacy AIR records are distinguished by the explicit disease_full_name and tissue, matching separate disease paths in the supplied sample table.",

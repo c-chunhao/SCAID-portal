@@ -1,24 +1,24 @@
 import os
 from django.core.management.base import BaseCommand
 from django.utils import timezone
-from tisch_api.models import H5File  # 假设您已经或将要创建这个模型
+from tisch_api.models import H5File  # Model used to record H5 file metadata.
 
 
 class Command(BaseCommand):
-    help = '扫描目录中的.h5文件并将其路径记录到数据库中'
+    help = 'Scan a directory for .h5 files and record their paths in the database.'
 
     def add_arguments(self, parser):
         parser.add_argument(
             'root_directory',
             type=str,
-            help='包含.h5文件的根目录路径'
+            help='Root directory containing .h5 files.'
         )
 
     def handle(self, *args, **options):
         root_dir = options['root_directory']
 
         if not os.path.isdir(root_dir):
-            self.stdout.write(self.style.ERROR(f'目录不存在: {root_dir}'))
+            self.stdout.write(self.style.ERROR(f'Directory does not exist: {root_dir}'))
             return
 
         for root, dirs, files in os.walk(root_dir):
@@ -32,7 +32,7 @@ class Command(BaseCommand):
             relative_path = os.path.relpath(file_dir, root_dir)
             file_name = os.path.basename(file_path)
 
-            # 创建记录并保存到数据库
+            # Create and save the database record.
             H5File.objects.create(
                 name=file_name,
                 path=file_path,
@@ -42,10 +42,10 @@ class Command(BaseCommand):
             )
 
             self.stdout.write(self.style.SUCCESS(
-                f'已记录.h5文件: {file_path}'
+                f'Recorded .h5 file: {file_path}'
             ))
 
         except Exception as e:
             self.stdout.write(self.style.ERROR(
-                f'处理.h5文件{file_path}时出错: {str(e)}'
+                f'Error processing .h5 file {file_path}: {str(e)}'
             ))

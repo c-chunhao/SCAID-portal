@@ -518,5 +518,17 @@
     "scientific_results_or_catalogue_data_changed": false,
     "original_figure_assets_unchanged": true,
     "tag_or_release_created": false
+  },
+  "english_language_revision_20261026": {
+    "base_commit": "6b172d2c0192b368c428ae02e37cd8e55415823d",
+    "scope": "English documentation, comments, administrative labels, CLI messages, aggregate-result notes and filenames",
+    "legacy_identifier_decoded_values_preserved": true,
+    "scientific_aggregate_numeric_results_preserved": true,
+    "backend_tests_passed": 81,
+    "frontend_tests_passed": 26,
+    "frontend_lint": "passed",
+    "frontend_build": "passed; pre-existing Sass legacy-API notices",
+    "production_modified": false,
+    "full_scientific_replay_repeated": false
   }
 }

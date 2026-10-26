@@ -9,23 +9,23 @@ from tisch_api.models import PDFImage
 
 
 class Command(BaseCommand):
-    help = '处理PDF和图片文件，保留目录结构'
+    help = 'Process PDF and image files while preserving the directory structure.'
 
     def add_arguments(self, parser):
         parser.add_argument(
             'root_directory',
             type=str,
-            help='包含PDF和图片文件的根目录'
+            help='Root directory containing PDF and image files.'
         )
 
     def handle(self, *args, **options):
         root_dir = options['root_directory']
 
         if not os.path.isdir(root_dir):
-            self.stdout.write(self.style.ERROR(f'目录不存在: {root_dir}'))
+            self.stdout.write(self.style.ERROR(f'Directory does not exist: {root_dir}'))
             return
 
-        # 支持的图片扩展名
+        # Supported image extensions.
         image_extensions = ['.jpg', '.jpeg', '.png', '.gif', '.bmp']
 
         for root, dirs, files in os.walk(root_dir):
@@ -74,14 +74,14 @@ class Command(BaseCommand):
                 pdf_image.save()
 
                 self.stdout.write(self.style.SUCCESS(
-                    f'从 {file_path} 提取了第 {page_num + 1} 页'
+                    f'Extracted page {page_num + 1} from {file_path}'
                 ))
 
             doc.close()
 
         except Exception as e:
             self.stdout.write(self.style.ERROR(
-                f'处理PDF {file_path} 时出错: {str(e)}'
+                f'Error processing PDF {file_path}: {str(e)}'
             ))
 
     def process_image(self, file_path, img_dir, root_dir):
@@ -89,29 +89,29 @@ class Command(BaseCommand):
             relative_path = os.path.relpath(img_dir, root_dir)
             img_name = os.path.basename(file_path)
 
-            # 获取图片尺寸
+            # Read the image dimensions.
             with Image.open(file_path) as img:
                 width, height = img.size
 
-            # 创建记录，将原始图片路径同时保存到path和image字段
+            # Create a record with the original image path in both path and image.
             pdf_image = PDFImage(
                 name=img_name,
-                path=file_path,  # 原始路径
+                path=file_path,  # Original path.
                 relative_path=relative_path,
                 page_number=1,
                 is_pdf=False,
                 create_time=timezone.now(),
                 image_width=width,
                 image_height=height,
-                image=file_path  # 也将原始路径保存到image字段
+                image=file_path  # Also store the original path in the image field.
             )
             pdf_image.save()
 
             self.stdout.write(self.style.SUCCESS(
-                f'记录了图片文件 {file_path} 的信息(未复制文件)'
+                f'Recorded metadata for image {file_path} (file was not copied)'
             ))
 
         except Exception as e:
             self.stdout.write(self.style.ERROR(
-                f'处理图片 {file_path} 时出错: {str(e)}'
+                f'Error processing image {file_path}: {str(e)}'
             ))

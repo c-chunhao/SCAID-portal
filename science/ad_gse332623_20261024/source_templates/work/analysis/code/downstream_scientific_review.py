@@ -271,21 +271,22 @@ report['pending']=pending
 if not pending: report['status']='reviewed_with_interpretation_limits'
 target=OUT/'downstream_scientific_review.json';tmp=target.with_suffix('.json.tmp')
 tmp.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');tmp.replace(target)
-note='''新 AD RNA 分析的通路与通讯结果独立复核
+note='''Independent review of pathway and communication results from the new AD RNA analysis
 
-本次只读检查正式代码、输入标识、集合筛选、表达背景及少量结果，不重复全矩阵验证或运行昂贵算法。
+This read-only review examines the production code, input identifiers, gene-set filtering, expression background and a limited selection of results. It does not repeat full-matrix validation or run computationally expensive algorithms.
 
-评分使用同一33660基因RNA轴，原359集合保留356；三项超500基因上限被列入排除表。AUCell默认零值贡献已通过小样本实测，并采用显式RNA>0屏蔽、保留正表达基因排名和5%上限。资源匹配使用固定org.Hs.eg.db3.18及原始Ensembl核验的一对一键，1172个全RNA别名中247个涉及原359个KEGG集合，其中244个出现在实际评分的356个集合中，恢复799个集合成员条目，修复159列；197列UCell/singscore逐位保留。三法使用新映射的1000×356独立官方参照复验。小基因集合和低检测深度按探索性表达评分解释，分数不表示疾病激活。UCell注明2.6.2版本，三种方法分数不可直接互换。
+Scoring uses the same 33660-gene RNA axis, retaining 356 of the original 359 sets; three sets exceeding the 500-gene cap are listed in the exclusions table. AUCell's default contribution from zero values was tested on a small sample; explicit RNA>0 masking, rankings restricted to positively expressed genes and a 5% cap are used. Resource matching uses the fixed org.Hs.eg.db 3.18 version and one-to-one keys verified against the original Ensembl identifiers. Of 1172 aliases across the full RNA axis, 247 involve the original 359 KEGG sets, and 244 occur in the 356 sets actually scored. This restores 799 set-member entries and repairs 159 columns; 197 UCell/singscore columns are preserved bit for bit. All three methods were independently rechecked against official implementations using the new mapping on a 1000×356 subset. Small gene sets and low detection depth are interpreted as exploratory expression scores; scores do not indicate disease activation. UCell is identified as version 2.6.2, and scores from the three methods are not directly interchangeable.
 
-GO/KEGG用实测29936基因候选背景，并对前景、背景和集合使用相同版本匹配键；实际有效背景随数据库注释交集确定，数值见JSON。每群超几何计算与独立计算一致，BH重算最大绝对误差<1e-10。富集解释细胞群标记，不是疾病差异；单库主导的172个间质样预测仍为待复核标签。
+GO/KEGG uses the empirically measured 29936-gene candidate background, with matching keys from the same version applied to foreground genes, background genes and gene sets. The effective background is determined by the intersection with each database's annotations; values are recorded in the JSON. Per-group hypergeometric calculations agree with independent calculations, with a maximum absolute difference below 1e-10 on recalculating BH adjustment. Enrichment characterizes cell-group markers rather than disease differences; the 172 stromal-like predictions dominated by a single source remain provisional labels requiring review.
 
-CellChat按RNA表达量、humanDB基因及复合物成员匹配；完整RNA归一化后取数据库基因，不再次归一化。预期528739记录/8群；排除52809个Unassigned、172个暂定Fibro、4个Mast和1个Neut。所有原RNA记录仍保留。通讯推断用triMean、100次细胞标签置换、名义P<0.05；该P没有多重检验校正，也不能视为患者级证据。没有空间信息，RNA预测不证明真实接触或AD特异通讯。
+CellChat matches RNA expression, humanDB genes and complex members. Database genes are selected after normalization of the complete RNA matrix, without renormalization. The expected scope is 528739 records across 8 groups, excluding 52809 Unassigned, 172 provisional Fibro, 4 Mast and 1 Neut records. All original RNA records are retained. Communication inference uses triMean, 100 cell-label permutations and nominal P<0.05. These P values are not adjusted for multiple testing and do not constitute patient-level evidence. Without spatial information, RNA predictions do not establish physical contact or AD-specific communication.
 
-当前状态：STATUS
-待核验正式结果：PENDING
-完整证据与参数见同目录downstream_scientific_review.json。
+Current status: STATUS
+Production results pending verification: PENDING
+Complete evidence and parameters are in downstream_scientific_review.json in the same directory.
 '''
-(OUT/'downstream_scientific_review_说明.txt').write_text(note.replace('STATUS',report['status']).replace('PENDING',', '.join(pending) or '已完成小量结果核验'))
+(OUT/'downstream_scientific_review_notes.txt').write_text(note.replace('STATUS',report['status']).replace('PENDING',', '.join(pending) or 'Limited-result verification completed'))
+
 if not pending:
     final={'status':'passed','signed_utc':datetime.now(timezone.utc).isoformat(),
       'source_RNA_sha256':ready['RNA_sha256'],

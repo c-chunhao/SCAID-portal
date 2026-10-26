@@ -49,7 +49,7 @@ class AffectedSiteQueryTests(TestCase):
     @classmethod
     def setUpTestData(cls):
         for i in range(5):
-            site = AffectedSite.objects.create(site_name=f'部位{i}', name_en=f'site{i}')
+            site = AffectedSite.objects.create(site_name=f'\u90e8\u4f4d{i}', name_en=f'site{i}')
             for j in range(3):
                 disease = Disease.objects.create(name_en=f'disease{i}{j}', abbreviation=f'D{i}{j}')
                 DiseaseSiteRelation.objects.create(site=site, disease=disease)

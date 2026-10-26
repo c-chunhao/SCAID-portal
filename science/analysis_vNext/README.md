@@ -7,6 +7,10 @@ They do not distribute assays, clinical tables, cell/individual records or
 downloaded annotation models. Third-party inputs remain subject to their
 applicable access and reuse terms.
 
+Supplementary [audit reference notes](REFERENCE_NOTES.md) retain the completed
+checks and scientific constraints from 5 October 2026. See also the
+[environment and reproducibility notes](ENVIRONMENT_AND_REPRODUCIBILITY.md).
+
 The current composition entry is:
 
 ```bash

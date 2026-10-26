@@ -34,7 +34,7 @@
     "corrected_release_recorded": true
   },
   "delivery": {
-    "archive": "@WORK@/SCAID_AD重分析与上线材料_20261024.zip",
+    "archive": "@WORK@/SCAID_AD\u91cd\u5206\u6790\u4e0e\u4e0a\u7ebf\u6750\u6599_20261024.zip",
     "sha256": "63706902593905c2800f5b328ee512a16096fea632f9e6731af46f2b17f48be6",
     "members": 294,
     "all_member_SHA256_match_manifest": true,

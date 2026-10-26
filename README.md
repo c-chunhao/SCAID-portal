@@ -35,10 +35,12 @@ lazy gene maps for three previously missing Gene modules. The two existing
 atlases remain unchanged. Sample labels are not authenticated independent donors,
 and catalogue/atlas scopes must not be added as independent cells.
 
-中文索引：[新增功能与科学脚本](science/new_release/README.md)、
-[本地资源注册示例](backend/docs/new_release_assets/README.md)、
-[许可状态](LICENSE_STATUS.md)。新增功能已于2026年10月21日部署并完成下述范围的验收。本包仍为源码候选；数据矩阵、
-个人元数据、生产密钥、绝对路径运行清单和图片缓存不随源码分发。
+Additional documentation: [new modules and scientific scripts](science/new_release/README.md),
+[local asset-registration examples](backend/docs/new_release_assets/README.md), and
+[licensing status](LICENSE_STATUS.md). The additional modules were deployed on
+21 October 2026 and verified within the scope described below. This package remains
+a source candidate; data matrices, individual-level metadata, production secrets,
+absolute-path execution manifests and image caches are not distributed with it.
 
 The [new-module source notes](science/new_release/README.md) distinguish 30 RNA
 objects retaining integer source counts from the one processed-only RNA object;
@@ -245,3 +247,8 @@ within the API/browser/download scope summarized above and in
 frozen source tree separately from the production acceptance reports.
 The original licence and unresolved frontend-template permission notices remain
 unchanged; preparing this candidate grants no additional reuse rights.
+
+## Repository language
+
+Use English for documentation, comments, interface labels, log messages and file names.
+Preserve external identifiers when exact matching is required for compatibility.

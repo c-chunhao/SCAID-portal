@@ -304,12 +304,12 @@ def pilot():
             'provenance':provenance,'technical_diagnostics':metrics,
             'versions':{k:version(k) for k in ['scanpy','anndata','harmonypy','numpy','scipy','scikit-learn']}}
     (dest/'pilot_result.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
-    (dest/'README_整合试运行说明.txt').write_text(
-        '这是下一版图谱的描述性试运行，不替代原文中的两条图谱。\n'
-        f'纳入{combined.n_obs:,}个已有T/NK/B/浆细胞标签的PBMC细胞，来自{len(selection)}个对象和{result["studies"]}个研究。\n'
-        '每对象最多抽取2,000个细胞；保留原始counts、原有标签、Sample和QC字段。\n'
-        '原有样本标签不等同于已认证供体。当前结果用于检查整合可行性、来源混合和大类标志基因，不进行病例对照或疾病间显著性检验。\n'
-        '下一步应审阅标志基因与注释、确认独立样本/供体和临床映射，在同组织与可比研究设计内扩大整合。\n')
+    (dest/'README_INTEGRATION_PILOT.txt').write_text(
+        'This is a descriptive pilot for the next atlas version; it does not replace the two atlases in the original article.\n'
+        f'It includes {combined.n_obs:,} PBMC cells with existing T/NK/B/plasma labels from {len(selection)} objects and {result["studies"]} studies.\n'
+        'At most 2,000 cells are sampled per object; original counts, labels, Sample and QC fields are retained.\n'
+        'Original sample labels do not establish authenticated donors. These results assess integration feasibility, source mixing and broad-lineage markers; no case/control or between-disease significance tests are performed.\n'
+        'Next, review markers and annotations, confirm independent samples/donors and clinical mappings, and expand integration within the same tissue and comparable study designs.\n')
     print(json.dumps({k:result[k] for k in ['status','cells','shared_genes','objects','studies','output','sha256']},ensure_ascii=False),flush=True)
     return result
 

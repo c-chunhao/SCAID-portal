@@ -1,6 +1,6 @@
 # Additional module source candidate
 
-中文索引：本目录提供格式导出、独立回读、CellChat 图片准备、marker 表校验、延迟基因图缓存和描述性 PBMC pilot 代码。输入数据与输出文件需在本机提供；既有两条 atlas 未被替换。网站新增功能已于2026年10月21日部署；验收范围见仓库根README与核验说明。
+This directory provides format export, independent readback, CellChat figure preparation, marker-table validation, lazy gene-plot caching and descriptive PBMC pilot code. Input data and output files must be supplied locally; the two existing atlases have not been replaced. The new website features were deployed on 21 October 2026; see the repository root README and verification notes for the acceptance scope.
 
 These scripts prepare the 31 additional source–condition–tissue objects. They do
 not replace either existing published atlas. The original Seurat object, RNA

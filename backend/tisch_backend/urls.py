@@ -8,6 +8,6 @@ urlpatterns = [
     path('api/', include('tisch_api.urls')),
 ]
 
-# 仅在开发环境提供媒体文件服务
+# Serve media files only in the development environment.
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

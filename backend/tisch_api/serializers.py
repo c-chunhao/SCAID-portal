@@ -6,7 +6,7 @@ from .thumbnails import wants_preview
 from rest_framework import serializers
 
 class PDFImageSerializer(serializers.ModelSerializer):
-    # 自定义image字段，返回相对路径
+    # Customize the image field to return a relative path.
     image = serializers.SerializerMethodField()
     # JPEG preview endpoint for the ~1 MB PNG maps; None for the small rasterized PDF pages.
     thumb_url = serializers.SerializerMethodField()
@@ -52,13 +52,14 @@ class DiseaseSerializer(serializers.ModelSerializer):
         }
 
 # The catalogue table stores a few tissues in Chinese. Filters keep the stored
-# value; these English labels are for display and are also used by the portal.
+# value; Unicode escapes preserve exact keys. English labels are for display
+# and are also used by the portal.
 TISSUE_LABELS = {
-    '皮肤': 'Skin',
-    '肺': 'Lung',
-    '外周血': 'PBMC',
-    '水泡': 'Blister fluid',
-    '眼前房液（房水）': 'Aqueous humour',
+    '\u76ae\u80a4': 'Skin',
+    '\u80ba': 'Lung',
+    '\u5916\u5468\u8840': 'PBMC',
+    '\u6c34\u6ce1': 'Blister fluid',
+    '\u773c\u524d\u623f\u6db2\uff08\u623f\u6c34\uff09': 'Aqueous humour',
 }
 
 
@@ -197,7 +198,7 @@ class CellDataTreeSerializer(serializers.ModelSerializer):
         fields = ['abbreviation', 'disease_label', 'disease_name', 'disease_full_name', 'dataset_source', 'children']
 
     def get_children(self, obj):
-        # 这里假设obj已经是按abbreviation分组后的一个代表对象
+        # Assume obj represents a group of records with the same abbreviation.
         effective = effective_abbreviation(obj)
         catalog_groups = self.context.get('catalog_groups')
         if catalog_groups is None:
@@ -208,17 +209,17 @@ class CellDataTreeSerializer(serializers.ModelSerializer):
 
     @staticmethod
     def build_tree_structure(queryset):
-        # 首先按dataset_id, tissue和batch分组，确保基础数据不重复
+        # Group by dataset_id, tissue, and batch to avoid duplicate base records.
         grouped_data = defaultdict(list)
         for item in queryset:
             key = (item.dataset_id, item.tissue, item.batch)
             grouped_data[key].append(item)
 
-        # 然后构建嵌套结构
+        # Build the nested structure.
         datasets = defaultdict(lambda: defaultdict(list))
         dataset_labels = {}
         for (dataset_id, tissue, batch), items in grouped_data.items():
-            # 取每组中的第一个item（因为同组的item在这些字段上应该是相同的）
+            # Use the first item because these fields should match within each group.
             item = items[0]
             dataset_labels.setdefault(dataset_id, manifest_dataset_label(item))
             datasets[dataset_id][tissue].append({

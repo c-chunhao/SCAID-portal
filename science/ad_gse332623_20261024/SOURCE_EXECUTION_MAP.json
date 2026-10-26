@@ -166,9 +166,14 @@
       "public_path": "science/ad_gse332623_20261024/source_templates/work/analysis/code/downstream_scientific_review.py",
       "source_locator": "@WORK@/analysis/code/downstream_scientific_review.py",
       "executed_source_sha256": "1b52ffdf47869ad77a1017d233d8cb3eb40391915dd1dd759c5820fadf72d3f8",
-      "published_sha256": "4183e126786f10de4b8c63f88f01a302ac089dacaca373ddfa2c8e314ffcb2ee",
-      "path_redaction_only": true,
-      "role": "final_integration_or_independent_validation"
+      "published_sha256": "51c920506ba8cea08ba130fc2c58edfe8542c947447b46364c0fa7bf47d6492c",
+      "path_redaction_only": false,
+      "role": "final_integration_or_independent_validation",
+      "previous_published_sha256": "4183e126786f10de4b8c63f88f01a302ac089dacaca373ddfa2c8e314ffcb2ee",
+      "publication_adaptations": [
+        "absolute-root placeholders",
+        "English comments and output notes; scientific calculations unchanged"
+      ]
     },
     {
       "public_path": "science/ad_gse332623_20261024/source_templates/work/analysis/code/check_small_cellchat_network.R",
@@ -430,9 +435,10 @@
       "public_path": "science/ad_gse332623_20261024/evidence/independent_production_release_QA.json",
       "source_locator": "@WORK@/website/validation/independent_production_release_QA.json",
       "executed_source_sha256": "589dce80693bdb9ca1fe8a32165e48e10a2c5d86341a39b60f4805fc37d6ba32",
-      "published_sha256": "6289717bae67a9c9eab6b88a80efa1e67ee46c228f15cf1a2b036eeea73b007a",
-      "adaptation": "JSON reserialization and absolute-root redaction only; embedded original hashes remain historical bindings",
-      "role": "dated_execution_receipt"
+      "published_sha256": "26feb2f51bd301e186b793f779dab5975b4e015db377fd82cbcca3d95837856b",
+      "adaptation": "JSON reserialization and absolute-root redaction; legacy artifact identifiers use Unicode escapes without changing decoded values. Embedded executed hashes remain historical bindings.",
+      "role": "dated_execution_receipt",
+      "previous_published_sha256": "6289717bae67a9c9eab6b88a80efa1e67ee46c228f15cf1a2b036eeea73b007a"
     },
     {
       "public_path": "science/ad_gse332623_20261024/evidence/analysis_ready.json",
@@ -557,5 +563,14 @@
     }
   ],
   "licence": "No new project licence granted; existing headers and THIRD_PARTY_NOTICES preserved",
-  "script_packaging": "Deterministic absolute-root placeholders only; scientific algorithms unchanged. See reproduce.py to materialize local paths. Historical embedded digests refer to original executed bytes, not redacted receipts."
+  "script_packaging": "Deterministic absolute-root placeholders and English comments/output notes; scientific algorithms unchanged. See reproduce.py to materialize local paths. Historical embedded digests refer to original executed bytes, not adapted receipts.",
+  "language_revision": {
+    "date": "2026-10-26",
+    "base_commit": "6b172d2c0192b368c428ae02e37cd8e55415823d",
+    "updated_published_hashes": [
+      "science/ad_gse332623_20261024/source_templates/work/analysis/code/downstream_scientific_review.py",
+      "science/ad_gse332623_20261024/evidence/independent_production_release_QA.json"
+    ],
+    "executed_source_hashes_preserved": true
+  }
 }

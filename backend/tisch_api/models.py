@@ -8,7 +8,7 @@ from django import forms
 class PDFImage(models.Model):
     name = models.CharField(max_length=255)
     path = models.CharField(max_length=512)
-    relative_path = models.CharField(max_length=512)  # 新增字段保存相对路径
+    relative_path = models.CharField(max_length=512)  # Store the relative path.
     page_number = models.IntegerField()
     image = models.FileField(upload_to='pdf_images/', null=True, blank=True)
     extracted_at = models.DateTimeField(auto_now_add=True)
@@ -33,37 +33,37 @@ class PDFImage(models.Model):
         return f"{self.name} - Page {self.page_number}"
 
 class CellData(models.Model):
-    disease_name = models.CharField(max_length=100, blank=True, null=True, verbose_name='疾病标准名称')
-    disease_full_name = models.CharField(max_length=255, blank=True, null=True, verbose_name='疾病完整名称/子类型')
-    abbreviation = models.CharField(max_length=50, blank=True, null=True, verbose_name='疾病缩写')
-    dataset_source = models.CharField(max_length=50, blank=True, null=True, verbose_name='数据集来源')
-    dataset_id = models.CharField(max_length=100, blank=True, null=True, verbose_name='数据集唯一标识')
-    tissue = models.CharField(max_length=50, blank=True, null=True, verbose_name='组织类型')
-    sample_size = models.IntegerField(blank=True, null=True, verbose_name='样本量')
-    cell_count = models.IntegerField(blank=True, null=True, verbose_name='细胞总数')
-    remarks = models.TextField(blank=True, null=True, verbose_name='备注信息')
-    batch = models.CharField(max_length=8, blank=True, null=True, verbose_name='批次日期')
-    file_name = models.CharField(max_length=8, blank=True, null=True, verbose_name='文件名称')
+    disease_name = models.CharField(max_length=100, blank=True, null=True, verbose_name='Standard disease name')
+    disease_full_name = models.CharField(max_length=255, blank=True, null=True, verbose_name='Full disease name/subtype')
+    abbreviation = models.CharField(max_length=50, blank=True, null=True, verbose_name='Disease abbreviation')
+    dataset_source = models.CharField(max_length=50, blank=True, null=True, verbose_name='Dataset source')
+    dataset_id = models.CharField(max_length=100, blank=True, null=True, verbose_name='Unique dataset identifier')
+    tissue = models.CharField(max_length=50, blank=True, null=True, verbose_name='Tissue type')
+    sample_size = models.IntegerField(blank=True, null=True, verbose_name='Sample size')
+    cell_count = models.IntegerField(blank=True, null=True, verbose_name='Total cell count')
+    remarks = models.TextField(blank=True, null=True, verbose_name='Notes')
+    batch = models.CharField(max_length=8, blank=True, null=True, verbose_name='Batch date')
+    file_name = models.CharField(max_length=8, blank=True, null=True, verbose_name='File name')
 
     class Meta:
         db_table = 'cell_data'
-        verbose_name = '细胞研究数据'
-        verbose_name_plural = '细胞研究数据'
+        verbose_name = 'Cell study data'
+        verbose_name_plural = 'Cell study data'
 
     def __str__(self):
         return f"{self.disease_name} ({self.dataset_id})"
 
 class H5File(models.Model):
-    name = models.CharField(max_length=255, verbose_name="文件名")
-    path = models.CharField(max_length=1024, verbose_name="完整路径")
-    relative_path = models.CharField(max_length=1024, verbose_name="相对路径")
+    name = models.CharField(max_length=255, verbose_name="File name")
+    path = models.CharField(max_length=1024, verbose_name="Full path")
+    relative_path = models.CharField(max_length=1024, verbose_name="Relative path")
     create_time = models.DateTimeField(auto_now_add=True)
-    file_size = models.BigIntegerField(verbose_name="文件大小(字节)")
-    last_modified = models.DateTimeField(auto_now=True, verbose_name="最后修改时间")
+    file_size = models.BigIntegerField(verbose_name="File size (bytes)")
+    last_modified = models.DateTimeField(auto_now=True, verbose_name="Last modified time")
 
     class Meta:
-        verbose_name = "H5文件"
-        verbose_name_plural = "H5文件"
+        verbose_name = "H5 file"
+        verbose_name_plural = "H5 files"
         db_table = "h5_files"
         indexes = [
             models.Index(fields=['name'], name='h5file_name_idx'),
@@ -74,49 +74,49 @@ class H5File(models.Model):
         return f"{self.name} ({self.relative_path})"
 
 class CellDataSearchForm(forms.Form):
-    disease_name = forms.CharField(label='疾病名称', required=False)
+    disease_name = forms.CharField(label='Disease name', required=False)
     dataset_source = forms.ChoiceField(
-        label='数据集来源',
+        label='Dataset source',
         choices=[
-            ('', '所有来源'),
+            ('', 'All sources'),
             ('GEO', 'GEO'),
             ('Zenodo', 'Zenodo'),
             ('SCP', 'SCP'),
         ],
         required=False
     )
-    tissue = forms.CharField(label='组织类型', required=False)
-    dataset_id = forms.CharField(label='数据集ID', required=False)
-    min_sample_size = forms.IntegerField(label='最小样本量', required=False)
-    max_sample_size = forms.IntegerField(label='最大样本量', required=False)
+    tissue = forms.CharField(label='Tissue type', required=False)
+    dataset_id = forms.CharField(label='Dataset ID', required=False)
+    min_sample_size = forms.IntegerField(label='Minimum sample size', required=False)
+    max_sample_size = forms.IntegerField(label='Maximum sample size', required=False)
 
 
 class AffectedSite(models.Model):
-    site_name = models.CharField(max_length=100, unique=True, verbose_name='发病部位名称')
-    name_en = models.CharField(max_length=100, unique=True, verbose_name='发病部位英文名称')
-    description = models.TextField(blank=True, null=True, verbose_name='部位描述')
+    site_name = models.CharField(max_length=100, unique=True, verbose_name='Affected site name')
+    name_en = models.CharField(max_length=100, unique=True, verbose_name='Affected site name in English')
+    description = models.TextField(blank=True, null=True, verbose_name='Site description')
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         db_table = 'h_affected_site'
-        verbose_name = '发病部位'
-        verbose_name_plural = '发病部位'
+        verbose_name = 'Affected site'
+        verbose_name_plural = 'Affected sites'
 
     def __str__(self):
         return self.site_name
 
 
 class Disease(models.Model):
-    name_en = models.CharField(max_length=100, verbose_name='疾病英文名称')
-    abbreviation = models.CharField(max_length=20, verbose_name='疾病缩写')
-    features = models.TextField(blank=True, null=True, verbose_name='病变特征描述')
-    created_at = models.DateTimeField(auto_now_add=True, verbose_name='创建时间')
-    updated_at = models.DateTimeField(auto_now=True, verbose_name='更新时间')
+    name_en = models.CharField(max_length=100, verbose_name='Disease name in English')
+    abbreviation = models.CharField(max_length=20, verbose_name='Disease abbreviation')
+    features = models.TextField(blank=True, null=True, verbose_name='Pathological feature description')
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name='Created at')
+    updated_at = models.DateTimeField(auto_now=True, verbose_name='Updated at')
 
     class Meta:
         db_table = 'h_disease'
-        verbose_name = '疾病'
-        verbose_name_plural = '疾病'
+        verbose_name = 'Disease'
+        verbose_name_plural = 'Diseases'
         indexes = [
             models.Index(fields=['abbreviation'], name='idx_abbreviation'),
             models.Index(fields=['name_en'], name='idx_name_en'),
@@ -127,14 +127,14 @@ class Disease(models.Model):
 
 
 class DiseaseSiteRelation(models.Model):
-    disease = models.ForeignKey(Disease, on_delete=models.CASCADE, verbose_name='疾病ID')
-    site = models.ForeignKey(AffectedSite, on_delete=models.CASCADE, verbose_name='部位ID')
+    disease = models.ForeignKey(Disease, on_delete=models.CASCADE, verbose_name='Disease ID')
+    site = models.ForeignKey(AffectedSite, on_delete=models.CASCADE, verbose_name='Site ID')
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         db_table = 'h_disease_site_relation'
-        verbose_name = '疾病与发病部位关联'
-        verbose_name_plural = '疾病与发病部位关联'
+        verbose_name = 'Disease and site association'
+        verbose_name_plural = 'Disease and site associations'
         unique_together = (('disease', 'site'),)
 
     def __str__(self):
@@ -152,18 +152,18 @@ class GeneKeggEnum(models.Model):
         choices=TP_CHOICES,
         null=True,
         blank=True,
-        verbose_name='类型（gene、kegg）'
+        verbose_name='Type (gene, kegg)'
     )
     name = models.CharField(
         max_length=50,
         null=True,
         blank=True,
-        verbose_name='名称'
+        verbose_name='Name'
     )
 
     class Meta:
-        verbose_name = 'Gene/KEGG枚举'
-        verbose_name_plural = 'Gene/KEGG枚举'
+        verbose_name = 'Gene/KEGG entry'
+        verbose_name_plural = 'Gene/KEGG entries'
         db_table = 'gene_kegg_enum'
         indexes = [
             models.Index(fields=['tp'], name='gene_kegg_tp_idx'),

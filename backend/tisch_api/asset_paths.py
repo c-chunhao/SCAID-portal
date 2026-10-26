@@ -13,15 +13,16 @@ from django.db.models import Q
 from django.http import Http404
 
 
+# Preserve legacy catalog keys as Unicode escapes for exact matching.
 TISSUE_ALIASES = {
     'epidermal': ('Skin_Epidermal',),
     'dermal': ('Skin_Dermal',),
     'skin biopsy': ('SkinBiopsy',),
-    '皮肤': ('Skin',),
-    '肺': ('Lung',),
-    '外周血': ('PBMC',),
-    '水泡': ('Blister',),
-    '眼前房液（房水）': ('aqueous_humour',),
+    '\u76ae\u80a4': ('Skin',),
+    '\u80ba': ('Lung',),
+    '\u5916\u5468\u8840': ('PBMC',),
+    '\u6c34\u6ce1': ('Blister',),
+    '\u773c\u524d\u623f\u6db2\uff08\u623f\u6c34\uff09': ('aqueous_humour',),
 }
 DISEASE_FOLDERS = {
     'AIH': ('Autoimmune_hepatitis',),

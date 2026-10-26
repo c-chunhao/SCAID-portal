@@ -1,3 +1,9 @@
+# English repository language — 26 October 2026
+
+- Translate documentation, comments, administrative labels, command messages and aggregate-result notes into English.
+- Use English documentation and result filenames, with updated links and file checksums.
+- Preserve exact legacy identifiers, scientific calculations, aggregate numeric results and historical evidence bindings.
+
 # Home illustration cleanup — 24 October 2026
 
 - Remove the illustration download link and separator below the home-page body illustration; retain the original image and native browser image actions.

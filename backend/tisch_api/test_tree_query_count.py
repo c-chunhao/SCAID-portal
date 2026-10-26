@@ -73,18 +73,18 @@ class DisplayLabelTests(TestCase):
     disease names or truncated accessions; stored values stay unchanged for filters."""
 
     def test_reconciled_disease_and_tissue_labels(self):
-        psa = CellData.objects.create(abbreviation='AS', disease_name='强直性脊柱炎', dataset_source='E-MTAB', dataset_id='8207', tissue='PBMC')
-        bd = CellData.objects.create(abbreviation='SV', disease_name='血管炎', dataset_id='GSE198616', tissue='外周血')
+        psa = CellData.objects.create(abbreviation='AS', disease_name='\u5f3a\u76f4\u6027\u810a\u67f1\u708e', dataset_source='E-MTAB', dataset_id='8207', tissue='PBMC')
+        bd = CellData.objects.create(abbreviation='SV', disease_name='\u8840\u7ba1\u708e', dataset_id='GSE198616', tissue='\u5916\u5468\u8840')
         client = APIClient()
         rows = {row['id']: row for row in client.get('/api/cell-data-all/', {'format': 'json'}).json()}
         self.assertEqual(rows[psa.pk]['disease_label'], 'Psoriatic Arthritis')
         self.assertEqual(rows[psa.pk]['dataset_label'], 'E-MTAB-8207')
         self.assertEqual(rows[psa.pk]['dataset_id'], '8207')
         self.assertEqual(rows[bd.pk]['disease_label'], "Behçet's Disease")
-        self.assertEqual((rows[bd.pk]['tissue'], rows[bd.pk]['tissue_label']), ('外周血', 'PBMC'))
+        self.assertEqual((rows[bd.pk]['tissue'], rows[bd.pk]['tissue_label']), ('\u5916\u5468\u8840', 'PBMC'))
         tree = {node['abbreviation']: node for node in client.get('/api/cell-data/', {'format': 'json'}).json()['data']}
         self.assertEqual(tree['BD']['disease_label'], "Behçet's Disease")
-        CellData.objects.create(abbreviation='AS', disease_name='强直性脊柱炎', dataset_id='GSE216883', tissue='PBMC/SFMC')
+        CellData.objects.create(abbreviation='AS', disease_name='\u5f3a\u76f4\u6027\u810a\u67f1\u708e', dataset_id='GSE216883', tissue='PBMC/SFMC')
         tree = {node['abbreviation']: node for node in client.get('/api/cell-data/', {'format': 'json'}).json()['data']}
         self.assertEqual(tree['AS']['disease_label'], 'Ankylosing Spondylitis')
         self.assertEqual(tree['PsA']['disease_label'], 'Psoriatic Arthritis')
