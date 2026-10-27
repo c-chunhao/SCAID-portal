@@ -1,19 +1,16 @@
 # Project licence status
 
-No author-designated SCAID project software or data licence has been selected
-for this snapshot. This notice does not grant a licence and does not assign MIT,
-Apache, GPL or another licence to the authors' project code. Public repository
-visibility does not itself provide permission to reuse or relicense that code.
-A project licence must be designated by the relevant copyright holders.
+The SCAID authors have selected the MIT License for original software
+contributions to which the SCAID team holds the rights to grant this licence.
+See [LICENSE_SCAID_ORIGINAL_CODE.txt](LICENSE_SCAID_ORIGINAL_CODE.txt).
 
-Third-party components retain their own terms and notices. The local frontend
-Git origin identifies the `boyane/vue-rabbit` Gitee template; no root licence
-file is present in the inspected local template commit or working snapshot.
-This records unresolved template-derived code licensing without inventing a
-permission grant. See THIRD_PARTY_NOTICES.md for known provenance.
+This grant does not confer rights in third-party code, fonts, images, data,
+models, or other material. Those components remain subject to their own terms.
+In particular, the inspected frontend is derived in part from the
+`boyane/vue-rabbit` Gitee template. No upstream root licence or permission grant
+has been identified for that template; the SCAID grant does not resolve its
+licensing. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
-Original study datasets and scientific figure assets have separate reuse terms.
-Public access to a study does not automatically grant unrestricted redistribution.
-The snapshot excludes sequencing data, processed matrices and patient-level
-metadata. Applicable author and third-party permissions for aggregate graphics
-are not replaced by public repository visibility.
+Original study datasets, external models and scientific figures have separate
+reuse conditions. Public availability does not itself grant redistribution
+permission. The source snapshot excludes raw sequencing and clinical records.

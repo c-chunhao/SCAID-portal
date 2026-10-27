@@ -213,8 +213,8 @@ layout in `published_figure_roots.json`. Import reviewed file registrations usin
 the documented manifest schema. Absent data families return unavailable results;
 installing source alone does not redistribute the production data library.
 
-`LICENSE_STATUS.md` remains authoritative: no new project licence is assigned
-by this release. Third-party source retains its original terms and provenance.
+`LICENSE_STATUS.md` records the MIT grant for original SCAID code and the
+unresolved third-party template rights. Third-party material retains its own terms.
 A GitHub release is a versioned source reference, not a permanent archive DOI.
 
 The [additional source-pool sensitivity](science/current_revision/source_pool_sensitivity/README.md)

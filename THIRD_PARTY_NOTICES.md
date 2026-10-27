@@ -21,8 +21,8 @@ Those dependencies retain their own distribution licences and notices.
 The current SCAID wordmark, tissue schematic and aggregate atlas figures are
 included as frontend assets. Their authorship and reuse rights are not assigned
 by this notice. Per-cell matrices, donor/clinical metadata and the full external
-research data library are excluded. No project-wide software/data licence or
-third-party permission has been invented by preparing this snapshot.
+research data library are excluded. The scoped MIT grant covers original SCAID-owned code only; it does not
+create permissions for third-party material or apply a licence to the data.
 
 The 24 October update adds project analysis scripts and changes only identified
 custom application files. It does not redistribute another template checkout or

@@ -14,7 +14,7 @@
     "Actual gene registry omitted; marker registry is an explicit local-ID binding example only",
     "No private deployment scripts, accounts, raw matrices, generated PNG caches or internal QA reports"
   ],
-  "licence": "No author-designated project licence selected; existing notices preserved",
+  "licence": "MIT for SCAID-owned original software contributions only; third-party template rights unresolved (see LICENSE_STATUS.md)",
   "scientific_follow_up": {
     "atlas_diagnostics": "current final-PCA/Harmony diagnostics and existing annotation evidence summary; source-only package",
     "bcell_state": "final source-recorded state/IFN models and aggregate outputs; portable environment-variable input roots",
@@ -530,5 +530,11 @@
     "frontend_build": "passed; pre-existing Sass legacy-API notices",
     "production_modified": false,
     "full_scientific_replay_repeated": false
+  },
+  "licensing_update_20261027": {
+    "scope": "Original SCAID-owned software contributions only",
+    "licence": "MIT",
+    "third_party_template_permission": "Unresolved",
+    "scientific_results_changed": false
   }
 }
