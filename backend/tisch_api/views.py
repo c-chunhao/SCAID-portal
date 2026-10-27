@@ -89,13 +89,22 @@ class CustomPageNumberPagination(ValidatedPageNumberPagination):
         })
 
 
+# Temporarily withhold one tissue's CellChat assets while their provenance is checked.
+# Other modalities and all other tissue objects remain available.
+WITHHELD_CELLCHAT_PATH = 'AS/E-MTAB-8207/SFMC/CellChat'
+
+def verified_figures(queryset):
+    return queryset.exclude(Q(relative_path=WITHHELD_CELLCHAT_PATH) |
+                            Q(relative_path__startswith=WITHHELD_CELLCHAT_PATH + '/'))
+
+
 class PDFImageViewSet(PublicReadOnlyViewSet):
     queryset = PDFImage.objects.all().order_by('id')
     serializer_class = PDFImageSerializer
     pagination_class = CustomPageNumberPagination
 
     def get_queryset(self):
-        queryset = super().get_queryset()
+        queryset = verified_figures(super().get_queryset())
         params = self.request.query_params
         record = requested_dataset(params)
         # Manifest-linked records are scoped through the indexed relative_path
@@ -205,7 +214,7 @@ class PDFImageViewSet(PublicReadOnlyViewSet):
     @action(detail=True, methods=['get', 'head'], url_path='original')
     def original(self, request, pk=None):
         """Original registered figure, without disclosing a server directory."""
-        record = get_object_or_404(PDFImage, pk=pk)
+        record = get_object_or_404(verified_figures(PDFImage.objects.all()), pk=pk)
         source = resolved_figure_path(record)
         if source is None or source.suffix.lower() not in {'.png', '.jpg', '.jpeg'}:
             raise Http404('Figure file unavailable.')
@@ -224,7 +233,7 @@ class PDFImageViewSet(PublicReadOnlyViewSet):
     @action(detail=True, methods=['get', 'head'], url_path='thumb')
     def thumb(self, request, pk=None):
         """JPEG preview (max 900 px) of a large figure PNG; see thumbnails.py."""
-        record = PDFImage.objects.filter(pk=pk).first()
+        record = verified_figures(PDFImage.objects.all()).filter(pk=pk).first()
         if record is None or not wants_preview(record):
             raise Http404('No preview for this figure.')
         target = ensure_thumbnail(record)

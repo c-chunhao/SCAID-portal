@@ -2,6 +2,11 @@
 
 **Version 0.3.1-ad20261024 · 24 October 2026**
 
+**27 October safety update:** the E-MTAB-8207 SFMC CellChat image family is
+temporarily withheld after an image-to-object mismatch was identified. Other
+modalities remain available. The production proxy also blocks legacy static
+image URLs; deployments serving those legacy paths must apply equivalent rules.
+
 This revision synchronizes the current custom application files and adds the
 [actual GSE332623 analysis source, environment, parameters and reproduction guide](science/ad_gse332623_20261024/README.md).
 The current catalogue has **80 source–condition–tissue objects, 5,172,657 cell

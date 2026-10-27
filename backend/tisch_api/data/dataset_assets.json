@@ -64,7 +64,17 @@
       "canonical_abbreviation": "PsA",
       "canonical_disease_name": "Psoriatic Arthritis",
       "classification_note": "E-MTAB-8207 was reconciled to psoriatic arthritis in the source audit. AS is retained only as a historical asset directory code.",
-      "figure_path_aliases": []
+      "figure_path_aliases": [],
+      "module_availability": {
+        "gene_umap": true,
+        "kegg_score": true,
+        "cellchat": false,
+        "downloads": true
+      },
+      "study_context": "CellChat figures for this tissue are temporarily unavailable while the underlying results are being verified.",
+      "availability_notes": [
+        "CellChat figures for this tissue are under verification and have been temporarily withdrawn."
+      ]
     },
     {
       "source_row": 5,
