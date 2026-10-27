@@ -2,10 +2,12 @@
 
 **Version 0.3.1-ad20261024 · 24 October 2026**
 
-**27 October safety update:** the E-MTAB-8207 SFMC CellChat image family is
-temporarily withheld after an image-to-object mismatch was identified. Other
-modalities remain available. The production proxy also blocks legacy static
-image URLs; deployments serving those legacy paths must apply equivalent rules.
+**27 October correction:** the E-MTAB-8207 SFMC CellChat figures were
+rebuilt from the tissue-specific saved object and republished under new image
+IDs. Previously mismatched IDs and legacy static image URLs remain blocked.
+The production proxy also blocks legacy static image URLs; deployments serving
+those paths must apply equivalent rules. See the release verification materials
+for the scope and limitations of checks.
 
 This revision synchronizes the current custom application files and adds the
 [actual GSE332623 analysis source, environment, parameters and reproduction guide](science/ad_gse332623_20261024/README.md).

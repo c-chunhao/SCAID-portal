@@ -543,5 +543,14 @@
     "rest_of_catalogue_unchanged": true,
     "production_static_legacy_urls_blocked_at_proxy": true,
     "raw_data_modified": false
+  },
+  "cellchat_republication_20261027": {
+    "scope": "E-MTAB-8207 SFMC CellChat image family",
+    "new_images": 646,
+    "retired_ids": 675,
+    "raw_data_modified": false,
+    "public_source_tests_passed": 37,
+    "production_verification": "Original images and thumbnails verified after registration; legacy static URLs blocked at the proxy",
+    "biological_independent_validation_claimed": false
   }
 }

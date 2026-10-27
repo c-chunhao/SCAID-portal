@@ -89,13 +89,15 @@ class CustomPageNumberPagination(ValidatedPageNumberPagination):
         })
 
 
-# Temporarily withhold one tissue's CellChat assets while their provenance is checked.
+# Only figures from the reviewed SFMC release are eligible for this tissue.
 # Other modalities and all other tissue objects remain available.
 WITHHELD_CELLCHAT_PATH = 'AS/E-MTAB-8207/SFMC/CellChat'
 
 def verified_figures(queryset):
-    return queryset.exclude(Q(relative_path=WITHHELD_CELLCHAT_PATH) |
-                            Q(relative_path__startswith=WITHHELD_CELLCHAT_PATH + '/'))
+    scoped = (Q(relative_path=WITHHELD_CELLCHAT_PATH) |
+              Q(relative_path__startswith=WITHHELD_CELLCHAT_PATH + '/'))
+    # Only the newly validated, separately named release is eligible here.
+    return queryset.exclude(scoped & ~Q(image__startswith='pdf_images/r20261027sfmc/'))
 
 
 class PDFImageViewSet(PublicReadOnlyViewSet):
@@ -185,7 +187,11 @@ class PDFImageViewSet(PublicReadOnlyViewSet):
             names = [prefix + clean_name + suffix for prefix in ('', 'Umap_') for suffix in ('.pdf', '.png', '.jpg', '_page_1.jpg')]
             conditions &= Q(name__in=names)
             pattern = r'(?:^|[/\\])(?:Umap_)?' + re.escape(clean_name) + r'(?:_page_[0-9]+)?\.(?:jpg|png)$'
-            conditions &= Q(image__iregex=pattern)
+            # Corrected SFMC release files use content-stable names to avoid
+            # collisions with retired image URLs. Their indexed name remains exact.
+            conditions &= (Q(image__iregex=pattern) |
+                           Q(image__startswith='pdf_images/r20261027sfmc/',
+                             relative_path__startswith='AS/E-MTAB-8207/SFMC/CellChat/'))
 
         if 'GeneUmap' in params:
             conditions &= folder_condition(folders, 'GeneUmap') if folders else path_sequence_condition('image', ('GeneUmap',))

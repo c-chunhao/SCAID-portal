@@ -68,12 +68,13 @@
       "module_availability": {
         "gene_umap": true,
         "kegg_score": true,
-        "cellchat": false,
+        "cellchat": true,
+        "cellchat_overview": true,
         "downloads": true
       },
-      "study_context": "CellChat figures for this tissue are temporarily unavailable while the underlying results are being verified.",
+      "study_context": "CellChat figures were redrawn from the source SFMC analysis; cell-cell interactions are predictions.",
       "availability_notes": [
-        "CellChat figures for this tissue are under verification and have been temporarily withdrawn."
+        "CellChat figures use the SFMC object with 2,729 cells and five source-labelled groups. The group labelled Unknow is retained as recorded in the source object."
       ]
     },
     {
