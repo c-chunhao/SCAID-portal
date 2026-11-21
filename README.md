@@ -1,5 +1,17 @@
 # SCAID source snapshot
 
+## Portal catalogue on 5 November 2026
+
+The [SCAID catalogue](https://scaid01.com/Dataset) contains **5,166,245 cells
+in 80 entries across 36 autoimmune and related immune-mediated conditions**.
+The entries represent 59 source accessions. On 30 October the corrected kidney
+entry for GSE279086 replaced the earlier 24,663-cell object with 18,251 cells.
+This accounts for the 6,412-cell difference from the October source snapshot.
+The [public catalogue API](https://scaid01.com/api/cell-data/) provides the
+entry counts. The two lymphocyte atlases were unaffected by this update.
+
+## October 2026 source snapshot
+
 **Version 0.3.1-ad20261024 · 24 October 2026**
 
 **27 October correction:** the E-MTAB-8207 SFMC CellChat figures were
@@ -9,31 +21,30 @@ The production proxy also blocks legacy static image URLs; deployments serving
 those paths must apply equivalent rules. See the release verification materials
 for the scope and limitations of checks.
 
-This revision synchronizes the current custom application files and adds the
+The 24 October revision included the custom application files and the
 [actual GSE332623 analysis source, environment, parameters and reproduction guide](science/ad_gse332623_20261024/README.md).
-The current catalogue has **80 source–condition–tissue objects, 5,172,657 cell
-records and 1,122 entry-specific technical/sample labels**. The added mixed
+At that date the catalogue contained **80 source–condition–tissue entries,
+5,172,657 cells and 1,122 entry-specific technical/sample labels**. The mixed
 AD/healthy-reference cohort retains 581,725 records in 27 technical libraries;
 donor and clinical groups are unresolved and clinical comparisons are disabled.
-The two original integrated atlases remain unchanged. Current API and UI source
-concordance is recorded in [the source map](science/ad_gse332623_20261024/SOURCE_EXECUTION_MAP.json).
+The correspondence between the October API, UI and source files is documented in [the source map](science/ad_gse332623_20261024/SOURCE_EXECUTION_MAP.json).
 
-The default source retains all earlier backend modules. The current deployed
-Dataset UI has figure tabs and download entries; the earlier candidate's
-MarkerTable UI component is retained as source but has no current Dataset tab.
+The October source retained all earlier backend modules. The deployed Dataset
+UI then had figure tabs and download entries. The earlier candidate's
+MarkerTable UI component remained in the source without a separate Dataset tab.
 Its earlier candidate validation statements below describe their original dates
 and scope. The 24 October source update does not newly reproduce those historical
 checks or a complete clean raw-data-to-final scientific analysis.
 
 ## Earlier 21 October module release context
 
-This repository contains the current Vue/Vite frontend and Django REST backend
+The 21 October release contained the Vue/Vite frontend and Django REST backend
 of the [SCAID portal](https://scaid01.com/), plus a reviewed public asset mapping,
 aggregate catalogue snapshot and a synthetic fixture for local installation.
 The portal provides catalogue browsing, precomputed gene/pathway/CellChat views
 and registered HDF5 downloads. Its public API is read-only.
 
-The aggregate catalogue documents **79 source–condition–tissue objects,
+The 21 October catalogue contained **79 source–condition–tissue objects,
 4,590,932 cell records and 1,095 entry-specific sample labels under 36 condition
 labels**. The existing 48-object collection has 2,572,480 records and 625 labels.
 This candidate adds module support for the 31 additional browser objects:
@@ -168,10 +179,11 @@ registered files.
 
 ## Source provenance and scope
 
-Current application files are copied from the running project's working source,
+The October application files were copied from the running project's working source,
 with portable release-only changes to settings, path resolution and packaging.
-The original teaching/template Git history is excluded. File hashes are in
-`SOURCE_SHA256SUMS.txt`; `SOURCE_PROVENANCE.json` describes copy/adaptation origins
+The original teaching/template Git history is excluded. The file hashes in
+[`SOURCE_SHA256SUMS.txt`](https://github.com/c-chunhao/SCAID-portal/blob/a236eafd4f192c2884fb72954e1c72d110daf740/SOURCE_SHA256SUMS.txt) describe the October source snapshot, including its version of this README.
+`SOURCE_PROVENANCE.json` describes copy/adaptation origins
 without exposing the server's private paths. Source availability does not verify
 scientific claims, donor identities or every original study's redistribution
 terms. The software and dataset licences are separate.
@@ -207,7 +219,7 @@ are aggregate only. The real clinical/count inputs are supplied separately.
 ## October production-source synchronization
 
 The preceding rc2 release refreshed the frontend, API module-availability logic,
-case-sensitive gene lookup, current 79-entry asset catalogue and portable analysis
+case-sensitive gene lookup, the 79-entry asset catalogue of that release and portable analysis
 modules. Business logic comes from the running deployment's working source;
 settings and asset roots are adapted for local installation. The source package
 does not include production database registrations, figure libraries, H5 matrices,
